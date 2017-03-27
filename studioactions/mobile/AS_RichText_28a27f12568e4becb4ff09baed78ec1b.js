@@ -1,0 +1,1 @@
+function AS_RichText_28a27f12568e4becb4ff09baed78ec1b(eventobject, linktext, attributes) {}

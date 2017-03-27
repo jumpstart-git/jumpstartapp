@@ -1,0 +1,24 @@
+{
+    "AS_RichText_28a27f12568e4becb4ff09baed78ec1b": {
+        "id": "AS_RichText_28a27f12568e4becb4ff09baed78ec1b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}
