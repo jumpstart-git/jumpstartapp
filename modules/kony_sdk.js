@@ -1,5 +1,5 @@
 /*
-  * kony-sdk-ide Version SDK-GA-7.2.0.1
+  * kony-sdk-ide Version mBaaSSDK-QA-7.2.1.2
   */
         
 /**
@@ -166,7 +166,7 @@ kony.sdk.isInitialized = false;
 kony.sdk.currentInstance = null;
 kony.sdk.isLicenseUrlAvailable = true;
 kony.sdk.constants = kony.sdk.constants || {};
-kony.sdk.version = "SDK-GA-7.2.0.1";
+kony.sdk.version = "mBaaSSDK-QA-7.2.1.2";
 kony.sdk.logger = new konyLogger();
 kony.sdk.syncService = null;
 kony.sdk.nativestore = kony.sdk.nativestore || new konyDataStore();
@@ -402,6 +402,10 @@ kony.sdk.prototype.setMessagingServiceEndPoint = function(endPoint) {
  */
 kony.sdk.prototype.init = function(appKey, appSecret, serviceUrl, successCallback, failureCallback) {
 	var logger = new konyLogger();
+	// removing app metadata with key for the latest app metadata
+
+    kony.sdk.deleteMetadatafromDs();
+    
 	if (!(appKey && appSecret && serviceUrl)) {
 		logger.log("### init:: Invalid credentials passed");
 		kony.sdk.verifyAndCallClosure(failureCallback, "Invalid initialization parameters passed. Please check appKey, appSecret and ServiceUrl parameters");
@@ -429,6 +433,13 @@ kony.sdk.prototype.init = function(appKey, appSecret, serviceUrl, successCallbac
 			konyRef.mainRef.config = data;
 			konyRef.servicedoc = data;
 			konyRef.mainRef.appId = data.appId;
+
+            if(!kony.sdk.isNullOrUndefined(data.reportingsvc)) {
+
+                kony.sdk.setLicenseCall(appKey,appSecret,data);
+            }
+
+
 			var processServiceDocResult = konyRef.initWithServiceDoc(appKey, appSecret, data);
 			if (processServiceDocResult === true) {
 				logger.log("### init::_doInit processing service document successful");
@@ -459,6 +470,7 @@ kony.sdk.prototype.init = function(appKey, appSecret, serviceUrl, successCallbac
 
 kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) {
 	konyRef = this;
+
 	kony.sdk.currentInstance = this;
 	if (serviceDoc instanceof kony.sdk.serviceDoc) {
 		var servConfig = serviceDoc.toJSON();
@@ -483,6 +495,7 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			konyRef.mainRef.appKey = appKey;
 			konyRef.mainRef.appSecret = appSecret;
 			konyRef.mainRef.appId = servConfig.appId;
+			konyRef.mainRef.config = serviceDoc;
 
 			/* if (!servConfig.baseId) {
 				throw new Exception(Errors.INIT_FAILURE, "invalid baseId " + servConfig.baseId);
@@ -557,6 +570,12 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			if (kony.sdk.metric && kony.os.deviceInfo().name == "thinclient") {
 					kony.sdk.metric.flushEvents();
 		    }
+
+			if(!kony.sdk.isNullOrUndefined(servConfig.reportingsvc) )
+			{
+			    kony.sdk.saveMetadatainDs(appKey,appSecret,servConfig);
+			}
+
 			return true;
 		} catch (err) {
 			logger.log("### init::_doInit::_processServiceDoc failed with an exception: " + err);
@@ -1046,7 +1065,11 @@ function IdentityService(konyRef, rec) {
 				if(kony.sdk.isSSOLoginSuccess && kony.sdk.sso.isSSOEnabled == true && kony.sdk.util.getSSOToken()!=null && kony.sdk.util.getSSOToken()!="" && kony.sdk.util.getSSOToken()!=undefined) {
 					invokeAjaxCall("/oauth2/token", {}, {});
 				} else {
-				    OAuthHandler(_serviceUrl, _providerName, mainRef.appKey, invokeAjaxCall, _type);
+					if(options && options["browserWidget"] && kony.type(options["browserWidget"]) === "kony.ui.Browser" ) {
+						OAuthHandler(_serviceUrl, _providerName, mainRef.appKey, invokeAjaxCall, _type,{"browserWidget": options["browserWidget"]});
+					}else{
+						OAuthHandler(_serviceUrl, _providerName, mainRef.appKey, invokeAjaxCall, _type);
+					}
 				}
 			}
 		}
@@ -1237,8 +1260,13 @@ function IdentityService(konyRef, rec) {
 					}, 3, false);
                 }
             }
-
-            OAuthHandler(_serviceUrl, _providerName, mainRef.appKey, oAuthCallback, _type, {"logout":true,"slo":slo});
+			var oauthOptions = {};
+			oauthOptions["logout"] = true;
+			oauthOptions["slo"] = slo;
+			if(options && options["browserWidget"] && kony.type(options["browserWidget"]) === "kony.ui.Browser") {
+				oauthOptions["browserWidget"] = options["browserWidget"];
+			}
+            OAuthHandler(_serviceUrl, _providerName, mainRef.appKey, oAuthCallback, _type, oauthOptions);
         }else {
             var claimsTokenValue = null;
             var formdata = {};
@@ -8242,100 +8270,112 @@ function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options)
         }
 	}
 	else {
-		var popBasic = {
-			id: "popUp",
-			skin: null,
-			isModal: false,
-			transparencyBehindThePopup: 80,
-			"needAppMenu": false
-		};
-		var popLayout = {
-			containerWeight: 100,
-			padding: [5, 5, 5, 5],
-			"paddingInPixel": true
-		};
-		var popPSP = {
-		"titleBar": true,
-        "titleBarConfig": {
-            "renderTitleText": true,
-            "prevFormTitle": false,
-            "titleBarLeftSideView": "button",
-            "labelLeftSideView": "Back",
-            "titleBarRightSideView": "none"
-        	},
-        	"titleBarSkin": "slTitleBar"
-		};
-		//to do.. this is a workaround for android browser issue.. need to refactor this code
-		var browserSF = new kony.ui.Browser({
-			"id": "browserSF",
-			"text": "Browser",
-			"isVisible": true,
-			"detectTelNumber": true,
-			"screenLevelWidget": false,
-			"enableZoom": false
-		}, {
-			"margin": [0, 0, 0, 0],
-			"marginInPixel": true,
-			"paddingInPixel": true,
-			"containerWeight": 100
-		}, {});
+		var browserSF;
+		var userDefined = false;
+		if(options && options["browserWidget"] && kony.type(options["browserWidget"]) === "kony.ui.Browser"){
+			browserSF = options["browserWidget"];
+			userDefined = true;
+		}else {
+			var formBasic = {
+				id: "popUp",
+				skin: null,
+				isModal: false,
+				transparencyBehindThePopup: 80,
+				"needAppMenu": false
+			};
+			var formLayout = {
+				containerWeight: 100,
+				padding: [5, 5, 5, 5],
+				"paddingInPixel": true
+			};
+			var formPSP = {
+				"titleBar": true,
+				"titleBarConfig": {
+					"renderTitleText": true,
+					"prevFormTitle": false,
+					"titleBarLeftSideView": "button",
+					"labelLeftSideView": "Back",
+					"titleBarRightSideView": "none"
+				},
+				"titleBarSkin": "slTitleBar"
+			};
+			//to do.. this is a workaround for android browser issue.. need to refactor this code
+			browserSF = new kony.ui.Browser({
+				"id": "browserSF",
+				"text": "Browser",
+				"isVisible": true,
+				"detectTelNumber": true,
+				"screenLevelWidget": true,
+				"enableZoom": false
+			}, {
+				"margin": [0, 0, 0, 0],
+				"marginInPixel": true,
+				"paddingInPixel": true,
+				"containerWeight": 100
+			}, {});
 
-		var prevForm = kony.application.getCurrentForm();
-		var popUp = new kony.ui.Form2(popBasic, popLayout, popPSP);
-		popUp.add(browserSF);
-		popUp.show();
-        var urlConf;
-        if (isLogout) {
-            browserSF.onSuccess = handleOAuthLogoutSuccessCallback;
-            browserSF.onFailure = handleOAuthLogoutFailureCallback;
+			var prevForm = kony.application.getCurrentForm();
+			var oauthForm = new kony.ui.Form2(formBasic, formLayout, formPSP);
+			oauthForm.add(browserSF);
+			oauthForm.show();
+		}
+		var urlConf;
+		if (isLogout) {
+			browserSF.onSuccess = handleOAuthLogoutSuccessCallback;
+			browserSF.onFailure = handleOAuthLogoutFailureCallback;
 			var slo = options["slo"];
 			urlConf = {
 				URL: serviceUrl + urlType + "logout?provider=" + providerName + "&appkey=" + appkey + "&slo=" + slo,
 				requestMethod: constants.BROWSER_REQUEST_METHOD_GET
 			};
 			browserSF.requestURLConfig = urlConf;
-        } else {
-            browserSF.handleRequest = handleRequestCallback;
+		} else {
+			browserSF.handleRequest = handleRequestCallback;
 			urlConf = {
 				URL: serviceUrl + urlType + "login?provider=" + providerName + "&appkey=" + appkey,
 				requestMethod: constants.BROWSER_REQUEST_METHOD_GET
 			};
 			browserSF.requestURLConfig = urlConf;
-        }
+		}
 
-        function handleOAuthLogoutSuccessCallback(){
-            var prevFormPostShow = prevForm.postShow;
-            function postShowOverride() {
-                popUp.destroy();
-                if (prevFormPostShow) {
-                    prevFormPostShow();
-                }
-                prevForm.postShow = prevFormPostShow;
-            }
-            prevForm.postShow = postShowOverride;
-            prevForm.show();
-            callback(isSuccess);
-        }
-
-        function handleOAuthLogoutFailureCallback(){
-            isSuccess = false;
-        }
-
-		function handleRequestCallback(browserWidget, params) {
-
-			var originalUrl = params["originalURL"];
-			if (typeof(params.queryParams) !== "undefined" && typeof(params.queryParams.code) !== "undefined") {
+		function handleOAuthLogoutSuccessCallback(){
+			if(!userDefined) {
 				var prevFormPostShow = prevForm.postShow;
-				prevForm.postShow = postShowOverride;
 				function postShowOverride() {
-					popUp.destroy();
+					oauthForm.destroy();
 					if (prevFormPostShow) {
 						prevFormPostShow();
 					}
 					prevForm.postShow = prevFormPostShow;
 				}
 
+				prevForm.postShow = postShowOverride;
 				prevForm.show();
+			}
+			callback(isSuccess);
+		}
+
+		function handleOAuthLogoutFailureCallback(){
+			isSuccess = false;
+		}
+
+		function handleRequestCallback(browserWidget, params) {
+
+			var originalUrl = params["originalURL"];
+			if (typeof(params.queryParams) !== "undefined" && typeof(params.queryParams.code) !== "undefined") {
+				if(!userDefined) {
+					var prevFormPostShow = prevForm.postShow;
+					prevForm.postShow = postShowOverride;
+					function postShowOverride() {
+						oauthForm.destroy();
+						if (prevFormPostShow) {
+							prevFormPostShow();
+						}
+						prevForm.postShow = prevFormPostShow;
+					}
+
+					prevForm.show();
+				}
 				var headers = {};
 				if (type == "oauth2" || type == "saml") {
 					headers["Content-Type"] = "application/x-www-form-urlencoded"
@@ -8350,6 +8390,7 @@ function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options)
 			return false;
 		}
 	}
+
 }
 
 if(kony.sdk){
@@ -8484,6 +8525,9 @@ kony.sdk.offline.removeUserAuthInformation = function(){
 var KNYMobileFabric = null;
 var KNYMetricsService = null;
 var serviceDocTimerId = null;
+dsAppMetaData  = null;
+AppServiceDoc = null;
+
 kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
 
   // var KNYMobileFabric = null;
@@ -8502,9 +8546,21 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
     return serviceDoc.toJSON();
   };
 
+    dsAppData = kony.store.getItem(appConfig.appId);
+
+    if(!kony.sdk.isNullOrUndefined(dsAppData)) {
+        dsAppMetaData = JSON.parse(dsAppData);
+    }
+
+    dsAppServiceDoc = kony.store.getItem("mobileFabricServiceDoc");
+
+    if(!kony.sdk.isNullOrUndefined(dsAppServiceDoc)) {
+        AppServiceDoc = JSON.parse(dsAppServiceDoc);
+      }
+
   var getLicenseUrl = function(appConfig) {
     var url = "";
-    if (appConfig.isturlbase) {
+      if (appConfig.isturlbase) {
       url = appConfig.isturlbase + "/IST";
     } else if (appConfig.secureurl) {
       url = getFromServerUrl(appConfig.secureurl, "IST");
@@ -8516,7 +8572,7 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
 
   var getMetricsUrl = function(appConfig) {
     var url = "";
-    if (appConfig.isturlbase) {
+      if (appConfig.isturlbase) {
       url = appConfig.isturlbase + "/CMS";
     } else if (appConfig.secureurl) {
       url = getFromServerUrl(appConfig.secureurl, "CMS");
@@ -8571,17 +8627,41 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
   var sdkInit = function(initConfig, successcallback, failurecallback) {
     var isInvalidConfig = false;
     var networkProvider = new konyNetworkProvider();
+
+      if(!kony.sdk.isNullOrUndefined(dsAppMetaData)) {
+
+          if (dsAppMetaData.appVersion == appConfig.appVersion) {
+
+              appConfig.appKey = dsAppMetaData.appKey;
+              appConfig.appSecret = dsAppMetaData.appSecret;
+              appConfig.serviceUrl = dsAppMetaData.serviceUrl;
+              var reportingServiceUrl = dsAppMetaData.licenseUrl;
+              appConfig.isturlbase = reportingServiceUrl.replace("/IST","");
+              appConfig.svcDoc = AppServiceDoc;
+              sdkInitConfig.appKey = dsAppMetaData.appKey;
+              sdkInitConfig.appSecret = dsAppMetaData.appSecret;
+              sdkInitConfig.serviceUrl = dsAppMetaData.serviceUrl;
+          }
+      }
 	
     var refreshServiceDoc = function(){
       var networkProvider = new konyNetworkProvider();
+
+        if(!kony.sdk.isNullOrUndefined(dsAppMetaData)){
+            if(dsAppMetaData.appVersion == initConfig.appVersion){
+                initConfig.appKey = dsAppMetaData.appKey;
+                initConfig.appSecret = dsAppMetaData.appSecret;
+                initConfig.serviceUrl = dsAppMetaData.serviceUrl;
+            }
+        }
       networkProvider.post(initConfig.serviceUrl,null, {
                                 "X-Kony-App-Key": initConfig.appKey,
                                 "X-Kony-App-Secret": initConfig.appSecret,
                                 "X-HTTP-Method-Override": "GET"
           },
           function (data) {
-              kony.store.setItem("mobileFabricServiceDoc", JSON.stringify(data));
-          },
+                  kony.store.setItem("mobileFabricServiceDoc", JSON.stringify(data));
+            },
           function (data) {
               kony.sdk.logger.log("Refresh of serviceDoc failed:" + data);
           });
@@ -8598,7 +8678,7 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
     if (kony.sdk.isLicenseUrlAvailable && kony.license && kony.license.createSession) {
       kony.license.createSession();
     }
-    if(!initConfig.isMFApp){
+     if(!initConfig.isMFApp){
 
       initWithServiceDocHelper(initConfig,successcallback,failurecallback,getServiceDocNonMFApp(initConfig));
     }
@@ -8638,7 +8718,7 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
                     }, function(res){
                         res = kony.sdk.formatSuccessResponse(res);
                         initWithServiceDocHelper(initConfig, successcallback, failurecallback, res);
-                        kony.store.setItem("mobileFabricServiceDoc", JSON.stringify(res));
+                      //  kony.store.setItem("mobileFabricServiceDoc", JSON.stringify(res));
                     },function(res){
                         failurecallback(res);
                     });
@@ -8652,7 +8732,7 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
               },function(res){
                   res = kony.sdk.formatSuccessResponse(res);
                   initWithServiceDocHelper(initConfig,successcallback,failurecallback,res);
-                  kony.store.setItem("mobileFabricServiceDoc",JSON.stringify(res));
+                 // kony.store.setItem("mobileFabricServiceDoc",JSON.stringify(res));
               },function(res) {
                   if(cachedServiceDoc || initConfig.appConfig.svcDoc){
                     var offlineServiceDoc = cachedServiceDoc ? cachedServiceDoc : initConfig.appConfig.svcDoc;
@@ -8727,7 +8807,7 @@ kony.setupsdks = function(initConfig, successCallBack, errorCallBack) {
    */
 
   sdkInit(initConfig,
-    function(metricsObject, initConfig) {
+    function (metricsObject, initConfig) {
       kony.print("sdk initialization done");
       konyAPMSuccessCallBack(metricsObject, initConfig);
       if (successCallBack)
@@ -9196,6 +9276,7 @@ function konyXMLHttpRequest(url, params, headers, httpMethod, konyContentType, s
 
 function konyDataStore() {
 	var logger = new konyLogger();
+
 	this.setItem = function(key, value) {
 		logger.log("Setting item:" + value + " with key:" + key);
 		if (typeof(key) !== "string") {
@@ -9661,3 +9742,44 @@ kony.sdk.cloneObject = function(obj){
 	}
 	return clonedObject;
 }
+
+kony.sdk.setLicenseCall = function(appKey,appSecret,data){
+		//Changing isturlbase for new server.
+		var reportingServiceUrl = data.reportingsvc.session;
+		if(typeof(appConfig) != "undefined") {
+			appConfig.isturlbase = reportingServiceUrl.replace("/IST", "");
+
+			if ((appKey != appConfig.appKey) && (appSecret != appConfig.appSecret)) {
+				//Checking for duplicate license call, if new appkey and appSecret, IST is triggered.
+				kony.license.captureKonyLicenseUsage(true);
+			}
+		}
+};
+
+kony.sdk.saveMetadatainDs = function(appKey,appSecret,servConfig) {
+
+    // Saving App metadata in storage for Persistence.
+    kony.sdk.isLicenseUrlAvailable = true;
+
+    var appId = {
+        "appKey": appKey,
+        "appSecret": appSecret,
+        "ServiceUrl": servConfig.selflink,
+        "appVersion": appConfig.appVersion,
+        "licenseUrl": servConfig.reportingsvc.session
+
+    }
+    sdkInitConfig.appKey = appKey;
+    sdkInitConfig.appSecret = appSecret;
+    sdkInitConfig.serviceUrl = servConfig.selflink;
+
+    kony.sdk.nativestore.setItem("mobileFabricServiceDoc", JSON.stringify(servConfig));
+
+    kony.sdk.nativestore.setItem(appConfig.appId, JSON.stringify(appId));
+
+};
+
+kony.sdk.deleteMetadatafromDs = function() {
+
+    kony.sdk.nativestore.removeItem(appConfig.appId);
+};
