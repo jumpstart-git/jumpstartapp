@@ -1,0 +1,28 @@
+{
+    "AS_Button_fa66164ea64f4016979992ff3a464ad7": {
+        "id": "AS_Button_fa66164ea64f4016979992ff3a464ad7",
+        "type": "ACTION_SEQUENCE",
+        "name": "registrationPersonalPage_continue_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPersonalPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bb11f14c1a7d462a940d51df0600113e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___0008f535e67347419fb69fca00816175",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitPersonalInfo",
+            "display": "submitPersonalInfo",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

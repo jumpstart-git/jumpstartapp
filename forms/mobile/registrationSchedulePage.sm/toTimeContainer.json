@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "lblTo",
+        "toTimeDropdown",
+        "toMeridiem"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "toTimeContainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fd092c0d0acc4043b114609e8afd7798",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "timeContainer",
+    "pf": "registrationSchedulePage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

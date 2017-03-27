@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "13dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s43221d0bc594d13902c10d08e62aab0",
+    "_text_": "If you would like to edit your business profile or delete your account, kindly contact Supply Nation",
+    "_top_": {
+        "type": "string",
+        "value": "7dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "contactSupplyNationRichText",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9623cfe5005b465ab9faca1450984231",
+    "name": "kony.ui.RichText",
+    "parent": "contactSupplynationContainer",
+    "pf": "BusinessProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

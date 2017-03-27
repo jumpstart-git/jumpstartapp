@@ -1,0 +1,28 @@
+{
+    "AS_Button_329823698d204f1a97394798c53d41eb": {
+        "id": "AS_Button_329823698d204f1a97394798c53d41eb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_f7b35d444e11486c8898106ef13dabf7",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

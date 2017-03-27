@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb50aa37ffc34c7eada4882a7d12b5a3",
+    "_text_": "4564564546\n",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "phoneNumRichText",
+    "info": null,
+    "isvisible": true,
+    "kuid": "653efeab64b44c5f983d8e806fda81b7",
+    "name": "kony.ui.RichText",
+    "parent": "phoneNumContainer",
+    "pf": "BusinessProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

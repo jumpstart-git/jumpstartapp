@@ -1,0 +1,162 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "businessId": {
+                "text": ""
+            },
+            "closedTaskBusiness": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "closedTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "closedTaskPersonProfilePic": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "detail": {
+                "text": ""
+            },
+            "markAsCompleteText": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "request_id": {
+                "text": ""
+            },
+            "segType": {
+                "text": "close"
+            },
+            "sendRecommendation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "taskId": {
+                "text": ""
+            },
+            "volunteerId": {
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "3de8838616734a98b471fe850ca43c6a",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "businessId": "text",
+        "contactNumber": "text",
+        "detail": "text",
+        "endDate": "text",
+        "hoursRequired": "text",
+        "request_id": "text",
+        "segType": "text",
+        "startDate": "text",
+        "taskId": "text",
+        "taskSkills": "text",
+        "totHours": "text",
+        "volunteerId": "text"
+    },
+    "id": "myClosedTasksList",
+    "ide_onRowClick": "AS_Segment_a52ffce90f1a4961b2dfed2b0b64337e",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": false,
+    "kuid": "47b32188a19249de89580ccade434bb7",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "myClosedTasksListContainer",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "3de8838616734a98b471fe850ca43c6a",
+    "rowcounter": 0,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s9135b5fa6f3401dbd7e0d5e783e12d0",
+    "rowtemplate": "CopyFBox00fe78492e0da42",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "businessId": "businessId",
+        "closedTaskBusiness": "closedTaskBusiness",
+        "closedTaskName": "closedTaskName",
+        "closedTaskPersonProfilePic": "closedTaskPersonProfilePic",
+        "markAsCompleteText": "markAsCompleteText",
+        "myClosedTaskDetailParent": "myClosedTaskDetailParent",
+        "myClosedTaskProfileImageParent": "myClosedTaskProfileImageParent",
+        "myClosedTaskTop": "myClosedTaskTop",
+        "sendRecommendation": "sendRecommendation",
+        "taskId": "taskId"
+    },
+    "zindex": 1
+}

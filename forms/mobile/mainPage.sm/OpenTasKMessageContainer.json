@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "77.21%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "19dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "59.17%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "iMessageContainer",
+        "imsgLabel"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "OpenTasKMessageContainer",
+    "ide_onTouchStart": "AS_FlexContainer_f170d61dd5724eaab0c1ba4c6839047c",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f33b4f22e5064763b66d11af22a1c6e0",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "messageContaine",
+    "pf": "mainPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -1,0 +1,94 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "volunteerMyProfilePage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "groupcells": false,
+    "id": "listDays",
+    "info": null,
+    "isvisible": true,
+    "kuid": "52c3e8046c1b426fb2805a82202fb2f1",
+    "masterdata": [
+        [
+            "MON",
+            "MONDAY"
+        ],
+        [
+            "TUE",
+            "TUESDAY"
+        ],
+        [
+            "WED",
+            "WEDNESDAY"
+        ],
+        [
+            "THU",
+            "THURSDAY"
+        ],
+        [
+            "FRI",
+            "FRIDAY"
+        ],
+        [
+            "SAT",
+            "SATURDAY"
+        ],
+        [
+            "SUN",
+            "SUNDAY"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "CopyregScheduleDatesFlex0e378c84e573e49",
+    "pf": "volunteerMyProfilePage",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

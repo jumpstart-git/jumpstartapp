@@ -1,0 +1,201 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "TaskBusOrVolName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "businessId": {
+                "text": ""
+            },
+            "closeRichText": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "contactNumber": {
+                "text": ""
+            },
+            "createdDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "editRichText": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "endDate": {
+                "text": ""
+            },
+            "hoursRequired": {
+                "text": ""
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblRequestId ": {
+                "text": ""
+            },
+            "lblTaskId ": {
+                "text": ""
+            },
+            "markAsCompleteRichText": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "notAssigned": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "profilePic": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "segType": {
+                "text": ""
+            },
+            "startDate": {
+                "text": ""
+            },
+            "taskDetails": {
+                "text": ""
+            },
+            "taskId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "taskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "taskReqId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerId": {
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "afa4cefcae1741e6819c3796ccc2ab29",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "businessId": "text",
+        "contactNumber": "text",
+        "endDate": "text",
+        "hoursRequired": "text",
+        "lblRequestId ": "text",
+        "lblTaskId ": "text",
+        "segType": "text",
+        "startDate": "text",
+        "taskDetails": "text",
+        "volunteerId": "text"
+    },
+    "id": "unassignedTaskList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": false,
+    "kuid": "a9b159fe95674465b5557fc8e6d1e67b",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "unAssignedTaskListContainer",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "afa4cefcae1741e6819c3796ccc2ab29",
+    "rowcounter": 0,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s9135b5fa6f3401dbd7e0d5e783e12d0",
+    "rowtemplate": "CopyFBox065d0320c900743",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CreatedDateContainer": "CreatedDateContainer",
+        "EditAndCloseContainer": "EditAndCloseContainer",
+        "TaskBusOrVolName": "TaskBusOrVolName",
+        "closeRichText": "closeRichText",
+        "createdDate": "createdDate",
+        "editRichText": "editRichText",
+        "lblDate": "lblDate",
+        "markAsCompleteRichText": "markAsCompleteRichText",
+        "notAssigned": "notAssigned",
+        "profilePic": "profilePic",
+        "taskContainer": "taskContainer",
+        "taskId": "taskId",
+        "taskName": "taskName",
+        "taskProfileImageContainer": "taskProfileImageContainer",
+        "taskReqId": "taskReqId",
+        "unassignedTaskParentContainer": "unassignedTaskParentContainer"
+    },
+    "zindex": 1
+}

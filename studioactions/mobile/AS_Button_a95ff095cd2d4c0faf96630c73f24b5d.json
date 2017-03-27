@@ -1,0 +1,34 @@
+{
+    "AS_Button_a95ff095cd2d4c0faf96630c73f24b5d": {
+        "id": "AS_Button_a95ff095cd2d4c0faf96630c73f24b5d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_10081807984144df85d7eb3abb94dc83",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_8d6fe8fed6794938adf1154546322e4e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.startEngagementModalContainer.isVisible=false;\nmainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text=\"\";\nmainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text=\"\";\n//mainPage.show();",
+            "callbackType": null
+        }]
+    }
+}

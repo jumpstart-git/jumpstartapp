@@ -1,0 +1,27 @@
+{
+    "AS_Button_6769340a248d48eabbad10e602c77e6b": {
+        "id": "AS_Button_6769340a248d48eabbad10e602c77e6b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "pop1",
+            "type": "popups",
+            "platform": null,
+            "KUID": "852031d92ce24fa7b437c860523b4d7d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___956ea52132d04f2bbaaccdd2727af373",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "validateRegCode",
+            "display": "validateRegCode",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

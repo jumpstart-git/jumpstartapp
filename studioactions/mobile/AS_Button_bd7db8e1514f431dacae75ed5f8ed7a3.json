@@ -1,0 +1,24 @@
+{
+    "AS_Button_bd7db8e1514f431dacae75ed5f8ed7a3": {
+        "id": "AS_Button_bd7db8e1514f431dacae75ed5f8ed7a3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__28cc7823b9714e979b394082d439f72e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//Type your code here\n\n\n\nif(gblIsVol==true){\n  \n  //start\n  \n  var tempArrayForCity=[];\n  \nfor(var i=0;i<gblForVolSort.volunteersList.length;i++)\n{\n \n   tempArrayForCity.push(gblForVolSort.volunteersList[i].VolunteersDTO[0]);\n  \n }\n  \n   function SortByCity(x,y) {\n      return ((x.city == y.city) ? 0 : ((x.city > y.city) ? 1 : -1 ));\n    }\n//calling sort function\ntempArrayForCity.sort(SortByCity);\n    var sortedrespCity={};\nsortedrespCity.volunteersList=[]; \n  var arrCity=[];\n  for(var j=0;j<tempArrayForCity.length;j++)\n{\n  \narrCity.push(tempArrayForCity[j]);\n  // alert(\"arr before  modifying\"+JSON.stringify(arr));\n   var testobj={\"VolunteersDTO\":arrCity};\n   arrCity=[];\n   sortedrespCity.volunteersList.push(testobj);\n}\ngblForVolSort=sortedrespCity;\n  \n  \n  \n  //end\nvar tempArray=[];\n  \nfor(var i=0;i<gblForVolSort.volunteersList.length;i++)\n{\n  \n   tempArray.push(gblForVolSort.volunteersList[i].VolunteersDTO[0]);\n  \n }\nfor(var i=0;i<tempArray.length;i++)\n{\nif(tempArray[i].skillSet !=null)\n{\nvar user=tempArray[i].skillSet;\nvar ar = user.sort(function(a, b)\n{\n\n  var nA = a.SkillsDTO.skillName.toLowerCase();\n  var nB = b.SkillsDTO.skillName.toLowerCase();\n\n  if(nA < nB)\n    return -1;\n  else if(nA > nB)\n    return 1;\nreturn 0;\n});\n\n tempArray[i].skillSet=ar;\n}\n}\n//alert(JSON.stringify(tempArray));\nskillSortedResponse(tempArray);\n}else\n  {\n    /////start city business\n    \n        var tempArrayBusinessCity=[];\nfor(var i=0;i<gblResponseBusinessSearchForSort.businessBbj.length;i++)\n{\n  \n   tempArrayBusinessCity.push(gblResponseBusinessSearchForSort.businessBbj[i].BusinessDTO);\n  \n }\n    function SortByBusinessCity(x,y) {\n      return ((x.city == y.city) ? 0 : ((x.city > y.city) ? 1 : -1 ));\n    }\n//calling sort function\ntempArrayBusinessCity.sort(SortByBusinessCity);\n    var sortedrespBusinessCity={};\nsortedrespBusinessCity.businessBbj=[];\nfor(var j=0;j<tempArrayBusinessCity.length;j++)\n{\n  //alert(\"1\"+tempArray[j]);\n  var testtobj={\"BusinessDTO\":tempArrayBusinessCity[j]};\n  sortedrespBusinessCity.businessBbj.push(testtobj);\n}\n    \n    \n    gblResponseBusinessSearchForSort=sortedrespBusinessCity;\n    \n    \n   \n    //end city business\n     var tempArray=[];\nfor(var i=0;i<gblResponseBusinessSearchForSort.businessBbj.length;i++)\n{\n  \n   tempArray.push(gblResponseBusinessSearchForSort.businessBbj[i].BusinessDTO);\n  \n }\n    function SortByBusinessNamee(x,y) {\n      return ((x.businessName == y.businessName) ? 0 : ((x.businessName > y.businessName) ? 1 : -1 ));\n    }\n//calling sort function\ntempArray.sort(SortByBusinessNamee);\n    var sortedrespBusiness={};\nsortedrespBusiness.businessBbj=[];\nfor(var j=0;j<tempArray.length;j++)\n{\n  //alert(\"1\"+tempArray[j]);\n  var testtobj={\"BusinessDTO\":tempArray[j]};\n  sortedrespBusiness.businessBbj.push(testtobj);\n}\n\n  setSegDatasearchBusiness(sortedrespBusiness);\n    gblResponseBusinessSearchForSort=sortedrespBusiness;\n    \n  }\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

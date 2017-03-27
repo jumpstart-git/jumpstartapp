@@ -1,0 +1,23 @@
+{
+    "AS_Button_cb231915dbe44c6eb5422fe91909bba0": {
+        "id": "AS_Button_cb231915dbe44c6eb5422fe91909bba0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_1d7c5cd6522741c78ed25546d4c1a42b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {   \n    notificationServiceforVolunteer();\n }\nelse\n  {\n    BusinessNotificationService();\n  }",
+            "callbackType": null
+        }]
+    }
+}

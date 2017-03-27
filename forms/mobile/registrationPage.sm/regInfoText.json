@@ -1,0 +1,48 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd5ba67260c9430d95ffa9409e82e0dc",
+    "_text_": "Skilled Volunteers will be able to lend their technical know-how to help grow Indigenous Businesses",
+    "_width_": {
+        "type": "string",
+        "value": "65%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "regInfoText",
+    "info": null,
+    "isvisible": true,
+    "kuid": "886c6e58b3bd4e768aa49082f26d7a5f",
+    "name": "kony.ui.RichText",
+    "parent": "regInfoParent",
+    "pf": "registrationPage",
+    "wType": "RichText",
+    "widgetalignment": 5
+}

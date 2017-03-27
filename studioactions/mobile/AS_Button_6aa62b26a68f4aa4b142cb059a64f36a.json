@@ -1,0 +1,34 @@
+{
+    "AS_Button_6aa62b26a68f4aa4b142cb059a64f36a": {
+        "id": "AS_Button_6aa62b26a68f4aa4b142cb059a64f36a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_d15829871c6640c3b393a68a75cf1b61",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_9a2ec5aff765460a84df8658f7c5d4a9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.opportunityDetailsContainer.isVisible=false;\n",
+            "callbackType": null
+        }]
+    }
+}

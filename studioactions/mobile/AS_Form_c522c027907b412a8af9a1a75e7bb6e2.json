@@ -1,0 +1,27 @@
+{
+    "AS_Form_c522c027907b412a8af9a1a75e7bb6e2": {
+        "id": "AS_Form_c522c027907b412a8af9a1a75e7bb6e2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LogHoursForms",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bd9555694264a13a362dc9042246919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e2057e2eeed549a4a90cf5d9f62968cd",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loadHours",
+            "display": "loadHours",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

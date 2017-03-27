@@ -1,0 +1,27 @@
+{
+    "AS_Button_9292a5869b07452d9409477608e9427f": {
+        "id": "AS_Button_9292a5869b07452d9409477608e9427f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___9eab70e0ecfb44d093c180e10834a509",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createEndorsements",
+            "display": "createEndorsements",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__a8e5b3e6fe6e40e3a7a5b631bfc0c56b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//var gblSkillsName=mainPage.BusinessEndorsementModalContainer.SkillsListBoxContainer.VolunteerSkillsListbox.selectedKeyValue;\nvar skillsFromListBox=kony.store.getItem(\"skillsOfSelectedVolunteers\");\nvar skillsFromTextBox=mainPage.BusinessEndorsementModalContainer.SkillsTextBoxContainer.AnotherSkillInputField.text;\nvar msg=mainPage.BusinessEndorsementModalContainer.MessageContaioner.EndorsingMessageTextArea.text;\n\nif(((skillsFromListBox==\"Select\")||(skillsFromListBox==\"\")||(skillsFromListBox==\" \")||(skillsFromListBox==\"null\")||(skillsFromListBox==null))&&((skillsFromTextBox==null)||(skillsFromTextBox==\"null\")||(skillsFromTextBox==\"\")))\n  {\n     alert(\"Please enter at least one skill to endorse\");\n    return false;\n  }\n// if(msg==null||msg==\"null\"||msg==\"\")\n//   {  \n//        alert(\"Please enter message for endorsement\");\n//     return false;\n//   }\n if((skillsFromTextBox!=null)&&(skillsFromTextBox!=\"null\")&&(skillsFromTextBox!=\"\"))\n  {  \n       kony.store.setItem(\"skillsOfSelectedVolunteers\", skillsFromTextBox);\n  }\n \n  createEndorsements ();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

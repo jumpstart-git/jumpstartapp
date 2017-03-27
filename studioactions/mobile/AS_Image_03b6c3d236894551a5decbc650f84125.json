@@ -1,0 +1,33 @@
+{
+    "AS_Image_03b6c3d236894551a5decbc650f84125": {
+        "id": "AS_Image_03b6c3d236894551a5decbc650f84125",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a7f6ff9536094b48818307bcd1b5ec79",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openDialog",
+            "display": "openDialog",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

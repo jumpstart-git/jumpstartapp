@@ -1,0 +1,20 @@
+{
+    "AS_Button_f43836994bb94ce2bebfdf4b6cb90080": {
+        "id": "AS_Button_f43836994bb94ce2bebfdf4b6cb90080",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_221f01eeaa6a45acac46ae5a246fab4e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "hoursAgreeAndContinueUpdate",
+            "display": "hoursAgreeAndContinueUpdate",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

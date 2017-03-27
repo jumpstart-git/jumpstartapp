@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_92fa437a891d45e2ad91ed89ad0a0540": {
+        "id": "AS_FlexContainer_92fa437a891d45e2ad91ed89ad0a0540",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_12eca70e0af94d58b6f7d15ffa709e57",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "expandCollapseGroup",
+            "display": "expandCollapseGroup",
+            "inputparams": [{
+                "name": "group",
+                "value": "eventobject"
+            }, {
+                "name": "groupName",
+                "value": "\"acceptedRequests\""
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

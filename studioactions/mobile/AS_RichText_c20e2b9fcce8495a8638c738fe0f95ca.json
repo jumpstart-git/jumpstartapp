@@ -1,0 +1,29 @@
+{
+    "AS_RichText_c20e2b9fcce8495a8638c738fe0f95ca": {
+        "id": "AS_RichText_c20e2b9fcce8495a8638c738fe0f95ca",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_4b90777960b74bb39dd45587c88eada4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nvar seg=kony.store.getItem(\"segmentType\");\n\ntry{\n  if(seg!=\"null\"||seg!=null)\n  {\n    //alert(\"Inside Accepted Seg after first seg\");\n    if(seg==\"accepted\")\n      {\n       // alert(\"Inside Accepted Seg\");\n        callVolFromAcceptedSeg();\n      } \n    else if(seg==\"sent\")\n  {\n    \n   // {\n        //alert(\"Inside Accepted Seg\"); \n       callContactSentSeg();  \n    //}\n  }\n\n  }\n  \n}\n\n\ncatch(e)\n  {\n    alert(\"aError is\"+e);\n  }",
+            "callbackType": null
+        }]
+    }
+}

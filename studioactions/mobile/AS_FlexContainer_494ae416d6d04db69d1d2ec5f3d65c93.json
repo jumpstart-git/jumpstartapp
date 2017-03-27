@@ -1,0 +1,62 @@
+{
+    "AS_FlexContainer_494ae416d6d04db69d1d2ec5f3d65c93": {
+        "id": "AS_FlexContainer_494ae416d6d04db69d1d2ec5f3d65c93",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled___5a4a1ca0822145cda2c7ff4780a330ad",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "mainPage",
+            "widgetId": "mainPageModalsBackground",
+            "propertyName": "isVisible",
+            "propertyValue": "true",
+            "itemKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "widgetKUID": "2e0c5d04c1c248568cb840ae5243038f",
+            "isSkinProperty": false,
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "mainPage.mainPageModalsBackground"
+        }, {
+            "id": "STYLE_ACTION____9f0740741abd41928cc87687a7939572",
+            "type": "STYLE_ACTION",
+            "itemType": "FORM",
+            "itemId": "mainPage",
+            "widgetId": "mainPageModalsBackground",
+            "itemKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "widgetKUID": "2e0c5d04c1c248568cb840ae5243038f",
+            "animationObject": {
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                },
+                "backgroundColor": "7a7a7a00",
+                "opacity": 40
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "STYLE_ACTION____9f0740741abd41928cc87687a7939572",
+            "displayAnimationId": "STYLE_ACTION____9f0740741abd41928cc87687a7939572",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "mainPage.mainPageModalsBackground"
+        }]
+    }
+}

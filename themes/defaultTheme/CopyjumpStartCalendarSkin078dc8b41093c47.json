@@ -1,0 +1,78 @@
+{
+  "android": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "999999ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 1,
+  "desktopweb": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "font_color": "000000ff",
+  "font_name": "Helvetica",
+  "font_size": 150,
+  "ipad": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "iphone": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "kuid": "s008b9eae7ff47d79fe8f43a54a1368f",
+  "spaan": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spaandroidtablet": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spabb": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spaip": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spaipad": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spawindowstablet": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "spawinphone8": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "tabrcandroid": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "wType": "Calendar",
+  "watchos": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "windows8": {
+    "font_size": 150,
+    "isForked": false
+  },
+  "winphone8": {
+    "font_size": 150,
+    "isForked": false
+  }
+}

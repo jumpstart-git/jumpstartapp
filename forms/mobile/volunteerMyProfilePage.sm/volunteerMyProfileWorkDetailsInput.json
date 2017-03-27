@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_placeholder_": "",
+    "_skin_": "sd90d255e0b04c9288971f51515b7f79",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "closebuttontext": "",
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "focusskin": "sd90d255e0b04c9288971f51515b7f79",
+    "id": "volunteerMyProfileWorkDetailsInput",
+    "ide_onTextChange": "AS_TextArea_ac195e0dc95744119ba6b9195b097add",
+    "info": null,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "acd96b01372840179be68c463624934d",
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "parent": "volunteerMyProfileBody",
+    "pf": "volunteerMyProfilePage",
+    "securetextentry": false,
+    "showoprogressindicator": false,
+    "showprogressindicator": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextArea",
+    "zindex": 1
+}

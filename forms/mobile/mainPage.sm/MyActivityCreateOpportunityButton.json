@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "_text_": "Create a brief",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "id": "MyActivityCreateOpportunityButton",
+    "ide_onClick": "AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c1981bc9292840e296e1acbf12b93284",
+    "name": "kony.ui.Button",
+    "parent": "CreateOpportunityButtonContainer",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

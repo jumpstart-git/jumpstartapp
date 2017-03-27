@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "95dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s12b9bf5f6a544faa81d6581862eb01a",
+    "_text_": "<u>Refresh results</u>",
+    "_top_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "notificationPageRefreshRichText",
+    "ide_onTouchStart": "AS_RichText_580bb705ba4b48c78c357662dc41a0e2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "06998cf5c03447ab9344f50be6465fff",
+    "name": "kony.ui.RichText",
+    "parent": "notificationRefreshContainer",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

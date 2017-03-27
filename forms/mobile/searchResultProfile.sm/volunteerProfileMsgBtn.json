@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "23dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "41dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s485b61f643c40758e5f18b7e6232bc6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "29dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": true,
+    "id": "volunteerProfileMsgBtn",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f5a8d6c7d7cd46db9d794dd913cc26dd",
+    "name": "kony.ui.Button",
+    "parent": "volunteerProfileEmail",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

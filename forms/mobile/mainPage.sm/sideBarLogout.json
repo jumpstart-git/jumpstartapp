@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9d010eb66a242f2bee23ac9c2a21327",
+    "_text_": "<u>Logout</u>",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "sideBarLogout",
+    "ide_onTouchStart": "AS_RichText_39b50ab4a8304fbabfd147601b1115a7",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5481590d00c34c8aa6698000fbe915bc",
+    "name": "kony.ui.RichText",
+    "parent": "sideBarFooter",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

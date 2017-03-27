@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "see8cf1e2c4c41a7a4412bdf5bad0254",
+    "_text_": "+ Add Schedule",
+    "_top_": {
+        "type": "string",
+        "value": "83%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "48%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s1e6290dbc08485e94d38995692b1915",
+    "id": "CopyAddBtn0ecfcdaab0ea24b",
+    "ide_onClick": "AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "72204c7bab3d44f0852ed270f48b0636",
+    "name": "kony.ui.Button",
+    "parent": "CopyregScheduleDatesFlex0e378c84e573e49",
+    "pf": "volunteerMyProfilePage",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbc1c1c1bfd842698506fa91e8d1c9f3",
+    "_text_": "Corporate Volunteer Hours Report",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "se8f8eaa5dd749d0a525731af07febaa",
+    "id": "corporateBtn",
+    "ide_onClick": "AS_Button_818e7942c75141a6a70c4118e4c27791",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e54ce568b68047abb5c51355243db94d",
+    "name": "kony.ui.Button",
+    "parent": "corporateFlexContainer",
+    "pf": "ReportingPage",
+    "wType": "Button",
+    "zindex": 1
+}

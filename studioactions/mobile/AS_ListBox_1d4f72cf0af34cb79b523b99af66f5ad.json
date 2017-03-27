@@ -1,0 +1,24 @@
+{
+    "AS_ListBox_1d4f72cf0af34cb79b523b99af66f5ad": {
+        "id": "AS_ListBox_1d4f72cf0af34cb79b523b99af66f5ad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fabc69b6460d4f7c83db56efd9299c4e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " var gblSkillName=mainPage.BusinessEndorsementModalContainer.SkillsListBoxContainer.VolunteerSkillsListbox.selectedKeyValue;\n var skill=gblSkillName[1];\nvar value=gblSkillName[0];\n\nkony.store.setItem(\"skillsOfSelectedVolunteers\", skill);\n //alert(\"Skill Name\"+skill);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

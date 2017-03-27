@@ -1,0 +1,30 @@
+{
+    "AS_Button_ae82e0cd50844115b61bb74a4dfdaf5b": {
+        "id": "AS_Button_ae82e0cd50844115b61bb74a4dfdaf5b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b575e992e84946d1804da1b6453973be",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleVol",
+            "display": "toggleVol",
+            "inputparams": [{
+                "name": "eventobject",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

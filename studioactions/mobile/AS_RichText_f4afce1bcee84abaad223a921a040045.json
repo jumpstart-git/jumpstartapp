@@ -1,0 +1,60 @@
+{
+    "AS_RichText_f4afce1bcee84abaad223a921a040045": {
+        "id": "AS_RichText_f4afce1bcee84abaad223a921a040045",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dd5b833826e649fb9e33fb40aa661c50",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    BusinessExistingTaskTaskService ();\n    mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem(\"loginBusinessName\");\n    mainPage.startEngagementModalContainer.isVisible=true;\n    //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[\"01\",\"01\",\"2016\"]; \n    var d= new Date();\n    var day=d.getDate();\n    var month=d.getMonth();\n    month=month+1;\n    var year=d.getFullYear();\n    var todayDate=day+\"/\"+month+\"/\"+year;\n    kony.store.setItem(\"todayDate\", todayDate);\n    //end merin\n    mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year]; \n    mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];\n    var seg=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n    var segment=seg[0].segType;\n    kony.store.setItem(\"segmentType\", segment);\n    \n    }else\n    {\n      \n   mainPage.BusinessRequestTaskDetailsModal.isVisible=true;\n      \n      mainPage.acceptTaskDetailsModalContainer.acceptTaskDetailsModalFooter.CopystartEngagement0e3cd864659974b.isVisible=true;\n    var seg2=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n    var segmentType1=seg2[0].segType;\n    kony.store.setItem(\"segmentType\", segmentType1);\n      \n      \n      //write salma's code\n    }\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___3084426548c34d2ea6a76049c908492f",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForBusStartEngaeSent",
+            "display": "saveReqForBusStartEngaeSent",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "ADD_SNIPPET__5eddbd3a2c114e388712952c677bda8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "getNewTaskDetailsForVol();",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__aa0130f0acec4469b75c0984817f5a8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    \n    NewTaskDetailsForVolunteer();\n  }\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__82c4781a897c442d8f993b31a5e4633f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var segItems=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n//alert(JSON.stringify(segItems));\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\"){\n  saveBusIdForViewProfile99();\n}\nelse{\n  saveBusIdForVolViewProfileAcceptedSeg();\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

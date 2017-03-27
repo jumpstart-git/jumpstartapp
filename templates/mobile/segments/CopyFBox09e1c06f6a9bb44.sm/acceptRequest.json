@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s88f3cdda1fa40468afffb644eede5c1",
+    "_text_": "RichText",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "34%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "acceptRequest",
+    "ide_onClick": "AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b",
+    "info": null,
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "ab4ec1093e5b4efaab0fe86d1460a5b8",
+    "name": "kony.ui.RichText",
+    "parent": "sentRequestsBottom",
+    "pf": "CopyFBox09e1c06f6a9bb44",
+    "wType": "RichText",
+    "watchos": {
+        "render": false
+    },
+    "widgetalignment": 5,
+    "windows10": {
+        "render": false
+    },
+    "winphone10": {
+        "render": false
+    },
+    "zindex": 1
+}

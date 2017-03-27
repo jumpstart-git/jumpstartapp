@@ -1,0 +1,70 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s874d1e03a8a4614bd35814f9154730e",
+    "_top_": {
+        "type": "string",
+        "value": "55%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "volunteerFlex",
+        "BusinessContainer",
+        "opportunitiesFlex",
+        "sortBtn"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "focusskin": "s54f8950bcc14148b828dae15155f58f",
+    "horizontalscrollindicator": true,
+    "id": "searchDataTypeFlex1",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d310bdd091334841b64e318ce902b210",
+    "layouttype": 2,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "searchPageUpFlex",
+    "pf": "searchPage",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

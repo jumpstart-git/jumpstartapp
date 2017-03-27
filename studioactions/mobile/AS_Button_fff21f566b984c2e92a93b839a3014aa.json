@@ -1,0 +1,36 @@
+{
+    "AS_Button_fff21f566b984c2e92a93b839a3014aa": {
+        "id": "AS_Button_fff21f566b984c2e92a93b839a3014aa",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_985df328fd544d11b4673f041cb1dc50",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestVolunteer",
+            "display": "requestVolunteer",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_8922760de3774a10876c763f843bdf95",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if( kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    //alert(\"he is business\");\nvar busMsg=searchResultProfile.volunteerRequestContainer.requestAVolunteerModal.requestAVolunteerBody.requestAVolunteerMessageInput.text;\nif(busMsg==\"null\"||busMsg==null||busMsg==\"\") \n  {\n    alert(\"Please enter a message\");\n  }\n    else{\n      requestVolunteer();\n    }\n  }   \n//   }else\n//     {\n      \n//    //   alert(\"he is volunteer\");\n      \n//       requestVolunteerByBusiness1();\n//     }",
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_73d9ccce40d34c338d549c18e7b08058",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "searchPage",
+            "formKUID": "f388a97e38204f59abf2ecfb0e7f5d27",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }]
+    }
+}

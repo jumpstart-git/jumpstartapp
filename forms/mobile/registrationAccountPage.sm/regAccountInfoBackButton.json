@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6a00f099b7c4972beb5e5c11e232e21",
+    "_text_": "Back",
+    "_width_": {
+        "type": "string",
+        "value": "48%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6a00f099b7c4972beb5e5c11e232e21",
+    "id": "regAccountInfoBackButton",
+    "ide_onClick": "AS_Button_f27476381d2c47589514da1ebb5535c3",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c7638b7faf274a96b97bdfa7608af413",
+    "name": "kony.ui.Button",
+    "parent": "regAccountInfoFooter",
+    "pf": "registrationAccountPage",
+    "wType": "Button"
+}

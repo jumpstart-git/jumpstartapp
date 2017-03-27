@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s626ed812ed44ef999b205c439638199",
+    "_text_": "Contact Details",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "ContactDetailsHdr",
+    "info": null,
+    "isvisible": true,
+    "kuid": "38cdf15319954590822a8f861ef4bd92",
+    "name": "kony.ui.RichText",
+    "parent": "volunteerProfileContactHeader",
+    "pf": "searchResultProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

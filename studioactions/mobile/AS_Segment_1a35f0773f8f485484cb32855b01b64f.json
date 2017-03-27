@@ -1,0 +1,36 @@
+{
+    "AS_Segment_1a35f0773f8f485484cb32855b01b64f": {
+        "id": "AS_Segment_1a35f0773f8f485484cb32855b01b64f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___66c91a6795a44bdcaa94b45add5833a3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeSkillForVolUpdate",
+            "display": "removeSkillForVolUpdate",
+            "inputparams": [{
+                "name": "rowObject",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

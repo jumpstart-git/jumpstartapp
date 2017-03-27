@@ -1,0 +1,40 @@
+{
+    "AS_RichText_1838661b13654cc09730234fe8698e3e": {
+        "id": "AS_RichText_1838661b13654cc09730234fe8698e3e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_d1e9c67d8d6844cd80ddd9aae268ddde",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_3295f830eec64165a935f68b85937759",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.show();\nmainPage.cancelRequestModalContainer.isVisible=false;\nmainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text=\"\";\n\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_Button_dd04d69205504c73bb854cc564373e7a": {
+        "id": "AS_Button_dd04d69205504c73bb854cc564373e7a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_eda403cde3ab4487864bc47845ac292e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n  if(gblIsOpp==true){\n   \n    searchResultProfile.opprtunitiesReadOnlyContainer.isVisible=false;\n     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text = \"\";\n  \n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text=\"\";\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text=\"\";\n searchResultProfile.destroy();\n    searchPage.show();\n  }\nelse{\n  searchResultProfile.opprtunitiesReadOnlyContainer.isVisible=false;\n  var tempVal=[];\n  var tempArray=[];\n          tempArray.push(\"\");\n          tempArray.push(\"Select\");\n    tempVal.push(tempArray);\n  \n  \n  //end\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.masterData=tempVal;\n  \n   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text = \"\";\n  \n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text=\"\";\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text=\"\";\n}",
+            "callbackType": null
+        }]
+    }
+}

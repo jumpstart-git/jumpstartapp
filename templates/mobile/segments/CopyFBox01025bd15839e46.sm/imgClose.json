@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "73dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
+    "_src_": "imagedrag.png",
+    "_top_": {
+        "type": "string",
+        "value": "6dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "CopyFBox01025bd15839e46",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "imgClose",
+    "imagescalemode": 1,
+    "info": null,
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "909dda308da14109acaf218487b4f7c9",
+    "name": "kony.ui.Image2",
+    "parent": "CopyFBox01025bd15839e46",
+    "pf": "CopyFBox01025bd15839e46",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "winphone8": {
+        "psp": {
+            "enableCache": true
+        }
+    },
+    "zindex": 1
+}

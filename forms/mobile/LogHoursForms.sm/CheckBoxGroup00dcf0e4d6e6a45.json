@@ -1,0 +1,77 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizCheckBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s619df9e9a394b358362e6448a82cdc0",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "id": "CheckBoxGroup00dcf0e4d6e6a45",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "viewType": 4
+        }
+    },
+    "iphone": {
+        "psp": {
+            "viewType": 4
+        }
+    },
+    "isvisible": true,
+    "itemorientation": "horizontal",
+    "kuid": "47ebe8182e7c41a785755af9cbe3b8ba",
+    "masterdata": [
+        [
+            "cbg1",
+            "Non-working hours"
+        ]
+    ],
+    "name": "kony.ui.CheckBoxGroup",
+    "orientation": "horizontal",
+    "parent": "bodyNonWorkingHoursContainer",
+    "pf": "LogHoursForms",
+    "selectedkey": null,
+    "selectedkeys": [
+        "cbg1"
+    ],
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        [
+            "cbg1",
+            "Non-working hours"
+        ]
+    ],
+    "size": 18,
+    "viewtype": 0,
+    "wType": "CheckBoxGroup",
+    "widgetalignment": 5,
+    "zindex": 1
+}

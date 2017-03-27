@@ -1,0 +1,33 @@
+{
+    "AS_TextField_5659650338ed492494b9f858ceb83373": {
+        "id": "AS_TextField_5659650338ed492494b9f858ceb83373",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___05d5c48c6e2741019ee0ddde7d9e2a9d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRegFieldUpdateForUpdation",
+            "display": "onRegFieldUpdateForUpdation",
+            "inputparams": [{
+                "name": "fieldEdited",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

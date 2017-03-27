@@ -1,0 +1,27 @@
+{
+    "AS_Button_47f078e3a22f4674b7e9178a14c00f23": {
+        "id": "AS_Button_47f078e3a22f4674b7e9178a14c00f23",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a02ccb867f5d42a5aeff0179d777a402",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addNewSkillUpdateee",
+            "display": "addNewSkillUpdateee",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

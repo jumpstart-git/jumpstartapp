@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6a00f099b7c4972beb5e5c11e232e21",
+    "_text_": "Cancel",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6a00f099b7c4972beb5e5c11e232e21",
+    "id": "opportunitiesCancelBtn",
+    "ide_onClick": "AS_Button_d481b806b36a447bbe557989bb1baadc",
+    "info": null,
+    "iphone": {},
+    "isvisible": true,
+    "kuid": "7ed6839ef14f4fd0b43eace33d982e00",
+    "name": "kony.ui.Button",
+    "parent": "opportunitiesFooter",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

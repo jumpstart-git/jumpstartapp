@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "113dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb0f9db1f9f344e3a0ad7f13502b8368",
+    "_text_": "Cancel\n",
+    "_top_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "CancelRichText",
+    "ide_onTouchStart": "AS_RichText_7f64d44a877a4b07adafaf17065d9086",
+    "info": null,
+    "isvisible": true,
+    "kuid": "dac14d62d5534b08ac3834470b060826",
+    "name": "kony.ui.RichText",
+    "parent": "ChangePasswordFooterContainer",
+    "pf": "BusinessProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s551f4701a3a47e4a4933a9c614c409a",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "backBtn",
+    "ide_onClick": "AS_Button_24626042ea3c4c8c8cb8dcee6fe73a5a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "34e46b5bdc5c4127a3821c7c70c7edd3",
+    "name": "kony.ui.Button",
+    "parent": "BtnFlex",
+    "pf": "resetPasswordForm",
+    "wType": "Button",
+    "zindex": 1
+}

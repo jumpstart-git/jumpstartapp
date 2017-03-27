@@ -1,0 +1,24 @@
+{
+    "AS_Form_d89f486132b54c7e9dc2b7a98f1b861f": {
+        "id": "AS_Form_d89f486132b54c7e9dc2b7a98f1b861f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationProfessionalPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ba74c893fd5a445eb219fe3bef70986f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1fafbe1ff07e4b5cb513f0d3b3b96328",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "registrationProfessionalPage.regSkillsSegment.widgetDataMap={\n\n            \n          \n            \"regSkillItem\": \"regSkillItem\",\n           \"imgClose\": \"imgClose\"\n          \n\n\n        };\n//alert(volunteerRegObject.skillsArray.length);\nif(volunteerRegObject.skillsArray.length==\"0.0\")\n  {\n    //alert(\"no val\");\n\nregistrationProfessionalPage.regSkillsSegment.removeAll();\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

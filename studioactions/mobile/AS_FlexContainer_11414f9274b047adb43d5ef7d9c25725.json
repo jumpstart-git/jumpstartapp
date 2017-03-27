@@ -1,0 +1,32 @@
+{
+    "AS_FlexContainer_11414f9274b047adb43d5ef7d9c25725": {
+        "id": "AS_FlexContainer_11414f9274b047adb43d5ef7d9c25725",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_b1727c0a0a354e88a669e71159b646c4",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "expandCollapseGroup",
+            "display": "expandCollapseGroup",
+            "inputparams": [{
+                "name": "group",
+                "value": " eventobject"
+            }, {
+                "name": "groupName",
+                "value": " \"myOpenTasks\""
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

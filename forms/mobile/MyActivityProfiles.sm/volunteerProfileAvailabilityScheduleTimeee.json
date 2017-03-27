@@ -1,0 +1,48 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se5cbcbca3934e83b633ae9870bba0f6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "volunteerProfileAvailabilityScheduleTimeee",
+    "info": null,
+    "isvisible": false,
+    "kuid": "fd0e90a0045240b9a29be0be9399f719",
+    "name": "kony.ui.RichText",
+    "parent": "volunteerProfileAvailabilityScheduleParentt",
+    "pf": "MyActivityProfiles",
+    "wType": "RichText",
+    "widgetalignment": 5
+}

@@ -1,0 +1,51 @@
+{
+    "AS_RichText_95a6e28e049a4bda931f0b230a4a7128": {
+        "id": "AS_RichText_95a6e28e049a4bda931f0b230a4a7128",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox09e1c06f6a9bb44",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1a06c929fc654a2cba76292bf1d59601"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e202844fd19d44d0b5dce1c92d73188b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.declineRequestModalContainer.isVisible=true;\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___263ceedd9ad3438a9a19221fbb60f087",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForBusDecline",
+            "display": "saveReqForBusDecline",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___288b16b0caff48b0ab7371309b2c0d16",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveDeclineVolReqId",
+            "display": "saveDeclineVolReqId",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

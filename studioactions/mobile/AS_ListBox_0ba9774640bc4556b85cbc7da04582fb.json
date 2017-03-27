@@ -1,0 +1,30 @@
+{
+    "AS_ListBox_0ba9774640bc4556b85cbc7da04582fb": {
+        "id": "AS_ListBox_0ba9774640bc4556b85cbc7da04582fb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___c5c50786950c4590ba5b7e4993fc484c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRegFieldUpdateForUpdation",
+            "display": "onRegFieldUpdateForUpdation",
+            "inputparams": [{
+                "name": "fieldEdited",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

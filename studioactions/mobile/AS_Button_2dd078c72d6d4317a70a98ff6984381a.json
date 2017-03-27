@@ -1,0 +1,59 @@
+{
+    "AS_Button_2dd078c72d6d4317a70a98ff6984381a": {
+        "id": "AS_Button_2dd078c72d6d4317a70a98ff6984381a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_69039044e9e542dda64ea828c76ebbed",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Start Engagement",
+            "yesLabel": "OK",
+            "alertMessage": "Your task details have been sent",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_0f9c44448d5b442aa096faf92afa47d6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_681f571d096c47aab2ca1c5e5017778b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousTaskDetails",
+            "display": "indeginousTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_26f5010c35d84b249890256c7cf97b68",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_0a82f3e625ab413498e1b8c88cfa3e54",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//indeginousTaskDetails();\nvar title=mainPage.CreateOpportunityContainer.BodyContainer.opportunityTitleInputContainer.text;\nvar details=mainPage.CreateOpportunityContainer.BodyContainer.opportunityDetailsInputContainer.text;\nvar endDate=mainPage.CreateOpportunityContainer.BodyContainer.opportunityEndateCalendarInput.formattedDate;\nvar startDate=mainPage.CreateOpportunityContainer.BodyContainer.opportunityStartDateCalendarInput.formattedDate;\nvar hours=mainPage.CreateOpportunityContainer.BodyContainer.hoursInput.text;\nvar skills=mainPage.CreateOpportunityContainer.BodyContainer.skillsInput.text;\nvar endDate1=kony.store.getItem(\"todayDate\");//   give todays's date'\nvar startdate1=mainPage.CreateOpportunityContainer.BodyContainer.opportunityStartDateCalendarInput.formattedDate;\nvar isValidEndDate=validateDate(startDate, endDate);\nvar isValidStartEnd=validateStartDate(startdate1, endDate1);\n\nif(title===null||title===\"\"||title===\"null\")\n{\n  alert(\"Please enter a task title\");\n}\nelse if(details===null||details===\"\"||details===\"null\")\n  {\n    alert(\"Please enter task details\");\n  \n}\nelse if(skills===null||skills===\"\"||skills===\"null\")\n  {\n    alert(\"Please enter required skills\");\n  \n}\nelse if(hours==null||hours==\"null\"||hours==\"\"){\n   alert(\"Please enter hours required to complete the task\");\n}\n\nelse{\n  //alert(\"isValidStartEnd\"+isValidStartEnd);\nif (isValidStartEnd===false) {\n    validationAlert(\"Please enter today/future date for this engagement\");\n}\nelse  if (isValidEndDate===false) {\n      validationAlert(\"End date should be a future date\");\n    }\n  else{\n      //alert(\"done\");\n   createOpportunity ();\n  }\n}\n\n  \n\n",
+            "callbackType": null
+        }]
+    }
+}

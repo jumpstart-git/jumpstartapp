@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sab20f736431451d9763561d8f41dfeb",
+    "_text_": "Content Marketing",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "skill1",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "b6186b7d2c9c4412be0b412b28da24be",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "skillsList",
+    "pf": "userInfoPage",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1337f6119344fc899974c106e2d654f",
+    "_text_": "Your registration is almost complete",
+    "_top_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "registrationDonePageThankYou",
+    "info": null,
+    "isvisible": true,
+    "kuid": "99c5fbf7a20f48089d6ccb3f7bb1d2e8",
+    "name": "kony.ui.RichText",
+    "parent": "registrationDonePageHeader",
+    "pf": "registrationDonePage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

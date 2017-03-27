@@ -1,0 +1,23 @@
+{
+    "AS_RichText_1d4b3b783ae1422280096ad628d8e9a8": {
+        "id": "AS_RichText_1d4b3b783ae1422280096ad628d8e9a8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a2e76bad5ff842f3ad228ffe4ad95783",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nvar seg=kony.store.getItem(\"segmentType\");\n\ntry{\n  if(seg!=\"null\"||seg!=null)\n  {\n    //alert(\"Inside Accepted Seg after first seg\");\n    if(seg==\"accepted\")\n      {\n       // alert(\"Inside Accepted Seg\");\n        callVolFromAcceptedSeg();\n      } \n    else if(seg==\"sent\")\n  {\n    \n   // {\n        //alert(\"Inside Accepted Seg\"); \n       callContactSentSeg();  \n    //}\n  }\n\n  }\n  \n}\n\n\ncatch(e)\n  {\n    alert(\"aError is\"+e);\n  }",
+            "callbackType": null
+        }]
+    }
+}

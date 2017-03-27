@@ -1,0 +1,24 @@
+{
+    "AS_Button_4ff3c85804b5438b9b0253f363f21b6f": {
+        "id": "AS_Button_4ff3c85804b5438b9b0253f363f21b6f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5ec62697970b45499fcae60e22805f25",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

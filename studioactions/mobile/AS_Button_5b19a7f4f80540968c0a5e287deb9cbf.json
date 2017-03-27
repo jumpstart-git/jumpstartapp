@@ -1,0 +1,23 @@
+{
+    "AS_Button_5b19a7f4f80540968c0a5e287deb9cbf": {
+        "id": "AS_Button_5b19a7f4f80540968c0a5e287deb9cbf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_94cc513a06734f16a6ab1bcc6a006c37",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.volunteerProfileContainer.isVisible=false;\nsearchResultProfile.destroy();\nsearchPage.show();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "AS_Button_2bc0163614904410970d9ac5d1450d1e": {
+        "id": "AS_Button_2bc0163614904410970d9ac5d1450d1e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___3cbb5b0419bc464690fc202f18179fbf",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveClosedTaskDetails",
+            "display": "saveClosedTaskDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

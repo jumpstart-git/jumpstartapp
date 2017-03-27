@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_85270cb1dc6c486fbd228b2cc100f6eb": {
+        "id": "AS_FlexContainer_85270cb1dc6c486fbd228b2cc100f6eb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_ac1489a7fb83467b942eb04802b7ec6f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "volunteerPhoneNumber();",
+            "callbackType": null
+        }]
+    }
+}

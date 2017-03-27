@@ -1,0 +1,17 @@
+{
+    "AS_Button_7d08579f0c124d6a9d244a65dab2e06e": {
+        "id": "AS_Button_7d08579f0c124d6a9d244a65dab2e06e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8ff9e03592804dfa88f793f46756c223",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.businessProfileContainer.isVisible=false;\nsearchResultProfile.destroy();\nsearchPage.show();",
+            "callbackType": null
+        }]
+    }
+}

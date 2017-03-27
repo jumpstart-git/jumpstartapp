@@ -1,0 +1,28 @@
+{
+    "AS_Button_5a822dd9fa4343f19cd554abbbb01fb3": {
+        "id": "AS_Button_5a822dd9fa4343f19cd554abbbb01fb3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_9b98dd88320148d983107706a8b6601f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_0d542b998dc54893b0b3c4b8fbd5d355",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.startEngagementModalContainer.isVisible=false;\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text=\"\";\n",
+            "callbackType": null
+        }]
+    }
+}

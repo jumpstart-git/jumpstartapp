@@ -1,0 +1,46 @@
+{
+    "AS_Segment_9bdb3704db05419d913b9e86104e6dea": {
+        "id": "AS_Segment_9bdb3704db05419d913b9e86104e6dea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___84e8d1740b9043bdb4ef3d51a7c14e57",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showBusinessOpenTaskDetails",
+            "display": "showBusinessOpenTaskDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__43a2e515a8d44630878cd91b5a7f0b8e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// mainPage.mainPageBody.mainPageContentParent.myActivity.isVisible=false;\n// mainPage.acceptTaskDetailsModalContainer.isVisible=true;\n// //alert(\"inside code snippet 1\");\n// getOpenTaskDetailsForVol9();\n \n",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__9177678d2609498b8895c6ceb283fe0f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\nshowBusinessOpenTaskDetails();\n    saveVolForVolViewProfileOpenTasks();\n     var busSegOpen=mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems;\n   // alert(\"busSegOpen\"+JSON.stringify(busSegOpen));\n    var segmentTypeMyActivity=busSegOpen[0].segType;\n   // alert(segmentTypeMyActivity);\n  kony.store.setItem(\"segmentType\", segmentTypeMyActivity);\n  \n  \n    \n  }else\n    {\n      mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=true;\n      saveBusIdForViewProfileOpenTask();\n      showVolOpenTaskDetails();\n      openVoltaskRowDetails=mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems;\n      var segmentTypeMyActivityVol=openVoltaskRowDetails[0].segType;\n      //alert(segmentTypeMyActivityVol);\n      hoursComplete=openVoltaskRowDetails[0].hoursArray;\n      gbltotalHours=openVoltaskRowDetails[0].totHours;\n      gblOutBus=openVoltaskRowDetails[0].outHours;\n      gblBusHours=openVoltaskRowDetails[0].busHours;\n      \n      startTimeOfTask=openVoltaskRowDetails[0].startDate;\n       endTimeOfTask=openVoltaskRowDetails[0].endDate;\n\n\n\n//alert(\"busSegOpen\"+JSON.stringify(openVoltaskRowDetails));\n      \n     // alert(\"row\"+gblBusHours);\n      kony.store.setItem(\"segmentType\", segmentTypeMyActivityVol);\n     \n      //calllContactfromOpenTaskVolunteer();\n    }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

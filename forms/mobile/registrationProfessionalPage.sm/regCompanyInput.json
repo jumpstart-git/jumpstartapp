@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8ce730d49f149fd926d85741a5899f7",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "registrationProfessionalPage",
+        "ispercent": "",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "disabledSkins": {},
+    "focusskin": "s925a8140de44495a156d57048688d0c",
+    "groupcells": false,
+    "id": "regCompanyInput",
+    "ide_onSelection": "AS_ListBox_94e2428d02de4f88943f8ba16108872e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "dafcda59ea4f4c2dbe94f89dcd96d0e0",
+    "masterdata": [
+        [
+            "Select",
+            "Select from drop down menu"
+        ],
+        [
+            "CBA",
+            "CBA"
+        ],
+        [
+            "HPE",
+            "HPE"
+        ],
+        [
+            "SupplyNation",
+            "SupplyNation"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "regProfessionalInfoContainer",
+    "pf": "registrationProfessionalPage",
+    "selectedkey": "Select",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "Select",
+        "Select from drop down menu"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

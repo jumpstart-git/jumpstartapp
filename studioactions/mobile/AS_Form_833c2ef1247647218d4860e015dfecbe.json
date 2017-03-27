@@ -1,0 +1,33 @@
+{
+    "AS_Form_833c2ef1247647218d4860e015dfecbe": {
+        "id": "AS_Form_833c2ef1247647218d4860e015dfecbe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___56750765113f436a8f58011642f1405a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "populateUpdatePage",
+            "display": "populateUpdatePage",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__a88d99572dbe4482a977b304c81034ae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\n\nvolunteerMyProfilePage.volunteerMyProfileSkillSegment.widgetDataMap={\n  \n  \"volunteerMyProfileSkillItem\":\"volunteerMyProfileSkillItem\",\n  \"imgClose\":\"imgClose\"\n  \n  \n  \n};\n\n\npopulateUpdatePage();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

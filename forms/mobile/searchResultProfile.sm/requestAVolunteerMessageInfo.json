@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s85f335e71ce47e28b10f02d58049005",
+    "_text_": "A request notification will be sent to the volunteer.",
+    "_top_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "requestAVolunteerMessageInfo",
+    "info": null,
+    "isvisible": true,
+    "kuid": "3657bc2c89634e8db18e02a7ead3dcee",
+    "name": "kony.ui.RichText",
+    "parent": "requestAVolunteerBody",
+    "pf": "searchResultProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,30 @@
+{
+    "AS_RichText_ebb97dc3961c4b1abaff09338d24c4a3": {
+        "id": "AS_RichText_ebb97dc3961c4b1abaff09338d24c4a3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c303f04850694b8696d4e7d45e9fb6bd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.cancelRequestModalContainer.isVisible=false;\n//mainPage.show();\nmainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text=\"Good day!I have received your request but unfortunately I have to decline due to other commitments that may impact my availability..\";\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

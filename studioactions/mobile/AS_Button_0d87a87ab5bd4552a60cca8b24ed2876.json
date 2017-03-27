@@ -1,0 +1,33 @@
+{
+    "AS_Button_0d87a87ab5bd4552a60cca8b24ed2876": {
+        "id": "AS_Button_0d87a87ab5bd4552a60cca8b24ed2876",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bb41f0d6397c49909deed2bf10d7e34d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestVolunteerByBusiness1",
+            "display": "requestVolunteerByBusiness1",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__9384d0d4003f47f8b52b1cbff4c26633",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var msg=searchResultProfile.volunteerRequestContainer.requestToVolunteerModal.requestToVolunteerBody.requestRoleInput.text;\n//alert(msg);\nif(msg==\"null\"||msg==null||msg==\"\")\n  {\n    alert(\"Please enter a message\");\n  }\nelse{\n   requestVolunteerByBusiness1();\n}\n// searchResultProfile.requestToVolunteerModal.isVisible=false;\n// searchPage.show(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

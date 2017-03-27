@@ -1,0 +1,24 @@
+{
+    "AS_Button_7427b749460c4190b7d37fc9de5e757e": {
+        "id": "AS_Button_7427b749460c4190b7d37fc9de5e757e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ReportingPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4b8e52608c448b0b84a126b8f09b8d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9bbce59e45c242209d520ea1bfe40525",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//generateReportVolunteerService();\nvar emailID=ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text;\nvar emailFormat = /^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$/;\n//var array=emailID.split(\",\");\n//alert(emailID);\nif(emailID ===null|| emailID ===\"\"|| emailID ===\"null\")\n{\n  alert(\"Please enter email Id\");\n}else{\n  var sendRequest = true;\n  var array=emailID.split(\",\");\n   for (i = 0; i < array.length; i++) { \n    var email = array[i] ;\n     email=email.trim();\n     \n     if (!emailFormat.test(email)){\n       alert(\"Please enter valid email Ids\");\n       sendRequest = false;\n     }\n                }\n   \n   if (sendRequest) {\n    //return false;\n   if((kony.store.getItem(\"isBusOrVol\")==\"volunteer\")&&(kony.store.getItem(\"adminVal\")==\"v\"))\n       {\n          generateReportVolunteerService();\n       }else if((kony.store.getItem(\"isBusOrVol\")==\"business\")&&(kony.store.getItem(\"adminVal\")==\"i\"))\n         {\n            validateReportIndBusCode();\n         }else\n           {\n             validateReportSupplyNationBusCode();\n           }\n    \n    \n     //alert(\"Inside valid email\");\n  }\n}\n  \n//start merin\n\n\n//end merin\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

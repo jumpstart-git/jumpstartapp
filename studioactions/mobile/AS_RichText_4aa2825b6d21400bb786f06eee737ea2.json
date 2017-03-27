@@ -1,0 +1,45 @@
+{
+    "AS_RichText_4aa2825b6d21400bb786f06eee737ea2": {
+        "id": "AS_RichText_4aa2825b6d21400bb786f06eee737ea2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox0788b6c38d49d4b",
+            "type": "templates",
+            "platform": "",
+            "KUID": "f56d09074d7541c1a528a2db3f8d5309"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___6857d9534a024c4491c5324c8b044366",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveClosedTaskDetails",
+            "display": "saveClosedTaskDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___d116530bd0464ba981e9244a2f6b7c6c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "BusinessMarkAsComplete",
+            "display": "BusinessMarkAsComplete",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

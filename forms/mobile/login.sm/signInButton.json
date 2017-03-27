@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Login",
+    "_top_": {
+        "type": "string",
+        "value": "6dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "id": "signInButton",
+    "ide_onClick": "AS_Button_c55a88368de54c408d5a02eef07ad463",
+    "info": null,
+    "iphone": {},
+    "isvisible": true,
+    "kuid": "3aabf36653c140978914360a5622b114",
+    "name": "kony.ui.Button",
+    "parent": "loginBody",
+    "pf": "login",
+    "wType": "Button",
+    "zindex": 1
+}

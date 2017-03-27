@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "17.03%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbbe2c3d9df54e2b9eaf39bcab88d7be",
+    "_text_": "<u>Resend code to your email</u>\n",
+    "_top_": {
+        "type": "string",
+        "value": "160dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "resentCode",
+    "ide_onClick": "AS_RichText_6a82d8aa4fcc448fb084c717b0967987",
+    "ide_onTouchStart": "AS_RichText_ba3a520a0bd6464caf7feb4297050d6d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6625b48ca8a24b1587a2638b53572d6e",
+    "name": "kony.ui.RichText",
+    "parent": "validateCodeBody",
+    "pf": "login",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

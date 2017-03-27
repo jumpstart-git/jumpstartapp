@@ -1,0 +1,25 @@
+{
+    "AS_Button_dc8aa82b60d146248de333630a31e677": {
+        "id": "AS_Button_dc8aa82b60d146248de333630a31e677",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_5b83492d35fc41dba3b02d8fa0ef6f82",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_2da0878722bd4b788da12f3a2d3b95ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.acceptTaskDetailsModalContainer.isVisible=false;\n//mainPage.show(); ",
+            "callbackType": null
+        }]
+    }
+}

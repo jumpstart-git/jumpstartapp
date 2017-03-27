@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Decline request",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "declineRequestYes",
+    "ide_onClick": "AS_Button_e53dc5e292c44b34a1ffdfbdf33fd8d8",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7808b242dcf54c79ac518e9d8c8b69b7",
+    "name": "kony.ui.Button",
+    "parent": "declineRequestModalFooter",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

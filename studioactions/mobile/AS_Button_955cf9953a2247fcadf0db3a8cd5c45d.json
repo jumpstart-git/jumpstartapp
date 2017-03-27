@@ -1,0 +1,29 @@
+{
+    "AS_Button_955cf9953a2247fcadf0db3a8cd5c45d": {
+        "id": "AS_Button_955cf9953a2247fcadf0db3a8cd5c45d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "EXIT_APP__bd68516a1d01404dbd6029c44efb6cd7",
+            "type": "EXIT_APP",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

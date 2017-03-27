@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "120dp"
+    },
+    "_margin_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_placeholder_": "",
+    "_skin_": "sd90d255e0b04c9288971f51515b7f79",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "11dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "closebuttontext": "",
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "focusskin": "sd90d255e0b04c9288971f51515b7f79",
+    "id": "ReceipientsTxtArea",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "keyboardActionLabel": 2
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 2,
+    "keyboardstyle": "chatpad",
+    "keyboardtype": "A",
+    "kuid": "04faf66c55b4482d8690c2e1e00c1623",
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "parent": "ReportingdataFlex",
+    "pf": "ReportingPage",
+    "securetextentry": false,
+    "showoprogressindicator": false,
+    "showprogressindicator": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextArea",
+    "zindex": 1
+}

@@ -1,0 +1,83 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s97910cae92b4445b8dbfcfe19b4547c",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "children": [
+        "TaskTitleLabel",
+        "TitleInputField",
+        "TaskDetailsLabel",
+        "TaskDetailsTextArea",
+        "SkillsLabel",
+        "SkillsInput",
+        "HoursRequiredLabel",
+        "DuratationOfEngagementInput",
+        "CommentsLabel",
+        "CommentsTextArea",
+        "StartDateLabel",
+        "StartDateCalendarInput",
+        "EndDateLabel",
+        "EndDateCalendarInput"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "startEngagementBodyContainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "365884cf0ed344908aaf683acac487e6",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "startEngagementModalContainer",
+    "pf": "searchResultProfile",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

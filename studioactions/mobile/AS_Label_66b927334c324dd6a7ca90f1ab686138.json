@@ -1,0 +1,29 @@
+{
+    "AS_Label_66b927334c324dd6a7ca90f1ab686138": {
+        "id": "AS_Label_66b927334c324dd6a7ca90f1ab686138",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchEnd_607581f6336f4e1f9f437c46d3161c5c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navigateToPage",
+            "display": "navigateToPage",
+            "inputparams": [{
+                "name": "page",
+                "value": " eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

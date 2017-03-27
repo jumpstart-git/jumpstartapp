@@ -1,0 +1,30 @@
+{
+    "AS_RichText_4b1b3be72301418cbb25e7036fb48272": {
+        "id": "AS_RichText_4b1b3be72301418cbb25e7036fb48272",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__29f007572bca43c6931075758c5783a0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nalert(\"clikd\");\npop1.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

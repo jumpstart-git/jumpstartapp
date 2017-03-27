@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1f55be90339499385207179b355c79e",
+    "_top_": {
+        "type": "string",
+        "value": "44dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "dropDownImage": "listbox.png"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "mainPage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "disabledSkins": {},
+    "dropdownimage": "",
+    "focusskin": "sfa8f2f270c94045b0710369efaa9dcf",
+    "groupcells": false,
+    "id": "VolunteerSkillsListbox",
+    "ide_onSelection": "AS_ListBox_1d4f72cf0af34cb79b523b99af66f5ad",
+    "info": null,
+    "iphone": {
+        "dropDownImage": "listbox.png"
+    },
+    "isvisible": true,
+    "kuid": "980490814e98439189dc075d7c7b4c2e",
+    "masterdata": [
+        [
+            "lb1",
+            "Select"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "SkillsListBoxContainer",
+    "pf": "mainPage",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

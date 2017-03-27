@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizCall",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "83.34%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "295dp"
+    },
+    "_margin_": [
+        3,
+        3,
+        3,
+        3
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5df98dd6d094418a58eb14dd27f22b6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "7.81%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "render": false
+    },
+    "displaytext": true,
+    "id": "phoneCallContact",
+    "info": null,
+    "isvisible": true,
+    "kiosk": {
+        "render": false
+    },
+    "kuid": "0fdb5bde70c94a249533e75a13558cb3",
+    "name": "kony.ui.Phone",
+    "parent": "flxConversationScreenHeader",
+    "pf": "mainPage",
+    "wType": "Phone",
+    "watchos": {
+        "render": false
+    },
+    "zindex": 1
+}

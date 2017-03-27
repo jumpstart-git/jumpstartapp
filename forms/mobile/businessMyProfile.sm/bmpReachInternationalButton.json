@@ -1,0 +1,76 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "s9406c28a3914834905b0295b2cd61b0",
+    "_text_": "International",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "id": "bmpReachInternationalButton",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": false,
+    "kuid": "b8c51bf3cd3a41dba58a7800e1a261d5",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "bmpReachInternationalButtonContainer",
+    "pf": "businessMyProfile",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "Button",
+    "winphone8": {
+        "render": false
+    }
+}

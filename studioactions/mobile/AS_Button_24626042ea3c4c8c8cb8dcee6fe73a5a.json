@@ -1,0 +1,28 @@
+{
+    "AS_Button_24626042ea3c4c8c8cb8dcee6fe73a5a": {
+        "id": "AS_Button_24626042ea3c4c8c8cb8dcee6fe73a5a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "resetPasswordForm",
+            "type": "forms",
+            "platform": null,
+            "KUID": "8d1a8a5e3c8c4962afd0af44622433f3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___3ac4163cb23844efac8c9a2974d5746b",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "login",
+            "formKUID": "bec1f033db6f4a3190ecdff43c7dc04e",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

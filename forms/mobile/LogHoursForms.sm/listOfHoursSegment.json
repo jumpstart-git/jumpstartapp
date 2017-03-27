@@ -1,0 +1,119 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblNonWorkingHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblWorkingHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "cd2eb03ffd52486c9cd97ec5f1b3a570",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "listOfHoursSegment",
+    "ide_onRowClick": "AS_Segment_129e92e809394c59bd592175b01d09f1",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "24b4a4a1f49b482783d775cc9235f7a0",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "ListOfHoursScrollContainer",
+    "pf": "LogHoursForms",
+    "retainselection": false,
+    "rowTemplateId": "cd2eb03ffd52486c9cd97ec5f1b3a570",
+    "rowcounter": 0,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s56dfb44c7564ef586ac8bf2463e6ffb",
+    "rowtemplate": "FBox0ebe39ec296d744",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorcolor": "6464641c",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "dateContainer": "dateContainer",
+        "lblDate": "lblDate",
+        "lblNonWorkingHours": "lblNonWorkingHours",
+        "lblWorkingHours": "lblWorkingHours",
+        "segNonWorkingContainer": "segNonWorkingContainer",
+        "segWorkingHoursContainer": "segWorkingHoursContainer",
+        "segmentOuterContainer": "segmentOuterContainer"
+    },
+    "zindex": 1
+}

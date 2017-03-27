@@ -1,0 +1,31 @@
+{
+    "AS_RichText_cc11bc18ec5f417295c622bdded5da6b": {
+        "id": "AS_RichText_cc11bc18ec5f417295c622bdded5da6b",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_cancelOutsideHours_onTouchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "registrationSchedulePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a246a313e1db4789b86d057ba020f115"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4dea79b2022c446793d09cf0c4ce04d2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// scheduleNewForm.outsideScheduletime.isVisible=false;\nscheduleNewForm.outsideScheduletime.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

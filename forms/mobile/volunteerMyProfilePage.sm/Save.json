@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Save",
+    "_width_": {
+        "type": "string",
+        "value": "46%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "74%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "48.82%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "id": "Save",
+    "ide_onClick": "AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ba27daafee7e48a589d5f1d6e72d8b12",
+    "name": "kony.ui.Button",
+    "parent": "volunteerMyProfileFooter2Buttons",
+    "pf": "volunteerMyProfilePage",
+    "wType": "Button"
+}

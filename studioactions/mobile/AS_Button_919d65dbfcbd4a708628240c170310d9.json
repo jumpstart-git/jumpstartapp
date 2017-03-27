@@ -1,0 +1,17 @@
+{
+    "AS_Button_919d65dbfcbd4a708628240c170310d9": {
+        "id": "AS_Button_919d65dbfcbd4a708628240c170310d9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_edd7d21932114f59929c7c3b4afa17a4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {   \n    notificationServiceforVolunteer();\n }\nelse\n  {\n    BusinessNotificationService();\n     \n  mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;\n  mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;\n  BusinessRecommendationService();     \n  \n  }",
+            "callbackType": null
+        }]
+    }
+}

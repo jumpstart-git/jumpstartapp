@@ -1,0 +1,24 @@
+{
+    "AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9": {
+        "id": "AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__25ca8e18bddc4db99cc9a23beaf8478d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//alert(\"select:\"+searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey);\nif((searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey===\"Select\")||(searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey===\"\"))\n  {\n     kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n    \n    //alert(\"Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer\");\n    searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text = \"\";\n  \n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text=\"\";\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text=\"\";\n    return false;\n  }\n    else{\ngblExistingBusTaskId=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKeyValue;\nvar id=gblExistingBusTaskId[0];\n//alert(JSON.stringify(gblExistingBusTaskId));\nkony.store.setItem(\"gblExistingBusTaskId\", id);\n    }\n  \nif(searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey===\"Select\")\n      {\n         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text=\" \";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text=\" \";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text=\"\";\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text=\"\";\n      }\n        else{\n          \n         BusinessLoadExistingTaskTaskService99();\n        }\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

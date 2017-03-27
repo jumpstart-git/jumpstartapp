@@ -1,0 +1,168 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "contactNumber": {
+                "text": ""
+            },
+            "endDate": {
+                "text": ""
+            },
+            "lblRequestId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblRequestId ": {
+                "text": ""
+            },
+            "lblTaskId ": {
+                "text": ""
+            },
+            "markAsCompleteRichText": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "openTaskBusiness": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "openTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "openTaskPersonProfilePic": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "segType": {
+                "text": "open"
+            },
+            "startDate": {
+                "text": ""
+            },
+            "taskDetails": {
+                "text": ""
+            },
+            "taskId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "f56d09074d7541c1a528a2db3f8d5309",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "businessId": "text",
+        "contactNumber": "text",
+        "endDate": "text",
+        "hoursRequired": "text",
+        "lblRequestId ": "text",
+        "lblTaskId ": "text",
+        "segType": "text",
+        "startDate": "text",
+        "taskDetails": "text",
+        "taskSkills": "text",
+        "totHours": "text",
+        "volunteerId": "text"
+    },
+    "id": "myOpenTasksList",
+    "ide_onRowClick": "AS_Segment_9bdb3704db05419d913b9e86104e6dea",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": false,
+    "kuid": "f07de835fdbc4175be20f3cbd61970e8",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "myOpenTasksListContainer",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "f56d09074d7541c1a528a2db3f8d5309",
+    "rowcounter": 0,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s9135b5fa6f3401dbd7e0d5e783e12d0",
+    "rowtemplate": "FBox0788b6c38d49d4b",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "lblRequestId": "lblRequestId",
+        "markAsCompleteRichText": "markAsCompleteRichText",
+        "myOpenTaskDetailParent": "myOpenTaskDetailParent",
+        "myOpenTaskProfileImageParent": "myOpenTaskProfileImageParent",
+        "myOpenTaskTop": "myOpenTaskTop",
+        "openTaskBusiness": "openTaskBusiness",
+        "openTaskName": "openTaskName",
+        "openTaskPersonProfilePic": "openTaskPersonProfilePic",
+        "taskId": "taskId"
+    },
+    "zindex": 1
+}

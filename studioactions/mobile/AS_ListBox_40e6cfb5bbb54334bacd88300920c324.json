@@ -1,0 +1,18 @@
+{
+    "AS_ListBox_40e6cfb5bbb54334bacd88300920c324": {
+        "id": "AS_ListBox_40e6cfb5bbb54334bacd88300920c324",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onSelection_60072cb71435418eaf51ff246d7fa008",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblExistingTaskIdBus=searchResultProfile.startEngagementModalContainer.startEngagementHeaderContainer.AssignExistingTaskContainer.assignToExistingTaskListBoxContainer.existingOpenTasksListBox.selectedKeyValue;\nvar id=gblExistingTaskIdBus[0];\nvar text1=gblExistingTaskIdBus[1];\n//alert(id);\n//alert(text1);\n//alert(id);\nkony.store.setItem(\"gblExistingTaskId\", id);\nif(text1==\"Select\")\n      {\n         // alert(\"Please select a task\");\n        kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please select a task\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n          searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text=\"\";\n          searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text=\"\";\n          searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text=\"\";\n          searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text=\"\";\n          searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text=\"\";\n          kony.application.dismissLoadingScreen();\n        \n      }\n        else{\n          //getBusinessLoadExistingTaskTask();\n          BusinessLoadExistingTaskTaskService();\n        }\n\n\n//var tsetGetID=kony.store.getItem(\"gblExistingTaskId\");\n//alert(tsetGetID);\n",
+            "callbackType": null,
+            "disabled": false
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Button_f197f02f5c294e089d477ddb4ef9a33e": {
+        "id": "AS_Button_f197f02f5c294e089d477ddb4ef9a33e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c6277b63c4e940ae8f51f7e9c17ac904",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var email= BusinessProfile.ChangePasswordBOdyContainer.loggedInBusinessEmailId.text;\nvar oldPass=BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;\nvar enterPass= BusinessProfile.ChangePasswordBOdyContainer.NewPasswordTextInput.text;\nvar reenterNewPass= BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;   \n\n\n\nif(oldPass==\"null\"||oldPass==null||oldPass==\"\")\n{\n  alert(\"Enter current password\");\n  return false;\n}\n if(enterPass==\"null\"||enterPass==null||enterPass==\"\"){\n  alert(\"Enter new password\");\n   return false;\n}else\n  {\n   var isValidPasswordBus=validatePasswordForBusiness(enterPass); \n    //alert(\"isValidPasswordBus\"+isValidPasswordBus);\n    \n// isValidPasswordBus = validatePassword();\n  if (isValidPasswordBus == 1) {\n    validationAlert(\"Password Error\", \"Passwords must have at least \" + userValidation.passwordLength + \" characters\");\n    return false;\n  } else if (isValidPasswordBus == 2) {\n    validationAlert(\"Password Error\", \"Passwords must have at least 1 special character\");\n    return false;\n  } else if (isValidPasswordBus == 3) {\n    validationAlert(\"Password Error\", \"Passwords must have at least 1 digit\");\n    return false;\n  } else if (isValidPasswordBus == 4) {\n    validationAlert(\"Password Error\", \"Passwords must have at least 1 capital letter\");\n    return false;\n  }\n  }\n\n if(reenterNewPass==\"null\"||reenterNewPass==null||reenterNewPass==\"\"){\n  alert(\"Re-enter new password\");\n   return false;\n}\nelse if(reenterNewPass!=enterPass){\n  \n  alert(\"New password and re-wntered new password are not matching\");\n   return false;\n}\nelse if((oldPass==enterPass)&&(oldPass==reenterNewPass)){\n  \n  alert(\"Do not repeat old password. Please enter new password\");\n   return false;\n}\n\nelse{\n  BusinessBusinessChangePassword ();\n}\n\n\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

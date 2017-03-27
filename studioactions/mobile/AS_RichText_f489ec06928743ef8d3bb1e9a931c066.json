@@ -1,0 +1,42 @@
+{
+    "AS_RichText_f489ec06928743ef8d3bb1e9a931c066": {
+        "id": "AS_RichText_f489ec06928743ef8d3bb1e9a931c066",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_10fd7ab7bcf941839610a200a559e409",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Corporate info!",
+            "yesLabel": "Corporate info!",
+            "alertMessage": "Corporate info!",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___6c2a0925eb9a461b814fc5fecdd07300",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "PushNoteService",
+            "display": "PushNoteService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

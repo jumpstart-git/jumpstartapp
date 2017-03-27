@@ -1,0 +1,24 @@
+{
+    "AS_Button_d1efd1ab7b4643888495becd95f76d84": {
+        "id": "AS_Button_d1efd1ab7b4643888495becd95f76d84",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__323a6109f3f14cc9a5c9337a0866cebb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetBusinessContact();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

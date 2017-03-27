@@ -1,0 +1,28 @@
+{
+    "AS_Button_3f5d4786a61e4507804b2e211de4800a": {
+        "id": "AS_Button_3f5d4786a61e4507804b2e211de4800a",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_outsideHoursAgreeContinue_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationSchedulePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a246a313e1db4789b86d057ba020f115"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___fcaecd2bee244e5ea790e8e8c3a8e939",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "hoursAgreeAndContinue",
+            "display": "hoursAgreeAndContinue",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

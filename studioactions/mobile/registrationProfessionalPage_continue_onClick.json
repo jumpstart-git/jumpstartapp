@@ -1,0 +1,28 @@
+{
+    "AS_Button_6c6b552ce8594adeb1ed7ccdddd213a0": {
+        "id": "AS_Button_6c6b552ce8594adeb1ed7ccdddd213a0",
+        "type": "ACTION_SEQUENCE",
+        "name": "registrationProfessionalPage_continue_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationProfessionalPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ba74c893fd5a445eb219fe3bef70986f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___619be17b40b344819ee5e00eaa8631f2",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitProfessionalInfo",
+            "display": "submitProfessionalInfo",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

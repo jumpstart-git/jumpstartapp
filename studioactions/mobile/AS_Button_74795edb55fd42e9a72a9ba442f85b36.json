@@ -1,0 +1,17 @@
+{
+    "AS_Button_74795edb55fd42e9a72a9ba442f85b36": {
+        "id": "AS_Button_74795edb55fd42e9a72a9ba442f85b36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_011ed20b7c1b4239ac7933c119e652a1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.volunteerProfileContainer.isVisible=false;\nsearchResultProfile.destroy();\nsearchPage.show();",
+            "callbackType": null
+        }]
+    }
+}

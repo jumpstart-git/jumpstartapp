@@ -1,0 +1,229 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "CompanyNameLbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchBookmarkImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchBookmarkLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchDistanceImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchDistanceLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerId": {
+                "text": ""
+            },
+            "volunteerImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "volunteerName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerPosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "CompanyNameLbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchBookmarkImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchBookmarkLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchDistanceImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchDistanceLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerId": {
+                "text": ""
+            },
+            "volunteerImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "volunteerName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerPosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "CompanyNameLbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchBookmarkImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchBookmarkLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "searchDistanceImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "searchDistanceLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerId": {
+                "text": ""
+            },
+            "volunteerImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "volunteerName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "volunteerPosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "c3d24872b52a42d885cd807e8d975365",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "contactNumber": "text",
+        "searchTaskId": "text",
+        "volunteerId": "text"
+    },
+    "id": "volunteerdataSegment",
+    "ide_onRowClick": "AS_Segment_40a3c921256e40bd85f3e68049e6ad36",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "a965ef94e3dc433097b071969cb2a2bd",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "DataFlexScrollContainer",
+    "pf": "searchPage",
+    "retainselection": false,
+    "rowTemplateId": "c3d24872b52a42d885cd807e8d975365",
+    "rowcounter": 2,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s07c378f3b2d4ee0880bd799b515cf88",
+    "rowtemplate": "FBox002ffa33914ea45",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CompanyNameLbl": "CompanyNameLbl",
+        "SegActionsDownFlex": "SegActionsDownFlex",
+        "SegVolunteerDetails": "SegVolunteerDetails",
+        "SegVolunteerUpFlex": "SegVolunteerUpFlex",
+        "SegmentMainFlex": "SegmentMainFlex",
+        "searchBookmarkContainer": "searchBookmarkContainer",
+        "searchBookmarkImage": "searchBookmarkImage",
+        "searchBookmarkLabel": "searchBookmarkLabel",
+        "searchDistanceContainer": "searchDistanceContainer",
+        "searchDistanceImage": "searchDistanceImage",
+        "searchDistanceLabel": "searchDistanceLabel",
+        "searchRoleCompanyContainer": "searchRoleCompanyContainer",
+        "volunteerImg": "volunteerImg",
+        "volunteerName": "volunteerName",
+        "volunteerPosition": "volunteerPosition"
+    },
+    "zindex": 1
+}

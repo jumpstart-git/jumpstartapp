@@ -1,0 +1,69 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "19dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s99eb456f33946c38be3db33a327b945",
+    "_top_": {
+        "type": "string",
+        "value": "195dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "addHoursLabelContainer",
+        "calendarContainer",
+        "hoursAndMinutesContainer",
+        "bodyNonWorkingHoursContainer",
+        "addHoursFooterContainer"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "AddHoursContainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ae65bd466e6d4910aa86c0bbb016a370",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "AddHoursModalContainer",
+    "pf": "LogHoursForms",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

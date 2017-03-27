@@ -1,0 +1,18 @@
+{
+    "AS_ListBox_371159d502e8420489b4e69bf9505217": {
+        "id": "AS_ListBox_371159d502e8420489b4e69bf9505217",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onSelection_8ed0e5f19d7e457dabc81720267ae127",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblExistingTaskId=mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.selectedKeyValue;\nvar id=gblExistingTaskId[0];\n//alert(JSON.stringify(gblExistingTaskId));\nkony.store.setItem(\"gblExistingTaskId\", id);\nif(mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text==\"Select\")\n      {\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.data=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.data=\"\";\n      }\n        else{\n          //getBusinessLoadExistingTaskTask();\n          BusinessLoadExistingTaskTaskService();\n        }\n\n\n//var tsetGetID=kony.store.getItem(\"gblExistingTaskId\");\n//alert(tsetGetID);",
+            "callbackType": null,
+            "disabled": false
+        }]
+    }
+}

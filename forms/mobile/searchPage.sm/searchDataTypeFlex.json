@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5a0cac3fc9241d7b2469581d3d7e2e9",
+    "_top_": {
+        "type": "string",
+        "value": "55%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "volunteerBtn",
+        "businessBtn",
+        "OppurtunitiesBtn",
+        "sortButton",
+        "volLblLine1",
+        "VolLblLine2"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "searchDataTypeFlex",
+    "info": null,
+    "isvisible": false,
+    "kuid": "7608085346e74ded9797a58486e5d4c1",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "searchPageUpFlex",
+    "pf": "searchPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

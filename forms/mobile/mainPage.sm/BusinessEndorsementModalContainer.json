@@ -1,0 +1,70 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s11770f1b3c94f08a2e1a9e71ab4d542",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "EndorseMentHeaderContainer",
+        "SkillsListBoxContainer",
+        "orLabelContainer",
+        "SkillsTextBoxContainer",
+        "MessageContaioner",
+        "EndorsementFooterContainer"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "BusinessEndorsementModalContainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "80a2e78f77f646e283e761a7d3d67fae",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "BusinessEndorsementModalGrayContainer",
+    "pf": "mainPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

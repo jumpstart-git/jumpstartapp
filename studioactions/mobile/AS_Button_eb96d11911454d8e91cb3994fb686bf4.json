@@ -1,0 +1,24 @@
+{
+    "AS_Button_eb96d11911454d8e91cb3994fb686bf4": {
+        "id": "AS_Button_eb96d11911454d8e91cb3994fb686bf4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPush",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c7ac8165f0844e5e808e716e191e0478"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9f835e64be314b5ab9a47cfb3f525276",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"hiii\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

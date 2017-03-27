@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "126dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s414ebbcc6804df7b01a223da92e6b46",
+    "_text_": "Cancel",
+    "_top_": {
+        "type": "string",
+        "value": "37dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "CancelRichText",
+    "ide_onClick": "AS_RichText_e01f591f5e544a28985552b5f5687a2d",
+    "ide_onTouchStart": "AS_RichText_44420397b0474621a6cc3106c0203916",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2006a1bfe08a46a6b575938123485576",
+    "name": "kony.ui.RichText",
+    "parent": "MarkAsCompleteModalContainer",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

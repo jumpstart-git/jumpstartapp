@@ -1,0 +1,67 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4fdf61a7e2a422c99d62707c23e0de8",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "45%"
+    },
+    "children": [
+        "requestToVolunteerHeader",
+        "AssignToExistingCardContainer",
+        "requestToVolunteerBody",
+        "requestToVolunteerFooter"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "requestToVolunteerModal",
+    "info": null,
+    "isvisible": false,
+    "kuid": "9e5caf2dd2b546048e11b54fe36c8be5",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "volunteerRequestContainer",
+    "pf": "searchResultProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

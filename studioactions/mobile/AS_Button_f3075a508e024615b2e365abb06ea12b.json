@@ -1,0 +1,33 @@
+{
+    "AS_Button_f3075a508e024615b2e365abb06ea12b": {
+        "id": "AS_Button_f3075a508e024615b2e365abb06ea12b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___1007f0e87d2d43538079a00cbc576562",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openSendVolunteerRequestModal",
+            "display": "openSendVolunteerRequestModal",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__a02c5d59acde4a5bade1201796ee71a8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//searchResultProfile.titleBarSkin=\"merinnow\";\n\n//gblMer=true;\n\nBusOpenTaskExistingService();\nvar d1= new Date();\n    var day1=d1.getDate();\n    var month1=d1.getMonth();\n    month1=month1+1;\n    var year1=d1.getFullYear();\n    var todayDate1=day1+\"/\"+month1+\"/\"+year1;\n    kony.store.setItem(\"todayDate\", todayDate1);\n \nvar volName=kony.store.getItem(\"VolNameForStartEngagement\");\nsearchResultProfile.startEngagementModalContainer.startEngagementHeaderContainer.topHeaderContainer.EngagementHasStartedContainer.nameLabel.text=volName; \n\n    \nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.dateComponents=[day1,month1,year1]; \nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.dateComponents=[day1,month1,year1];\nsearchResultProfile.startEngagementModalContainer.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

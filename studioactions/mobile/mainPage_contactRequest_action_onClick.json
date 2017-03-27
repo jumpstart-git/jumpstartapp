@@ -1,0 +1,52 @@
+{
+    "AS_RichText_d139311450264a85ba1ca9faefef3f8a": {
+        "id": "AS_RichText_d139311450264a85ba1ca9faefef3f8a",
+        "type": "ACTION_SEQUENCE",
+        "name": "mainPage_contactRequest_action_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": null,
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f3ed4cd7e03c4c5ba9e27d08d5e4b908",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "contactRequest",
+            "display": "contactRequest",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__492225c775844a22bd01d97d4859d266",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    contactVolunteer();\n  }\n\nelse{\n  \n  contactVolunteerFromAcceptTaskDetailsPage();\n}",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___a1316c25628c4e94bf6681c32fa0ae76",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "contactVolunteer",
+            "display": "contactVolunteer",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

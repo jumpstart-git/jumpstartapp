@@ -1,0 +1,49 @@
+{
+    "AS_Button_8679ef5475084e8496bae19a15ca4630": {
+        "id": "AS_Button_8679ef5475084e8496bae19a15ca4630",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT__9d760812b3114c0599b4a30364b41319",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_CONFIRMATION",
+            "alertTitle": "Confirm",
+            "yesLabel": "Yes",
+            "noLabel": "No",
+            "alertIcon": "lohourindicator.PNG",
+            "alertMessage": "Do you really want to delete your account?",
+            "messageType": "constant",
+            "parentId": null,
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_RIGHT"
+        }, {
+            "id": "ADD_SNIPPET__0e6f49b59f9b45d599cc90b94c5bf36a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "volunteerMyProfilePage.show();",
+            "parentId": "SHOW_ALERT__9d760812b3114c0599b4a30364b41319",
+            "callbackType": "False"
+        }, {
+            "id": "INVOKE_FUNCTION___92aa370a287b4c00af4331117073b419",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "DeleteVolunteerAccountService",
+            "display": "DeleteVolunteerAccountService",
+            "inputparams": [],
+            "parentId": "SHOW_ALERT__9d760812b3114c0599b4a30364b41319",
+            "callbackType": "True",
+            "disabled": null
+        }]
+    }
+}

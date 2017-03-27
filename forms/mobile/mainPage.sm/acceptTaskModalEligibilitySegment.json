@@ -1,0 +1,132 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "Image0fa57b85abcab49": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label06e57014debcc4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Check-up"
+            }
+        },
+        {
+            "Image0fa57b85abcab49": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label06e57014debcc4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Legal Documentation"
+            }
+        },
+        {
+            "Image0fa57b85abcab49": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label06e57014debcc4e": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Security Clearance"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "e860fe149c1c4c55b655bba5a6ebd3d3",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "acceptTaskModalEligibilitySegment",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "3b7ba155d6894f3db00b9fbe7d367861",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "acceptTaskModalBody",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "e860fe149c1c4c55b655bba5a6ebd3d3",
+    "rowcounter": 2,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s07c378f3b2d4ee0880bd799b515cf88",
+    "rowtemplate": "FBox0488ce2c486374a",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlexContainer09f0e64b33f8642": "FlexContainer09f0e64b33f8642",
+        "FlexContainer0b1f37063d1c744": "FlexContainer0b1f37063d1c744",
+        "Image0fa57b85abcab49": "Image0fa57b85abcab49",
+        "Label06e57014debcc4e": "Label06e57014debcc4e"
+    }
+}

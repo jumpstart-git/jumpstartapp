@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "see8cf1e2c4c41a7a4412bdf5bad0254",
+    "_text_": "+ Add Schedule",
+    "_top_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "84%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "47.29%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sc66dce804664566802dce97fdac9c61",
+    "id": "AddBtn",
+    "ide_onClick": "AS_Button_e21ac211a8a8413da63f77c6eac41fda",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cd0b223b36b14c6ebdf23e503b837b3d",
+    "name": "kony.ui.Button",
+    "parent": "regScheduleDatesFlex",
+    "pf": "scheduleNewForm",
+    "wType": "Button",
+    "zindex": 1
+}

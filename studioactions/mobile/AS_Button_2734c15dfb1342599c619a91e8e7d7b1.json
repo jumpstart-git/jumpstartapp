@@ -1,0 +1,28 @@
+{
+    "AS_Button_2734c15dfb1342599c619a91e8e7d7b1": {
+        "id": "AS_Button_2734c15dfb1342599c619a91e8e7d7b1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "businessMyProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "1236261b36ec4ae9bccbba8c33912563"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___988c0a4d6b6847ecb51157e7e5c2db49",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

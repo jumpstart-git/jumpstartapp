@@ -1,0 +1,31 @@
+{
+    "AS_Button_b3b28f3c172144378c1c9e4a9d8b4738": {
+        "id": "AS_Button_b3b28f3c172144378c1c9e4a9d8b4738",
+        "type": "ACTION_SEQUENCE",
+        "name": "activity_acceptTaskSkillsPreviousParent_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___2b1e5c9abe4f4521a0b12da27ecfff56",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "fadeOutThisModal",
+            "display": "fadeOutThisModal",
+            "inputparams": [{
+                "name": "modal",
+                "value": "mainPage.acceptTaskSkillsModalContainer"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

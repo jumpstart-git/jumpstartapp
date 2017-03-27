@@ -1,0 +1,17 @@
+{
+    "AS_Button_8e7d1c456f684225b78298cb42111f91": {
+        "id": "AS_Button_8e7d1c456f684225b78298cb42111f91",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_720eedc2b154494e9849ab4209009660",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblIsOpp=false;\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=true;\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=false;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.opportunitiesIndicator.isVisible=false;\n\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    \n    //no action should be done\n  }else\n    {\n      volunteerService();\n      gblIsVol=true;\n    }",
+            "callbackType": null
+        }]
+    }
+}

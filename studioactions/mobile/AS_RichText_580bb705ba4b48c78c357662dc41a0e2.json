@@ -1,0 +1,30 @@
+{
+    "AS_RichText_580bb705ba4b48c78c357662dc41a0e2": {
+        "id": "AS_RichText_580bb705ba4b48c78c357662dc41a0e2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9bdd8517d8bc4a4dbd876fd4118664ed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {   \n    notificationServiceforVolunteer();\n }\nelse\n  {\n    BusinessNotificationService();\n     \n  mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;\n  mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;\n  BusinessRecommendationService();     \n  \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

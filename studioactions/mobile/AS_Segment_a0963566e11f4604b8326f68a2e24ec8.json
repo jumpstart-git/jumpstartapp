@@ -1,0 +1,33 @@
+{
+    "AS_Segment_a0963566e11f4604b8326f68a2e24ec8": {
+        "id": "AS_Segment_a0963566e11f4604b8326f68a2e24ec8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___acd9291626c34165a6c854dd0fd2a81e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showBusinessOpenTaskDetails",
+            "display": "showBusinessOpenTaskDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_RichText_4a9ef318da794d109c48c441442e8956": {
+        "id": "AS_RichText_4a9ef318da794d109c48c441442e8956",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_20c0c30f1d9b4cc698f9b9d83a12bd96",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n   if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\nmainPage.mainPageBody.mainPageContentParent.myEndorsements.isVisible=true;\n    endorsementsService();\n    \n  } \n  }",
+            "callbackType": null
+        }]
+    }
+}

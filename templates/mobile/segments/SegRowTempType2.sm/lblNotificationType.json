@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "26%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9045b3c0544432c8ac8af1c9d4a49e3",
+    "_text_": "New Workshop Contracts:",
+    "_top_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "53.33%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblNotificationType",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "eb704a39f5c2489eb0ecdea8c3010713",
+    "name": "kony.ui.Label",
+    "parent": "segRowFlex2",
+    "pf": "SegRowTempType2",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

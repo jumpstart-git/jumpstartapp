@@ -1,0 +1,39 @@
+{
+    "AS_Button_604e48d7e44849b9a5c5ffc6cb8b147a": {
+        "id": "AS_Button_604e48d7e44849b9a5c5ffc6cb8b147a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_5a5c511716d64cdcb4b3819d5e0a4e39",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openSendVolunteerRequestModal11",
+            "display": "openSendVolunteerRequestModal11",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_b8f90a1ee7af48ed8501aa2f8b0e560e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestVolunteerByBusiness1",
+            "display": "requestVolunteerByBusiness1",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_61ad501372d24f71bfee45dee882065a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "BusinessExistingOpenTaskService();\n//searchResultProfile.businessProfileContainer.isVisible=false;\nsearchResultProfile.opprtunitiesReadOnlyContainer.isVisible=true; \n searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.isVisible=true;\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.isVisible=true;\n \nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunityDetailsHdrModal.oppurtunitiesHeaderDetails1.opprtunitiesHeadingModal.opportunityBusinessName.text=kony.store.getItem(\"busNameNew\");\n\nvar availabilty =kony.store.getItem(\"scheduleValNew\");\nvar name=kony.store.getItem(\"busNameNew\");\n//alert(\"name\"+name);\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.availabiltyTxt.text=availabilty;",
+            "callbackType": null
+        }]
+    }
+}

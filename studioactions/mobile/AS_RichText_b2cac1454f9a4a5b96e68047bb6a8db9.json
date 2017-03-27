@@ -1,0 +1,30 @@
+{
+    "AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9": {
+        "id": "AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "resetPasswordForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8d1a8a5e3c8c4962afd0af44622433f3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "OPEN_URL__6b4173f357934f63990791e26c473f86",
+            "type": "OPEN_URL",
+            "url": "http://www.supplynation.org.au/contactus",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

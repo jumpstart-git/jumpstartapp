@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_2fb923d1a2f14b00a019c1ffd9a698e9": {
+        "id": "AS_FlexContainer_2fb923d1a2f14b00a019c1ffd9a698e9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_d0998316f3c54c08b5fff4e2c945d10b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    var segTypeCheckforVolCall=kony.store.getItem(\"segmentType\");\n   // alert(segType1);\n    \n   try{\n     if(segTypeCheckforVolCall!=\"null\"||segTypeCheckforVolCall!=null)\n     {\n       if(segTypeCheckforVolCall==\"sent\")\n        {\n          //alert(\"Isinde open seg \" + segType1);\n         callContactfromStartEngagementSentRequestSeg();\n         }\n      \n     }\n    \n   } catch(e)\n     {\n     //alert(e);\n   }\n  \n  } \nelse\n  {\n    var segTypeforBusCal=kony.store.getItem(\"segmentType\");\n//alert(\"the clicked segTypement is =\"+segTypeforBusCal);\n\ntry{\n  if(segTypeforBusCal!=\"null\"||segTypeforBusCal!=null)\n  {\n//     //alert(\"Inside Accepted segType after first segType\");\n    if(segTypeforBusCal==\"accepted\")\n      {\n       // alert(\"Inside Accepted segType\");\n        contactVolunteerFromAcceptTaskDetailsPage();\n     } \n    \n  \n}\n  }\n    catch(e)\n  {\n    alert(\"aError is\"+e);\n  }\n  \n  }",
+            "callbackType": null
+        }]
+    }
+}

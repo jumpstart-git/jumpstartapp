@@ -1,0 +1,61 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "42dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s27978553fdc4e9186dcd6b8be182d6f",
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "21.88%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "businessmsgBtn",
+        "imessageFromBusinessProfile"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "businessProfileEmail",
+    "info": null,
+    "isvisible": true,
+    "kuid": "714a243b40ac4759b2a0e57a0680d650",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "businessProfileContactActions",
+    "pf": "searchResultProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

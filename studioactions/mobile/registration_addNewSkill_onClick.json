@@ -1,0 +1,34 @@
+{
+    "AS_FlexContainer_fcc498e6663e40768ed0b376737c1e66": {
+        "id": "AS_FlexContainer_fcc498e6663e40768ed0b376737c1e66",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_addNewSkill_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f8c0667b3d1e410e9ac01eb702b59be1",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addNewSkill",
+            "display": "addNewSkill",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

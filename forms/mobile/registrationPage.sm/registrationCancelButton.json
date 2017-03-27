@@ -1,0 +1,41 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6a00f099b7c4972beb5e5c11e232e21",
+    "_text_": "Cancel",
+    "_width_": {
+        "type": "string",
+        "value": "48%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6a00f099b7c4972beb5e5c11e232e21",
+    "id": "registrationCancelButton",
+    "ide_onClick": "AS_Button_063412544d60470685da5107ca9ccd90",
+    "info": null,
+    "isvisible": true,
+    "kuid": "320e999921014fb1a54c81797fc09e68",
+    "name": "kony.ui.Button",
+    "parent": "registrationPageFooter",
+    "pf": "registrationPage",
+    "wType": "Button"
+}

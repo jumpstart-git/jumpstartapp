@@ -1,0 +1,25 @@
+{
+    "AS_Button_7088679c6e074024bd605d42044a4435": {
+        "id": "AS_Button_7088679c6e074024bd605d42044a4435",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_7252f3df1aca4ef2ba29c1eb178a1454",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openSendVolunteerRequestModal",
+            "display": "openSendVolunteerRequestModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_c91d8c1d088047dd8705fe89c180603f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//searchResultProfile.titleBarSkin=\"merinnow\";\n\n//gblMer=true;\n\nBusOpenTaskExistingService();\nvar d1= new Date();\n    var day1=d1.getDate();\n    var month1=d1.getMonth();\n    month1=month1+1;\n    var year1=d1.getFullYear();\n    var todayDate1=day1+\"/\"+month1+\"/\"+year1;\n    kony.store.setItem(\"todayDate\", todayDate1);\n \nvar volName=kony.store.getItem(\"VolNameForStartEngagement\");\nsearchResultProfile.startEngagementModalContainer.startEngagementHeaderContainer.topHeaderContainer.EngagementHasStartedContainer.nameLabel.text=volName; \n\n    \nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.dateComponents=[day1,month1,year1]; \nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.dateComponents=[day1,month1,year1];\nsearchResultProfile.startEngagementModalContainer.isVisible=true;",
+            "callbackType": null
+        }]
+    }
+}

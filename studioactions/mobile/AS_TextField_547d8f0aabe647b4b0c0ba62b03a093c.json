@@ -1,0 +1,27 @@
+{
+    "AS_TextField_547d8f0aabe647b4b0c0ba62b03a093c": {
+        "id": "AS_TextField_547d8f0aabe647b4b0c0ba62b03a093c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cea842aba8f946e8a9cd75f6bbadfd2e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(gblIsOpp==true)\n  {\n    changeOppSearch();\n  }else\n    {\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n   \nchangeBusiness();\n  }\n\nelse\n  {\n   \n    chang28();\n  }\n    }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

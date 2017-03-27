@@ -1,0 +1,42 @@
+{
+    "AS_Button_f57470ae9f314ef4b9536d11b77f7ead": {
+        "id": "AS_Button_f57470ae9f314ef4b9536d11b77f7ead",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_6096a015936746a180a4e43db5834354",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousCancelRequest",
+            "display": "indeginousCancelRequest",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_f2a750ed88ef4941b695f9b220c4c5ca",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var text=mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;\nif(text==\"null\"||text==null||text==\"\")\n  {\n    alert(\"Input your review\");\n  }\nelse{\nvolSendReview();\nmainPage.sendRecommendation.isVisible=false;\n}\n\n\n//mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text=\" \";",
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_3480fee22a5547f28575431a9b3eff94",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }]
+    }
+}

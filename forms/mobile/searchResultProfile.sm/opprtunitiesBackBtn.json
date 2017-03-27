@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "14dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s004ba0468264e8b95181a6d53cebbdd",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": true,
+    "id": "opprtunitiesBackBtn",
+    "ide_onClick": "AS_Button_dd04d69205504c73bb854cc564373e7a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "accd772792dd427eb94837f3e6b8943e",
+    "name": "kony.ui.Button",
+    "parent": "opprtunitiesBackBtnModal",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

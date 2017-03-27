@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3fdd273f1f541bf9ddd27c497c1d221",
+    "_text_": "Send Reports",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "43%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sdeeae285b784b7bb9c705a6e8e6e453",
+    "id": "sendReportsBtn",
+    "ide_onClick": "AS_Button_7427b749460c4190b7d37fc9de5e757e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "012ecbf5fca14bdcb0011f2c3c80f9bb",
+    "name": "kony.ui.Button",
+    "parent": "ReportingButtons",
+    "pf": "ReportingPage",
+    "wType": "Button",
+    "zindex": 1
+}

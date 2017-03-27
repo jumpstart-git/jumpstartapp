@@ -1,0 +1,88 @@
+{
+    "AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b": {
+        "id": "AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b",
+        "type": "ACTION_SEQUENCE",
+        "name": "activity_requestTask_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox09e1c06f6a9bb44",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1a06c929fc654a2cba76292bf1d59601"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d8221af7553244d4ac468575a8f114a7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkIfTaskOrStartEngagement",
+            "display": "checkIfTaskOrStartEngagement",
+            "inputparams": [{
+                "name": "type",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__0464099a8df24bfdac44cd9141477f35",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    \n    getBusinessReqTaskDetailsService ();\n   // getBusinessReqTaskDetailsService();\n//     BusinessExistingTaskTaskService ();\n//     mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem(\"loginBusinessName\");\n//     mainPage.startEngagementModalContainer.isVisible=true;\n//     //start merin\n//     var d= new Date();\n//     var day=d.getDate();\n//     var month=d.getMonth();\n//     month=month+1;\n//     var year=d.getFullYear();\n//     var todayDate=day+\"/\"+month+\"/\"+year;\n//     kony.store.setItem(\"todayDate\", todayDate);\n//     //end merin\n//     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year]; \n//     mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];\n    \n  var seg1=mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;\n    var segment1=seg1[0].segType;\n    kony.store.setItem(\"segmentType\", segment1);\n  \n  }else\n    {\n      \n     mainPage.acceptRequestModalContainer.isVisible=true;\n     \n      }",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___da41580237af45aeb7dc98428c8c0157",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForBusStartEngaeSent",
+            "display": "saveReqForBusStartEngaeSent",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___c08161ee04384b82afeae2a05d747e41",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqId",
+            "display": "saveReqId",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___cdb077a9cb44465f8bafcd0dc5692b77",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "VolAcceptRequest",
+            "display": "VolAcceptRequest",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___bb8bf2efaa6640efbe98696c17050940",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqId",
+            "display": "saveReqId",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__952fd0d2608240bb89f96b7e134ad8e9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n{\n  saveBusIdForVolViewProfileSentSeg();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

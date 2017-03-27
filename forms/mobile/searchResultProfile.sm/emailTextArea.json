@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s48c114fe7464f38905e0358a215f1d1",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "emailTextArea",
+    "info": null,
+    "isvisible": true,
+    "kuid": "691ac85393ed4749857ace37e3f5644e",
+    "name": "kony.ui.RichText",
+    "parent": "emailIdContainer",
+    "pf": "searchResultProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

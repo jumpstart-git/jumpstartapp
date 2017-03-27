@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "101dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbb63fb41d804b59851aa8eb19ab409c",
+    "_text_": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "RichText09080837e1f084e",
+    "ide_onClick": "AS_RichText_6101c7fd29864c16b986f136358074eb",
+    "ide_onTouchStart": "AS_RichText_214b052e608a4321b07888227bf903d0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "138dd526d2a54c5681485f79cb44b6e9",
+    "name": "kony.ui.RichText",
+    "parent": "CopyLegalFlex004dd3040d80e4d",
+    "pf": "scheduleNewForm",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

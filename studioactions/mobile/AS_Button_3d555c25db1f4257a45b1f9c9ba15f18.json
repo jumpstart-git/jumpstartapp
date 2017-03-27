@@ -1,0 +1,35 @@
+{
+    "AS_Button_3d555c25db1f4257a45b1f9c9ba15f18": {
+        "id": "AS_Button_3d555c25db1f4257a45b1f9c9ba15f18",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___0baf7dc9720e400299037d4c8175c693",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "searchPage",
+            "formKUID": "f388a97e38204f59abf2ecfb0e7f5d27",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__92c828d394e3429491cbee86e52f3b8e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblFirstTime=true;\ngblIsOpp=false;\nsearchPage.searchTxtbox.text=\"\";\nsearchPage.volunteerdataSegment.removeAll();\nsearchPage.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

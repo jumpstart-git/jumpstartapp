@@ -1,0 +1,51 @@
+{
+    "AS_RichText_407b0568036d4033a12445989aaf483c": {
+        "id": "AS_RichText_407b0568036d4033a12445989aaf483c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ab6d5788fed84359b4670712cbbd8716",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.cancelRequestModalContainer.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___7942f9b3481b430caf6f9a2e38ab5d3e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveCancelVolReqId",
+            "display": "saveCancelVolReqId",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___2b52b847e69a4e46aa1c2896ddadc001",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForCancel",
+            "display": "saveReqForCancel",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

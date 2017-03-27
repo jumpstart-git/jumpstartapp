@@ -1,0 +1,28 @@
+{
+    "AS_Button_90cc3226d17d4c55a077d6f01f79c068": {
+        "id": "AS_Button_90cc3226d17d4c55a077d6f01f79c068",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "scheduleNewForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "52743330124941c0b64a6f9c1f63791d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___e80b0bd011cb43f7aa914786ab70c324",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "registrationProfessionalPage",
+            "formKUID": "ba74c893fd5a445eb219fe3bef70986f",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

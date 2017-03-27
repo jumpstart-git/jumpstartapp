@@ -1,0 +1,25 @@
+{
+    "AS_Button_9a96cef61836483c96b15c263b2b639e": {
+        "id": "AS_Button_9a96cef61836483c96b15c263b2b639e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__56eb31cc694d44bebb91cea6dab323b3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//IndigenousBusinessPhoneNum();",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

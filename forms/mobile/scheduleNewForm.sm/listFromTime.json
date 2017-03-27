@@ -1,0 +1,163 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "29%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "scheduleNewForm",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s18713941c11413d8777d2fe2a70d6bc",
+    "groupcells": false,
+    "id": "listFromTime",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7521a63b59a24670b3b80a16d383cd38",
+    "masterdata": [
+        [
+            "1:00",
+            "1:00"
+        ],
+        [
+            "1:30",
+            "1:30"
+        ],
+        [
+            "2:00",
+            "2:00"
+        ],
+        [
+            "2:30",
+            "2:30"
+        ],
+        [
+            "3:00",
+            "3:00"
+        ],
+        [
+            "3:30",
+            "3:30"
+        ],
+        [
+            "4:00",
+            "4:00"
+        ],
+        [
+            "4:30",
+            "4:30"
+        ],
+        [
+            "5:00",
+            "5:00"
+        ],
+        [
+            "5:30",
+            "5:30"
+        ],
+        [
+            "6:00",
+            "6:00"
+        ],
+        [
+            "6:30",
+            "6:30"
+        ],
+        [
+            "7:00",
+            "7:00"
+        ],
+        [
+            "7:30",
+            "7:30"
+        ],
+        [
+            "8:00",
+            "8:00"
+        ],
+        [
+            "8:30",
+            "8:30"
+        ],
+        [
+            "9:00",
+            "9:00"
+        ],
+        [
+            "9:30",
+            "9:30"
+        ],
+        [
+            "10:00",
+            "10:00"
+        ],
+        [
+            "10:30",
+            "10:30"
+        ],
+        [
+            "11:00",
+            "11:00"
+        ],
+        [
+            "11:30",
+            "11:30"
+        ],
+        [
+            "12:00",
+            "12:00"
+        ],
+        [
+            "12:30",
+            "12:30"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "regScheduleDatesFlex",
+    "pf": "scheduleNewForm",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

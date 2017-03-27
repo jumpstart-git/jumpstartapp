@@ -1,0 +1,33 @@
+{
+    "AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80": {
+        "id": "AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___320b2ead6acb482d976659bd238f2ad0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "hideSideBar",
+            "display": "hideSideBar",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

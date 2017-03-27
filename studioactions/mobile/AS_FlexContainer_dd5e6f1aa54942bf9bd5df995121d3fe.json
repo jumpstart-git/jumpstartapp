@@ -1,0 +1,39 @@
+{
+    "AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe": {
+        "id": "AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e0384aa5662d43cab350eb6adffe07ce",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "expandCollapseGroup",
+            "display": "expandCollapseGroup",
+            "inputparams": [{
+                "name": "group",
+                "value": " eventobject"
+            }, {
+                "name": "groupName",
+                "value": " \"myOpenTasks\""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Request For Volunteer",
+    "_top_": {
+        "type": "string",
+        "value": "9dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "requestAVolunteer",
+    "ide_onClick": "AS_Button_f3075a508e024615b2e365abb06ea12b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c697b2ea68f84252b3d8425ad6825e71",
+    "name": "kony.ui.Button",
+    "parent": "volunteerProfileContainer",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

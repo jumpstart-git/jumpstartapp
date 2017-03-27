@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "111.59%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "267dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb6ce9c1a2da4fa89cab25d231e1e30d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "12.08%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "endRefreshBtn",
+    "ide_onClick": "AS_Button_b2c5b26ff29f4a909862e033008e3592",
+    "info": null,
+    "isvisible": false,
+    "kuid": "0a21bb8d22e64e62a69ab6599262f1cd",
+    "name": "kony.ui.Button",
+    "parent": "endorsementrefreshBtn",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,34 @@
+{
+    "AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9": {
+        "id": "AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9",
+        "type": "ACTION_SEQUENCE",
+        "name": "activity_acceptTaskDetailsPreviousParent_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e9e7f7d63b3c40a8988372daa6910e70",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__3155f6576906488796c33011db57b7a6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.acceptTaskDetailsModalContainer.isVisible=false;\n//mainPage.show(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

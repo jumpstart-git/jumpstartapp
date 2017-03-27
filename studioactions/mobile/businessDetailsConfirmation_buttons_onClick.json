@@ -1,0 +1,31 @@
+{
+    "AS_Button_3f0b779809604cbebc08b5f48b09b3dd": {
+        "id": "AS_Button_3f0b779809604cbebc08b5f48b09b3dd",
+        "type": "ACTION_SEQUENCE",
+        "name": "businessDetailsConfirmation_buttons_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "businessDetailsConfirmationPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "731354b5d5504d5daac5e9457a384ba0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___f2cd55fab25c4e59ad099341f46e9433",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onBusinessDetailsButtonToggle",
+            "display": "onBusinessDetailsButtonToggle",
+            "inputparams": [{
+                "name": "buttonPressed",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

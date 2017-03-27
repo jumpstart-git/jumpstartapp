@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "s756b73fe31d49d8a63db2732e87c90b",
+    "_text_": "<u>Need help?</u>",
+    "_top_": {
+        "type": "string",
+        "value": "12dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "needHelpLink",
+    "ide_onClick": "AS_RichText_25939b8e86014441b5a47e1b246b12e6",
+    "ide_onTouchStart": "AS_RichText_101d5ce6c83f4b2885695188561bfa47",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "c03f291911d34dab9a2e7e1f597b2949",
+    "linkskin": "s0017120110f482b802e8385595ddf48",
+    "name": "kony.ui.RichText",
+    "parent": "loginFooter",
+    "pf": "login",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "winphone8": {
+        "render": false
+    },
+    "zindex": 1
+}

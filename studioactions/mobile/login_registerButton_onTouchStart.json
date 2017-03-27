@@ -1,0 +1,41 @@
+{
+    "AS_Label_2e641c70f5f84f80bb2d8fe88102e950": {
+        "id": "AS_Label_2e641c70f5f84f80bb2d8fe88102e950",
+        "type": "ACTION_SEQUENCE",
+        "name": "login_registerButton_onTouchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6ed857383711474aba1b2277950bd255",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.store.removeItem(\"imageVal\");\nkony.store.removeItem(\"imageFileNameVal\");\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___0f45c2b4812c4a179147092263cb2da2",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "registrationPage",
+            "formKUID": "45590dbf8d50498f8dac0f82dd6523c7",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

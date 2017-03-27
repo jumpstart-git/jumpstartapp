@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "23dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbc1c1c1bfd842698506fa91e8d1c9f3",
+    "_text_": "Brief",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s036048f0630463385a3f4b00e0aba81",
+    "id": "opportuitiesBtn1",
+    "ide_onClick": "AS_Button_82ea1740bfa9490382128cc94c1853b2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ed3aeed0644c4564833b98d8cb97dcd7",
+    "name": "kony.ui.Button",
+    "parent": "opportunitiesFlex",
+    "pf": "searchPage",
+    "wType": "Button",
+    "zindex": 1
+}

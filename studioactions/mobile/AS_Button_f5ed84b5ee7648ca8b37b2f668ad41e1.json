@@ -1,0 +1,24 @@
+{
+    "AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1": {
+        "id": "AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ee8a93c2119e4d9084f9b6a76d7ee33b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.CreateOpportunityContainer.isVisible=true;\nvar d= new Date();\n    var day=d.getDate();\n    var month=d.getMonth();\n    month=month+1;\n    var year=d.getFullYear();\n    var todayDate=day+\"/\"+month+\"/\"+year;\n    kony.store.setItem(\"todayDate\", todayDate);\nmainPage.CreateOpportunityContainer.BodyContainer.opportunityStartDateCalendarInput.dateComponents=[day,month,year]; \nmainPage.CreateOpportunityContainer.BodyContainer.opportunityEndateCalendarInput.dateComponents=[day,month,year];",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

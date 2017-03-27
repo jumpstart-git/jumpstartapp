@@ -1,0 +1,26 @@
+{
+    "AS_TextField_bac558627a05452b99bdf393eae66bc8": {
+        "id": "AS_TextField_bac558627a05452b99bdf393eae66bc8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTextChange_ea08b8231b5c41c098cd2e782468d83e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRegFieldUpdate",
+            "display": "onRegFieldUpdate",
+            "inputparams": [{
+                "name": "fieldEdited",
+                "value": "eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

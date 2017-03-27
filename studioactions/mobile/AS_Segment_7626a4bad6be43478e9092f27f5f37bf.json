@@ -1,0 +1,32 @@
+{
+    "AS_Segment_7626a4bad6be43478e9092f27f5f37bf": {
+        "id": "AS_Segment_7626a4bad6be43478e9092f27f5f37bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "LogHoursForms",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bd9555694264a13a362dc9042246919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e1d8106757794f4ea4ace4c1ffb3c80b",
+            "type": "INVOKE_FUNCTION",
+            "display": "removeHours",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

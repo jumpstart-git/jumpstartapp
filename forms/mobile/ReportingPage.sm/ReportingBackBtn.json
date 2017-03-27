@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s91cd29accd549da86bda4e83893b64e",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "ReportingBackBtn",
+    "ide_onClick": "AS_Button_d0f960c7858e420ebfef3cbd38e96dab",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8ab17f56dd834f648ef0d8ad1f2c221a",
+    "name": "kony.ui.Button",
+    "parent": "ReportingBackBtnFlex",
+    "pf": "ReportingPage",
+    "wType": "Button",
+    "zindex": 1
+}

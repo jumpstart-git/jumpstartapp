@@ -1,0 +1,24 @@
+{
+    "AS_Button_67bf03ca0ced4e74b2bbeeff21a5ed34": {
+        "id": "AS_Button_67bf03ca0ced4e74b2bbeeff21a5ed34",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2dc246ecf6074dbaac858a353e67a7f9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// getVolContactNumFromSearchProfile();\nvolunteerPhoneNumber();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

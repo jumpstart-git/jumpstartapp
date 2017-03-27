@@ -1,0 +1,30 @@
+{
+    "AS_RichText_30f0a796a36d4dc1a3a5220f10cc5c04": {
+        "id": "AS_RichText_30f0a796a36d4dc1a3a5220f10cc5c04",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__07a217bdf5f64bf38a3439e341fdc696",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible=false;\nmainPage.eligibiltyCriteriaModalContainer.acceptTermsChekBoxFlex.chckBoxFlex.chckBoxx.masterData= [\n            [\"cbg1\", \".\"]\n        ];\nmainPage.eligibiltyCriteriaModalContainer.isVisible=false;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

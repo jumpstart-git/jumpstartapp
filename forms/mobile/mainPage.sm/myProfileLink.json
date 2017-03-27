@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s38285f7b3e841c38b6709e378f27854",
+    "_text_": "<u>My Profile</u>",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "myProfileLink",
+    "ide_onClick": "AS_RichText_f979aad53c1142ecbe5962c51bc1ddef",
+    "ide_onTouchStart": "AS_RichText_c054155ae9024a5a9c2305607e76e4d8",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1e698213313547a09dcead39376d78c0",
+    "name": "kony.ui.RichText",
+    "parent": "sideBarBody",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5
+}

@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        3
+    ],
+    "_percent_": true,
+    "_skin_": "scf3da5f7565413a927d15496fa39420",
+    "_title_": "Validation",
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "inTransitionConfig": {
+            "animation": 0
+        },
+        "isModal": true,
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "lblUerName",
+        "txtUserName",
+        "lblCode",
+        "txtCode",
+        "HBox03440b86f6fac43"
+    ],
+    "containerweight": 86,
+    "currentLocale": "default",
+    "desktopweb": {
+        "psp": {
+            "titleBarConfig": {
+                "closeIcon": "close.png",
+                "maxIcon": "max.png",
+                "minIcon": "min.png"
+            }
+        }
+    },
+    "device": "iPhone6",
+    "displayorientation": 3,
+    "enabledforidletimeout": false,
+    "id": "pop1",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "intransitionconfig": {
+        "transitionDirection": "none",
+        "transitionEffect": "none"
+    },
+    "iphone": {
+        "inTransitionConfig": {
+            "transitionDirection": "none",
+            "transitionEffect": "none"
+        },
+        "isModal": true
+    },
+    "ismodal": true,
+    "isvisible": true,
+    "kuid": "852031d92ce24fa7b437c860523b4d7d",
+    "name": "kony.ui.Popup",
+    "paddinginpixel": false,
+    "platform": "iphone",
+    "prevDevice": "iPhone6",
+    "prevPlatform": "iphone",
+    "retainscrollposition": false,
+    "shellCSS": "iOS_iPhone6",
+    "spa": {
+        "inTransitionConfig": {
+            "popupTransition": "none"
+        }
+    },
+    "titlebar": true,
+    "transparencybehindthepopup": 100,
+    "wType": "Popup",
+    "winphone8": {
+        "inTransitionConfig": {
+            "inTransition": "slidein"
+        }
+    }
+}

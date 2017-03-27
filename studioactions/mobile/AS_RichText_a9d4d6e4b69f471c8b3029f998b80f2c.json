@@ -1,0 +1,33 @@
+{
+    "AS_RichText_a9d4d6e4b69f471c8b3029f998b80f2c": {
+        "id": "AS_RichText_a9d4d6e4b69f471c8b3029f998b80f2c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox00fe78492e0da42",
+            "type": "templates",
+            "platform": "",
+            "KUID": "3de8838616734a98b471fe850ca43c6a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f0bf6209102349eb98ed142aa37be653",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n   \n// sendReviewDetailsss();\n// mainPage.sendRecommendation.isVisible=true;\n  }\nelse\n  {\nsendReviewDetailsss();\nmainPage.sendRecommendation.isVisible=true;\n    \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Button_7a7d24bf2d21474e9e22079f8eac7bce": {
+        "id": "AS_Button_7a7d24bf2d21474e9e22079f8eac7bce",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5aefb92aece14f63bcacd5f743233b10",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "VolNewAcceptTaskBtn();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

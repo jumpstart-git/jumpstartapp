@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "23dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "36dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s7d5a169f87b432d8c25b23eaab4175f",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "49%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": true,
+    "id": "CopybusinessmsgBtn015ca841eb8074d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "478fb935906b46b589f8206a6709cade",
+    "name": "kony.ui.Button",
+    "parent": "CopybusinessProfileEmail0b561fe08f37145",
+    "pf": "BusinessProfile",
+    "wType": "Button",
+    "zindex": 1
+}

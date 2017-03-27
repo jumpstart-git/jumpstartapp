@@ -1,0 +1,42 @@
+{
+    "AS_Button_21f4bcf587e04140b67e181fc9636919": {
+        "id": "AS_Button_21f4bcf587e04140b67e181fc9636919",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_716d3d5f618c4cd69700ad40745f1d87",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousCancelRequest",
+            "display": "indeginousCancelRequest",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_bbad94fe78f74a77a21ce6ff7cbf720e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.sendRecommendation.isVisible=false;",
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_0bc9de29430c41d18ed75bc7b61b562f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }]
+    }
+}

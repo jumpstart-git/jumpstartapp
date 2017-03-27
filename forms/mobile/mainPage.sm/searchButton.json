@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "38%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5e2b2437fd94962926891187e1638f1",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "38%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "searchButton",
+    "ide_onClick": "AS_Button_3d555c25db1f4257a45b1f9c9ba15f18",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6fd7937ec8f24e91b1712f87ec086faf",
+    "name": "kony.ui.Button",
+    "parent": "searchButtonContainer",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

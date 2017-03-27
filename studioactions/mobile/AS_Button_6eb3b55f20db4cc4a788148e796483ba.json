@@ -1,0 +1,20 @@
+{
+    "AS_Button_6eb3b55f20db4cc4a788148e796483ba": {
+        "id": "AS_Button_6eb3b55f20db4cc4a788148e796483ba",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_1afd3c99871c4e90b015955920a2e5b6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveClosedTaskDetails",
+            "display": "saveClosedTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

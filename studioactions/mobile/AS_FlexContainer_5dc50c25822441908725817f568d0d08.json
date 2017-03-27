@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_5dc50c25822441908725817f568d0d08": {
+        "id": "AS_FlexContainer_5dc50c25822441908725817f568d0d08",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_fa21c98fe9784a548279afabf48173c3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestToVolunteerSetup",
+            "display": "requestToVolunteerSetup",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

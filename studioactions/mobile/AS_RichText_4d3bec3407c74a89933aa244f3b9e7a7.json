@@ -1,0 +1,31 @@
+{
+    "AS_RichText_4d3bec3407c74a89933aa244f3b9e7a7": {
+        "id": "AS_RichText_4d3bec3407c74a89933aa244f3b9e7a7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_800502ace8224516bc1013c655d16bca",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "callContactfromStartEngagementSentRequestSeg",
+            "display": "callContactfromStartEngagementSentRequestSeg",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_3c3ce7294f2642d2ab8afab651320cde",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//if(check if u cliked frst then only execute this)\n//var seg=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n// alert(\"Accepted Seg\"+JSON.stringify(seg));\n\n//var seg1=mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;\n// alert(\"Sent \"+JSON.stringify(seg1));\nvar seg=kony.store.getItem(\"segmentType\");\n//alert(\"the clicked segment is =\"+seg);\n\ntry{\n  if(seg!=\"null\"||seg!=null)\n  {\n    //alert(\"Inside Accepted Seg after first seg\");\n    if(seg==\"accepted\")\n      {\n       // alert(\"Inside Accepted Seg\");\n        callContactfromStartEngagementFromAcceptedrequestSeg();\n      } \n    else if(seg==\"sent\")\n  {\n    \n   // {\n        //alert(\"Inside Accepted Seg\"); \n        callContactfromStartEngagementSentRequestSeg();  \n    //}\n  }\n\n  }\n  \n}\n\n\ncatch(e)\n  {\n    alert(\"aError is\"+e);\n  }",
+            "callbackType": null
+        }]
+    }
+}

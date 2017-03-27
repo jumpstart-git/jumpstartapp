@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sce64709de7a45d0bf38f857c738e56f",
+    "_text_": "<u>Need help?</u>",
+    "_top_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "needHelpLink",
+    "ide_onTouchStart": "AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9",
+    "info": null,
+    "isvisible": true,
+    "kuid": "edadaff7f7744d45bea94eb53248c614",
+    "name": "kony.ui.RichText",
+    "parent": "resetPasswordFooter",
+    "pf": "resetPasswordForm",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

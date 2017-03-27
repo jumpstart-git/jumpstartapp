@@ -1,0 +1,24 @@
+{
+    "AS_CheckBoxGroup_51154a24fa7345cfa76545f96566cb84": {
+        "id": "AS_CheckBoxGroup_51154a24fa7345cfa76545f96566cb84",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ac4847e5608b41b2ac414b36fc7a93cb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var checkBoxVal=mainPage.checkList.selectedKeys;\n//alert(\"checkBoxVal:\"+JSON.stringify(checkBoxVal));\nif(checkBoxVal!=null){\n CheckBoxFunction7(); \n}\nelse{\n  UnCheckBoxFunction7();\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

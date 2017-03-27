@@ -1,0 +1,25 @@
+
+
+{
+
+    "NSAppTransportSecurity" :
+    {
+        "NSAllowsArbitraryLoads" : true ,
+        "NSExceptionDomains" :
+            {
+                "example.com" :
+                    {
+                        "NSIncludesSubdomains" : true ,
+                        "NSExceptionAllowsInsecureHTTPLoads" : true
+                    }
+            }
+    } ,
+ 
+"NSCalendarsUsageDescription" : "This is a dummy description", 
+"NSCameraUsageDescription" : "This is a dummy description", 
+"NSContactsUsageDescription" : "This is a dummy description", 
+"NSLocationAlwaysUsageDescription" : "This is a dummy description", 
+"NSPhotoLibraryUsageDescription" : "This is a dummy description" 
+
+}
+ 

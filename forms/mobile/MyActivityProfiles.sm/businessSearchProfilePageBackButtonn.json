@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-307dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se6a9b2fb84949b89cdfd67849d46f00",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "17dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "businessSearchProfilePageBackButtonn",
+    "ide_onClick": "AS_Button_7d08579f0c124d6a9d244a65dab2e06e",
+    "info": null,
+    "isvisible": false,
+    "kuid": "f2c7474c400448b8b5b24de8b4303dbc",
+    "name": "kony.ui.Button",
+    "parent": "businessProfileDetailsHeaderr",
+    "pf": "MyActivityProfiles",
+    "wType": "Button",
+    "zindex": 1
+}

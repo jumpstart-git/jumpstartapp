@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s90d9c104f4d4a49a6411aa66a3bf547",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "volProfileLocationAddressStateText",
+    "info": null,
+    "iphone": {
+        "wrapping": 2
+    },
+    "isvisible": true,
+    "kuid": "6c8e2116f08a48d1b94057b25a08bb0d",
+    "name": "kony.ui.RichText",
+    "parent": "volProfileLocationAddressParent",
+    "pf": "MyActivityProfiles",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "winphone8": {
+        "psp": {
+            "enableCache": true
+        }
+    }
+}

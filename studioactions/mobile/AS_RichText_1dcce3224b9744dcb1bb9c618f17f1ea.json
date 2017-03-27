@@ -1,0 +1,24 @@
+{
+    "AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea": {
+        "id": "AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

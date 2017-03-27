@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s97586c9679a4975bd5fc0fa181890c6",
+    "_text_": "4 hrs",
+    "_top_": {
+        "type": "string",
+        "value": "2dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblWorkingHours",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "00754f34880f48c8b8ff60c149140dbd",
+    "name": "kony.ui.Label",
+    "parent": "segWorkingHoursContainer",
+    "pf": "FBox0ebe39ec296d744",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s47a5776000f4b7ab25e50ef35a781f5",
+    "_text_": "Continue",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s81c418aa73c4b3ba6afee97bf11f66f",
+    "id": "ContinueBtn",
+    "ide_onClick": "AS_Button_0758697c36314de6be86afd5f5e75602",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4ea5aa5a093e4d00a42ae8a5fff348f1",
+    "name": "kony.ui.Button",
+    "parent": "regScheduleFooter",
+    "pf": "scheduleNewForm",
+    "wType": "Button",
+    "zindex": 1
+}

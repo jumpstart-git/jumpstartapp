@@ -1,0 +1,25 @@
+{
+    "AS_Button_96f53f9d2528473e839285f80c2202b8": {
+        "id": "AS_Button_96f53f9d2528473e839285f80c2202b8",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_regDaysButton_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___aafedbcb393e4467a00d0f05c965e9a9",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "toggleDay",
+            "display": "toggleDay",
+            "inputparams": [{
+                "name": "eventobject",
+                "value": "eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

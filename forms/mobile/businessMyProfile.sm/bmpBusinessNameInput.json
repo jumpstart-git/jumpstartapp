@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sfe32220eb1749d19bc0868d1af0c500",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "98%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "bmpBusinessNameInput",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "a253fac6cbcd40c48cfaadfbc9bae3bb",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "businessMyProfileBody",
+    "pf": "businessMyProfile",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

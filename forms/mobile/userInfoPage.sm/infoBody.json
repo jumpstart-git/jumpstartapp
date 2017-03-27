@@ -1,0 +1,102 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s1fc2bb1522a4d618e23cb3c2c07e505",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "android": {
+        "render": false
+    },
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "nameLabel",
+        "nameInfoField",
+        "addressLabel",
+        "addressInfoField",
+        "companyLabel",
+        "companyInfoField",
+        "roleLabel",
+        "roleInfoField",
+        "skillsLabel",
+        "skillListContainer",
+        "availabilityLabel",
+        "scheduleLabel",
+        "daysOfTheWeekContainer",
+        "timeContainer",
+        "Button0667cdbac0f0c46"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "infoBody",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "124d16e66e1141dcb8b27d7e056c8a53",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "userInfoPageContainer",
+    "pf": "userInfoPage",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "winphone8": {
+        "render": false
+    },
+    "zindex": 1
+}

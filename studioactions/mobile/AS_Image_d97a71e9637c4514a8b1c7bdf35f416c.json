@@ -1,0 +1,33 @@
+{
+    "AS_Image_d97a71e9637c4514a8b1c7bdf35f416c": {
+        "id": "AS_Image_d97a71e9637c4514a8b1c7bdf35f416c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___a1341b0b66584a5aae2c30c83ca73264",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openDialogForBusiness",
+            "display": "openDialogForBusiness",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

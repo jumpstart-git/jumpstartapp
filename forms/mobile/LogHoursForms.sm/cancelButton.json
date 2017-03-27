@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6a00f099b7c4972beb5e5c11e232e21",
+    "_text_": "Cancel",
+    "_width_": {
+        "type": "string",
+        "value": "46%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "26.129999999999995%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "45.64%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6a00f099b7c4972beb5e5c11e232e21",
+    "id": "cancelButton",
+    "ide_onClick": "AS_Button_9f297c3f4cb5435189bf603ff9c20e67",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5b87d1a2b0604d888ee6e65d05ca2135",
+    "name": "kony.ui.Button",
+    "parent": "logHoursFooterContainer",
+    "pf": "LogHoursForms",
+    "wType": "Button"
+}

@@ -1,0 +1,81 @@
+{
+    "AS_Form_683e8141b8fd42a0898dcaa41d91db36": {
+        "id": "AS_Form_683e8141b8fd42a0898dcaa41d91db36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5cb7027f29714217aee375f0a772f7e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "initAppHeader();\n//alert(\"entering\");\n//mainPage.cancelRequestModalContainer.isVisible = false;\nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n   // alert(\"a\");\n  mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text=kony.store.getItem(\"loginBusinessName\");\n  \n     var imageurlPath  = kony.store.getItem(\"imgUrlBusiness\");\n                   \n                   if(imageurlPath !=null){\n                     //alert(\"jst before setting\"+imageurlPath);\n                     mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src=\"\";\n                     mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = imageurlPath;\n                   }\n    //BusinessExistingOpenTaskService();\n    getBusinessRequestsService();\n    //BusinessRecommendationService();\n    \n  }else\n    {\n     // alert(\"it is volunteer\");\n   mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text=kony.store.getItem(\"volLoginName\");\n       var VolimageurlPath  = kony.store.getItem(\"imgUrlVal\");\n                   \n                 if(VolimageurlPath !=null){\n                   \n                  mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src =VolimageurlPath;\n                 \n                 }\n      getVolunteerRequestsService1();\n    }\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__fff0f6ee56b84c6cb0c7612e034ae66c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    mainPage.mainPageBody.navBarScroller.endorsementsContainer.isVisible=false;\n  }\n\n\n//start\nif((kony.store.getItem(\"isBusOrVol\")==\"volunteer\")&&(kony.store.getItem(\"adminVal\")==\"v\"))\n{\nmainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.ReportingLink.isVisible=true;\n}\nelse if((kony.store.getItem(\"isBusOrVol\")==\"business\")&&(kony.store.getItem(\"adminVal\")==\"i\"))\n  {\n    mainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.ReportingLink.isVisible=true;\n  }\nelse if((kony.store.getItem(\"isBusOrVol\")==\"business\")&&(kony.store.getItem(\"adminVal\")==\"sn\"))\n  {\n    mainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.ReportingLink.isVisible=true;\n  }\nelse\n  {\n    mainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.ReportingLink.isVisible=false;\n    \n  }\n\n\n\n\n\n\n//end\n  \n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__29306e60d4054fcaa03c170c8cbffb42",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " \n\t\tvar adminbus= kony.store.getItem(\"adminValnew\");\n    // alert(\"adminValnew\"+adminbus);\nif(adminbus==\"y\")\n  {\nmainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.FlexContainer08d40d9191a9344.checkList.selectedKeys=[\"cbg1\"];\n  }else\n    {\n      //alert(\"its no\");\n      mainPage.sideBarMenuContainer.sideBarMenu.sideBarBody.FlexContainer08d40d9191a9344.checkList.masterData=[\n            [\"cbg1\", \".\"]\n        ];\n    }\n\n    \n     \n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___c981b12f5e164a55a73c9f513b14109b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initMainPage",
+            "display": "initMainPage",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___57cff57b7c5b4cedbd5402969dc301cd",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getBusinessRequestsService",
+            "display": "getBusinessRequestsService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___74221c1b21874680a8168930aab318ef",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getBusinessRequestsService",
+            "display": "getBusinessRequestsService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___0ec6031ee86949d3a26dc9946dbcb3de",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "BusinessNotificationService",
+            "display": "BusinessNotificationService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___ab0078bb32904de08d46fd74e36d0ba1",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "BusinessCloseTaskService",
+            "display": "BusinessCloseTaskService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

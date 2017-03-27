@@ -1,0 +1,24 @@
+{
+    "AS_Form_f88bb7b8e2064c079e1772aeeafc4396": {
+        "id": "AS_Form_f88bb7b8e2064c079e1772aeeafc4396",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationDonePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "5f8dd29658ec45b489d5e0dfa91b4580"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3324f06ccbb94960b57af18413aa27c9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "registrationDonePage.emailTxt.setEnabled(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

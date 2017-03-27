@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Submit Request",
+    "_top_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "id": "requestAVolunteerSubmit",
+    "ide_onClick": "AS_Button_084a6e37b3e34b0c848a45390f3b841a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6fd6081b946c480db6bb079f999af535",
+    "name": "kony.ui.Button",
+    "parent": "requestAVolunteerFooter",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

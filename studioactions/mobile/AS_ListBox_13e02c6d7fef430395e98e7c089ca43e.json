@@ -1,0 +1,30 @@
+{
+    "AS_ListBox_13e02c6d7fef430395e98e7c089ca43e": {
+        "id": "AS_ListBox_13e02c6d7fef430395e98e7c089ca43e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ff958cb80cfe4f01a85d9126728c151a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblExistingTaskId=mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.selectedKeyValue;\nvar id=gblExistingTaskId[0];\n//alert(JSON.stringify(gblExistingTaskId));\nkony.store.setItem(\"gblExistingTaskId\", id);\nif(mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text==\"Select\")\n      {\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.data=\"\";\n         mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.data=\"\";\n      }\n        else{\n          //getBusinessLoadExistingTaskTask();\n          BusinessLoadExistingTaskTaskService();\n        }\n\n\n//var tsetGetID=kony.store.getItem(\"gblExistingTaskId\");\n//alert(tsetGetID);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-217dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf06ea4ed4c5450997bc4d8b34059f99",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "16.45%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopyLabel056d81c56eefc49",
+        "CopybtnIsExistingTask0a6a3128411754b"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyyesButtonContainer035056a9fe46b49",
+    "info": null,
+    "isvisible": false,
+    "kuid": "ca22951268ce49189b0458e1b99899a1",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "assignToExistingTaskListBoxContainer",
+    "pf": "searchResultProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

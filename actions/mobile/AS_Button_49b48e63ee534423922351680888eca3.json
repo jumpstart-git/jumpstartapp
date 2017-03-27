@@ -1,0 +1,18 @@
+{
+    "AS_Button_49b48e63ee534423922351680888eca3": {
+        "id": "AS_Button_49b48e63ee534423922351680888eca3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

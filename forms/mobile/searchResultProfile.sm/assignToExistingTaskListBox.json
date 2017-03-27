@@ -1,0 +1,92 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s680d14bbd8047789cf417b680fac524",
+    "_top_": {
+        "type": "string",
+        "value": "39%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "android": {
+        "dropDownImage": "listbox.png"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "context": {
+        "channel": "mobile",
+        "formID": "searchResultProfile",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "disabledSkins": {},
+    "dropdownimage": "",
+    "focusskin": "s6bb257612b84f4b9c548e91104c32d2",
+    "groupcells": false,
+    "id": "assignToExistingTaskListBox",
+    "info": null,
+    "iphone": {
+        "dropDownImage": "listbox.png"
+    },
+    "isvisible": true,
+    "kuid": "4cb5a98c089e4899b017757cce6ad86b",
+    "masterdata": [
+        [
+            "lb1",
+            "Listbox One"
+        ],
+        [
+            "lb2",
+            "Listbox Two"
+        ],
+        [
+            "lb3",
+            "Listbox Three"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "AssignToExistingCardContainer",
+    "pf": "searchResultProfile",
+    "selectedkey": null,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

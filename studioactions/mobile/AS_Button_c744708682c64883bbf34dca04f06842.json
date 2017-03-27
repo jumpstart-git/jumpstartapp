@@ -1,0 +1,65 @@
+{
+    "AS_Button_c744708682c64883bbf34dca04f06842": {
+        "id": "AS_Button_c744708682c64883bbf34dca04f06842",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_7272bc2e3404439d8c28d210983015cc",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Start Engagement",
+            "yesLabel": "OK",
+            "alertMessage": "Your task details have been sent",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_000f6633df664e6fb1d261d67549c2c8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_c0de5c52308848a0b513844f670f9d5e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousTaskDetails",
+            "display": "indeginousTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_ac0790224d234f9bb978472e6bb422d7",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_2d58a2b53e7b4be2b2acf813f8484c38",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var title=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppTitleInputLabel.text;\nvar details=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppDetailsInputLabel.text;\nvar endDate=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppEndDateCalendarInput.formattedDate;\nvar startDate=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppStartDateCalendarInput.formattedDate;\nvar hours=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppHoursInputLabel.text;\nvar skills=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppSkillsInputLabel.text;\nvar endDate1=kony.store.getItem(\"todayDate\");//   give todays's date'\nvar startdate1=mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppStartDateCalendarInput.formattedDate;\nvar isValidEndDate=validateDate(startDate, endDate);\nvar isValidStartEnd=validateStartDate(startdate1, endDate1);\n\nif(title===null||title===\"\"||title===\"null\")\n{\n  alert(\"Please enter a task title\");\n}\nelse if(details===null||details===\"\"||details===\"null\")\n  {\n    alert(\"Please enter task details\");\n  \n}\nelse if(skills===null||skills===\"\"||skills===\"null\")\n  {\n    alert(\"Please enter required skills\");\n  \n}\nelse if(hours==null||hours==\"null\"||hours==\"\"){\n   alert(\"Please enter hours required to complete the task\");\n}\n\nelse{\n  //alert(\"isValidStartEnd\"+isValidStartEnd);\nif (isValidStartEnd===false) {\n    validationAlert(\"Start Date should be greater than or equal to today's date\");\n}\nelse  if (isValidEndDate===false) {\n      validationAlert(\"End Date should be greater than or equal to start date\");\n    }\n  else{\n      //alert(\"done\");\n   UpdateOpportunity();\n  }\n}",
+            "callbackType": null
+        }]
+    }
+}

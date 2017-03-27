@@ -1,0 +1,98 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "android": {
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "registrationSchedulePage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s18713941c11413d8777d2fe2a70d6bc",
+    "groupcells": false,
+    "id": "toMeridiem",
+    "ide_onSelection": "AS_ListBox_db4a8dab83fc4abe9a5a3265ca96d017",
+    "info": null,
+    "iphone": {
+        "render": true,
+        "viewType": 3
+    },
+    "isvisible": true,
+    "kuid": "d6cc4f1de8e9420a99c9ca51d1a35007",
+    "masterdata": [
+        [
+            "AM",
+            "AM"
+        ],
+        [
+            "PM",
+            "PM"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "toTimeContainer",
+    "pf": "registrationSchedulePage",
+    "selectedkey": "AM",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "AM",
+        "AM"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "spaan": {
+        "render": true
+    },
+    "spabb": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "winphone8": {
+        "render": true
+    },
+    "zindex": 1
+}

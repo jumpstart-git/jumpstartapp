@@ -1,0 +1,33 @@
+{
+    "AS_RichText_c3043f0ca1154149b63a9b24397e8427": {
+        "id": "AS_RichText_c3043f0ca1154149b63a9b24397e8427",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox065d0320c900743",
+            "type": "templates",
+            "platform": "",
+            "KUID": "afa4cefcae1741e6819c3796ccc2ab29"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__27002576444544faa71eff20001231ae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer\nvar d1= new Date();\n    var day1=d1.getDate();\n    var month1=d1.getMonth();\n    month1=month1+1;\n    var year1=d1.getFullYear();\n    var todayDate1=day1+\"/\"+month1+\"/\"+year1;\n    kony.store.setItem(\"todayDate\", todayDate1);\n    mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppStartDateCalendarInput.dateComponents=[day1,month1,year1];\n    mainPage.opportunityDetailsContainer.EditOpprotunityBodyContainer.OppEndDateCalendarInput.dateComponents=[day1,month1,year1];\n    getOppTaskId();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

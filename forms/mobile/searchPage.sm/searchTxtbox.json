@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_right_": {
+        "type": "string",
+        "value": "17.66%"
+    },
+    "_skin_": "sfe32220eb1749d19bc0868d1af0c500",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "69.84%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "searchTxtbox",
+    "ide_onTextChange": "AS_TextField_547d8f0aabe647b4b0c0ba62b03a093c",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "86b4b9fff94a42b48aee85bbb376d43f",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "searchHdrFlex",
+    "pf": "searchPage",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s756b73fe31d49d8a63db2732e87c90b",
+    "_text_": "<a href=\"#\" style=\"color: #000\">Message</a>",
+    "_top_": {
+        "type": "string",
+        "value": "23dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "CopyimessageFromBusinessProfile092472d95892a4d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7d952e334d6b413ab4cc1342c31b3a05",
+    "name": "kony.ui.RichText",
+    "parent": "CopybusinessProfileEmail0b561fe08f37145",
+    "pf": "BusinessProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

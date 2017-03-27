@@ -1,0 +1,1 @@
+function AS_RichText_7545c330a78641979b460c83ee3acd1e(eventobject, x, y) {}

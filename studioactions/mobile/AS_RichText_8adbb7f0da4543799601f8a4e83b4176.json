@@ -1,0 +1,23 @@
+{
+    "AS_RichText_8adbb7f0da4543799601f8a4e83b4176": {
+        "id": "AS_RichText_8adbb7f0da4543799601f8a4e83b4176",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bd8137b299554be2bc73cbd54169a003",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "volunteerPhoneNumber();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40.54%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa8a74fc91ca498eaa8192005bbb9d83",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "29.63%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "strartEngagementBackBtn",
+    "ide_onClick": "AS_Button_b8b7e62c17ff4f09978c26587cf3c336",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2a3247122fee4400a0f649aaa854ed8e",
+    "name": "kony.ui.Button",
+    "parent": "startEngagmentPreviousParent",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

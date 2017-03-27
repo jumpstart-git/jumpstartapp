@@ -1,0 +1,24 @@
+{
+    "AS_Image_497bdba1dfe04dfe86fb41ab04942a7b": {
+        "id": "AS_Image_497bdba1dfe04dfe86fb41ab04942a7b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

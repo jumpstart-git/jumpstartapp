@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1e83d6f4099421bb4d9f749cde5a954",
+    "_text_": "Indigenous Business Volunteer Hours Report",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sf46c04dd6414a58b6a0480106c33b70",
+    "id": "businessBtn",
+    "ide_onClick": "AS_Button_395cc1c2c1cb40af83e6c4308d1dd377",
+    "info": null,
+    "isvisible": true,
+    "kuid": "eb16df4f4a9b4ba4b1b7605ece3dafaf",
+    "name": "kony.ui.Button",
+    "parent": "IndigenousBusinessContainer",
+    "pf": "ReportingPage",
+    "wType": "Button",
+    "zindex": 1
+}

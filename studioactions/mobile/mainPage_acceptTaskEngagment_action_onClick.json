@@ -1,0 +1,78 @@
+{
+    "AS_RichText_78687b17505c48ef9ec3726f0ba1d95d": {
+        "id": "AS_RichText_78687b17505c48ef9ec3726f0ba1d95d",
+        "type": "ACTION_SEQUENCE",
+        "name": "mainPage_acceptTaskEngagment_action_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": null,
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b39888f010d64771a80bc6105ba9c40e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "checkIfTaskOrStartEngagement",
+            "display": "checkIfTaskOrStartEngagement",
+            "inputparams": [{
+                "name": "type"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__e8e418629e10445eb93cfe1480b76cb7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    //alert(\"going inside business\");\n  //  indeginousCancelRequest();\n    mainPage.startEngagementModalContainer.isVisible=true;\n  }else\n    {\n      \n     //  alert(\"going inside volunteer\");\n      mainPage.acceptTaskDetailsModalContainer.isVisible=true;\n      \n      //write salma's code\n    }\n\n\n\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___fe678a7a95934f0785d5adcfa8002534",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForBusStartEngae",
+            "display": "saveReqForBusStartEngae",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___f53cf65288ac4ed9a375bbe46c8651c2",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getTaskDetailsForVol",
+            "display": "getTaskDetailsForVol",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___34ed6f78f97c48b9a3799e7687ea2efb",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "TaskDetailsForVolunteer",
+            "display": "TaskDetailsForVolunteer",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__529c22949ca343f79e90b4a7a172323f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    \n    TaskDetailsForVolunteer();\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

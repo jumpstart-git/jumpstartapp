@@ -1,0 +1,17 @@
+{
+    "AS_Button_77e714f7aa55443ea8dda907cdba64cb": {
+        "id": "AS_Button_77e714f7aa55443ea8dda907cdba64cb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_4fb282b45f7a448abeb8f2a0eed3cd83",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblIsOpp=false;\nsearchPage.searchTxtbox.text=\"\";\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=false;\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=true;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.opportunitiesIndicator.isVisible=false;\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    searchBusiness();\n    gblIsVol=false;\n    \n  }else\n    {\n     //no action should be done\n      \n    }\n",
+            "callbackType": null
+        }]
+    }
+}

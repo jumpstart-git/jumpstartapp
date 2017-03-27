@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s803d941531d4efeba361b4d79f711e4",
+    "_text_": "Password must contain 8 characters,1 special and 1 capital letter",
+    "_top_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblValidationText",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "bfb238aa2fbe4df1b0443ec5593f674f",
+    "name": "kony.ui.Label",
+    "parent": "ChangePasswordBOdyContainer",
+    "pf": "BusinessProfile",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

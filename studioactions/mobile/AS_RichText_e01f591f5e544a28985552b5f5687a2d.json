@@ -1,0 +1,30 @@
+{
+    "AS_RichText_e01f591f5e544a28985552b5f5687a2d": {
+        "id": "AS_RichText_e01f591f5e544a28985552b5f5687a2d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1a5e04ac25be4a48a008f57e0f2c49d5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.markAsCompleteGrayScreen.MarkAsCompleteModalContainer.isVisible=false;\nmainPage.markAsCompleteGrayScreen.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

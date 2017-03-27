@@ -1,0 +1,23 @@
+{
+    "AS_RichText_a3a624758d274a41a0dcb1677cc67447": {
+        "id": "AS_RichText_a3a624758d274a41a0dcb1677cc67447",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bf9ea54cf0654cd88eb69e22bbd28dc6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetBusinessContact();",
+            "callbackType": null
+        }]
+    }
+}

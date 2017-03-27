@@ -1,0 +1,32 @@
+{
+    "AS_TextField_f8b9fc0a64c04fb59a35d1236d543dde": {
+        "id": "AS_TextField_f8b9fc0a64c04fb59a35d1236d543dde",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "registrationProfessionalPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ba74c893fd5a445eb219fe3bef70986f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTextChange_fd6cee9a214c47088deff984165210f0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRegFieldUpdate",
+            "display": "onRegFieldUpdate",
+            "inputparams": [{
+                "name": "fieldEdited",
+                "value": "eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

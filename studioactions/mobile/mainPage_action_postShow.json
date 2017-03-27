@@ -1,0 +1,48 @@
+{
+    "AS_Form_c073dd72101c4b70836933a7f19d254a": {
+        "id": "AS_Form_c073dd72101c4b70836933a7f19d254a",
+        "type": "ACTION_SEQUENCE",
+        "name": "mainPage_action_postShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___36769ca61b164dec90c6a511d507a458",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setGroupsToClose",
+            "display": "setGroupsToClose",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___34c421cf1e614166ada11fb83db4da01",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "notificationService",
+            "display": "notificationService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___63ec8f5731034bcbacec096094cbe673",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setSegData",
+            "display": "setSegData",
+            "inputparams": [{
+                "name": "gblResponse"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

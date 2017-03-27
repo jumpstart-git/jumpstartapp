@@ -1,0 +1,76 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "s7cec3d4d41f464792db537e373f8582",
+    "_text_": "M",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sabedbeb54524573817ae83b94dcf3e5",
+    "id": "mondayButt",
+    "ide_onClick": "AS_Button_07cb5338058a42b381366e0fd754fe1a",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "bc7639156b79423d8224ad13021d9d7a",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "monContainer",
+    "pf": "userInfoPage",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "Button",
+    "winphone8": {
+        "render": false
+    }
+}

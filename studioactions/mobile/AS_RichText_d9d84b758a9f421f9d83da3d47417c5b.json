@@ -1,0 +1,27 @@
+{
+    "AS_RichText_d9d84b758a9f421f9d83da3d47417c5b": {
+        "id": "AS_RichText_d9d84b758a9f421f9d83da3d47417c5b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox09e1c06f6a9bb44",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1a06c929fc654a2cba76292bf1d59601"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

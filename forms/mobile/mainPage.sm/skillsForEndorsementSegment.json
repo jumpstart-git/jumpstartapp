@@ -1,0 +1,130 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "Image0a893623ec01245": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label084c31a2a8bb84a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Management"
+            }
+        },
+        {
+            "Image0a893623ec01245": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label084c31a2a8bb84a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Operations Management"
+            }
+        },
+        {
+            "Image0a893623ec01245": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "eligibilitycheck.png"
+            },
+            "Label084c31a2a8bb84a": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Analysis"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "1c6c0e9c97364149ae0ddabb11671e36",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "skillsForEndorsementSegment",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "5733bbbc08694afd8092fa5df0000900",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "acceptTaskSkillsModalBody",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "1c6c0e9c97364149ae0ddabb11671e36",
+    "rowcounter": 2,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s07c378f3b2d4ee0880bd799b515cf88",
+    "rowtemplate": "FBox0dac93f59f6db45",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "Image0a893623ec01245": "Image0a893623ec01245",
+        "Label084c31a2a8bb84a": "Label084c31a2a8bb84a"
+    }
+}

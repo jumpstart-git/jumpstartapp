@@ -1,0 +1,30 @@
+{
+    "AS_ListBox_2cad7402a3da4b4287375e6d870cc2b3": {
+        "id": "AS_ListBox_2cad7402a3da4b4287375e6d870cc2b3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPersonalPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bb11f14c1a7d462a940d51df0600113e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___767b3c8707174b6fbd59f6e0d1d66347",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onRegFieldUpdate",
+            "display": "onRegFieldUpdate",
+            "inputparams": [{
+                "name": "fieldEdited",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

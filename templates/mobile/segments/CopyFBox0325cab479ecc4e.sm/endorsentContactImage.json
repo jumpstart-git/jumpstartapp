@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
+    "_src_": "imagedrag.png",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "CopyFBox0325cab479ecc4e",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "endorsentContactImage",
+    "imagescalemode": 1,
+    "info": null,
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "4304292dbb2f49bcaed8847dedc95559",
+    "name": "kony.ui.Image2",
+    "parent": "CopyFBox0325cab479ecc4e",
+    "pf": "CopyFBox0325cab479ecc4e",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

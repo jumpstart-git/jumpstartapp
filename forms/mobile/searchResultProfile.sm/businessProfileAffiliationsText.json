@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        3,
+        3,
+        3
+    ],
+    "_skin_": "s9e398d404aa46dca930231fb0da7ece",
+    "_text_": "Australian Institute of Company Directors, Law Institute of Victoria",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "businessProfileAffiliationsText",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e610aeebe6454b7eb89925c1fd7a72b1",
+    "name": "kony.ui.RichText",
+    "paddinginpixel": false,
+    "parent": "businessProfileAffiliationsContainer",
+    "pf": "searchResultProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_542e8ed04a80413e96a847a7ba911ea9": {
+        "id": "AS_FlexContainer_542e8ed04a80413e96a847a7ba911ea9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

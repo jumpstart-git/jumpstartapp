@@ -1,0 +1,14 @@
+{
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "iphone": {
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kuid": "s3b7cae589a54e8bad418a2f90b282f6",
+  "wType": "Segment"
+}

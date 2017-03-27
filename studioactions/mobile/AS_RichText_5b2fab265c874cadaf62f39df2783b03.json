@@ -1,0 +1,30 @@
+{
+    "AS_RichText_5b2fab265c874cadaf62f39df2783b03": {
+        "id": "AS_RichText_5b2fab265c874cadaf62f39df2783b03",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3d239bfb00ca4aa58e7b8b3abc1d5f2f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "BusinessProfile.BusinessChangePasswordContainer.ChangePasswordContainer.ChangePasswordBOdyContainer.loggedInBusinessEmailId.text=kony.store.getItem(\"BusinessEmailId\");\nBusinessProfile.BusinessChangePasswordContainer.isVisible=true;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

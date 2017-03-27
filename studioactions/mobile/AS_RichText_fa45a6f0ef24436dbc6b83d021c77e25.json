@@ -1,0 +1,72 @@
+{
+    "AS_RichText_fa45a6f0ef24436dbc6b83d021c77e25": {
+        "id": "AS_RichText_fa45a6f0ef24436dbc6b83d021c77e25",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5e2df18312ee4a89aa27ef135a391ee3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    BusinessExistingTaskTaskService ();\n    mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem(\"loginBusinessName\");\n    mainPage.startEngagementModalContainer.isVisible=true;\n    //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[\"01\",\"01\",\"2016\"]; \n    var d= new Date();\n    var day=d.getDate();\n    var month=d.getMonth();\n    month=month+1;\n    var year=d.getFullYear();\n    var todayDate=day+\"/\"+month+\"/\"+year;\n    kony.store.setItem(\"todayDate\", todayDate);\n    //end merin\n    mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year]; \n    mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];\n    var seg=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n    var segment=seg[0].segType;\n    kony.store.setItem(\"segmentType\", segment);\n    \n    }else\n    {\n      \n     //  alert(\"going inside volunteer\");\n      mainPage.acceptTaskDetailsModalContainer.isVisible=true;\n      mainPage.acceptTaskDetailsModalContainer.acceptTaskDetailsModalHeader.CopystartEngagmentHeaderDetails05c3f0a6993dd4b.CopystartEngagmentHeaderDetailsParent07958b4bef26b4f.CopyLabel0d3787300d8b24b.text=kony.store.getItem(\"volLoginName\");\n      mainPage.acceptTaskDetailsModalContainer.acceptTaskDetailsModalFooter.CopystartEngagement0e3cd864659974b.isVisible=true;\n    var seg2=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n    var segmentType1=seg2[0].segType;\n    kony.store.setItem(\"segmentType\", segmentType1);\n      \n      \n      //write salma's code\n    }",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }, {
+            "id": "INVOKE_FUNCTION___2f5fbd33d0e04c5f8556ac8910823d70",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForBusStartEngae",
+            "display": "saveReqForBusStartEngae",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }, {
+            "id": "INVOKE_FUNCTION___1f28e44ad51d4d96a583b5685f6db171",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getTaskDetailsForVol",
+            "display": "getTaskDetailsForVol",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__bbea016aebe140e1bb6c7ac21679dbad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "getTaskDetailsForVol();",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__b0638c6c286f4f12bc022a65368f7db2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    \n    TaskDetailsForVolunteer();\n  }",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }, {
+            "id": "ADD_SNIPPET__cb259a1a5ffa4a0a8e410adbeaa69462",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var segItems=mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;\n//alert(JSON.stringify(segItems));\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\"){\n  saveBusIdForViewProfile99();\n}\nelse{\n  saveBusIdForVolViewProfileAcceptedSeg();\n}",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }]
+    }
+}

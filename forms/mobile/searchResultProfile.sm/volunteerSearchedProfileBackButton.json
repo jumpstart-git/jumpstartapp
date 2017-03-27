@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "7dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se6a9b2fb84949b89cdfd67849d46f00",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "17dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "volunteerSearchedProfileBackButton",
+    "ide_onClick": "AS_Button_74795edb55fd42e9a72a9ba442f85b36",
+    "info": null,
+    "isvisible": false,
+    "kuid": "20a2d9bf7edf4e4887590f07214ba7e6",
+    "name": "kony.ui.Button",
+    "parent": "volunteerProfileContainer",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

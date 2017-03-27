@@ -1,0 +1,25 @@
+{
+    "AS_Button_063412544d60470685da5107ca9ccd90": {
+        "id": "AS_Button_063412544d60470685da5107ca9ccd90",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_cancelRegister_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fb0bda2addf34254b298a3667c7f19e6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "login.show();\nregistrationPage.destroy();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

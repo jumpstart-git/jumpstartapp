@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_b9c789930dec4959a62a2a3f2f7d5c1d": {
+        "id": "AS_FlexContainer_b9c789930dec4959a62a2a3f2f7d5c1d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_3ffbe92e49514f298042c4994f4b7a22",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.mainPageBody.navBarScroller.activityNavContainer.activityIndicator.isVisible=false;\nmainPage.mainPageBody.navBarScroller.recommendationNavContainer.recommendationIndicator.isVisible=false;\nmainPage.mainPageBody.navBarScroller.notificationNavContainer.notificationIndicator.isVisible=true; ",
+            "callbackType": null
+        }]
+    }
+}

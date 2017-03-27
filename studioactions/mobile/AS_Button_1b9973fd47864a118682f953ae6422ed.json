@@ -1,0 +1,17 @@
+{
+    "AS_Button_1b9973fd47864a118682f953ae6422ed": {
+        "id": "AS_Button_1b9973fd47864a118682f953ae6422ed",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_9e43e00b96f44c5aa3e385434937b2f5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.TaskDetailsContainer.isVisible=false;\n//mainPage.show(); ",
+            "callbackType": null
+        }]
+    }
+}

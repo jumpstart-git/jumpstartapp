@@ -1,0 +1,23 @@
+{
+    "AS_Button_831e68be72a4442a95aaba1a7ad15158": {
+        "id": "AS_Button_831e68be72a4442a95aaba1a7ad15158",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f3a7474cdf92419480702ed8fb5468db",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "LogHoursForms.show();",
+            "callbackType": null
+        }]
+    }
+}

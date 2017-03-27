@@ -1,0 +1,29 @@
+{
+    "AS_Button_78e83321b8d049d8881d7b082294720b": {
+        "id": "AS_Button_78e83321b8d049d8881d7b082294720b",
+        "type": "ACTION_SEQUENCE",
+        "name": "BusinessProfileContinueButton_OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___6105b87741324621b0d3e400baa9e85f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

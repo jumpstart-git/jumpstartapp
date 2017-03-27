@@ -1,0 +1,40 @@
+{
+    "AS_RichText_8d10f40eabc1477a8115c5167105b377": {
+        "id": "AS_RichText_8d10f40eabc1477a8115c5167105b377",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___6809f474147a481292a550a88685992f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ReportingPage",
+            "formKUID": "f4b8e52608c448b0b84a126b8f09b8d4",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET__39801eac26b94133a9ebb7913df8fd3b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"inside onrowclick\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

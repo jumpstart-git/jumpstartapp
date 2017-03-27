@@ -1,0 +1,30 @@
+{
+    "AS_Segment_a52ffce90f1a4961b2dfed2b0b64337e": {
+        "id": "AS_Segment_a52ffce90f1a4961b2dfed2b0b64337e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__311ebc37a16d498a906b57218a82b73e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    saveVolForVolViewProfileCloseTask();\n     showBusinessCloseTaskDetails();\n     var rowData=mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems;\n    //alert(\"Close rowData\"+JSON.stringify(rowData));\n    var seg3=rowData[0].segType;\n     //alert(seg3);\n     kony.store.setItem(\"segmentType\", seg3);\n  }\nelse\n{\n  mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=false;\nsaveBusIdForViewProfileCloseTask();\n  showVolCloseTaskDetails();\n     var rowData1=mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems;\n     var seg4=rowData1[0].segType;\n     //alert(seg4);\n     kony.store.setItem(\"segmentType\", seg4);\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

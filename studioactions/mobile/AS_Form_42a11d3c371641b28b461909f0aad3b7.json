@@ -1,0 +1,31 @@
+{
+    "AS_Form_42a11d3c371641b28b461909f0aad3b7": {
+        "id": "AS_Form_42a11d3c371641b28b461909f0aad3b7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__de186abae15f4999808d19e13d0c62bd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\ngblFirstTime=false;\nif (gblIsVol==true){\n  \n  searchResultProfile.businessProfileContainer.isVisible=false;\n  searchResultProfile.volunteerRequestContainer.isVisible=false;\n  searchResultProfile.volunteerProfileContainer.isVisible=true;\n}\nelse{\n  searchResultProfile.volunteerProfileContainer.isVisible=false;\n  searchResultProfile.volunteerRequestContainer.isVisible=false;\n\nsearchResultProfile.businessProfileContainer.isVisible=true;\n}",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }, {
+            "id": "ADD_SNIPPET__da22884468ff4e52971be0cc84aa4830",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(gblIsOpp==true){\nsearchResultProfile.opprtunitiesReadOnlyContainer.isVisible=true;\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.isVisible=false;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

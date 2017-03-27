@@ -1,0 +1,39 @@
+{
+    "AS_Segment_edded707bff6488c98e88c1487d9d4e3": {
+        "id": "AS_Segment_edded707bff6488c98e88c1487d9d4e3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4027ef465eb744af8934e9ab7332ed8a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(gblIsVol==true)\n  {\n    //alert(\"row is \"+JSON.stringify(searchPage.volunteerdataSegment.selectedRowItems));\n   // searchPage.volunteerdataSegment.s\nvar selReqId=searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;\nkony.store.setItem(\"selReqId\", selReqId);\n//alert(\"row clicked vol\"+kony.store.getItem(\"selReqId\"));\n//volunteerProfilePageService(selReqId);\n       volunteerProfilePageService();\n \n  }else\n    {\n       //alert(\"row is \"+JSON.stringify(searchPage.volunteerdataSegment.selectedRowItems));\n      var selReqId=searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;\n      kony.store.setItem(\"selReqId\", selReqId);\n      IndigenousBusinessProfileService();\n      \n//alert(\"row clicked business\"+kony.store.getItem(\"selReqId\"));\n      \n      \n    }\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___ace8bffc68684bbeabeacd88f7cb6688",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "volunteerProfilePageService",
+            "display": "volunteerProfilePageService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

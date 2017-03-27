@@ -1,0 +1,33 @@
+{
+    "AS_Button_6a726122f1104df9b4d53ee762d4a566": {
+        "id": "AS_Button_6a726122f1104df9b4d53ee762d4a566",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__58eec7b33f5a471aac0ebdde3a1a7057",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    searchBusiness();\n    gblIsVol=false;\n    \n  }else\n    {\n     //no action should be done\n      \n    }",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___23ee708f5d144bbf8991b6d16707ecbe",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "searchBusiness",
+            "display": "searchBusiness",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

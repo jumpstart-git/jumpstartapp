@@ -1,0 +1,42 @@
+{
+    "AS_RichText_97e5661ca5e14986af20d1088bdd4fc3": {
+        "id": "AS_RichText_97e5661ca5e14986af20d1088bdd4fc3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox09e1c06f6a9bb44",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1a06c929fc654a2cba76292bf1d59601"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__87c3eeb2b8f24a8688587d748f03954f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    mainPage.viewRequestModalContainer.isVisible=true;\n    viewSentRequestedMessage();\n//     mainPage.viewRequestModalContainer.isVisible=false;\n//     mainPage.show();\n  }\nelse\n    {\n      mainPage.viewRequestModalContainer.isVisible=true;\n      viewVolSentRequestedMessage();\n//       mainPage.viewRequestModalContainer.isVisible=false;\n//       mainPage.show();\n    \n    }",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___7ce9ca4537694979b3562514f2d12ea3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "viewSentRequestedMessage",
+            "display": "viewSentRequestedMessage",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "AS_RichText_8ef5e3b3c4eb49679f4a1707c01ad4dd": {
+        "id": "AS_RichText_8ef5e3b3c4eb49679f4a1707c01ad4dd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d6d0b280e4194887b49531ec111f0d86",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    \n    IndigenousBusinessViewProfileService();\n  }\nelse if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n \n{\n // alert(\"y its not working\");\n  //alert(\"inside snippet\");\n  volunteerViewProfilePageService();\n  \n}",
+            "callbackType": null
+        }]
+    }
+}

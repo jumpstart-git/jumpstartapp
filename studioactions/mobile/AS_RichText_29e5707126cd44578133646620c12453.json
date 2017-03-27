@@ -1,0 +1,29 @@
+{
+    "AS_RichText_29e5707126cd44578133646620c12453": {
+        "id": "AS_RichText_29e5707126cd44578133646620c12453",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8c74ed0dcd5147859379788bfaf91596",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetBusinessContact();",
+            "callbackType": null
+        }]
+    }
+}

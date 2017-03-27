@@ -1,0 +1,31 @@
+{
+    "AS_ListBox_db4a8dab83fc4abe9a5a3265ca96d017": {
+        "id": "AS_ListBox_db4a8dab83fc4abe9a5a3265ca96d017",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_timeWheelSelection_onSelection",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___36292fd818614e09acf2044ede931130",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onTimeChange",
+            "display": "onTimeChange",
+            "inputparams": [{
+                "name": "eventobject",
+                "value": "eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

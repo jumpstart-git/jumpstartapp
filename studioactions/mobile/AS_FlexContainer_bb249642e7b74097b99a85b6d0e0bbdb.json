@@ -1,0 +1,30 @@
+{
+    "AS_FlexContainer_bb249642e7b74097b99a85b6d0e0bbdb": {
+        "id": "AS_FlexContainer_bb249642e7b74097b99a85b6d0e0bbdb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2ee7a37d513c4ba3860db5f38d9bbdcd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//volunteerPhoneNumberForCall();\nCallVol1();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

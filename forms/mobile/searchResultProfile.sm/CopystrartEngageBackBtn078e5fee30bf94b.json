@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa8a74fc91ca498eaa8192005bbb9d83",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "29.63%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "CopystrartEngageBackBtn078e5fee30bf94b",
+    "ide_onClick": "AS_Button_31c2aa437d8441008cc35e55dcb8e99e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8d9cfcb731f8481b89fd41cb9f6b377c",
+    "name": "kony.ui.Button",
+    "parent": "CopybackButtonContainer0c23230ebca4140",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s756b73fe31d49d8a63db2732e87c90b",
+    "_text_": "<a href=\"#\" style=\"color:  #37b3b1\">Message</a>",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "imessageRichText",
+    "ide_onClick": "AS_RichText_45be57ca65c1419986dd2ee513f25601",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b91096762e2c4b62b9e0c1668b477232",
+    "name": "kony.ui.RichText",
+    "parent": "AcceptTaskMessageContainer",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

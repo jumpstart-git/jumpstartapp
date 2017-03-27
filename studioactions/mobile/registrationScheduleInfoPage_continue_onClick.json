@@ -1,0 +1,28 @@
+{
+    "AS_Button_0e0b60a287be4f9a9c6fddeb813125b5": {
+        "id": "AS_Button_0e0b60a287be4f9a9c6fddeb813125b5",
+        "type": "ACTION_SEQUENCE",
+        "name": "registrationScheduleInfoPage_continue_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationSchedulePage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a246a313e1db4789b86d057ba020f115"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bb1f97f9df084fab91587f4afa8762e8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitScheduleInfo",
+            "display": "submitScheduleInfo",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

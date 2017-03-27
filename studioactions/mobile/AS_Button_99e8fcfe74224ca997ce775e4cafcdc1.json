@@ -1,0 +1,59 @@
+{
+    "AS_Button_99e8fcfe74224ca997ce775e4cafcdc1": {
+        "id": "AS_Button_99e8fcfe74224ca997ce775e4cafcdc1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_a621a81c51954e3e800cc0a08a12c5ab",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Start Engagement",
+            "yesLabel": "OK",
+            "alertMessage": "Your task details have been sent",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_17c69a59adb74e80b67a214276281eec",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_17444e92d6a4402aaa0cd2fd1cbed27d",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousTaskDetails",
+            "display": "indeginousTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_248525fc86af4c16b6e9ac45e6208b0f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_079c02d85ebc419e9d32f12b43a3567f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nvar title2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text;\nvar details2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text;\nvar endDate2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.formattedDate;\nvar startDate2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.formattedDate;\nvar hours2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text;\nvar skills2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text;\nvar  messge2=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text;\nvar endDate3=kony.store.getItem(\"todayDate\");//   give todays's date'\nvar startdate3=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.formattedDate;\nvar isValidEndDate=validateDate(startDate2, endDate2);\nvar isValidStartEnd=validateStartDate(startdate3, endDate3);\n\nif(title2===null||title2===\"\"||title2===\"null\")\n{\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter a task title\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n  //alert(\"Please enter a task title\");\n}\nelse if(details2===null||details2===\"\"||details2===\"null\")\n  {\n    kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter task details\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n   // alert(\"Please enter task details\");\n  \n}\nelse if(skills2==null||skills2==\"null\"||skills2==\"\"){\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter skill required to complete the task\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n  // alert(\"Please enter skill required to complete the task\");\n}\nelse if(hours2==null||hours2==\"null\"||hours2==\"\"){\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter hours required to complete the task\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n  // alert(\"Please enter hours required to complete the task\");\n}\nelse if(messge2==null||messge2==\"null\"||messge2==\"\"){\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter message\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n  // alert(\"Please enter message\");\n}\nelse{\n  //alert(\"isValidStartEnd\"+isValidStartEnd);\nif (isValidStartEnd===false) {\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please enter today/future date for this engagement\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n    //validationAlert(\"Please enter today/future date for this engagement\");\n}\nelse  if (isValidEndDate===false) {\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_INFO,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"End date should be a future date\",\n      \"alertHandler\":\"null\" \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    }); \n         \n   //   validationAlert(\"End date should be a future date\");\n    }\n  else{\n      //alert(\"done\");\n   BusinessRequestVolunteerTasks ();\n  }\n}\n\n  \n\n",
+            "callbackType": null
+        }]
+    }
+}

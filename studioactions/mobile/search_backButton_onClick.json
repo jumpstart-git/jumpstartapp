@@ -1,0 +1,36 @@
+{
+    "AS_Button_8fa8e6b553644a8aa8f131bdc76b36c0": {
+        "id": "AS_Button_8fa8e6b553644a8aa8f131bdc76b36c0",
+        "type": "ACTION_SEQUENCE",
+        "name": "search_backButton_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6240dd5316ae4bcca2219037dc094997",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchPage.destroy();\nmainPage.show();\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___17fed095fa894bcaad93dc1765c78347",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }]
+    }
+}

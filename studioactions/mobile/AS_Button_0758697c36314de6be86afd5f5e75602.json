@@ -1,0 +1,27 @@
+{
+    "AS_Button_0758697c36314de6be86afd5f5e75602": {
+        "id": "AS_Button_0758697c36314de6be86afd5f5e75602",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "scheduleNewForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "52743330124941c0b64a6f9c1f63791d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___4c4fdd8c5428460cb7389691c4602c81",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getScheduleFormat",
+            "display": "getScheduleFormat",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "AS_RichText_c27b302f6b7a4a9290f211e6e3852ef5": {
+        "id": "AS_RichText_c27b302f6b7a4a9290f211e6e3852ef5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "registrationSchedulePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a246a313e1db4789b86d057ba020f115"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b5df8a4225064bca9c66e1e4f7d16f51",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "volunteerMyProfilePage.outsidemodal.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

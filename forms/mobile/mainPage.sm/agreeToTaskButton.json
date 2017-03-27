@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4492e84ebfb41b28b44336becf33491",
+    "_text_": "I Agree",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "agreeToTaskButton",
+    "ide_onClick": "AS_Button_76f1a39663974d7bae74ccbc28d3c429",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ee47fedd479c43b988136165b7d31c0c",
+    "name": "kony.ui.Button",
+    "parent": "acceptTaskModalFooter",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

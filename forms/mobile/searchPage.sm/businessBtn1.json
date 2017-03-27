@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "28dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbc1c1c1bfd842698506fa91e8d1c9f3",
+    "_text_": "Business",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s993e6adafd14250881d25d4a4f9f43d",
+    "id": "businessBtn1",
+    "ide_onClick": "AS_Button_77e714f7aa55443ea8dda907cdba64cb",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6d1fb3c95762493ba7fc6c8861539994",
+    "name": "kony.ui.Button",
+    "parent": "BusinessContainer",
+    "pf": "searchPage",
+    "wType": "Button",
+    "zindex": 1
+}

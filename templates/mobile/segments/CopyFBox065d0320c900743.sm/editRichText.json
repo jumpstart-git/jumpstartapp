@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se797995459c41ad90d5fb4d5fe6f600",
+    "_text_": "RichText",
+    "_top_": {
+        "type": "string",
+        "value": "6dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "editRichText",
+    "ide_onClick": "AS_RichText_c3043f0ca1154149b63a9b24397e8427",
+    "info": null,
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "ad3960c29d81493a9774dee4bd4e3f90",
+    "name": "kony.ui.RichText",
+    "parent": "EditAndCloseContainer",
+    "pf": "CopyFBox065d0320c900743",
+    "wType": "RichText",
+    "watchos": {
+        "render": false
+    },
+    "widgetalignment": 5,
+    "windows10": {
+        "render": false
+    },
+    "winphone10": {
+        "render": false
+    },
+    "zindex": 1
+}

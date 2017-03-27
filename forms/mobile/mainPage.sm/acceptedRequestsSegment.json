@@ -1,0 +1,157 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "ActaulMessage": {
+                "text": ""
+            },
+            "acceptTask": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "acceptedRequestBusinessName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "acceptedRequestImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "acceptedRequestLabel": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "acceptedRequestStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "cancelRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "contactRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblRequestId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "requestMessage": {
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "d62331f2226e4bcea301fbb2507e0274",
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {
+        "ActaulMessage": "text",
+        "businessId": "text",
+        "phoneNumber": "text",
+        "requestMessage": "text",
+        "requestTaskId": "text",
+        "segType": "text",
+        "volunteerId": "text"
+    },
+    "id": "acceptedRequestsSegment",
+    "ide_onPull": "AS_Segment_515264bd371548348504c5441bf9abb5",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "3bb5fb577c9c487bba25faba15483c4b",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "myAcceptedRequestsListContainer",
+    "pf": "mainPage",
+    "retainselection": false,
+    "rowTemplateId": "d62331f2226e4bcea301fbb2507e0274",
+    "rowcounter": 0,
+    "rowfocusskin": "sb034df375024c64beffd64e2d5daa5b",
+    "rowskin": "s9135b5fa6f3401dbd7e0d5e783e12d0",
+    "rowtemplate": "FBox05b71795fc3da47",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0b1bca4f6e74f038ea522f7ed5e539e",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "acceptTask": "acceptTask",
+        "acceptedRequestBusinessName": "acceptedRequestBusinessName",
+        "acceptedRequestImage": "acceptedRequestImage",
+        "acceptedRequestImageParent": "acceptedRequestImageParent",
+        "acceptedRequestInfoParent": "acceptedRequestInfoParent",
+        "acceptedRequestLabel": "acceptedRequestLabel",
+        "acceptedRequestStatus": "acceptedRequestStatus",
+        "acceptedRequestsBottom": "acceptedRequestsBottom",
+        "acceptedRequestsTop": "acceptedRequestsTop",
+        "cancelRequest": "cancelRequest",
+        "contactRequest": "contactRequest",
+        "lblRequestId": "lblRequestId"
+    }
+}

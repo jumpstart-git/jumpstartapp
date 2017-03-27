@@ -1,0 +1,105 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "userInfoPage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "dropdownimage": "",
+    "groupcells": false,
+    "id": "toTimeDropdown",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "c98818dffbe44902b7dddf4b66737f22",
+    "masterdata": [
+        [
+            "lb1",
+            "7:00"
+        ],
+        [
+            "lb2",
+            "7:30"
+        ],
+        [
+            "lb3",
+            "8:00"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "toContainer",
+    "pf": "userInfoPage",
+    "selectedkey": "lb1",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "lb1",
+        "7:00"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "winphone8": {
+        "render": false
+    },
+    "zindex": 1
+}

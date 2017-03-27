@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Start",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "48%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "StartEngagementButton",
+    "ide_onClick": "AS_Button_99e8fcfe74224ca997ce775e4cafcdc1",
+    "info": null,
+    "iphone": {},
+    "isvisible": true,
+    "kuid": "42b76012975a455d8defc8ac8fb6031a",
+    "name": "kony.ui.Button",
+    "parent": "startEngagementFooterContainer",
+    "pf": "searchResultProfile",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_5ac82d2dce54410d9ac7e4ff57cbc7ab": {
+        "id": "AS_FlexContainer_5ac82d2dce54410d9ac7e4ff57cbc7ab",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a341a7691ee84f7b90d52d6f46b91552",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.mainPageBody.navBarScroller.activityNavContainer.activityIndicator.isVisible=false;\nmainPage.mainPageBody.navBarScroller.notificationNavContainer.notificationIndicator.isVisible=false; \nmainPage.mainPageBody.navBarScroller.recommendationNavContainer.recommendationIndicator.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

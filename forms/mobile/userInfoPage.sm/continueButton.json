@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Continue",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s4a64ffbe07d49e3b1331e447dd55491",
+    "id": "continueButton",
+    "ide_onClick": "AS_Button_a7b0aead332447b8bef76dcfcc1fdabe",
+    "info": null,
+    "isvisible": true,
+    "kuid": "12d60e5bfb614b858553bbb065454cc7",
+    "name": "kony.ui.Button",
+    "parent": "infoFooter",
+    "pf": "userInfoPage",
+    "wType": "Button",
+    "zindex": 1
+}

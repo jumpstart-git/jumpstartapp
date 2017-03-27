@@ -1,0 +1,27 @@
+{
+    "AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d": {
+        "id": "AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___aca5ac5436494fdfb5074327a008e242",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addScheduleInUpdate",
+            "display": "addScheduleInUpdate",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

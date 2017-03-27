@@ -1,0 +1,44 @@
+{
+    "AS_RichText_657672998ca44e6ebfa2d4fd1ed09d74": {
+        "id": "AS_RichText_657672998ca44e6ebfa2d4fd1ed09d74",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_a2131449a48840258e9af33c8bdb5729",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___4cfd6a4f00984429a10d87390bd31b01",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveClosedTaskDetails",
+            "display": "saveClosedTaskDetails",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__b33fecac645a4e418418f6ebc1770cbb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.MarkAsCompleteModalContainer.isVisible=true;\nmainPage.markAsCompleteGrayScreen.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

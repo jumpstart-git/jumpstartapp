@@ -1,0 +1,44 @@
+{
+    "AS_Button_56849e05360f4daba001e01291f6323e": {
+        "id": "AS_Button_56849e05360f4daba001e01291f6323e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___1a8665e2484845ffbf44ae388ace3e4c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousCancelRequest",
+            "display": "indeginousCancelRequest",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__365b38d763554f26b00f79d6c9111ef8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    //alert(\"going inside business\");\n    indeginousCancelRequest();\n    //mamata\n   \n   // mainPage.show();\n  }else\n    {\n      \n      VolCancelRequest();\n      //mamata\n    }",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___1916b348876542ca82afadb43836baa7",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }]
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
+    "_src_": "messagecontactlogo.png",
+    "_top_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "14.67%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "9.95%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "mainPage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "contactImage",
+    "imagescalemode": 0,
+    "info": null,
+    "isvisible": true,
+    "kuid": "20956bde74684f23ab756e36a391a6b6",
+    "name": "kony.ui.Image2",
+    "paddinginpixel": false,
+    "parent": "flxMessageReceived",
+    "pf": "mainPage",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

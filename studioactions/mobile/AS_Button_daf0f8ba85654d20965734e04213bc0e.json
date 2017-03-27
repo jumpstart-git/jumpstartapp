@@ -1,0 +1,23 @@
+{
+    "AS_Button_daf0f8ba85654d20965734e04213bc0e": {
+        "id": "AS_Button_daf0f8ba85654d20965734e04213bc0e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2f8d43948a6f492ebb073d715813b5ab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {   \n    mainPage.mainPageBody.mainPageContentParent.myEndorsements.isVisible=true;\n    endorsementsService();\n\n }\n",
+            "callbackType": null
+        }]
+    }
+}

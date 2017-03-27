@@ -1,0 +1,45 @@
+{
+    "AS_Segment_40a3c921256e40bd85f3e68049e6ad36": {
+        "id": "AS_Segment_40a3c921256e40bd85f3e68049e6ad36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__31f9c9bec9704dd98b992f4fa13a73eb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(gblIsVol==true)\n{\nvar selReqId=searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;\nkony.store.setItem(\"selReqId\", selReqId);\n searchResultProfile.volunteerProfileContainer.requestAVolunteer.isVisible=true;\n       volunteerProfilePageService();\n   \n  }else if (gblIsOpp==true)\n    {\n \n  //alert(\"inside isOpp\");\n  searchResultProfile.show();\n searchResultProfile.opprtunitiesReadOnlyContainer.isVisible=true;\n    \n      var busNameOpp=searchPage.volunteerdataSegment.selectedRowItems[0].CompanyNameLbl;\n       kony.store.setItem(\"busName99\", busNameOpp);\n       var busIdNew=searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;\n       kony.store.setItem(\"busIdNew\", busIdNew);\n      searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunityDetailsHdrModal.oppurtunitiesHeaderDetails1.opprtunitiesHeadingModal.opportunityBusinessName.text=kony.store.getItem(\"busName99\");\n  searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.isVisible=false;\ngetNewTaskDetailsForVolSearch8();\n  BusinessLoadExistingTaskForSearchScreen();\n // mainPage.BusinessRequestTaskDetailsModal.isVisible=true;\n // NewTaskDetailsForVolunteerOppSearch();\n\n      \n    }\n\n\n\n\nelse \n    {\n       //alert(\"row is \"+JSON.stringify(searchPage.volunteerdataSegment.selectedRowItems));\n      var selReqId=searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;\n      kony.store.setItem(\"selReqId\", selReqId);\n\n var busNameNew=searchPage.volunteerdataSegment.selectedRowItems[0].CompanyNameLbl;\n       kony.store.setItem(\"busNameNew\", busNameNew); \n    \n\n      searchResultProfile.businessProfileContainer.requestToVolunteerButton.isVisible=true;\n      IndigenousBusinessProfileService();\n \n      \n    }\n",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }, {
+            "id": "ADD_SNIPPET__c8c7df4f8d944fad940d1b096cd26d71",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__7b7108d36a4044858725c275d6d147e4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    BusinessExistingOpenTaskService();\n    \n    mainPage.startEngagementModalContainer.isVisible=true;\n    mainPage.show();\n    \n  }\nelse{\n  \n  //Voluinteer Code\n  \n}",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

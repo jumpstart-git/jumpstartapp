@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        3,
+        3,
+        3
+    ],
+    "_skin_": "s177db41a511426c89bcbd5fdd0fa8fe",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "reqTaskDetailsLabelInput",
+    "info": null,
+    "isvisible": true,
+    "kuid": "62cf000ce4544684a49cd7816146370a",
+    "name": "kony.ui.RichText",
+    "paddinginpixel": false,
+    "parent": "ReqTaskDetailsBody",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,34 @@
+{
+    "AS_Button_c55a88368de54c408d5a02eef07ad463": {
+        "id": "AS_Button_c55a88368de54c408d5a02eef07ad463",
+        "type": "ACTION_SEQUENCE",
+        "name": "login_signInButton_action_onTouchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___5a870dd501214cdf91ff8bea9261ac4c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "loginService",
+            "display": "loginService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }]
+    }
+}

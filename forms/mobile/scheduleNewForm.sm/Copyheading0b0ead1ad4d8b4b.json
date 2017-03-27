@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8b6ee3472fa4c6693fc1cbb076535d2",
+    "_text_": "Manager's Approval",
+    "_top_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "Copyheading0b0ead1ad4d8b4b",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "dd6a6bc2cab24256b34adffa16d30d4f",
+    "name": "kony.ui.Label",
+    "parent": "CopymangersApprovalFlex02c9e067a552740",
+    "pf": "scheduleNewForm",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

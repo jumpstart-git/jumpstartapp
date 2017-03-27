@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "6"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Continue",
+    "_width_": {
+        "type": "string",
+        "value": "48%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "id": "regPersonalInfoContinueButton",
+    "ide_onClick": "AS_Button_fa66164ea64f4016979992ff3a464ad7",
+    "info": null,
+    "isvisible": true,
+    "kuid": "67821abe13784768ad9eed3e14a6df47",
+    "name": "kony.ui.Button",
+    "parent": "regPersonalInfoFooter",
+    "pf": "registrationPersonalPage",
+    "wType": "Button"
+}

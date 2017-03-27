@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_0039c2f5581b4110aa4794159d292036": {
+        "id": "AS_FlexContainer_0039c2f5581b4110aa4794159d292036",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

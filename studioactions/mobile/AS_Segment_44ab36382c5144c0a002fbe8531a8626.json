@@ -1,0 +1,36 @@
+{
+    "AS_Segment_44ab36382c5144c0a002fbe8531a8626": {
+        "id": "AS_Segment_44ab36382c5144c0a002fbe8531a8626",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "scheduleNewForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "52743330124941c0b64a6f9c1f63791d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d4fa54b1bf9c484f8719cf6c0e0d4df3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeSchedule",
+            "display": "removeSchedule",
+            "inputparams": [{
+                "name": "rowObject",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

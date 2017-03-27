@@ -1,0 +1,61 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "42dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s27978553fdc4e9186dcd6b8be182d6f",
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "21.88%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "CopybusinessmsgBtn015ca841eb8074d",
+        "CopyimessageFromBusinessProfile092472d95892a4d"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopybusinessProfileEmail0b561fe08f37145",
+    "info": null,
+    "isvisible": false,
+    "kuid": "bc23ff33e4a64303a0936bf6692f5da5",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "companyProfileContactOptions",
+    "pf": "BusinessProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

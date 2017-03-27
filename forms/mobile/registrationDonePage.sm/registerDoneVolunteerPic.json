@@ -1,0 +1,83 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "s4ad8921bdc643b4ab2971d837df9cb2",
+    "_src_": "imgseglogo.png",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "registrationDonePage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "registerDoneVolunteerPic",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "18402cff562d495e926bd14d45728969",
+    "name": "kony.ui.Image2",
+    "parent": "registrationDonePageHeader",
+    "pf": "registrationDonePage",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "winphone8": {
+        "psp": {
+            "enableCache": true
+        },
+        "render": false
+    },
+    "zindex": 1
+}

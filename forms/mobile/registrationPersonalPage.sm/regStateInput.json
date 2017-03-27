@@ -1,0 +1,105 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "registrationPersonalPage",
+        "ispercent": "",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s2bf23cac7294e3086841dd73b3bbcba",
+    "groupcells": false,
+    "id": "regStateInput",
+    "ide_onSelection": "AS_ListBox_2cad7402a3da4b4287375e6d870cc2b3",
+    "info": null,
+    "isvisible": true,
+    "kuid": "55098ebb2bd241f9939e1ecb0bcac98b",
+    "masterdata": [
+        [
+            "Select",
+            "Select from drop down menu"
+        ],
+        [
+            "NSW",
+            "New South Wales"
+        ],
+        [
+            "ACT",
+            "Australian Capital Territory"
+        ],
+        [
+            "QLD",
+            "Queensland"
+        ],
+        [
+            "SA",
+            "South Australia"
+        ],
+        [
+            "TAS",
+            "Tasmania"
+        ],
+        [
+            "VIC",
+            "Victoria"
+        ],
+        [
+            "WA",
+            "Western Australia"
+        ],
+        [
+            "NT",
+            "Northern Territory"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "regPersonalInfoContainer",
+    "pf": "registrationPersonalPage",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

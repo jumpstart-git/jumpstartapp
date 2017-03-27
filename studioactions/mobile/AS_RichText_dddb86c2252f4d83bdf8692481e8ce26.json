@@ -1,0 +1,23 @@
+{
+    "AS_RichText_dddb86c2252f4d83bdf8692481e8ce26": {
+        "id": "AS_RichText_dddb86c2252f4d83bdf8692481e8ce26",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6420d35a9fb648228bfa49d0407f89fa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//alert(\"on click\");\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    //alert(\"on click innn\");\n    \n    IndigenousBusinessViewProfileService();\n  }\nelse if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n \n{\n // alert(\"y its not working\");\n  //alert(\"inside snippet\");\n  volunteerViewProfilePageService();\n  \n}",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa232546c20f4f0fab8f5f808cdc4d2e",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "98%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "49%"
+    },
+    "children": [
+        "bmpGovExpTop",
+        "bmpGovExpBottom"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "defaultunit": 2,
+    "enablescrolling": true,
+    "id": "bmpGovExpParent",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9bb9971ba2554f128a1039ba47d958bf",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "businessMyProfileBody",
+    "pf": "businessMyProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

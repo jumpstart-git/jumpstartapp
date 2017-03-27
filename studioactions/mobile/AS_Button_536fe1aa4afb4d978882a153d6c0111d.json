@@ -1,0 +1,38 @@
+{
+    "AS_Button_536fe1aa4afb4d978882a153d6c0111d": {
+        "id": "AS_Button_536fe1aa4afb4d978882a153d6c0111d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "businessMyProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "1236261b36ec4ae9bccbba8c33912563"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_a7e13b19ac6d48f09f87446c838ee44d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___1f423761d3f34effa319d629d1432b9e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "BusinessProfileUpdate",
+            "display": "BusinessProfileUpdate",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "AS_RichText_0039d256ac0e4b1fb29256f8759bd4a9": {
+        "id": "AS_RichText_0039d256ac0e4b1fb29256f8759bd4a9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox00fe78492e0da42",
+            "type": "templates",
+            "platform": "",
+            "KUID": "3de8838616734a98b471fe850ca43c6a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9afe8430b0894720936f1b16b621f8ae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    GetVolunteerIdByCloseTaskSegDetails();\n// sendReviewDetailsss();\n// mainPage.sendRecommendation.isVisible=true;\n  }\nelse\n  {\nsendReviewDetailsss();\nmainPage.sendRecommendation.isVisible=true;\n    \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

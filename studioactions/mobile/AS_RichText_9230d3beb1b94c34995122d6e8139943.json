@@ -1,0 +1,41 @@
+{
+    "AS_RichText_9230d3beb1b94c34995122d6e8139943": {
+        "id": "AS_RichText_9230d3beb1b94c34995122d6e8139943",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___dfaf160eb7ec4b28ba4b414f85b0e291",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__fbb2584636184429a50f4924ebdcaf37",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.cancelRequestModalContainer.isVisible=false;\n//mainPage.show();\nmainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text=\"Good day!I have received your request but unfortunately I have to decline due to other commitments that may impact my availability..\";\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

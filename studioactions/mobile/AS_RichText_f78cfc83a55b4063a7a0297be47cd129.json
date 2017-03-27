@@ -1,0 +1,23 @@
+{
+    "AS_RichText_f78cfc83a55b4063a7a0297be47cd129": {
+        "id": "AS_RichText_f78cfc83a55b4063a7a0297be47cd129",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_634e2b1b3faf4c5ab8797e234695fa29",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    var segTypeCheckforVolCall=kony.store.getItem(\"segmentType\");\n   // alert(segType1);\n    \n   try{\n     if(segTypeCheckforVolCall!=\"null\"||segTypeCheckforVolCall!=null)\n     {\n       if(segTypeCheckforVolCall==\"open\")\n        {\n          //alert(\"Isinde open seg \" + segType1);\n           callFromOpenSeg();\n         }\n       else {(segTypeCheckforVolCall==\"close\")\n         //alert(\"Inside Close Task\");\n        callVolFromeCloseSeg();\n            }\n     }\n    \n   } catch(e)\n     {\n     //alert(e);\n   }\n  \n  } \nelse\n  {\n    var segTypeforBusCal=kony.store.getItem(\"segmentType\");\n//alert(\"the clicked segTypement is =\"+segTypeforBusCal);\n\ntry{\n  if(segTypeforBusCal!=\"null\"||segTypeforBusCal!=null)\n  {\n//     //alert(\"Inside Accepted segType after first segType\");\n    if(segTypeforBusCal==\"accepted\")\n      {\n       // alert(\"Inside Accepted segType\");\n        callBusFromAcceptedSeg();\n     } \n    else if(segTypeforBusCal==\"open\")\n  {\n    //alert(\"Inside Open segType\");\n    callBusContactOpenSeg();\n       //alert(\"Inside Accepted segType\"); \n  }\n     else if(segTypeforBusCal==\"close\")\n  {\n    callBusFromeCloseSeg();\n  }\n  \n}\n  }\n    catch(e)\n  {\n    alert(\"aError is\"+e);\n  }\n  \n  }\n",
+            "callbackType": null
+        }]
+    }
+}

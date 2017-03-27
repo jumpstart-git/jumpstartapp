@@ -1,0 +1,24 @@
+{
+    "AS_Button_c8e58c278dc843529e6299794c8f659c": {
+        "id": "AS_Button_c8e58c278dc843529e6299794c8f659c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9eb35e2c72f94035bef9003221d9e5d6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(searchPage.searchTxtbox.text.length==\"0.0\"){\nalert(\"Please enter some text \");\n}else\n{\nsearchPage.segPredictive.removeAll();\n\nif(gblIsVol==true)\n  {\n           searchData21();\n    \n  }else if(gblIsOpp==true)\n    {\n      searchDataofOpportunity();\n    }\n  else\n    {\n      searchDataBusiness22(gblResponseBusinessSearch);\n      \n    }\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

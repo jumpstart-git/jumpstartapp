@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s72efd56fcd24d5abcd7f5364876e77c",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "expandImageContainer",
+        "myUnAssignedTaskHeader"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "unAssignedTasksHeader",
+    "ide_onTouchStart": "AS_FlexContainer_30736cdefc9f4a7fad59b12ff27cc077",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9a7cb6c9bb8d4b359f0bc5c6855e95c1",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "unAssignedTasksContainer",
+    "pf": "mainPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

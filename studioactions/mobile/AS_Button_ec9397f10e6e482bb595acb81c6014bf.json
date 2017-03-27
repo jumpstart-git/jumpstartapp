@@ -1,0 +1,26 @@
+{
+    "AS_Button_ec9397f10e6e482bb595acb81c6014bf": {
+        "id": "AS_Button_ec9397f10e6e482bb595acb81c6014bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_f41c5e5515d442a29d3737d58e000aba",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addNewSkill",
+            "display": "addNewSkill",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

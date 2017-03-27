@@ -1,0 +1,45 @@
+{
+    "AS_Button_1e558d2401b1484cb57b63d2de564a20": {
+        "id": "AS_Button_1e558d2401b1484cb57b63d2de564a20",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b00b8367621442079af499b0a1e6b584",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navToMessageListScreen",
+            "display": "navToMessageListScreen",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___bddb6d2c71c14ef29a5a9167f96f12f6",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navigateToPage",
+            "display": "navigateToPage",
+            "inputparams": [{
+                "name": "page",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "ADD_SNIPPET__9d15f259fc0649b6929b600470e839b9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " mainPage.mainPageBody.mainPageContentParent.flxMessageConversation.isVisible=false;\n mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=false;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

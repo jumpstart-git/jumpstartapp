@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s93cdfb2669c41f0836ed24cc4a70200",
+    "_top_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "dropDownImage": "listbox.png"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "searchResultProfile",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "disabledSkins": {},
+    "dropdownimage": "",
+    "focusskin": "sd928479db4d4143899b37d97708cd22",
+    "groupcells": false,
+    "id": "existingOpenTasksListBox",
+    "ide_onSelection": "AS_ListBox_40e6cfb5bbb54334bacd88300920c324",
+    "info": null,
+    "iphone": {
+        "dropDownImage": "listbox.png",
+        "viewType": 0
+    },
+    "isvisible": true,
+    "kuid": "c88414110f034de992c7ec31c1614d4f",
+    "masterdata": [
+        [
+            "lb1",
+            "Select"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "assignToExistingTaskListBoxContainer",
+    "pf": "searchResultProfile",
+    "selectedkey": "lb1",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "lb1",
+        "Select"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

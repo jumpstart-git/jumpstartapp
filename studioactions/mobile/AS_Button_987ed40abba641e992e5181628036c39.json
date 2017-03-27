@@ -1,0 +1,23 @@
+{
+    "AS_Button_987ed40abba641e992e5181628036c39": {
+        "id": "AS_Button_987ed40abba641e992e5181628036c39",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a53deae872a64851a6368f165c0fadf6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.BusinessRequestTaskDetailsModal.isVisible=false;\n//mainPage.show(); ",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_2c9ae795eb29424bae81f77c391655ae": {
+        "id": "AS_Button_2c9ae795eb29424bae81f77c391655ae",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___085b436208034aac86bb2602e0c93019",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "registrationPersonalPage",
+            "formKUID": "bb11f14c1a7d462a940d51df0600113e",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

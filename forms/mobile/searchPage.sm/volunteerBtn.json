@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se156337e2f04dd589a4646b792fb6d7",
+    "_text_": "Volunteers",
+    "_top_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": true,
+    "id": "volunteerBtn",
+    "ide_onClick": "AS_Button_af46e1839f6e43c5a3361243e5d819f1",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d8445b2881164127982b9a3537c646ca",
+    "name": "kony.ui.Button",
+    "parent": "searchDataTypeFlex",
+    "pf": "searchPage",
+    "wType": "Button",
+    "zindex": 1
+}

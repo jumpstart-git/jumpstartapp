@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s8b412c52b744ed6b604f8cc00cd7e52",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "regGreeting",
+        "regHeaderPic",
+        "regSelectionLabel"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "businessDetailsConfirmationHeader",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7d641b69812f4f39ad03f4d4969c5c60",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "businessDetailsConfirmationPage",
+    "pf": "businessDetailsConfirmationPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

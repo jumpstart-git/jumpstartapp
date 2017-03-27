@@ -1,0 +1,104 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s18713941c11413d8777d2fe2a70d6bc",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "volunteerMyProfilePage",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "focusskin": "s821f27f2a804c449c14fde4967b85ea",
+    "groupcells": false,
+    "id": "volunteerMyProfileStateInput",
+    "ide_onSelection": "AS_ListBox_8a3b81e21f92454abbdb7ee1f20c0255",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8fe9afb690ff41fbb21e2e5967c4a43f",
+    "masterdata": [
+        [
+            "Select",
+            "Select"
+        ],
+        [
+            "NSW",
+            "New South Wales"
+        ],
+        [
+            "ACT",
+            "Australian Capital Territory"
+        ],
+        [
+            "QLD",
+            "Queensland"
+        ],
+        [
+            "SA",
+            "South Australia"
+        ],
+        [
+            "TAS",
+            "Tasmania"
+        ],
+        [
+            "WA",
+            "Western Australia"
+        ],
+        [
+            "NT",
+            "Northern Territory"
+        ],
+        [
+            "VIC",
+            "Victoria"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "volunteerMyProfileBody",
+    "pf": "volunteerMyProfilePage",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

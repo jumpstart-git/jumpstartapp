@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1.7199999999999998%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se2ed0c497504013973f6b51b3bbb09e",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "searchBackBtn",
+    "ide_onClick": "AS_Button_8fa8e6b553644a8aa8f131bdc76b36c0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6ba698c405c74457aaa5e6aa061858d5",
+    "name": "kony.ui.Button",
+    "parent": "searchHdrFlex",
+    "pf": "searchPage",
+    "wType": "Button",
+    "zindex": 1
+}

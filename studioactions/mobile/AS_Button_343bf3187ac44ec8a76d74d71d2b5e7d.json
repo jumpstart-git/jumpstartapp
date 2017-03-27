@@ -1,0 +1,34 @@
+{
+    "AS_Button_343bf3187ac44ec8a76d74d71d2b5e7d": {
+        "id": "AS_Button_343bf3187ac44ec8a76d74d71d2b5e7d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_95f0560d49a249eea7c9ffb3b13e7772",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_0179044563df4ee2be7d25eb327570f7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.startEngagementModalContainer.isVisible=false;\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text=\"\";\nsearchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text=\"\";",
+            "callbackType": null
+        }]
+    }
+}

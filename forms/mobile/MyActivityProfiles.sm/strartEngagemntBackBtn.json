@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa8a74fc91ca498eaa8192005bbb9d83",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "29.63%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "strartEngagemntBackBtn",
+    "ide_onClick": "AS_Button_60cce89b31454d2f8f34f4ffe82d9aa8",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1af2aa50ec0a4e45a1f3a623e8254b5d",
+    "name": "kony.ui.Button",
+    "parent": "volBackButtonContainer",
+    "pf": "MyActivityProfiles",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,18 @@
+{
+    "AS_TitleBar_2c52b585e07e4357bc425c4e75e46480": {
+        "id": "AS_TitleBar_2c52b585e07e4357bc425c4e75e46480",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fd5db8dc882d4756b2f541ace4196f77",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.destroy();\nsearchPage.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

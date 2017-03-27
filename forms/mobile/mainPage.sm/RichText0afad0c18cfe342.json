@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s0a014df9b7a474da21e7fda07259af7",
+    "_text_": "I have read my <span style=\"color:#37b3b1\"><u>company’s policies and regulations</u></span> regarding volunteer work and agree to comply with all the rules and provisions outlined",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "RichText0afad0c18cfe342",
+    "ide_onClick": "AS_RichText_27a7fcb682904c84a39aa2134b49f8c8",
+    "ide_onTouchStart": "AS_RichText_796d858af5d446fd9b7c521670dc8af7",
+    "info": null,
+    "isvisible": true,
+    "kuid": "879b3b5077cc47f1bb3bb4333670c9b0",
+    "name": "kony.ui.RichText",
+    "parent": "FlexContainer0f7e2ed7a777043",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

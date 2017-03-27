@@ -1,0 +1,1 @@
+function AS_Label_6a7e2a417a2b46768a043d0f49eae5a2(eventobject, x, y) {}

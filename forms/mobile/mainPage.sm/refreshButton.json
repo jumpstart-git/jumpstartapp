@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "129.63%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "255dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb6ce9c1a2da4fa89cab25d231e1e30d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "12.02%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "refreshButton",
+    "ide_onClick": "AS_Button_ef9d782efbb843a2af32d76859191241",
+    "info": null,
+    "isvisible": false,
+    "kuid": "502e646210834c9cace939ea46e17c82",
+    "name": "kony.ui.Button",
+    "parent": "RefreshContainer",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

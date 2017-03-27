@@ -1,0 +1,17 @@
+{
+    "AS_Button_ef9d782efbb843a2af32d76859191241": {
+        "id": "AS_Button_ef9d782efbb843a2af32d76859191241",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_548fd190a12840adbf8cff4e6d4374f7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.destroy();\n if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;\n   mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;\n    BusinessRecommendationService();     \n  }\nmainPage.show();\n",
+            "callbackType": null
+        }]
+    }
+}

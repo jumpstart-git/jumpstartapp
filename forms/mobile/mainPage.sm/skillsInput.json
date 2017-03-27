@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "s8ea7761dac94baaaaa38ee040fdd764",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "4dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "android": {
+        "psp": {
+            "keyboardActionLabel": 1
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "skillsInput",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "keyboardActionLabel": 2
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 2,
+    "keyboardtype": "A",
+    "kuid": "01f50e1030d14797a4c97a454ca732bc",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "BodyContainer",
+    "pf": "mainPage",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

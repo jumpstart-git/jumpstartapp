@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Email ID",
+    "_skin_": "sa20a5045f0f4a6482e9a6473db4f8f0",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "usernameField",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "keyboardActionLabel": 2
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 2,
+    "keyboardstyle": "emailpad",
+    "keyboardtype": "A",
+    "kuid": "4f141ae3491c4964862184dcf8ac62b8",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "loginBody",
+    "pf": "login",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 2
+}

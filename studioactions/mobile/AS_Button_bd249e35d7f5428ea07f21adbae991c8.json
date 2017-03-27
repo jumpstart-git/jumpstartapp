@@ -1,0 +1,57 @@
+{
+    "AS_Button_bd249e35d7f5428ea07f21adbae991c8": {
+        "id": "AS_Button_bd249e35d7f5428ea07f21adbae991c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_ee1d1b410d53400aa6064d015ca89af0",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Accepted Task",
+            "yesLabel": "OK",
+            "alertMessage": "Thank you for accepting the task!",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_3a1eb08a5cf84629ac23f325a1d5447c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "VolAcceptTaskBtn",
+            "display": "VolAcceptTaskBtn",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_749dd0e136684c20b51d398ba3c7a318",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_e596b3a42bd14443bc67874f9df18c96",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// mainPage.acceptTaskDetailsModalContainer.isVisible=false;\n// mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); \n// mainPage.destroy();\n// mainPage.show(); ",
+            "callbackType": null
+        }]
+    }
+}

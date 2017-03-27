@@ -1,0 +1,24 @@
+{
+    "AS_Button_395cc1c2c1cb40af83e6c4308d1dd377": {
+        "id": "AS_Button_395cc1c2c1cb40af83e6c4308d1dd377",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ReportingPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4b8e52608c448b0b84a126b8f09b8d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d076777c2f61402196e4a896e97f4964",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "ReportingPage.ReportingContainer.ReportingActionsContainer.IndigenousBusinessContainer.BusinessIndicator.isVisible=true;\nReportingPage.ReportingContainer.ReportingActionsContainer.corporateFlexContainer.corporateIndicatorFlex.isVisible=false;\nReportingPage.ReportingContainer.ReportingActionsContainer.supplyNationContainer.supplyNationIndicator.isVisible=false;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

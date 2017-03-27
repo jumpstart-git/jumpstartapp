@@ -1,0 +1,42 @@
+{
+    "AS_Segment_129e92e809394c59bd592175b01d09f1": {
+        "id": "AS_Segment_129e92e809394c59bd592175b01d09f1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "LogHoursForms",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bd9555694264a13a362dc9042246919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___fd0edcbdca8b4ff3b4f9df15908ebd6a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeHours",
+            "display": "removeHours",
+            "inputparams": [{
+                "name": "rowObject",
+                "value": " eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "ADD_SNIPPET__3e43d0d9c6cc49baa93b83521b8ed6ed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n  \t  \"noLabel\": \"Cancel\",\n      \"message\": \"Do you really want to remove hours\",\n      \"alertHandler\": appUpgrade1\n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    });",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

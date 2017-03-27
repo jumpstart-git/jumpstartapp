@@ -1,0 +1,24 @@
+{
+    "AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647": {
+        "id": "AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a0c2ba7a24464349bb963dc3a4376591",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    BusinessAcceptRequestTasks ();\n  }\nelse{\n mainPage.eligibiltyCriteriaModalContainer.isVisible=true;\n  var originalMsg=kony.store.getItem(\"busmsge\");\n  if((originalMsg!=null)&&(originalMsg!=\"null\"))\n    {\n  mainPage.eligibiltyCriteriaModalContainer.BodyFlex.reqmsgLbl.text=originalMsg;\n    }\n  //VolNewAcceptTaskBtn();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

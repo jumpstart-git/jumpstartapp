@@ -1,0 +1,37 @@
+{
+    "AS_Segment_3ff11be923a849cc90fa3ce499285671": {
+        "id": "AS_Segment_3ff11be923a849cc90fa3ce499285671",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_removeSkill_onRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___248aeedd61024b569f75a5ff9a0463da",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeSkill",
+            "display": "removeSkill",
+            "inputparams": [{
+                "name": "rowObject",
+                "value": "eventobject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "s1c82c2889ab46bc9a7112261383bb5b",
+    "_text_": "+",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sabedbeb54524573817ae83b94dcf3e5",
+    "id": "addNewSkillButton",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1902c10c4cb5486fbac06914d651df19",
+    "name": "kony.ui.Button",
+    "parent": "addNewSkill",
+    "pf": "userInfoPage",
+    "wType": "Button",
+    "zindex": 1
+}

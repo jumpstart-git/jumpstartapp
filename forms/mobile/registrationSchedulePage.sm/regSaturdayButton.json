@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "sa5d997f6fd2416abe515a9bb74c5e7b",
+    "_text_": "SAT",
+    "_width_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "android": {
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "id": "regSaturdayButton",
+    "ide_onClick": "AS_Button_96f53f9d2528473e839285f80c2202b8",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "417b13fd1ab04a74ae303b3dcf772e61",
+    "name": "kony.ui.Button",
+    "parent": "daysOfTheWeekContainer",
+    "pf": "registrationSchedulePage",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "Button",
+    "winphone8": {
+        "render": false
+    }
+}

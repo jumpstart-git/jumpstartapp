@@ -1,0 +1,24 @@
+{
+    "AS_Button_d0f960c7858e420ebfef3cbd38e96dab": {
+        "id": "AS_Button_d0f960c7858e420ebfef3cbd38e96dab",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ReportingPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4b8e52608c448b0b84a126b8f09b8d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4e088efdc27a4a85a7b60bfad2b15237",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "ReportingPage.destroy();\nmainPage.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

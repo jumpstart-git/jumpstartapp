@@ -1,0 +1,24 @@
+{
+    "AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901": {
+        "id": "AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__037b5c8c9a7a4a4db92a171b297aaa8c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//mainPage.show();\n//VolMyProfile();\n//VollMyProfile();\n\nsubmitUpdateInfo();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

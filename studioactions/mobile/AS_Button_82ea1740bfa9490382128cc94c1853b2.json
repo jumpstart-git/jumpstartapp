@@ -1,0 +1,17 @@
+{
+    "AS_Button_82ea1740bfa9490382128cc94c1853b2": {
+        "id": "AS_Button_82ea1740bfa9490382128cc94c1853b2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b8e6141d8c2f46b5849479149da7156f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=false;\nsearchPage.searchTxtbox.text=\"\";\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=false;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.opportunitiesIndicator.isVisible=true;\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    searchPage.DataFlexScrollContainer.volunteerdataSegment.removeAll();\n    searchOppurtunity();\n    gblIsVol=false;\n     gblIsOpp=true;\n    \n  }else\n    {\n     //no action should be done\n      \n    }",
+            "callbackType": null
+        }]
+    }
+}

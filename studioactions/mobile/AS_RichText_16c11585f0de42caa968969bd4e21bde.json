@@ -1,0 +1,30 @@
+{
+    "AS_RichText_16c11585f0de42caa968969bd4e21bde": {
+        "id": "AS_RichText_16c11585f0de42caa968969bd4e21bde",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__af1ed75d098740d4a4774676d7dfa6ad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.destroy();\nmainPage.show(); \nif(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;\n   mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;\n    BusinessRecommendationService();     \n  }\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

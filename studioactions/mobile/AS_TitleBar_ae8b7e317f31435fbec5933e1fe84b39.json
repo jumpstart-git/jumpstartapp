@@ -1,0 +1,18 @@
+{
+    "AS_TitleBar_ae8b7e317f31435fbec5933e1fe84b39": {
+        "id": "AS_TitleBar_ae8b7e317f31435fbec5933e1fe84b39",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__da6c95b0d0284d1d9242c4b2f755c518",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "gblFirstTime=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

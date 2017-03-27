@@ -1,0 +1,39 @@
+{
+    "AS_Form_856f4203a0514bdd9ad9964c7526a80a": {
+        "id": "AS_Form_856f4203a0514bdd9ad9964c7526a80a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f388a97e38204f59abf2ecfb0e7f5d27"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0cbb929fd03145e9a3bd7fa2c626ad95",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"volunteer\"){\n//   searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=false;\n// searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=true;\n//   searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.opportunitiesIndicator.isVisible=false;\n\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.isVisible=false;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=true;\nsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=true;\n}\nelse{\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.isVisible=false;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.isVisible=false;\n  searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=true;\n  \n}\n\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__e89875aae1e5407db78c3db4b0e79fc5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nsearchPage.segPredictive.removeAll();\nif(kony.store.getItem(\"isBusOrVol\")==\"volunteer\")\n  {\n    gblIsVol=false;\n    if(gblFirstTime==true)\n      {\n    searchBusiness();\n      }\n   \n else\n      {\n        if(gblIsOpp==true)\n          {\n            searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.volunteerFlex.volunteerScrollFlex.isVisible=false;\n  \t\t\tsearchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.BusinessContainer.businessIndicator.isVisible=false;\n            searchPage.searchPageDashboardFlex.searchPageUpFlex.searchDataTypeFlex1.opportunitiesFlex.opportunitiesIndicator.isVisible=true;\n          }\n        \n        \n      } \n\n    searchPage.businessBtn.skin=\"CopyslButtonGlossBlue0ae29c855fda143\";\n    searchPage.volunteerBtn.skin =\"CopyslButtonGlossBlue05330b12903d140\";\n    \n    \n    \n  }\nelse\n  {\n    gblIsVol=true;\n    if(gblFirstTime==true)\n      {\n    volunteerService();\n      }\n    \n    searchPage.businessBtn.skin=\"CopyslButtonGlossBlue05330b12903d140\";\n    searchPage.volunteerBtn.skin =\"CopyslButtonGlossBlue0ae29c855fda143\";\n    \n  }\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___e8cfbea31c7a435b894883596f968574",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "volunteerService",
+            "display": "volunteerService",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

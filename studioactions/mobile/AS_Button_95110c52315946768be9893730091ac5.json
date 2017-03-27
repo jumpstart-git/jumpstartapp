@@ -1,0 +1,23 @@
+{
+    "AS_Button_95110c52315946768be9893730091ac5": {
+        "id": "AS_Button_95110c52315946768be9893730091ac5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ReportingPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4b8e52608c448b0b84a126b8f09b8d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8310caab47ac401da23d1da8d7f67ab2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "  ReportingPage.ReportingContainer.ReportingActionsContainer.supplyNationContainer.supplyNationIndicator.isVisible=true;\nReportingPage.ReportingContainer.ReportingActionsContainer.corporateFlexContainer.corporateIndicatorFlex.isVisible=false;\nReportingPage.ReportingContainer.ReportingActionsContainer.IndigenousBusinessContainer.BusinessIndicator.isVisible=false;",
+            "callbackType": null
+        }]
+    }
+}

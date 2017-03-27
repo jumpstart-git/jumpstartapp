@@ -1,0 +1,64 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
+    "_src_": "imagedrag.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "FBox002ffa33914ea45",
+        "platform": "iphone",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "searchBookmarkImage",
+    "imagescalemode": 1,
+    "imagewhiledownloading": "bookmarkoff.png",
+    "info": null,
+    "invokedProperty": "imageWhileDownloading",
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "f447b0a88bfb4dadb22eff257fae63c4",
+    "name": "kony.ui.Image2",
+    "parent": "searchBookmarkContainer",
+    "pf": "FBox002ffa33914ea45",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

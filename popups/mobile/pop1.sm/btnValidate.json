@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_render_": true,
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Validate",
+    "android": {
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 51,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "donotUpdateContainerWeight": false,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "btnValidate",
+    "ide_onClick": "AS_Button_6769340a248d48eabbad10e602c77e6b",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "7a0f59c3e2d34d8181cf5786eacd51a0",
+    "name": "kony.ui.Button",
+    "parent": "HBox03440b86f6fac43",
+    "pf": "pop1",
+    "spaan": {
+        "render": true
+    },
+    "spabb": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
+    "wType": "Button",
+    "winphone8": {
+        "render": true
+    }
+}

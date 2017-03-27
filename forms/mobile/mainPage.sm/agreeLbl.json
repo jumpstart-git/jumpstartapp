@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "safb39b973a2422caf5852ad1a907716",
+    "_text_": "I agree to all conditions stated above",
+    "_top_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 3,
+    "id": "agreeLbl",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "b687766f82004643a3d857e1db816e79",
+    "name": "kony.ui.Label",
+    "parent": "acceptTermsChekBoxFlex",
+    "pf": "mainPage",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

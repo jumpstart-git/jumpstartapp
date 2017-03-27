@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
+    "_src_": "imagedrag.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "FBox05b71795fc3da47",
+        "platform": "iphone",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "acceptedRequestImage",
+    "imagescalemode": 1,
+    "info": null,
+    "isSegmentChild": true,
+    "isvisible": true,
+    "kuid": "9082296ef95c49e6a154eb8e26e18bbd",
+    "name": "kony.ui.Image2",
+    "parent": "acceptedRequestImageParent",
+    "pf": "FBox05b71795fc3da47",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

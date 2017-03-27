@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "opportunitiesImg",
+        "opprtunitiesBackBtn"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "opprtunitiesBackBtnModal",
+    "ide_onClick": "AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca",
+    "info": null,
+    "isvisible": false,
+    "kuid": "2b669b2e6d8343f384f1c177a2b823a7",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "oppurtunitiesHeaderDetails1",
+    "pf": "searchResultProfile",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

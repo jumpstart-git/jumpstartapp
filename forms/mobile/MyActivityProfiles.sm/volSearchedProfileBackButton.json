@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "7dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se6a9b2fb84949b89cdfd67849d46f00",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "17dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
+    },
+    "displaytext": false,
+    "id": "volSearchedProfileBackButton",
+    "ide_onClick": "AS_Button_b30aeaef6c39476794ac2f5a8b88eea3",
+    "info": null,
+    "isvisible": false,
+    "kuid": "3912696d455b4f0095ace83b0aaec3fc",
+    "name": "kony.ui.Button",
+    "parent": "volProfileContainer",
+    "pf": "MyActivityProfiles",
+    "wType": "Button",
+    "zindex": 1
+}

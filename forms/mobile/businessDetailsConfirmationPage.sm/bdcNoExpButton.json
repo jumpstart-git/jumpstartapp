@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_skin_": "sa5d997f6fd2416abe515a9bb74c5e7b",
+    "_text_": "No Experience",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "android": {
+        "render": false
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "id": "bdcNoExpButton",
+    "ide_onClick": "AS_Button_3f0b779809604cbebc08b5f48b09b3dd",
+    "info": null,
+    "iphone": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "64b28dfd348645c2b69a5c96b1ac5aba",
+    "name": "kony.ui.Button",
+    "parent": "bdcNoExpParent",
+    "pf": "businessDetailsConfirmationPage",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "wType": "Button",
+    "winphone8": {
+        "render": false
+    }
+}

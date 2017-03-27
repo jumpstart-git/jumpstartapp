@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s756b73fe31d49d8a63db2732e87c90b",
+    "_text_": "<a href=\"#\" style=\"color: #37b3b1\">View Profile</a>",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "viewProfileRichText",
+    "ide_onClick": "AS_RichText_dfc77110fa9c4e878d108a5fc8bdd84e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c6525895baa5499aa5cfb49d461668ff",
+    "name": "kony.ui.RichText",
+    "parent": "viewProfileContainer",
+    "pf": "searchResultProfile",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

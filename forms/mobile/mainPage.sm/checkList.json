@@ -1,0 +1,85 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizCheckBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "42.47%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "64.91%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1748da9198447e2b077d0ac549ff1c8",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35.09%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "id": "checkList",
+    "ide_onSelection": "AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "viewType": 4
+        }
+    },
+    "iphone": {
+        "psp": {
+            "viewType": 4
+        }
+    },
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "eb77d5c20a874aac83d29af1aea59310",
+    "masterdata": [
+        [
+            "cbg1",
+            "."
+        ]
+    ],
+    "name": "kony.ui.CheckBoxGroup",
+    "orientation": "vertical",
+    "parent": "FlexContainer08d40d9191a9344",
+    "pf": "mainPage",
+    "selectedkey": null,
+    "selectedkeys": [
+        "cbg1"
+    ],
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        [
+            "cbg1",
+            "."
+        ]
+    ],
+    "size": 18,
+    "tickedimage": "checkbx.png",
+    "untickedimage": "markascomplete.png",
+    "viewtype": 0,
+    "wType": "CheckBoxGroup",
+    "widgetalignment": 5,
+    "winphone8": {
+        "psp": {
+            "enableCache": true
+        }
+    },
+    "zindex": 1
+}

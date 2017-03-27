@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_skin_": "s1cb6357db7d417cbba975cc5b76678b",
+    "_text_": "You have entered a schedule outside regular working hours. By choosing to continue, you acknowledge that this will invalidate your working hours in the report",
+    "_top_": {
+        "type": "string",
+        "value": "55dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 2,
+    "id": "updateScheduleOutsideHoursText",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5ef355abd9474dbeb21459e83a8aa037",
+    "name": "kony.ui.RichText",
+    "paddinginpixel": false,
+    "parent": "updateScheduleOutsideHoursBody",
+    "pf": "volunteerMyProfilePage",
+    "wType": "RichText",
+    "widgetalignment": 5
+}

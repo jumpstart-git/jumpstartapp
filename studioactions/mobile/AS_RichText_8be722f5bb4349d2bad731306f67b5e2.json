@@ -1,0 +1,43 @@
+{
+    "AS_RichText_8be722f5bb4349d2bad731306f67b5e2": {
+        "id": "AS_RichText_8be722f5bb4349d2bad731306f67b5e2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "FBox0788b6c38d49d4b",
+            "type": "templates",
+            "platform": "",
+            "KUID": "f56d09074d7541c1a528a2db3f8d5309"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_de608ac7663f4191827742952884ae1f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_faf726cbd6654c4db7d9bbb06236215e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveClosedTaskDetails",
+            "display": "saveClosedTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

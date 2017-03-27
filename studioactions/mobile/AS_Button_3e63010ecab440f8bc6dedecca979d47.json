@@ -1,0 +1,24 @@
+{
+    "AS_Button_3e63010ecab440f8bc6dedecca979d47": {
+        "id": "AS_Button_3e63010ecab440f8bc6dedecca979d47",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LogHoursForms",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bd9555694264a13a362dc9042246919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a85ab35d9db642189fb19f9fa905a107",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "addHours();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

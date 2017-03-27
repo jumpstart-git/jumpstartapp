@@ -1,0 +1,30 @@
+{
+    "AS_FlexContainer_b74bf0ca08354ac482d50767e3733d00": {
+        "id": "AS_FlexContainer_b74bf0ca08354ac482d50767e3733d00",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d094b8e8a82d48beb83fb3c24afbc86d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.mainPageBody.navBarScroller.activityNavContainer.activityIndicator.isVisible=true;\nmainPage.mainPageBody.navBarScroller.notificationNavContainer.notificationIndicator.isVisible=false;\nmainPage.mainPageBody.navBarScroller.recommendationNavContainer.recommendationIndicator.isVisible=false;\nmainPage.mainPageBody.navBarScroller.endorsementsContainer.endorsementsIndicator.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

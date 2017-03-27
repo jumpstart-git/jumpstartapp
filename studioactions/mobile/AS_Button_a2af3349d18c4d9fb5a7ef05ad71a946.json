@@ -1,0 +1,24 @@
+{
+    "AS_Button_a2af3349d18c4d9fb5a7ef05ad71a946": {
+        "id": "AS_Button_a2af3349d18c4d9fb5a7ef05ad71a946",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LogHoursForms",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bd9555694264a13a362dc9042246919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5fcfe15c4fe74caaa115e753a3763ea8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "LogHoursForms.AddHoursModalContainer.isVisible=true; \nloadTime1();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

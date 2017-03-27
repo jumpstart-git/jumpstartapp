@@ -1,0 +1,51 @@
+{
+    "AS_RichText_55b2af90803e4a41b41f97f284e70dda": {
+        "id": "AS_RichText_55b2af90803e4a41b41f97f284e70dda",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "FBox05b71795fc3da47",
+            "type": "templates",
+            "platform": "",
+            "KUID": "d62331f2226e4bcea301fbb2507e0274"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6afdc12ef92d4a7cbf9a4cb8d907fb39",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.cancelRequestModalContainer.isVisible = true;\n",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "INVOKE_FUNCTION___30e99170481948ec909a4bd4f517ef3e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveCancelVolReqId",
+            "display": "saveCancelVolReqId",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }, {
+            "id": "INVOKE_FUNCTION___3ea241430a5b44f7802b72cf03335f35",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "saveReqForCancel",
+            "display": "saveReqForCancel",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

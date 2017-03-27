@@ -1,0 +1,33 @@
+{
+    "AS_Button_df13c25023874207a65c88b802d79b02": {
+        "id": "AS_Button_df13c25023874207a65c88b802d79b02",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_9e2b16633f5140659f6e5a4faca042ab",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openSendVolunteerRequestModal11",
+            "display": "openSendVolunteerRequestModal11",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_a26644090bc349df80262ac94d4dcbed",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestVolunteerByBusiness1",
+            "display": "requestVolunteerByBusiness1",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_287e629a4de94281a2049b7e402223fc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "BusinessExistingOpenTaskService();\n//searchResultProfile.businessProfileContainer.isVisible=false;\nsearchResultProfile.opprtunitiesReadOnlyContainer.isVisible=true; \n searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.isVisible=true;\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.isVisible=true;\n \nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunityDetailsHdrModal.oppurtunitiesHeaderDetails1.opprtunitiesHeadingModal.opportunityBusinessName.text=kony.store.getItem(\"busNameNew\");\n\nvar availabilty =kony.store.getItem(\"scheduleValNew\");\nvar name=kony.store.getItem(\"busNameNew\");\n//alert(\"name\"+name);\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.availabiltyTxt.text=availabilty;",
+            "callbackType": null
+        }]
+    }
+}

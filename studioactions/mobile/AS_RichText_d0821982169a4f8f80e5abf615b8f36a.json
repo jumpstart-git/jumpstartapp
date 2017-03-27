@@ -1,0 +1,29 @@
+{
+    "AS_RichText_d0821982169a4f8f80e5abf615b8f36a": {
+        "id": "AS_RichText_d0821982169a4f8f80e5abf615b8f36a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_eb3dea5cdbdd436b8348cb85d92acdb0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"isBusOrVol\")==\"business\")\n  {\n    var segType1=kony.store.getItem(\"segmentType\");\n   // alert(segType1);\n    \n   try{\n     if(segType1!=\"null\"||segType1!=null)\n     {\n       if(segType1==\"open\")\n        {\n          //alert(\"Isinde open seg \" + segType1);\n           callContactfromOpenTaskBusiness();\n         }\n       else {(segType1==\"close\")\n         //alert(\"Inside Close Task\");\n        callContactfromCloseTaskBusiness();\n            }\n     }\n    \n   } catch(e)\n     {\n     //alert(e);\n   }\n  \n  } \nelse\n  {\n    var segType2=kony.store.getItem(\"segmentType\");\n//alert(\"the clicked segTypement is =\"+segType2);\n\ntry{\n  if(segType2!=\"null\"||segType2!=null)\n  {\n//     //alert(\"Inside Accepted segType after first segType\");\n    if(segType2==\"accepted\")\n      {\n       // alert(\"Inside Accepted segType\");\n        contactVolunteerFromAcceptTaskDetailsPage();\n     } \n    else if(segType2==\"open\")\n  {\n    callContactfromOpenTaskVolunteer();\n    // alert(\"Inside Open segType\"); \n  }\n     else if(segType2==\"close\")\n  {\n    callContactfromCloseTaskVolunteer();\n  }\n  \n}\n  }\n    catch(e)\n  {\n    //alert(\"Error is\"+e);\n  }\n  \n  }\n",
+            "callbackType": null
+        }]
+    }
+}

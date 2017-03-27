@@ -1,0 +1,33 @@
+{
+    "AS_RichText_d6ff08f069db47e1b086860d0827fe7b": {
+        "id": "AS_RichText_d6ff08f069db47e1b086860d0827fe7b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "CopyFBox065d0320c900743",
+            "type": "templates",
+            "platform": "",
+            "KUID": "afa4cefcae1741e6819c3796ccc2ab29"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__459b9dca778c4859851088ab5ddd3cab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n      \"alertTitle\": \"Confirm\",\n      \"yesLabel\": \"Yes\",\n   \"noLabel\":\"No\",\n      \"message\": \"Do you really want to remove the brief?\",\n      \"alertHandler\":appUpgradeCloseOpp \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_RIGHT\n    }); \n\n\nfunction appUpgradeCloseOpp(response)\n{\n  if(response==true)\n    {\n     unAssignedTaskSegData1();\n    }else\n      {\n        \n      }\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

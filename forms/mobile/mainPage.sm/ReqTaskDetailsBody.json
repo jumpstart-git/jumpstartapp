@@ -1,0 +1,82 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60.21%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s97910cae92b4445b8dbfcfe19b4547c",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "reqTaskTitleLabel",
+        "reqTaskTitleLabelInput",
+        "reqTaskDetailsLabel",
+        "reqTaskDetailsLabelInput",
+        "reqTaskHoursLabel",
+        "reqTaskHoursLabelInput",
+        "reqTaskSkillsLabel",
+        "reqTaskSkillsLabelInput",
+        "reqTaskStartDateLabel",
+        "reqTaskStartDateLabelInput",
+        "reqTaskEndDateLabel",
+        "reqTaskEndDateLabelInput",
+        "requestTaskId"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "ReqTaskDetailsBody",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5a14f0d8132c4af6b1630be507c245b2",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "BusinessRequestTaskDetailsModal",
+    "pf": "mainPage",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

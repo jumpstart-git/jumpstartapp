@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb4f49b3a7df43f5871679409a47d587",
+    "_text_": "Supply Nation Volunteer Hours report",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s6652cb19d0e40f3a9705e2504d61244",
+    "id": "supplyNationBtn",
+    "ide_onClick": "AS_Button_6fa79a6c2954455aa3b72d34934c3504",
+    "info": null,
+    "isvisible": true,
+    "kuid": "974d9173bbfb4100bc0e5191d069f967",
+    "name": "kony.ui.Button",
+    "parent": "supplyNationContainer",
+    "pf": "ReportingPage",
+    "wType": "Button",
+    "zindex": 1
+}

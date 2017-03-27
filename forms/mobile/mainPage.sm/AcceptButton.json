@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_text_": "Accept",
+    "_top_": {
+        "type": "string",
+        "value": "9%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "49%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "id": "AcceptButton",
+    "ide_onClick": "AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647",
+    "info": null,
+    "isvisible": true,
+    "kuid": "0d351314cc7e4e8b8057770c834010de",
+    "name": "kony.ui.Button",
+    "parent": "ReqTaskDetailsFooter",
+    "pf": "mainPage",
+    "wType": "Button",
+    "zindex": 1
+}

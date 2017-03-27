@@ -1,0 +1,67 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s3ff483bfd714b6a94c329593ee0d042",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "96.88%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "updateScheduleOutsideHoursHeader",
+        "updateScheduleOutsideHoursBody",
+        "updateScheduleOutsideHoursFooter"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "outsidecontainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e655cfb21f8e4410b307db8c4d303df8",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "outsidemodal",
+    "pf": "volunteerMyProfilePage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

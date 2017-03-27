@@ -1,0 +1,34 @@
+{
+    "AS_RichText_79a979c620b74de38fdedecd3e420bba": {
+        "id": "AS_RichText_79a979c620b74de38fdedecd3e420bba",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___1bb1178f7508451ea9de9ce648ddedde",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "ReportingPage",
+            "formKUID": "f4b8e52608c448b0b84a126b8f09b8d4",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

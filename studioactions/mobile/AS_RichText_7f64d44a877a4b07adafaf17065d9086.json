@@ -1,0 +1,30 @@
+{
+    "AS_RichText_7f64d44a877a4b07adafaf17065d9086": {
+        "id": "AS_RichText_7f64d44a877a4b07adafaf17065d9086",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "BusinessProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e77f50fcef0d46fe9acf13a5e11ac7ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__82e8227427314ddaa841991b8942ef95",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "BusinessProfile.BusinessChangePasswordContainer.isVisible=false;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

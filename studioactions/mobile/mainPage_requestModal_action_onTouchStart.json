@@ -1,0 +1,34 @@
+{
+    "AS_RichText_33e420002b474104a5b6e9bec3f82699": {
+        "id": "AS_RichText_33e420002b474104a5b6e9bec3f82699",
+        "type": "ACTION_SEQUENCE",
+        "name": "mainPage_requestModal_action_onTouchStart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d91c9fcd2d29474d8d08f651429a9ada",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }]
+    }
+}

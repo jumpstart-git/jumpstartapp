@@ -1,0 +1,24 @@
+{
+    "AS_Form_c04c2de481c948ae876453c2c425440f": {
+        "id": "AS_Form_c04c2de481c948ae876453c2c425440f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "scheduleNewForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "52743330124941c0b64a6f9c1f63791d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2ee49eb0c4714b0596795b17faaead27",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "scheduleNewForm.segSchedule.widgetDataMap={\n\n            \n          \n            \"lblSchedule\": \"lblSchedule\",\n           \"imgclose\": \"imgclose\"\n          \n\n\n        };\n//alert(volunteerRegObject.skillsArray.length);\nif(volunteerRegObject.scheduleArray.length==\"0.0\")\n  {\n    //alert(\"no val\");\n\nscheduleNewForm.segSchedule.removeAll();\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

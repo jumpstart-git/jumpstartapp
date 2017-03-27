@@ -1,0 +1,24 @@
+{
+    "AS_Button_2fcd5c5fee8d4b7e8a42a88c96695455": {
+        "id": "AS_Button_2fcd5c5fee8d4b7e8a42a88c96695455",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "ReportingPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f4b8e52608c448b0b84a126b8f09b8d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__857f7e4117f54bd6a2574befcc0a2758",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " ReportingPage.destroy();\n  //hideSideBar();\n  mainPage.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

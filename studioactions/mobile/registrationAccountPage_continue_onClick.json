@@ -1,0 +1,35 @@
+{
+    "AS_Button_bcbbff717f3d44baa85e01e8e388552d": {
+        "id": "AS_Button_bcbbff717f3d44baa85e01e8e388552d",
+        "type": "ACTION_SEQUENCE",
+        "name": "registrationAccountPage_continue_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationAccountPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "536f7e9fe153427d92b5be23fc9c32de"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___28d030b5d3334055b2b53553ad339780",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitAccountInfo",
+            "display": "submitAccountInfo",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__81bedd0965b04501ae197572d403bfea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "emailValidityCheck();",
+            "parentId": null,
+            "callbackType": null,
+            "disabled": false
+        }]
+    }
+}

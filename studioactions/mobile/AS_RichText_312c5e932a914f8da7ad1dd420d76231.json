@@ -1,0 +1,30 @@
+{
+    "AS_RichText_312c5e932a914f8da7ad1dd420d76231": {
+        "id": "AS_RichText_312c5e932a914f8da7ad1dd420d76231",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ba249986b292499e89134e6d17a1866d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//alert(\"touchddd\");\npop1.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

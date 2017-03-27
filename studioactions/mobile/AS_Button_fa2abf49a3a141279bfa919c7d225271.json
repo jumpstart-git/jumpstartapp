@@ -1,0 +1,65 @@
+{
+    "AS_Button_fa2abf49a3a141279bfa919c7d225271": {
+        "id": "AS_Button_fa2abf49a3a141279bfa919c7d225271",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_97d723e00d084d3b8a1afb5850e26e43",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Start Engagement",
+            "yesLabel": "OK",
+            "alertMessage": "Your task details have been sent",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_b3e49815a5cf46588a441f9646cd2ec8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onClick_e42ef750392149dfb558fe66da4a5ead",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "indeginousTaskDetails",
+            "display": "indeginousTaskDetails",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM__ide_onClick_638299859d9e4337b20c29bdc8f0b664",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "mainPage",
+            "formKUID": "660f2ce584d44ab7bfd2137b797089f0",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_769c9cf995f04995ad7580d05dd0f6a0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//indeginousTaskDetails();\nvar title=mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text;\nvar details=mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text;\nvar endDate=mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.formattedDate;\nvar startDate=mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;\nvar hours=mainPage.startEngagementModalContainer.startEngagementModalBody.duratationOfEngagementInput.text;\nvar endDate1=kony.store.getItem(\"todayDate\");//   give todays's date'\nvar startdate1=mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;\nvar isValidEndDate=validateDate(startDate, endDate);\nvar isValidStartEnd=validateStartDate(startdate1, endDate1);\n\nif(title===null||title===\"\"||title===\"null\")\n{\n  alert(\"Please enter a task title\");\n}\nelse if(details===null||details===\"\"||details===\"null\")\n  {\n    alert(\"Please enter task details\");\n  \n}\nelse if(hours==null||hours==\"null\"||hours==\"\"){\n   alert(\"Please enter hours required to complete the task\");\n}\n\nelse{\n  //alert(\"isValidStartEnd\"+isValidStartEnd);\nif (isValidStartEnd===false) {\n    validationAlert(\"Start Date should be greater than or equal to today's date\");\n}\nelse  if (isValidEndDate===false) {\n      validationAlert(\"End Date should be greater than or equal to start date\");\n    }\n  else{\n      //alert(\"done\");\n   indeginousTaskDetails();\n  }\n}\n\n  \n\n",
+            "callbackType": null
+        }]
+    }
+}

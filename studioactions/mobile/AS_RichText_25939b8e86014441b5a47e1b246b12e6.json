@@ -1,0 +1,39 @@
+{
+    "AS_RichText_25939b8e86014441b5a47e1b246b12e6": {
+        "id": "AS_RichText_25939b8e86014441b5a47e1b246b12e6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "SHOW_ALERT_ide_onClick_2dd5cb226a764f779f6f03045bd5bb9c",
+            "type": "SHOW_ALERT",
+            "alertType": "constants.ALERT_TYPE_INFO",
+            "alertTitle": "Corporate info!",
+            "yesLabel": "Corporate info!",
+            "alertMessage": "Corporate info!",
+            "messageType": "constant",
+            "callbackType": null,
+            "alertTitlei18n": null,
+            "yesLabeli18n": null,
+            "noLabeli18n": null,
+            "alertMessagei18n": null,
+            "iconPosition": "constants.ALERT_ICON_POSITION_LEFT",
+            "disabled": true
+        }, {
+            "id": "OPEN_URL__85373c22880d4a5b96445f275d5fd96d",
+            "type": "OPEN_URL",
+            "url": "http://www.supplynation.org.au/contactus",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

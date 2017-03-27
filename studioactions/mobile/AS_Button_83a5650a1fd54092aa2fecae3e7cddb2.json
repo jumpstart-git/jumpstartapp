@@ -1,0 +1,12 @@
+{
+    "AS_Button_83a5650a1fd54092aa2fecae3e7cddb2": {
+        "id": "AS_Button_83a5650a1fd54092aa2fecae3e7cddb2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "AS_Button_d9548a946ba24ef5a52b3107c5a81fe9": {
+        "id": "AS_Button_d9548a946ba24ef5a52b3107c5a81fe9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___0b4a41558c474e278205ba6d08563d7b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "openSendVolunteerRequestModal11",
+            "display": "openSendVolunteerRequestModal11",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION___03bec3e1d7e34faf9429c9da33222905",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "requestVolunteerByBusiness1",
+            "display": "requestVolunteerByBusiness1",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__04032cce4eb94b32b1a7051f20cf4ac5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "BusinessExistingOpenTaskService();\n//searchResultProfile.businessProfileContainer.isVisible=false;\nsearchResultProfile.opprtunitiesReadOnlyContainer.isVisible=true; \n searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.isVisible=true;\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.isVisible=true;\n \nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunityDetailsHdrModal.oppurtunitiesHeaderDetails1.opprtunitiesHeadingModal.opportunityBusinessName.text=kony.store.getItem(\"busNameNew\");\n\nvar availabilty =kony.store.getItem(\"scheduleValNew\");\nvar name=kony.store.getItem(\"busNameNew\");\n//alert(\"name\"+name);\nsearchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.availabiltyTxt.text=availabilty;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

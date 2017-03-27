@@ -1,0 +1,24 @@
+{
+    "AS_CheckBoxGroup_5e729be7102843cfa93c156269a715dd": {
+        "id": "AS_CheckBoxGroup_5e729be7102843cfa93c156269a715dd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__89db9cdb5a444280b53e389210bf01ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nvar chkboxvalue=mainPage.eligibiltyCriteriaModalContainer.acceptTermsChekBoxFlex.chckBoxx.selectedKeys;\n//alert(\"checkBoxVal:\"+JSON.stringify(checkBoxVal));\nif(chkboxvalue!=null){\n mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible=true;\n}\nelse{\n  mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible=false;\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

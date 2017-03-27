@@ -1,0 +1,28 @@
+{
+    "AS_Button_cb90a5ede5774015985fe53dbbc6a6a8": {
+        "id": "AS_Button_cb90a5ede5774015985fe53dbbc6a6a8",
+        "type": "ACTION_SEQUENCE",
+        "name": "registration_registerComplete_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationPage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "45590dbf8d50498f8dac0f82dd6523c7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___6c7f390d85c54977845e76a557437d18",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "submitRegistration",
+            "display": "submitRegistration",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

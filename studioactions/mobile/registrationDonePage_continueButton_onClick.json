@@ -1,0 +1,29 @@
+{
+    "AS_Button_a468a95fbe7e4cafbd454fc5ec558d92": {
+        "id": "AS_Button_a468a95fbe7e4cafbd454fc5ec558d92",
+        "type": "ACTION_SEQUENCE",
+        "name": "registrationDonePage_continueButton_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "registrationDonePage",
+            "type": "forms",
+            "platform": null,
+            "KUID": "5f8dd29658ec45b489d5e0dfa91b4580"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___31df13b89be4409a846e48e17c7a978c",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "login",
+            "formKUID": "bec1f033db6f4a3190ecdff43c7dc04e",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

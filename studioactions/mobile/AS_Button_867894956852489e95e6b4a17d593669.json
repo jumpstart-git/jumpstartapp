@@ -1,0 +1,23 @@
+{
+    "AS_Button_867894956852489e95e6b4a17d593669": {
+        "id": "AS_Button_867894956852489e95e6b4a17d593669",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "searchResultProfile",
+            "type": "forms",
+            "platform": "",
+            "KUID": "38e026ceda214cf88e999137a5268792"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d6d1818768de41d7b1d485efb2b95c6d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "searchResultProfile.businessProfileContainer.isVisible=false;\nsearchResultProfile.destroy();\nsearchPage.show();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "43dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1c054f8956544bfa0fa525681073af7",
+    "_top_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "dropDownImage": "listbox.png"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "LogHoursForms",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "dropdownimage": "",
+    "focusskin": "s0c144e77afd466bb9eec85205229ab6",
+    "groupcells": false,
+    "id": "minutesDropDownList",
+    "info": null,
+    "iphone": {
+        "dropDownImage": "listbox.png"
+    },
+    "isvisible": true,
+    "kuid": "7b66900ccbd2439794806a5c7b291444",
+    "masterdata": [
+        [
+            "10",
+            "10"
+        ],
+        [
+            "15",
+            "15"
+        ],
+        [
+            "20",
+            "20"
+        ],
+        [
+            "25",
+            "25"
+        ],
+        [
+            "30",
+            "30"
+        ],
+        [
+            "35",
+            "35"
+        ],
+        [
+            "40",
+            "40"
+        ],
+        [
+            "45",
+            "45"
+        ],
+        [
+            "50",
+            "50"
+        ],
+        [
+            "55",
+            "55"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "minutesContainer",
+    "pf": "LogHoursForms",
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

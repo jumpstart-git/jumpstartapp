@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca": {
+        "id": "AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_bdc5faf325fb495d802fbe520795d17b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "closeModal",
+            "display": "closeModal",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_98f4d53fcc624991bedcbe5ad87fe680",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "mainPage.acceptTaskDetailsModalContainer.isVisible=false;\n//mainPage.show(); ",
+            "callbackType": null
+        }]
+    }
+}
