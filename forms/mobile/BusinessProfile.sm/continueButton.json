@@ -8,7 +8,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
@@ -34,7 +34,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "50%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -45,7 +45,7 @@
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
-    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "focusskin": "sfe3bc158bef4502990d71797108b218",
     "id": "continueButton",
     "ide_onClick": "AS_Button_7bf81a92fedc4957be3f7b1a2a109185",
     "info": null,

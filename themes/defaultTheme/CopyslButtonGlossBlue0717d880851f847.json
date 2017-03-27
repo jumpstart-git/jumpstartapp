@@ -7,8 +7,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     }
   },
   "background_color": "56a9ddff",
@@ -39,8 +40,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -63,8 +65,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     }
   },
   "iphone": {
@@ -75,8 +78,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     }
   },
   "isDefaultSkin": false,
@@ -109,8 +113,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -141,8 +146,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -173,8 +179,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -205,8 +212,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -237,8 +245,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -269,8 +278,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -301,8 +311,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     },
     "top_left_border_color": "ffffffff",
     "top_left_border_style": "plain",
@@ -319,8 +330,9 @@
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     }
   },
   "wType": "Button",
