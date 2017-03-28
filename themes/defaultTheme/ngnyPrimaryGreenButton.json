@@ -68,28 +68,15 @@
     }
   },
   "iphone": {
-    "background_color": {
-      "angle": 0,
-      "colors": [
-        "56a9ddff",
-        "3a83a7ff",
-        "4aa8d1ff"
-      ],
-      "cs": [
-        0,
-        50,
-        100
-      ],
-      "gt": "linear"
-    },
-    "background_style": "linear",
-    "bg_type": "ms_gradient",
+    "background_color": "36b3b1ff",
+    "bg_type": "one",
     "isForked": true,
     "text_shadow": {
       "br": 0,
       "color": "000000ff",
+      "nm": 0,
       "x": 0,
-      "y": -1
+      "y": 0
     }
   },
   "isDefaultSkin": false,
@@ -337,8 +324,10 @@
   },
   "wType": "Button",
   "watchos": {
+    "background_color": "36b3b1ff",
+    "bg_type": "one",
     "font_size": 120,
-    "isForked": false
+    "isForked": true
   },
   "windows8": {
     "background_color": "36b3b1ff",

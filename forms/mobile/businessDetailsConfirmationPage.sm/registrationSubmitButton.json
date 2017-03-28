@@ -25,18 +25,12 @@
         "value": "90%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
+    "centerx": "50%",
+    "centery": "50%",
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "registrationSubmitButton",
     "ide_onClick": "AS_Button_fffee9df82384213aed6037aa6abf457",
     "info": null,

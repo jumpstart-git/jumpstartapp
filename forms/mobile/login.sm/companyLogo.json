@@ -56,6 +56,7 @@
     "isvisible": true,
     "kuid": "c32116daa2a04e9d861505d626cb6e2a",
     "name": "kony.ui.Image2",
+    "paddinginpixel": false,
     "parent": "loginHeader",
     "pf": "login",
     "spaan": {

@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "100%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxMessageConversation",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "894c46d739774d2fb39a4f6954b77bbc",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

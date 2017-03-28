@@ -6,10 +6,7 @@
         "type": "string",
         "value": "40dp"
     },
-    "_left_": {
-        "type": "number",
-        "value": "5"
-    },
+    "_left_": 5,
     "_margin_": [
         6,
         6,
@@ -22,7 +19,7 @@
         0,
         0
     ],
-    "_skin_": "s6a00f099b7c4972beb5e5c11e232e21",
+    "_skin_": "s1099b3e51a6481b8c9a2b56dcb8f5b8",
     "_text_": "Cancel",
     "_top_": {
         "type": "string",
@@ -33,10 +30,7 @@
         "value": "45%"
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "46%"
-    },
+    "centery": "50%",
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,

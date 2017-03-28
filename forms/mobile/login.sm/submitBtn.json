@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s42a7b50c6a341e0b081aa730281c47f",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Continue",
     "_top_": {
         "type": "string",
@@ -41,7 +41,7 @@
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
-    "focusskin": "s42a7b50c6a341e0b081aa730281c47f",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "submitBtn",
     "ide_onClick": "AS_Button_102be19028bf4b8e8c5f3de8263022bb",
     "info": null,

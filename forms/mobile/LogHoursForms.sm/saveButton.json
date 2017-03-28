@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Save",
     "_width_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "saveButton",
     "ide_onClick": "AS_Button_9d364a3620574348a864e968abe750bc",
     "info": null,

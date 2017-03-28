@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "90%"
     },
     "allboxes": [],
     "allowhorizontalbounce": false,

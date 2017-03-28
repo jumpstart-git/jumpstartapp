@@ -6,6 +6,10 @@
         "type": "string",
         "value": "40dp"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         6,
         6,
@@ -18,16 +22,16 @@
         0,
         0
     ],
-    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Save",
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "40%"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "26%"
+        "value": "28%"
     },
     "centery": {
         "type": "string",
@@ -36,7 +40,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sfe3bc158bef4502990d71797108b218",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "BusinessProfileSaveButton",
     "ide_onClick": "AS_Button_42d5fe199fbd4a02834ab76d2b7f6ff6",
     "info": null,

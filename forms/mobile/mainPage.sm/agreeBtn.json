@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Agree and Continue",
     "_top_": {
         "type": "string",
@@ -40,7 +40,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "saa2005f008e40f49416ac75658c6ad9",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "agreeBtn",
     "ide_onClick": "AS_Button_7a7d24bf2d21474e9e22079f8eac7bce",
     "info": null,
