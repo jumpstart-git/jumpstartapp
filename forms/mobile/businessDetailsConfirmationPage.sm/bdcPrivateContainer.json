@@ -5,6 +5,10 @@
         "type": "string",
         "value": "40dp"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         0,
         0,
@@ -26,15 +30,11 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "98%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
         "bdcPrivateMultinationalButtonContainer",
         "bdcPrivateSMEButtonContainer"

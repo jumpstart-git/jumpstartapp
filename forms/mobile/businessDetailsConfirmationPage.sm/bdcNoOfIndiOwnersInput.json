@@ -31,17 +31,13 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "98%"
     },
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
     "autofilter": false,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,

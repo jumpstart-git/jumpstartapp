@@ -31,17 +31,13 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "98%"
     },
-    "autocapitalize": "none",
+    "autocapitalize": "sentences",
     "autocomplete": false,
     "autocorrect": false,
     "autofilter": false,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
@@ -52,6 +48,7 @@
     "isvisible": true,
     "keyboardtype": "A",
     "kuid": "a84ac76f8b9b4d9c8c43176442deec96",
+    "maxtextlength": "",
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "businessDetailsConfirmationBody",
