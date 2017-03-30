@@ -3,7 +3,7 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true
   },
   "background_color": "ffffffff",
@@ -39,7 +39,7 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true,
     "shadow": {
       "br": 0,
@@ -54,7 +54,7 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true,
     "shadow": {
       "br": 0,
@@ -70,7 +70,7 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true
   },
   "kuid": "s3ff483bfd714b6a94c329593ee0d042",
@@ -239,7 +239,7 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true
   },
   "wType": "FlexContainer",
@@ -247,14 +247,14 @@
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true
   },
   "winphone8": {
     "border_color": "424242ff",
     "border_style": "plain",
     "border_type": 0,
-    "border_width": 1,
+    "border_width": 0,
     "isForked": true
   }
 }

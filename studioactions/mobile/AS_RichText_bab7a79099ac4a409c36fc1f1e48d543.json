@@ -1,0 +1,34 @@
+{
+    "AS_RichText_bab7a79099ac4a409c36fc1f1e48d543": {
+        "id": "AS_RichText_bab7a79099ac4a409c36fc1f1e48d543",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___419951dc6aef459b869107a00cf906ae",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "resetPasswordForm",
+            "formKUID": "8d1a8a5e3c8c4962afd0af44622433f3",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

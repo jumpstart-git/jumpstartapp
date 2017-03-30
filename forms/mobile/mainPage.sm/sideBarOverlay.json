@@ -42,7 +42,7 @@
     "id": "sideBarOverlay",
     "ide_onTouchStart": "AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "4c596a033de541929545413430a7c731",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

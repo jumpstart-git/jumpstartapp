@@ -43,7 +43,7 @@
     "enablescrolling": true,
     "id": "myOpenTasksListContainer",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "651b1a8b3fb64d729d85650ea3bf7fd8",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
