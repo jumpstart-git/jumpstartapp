@@ -1,20 +1,16 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
-        1,
-        1,
-        1,
-        1
+        0,
+        0,
+        0,
+        0
     ],
     "_padding_": [
         0,
@@ -22,22 +18,20 @@
         0,
         0
     ],
-    "_skin_": "sedc79425ab445fd91ba861fb775417d",
-    "_text_": "Register as a skilled volunteer",
+    "_render_": true,
+    "_skin_": "sf16648bffa2466988371f799da3d5a3",
+    "_text_": "<u>Register as a skilled volunteer</u>",
     "_top_": {
         "type": "string",
-        "value": "21dp"
+        "value": "13dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "72%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
-        "textStyle": {
-            "letterSpacing": 0,
-            "strikeThrough": false
-        }
+        "render": true
     },
     "canUpdateUI": true,
     "centerx": {
@@ -47,24 +41,33 @@
     "containerweight": 100,
     "contentalignment": 5,
     "id": "loginRegisterLink",
-    "ide_onTouchStart": "AS_Label_2e641c70f5f84f80bb2d8fe88102e950",
+    "ide_onTouchStart": "AS_RichText_58183f113bfb4950a774c5437a2f1324",
     "info": null,
-    "ipad": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
+        "render": true
     },
     "isvisible": true,
-    "kuid": "47dabde2478b41c5b54cccc71f933fa3",
-    "name": "kony.ui.Label",
+    "kuid": "0a85cc8c59a44f1ba879f852d98fd67c",
+    "linkskin": "s0017120110f482b802e8385595ddf48",
+    "name": "kony.ui.RichText",
     "parent": "loginFooter",
     "pf": "login",
-    "tooltip": "",
-    "wType": "Label",
-    "zindex": 2
+    "spaan": {
+        "render": true
+    },
+    "spabb": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "winphone8": {
+        "render": true
+    },
+    "zindex": 1
 }
