@@ -23,7 +23,7 @@
         0
     ],
     "_render_": true,
-    "_skin_": "sa5d997f6fd2416abe515a9bb74c5e7b",
+    "_skin_": "s37abce3b7fc4ca99b9eb9966554ea73",
     "_text_": "Small and Medium Enterprises",
     "_top_": {
         "type": "string",
@@ -40,7 +40,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "focusskin": "s0f5e6af55c4438386a6861ee1b997c0",
     "id": "bdcPrivateSMEButton",
     "ide_onClick": "AS_Button_3f0b779809604cbebc08b5f48b09b3dd",
     "info": null,

@@ -1,9 +1,5 @@
 {
   "android": {
-    "border_color": "424242ff",
-    "border_style": "plain",
-    "border_type": 0,
-    "border_width": 0,
     "isForked": true
   },
   "background_color": "ffffffff",

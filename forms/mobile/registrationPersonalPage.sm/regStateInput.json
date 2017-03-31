@@ -37,7 +37,6 @@
     "context": {
         "channel": "mobile",
         "formID": "registrationPersonalPage",
-        "ispercent": "",
         "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null

@@ -31,7 +31,7 @@
         "value": "80dp"
     },
     "android": {
-        "render": false
+        "render": true
     },
     "canUpdateUI": true,
     "centerx": {
@@ -42,7 +42,7 @@
     "context": {
         "channel": "mobile",
         "formID": "login",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -60,16 +60,16 @@
     "parent": "loginHeader",
     "pf": "login",
     "spaan": {
-        "render": false
+        "render": true
     },
     "spabb": {
-        "render": false
+        "render": true
     },
     "spaip": {
-        "render": false
+        "render": true
     },
     "spawinphone8": {
-        "render": false
+        "render": true
     },
     "srcType": 1,
     "wType": "Image",
@@ -78,7 +78,7 @@
         "psp": {
             "enableCache": true
         },
-        "render": false
+        "render": true
     },
     "zindex": 1
 }
