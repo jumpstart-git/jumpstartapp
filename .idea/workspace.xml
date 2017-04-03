@@ -1,39 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b55af4a8-3c1f-4493-8d26-ac514c25b68f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/common/jumpstartlogo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" afterPath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" afterPath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" afterPath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/536f7e9fe153427d92b5be23fc9c32de.json" afterPath="$PROJECT_DIR$/annotations/mobile/536f7e9fe153427d92b5be23fc9c32de.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/660f2ce584d44ab7bfd2137b797089f0.json" afterPath="$PROJECT_DIR$/annotations/mobile/660f2ce584d44ab7bfd2137b797089f0.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/978359e3903240dfb78c032239f21d2b.json" afterPath="$PROJECT_DIR$/annotations/mobile/978359e3903240dfb78c032239f21d2b.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" afterPath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" afterPath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" afterPath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/CopynumOfWorkingHours0a76ec538d2864f.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/CopynumOfWorkingHours0a76ec538d2864f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/IndicatorContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/IndicatorContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/InnerNonWorkingHoursContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/InnerNonWorkingHoursContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/labelDate.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/labelDate.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/nonWorkingHoursHeaderContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/nonWorkingHoursHeaderContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/CopyLabel0ae99a693f6394a.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/CopyLabel0ae99a693f6394a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/CopyloginPageInfo0dbc3b1ffc4c64a.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/CopyloginPageInfo0dbc3b1ffc4c64a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/Label0e726b18d95544a.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/Label0e726b18d95544a.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/companyLogo.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/companyLogo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/imgNew.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/imgNew.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/loginHeader.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/loginHeader.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarAppName.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarAppName.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarCompanyLogo.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarCompanyLogo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konyplugins.xml" afterPath="$PROJECT_DIR$/konyplugins.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mBaas.properties" afterPath="$PROJECT_DIR$/mBaas.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectprop.xml" afterPath="$PROJECT_DIR$/projectprop.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" afterPath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" />
+    <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,34 +56,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="checkList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json">
+      <file leaf-file-name="actions_for_JumpStartAbort1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unCheckList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="126" column="52" lean-forward="false" selection-start-line="126" selection-start-column="52" selection-end-line="126" selection-end-column="52" />
+            <state relative-caret-position="124">
+              <caret line="1034" column="51" lean-forward="true" selection-start-line="1034" selection-start-column="51" selection-end-line="1034" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -82,43 +76,25 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Email</find>
-      <find>Email n</find>
-      <find>Email not</find>
-      <find>Email noti</find>
-      <find>Email notif</find>
-      <find>Email notifi</find>
-      <find>Email notifica</find>
-      <find>Email notificat</find>
-      <find>Email notificatio</find>
-      <find>Email notification</find>
-      <find>Email notifications</find>
-      <find>&quot;</find>
-      <find>&quot;n</find>
-      <find>&quot;nu</find>
-      <find>&quot;null</find>
-      <find>&quot;null&quot;</find>
-      <find>&quot;&quot;null&quot;</find>
-      <find>&quot;a&quot;null&quot;</find>
-      <find>&quot;al&quot;null&quot;</find>
-      <find>&quot;aler&quot;null&quot;</find>
-      <find>&quot;alert&quot;null&quot;</find>
-      <find>&quot;alertH&quot;null&quot;</find>
-      <find>&quot;alertHa&quot;null&quot;</find>
-      <find>&quot;alertHand&quot;null&quot;</find>
-      <find>&quot;alertHandle&quot;null&quot;</find>
-      <find>&quot;alertHandler&quot;null&quot;</find>
-      <find>&quot;alertHandler&quot;&quot;null&quot;</find>
-      <find>&quot;alertHandler&quot;:&quot;null&quot;</find>
-      <find>&quot;alertHandler&quot;: &quot;null</find>
       <find>&quot;alertHandler&quot;: &quot;null&quot;</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>&quot;alertHandler&quot;: null</replace>
+    </replaceStrings>
     <dirStrings>
-      <dir>C:\Users\NGNY\KonyVizEWS\jumpstart\customwidgets</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -127,10 +103,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
-    <option name="y" value="-319" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1475" />
+    <option name="y" value="-88" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -148,79 +124,14 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jumpstart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainPage.sm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
@@ -236,43 +147,104 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b55af4a8-3c1f-4493-8d26-ac514c25b68f" name="Default" comment="" />
-      <created>1491196772675</created>
+      <changelist id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="" />
+      <created>1491197619401</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1491196772675</updated>
-      <workItem from="1491196774833" duration="621000" />
-      <workItem from="1491197411741" duration="584000" />
+      <updated>1491197619401</updated>
+      <workItem from="1491197621969" duration="155000" />
+      <workItem from="1491198945014" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1205000" />
+    <option name="totallyTimeSpent" value="182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-319" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1475" y="-88" width="1366" height="768" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35260418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25185186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -287,42 +259,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json">
+    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="17663">
+          <caret line="1039" column="12" lean-forward="false" selection-start-line="1039" selection-start-column="12" selection-end-line="1039" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518.json">
+    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="126" column="52" lean-forward="false" selection-start-line="126" selection-start-column="52" selection-end-line="126" selection-end-column="52" />
+        <state relative-caret-position="124">
+          <caret line="1034" column="51" lean-forward="true" selection-start-line="1034" selection-start-column="51" selection-end-line="1034" selection-end-column="51" />
           <folding />
         </state>
       </provider>

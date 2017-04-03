@@ -133,7 +133,7 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Profile Uploaded Successfully",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });

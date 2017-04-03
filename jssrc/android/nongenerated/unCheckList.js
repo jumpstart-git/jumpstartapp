@@ -150,7 +150,7 @@ function getCheckBoxFunctionErrorCallback77(error) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Email notifications disabled",
-        "alertHandler": "null"
+        "alertHandler": null
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

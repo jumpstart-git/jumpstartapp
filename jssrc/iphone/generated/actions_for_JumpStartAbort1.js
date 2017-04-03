@@ -845,7 +845,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter a task title",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -857,7 +857,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter task details",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -869,7 +869,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter skill required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -881,7 +881,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter hours required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -893,7 +893,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter message",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -907,7 +907,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please enter today/future date for this engagement",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -919,7 +919,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "End date should be a future date",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1595,7 +1595,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1634,7 +1634,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -2769,7 +2769,7 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -2834,7 +2834,7 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
