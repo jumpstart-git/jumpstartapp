@@ -7,7 +7,7 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
