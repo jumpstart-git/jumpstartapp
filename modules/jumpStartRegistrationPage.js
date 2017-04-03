@@ -36,6 +36,7 @@ var volunteerRegObject = {
  
 // Update volunteer object on text change.
 function onRegFieldUpdate(fieldEdited) {
+  
   var fieldId = fieldEdited.id;
   var fieldContent = fieldEdited.text;
  
@@ -62,13 +63,15 @@ function onRegFieldUpdate(fieldEdited) {
       volunteerRegObject.aboutMe = fieldContent;
       break;
     case "regCompanyInput":
-      //volunteerRegObject.companyName = fieldContent;
+
+    //Start of D012
       volunteerRegObject.companyName = fieldEdited.selectedKey;
-      if(volunteerRegObject.companyName=="Select")
+      if(volunteerRegObject.companyName ==="Select" || volunteerRegObject.companyName === null || volunteerRegObject.companyName === "")
         {
           volunteerRegObject.companyName="";
           
         }
+     //End of D012
       break;
     case "regRoleInput":
       volunteerRegObject.role = fieldContent;
@@ -77,10 +80,11 @@ function onRegFieldUpdate(fieldEdited) {
       volunteerRegObject.businessUnit = fieldContent;
       break;
     case "regStateInput":
+
       volunteerRegObject.state = fieldEdited.selectedKey;
-      if(volunteerRegObject.state=="Select")
+      if(volunteerRegObject.state === "Select" || volunteerRegObject.state === null || volunteerRegObject.state === "")
         {
-          volunteerRegObject.state="";
+         volunteerRegObject.state="";
           
         }
       break;

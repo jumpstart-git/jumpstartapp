@@ -707,18 +707,18 @@ function saveVolunteerProfilew()
                   //start feb 16
 
                   var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
-                  if(abotme==null||abotme=="null"||abotme=="")
-                  {
-                    abotme=" ";
-                  }
+                  //if(abotme==null||abotme=="null"||abotme=="")
+                  //{
+                  //  abotme=" ";
+                  //}
 
                   dataforVolProfile["aboutMe"]=abotme;
                   var work=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
 
-                  if(work==null||work=="null"||work=="")
-                  {
-                    work=" ";
-                  }
+                  //if(work==null||work=="null"||work=="")
+                  //{
+                  //  work=" ";
+                  //}
                   dataforVolProfile["workDetails"]=work;
                   //
 
@@ -851,7 +851,7 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
     case "volunteerMyProfileCompanyInput":
      // volunteerUpdateObject.companyName = fieldContent;
       volunteerUpdateObject.companyName = fieldEdited.selectedKey;
-      if(volunteerUpdateObject.companyName=="Select")
+      if(volunteerUpdateObject.companyName === "Select" || volunteerUpdateObject.companyName === null || volunteerUpdateObject.companyName === "")
         {
           volunteerUpdateObject.companyName="";
 
@@ -866,7 +866,7 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
       break;
     case "volunteerMyProfileStateInput":
       volunteerUpdateObject.state = fieldEdited.selectedKey;
-      if(volunteerUpdateObject.state=="Select")
+      if(volunteerUpdateObject.state === "Select" || volunteerUpdateObject.state === null || volunteerUpdateObject.state === "")
         {
           volunteerUpdateObject.state="";
 

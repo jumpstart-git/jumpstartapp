@@ -245,6 +245,8 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.te
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.setEnabled(false);
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+//Begin of Defect D037
+/* Peter's Code
 if((workDetails!=null)&&(workDetails!="null"))
 {
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= workDetails;
@@ -260,12 +262,25 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.tex
 {
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= "";//aboutMe;
 }
+*/
+      
+//Carl Cheng's code
+if(workDetails === null) {
+  workDetails = "";
+}
 
+if (aboutMe === null) {
+  aboutMe = "";
+}
+
+volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= workDetails;
+volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= aboutMe;
+//End of Defect D037
 //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text= companyName;
-      volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey=companyName;
+volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey=companyName;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text= role;
 volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text=businessUnit;
-      volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.selectedKey=state;
+volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.selectedKey=state;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.text= address;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text= contactNumber;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text= emailAddress;//" ";//emailAddress;
@@ -290,8 +305,8 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunt
   username : userName,
   password: password,
   reenteredPassword : password,
-  workDetails : "",
-  aboutMe : "",
+  workDetails : workDetails,
+  aboutMe : aboutMe,
   companyName : companyName,
   role : role,
   businessUnit : businessUnit,

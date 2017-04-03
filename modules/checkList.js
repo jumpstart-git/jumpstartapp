@@ -184,11 +184,14 @@ function getCheckBoxFunctionErrorCallback (error)
                 kony.application.dismissLoadingScreen();
               //  alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
   kony.ui.Alert({
+    //D022: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
+    //D022: Changed back to ALERT_TYPE_INFO as the ALRT_TYPE_CONFIRMATION didn't have any effect when 'Canceled' button is pressed.
       "alertType": constants.ALERT_TYPE_INFO,
       "alertTitle": null,
       "yesLabel": "OK",
    "noLabel":"No",
-      "message": "Email notifications enabled",
+    //D022: Changed message value from "Email notifications enabled" to 
+      "message": "You have enabled email notification",
       "alertHandler":"null" 
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
