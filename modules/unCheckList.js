@@ -186,11 +186,13 @@ function getCheckBoxFunctionErrorCallback77 (error)
               //  alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
  kony.ui.Alert({
-      "alertType": constants.ALERT_TYPE_INFO,
+   //D022: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
+      "alertType": constants.ALERT_TYPE_CONFIRMATION,
       "alertTitle": null,
       "yesLabel": "OK",
    "noLabel":"No",
-      "message": "Email notifications disabled",
+   //D022: Changed message from "Email notifications disabled" to "You have disabled email notification"
+      "message": "You have disabled email notification",
       "alertHandler":"null" 
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
