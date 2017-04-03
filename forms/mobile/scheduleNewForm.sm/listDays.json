@@ -28,8 +28,8 @@
         "value": "10dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "83%"
     },
     "canUpdateUI": true,
     "containerweight": 100,

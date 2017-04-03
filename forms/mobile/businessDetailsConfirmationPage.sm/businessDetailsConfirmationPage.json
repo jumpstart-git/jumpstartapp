@@ -36,7 +36,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone5",
+    "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "businessDetailsConfirmationPage",
@@ -77,10 +77,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone6",
-    "prevPlatform": "iphone",
+    "prevDevice": "GalaxyS5",
+    "prevPlatform": "android",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

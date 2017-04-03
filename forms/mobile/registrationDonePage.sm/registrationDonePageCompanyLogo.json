@@ -31,7 +31,7 @@
         "value": "50dp"
     },
     "android": {
-        "render": false
+        "render": true
     },
     "canUpdateUI": true,
     "centerx": {
@@ -59,16 +59,16 @@
     "parent": "registrationDonePageHeader",
     "pf": "registrationDonePage",
     "spaan": {
-        "render": false
+        "render": true
     },
     "spabb": {
-        "render": false
+        "render": true
     },
     "spaip": {
-        "render": false
+        "render": true
     },
     "spawinphone8": {
-        "render": false
+        "render": true
     },
     "srcType": 1,
     "wType": "Image",
@@ -77,7 +77,7 @@
         "psp": {
             "enableCache": true
         },
-        "render": false
+        "render": true
     },
     "zindex": 1
 }

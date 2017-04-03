@@ -50,7 +50,7 @@
     "context": {
         "channel": "mobile",
         "formID": "mainPage",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },

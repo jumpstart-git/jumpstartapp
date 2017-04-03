@@ -19,6 +19,7 @@
         0
     ],
     "_placeholder_": "Email ID",
+    "_render_": true,
     "_skin_": "sa20a5045f0f4a6482e9a6473db4f8f0",
     "_text_": "",
     "_top_": {
@@ -28,6 +29,9 @@
     "_width_": {
         "type": "string",
         "value": "80%"
+    },
+    "android": {
+        "render": true
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -47,7 +51,8 @@
     "iphone": {
         "psp": {
             "keyboardActionLabel": 2
-        }
+        },
+        "render": true
     },
     "isvisible": true,
     "keyboardactionlabel": 2,
@@ -59,8 +64,23 @@
     "parent": "loginBody",
     "pf": "login",
     "securetextentry": false,
+    "spaan": {
+        "render": true
+    },
+    "spabb": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
     "textinputmode": "A",
     "viewtype": "default",
     "wType": "TextField",
+    "winphone8": {
+        "render": true
+    },
     "zindex": 2
 }

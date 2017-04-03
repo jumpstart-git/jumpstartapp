@@ -32,6 +32,7 @@
         "type": "string",
         "value": "100%"
     },
+    "accessibilityconfig": {},
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,

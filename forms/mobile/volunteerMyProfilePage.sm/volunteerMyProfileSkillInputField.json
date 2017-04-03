@@ -25,10 +25,6 @@
     "_placeholder_": "",
     "_skin_": "sfe32220eb1749d19bc0868d1af0c500",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "10dp"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -38,6 +34,10 @@
     "autocorrect": false,
     "autofilter": false,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,

@@ -26,7 +26,7 @@
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
@@ -35,10 +35,6 @@
     "allboxes": [],
     "autogrowmode": 1,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
         "volunteerMyProfileSkillsList",
         "volunteerMyProfileAddNewSkill"

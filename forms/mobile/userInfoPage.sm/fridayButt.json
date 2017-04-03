@@ -23,7 +23,7 @@
         0
     ],
     "_render_": true,
-    "_skin_": "s7cec3d4d41f464792db537e373f8582",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "F",
     "_top_": {
         "type": "string",
@@ -44,7 +44,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sabedbeb54524573817ae83b94dcf3e5",
+    "focusskin": "s140bff64ed6444f97b1e19ca92f3cc7",
     "id": "fridayButt",
     "ide_onClick": "AS_Button_04cfbb34142c469d81d8ca8d5bc65e0d",
     "info": null,

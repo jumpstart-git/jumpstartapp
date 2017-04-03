@@ -37,7 +37,6 @@
     "context": {
         "channel": "mobile",
         "formID": "registrationPersonalPage",
-        "ispercent": "",
         "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
@@ -50,6 +49,10 @@
     "isvisible": true,
     "kuid": "55098ebb2bd241f9939e1ecb0bcac98b",
     "masterdata": [
+        [
+            "Select",
+            "Select from drop down menu"
+        ],
         [
             "NSW",
             "New South Wales"

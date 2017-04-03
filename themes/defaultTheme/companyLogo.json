@@ -38,9 +38,6 @@
     "bg_type": "one",
     "isForked": true
   },
-  "iphone": {
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "background_color": "00000000",

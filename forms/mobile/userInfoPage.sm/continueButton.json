@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Continue",
     "_width_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s4a64ffbe07d49e3b1331e447dd55491",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "continueButton",
     "ide_onClick": "AS_Button_a7b0aead332447b8bef76dcfcc1fdabe",
     "info": null,
