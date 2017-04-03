@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "80dp"
     },
     "_margin_": [
         0,
@@ -20,14 +20,14 @@
         0
     ],
     "_skin_": "sd3dc1cea2d144598eebea726a4aa58d",
-    "_src_": "supplynationlogo2x.png",
+    "_src_": "jumpstartlogonotext.png",
     "_top_": {
         "type": "string",
         "value": "10%"
     },
     "_width_": {
         "type": "string",
-        "value": "60dp"
+        "value": "80dp"
     },
     "canUpdateUI": true,
     "centerx": {
