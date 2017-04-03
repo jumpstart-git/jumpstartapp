@@ -74,7 +74,7 @@
             "indicator": "rowselect"
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "bbe8ec25e75247239d18e2c8023582e0",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",

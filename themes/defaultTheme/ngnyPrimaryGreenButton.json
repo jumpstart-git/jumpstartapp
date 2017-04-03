@@ -55,10 +55,6 @@
       "y": 0
     }
   },
-  "iphone": {
-    "font_size": 110,
-    "isForked": false
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "background_color": "36b3b1ff",

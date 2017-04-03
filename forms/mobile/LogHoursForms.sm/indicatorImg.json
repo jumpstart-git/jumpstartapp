@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "-4dp"
+        "value": "-5dp"
     },
     "_margin_": [
         0,
@@ -27,7 +27,7 @@
     "_src_": "lohourindicator.PNG",
     "_top_": {
         "type": "string",
-        "value": "2dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
