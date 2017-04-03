@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Create a brief",
     "_top_": {
         "type": "string",
@@ -36,7 +36,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "MyActivityCreateOpportunityButton",
     "ide_onClick": "AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1",
     "info": null,

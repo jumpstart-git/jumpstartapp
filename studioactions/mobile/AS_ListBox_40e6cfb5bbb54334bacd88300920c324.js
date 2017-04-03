@@ -14,7 +14,7 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
