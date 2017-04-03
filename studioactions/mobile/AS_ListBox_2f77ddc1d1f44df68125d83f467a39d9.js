@@ -21,6 +21,11 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
         return false;
     } else {
+        //D013: Add code snippet to display task details on valid selection
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.isVisible = true;
+        //D013: End of addition
         gblExistingBusTaskId = searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKeyValue;
         var id = gblExistingBusTaskId[0];
         //alert(JSON.stringify(gblExistingBusTaskId));

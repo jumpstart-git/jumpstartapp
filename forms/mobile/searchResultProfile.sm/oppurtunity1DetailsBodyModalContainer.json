@@ -42,6 +42,7 @@
         "value": "50%"
     },
     "children": [
+        "selectMessage",
         "availabilityContainer",
         "oppurtunities1ListModal",
         "TaskDetailsHdrFlex",
