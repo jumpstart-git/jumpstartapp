@@ -73,7 +73,7 @@
         },
         "render": true
     },
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "25efad72d57b4518830d5cce66ecdfe5",
     "layouttype": 4,
     "name": "kony.ui.FlexScrollContainer",

@@ -21,10 +21,6 @@
     "_render_": true,
     "_skin_": "sa4133804b904f6798f4e7bb3a3cf7d8",
     "_text_": "<span style=\"font-weight: bold\">JUMP</span>START",
-    "_top_": {
-        "type": "string",
-        "value": "7dp"
-    },
     "_width_": {
         "type": "string",
         "value": "80%"
@@ -45,7 +41,7 @@
     "iphone": {
         "render": true
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "8a6a8dbab2da40d3aff556a3aadf97c8",
     "name": "kony.ui.RichText",
     "parent": "loginHeader",

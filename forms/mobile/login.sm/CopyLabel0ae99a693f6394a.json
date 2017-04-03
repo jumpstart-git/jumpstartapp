@@ -27,7 +27,7 @@
     "_text_": "Connecting People",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "-10dp"
     },
     "_width_": {
         "type": "ref",
