@@ -48,7 +48,7 @@
     "enablescrolling": true,
     "id": "acceptTermsChekBoxFlex",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "dcf62fa45179480893f6859194c147c3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
