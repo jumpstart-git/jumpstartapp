@@ -43,11 +43,13 @@ function onRegFieldUpdate(fieldEdited) {
   switch (fieldId) {
     case "regFirstNameInput":
       //D007: Adding code to capitalize first character for fieldContent and fieldContent
+      //volunteerRegObject.firstname = fieldContent;
       volunteerRegObject.firstName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
       //End of D007
       break;
     case "regLastNameInput":
       //D007: Adding code to capitalize first character for fieldContent and fieldContent
+      //volunteerRegObject.lastname = fieldContent;
       volunteerRegObject.lastName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
       //End of D007
       break;
