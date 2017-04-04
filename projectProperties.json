@@ -1,6 +1,6 @@
 {
     "mwaddrkey": "",
-    "projectCloudGuid": "2ab44188-4936-4642-96e1-befb1e077854",
+    "projectCloudGuid": "a6e906b9-3866-42dc-a81d-847f3479642a",
     "wap_android360_fontsize": "12",
     "isA11yConfigEnabled": false,
     "watchos_notificationcentericon_42": "",
@@ -8,7 +8,7 @@
     "apppackagekey": "",
     "wap_android400_fontsize": "12",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -221,13 +221,13 @@
     "wap_spaandroidtabmdpi_fontsize": "12",
     "konyVizVersion": "7.2.0",
     "prototype": {
-        "PublishMode": "public",
-        "resourceId": "ff48519c-8a4a-4f12-85f3-5830fe923d6d",
+        "createdOn": "2017-04-04T06:24:50.684Z",
+        "createdById": "14266e12-23d0-4aa9-8ad4-cd22b8556d1a",
+        "createdBy": "Christopher%20Joseph Doctolero",
+        "shareGuid": "W9LLF",
+        "resourceId": "75a808d5-5aab-437c-8363-8f199640bdf3",
         "password": "",
-        "createdBy": "Peter Syjuco",
-        "shareGuid": "EK789",
-        "createdOn": "2017-02-17T10:15:53.210Z",
-        "createdById": "13cc7f27-ed48-4ed6-9108-c32e63e2a87a"
+        "PublishMode": "public"
     },
     "isDpScaleFactor": true,
     "wap_spaandroidtab_fontsize": "12",
