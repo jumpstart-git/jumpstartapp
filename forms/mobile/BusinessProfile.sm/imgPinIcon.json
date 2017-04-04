@@ -38,7 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "BusinessProfile",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },

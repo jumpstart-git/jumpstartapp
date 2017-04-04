@@ -30,7 +30,7 @@
         "type": "string",
         "value": "0dp"
     },
-    "_skin_": "saa2005f008e40f49416ac75658c6ad9",
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Add",
     "_top_": {
         "type": "number",
@@ -44,7 +44,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sb30d2ee9a794aa9a6eebfc9043d2787",
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "volunteerMyProfileAddSkill",
     "ide_onClick": "AS_Button_47f078e3a22f4674b7e9178a14c00f23",
     "info": null,

@@ -9,10 +9,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_margin_": [
         0,
         0,
@@ -28,6 +24,10 @@
     ],
     "_percent_": true,
     "_skin_": "s2dc9da736ef46489be94f17f9d0716d",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "string",
         "value": "15%"

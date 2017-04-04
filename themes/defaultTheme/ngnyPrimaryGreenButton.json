@@ -1,17 +1,5 @@
 {
-  "android": {
-    "background_color": "36b3b1ff",
-    "bg_type": "one",
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
-  "background_color": "26b3b1ff",
+  "background_color": "5cbb6cff",
   "bg_type": "one",
   "border_color": "ffffffff",
   "border_style": "plain",
@@ -52,7 +40,7 @@
   "fontSizeInPx": false,
   "font_color": "ffffffff",
   "font_name": "Helvetica",
-  "font_size": 120,
+  "font_size": 110,
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
@@ -68,16 +56,8 @@
     }
   },
   "iphone": {
-    "background_color": "36b3b1ff",
-    "bg_type": "one",
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
+    "font_size": 110,
+    "isForked": false
   },
   "isDefaultSkin": false,
   "kiosk": {

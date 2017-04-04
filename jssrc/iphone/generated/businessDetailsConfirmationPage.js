@@ -541,20 +541,20 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "skin": "slFbox",
+        "skin": "CopyslFbox0a8e06e862a3c41",
         "top": "0dp",
         "width": "33%",
         "zIndex": 1
     }, {}, {});
     reachInternationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachInternationalButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "reachInternationalButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "International",
         "top": "0dp",
         "width": "95%"
@@ -581,13 +581,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     reachAustraliaButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachAustraliaButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "reachAustraliaButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Australia-wide",
         "top": "0dp",
         "width": "95%"
@@ -614,13 +614,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     reachStateButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachStateButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "reachStateButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "State/Territory",
         "top": "0dp",
         "width": "95%"
@@ -690,13 +690,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpLocalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpLocalButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcGovExpLocalButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Local Councils",
         "top": "0dp",
         "width": "95%"
@@ -723,13 +723,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpStateButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpStateButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcGovExpStateButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "State/Territory",
         "top": "0dp",
         "width": "95%"
@@ -770,13 +770,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpCommonwealthButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpCommonwealthButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcGovExpCommonwealthButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Commonwealth",
         "top": "0dp",
         "width": "95%"
@@ -803,13 +803,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpInternationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpInternationalButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcGovExpInternationalButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "International",
         "top": "0dp",
         "width": "95%"
@@ -868,13 +868,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcPrivateMultinationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcPrivateMultinationalButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcPrivateMultinationalButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Large Multinational",
         "top": "0dp",
         "width": "95%"
@@ -901,13 +901,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcPrivateSMEButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcPrivateSMEButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcPrivateSMEButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Small and Medium Enterprises",
         "top": "0dp",
         "width": "95%"
@@ -964,13 +964,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcNonProfitButton = new kony.ui.Button({
         "bottom": "15dp",
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcNonProfitButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Not for Profit",
         "top": "10dp",
         "width": "95%"
@@ -1013,13 +1013,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcNoExpButton = new kony.ui.Button({
         "bottom": "15dp",
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "bdcNoExpButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
-        "skin": "jumpStartGrayButton90",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "No Experience",
         "top": "10dp",
         "width": "95%"

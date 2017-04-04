@@ -40,6 +40,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {},
     "id": "loginRegisterLink",
     "ide_onTouchStart": "AS_RichText_58183f113bfb4950a774c5437a2f1324",
     "info": null,

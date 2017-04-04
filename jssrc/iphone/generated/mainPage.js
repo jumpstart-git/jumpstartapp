@@ -189,7 +189,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_b74bf0ca08354ac482d50767e3733d00,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "35%",
+        "width": "33%",
         "zIndex": 1
     }, {}, {});
     activityNavContainer.setDefaultUnit(kony.flex.DP);
@@ -293,7 +293,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_249850a57d2f494dacacd0e20957c063,
         "skin": "slFbox",
         "top": 0,
-        "width": "35%",
+        "width": "33%",
         "zIndex": 1
     }, {}, {});
     notificationNavContainer.setDefaultUnit(kony.flex.DP);
@@ -344,7 +344,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_6b4ca0e1ddef4db0915b830860773aa2,
         "skin": "slFbox",
         "top": 0,
-        "width": "35%",
+        "width": "33%",
         "zIndex": 1
     }, {}, {});
     endorsementsContainer.setDefaultUnit(kony.flex.DP);
@@ -2000,9 +2000,9 @@ function addWidgetsmainPage() {
         "height": "100%",
         "horizontalScrollIndicator": true,
         "id": "myRecommendations",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "100%",
+        "left": "1%",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
@@ -2454,7 +2454,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "onTouchStart": AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80,
-        "right": "0dp",
+        "right": "-5dp",
         "skin": "CopyslFbox0e592ef4af81d42",
         "top": "0dp",
         "width": "100%",
@@ -8462,7 +8462,7 @@ function addWidgetsmainPage() {
         "clipBounds": true,
         "height": "10%",
         "id": "acceptTermsChekBoxFlex",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
         "skin": "slFbox",
@@ -8546,7 +8546,7 @@ function addWidgetsmainPage() {
         "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "agreeBtn",
-        "isVisible": false,
+        "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_7a7d24bf2d21474e9e22079f8eac7bce,
         "skin": "ngnyPrimaryGreenButton",

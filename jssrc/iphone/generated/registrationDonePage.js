@@ -52,7 +52,7 @@ function addWidgetsregistrationDonePage() {
         "isVisible": true,
         "skin": "companyLogo",
         "src": "imgseglogo.png",
-        "top": "10%",
+        "top": "9%",
         "width": "80dp",
         "zIndex": 1
     }, {

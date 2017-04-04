@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "companyProfileContactOptions",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "c11ccd87aedd43ea8c52079aca7e4ba6",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",

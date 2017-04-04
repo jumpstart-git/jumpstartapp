@@ -195,7 +195,7 @@ function addWidgetsBusinessProfile() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "companyProfileContactOptions",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "slFbox",
@@ -396,7 +396,7 @@ function addWidgetsBusinessProfile() {
     var lblLoggedInEmail = new kony.ui.Label({
         "id": "lblLoggedInEmail",
         "isVisible": true,
-        "left": "0dp",
+        "left": "2dp",
         "skin": "CopyslLabel055000dcec51f41",
         "text": "supplycompany@mail.com",
         "top": "0dp",
@@ -446,7 +446,7 @@ function addWidgetsBusinessProfile() {
     var changePasswordRichText = new kony.ui.RichText({
         "id": "changePasswordRichText",
         "isVisible": true,
-        "left": "0dp",
+        "left": "2dp",
         "onTouchStart": AS_RichText_5b2fab265c874cadaf62f39df2783b03,
         "skin": "CopyslRichText03031643224134b",
         "text": "<u>Change Password</u>\n",

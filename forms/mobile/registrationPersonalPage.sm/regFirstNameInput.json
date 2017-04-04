@@ -33,7 +33,7 @@
         "type": "string",
         "value": "100%"
     },
-    "autocapitalize": "none",
+    "autocapitalize": "words",
     "autocomplete": false,
     "autocorrect": false,
     "autofilter": false,

@@ -18,6 +18,7 @@
         0,
         0
     ],
+    "_render_": true,
     "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
     "_text_": "Login",
     "_top_": {
@@ -27,6 +28,9 @@
     "_width_": {
         "type": "string",
         "value": "80%"
+    },
+    "android": {
+        "render": true
     },
     "canUpdateUI": true,
     "centerx": {
@@ -40,12 +44,29 @@
     "id": "signInButton",
     "ide_onClick": "AS_Button_c55a88368de54c408d5a02eef07ad463",
     "info": null,
-    "iphone": {},
+    "iphone": {
+        "render": true
+    },
     "isvisible": true,
     "kuid": "3aabf36653c140978914360a5622b114",
     "name": "kony.ui.Button",
     "parent": "loginBody",
     "pf": "login",
+    "spaan": {
+        "render": true
+    },
+    "spabb": {
+        "render": true
+    },
+    "spaip": {
+        "render": true
+    },
+    "spawinphone8": {
+        "render": true
+    },
     "wType": "Button",
+    "winphone8": {
+        "render": true
+    },
     "zindex": 1
 }

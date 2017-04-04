@@ -558,21 +558,21 @@ function addWidgetsLogHoursForms() {
         "left": "0dp",
         "skin": "jumpStartBGFFFBorder214",
         "top": "-9dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {}, {});
     logHoursFooterContainer.setDefaultUnit(kony.flex.DP);
     var cancelButton = new kony.ui.Button({
-        "centerX": "26.129999999999995%",
-        "centerY": "45.64%",
+        "centerY": "48%",
         "focusSkin": "jumpStartGrayButton110",
         "height": "45dp",
         "id": "cancelButton",
         "isVisible": true,
+        "left": "1%",
         "onClick": AS_Button_9f297c3f4cb5435189bf603ff9c20e67,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
-        "width": "46%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -582,16 +582,16 @@ function addWidgetsLogHoursForms() {
         "showProgressIndicator": true
     });
     var saveButton = new kony.ui.Button({
-        "centerX": "75%",
-        "centerY": "48.82%",
+        "centerY": "48%",
         "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "saveButton",
         "isVisible": true,
+        "left": "51%",
         "onClick": AS_Button_9d364a3620574348a864e968abe750bc,
         "skin": "ngnyPrimaryGreenButton",
         "text": "Save",
-        "width": "46%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,

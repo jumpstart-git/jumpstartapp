@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "volunteerFlex",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "417a4fddfb174632a96367a81dd6e6a7",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

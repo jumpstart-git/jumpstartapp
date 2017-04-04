@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "150dp"
     },
     "_margin_": [
         0,
@@ -21,17 +21,17 @@
     ],
     "_render_": true,
     "_skin_": "s4ad8921bdc643b4ab2971d837df9cb2",
-    "_src_": "supplynationlogo2x.png",
+    "_src_": "jumpstartlogo.png",
     "_top_": {
         "type": "string",
         "value": "8%"
     },
     "_width_": {
         "type": "string",
-        "value": "80dp"
+        "value": "200dp"
     },
     "android": {
-        "render": false
+        "render": true
     },
     "canUpdateUI": true,
     "centerx": {
@@ -42,7 +42,7 @@
     "context": {
         "channel": "mobile",
         "formID": "login",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -60,16 +60,16 @@
     "parent": "loginHeader",
     "pf": "login",
     "spaan": {
-        "render": false
+        "render": true
     },
     "spabb": {
-        "render": false
+        "render": true
     },
     "spaip": {
-        "render": false
+        "render": true
     },
     "spawinphone8": {
-        "render": false
+        "render": true
     },
     "srcType": 1,
     "wType": "Image",
@@ -78,7 +78,7 @@
         "psp": {
             "enableCache": true
         },
-        "render": false
+        "render": true
     },
     "zindex": 1
 }

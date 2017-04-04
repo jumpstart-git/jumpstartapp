@@ -30,7 +30,7 @@
         "type": "string",
         "value": "0dp"
     },
-    "_skin_": "sd65eae9171f40dbbd5a30d13b3088d2",
+    "_skin_": "s37abce3b7fc4ca99b9eb9966554ea73",
     "_text_": "Add",
     "_top_": {
         "type": "number",
@@ -44,7 +44,7 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sb30d2ee9a794aa9a6eebfc9043d2787",
+    "focusskin": "s0f5e6af55c4438386a6861ee1b997c0",
     "id": "addNewSkillButton",
     "ide_onClick": "AS_FlexContainer_fcc498e6663e40768ed0b376737c1e66",
     "info": null,

@@ -1,11 +1,6 @@
 {
   "android": {
-    "border_color": "e6e6e6ff",
-    "border_style": "plain",
-    "border_type": 0,
-    "border_width": 0,
-    "font_color": "424242ff",
-    "font_size": 100,
+    "font_color": "4a4a4aff",
     "isForked": true
   },
   "background_color": "00000000",
@@ -15,7 +10,7 @@
   "border_type": 0,
   "border_width": 0,
   "desktopweb": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
@@ -30,17 +25,12 @@
     "border_style": "plain",
     "border_type": 0,
     "border_width": 0,
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "iphone": {
-    "border_color": "e6e6e6ff",
-    "border_style": "plain",
-    "border_type": 0,
-    "border_width": 0,
-    "font_color": "424242ff",
-    "font_size": 100,
+    "font_color": "4a4a4aff",
     "isForked": true
   },
   "isDefaultSkin": false,
@@ -49,43 +39,43 @@
     "border_style": "plain",
     "border_type": 0,
     "border_width": 0,
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "kuid": "sac9ec443fed4bc694b897a79e02136d",
   "spaan": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spaandroidtablet": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spabb": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spaip": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spaipad": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spawindowstablet": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "spawinphone8": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
@@ -94,13 +84,13 @@
     "border_style": "plain",
     "border_type": 0,
     "border_width": 0,
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
   "wType": "Label",
   "watchos": {
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
@@ -109,7 +99,7 @@
     "border_style": "plain",
     "border_type": 0,
     "border_width": 0,
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   },
@@ -118,7 +108,7 @@
     "border_style": "plain",
     "border_type": 0,
     "border_width": 0,
-    "font_color": "424242ff",
+    "font_color": "4a4a4aff",
     "font_size": 100,
     "isForked": true
   }

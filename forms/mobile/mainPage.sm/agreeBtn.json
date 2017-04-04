@@ -44,7 +44,7 @@
     "id": "agreeBtn",
     "ide_onClick": "AS_Button_7a7d24bf2d21474e9e22079f8eac7bce",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "73955e47232744c8b7c279641c3df9fd",
     "name": "kony.ui.Button",
     "parent": "Footer",

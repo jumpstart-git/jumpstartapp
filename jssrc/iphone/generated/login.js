@@ -29,13 +29,13 @@ function addWidgetslogin() {
     loginHeader.setDefaultUnit(kony.flex.DP);
     var companyLogo = new kony.ui.Image2({
         "centerX": "50%",
-        "height": "60dp",
+        "height": "150dp",
         "id": "companyLogo",
         "isVisible": true,
         "skin": "companyLogo",
-        "src": "supplynationlogo2x.png",
+        "src": "jumpstartlogo.png",
         "top": "8%",
-        "width": "80dp",
+        "width": "200dp",
         "zIndex": 1
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
@@ -45,10 +45,9 @@ function addWidgetslogin() {
     var CopyloginPageInfo0dbc3b1ffc4c64a = new kony.ui.RichText({
         "centerX": "50%",
         "id": "CopyloginPageInfo0dbc3b1ffc4c64a",
-        "isVisible": true,
+        "isVisible": false,
         "skin": "jumpStartRT230",
         "text": "<span style=\"font-weight: bold\">JUMP</span>START",
-        "top": "7dp",
         "width": "80%",
         "zIndex": 1
     }, {
@@ -82,7 +81,7 @@ function addWidgetslogin() {
         "left": "0dp",
         "skin": "jumpStartLabel120",
         "text": "Connecting People",
-        "top": "0dp",
+        "top": "-10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -103,7 +102,7 @@ function addWidgetslogin() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "0%",
+        "top": "0.00%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -260,7 +259,7 @@ function addWidgetslogin() {
         "id": "loginImages",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "1dp",
+        "left": "0dp",
         "skin": "slFbox",
         "top": "10%",
         "width": "100%",

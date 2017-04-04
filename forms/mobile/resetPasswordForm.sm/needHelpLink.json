@@ -29,8 +29,8 @@
         "value": "80%"
     },
     "_width_": {
-        "type": "string",
-        "value": "30%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "canUpdateUI": true,
