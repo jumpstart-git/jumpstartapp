@@ -30,12 +30,12 @@
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "48%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
