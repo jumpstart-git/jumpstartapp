@@ -51,10 +51,13 @@
     "kuid": "55098ebb2bd241f9939e1ecb0bcac98b",
     "masterdata": [
         [
+<<<<<<< HEAD
             "Select",
             "..."
         ],
         [
+=======
+>>>>>>> a227df899547755a764c7b3bbe176b36565e6e57
             "NSW",
             "New South Wales"
         ],
