@@ -16,9 +16,7 @@ function initializeFBox002ffa33914ea45() {
         "id": "SegmentMainFlex",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
-        "left": "0dp",
         "skin": "slFbox",
-        "top": "10dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});

@@ -132,7 +132,7 @@ function addWidgetsLogHoursForms() {
         "id": "lblTotalHours",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslLabel0480f34087e004e",
+        "skin": "ngnyOrangeLabelText",
         "text": "Engagement hours",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -287,13 +287,13 @@ function addWidgetsLogHoursForms() {
     }, {}, {});
     AddHoursButtonContainer.setDefaultUnit(kony.flex.DP);
     var addHoursButton = new kony.ui.Button({
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "100%",
         "id": "addHoursButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_a2af3349d18c4d9fb5a7ef05ad71a946,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add hours",
         "top": "0dp",
         "width": "100%",
@@ -584,12 +584,12 @@ function addWidgetsLogHoursForms() {
     var saveButton = new kony.ui.Button({
         "centerX": "75%",
         "centerY": "48.82%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "saveButton",
         "isVisible": true,
         "onClick": AS_Button_9d364a3620574348a864e968abe750bc,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Save",
         "width": "46%"
     }, {
@@ -652,7 +652,7 @@ function addWidgetsLogHoursForms() {
         "id": "addHoursLabel",
         "isVisible": true,
         "left": "127dp",
-        "skin": "CopyslLabel02795e66a46954b",
+        "skin": "ngnyOrangeLabelText",
         "text": "Add hours",
         "top": "13dp",
         "width": "80%",
@@ -716,6 +716,7 @@ function addWidgetsLogHoursForms() {
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
         "top": "5dp",
+        "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
         "width": "100%",
         "year": 2016,
@@ -947,12 +948,12 @@ function addWidgetsLogHoursForms() {
     addHoursFooterContainer.setDefaultUnit(kony.flex.DP);
     var addHoursFooterbutton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "addHoursFooterbutton",
         "isVisible": true,
         "onClick": AS_Button_3e63010ecab440f8bc6dedecca979d47,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add hours",
         "top": "11%",
         "width": "90%",

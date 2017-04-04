@@ -164,12 +164,12 @@ function addWidgetslogin() {
     });
     var signInButton = new kony.ui.Button({
         "centerX": "50.00%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "signInButton",
         "isVisible": true,
         "onClick": AS_Button_c55a88368de54c408d5a02eef07ad463,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Login",
         "top": "6dp",
         "width": "80%",
@@ -197,23 +197,22 @@ function addWidgetslogin() {
         "zIndex": 1
     }, {}, {});
     loginFooter.setDefaultUnit(kony.flex.DP);
-    var loginRegisterLink = new kony.ui.Label({
+    var loginRegisterLink = new kony.ui.RichText({
         "centerX": "50%",
         "id": "loginRegisterLink",
         "isVisible": true,
-        "left": "0dp",
-        "onTouchStart": AS_Label_2e641c70f5f84f80bb2d8fe88102e950,
-        "skin": "jumpStartLabelGreen120",
-        "text": "Register as a skilled volunteer",
-        "top": "21dp",
-        "width": "72%",
-        "zIndex": 2
+        "linkSkin": "CopyslRichText09c893bc72d674b",
+        "onTouchStart": AS_RichText_58183f113bfb4950a774c5437a2f1324,
+        "skin": "ngnyGreenLinkText",
+        "text": "<u>Register as a skilled volunteer</u>",
+        "top": "13dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {
-        "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var forgotPasswordLink = new kony.ui.RichText({
@@ -221,8 +220,8 @@ function addWidgetslogin() {
         "id": "forgotPasswordLink",
         "isVisible": true,
         "linkSkin": "CopyslRichText09c893bc72d674b",
-        "onTouchStart": AS_RichText_40a28652bced44cf8930a409eb1821e0,
-        "skin": "jumpStartRtLink100",
+        "onTouchStart": AS_RichText_bab7a79099ac4a409c36fc1f1e48d543,
+        "skin": "ngnyGreenLinkText",
         "text": "<u>Forgot password?</u>",
         "top": "13dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -241,7 +240,7 @@ function addWidgetslogin() {
         "linkSkin": "CopyslRichText09c893bc72d674b",
         "onClick": AS_RichText_25939b8e86014441b5a47e1b246b12e6,
         "onTouchStart": AS_RichText_101d5ce6c83f4b2885695188561bfa47,
-        "skin": "jumpStartRtLink100",
+        "skin": "ngnyGreenLinkText",
         "text": "<u>Need help?</u>",
         "top": "12dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -320,7 +319,7 @@ function addWidgetslogin() {
         "id": "codeValidationLbl",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslLabel0ef341893161d42",
+        "skin": "ngnyOrangeLabelText",
         "text": "Logging in for the first time?",
         "top": "15dp",
         "width": "75%",
@@ -392,7 +391,7 @@ function addWidgetslogin() {
         "left": "0dp",
         "onClick": AS_RichText_6a82d8aa4fcc448fb084c717b0967987,
         "onTouchStart": AS_RichText_ba3a520a0bd6464caf7feb4297050d6d,
-        "skin": "CopyslRichText01225eb7cd5fb40",
+        "skin": "ngnyGreenLinkText",
         "text": "<u>Resend code to your email</u>\n",
         "top": "160dp",
         "width": "70%",
@@ -449,16 +448,16 @@ function addWidgetslogin() {
     validatecodeFooter.setDefaultUnit(kony.flex.DP);
     var submitBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0717d880851f847",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "submitBtn",
         "isVisible": true,
-        "left": "51%",
+        "left": "50%",
         "onClick": AS_Button_102be19028bf4b8e8c5f3de8263022bb,
-        "skin": "CopyslButtonGlossBlue0717d880851f847",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "10%",
-        "width": "48%",
+        "width": "40%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -470,16 +469,16 @@ function addWidgetslogin() {
     });
     var cancelBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossRed0bc9cae1915754e",
+        "focusSkin": "ngnyBackButton",
         "height": "45dp",
         "id": "cancelBtn",
         "isVisible": true,
-        "left": "1%",
+        "left": "10%",
         "onClick": AS_Button_a7a9f65b40a4414e8b46666fee11aefd,
-        "skin": "CopyslButtonGlossBlue0dfeab12c7cd543",
+        "skin": "ngnyBackButton",
         "text": "Back",
         "top": "10%",
-        "width": "48%",
+        "width": "40%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,

@@ -91,7 +91,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "Business Name*",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -101,7 +101,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var bdcBusinessNameInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_SENTENCES,
         "height": "40dp",
         "id": "bdcBusinessNameInput",
         "isVisible": true,
@@ -112,7 +112,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -134,7 +134,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "ABN, ACN or AICN*",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -155,7 +155,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -177,7 +177,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "Business Address",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -198,7 +198,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -220,7 +220,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel110",
         "text": "Ownership information",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -236,7 +236,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "No. of Indigenous Owners*",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -257,7 +257,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -279,7 +279,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "% of Indigenous Ownership",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -300,7 +300,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -318,11 +318,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     var bdcEmpInfoLabel = new kony.ui.Label({
         "id": "bdcEmpInfoLabel",
         "isVisible": true,
-        "left": "0dp",
+        "left": "0px",
         "skin": "jumpStartLabel110",
         "text": "Employee information",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -338,7 +338,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "Number of Employees*",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -359,7 +359,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -381,7 +381,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "% of Indigenous Employment",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -396,13 +396,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "id": "bdcPercentIndiEmploymentInput",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-        "left": "0dp",
+        "left": "0px",
         "onTextChange": AS_TextField_76fc6da85889407eb4b1eb48be13eb7b,
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -424,7 +424,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "Business Activity / Sector",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -434,7 +434,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var bdcSectorInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_SENTENCES,
         "height": "40dp",
         "id": "bdcSectorInput",
         "isVisible": true,
@@ -445,7 +445,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -467,7 +467,7 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "skin": "jumpStartLabel10099",
         "text": "Professional Affiliations",
         "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -477,18 +477,19 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var bdcAffiliationsInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_SENTENCES,
         "height": "40dp",
         "id": "bdcAffiliationsInput",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
         "left": "0dp",
+        "maxTextLength": null,
         "onTextChange": AS_TextField_76fc6da85889407eb4b1eb48be13eb7b,
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -504,13 +505,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
         "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
     });
     var bdcReachTitle = new kony.ui.Label({
-        "centerX": "50%",
         "id": "bdcReachTitle",
         "isVisible": true,
+        "left": "0dp",
         "skin": "jumpStartLabel10099",
         "text": "Business Reach",
         "top": "20dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -521,15 +522,15 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcReachContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
         "clipBounds": true,
         "height": "40dp",
         "id": "bdcReachContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "10dp",
-        "width": "100%",
+        "width": "98%",
         "zIndex": 1
     }, {}, {});
     bdcReachContainer.setDefaultUnit(kony.flex.DP);
@@ -547,7 +548,6 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     reachInternationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachInternationalButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "reachInternationalButton",
@@ -581,11 +581,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     reachAustraliaButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachAustraliaButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "reachAustraliaButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "Australia-wide",
@@ -614,11 +614,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     reachStateButtonContainer.setDefaultUnit(kony.flex.DP);
     var reachStateButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "reachStateButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "State/Territory",
@@ -635,13 +635,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     reachStateButtonContainer.add(reachStateButton);
     bdcReachContainer.add(reachInternationalButtonContainer, reachAustraliaButtonContainer, reachStateButtonContainer);
     var bdcGovExpTitle = new kony.ui.Label({
-        "centerX": "50%",
         "id": "bdcGovExpTitle",
         "isVisible": true,
+        "left": "0dp",
         "skin": "jumpStartLabel10099",
         "text": "Previous Experience to Government",
         "top": "20dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -652,14 +652,14 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcGovExpParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "centerX": "50%",
         "clipBounds": true,
         "id": "bdcGovExpParent",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "10dp",
-        "width": "100%",
+        "width": "98%",
         "zIndex": 1
     }, {}, {});
     bdcGovExpParent.setDefaultUnit(kony.flex.DP);
@@ -690,7 +690,6 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpLocalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpLocalButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcGovExpLocalButton",
@@ -724,11 +723,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpStateButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpStateButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcGovExpStateButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "State/Territory",
@@ -771,7 +770,6 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpCommonwealthButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpCommonwealthButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcGovExpCommonwealthButton",
@@ -805,11 +803,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcGovExpInternationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcGovExpInternationalButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcGovExpInternationalButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "International",
@@ -827,13 +825,13 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     bdcGovExpBottom.add(bdcGovExpCommonwealthButtonContainer, bdcGovExpInternationalButtonContainer);
     bdcGovExpParent.add(bdcGovExpTop, bdcGovExpBottom);
     var bdcPrivateTitle = new kony.ui.Label({
-        "centerX": "50%",
         "id": "bdcPrivateTitle",
         "isVisible": true,
+        "left": "0dp",
         "skin": "jumpStartLabel10099",
         "text": "Private",
         "top": "20dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -844,15 +842,15 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcPrivateContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
         "clipBounds": true,
         "height": "40dp",
         "id": "bdcPrivateContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "10dp",
-        "width": "100%",
+        "width": "98%",
         "zIndex": 1
     }, {}, {});
     bdcPrivateContainer.setDefaultUnit(kony.flex.DP);
@@ -870,11 +868,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcPrivateMultinationalButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcPrivateMultinationalButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcPrivateMultinationalButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "Large Multinational",
@@ -903,11 +901,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcPrivateSMEButtonContainer.setDefaultUnit(kony.flex.DP);
     var bdcPrivateSMEButton = new kony.ui.Button({
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcPrivateSMEButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "Small and Medium Enterprises",
@@ -925,14 +923,14 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     bdcPrivateContainer.add(bdcPrivateMultinationalButtonContainer, bdcPrivateSMEButtonContainer);
     var bdcOtherInfoContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "centerX": "50%",
         "clipBounds": true,
         "id": "bdcOtherInfoContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
         "skin": "slFbox",
         "top": "20dp",
-        "width": "100%",
+        "width": "98%",
         "zIndex": 1
     }, {}, {});
     bdcOtherInfoContainer.setDefaultUnit(kony.flex.DP);
@@ -949,9 +947,9 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     bdcNonProfitParent.setDefaultUnit(kony.flex.DP);
     var bdcNonProfitTitle = new kony.ui.Label({
-        "centerX": "50%",
         "id": "bdcNonProfitTitle",
         "isVisible": true,
+        "left": "0dp",
         "skin": "jumpStartLabel10099",
         "text": "Not for Profit",
         "top": "0dp",
@@ -966,11 +964,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcNonProfitButton = new kony.ui.Button({
         "bottom": "15dp",
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcNonProfitButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "Not for Profit",
@@ -1015,11 +1013,11 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     });
     var bdcNoExpButton = new kony.ui.Button({
         "bottom": "15dp",
-        "centerX": "50%",
         "focusSkin": "jumpStartGreenButton100",
         "height": "40dp",
         "id": "bdcNoExpButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_3f0b779809604cbebc08b5f48b09b3dd,
         "skin": "jumpStartGrayButton90",
         "text": "No Experience",
@@ -1051,14 +1049,12 @@ function addWidgetsbusinessDetailsConfirmationPage() {
     }, {}, {});
     businessDetailsConfirmationFooter.setDefaultUnit(kony.flex.DP);
     var registrationSubmitButton = new kony.ui.Button({
-        "centerX": "50%",
-        "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "registrationSubmitButton",
         "isVisible": true,
         "onClick": AS_Button_fffee9df82384213aed6037aa6abf457,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Confirm",
         "width": "90%"
     }, {

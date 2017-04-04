@@ -466,7 +466,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "volProfileAboutText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "About Nick Giles",
         "top": "0dp",
         "width": "100%"
@@ -513,11 +513,12 @@ function addWidgetsMyActivityProfiles() {
     volProfileAboutContainer.add(volProfileAboutHeader, volProfileAboutBodyl);
     var volProfileContactContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
         "clipBounds": true,
         "id": "volProfileContactContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "16dp",
+        "left": "0dp",
         "skin": "CopyslFbox0a00c3d05da4f49",
         "top": "10dp",
         "width": "90%",
@@ -525,13 +526,14 @@ function addWidgetsMyActivityProfiles() {
     }, {}, {});
     volProfileContactContainer.setDefaultUnit(kony.flex.DP);
     var contactAdressLbl = new kony.ui.Label({
+        "centerX": "50%",
         "id": "contactAdressLbl",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange150new",
+        "skin": "ngnyOrangeLabelText",
         "text": "Contact Details",
         "top": "7dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -841,7 +843,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "volunteerProfileAvailabilityTextt",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Schedule of availability",
         "top": "0dp",
         "width": "100%"
@@ -983,7 +985,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "volProfileSkillsText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Skills\n",
         "top": "0dp",
         "width": "100%"
@@ -1072,7 +1074,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "volunteerProfileWorkExperienceTextt",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Work Experience",
         "top": "0dp",
         "width": "100%"
@@ -1116,7 +1118,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileContainerr",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "10dp",
+        "left": "0dp",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
@@ -1432,7 +1434,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileAboutTitlee",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "About",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1481,11 +1483,12 @@ function addWidgetsMyActivityProfiles() {
     businessProfileAboutContainerr.add(businessProfileAboutTitlee, businessProfileAboutTextt, businessProfileAboutMoree);
     var businessContactContainerr = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
         "clipBounds": true,
         "id": "businessContactContainerr",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "16dp",
+        "left": "0dp",
         "skin": "CopyslFbox0a00c3d05da4f49",
         "top": "10dp",
         "width": "90%",
@@ -1496,7 +1499,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "AdressLbll",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Contact Details",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -1675,7 +1678,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileBusinessActivityTitlee",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Business Activity",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1723,7 +1726,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileAffiliationsTitllee",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Professional Affiliations",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1771,7 +1774,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileReachTitleee",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Business Reach",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE

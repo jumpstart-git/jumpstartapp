@@ -197,16 +197,34 @@ function populateUpdatePage() {
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.setEnabled(false);
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
-        if ((workDetails != null) && (workDetails != "null")) {
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = workDetails;
-        } else {
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = ""; //workDetails;
+        //Begin of Defect D037
+        /* Peter's Code
+        if((workDetails!=null)&&(workDetails!="null"))
+        {
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= workDetails;
+        }else
+        {
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= "";//workDetails;
         }
-        if ((aboutMe != null) && (aboutMe != "null")) {
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = aboutMe;
-        } else {
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = ""; //aboutMe;
+        if((aboutMe!=null)&&(aboutMe!="null"))
+        {
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= aboutMe;
+
+        }else
+        {
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= "";//aboutMe;
         }
+        */
+        //Carl Cheng's code
+        if (workDetails === null) {
+            workDetails = "";
+        }
+        if (aboutMe === null) {
+            aboutMe = "";
+        }
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = workDetails;
+        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = aboutMe;
+        //End of Defect D037
         //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text= companyName;
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey = companyName;
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text = role;
@@ -231,8 +249,8 @@ function populateUpdatePage() {
             username: userName,
             password: password,
             reenteredPassword: password,
-            workDetails: "",
-            aboutMe: "",
+            workDetails: workDetails,
+            aboutMe: aboutMe,
             companyName: companyName,
             role: role,
             businessUnit: businessUnit,

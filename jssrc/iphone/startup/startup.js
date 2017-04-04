@@ -20,19 +20,26 @@ var appConfig = {
         "baseId": "6730d87c-fb79-4caf-a159-71f33f12fde1",
         "name": "JumpStartUAT",
         "selflink": "https://100014964.auth.konycloud.com/appconfig",
+        "login": [{
+            "type": "basic",
+            "prov": "userstore",
+            "url": "https://100014964.auth.konycloud.com",
+            "alias": "userstore"
+        }],
         "messagingsvc": {
             "appId": "78b57a8a-9887-402c-a0a0-e208a518658d",
             "url": "https://cba-jumpstart.messaging.konycloud.com/api/v1"
         },
         "integsvc": {
-            "News": "https://cba-jumpstart.konycloud.com/services/News",
             "Login": "https://cba-jumpstart.konycloud.com/services/Login",
             "Login9": "https://cba-jumpstart.konycloud.com/services/Login9",
             "Weather": "https://cba-jumpstart.konycloud.com/services/Weather",
+            "CBALogin": "https://cba-jumpstart.konycloud.com/services/CBALogin",
             "VolReport": "https://cba-jumpstart.konycloud.com/services/VolReport",
             "Volunteers": "https://cba-jumpstart.konycloud.com/services/Volunteers",
-            "VolGetTasks": "https://cba-jumpstart.konycloud.com/services/VolGetTasks",
             "imageUpload": "https://cba-jumpstart.konycloud.com/services/imageUpload",
+            "AcceptReqVol": "https://cba-jumpstart.konycloud.com/services/AcceptReqVol",
+            "CancelVolReq": "https://cba-jumpstart.konycloud.com/services/CancelVolReq",
             "HoursService": "https://cba-jumpstart.konycloud.com/services/HoursService",
             "Registration": "https://cba-jumpstart.konycloud.com/services/Registration",
             "ReportIndBus": "https://cba-jumpstart.konycloud.com/services/ReportIndBus",
@@ -42,76 +49,75 @@ var appConfig = {
             "VolDeclineReq": "https://cba-jumpstart.konycloud.com/services/VolDeclineReq",
             "VolMyActivity": "https://cba-jumpstart.konycloud.com/services/VolMyActivity",
             "VolunteersEC2": "https://cba-jumpstart.konycloud.com/services/VolunteersEC2",
-            "LocationLookup": "https://cba-jumpstart.konycloud.com/services/LocationLookup",
             "Recommendation": "https://cba-jumpstart.konycloud.com/services/Recommendation",
             "forgotPassword": "https://cba-jumpstart.konycloud.com/services/forgotPassword",
             "DeleteVolunteer": "https://cba-jumpstart.konycloud.com/services/DeleteVolunteer",
             "VolEndorsements": "https://cba-jumpstart.konycloud.com/services/VolEndorsements",
-            "VolunteerSkills": "https://cba-jumpstart.konycloud.com/services/VolunteerSkills",
+            "checkBoxservice": "https://cba-jumpstart.konycloud.com/services/checkBoxservice",
             "forgotPassword1": "https://cba-jumpstart.konycloud.com/services/forgotPassword1",
+            "AttachKsidToUser": "https://cba-jumpstart.konycloud.com/services/AttachKsidToUser",
             "MerinVolActivity": "https://cba-jumpstart.konycloud.com/services/MerinVolActivity",
             "VolunteerProfile": "https://cba-jumpstart.konycloud.com/services/VolunteerProfile",
             "updateVolService": "https://cba-jumpstart.konycloud.com/services/updateVolService",
+            "AcceptTaskDetails": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetails",
             "DeclineRequestVol": "https://cba-jumpstart.konycloud.com/services/DeclineRequestVol",
             "TasksForVolunteer": "https://cba-jumpstart.konycloud.com/services/TasksForVolunteer",
             "VolunteerGetTasks": "https://cba-jumpstart.konycloud.com/services/VolunteerGetTasks",
+            "CancelReqVolunteer": "https://cba-jumpstart.konycloud.com/services/CancelReqVolunteer",
             "ReportSupplyNation": "https://cba-jumpstart.konycloud.com/services/ReportSupplyNation",
-            "TaskRequestService": "https://cba-jumpstart.konycloud.com/services/TaskRequestService",
             "UpdateBusinessLogo": "https://cba-jumpstart.konycloud.com/services/UpdateBusinessLogo",
+            "acceptReqVolunteer": "https://cba-jumpstart.konycloud.com/services/acceptReqVolunteer",
+            "BusinessGetRequests": "https://cba-jumpstart.konycloud.com/services/BusinessGetRequests",
             "CreateOpportunities": "https://cba-jumpstart.konycloud.com/services/CreateOpportunities",
             "NotificationService": "https://cba-jumpstart.konycloud.com/services/NotificationService",
             "RegistrationService": "https://cba-jumpstart.konycloud.com/services/RegistrationService",
             "ValidateCodeService": "https://cba-jumpstart.konycloud.com/services/ValidateCodeService",
-            "VolunteerAcceptTask": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptTask",
             "VolunteerMyActivity": "https://cba-jumpstart.konycloud.com/services/VolunteerMyActivity",
             "VolunteergetRequest": "https://cba-jumpstart.konycloud.com/services/VolunteergetRequest",
             "oppurtunitiesSearch": "https://cba-jumpstart.konycloud.com/services/oppurtunitiesSearch",
             "GetExistingOpenTasks": "https://cba-jumpstart.konycloud.com/services/GetExistingOpenTasks",
+            "BusinessCancelRequest": "https://cba-jumpstart.konycloud.com/services/BusinessCancelRequest",
+            "CodeValidationService": "https://cba-jumpstart.konycloud.com/services/CodeValidationService",
             "RequestToVolunteerOpp": "https://cba-jumpstart.konycloud.com/services/RequestToVolunteerOpp",
             "RequestVolunteerTasks": "https://cba-jumpstart.konycloud.com/services/RequestVolunteerTasks",
             "UpdateBusinessProfile": "https://cba-jumpstart.konycloud.com/services/UpdateBusinessProfile",
             "VolunteerNotification": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification",
-            "GetMyActivityOpenTasks": "https://cba-jumpstart.konycloud.com/services/GetMyActivityOpenTasks",
-            "VolunteerNotification1": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification1",
-            "emailValidationService": "https://cba-jumpstart.konycloud.com/services/emailValidationService",
-            "VolunteerRequestDetails": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestDetails",
-            "IndigenousBusineeProfile": "https://cba-jumpstart.konycloud.com/services/IndigenousBusineeProfile",
-            "VolunteerRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestVolunteer",
-            "requestToVolunteerService": "https://cba-jumpstart.konycloud.com/services/requestToVolunteerService",
-            "Copy1businessSearchService": "https://cba-jumpstart.konycloud.com/services/Copy1businessSearchService",
-            "ImagesInRegistrationService": "https://cba-jumpstart.konycloud.com/services/ImagesInRegistrationService",
-            "VolunteerAcceptRequestTasks": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptRequestTasks",
-            "GetRecommendationsForBusiness": "https://cba-jumpstart.konycloud.com/services/GetRecommendationsForBusiness",
-            "CopyBusinessProfileImageUpload": "https://cba-jumpstart.konycloud.com/services/CopyBusinessProfileImageUpload",
-            "CBALogin": "https://cba-jumpstart.konycloud.com/services/CBALogin",
-            "AcceptReqVol": "https://cba-jumpstart.konycloud.com/services/AcceptReqVol",
-            "CancelVolReq": "https://cba-jumpstart.konycloud.com/services/CancelVolReq",
-            "checkBoxservice": "https://cba-jumpstart.konycloud.com/services/checkBoxservice",
-            "AttachKsidToUser": "https://cba-jumpstart.konycloud.com/services/AttachKsidToUser",
-            "AcceptTaskDetails": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetails",
-            "CancelReqVolunteer": "https://cba-jumpstart.konycloud.com/services/CancelReqVolunteer",
-            "acceptReqVolunteer": "https://cba-jumpstart.konycloud.com/services/acceptReqVolunteer",
-            "BusinessGetRequests": "https://cba-jumpstart.konycloud.com/services/BusinessGetRequests",
-            "BusinessCancelRequest": "https://cba-jumpstart.konycloud.com/services/BusinessCancelRequest",
-            "BusinessSearchService": "https://cba-jumpstart.konycloud.com/services/BusinessSearchService",
-            "CodeValidationService": "https://cba-jumpstart.konycloud.com/services/CodeValidationService",
             "AcceptTaskforVolunteer": "https://cba-jumpstart.konycloud.com/services/AcceptTaskforVolunteer",
             "BusinessChangePassword": "https://cba-jumpstart.konycloud.com/services/BusinessChangePassword",
             "BusinessDeclineRequest": "https://cba-jumpstart.konycloud.com/services/BusinessDeclineRequest",
             "BusinessGetTaskDetails": "https://cba-jumpstart.konycloud.com/services/BusinessGetTaskDetails",
             "BusinessMarkAsComplete": "https://cba-jumpstart.konycloud.com/services/BusinessMarkAsComplete",
             "CancelRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/CancelRequestVolunteer",
-            "acceptRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/acceptRequestVolunteer",
+            "GetMyActivityOpenTasks": "https://cba-jumpstart.konycloud.com/services/GetMyActivityOpenTasks",
+            "VolunteerNotification1": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification1",
+            "emailValidationService": "https://cba-jumpstart.konycloud.com/services/emailValidationService",
             "BusinessSaveEndorsement": "https://cba-jumpstart.konycloud.com/services/BusinessSaveEndorsement",
-            "BusinessStartEngagement": "https://cba-jumpstart.konycloud.com/services/BusinessStartEngagement",
             "BusinessRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/BusinessRequestVolunteer",
+            "IndigenousBusineeProfile": "https://cba-jumpstart.konycloud.com/services/IndigenousBusineeProfile",
             "BusinessDeleteOpportunity": "https://cba-jumpstart.konycloud.com/services/BusinessDeleteOpportunity",
             "BusinessUpdateOpportunity": "https://cba-jumpstart.konycloud.com/services/BusinessUpdateOpportunity",
+            "VolunteerRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestVolunteer",
             "BusinessAcceptRequestTasks": "https://cba-jumpstart.konycloud.com/services/BusinessAcceptRequestTasks",
             "BusinessProfileImageUpload": "https://cba-jumpstart.konycloud.com/services/BusinessProfileImageUpload",
+            "Copy1businessSearchService": "https://cba-jumpstart.konycloud.com/services/Copy1businessSearchService",
             "BusinessGetVolunteersSkills": "https://cba-jumpstart.konycloud.com/services/BusinessGetVolunteersSkills",
-            "AcceptTaskDetailsforVolunteer": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetailsforVolunteer",
-            "BusinessMyActivityNotification": "https://cba-jumpstart.konycloud.com/services/BusinessMyActivityNotification"
+            "ImagesInRegistrationService": "https://cba-jumpstart.konycloud.com/services/ImagesInRegistrationService",
+            "VolunteerAcceptRequestTasks": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptRequestTasks",
+            "GetRecommendationsForBusiness": "https://cba-jumpstart.konycloud.com/services/GetRecommendationsForBusiness",
+            "BusinessMyActivityNotification": "https://cba-jumpstart.konycloud.com/services/BusinessMyActivityNotification",
+            "CopyBusinessProfileImageUpload": "https://cba-jumpstart.konycloud.com/services/CopyBusinessProfileImageUpload",
+            "News": "https://cba-jumpstart.konycloud.com/services/News",
+            "VolGetTasks": "https://cba-jumpstart.konycloud.com/services/VolGetTasks",
+            "LocationLookup": "https://cba-jumpstart.konycloud.com/services/LocationLookup",
+            "VolunteerSkills": "https://cba-jumpstart.konycloud.com/services/VolunteerSkills",
+            "TaskRequestService": "https://cba-jumpstart.konycloud.com/services/TaskRequestService",
+            "VolunteerAcceptTask": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptTask",
+            "BusinessSearchService": "https://cba-jumpstart.konycloud.com/services/BusinessSearchService",
+            "acceptRequestVolunteer": "https://cba-jumpstart.konycloud.com/services/acceptRequestVolunteer",
+            "BusinessStartEngagement": "https://cba-jumpstart.konycloud.com/services/BusinessStartEngagement",
+            "VolunteerRequestDetails": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestDetails",
+            "requestToVolunteerService": "https://cba-jumpstart.konycloud.com/services/requestToVolunteerService",
+            "AcceptTaskDetailsforVolunteer": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetailsforVolunteer"
         },
         "reportingsvc": {
             "custom": "https://cba-jumpstart.konycloud.com/services/CMS",
@@ -121,11 +127,6 @@ var appConfig = {
             "url": "https://cba-jumpstart.konycloud.com/JumpStartAbort1"
         },
         "services_meta": {
-            "News": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/News",
-                "type": "integsvc"
-            },
             "Login": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/Login",
@@ -141,6 +142,11 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/Weather",
                 "type": "integsvc"
             },
+            "CBALogin": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/CBALogin",
+                "type": "integsvc"
+            },
             "VolReport": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/VolReport",
@@ -151,14 +157,19 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/Volunteers",
                 "type": "integsvc"
             },
-            "VolGetTasks": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolGetTasks",
-                "type": "integsvc"
-            },
             "imageUpload": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/imageUpload",
+                "type": "integsvc"
+            },
+            "AcceptReqVol": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/AcceptReqVol",
+                "type": "integsvc"
+            },
+            "CancelVolReq": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/CancelVolReq",
                 "type": "integsvc"
             },
             "HoursService": {
@@ -206,11 +217,6 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/VolunteersEC2",
                 "type": "integsvc"
             },
-            "LocationLookup": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/LocationLookup",
-                "type": "integsvc"
-            },
             "Recommendation": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/Recommendation",
@@ -231,14 +237,19 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/VolEndorsements",
                 "type": "integsvc"
             },
-            "VolunteerSkills": {
+            "checkBoxservice": {
                 "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerSkills",
+                "url": "https://cba-jumpstart.konycloud.com/services/checkBoxservice",
                 "type": "integsvc"
             },
             "forgotPassword1": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/forgotPassword1",
+                "type": "integsvc"
+            },
+            "AttachKsidToUser": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/AttachKsidToUser",
                 "type": "integsvc"
             },
             "MerinVolActivity": {
@@ -256,6 +267,11 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/updateVolService",
                 "type": "integsvc"
             },
+            "AcceptTaskDetails": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetails",
+                "type": "integsvc"
+            },
             "DeclineRequestVol": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/DeclineRequestVol",
@@ -271,19 +287,29 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/VolunteerGetTasks",
                 "type": "integsvc"
             },
+            "CancelReqVolunteer": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/CancelReqVolunteer",
+                "type": "integsvc"
+            },
             "ReportSupplyNation": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/ReportSupplyNation",
                 "type": "integsvc"
             },
-            "TaskRequestService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/TaskRequestService",
-                "type": "integsvc"
-            },
             "UpdateBusinessLogo": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/UpdateBusinessLogo",
+                "type": "integsvc"
+            },
+            "acceptReqVolunteer": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/acceptReqVolunteer",
+                "type": "integsvc"
+            },
+            "BusinessGetRequests": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/BusinessGetRequests",
                 "type": "integsvc"
             },
             "CreateOpportunities": {
@@ -306,11 +332,6 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/ValidateCodeService",
                 "type": "integsvc"
             },
-            "VolunteerAcceptTask": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptTask",
-                "type": "integsvc"
-            },
             "VolunteerMyActivity": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/VolunteerMyActivity",
@@ -331,6 +352,16 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/GetExistingOpenTasks",
                 "type": "integsvc"
             },
+            "BusinessCancelRequest": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/BusinessCancelRequest",
+                "type": "integsvc"
+            },
+            "CodeValidationService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/CodeValidationService",
+                "type": "integsvc"
+            },
             "RequestToVolunteerOpp": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/RequestToVolunteerOpp",
@@ -349,126 +380,6 @@ var appConfig = {
             "VolunteerNotification": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification",
-                "type": "integsvc"
-            },
-            "GetMyActivityOpenTasks": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/GetMyActivityOpenTasks",
-                "type": "integsvc"
-            },
-            "VolunteerNotification1": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification1",
-                "type": "integsvc"
-            },
-            "emailValidationService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/emailValidationService",
-                "type": "integsvc"
-            },
-            "VolunteerRequestDetails": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestDetails",
-                "type": "integsvc"
-            },
-            "IndigenousBusineeProfile": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/IndigenousBusineeProfile",
-                "type": "integsvc"
-            },
-            "VolunteerRequestVolunteer": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestVolunteer",
-                "type": "integsvc"
-            },
-            "requestToVolunteerService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/requestToVolunteerService",
-                "type": "integsvc"
-            },
-            "Copy1businessSearchService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/Copy1businessSearchService",
-                "type": "integsvc"
-            },
-            "ImagesInRegistrationService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/ImagesInRegistrationService",
-                "type": "integsvc"
-            },
-            "VolunteerAcceptRequestTasks": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptRequestTasks",
-                "type": "integsvc"
-            },
-            "GetRecommendationsForBusiness": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/GetRecommendationsForBusiness",
-                "type": "integsvc"
-            },
-            "CopyBusinessProfileImageUpload": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/CopyBusinessProfileImageUpload",
-                "type": "integsvc"
-            },
-            "CBALogin": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/CBALogin",
-                "type": "integsvc"
-            },
-            "AcceptReqVol": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/AcceptReqVol",
-                "type": "integsvc"
-            },
-            "CancelVolReq": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/CancelVolReq",
-                "type": "integsvc"
-            },
-            "checkBoxservice": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/checkBoxservice",
-                "type": "integsvc"
-            },
-            "AttachKsidToUser": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/AttachKsidToUser",
-                "type": "integsvc"
-            },
-            "AcceptTaskDetails": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetails",
-                "type": "integsvc"
-            },
-            "CancelReqVolunteer": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/CancelReqVolunteer",
-                "type": "integsvc"
-            },
-            "acceptReqVolunteer": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/acceptReqVolunteer",
-                "type": "integsvc"
-            },
-            "BusinessGetRequests": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/BusinessGetRequests",
-                "type": "integsvc"
-            },
-            "BusinessCancelRequest": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/BusinessCancelRequest",
-                "type": "integsvc"
-            },
-            "BusinessSearchService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/BusinessSearchService",
-                "type": "integsvc"
-            },
-            "CodeValidationService": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/CodeValidationService",
                 "type": "integsvc"
             },
             "AcceptTaskforVolunteer": {
@@ -501,9 +412,19 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/CancelRequestVolunteer",
                 "type": "integsvc"
             },
-            "acceptRequestVolunteer": {
+            "GetMyActivityOpenTasks": {
                 "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/acceptRequestVolunteer",
+                "url": "https://cba-jumpstart.konycloud.com/services/GetMyActivityOpenTasks",
+                "type": "integsvc"
+            },
+            "VolunteerNotification1": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerNotification1",
+                "type": "integsvc"
+            },
+            "emailValidationService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/emailValidationService",
                 "type": "integsvc"
             },
             "BusinessSaveEndorsement": {
@@ -511,14 +432,14 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessSaveEndorsement",
                 "type": "integsvc"
             },
-            "BusinessStartEngagement": {
-                "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/BusinessStartEngagement",
-                "type": "integsvc"
-            },
             "BusinessRequestVolunteer": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessRequestVolunteer",
+                "type": "integsvc"
+            },
+            "IndigenousBusineeProfile": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/IndigenousBusineeProfile",
                 "type": "integsvc"
             },
             "BusinessDeleteOpportunity": {
@@ -531,6 +452,11 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessUpdateOpportunity",
                 "type": "integsvc"
             },
+            "VolunteerRequestVolunteer": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestVolunteer",
+                "type": "integsvc"
+            },
             "BusinessAcceptRequestTasks": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessAcceptRequestTasks",
@@ -541,19 +467,99 @@ var appConfig = {
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessProfileImageUpload",
                 "type": "integsvc"
             },
+            "Copy1businessSearchService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/Copy1businessSearchService",
+                "type": "integsvc"
+            },
             "BusinessGetVolunteersSkills": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessGetVolunteersSkills",
                 "type": "integsvc"
             },
-            "AcceptTaskDetailsforVolunteer": {
+            "ImagesInRegistrationService": {
                 "version": "1.0",
-                "url": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetailsforVolunteer",
+                "url": "https://cba-jumpstart.konycloud.com/services/ImagesInRegistrationService",
+                "type": "integsvc"
+            },
+            "VolunteerAcceptRequestTasks": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptRequestTasks",
+                "type": "integsvc"
+            },
+            "GetRecommendationsForBusiness": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/GetRecommendationsForBusiness",
                 "type": "integsvc"
             },
             "BusinessMyActivityNotification": {
                 "version": "1.0",
                 "url": "https://cba-jumpstart.konycloud.com/services/BusinessMyActivityNotification",
+                "type": "integsvc"
+            },
+            "CopyBusinessProfileImageUpload": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/CopyBusinessProfileImageUpload",
+                "type": "integsvc"
+            },
+            "News": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/News",
+                "type": "integsvc"
+            },
+            "VolGetTasks": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolGetTasks",
+                "type": "integsvc"
+            },
+            "LocationLookup": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/LocationLookup",
+                "type": "integsvc"
+            },
+            "VolunteerSkills": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerSkills",
+                "type": "integsvc"
+            },
+            "TaskRequestService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/TaskRequestService",
+                "type": "integsvc"
+            },
+            "VolunteerAcceptTask": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerAcceptTask",
+                "type": "integsvc"
+            },
+            "BusinessSearchService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/BusinessSearchService",
+                "type": "integsvc"
+            },
+            "acceptRequestVolunteer": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/acceptRequestVolunteer",
+                "type": "integsvc"
+            },
+            "BusinessStartEngagement": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/BusinessStartEngagement",
+                "type": "integsvc"
+            },
+            "VolunteerRequestDetails": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/VolunteerRequestDetails",
+                "type": "integsvc"
+            },
+            "requestToVolunteerService": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/requestToVolunteerService",
+                "type": "integsvc"
+            },
+            "AcceptTaskDetailsforVolunteer": {
+                "version": "1.0",
+                "url": "https://cba-jumpstart.konycloud.com/services/AcceptTaskDetailsforVolunteer",
                 "type": "integsvc"
             }
         }

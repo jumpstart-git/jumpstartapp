@@ -128,11 +128,13 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
         // BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.imgContainer.imgBusinessLogo.src=imagePathAfterUpdate;  
         //mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src=imagePathAfterUpdate;
         kony.ui.Alert({
+            //D027: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Confirmation",
             "yesLabel": "OK",
             "noLabel": "No",
-            "message": "Profile Uploaded Successfully",
+            //D027: Changed message value from "Profile Uploaded Successfully" to "Profile logo was successfully updated"
+            "message": "Profile logo was successfully updated",
             "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT

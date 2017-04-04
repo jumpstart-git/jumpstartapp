@@ -685,9 +685,12 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
         case "volunteerMyProfileCompanyInput":
             // volunteerUpdateObject.companyName = fieldContent;
             volunteerUpdateObject.companyName = fieldEdited.selectedKey;
-            if (volunteerUpdateObject.companyName == "Select") {
+            //Begin of D012
+            //Added additional conditons if volunteerUpdateObject.companyName contains a null value or a blank string
+            if (volunteerUpdateObject.companyName == "Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName == "") {
                 volunteerUpdateObject.companyName = "";
             }
+            //End of D012
             break;
         case "volunteerMyProfileRoleInput":
             volunteerUpdateObject.role = fieldContent;
@@ -697,9 +700,12 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
             break;
         case "volunteerMyProfileStateInput":
             volunteerUpdateObject.state = fieldEdited.selectedKey;
-            if (volunteerUpdateObject.state == "Select") {
+            //Begin of D012
+            //Added additional conditons if volunteerUpdateObject.state contains a null value or a blank string
+            if (volunteerUpdateObject.state == "Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state == "") {
                 volunteerUpdateObject.state = "";
             }
+            //End of D012
             break;
         case "volunteerMyProfileAddressInput":
             volunteerUpdateObject.address = fieldContent;
