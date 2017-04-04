@@ -168,10 +168,10 @@ function getvolSendReviewSuccessCallback(sendReview1)
   
  //alert("inside success"+JSON.stringify(sendReview1));
   
-  
     if(sendReview1!="undefined"&& sendReview1!=undefined)
     {
     // alert("InSide"+JSON.stringify(sendReview1));
+    
 	//D019: Adding Kony Info Alert
 	kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
