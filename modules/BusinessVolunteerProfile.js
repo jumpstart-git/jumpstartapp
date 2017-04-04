@@ -227,7 +227,12 @@ function setBusinessVolunteerProfileData(gblBusinessVolunteerProfileResponse)
            var volunteerfNme=gblVolunteerProfileResponse["volunteersList"][0]["VolunteersDTO"][0].firstName ;
            var volunteerLNme=gblVolunteerProfileResponse["volunteersList"][0]["VolunteersDTO"][0].lastName ;
            var volunteerAddress=gblVolunteerProfileResponse["volunteersList"][0]["VolunteersDTO"][0].address ;
-           var volunteerFullNme= volunteerfNme + " " +volunteerLNme;
+        //D007: Adding code to capitalize first character for volunteerfNme and volunteerLnme
+        	var fNme = volunteerfNme.charAt(0).toUpperCase() + volunteerfNme.slice(1);
+        	var lNme = volunteerLNme.charAt(0).toUpperCase() + volunteerLNme.slice(1);
+        	var volunteerFullNme= fNme + " " + lNme;
+        //D007: End of code addition. Commented out line below
+           //var volunteerFullNme= volunteerfNme + " " +volunteerLNme;
            kony.store.setItem(volunteerName, volunteerFullNme);
            var volunteerPostn=gblVolunteerProfileResponse["volunteersList"][0]["VolunteersDTO"][0].role ;   
            var Skills=gblVolunteerProfileResponse["volunteersList"][0]["VolunteersDTO"][0].skillSet[0].SkillsDTO.skillName ;

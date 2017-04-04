@@ -248,7 +248,12 @@ function setSegViewVolunteerProfileData(gblVolunteerViewProfileResponse)
                    var volunteerfNme=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].firstName ;
                    var volunteerLNme=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].lastName ;
                    var volunteerAddress=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].address ;
-                   var volunteerFullNme= volunteerfNme + " " +volunteerLNme;
+        //D007: Adding code to capitalize first character for volunteerfNme and volunteerLnme
+        	var fNme = volunteerfNme.charAt(0).toUpperCase() + volunteerfNme.slice(1);
+        	var lNme = volunteerLNme.charAt(0).toUpperCase() + volunteerLNme.slice(1);
+        	var volunteerFullNme= fNme + " " + lNme;
+        //D007: End of code addition. Commented out line below
+                   //var volunteerFullNme= volunteerfNme + " " +volunteerLNme;
                    var volunteerPostn=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].role ;  
            var WorkExp=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].workDetails ; 
           var volunteerLat=gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].latitude ;
