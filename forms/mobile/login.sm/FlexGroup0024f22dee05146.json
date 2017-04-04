@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
+        "value": "75%"
     },
     "_left_": {
         "type": "string",
@@ -23,40 +23,34 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s101f3b997534d8fb0aced5d21d1c5ba",
+    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "4dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "children": [
-        "taskTitleLbl",
-        "taskTitleTxtLbl"
+        "companyLogo"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "TaskDetailsHdrFlex",
+    "id": "FlexGroup0024f22dee05146",
     "info": null,
-    "isvisible": false,
-    "kuid": "f84c9b12bf7f44d498b67c26e0e31fbc",
-    "layouttype": 2,
+    "isvisible": true,
+    "kuid": "2ae8319d655a46089379e38c6f7926c4",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "oppurtunity1DetailsBodyModalContainer",
-    "pf": "searchResultProfile",
+    "parent": "loginHeader",
+    "pf": "login",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

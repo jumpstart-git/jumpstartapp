@@ -133,9 +133,14 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
             "alertTitle": "Confirmation",
             "yesLabel": "OK",
             "noLabel": "No",
+<<<<<<< HEAD
             //D027: Changed message value from "Profile Uploaded Successfully" to "Profile logo was successfully updated"
             "message": "Profile logo was successfully updated",
             "alertHandler": "null"
+=======
+            "message": "Profile Uploaded Successfully",
+            "alertHandler": null
+>>>>>>> 495273c523532518d1d4052282791525d1668a9a
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });

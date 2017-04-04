@@ -25,10 +25,6 @@
     "_render_": true,
     "_skin_": "s102decbf0a84c3d9144c117d7349472",
     "_text_": "Connecting People",
-    "_top_": {
-        "type": "string",
-        "value": "-10dp"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"

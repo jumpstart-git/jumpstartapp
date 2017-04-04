@@ -40,7 +40,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "companyLogo",
+        "FlexGroup0024f22dee05146",
         "CopyloginPageInfo0dbc3b1ffc4c64a",
         "Label0e726b18d95544a",
         "CopyLabel0ae99a693f6394a"

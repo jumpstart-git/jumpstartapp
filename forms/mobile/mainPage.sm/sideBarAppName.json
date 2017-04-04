@@ -22,7 +22,7 @@
     "_text_": "My JumpStart",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "-5dp"
     },
     "_width_": {
         "type": "ref",
