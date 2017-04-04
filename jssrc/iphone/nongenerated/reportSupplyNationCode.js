@@ -130,7 +130,7 @@ function reportSupplyNationCodeDataSuccessCallback(gblreportSupplyNAtionCodeData
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Supply Nation hours report successfully sent to your email",
-        "alertHandler": null
+        "alertHandler": "null"
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

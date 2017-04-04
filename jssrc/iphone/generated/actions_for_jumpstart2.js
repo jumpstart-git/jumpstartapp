@@ -1037,7 +1037,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter a task title",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1049,7 +1049,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter task details",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1061,7 +1061,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter skill required to complete the task",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1073,7 +1073,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter hours required to complete the task",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1085,7 +1085,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter message",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1099,7 +1099,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please enter today/future date for this engagement",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1111,7 +1111,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "End date should be a future date",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1705,7 +1705,18 @@ function AS_Button_f43836994bb94ce2bebfdf4b6cb90080(eventobject) {
 function AS_Button_f57470ae9f314ef4b9536d11b77f7ead(eventobject) {
     var text = mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
     if (text == "null" || text == null || text == "") {
-        alert("Input your review");
+        //alert("Input your review");
+        //D018: Commented out simple alert. Added kony ui error alert
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            "alertTitle": null,
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please input your recommendation or click cancel to return to previous screen",
+            "alertHandler": "null"
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
     } else {
         volSendReview();
         mainPage.sendRecommendation.isVisible = false;
@@ -1787,7 +1798,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1826,7 +1837,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -2963,7 +2974,7 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -2977,6 +2988,11 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
         return false;
     } else {
+        //D013: Add code snippet to display task details on valid selection
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.isVisible = true;
+        //D013: End of addition
         gblExistingBusTaskId = searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKeyValue;
         var id = gblExistingBusTaskId[0];
         //alert(JSON.stringify(gblExistingBusTaskId));
@@ -3028,7 +3044,7 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -4782,7 +4798,22 @@ function login_signInButton_action_onTouchStart(eventobject, x, y) {
 }
 
 function AS_Button_c55a88368de54c408d5a02eef07ad463(eventobject, x, y) {
-    return loginService.call(this);
+    var userText = login.loginContainer.loginBody.usernameField.text;
+    var passText = login.loginContainer.loginBody.passwordField.text;
+    if (userText == "null" || userText == null || userText == "" || passText == "null" || passText == null || passText == "") {
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            "alertTitle": null,
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Email ID and Password Field cannot be blank",
+            "alertHandler": "null"
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
+    } else {
+        loginService();
+    }
 }
 
 function mainPage_acceptTaskEngagment_action_onClick(eventobject, linktext, attributes, context) {

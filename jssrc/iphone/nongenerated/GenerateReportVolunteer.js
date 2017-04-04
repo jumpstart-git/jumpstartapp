@@ -143,7 +143,7 @@ function getGererateReportVolunteertErrorCallback(error) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Volunteers hours report successfully sent to your email",
-        "alertHandler": null
+        "alertHandler": "null"
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

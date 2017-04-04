@@ -27,27 +27,40 @@ function addWidgetslogin() {
         "zIndex": 1
     }, {}, {});
     loginHeader.setDefaultUnit(kony.flex.DP);
+    var FlexGroup0024f22dee05146 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "75%",
+        "id": "FlexGroup0024f22dee05146",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    FlexGroup0024f22dee05146.setDefaultUnit(kony.flex.DP);
     var companyLogo = new kony.ui.Image2({
-        "centerX": "50%",
-        "height": "150dp",
+        "height": "100%",
         "id": "companyLogo",
         "isVisible": true,
         "skin": "companyLogo",
-        "src": "jumpstartlogo.png",
-        "top": "8%",
-        "width": "200dp",
+        "src": "jumpstartlogo2x.png",
+        "width": "100%",
         "zIndex": 1
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
+    FlexGroup0024f22dee05146.add(companyLogo);
     var CopyloginPageInfo0dbc3b1ffc4c64a = new kony.ui.RichText({
-        "centerX": "50%",
+        "centerX": "50.00%",
         "id": "CopyloginPageInfo0dbc3b1ffc4c64a",
         "isVisible": false,
         "skin": "jumpStartRT230",
         "text": "<span style=\"font-weight: bold\">JUMP</span>START",
+        "top": 0,
         "width": "80%",
         "zIndex": 1
     }, {
@@ -58,7 +71,7 @@ function addWidgetslogin() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var Label0e726b18d95544a = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "49.96%",
         "id": "Label0e726b18d95544a",
         "isVisible": true,
         "left": "0dp",
@@ -81,7 +94,6 @@ function addWidgetslogin() {
         "left": "0dp",
         "skin": "jumpStartLabel120",
         "text": "Connecting People",
-        "top": "-10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -92,7 +104,7 @@ function addWidgetslogin() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    loginHeader.add(companyLogo, CopyloginPageInfo0dbc3b1ffc4c64a, Label0e726b18d95544a, CopyLabel0ae99a693f6394a);
+    loginHeader.add(FlexGroup0024f22dee05146, CopyloginPageInfo0dbc3b1ffc4c64a, Label0e726b18d95544a, CopyLabel0ae99a693f6394a);
     var loginBody = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,

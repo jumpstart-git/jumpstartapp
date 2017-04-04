@@ -155,7 +155,7 @@ function getAcceptRequestTasksErrorCallback(error) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Request has been moved to open task",
-        "alertHandler": null
+        "alertHandler": "null"
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

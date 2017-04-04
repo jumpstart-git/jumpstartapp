@@ -251,7 +251,7 @@ function addWidgetsLogHoursForms() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var CopynumOfWorkingHours0a76ec538d2864f = new kony.ui.Label({
-        "centerX": "42%",
+        "centerX": "43%",
         "centerY": "50%",
         "id": "CopynumOfWorkingHours0a76ec538d2864f",
         "isVisible": true,
@@ -336,7 +336,7 @@ function addWidgetsLogHoursForms() {
     headerDateContainer.setDefaultUnit(kony.flex.DP);
     var labelDate = new kony.ui.Label({
         "centerX": "50%",
-        "centerY": "41%",
+        "centerY": "45%",
         "id": "labelDate",
         "isVisible": true,
         "left": "23dp",
@@ -405,6 +405,7 @@ function addWidgetsLogHoursForms() {
     headerNonWorkingHours.setDefaultUnit(kony.flex.DP);
     var InnerNonWorkingHoursContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
         "clipBounds": true,
         "height": "100%",
         "id": "InnerNonWorkingHoursContainer",
@@ -419,7 +420,7 @@ function addWidgetsLogHoursForms() {
     InnerNonWorkingHoursContainer.setDefaultUnit(kony.flex.DP);
     var nonWorkingHoursHeaderContainer = new kony.ui.Label({
         "centerX": "50%",
-        "centerY": 35,
+        "centerY": 45,
         "height": "76.47%",
         "id": "nonWorkingHoursHeaderContainer",
         "isVisible": true,
@@ -440,13 +441,13 @@ function addWidgetsLogHoursForms() {
     InnerNonWorkingHoursContainer.add(nonWorkingHoursHeaderContainer);
     var IndicatorContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerY": "49%",
+        "centerY": "70%",
         "clipBounds": true,
         "height": "73dp",
         "id": "IndicatorContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "-24dp",
+        "left": "-35dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": "20.80%",

@@ -151,14 +151,9 @@ function getCheckBoxFunctionErrorCallback77(error) {
         "alertTitle": null,
         "yesLabel": "OK",
         "noLabel": "No",
-<<<<<<< HEAD
         //D022: Changed message from "Email notifications disabled" to "You have disabled email notification"
         "message": "You have disabled email notification",
         "alertHandler": "null"
-=======
-        "message": "Email notifications disabled",
-        "alertHandler": null
->>>>>>> 495273c523532518d1d4052282791525d1668a9a
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

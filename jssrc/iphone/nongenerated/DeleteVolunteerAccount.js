@@ -192,7 +192,7 @@ function getVolAccountDeleted(delvolAccountResponse) {
                     "yesLabel": "OK",
                     "noLabel": "No",
                     "message": "Your account has been deleted successfully",
-                    "alertHandler": null
+                    "alertHandler": "null"
                 }, {
                     "iconPosition": constants.ALERT_ICON_POSITION_LEFT
                 });

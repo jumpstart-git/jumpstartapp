@@ -31,12 +31,12 @@ var volunteerUpdateObject = {
 };
 volunteerUpdateObject.scheduleArray=[];
 function validateAvailabilityUpdate() {
-  
+
   //start
-  
-  
-  
-  
+
+
+
+
   /*
 
   if(volunteerMyProfilePage.volunteerMyProfileMondayButton.skin=="jumpStartGrayButton90")
@@ -45,7 +45,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.mon=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.mon=true;
               volunteerUpdateObject.availability.mon=true;
             }
@@ -55,7 +55,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.tue=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.tue=true;
               volunteerUpdateObject.availability.tue=true;
             }
@@ -65,7 +65,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.wed=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.wed=true;
               volunteerUpdateObject.availability.wed=true;
             }
@@ -75,7 +75,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.thu=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.thu=true;
                volunteerUpdateObject.availability.thu=true;
             }
@@ -85,7 +85,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.fri=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.fri=true;
               volunteerUpdateObject.availability.fri=true;
             }
@@ -95,7 +95,7 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.sat=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sat=true;
                volunteerUpdateObject.availability.sat=true;
             }
@@ -105,18 +105,18 @@ function validateAvailabilityUpdate() {
             volunteerUpdateObject.availability.sun=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sun=true;
                volunteerUpdateObject.availability.sun=true;
             }
   */
-    ////end 
+    ////end
  // alert(JSON.stringify(volunteerUpdateObject));
   if (!volunteerUpdateObject.availability.mon && !volunteerUpdateObject.availability.tue &&
       !volunteerUpdateObject.availability.wed && !volunteerUpdateObject.availability.thu &&
       !volunteerUpdateObject.availability.fri && !volunteerUpdateObject.availability.sat &&
       !volunteerUpdateObject.availability.sun) {
- 
+
     kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_ERROR,
       "alertTitle": "Please select a day",
@@ -126,10 +126,10 @@ function validateAvailabilityUpdate() {
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
- 
+
     return false;
   }
- 
+
   return true;
 }
 function validateEmailUpdate() {
@@ -137,21 +137,21 @@ function validateEmailUpdate() {
   if (!emailFormat.test(volunteerUpdateObject.emailAddress)) {
     return false;
   }
- 
+
   return true;
 }
 function validatePasswordEqualityUpdate() {
   if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
     return false;
   }
- 
+
   return true;
 }
 function validatePasswordUpdate() {
   var specialChars = /[^A-Za-z0-9]/;          // Regexp for special characters
   var digits = /[0-9]+/;                                                      // Regexp for digits
   var capitalLetters = /[A-Z]+/;                    // Regexp for capital letters
- 
+
   if (volunteerUpdateObject.password.length >= userValidation.passwordLength) {
     if (specialChars.test(volunteerUpdateObject.password)) {
       if (digits.test(volunteerUpdateObject.password)) {
@@ -173,7 +173,7 @@ function validatePasswordUpdate() {
  function startLessThanEndUpdate() {
   var start = convertToMilTime(volunteerUpdateObject.availability.startTime, volunteerUpdateObject.availability.startMeridiem);
   var end = convertToMilTime(volunteerUpdateObject.availability.endTime, volunteerUpdateObject.availability.endMeridiem);
- 
+
   if (start >= end) {
     kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_ERROR,
@@ -184,17 +184,17 @@ function validatePasswordUpdate() {
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
-   
+
     return false;
   }
- 
+
   return true;
 }
 function validateVolunteerHoursUpdate() {
  // alert("inisde time"+JSON.stringify(volunteerUpdateObject));
   var start = convertToMilTime(volunteerUpdateObject.availability.startTime, volunteerUpdateObject.availability.startMeridiem);
   var end = convertToMilTime(volunteerUpdateObject.availability.endTime, volunteerUpdateObject.availability.endMeridiem);
- 
+
   if (start >= 900 && end <= 1700) {
     return true;
   } else {
@@ -202,7 +202,7 @@ function validateVolunteerHoursUpdate() {
    // volunteerMyProfilePage.CopyregScheduleOutsideHoursModal06197f3b8e5ec45.isVisible=true;
      volunteerMyProfilePage.outsidemodal.isVisible=true;
    // alert("outside");
-   
+
     return false;
   }
 }
@@ -221,12 +221,12 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Missing Details", "Please Enter User Name*");
     return false;
   }
- 
-  else if (!volunteerUpdateObject.companyName) {
+
+  else if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="") {
     validationAlert("Missing Details", "Please Enter Company Name*");
     return false;
   }
-    
+
   else if (!volunteerUpdateObject.role) {
     validationAlert("Missing Details", "Please Enter Role*");
     return false;
@@ -254,9 +254,9 @@ function validateVolunteerHoursUpdate() {
   //  validationAlert("Missing Details", "Please fill up all Mandatory Fields*"+JSON.stringify(volunteerUpdateObject));
     return false;
   }
-     
-       
- 
+
+
+
   var hasSkillUpdate =volunteerMyProfilePage.volunteerMyProfileSkillSegment.data; //volunteerUpdateObject.skillsArray.length;
   if (!hasSkillUpdate) {
     validationAlert("Enter a Skill", "Please add at least 1 skill");
@@ -286,7 +286,7 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Password Error", "Passwords must have at least 1 capital letter");
     return false;
   }
-    //alert(gblscheduleArr.length); 
+    //alert(gblscheduleArr.length);
      if(gblscheduleArr.length=="0.0")
        {
          alert("enter atleast 1 schedule");
@@ -300,7 +300,7 @@ function validateVolunteerHoursUpdate() {
 }
  function validateUpdateInfo()
 {
-  
+
   if (!volunteerUpdateObject.firstName) {
     return false;
   }
@@ -310,8 +310,8 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.username) {
     return false;
   }
-  
-  if (!volunteerUpdateObject.companyName) {
+
+  if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="") {
     return false;
   }
   if (!volunteerUpdateObject.role) {
@@ -332,26 +332,26 @@ function validateVolunteerHoursUpdate() {
    if (!volunteerUpdateObject.emailAddress) {
     return false;
   }
- 
+
   return true;
-  
-  
-  
-  
+
+
+
+
 }
 
 
 mobileFabricConfigurationForMyProfileVol =
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                               
+
+
                                 //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
                                 //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
-                               
+
                                 integrationServices:
                                 [
                                                 {
@@ -374,18 +374,18 @@ mobileFabricConfigurationForMyProfileVol =
                                 isMFAuthenticated: false
                 };
 
- 
+
 // Function to invoke getFoxNews Service call
 function VollMyProfile(){
  // alert("in");
-  kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+  kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
-              
+
       if (!mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized)
       {
         initializeMobileFabricForMyProfileVol();
-           
+
       }
       else if (mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized)
       {
@@ -393,7 +393,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       }
                 }
 
- 
+
 function initializeMobileFabricForMyProfileVol ()
 {
   // alert("in1");
@@ -403,7 +403,7 @@ function initializeMobileFabricForMyProfileVol ()
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                   //alert("yess");
                                 mobileFabricConfigurationForMyProfileVol.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForMyProfileVol.konysdkObject.init(mobileFabricConfigurationForMyProfileVol.appKey,mobileFabricConfigurationForMyProfileVol.appSecret,mobileFabricConfigurationForMyProfileVol.serviceURL,initializeMobileFabricForMyProfileVolSuccess,initializeMobileFabricForMyProfileVolFailure); 
+                                mobileFabricConfigurationForMyProfileVol.konysdkObject.init(mobileFabricConfigurationForMyProfileVol.appKey,mobileFabricConfigurationForMyProfileVol.appSecret,mobileFabricConfigurationForMyProfileVol.serviceURL,initializeMobileFabricForMyProfileVolSuccess,initializeMobileFabricForMyProfileVolFailure);
       // alert(getNotification());
     }
                 else
@@ -413,7 +413,7 @@ function initializeMobileFabricForMyProfileVol ()
 
 function initializeMobileFabricForMyProfileVolSuccess(response)
 {
-  // alert("in2");        
+  // alert("in2");
   kony.print (" ********** Entering into initializeMobileFabricSuccess ********** ");
               // alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
                 mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized=true;
@@ -474,44 +474,44 @@ function saveVolunteerProfilew()
                  // alert("2");
                 var operationName = mobileFabricConfigurationForMyProfileVol.integrationServices[0].operations[0];
                              //  var headers= {"Content-Type":"application/json"};
-                  
+
                    var headers= {};
-                
+
                //  alert("operationName"+operationName);
-                  
+
                   //start
-             
+
                 var dataforVolProfile={};
               //  var schedule={};
                   //schedule[0]
-               
+
 //                   var schedule=[{"days":"30",
 //                                  "fromTime":"1454391000000",
 //                                  "toTime":"1454391000000"}];
-                 
+
 //                   var skillSet=[{"skillName":"Salma_java"}];
-                              
-                 
+
+
 
                ////start validation for update
-                  
-                  
+
+
 //submitUpdateInfo();
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
+
+
+
+
+
+
+
+
+
+
+
+
                   //end validation for update
-                 
-                  
+
+
                   // alert("Skills="+JSON.stringify(volunteerMyProfilePage.volunteerMyProfileSkillSegment.data));
                   var arrData=[];
                   var skillDatas=volunteerMyProfilePage.volunteerMyProfileSkillSegment.data;
@@ -521,24 +521,24 @@ function saveVolunteerProfilew()
                         "skillId":skillDatas[i].skillIdHidden,
                         "skillName":skillDatas[i].volunteerMyProfileSkillItem,
                         "imgClose":"cross.png"
-                        
+
                     }
                       arrData.push(testObj);
-                      
+
                     }
 
-                  
-                  
+
+
                ///days start
                   /*
-                  
+
         if(volunteerMyProfilePage.volunteerMyProfileMondayButton.skin=="jumpStartGrayButton90")
           {
             volunteerRegObjectVol.availability.mon=false;
             volunteerUpdateObject.availability.mon=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.mon=true;
               volunteerUpdateObject.availability.mon=true;
             }
@@ -548,7 +548,7 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.tue=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.tue=true;
               volunteerUpdateObject.availability.tue=true;
             }
@@ -558,7 +558,7 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.wed=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.wed=true;
               volunteerUpdateObject.availability.wed=true;
             }
@@ -568,7 +568,7 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.thu=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.thu=true;
                volunteerUpdateObject.availability.thu=true;
             }
@@ -578,7 +578,7 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.fri=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.fri=true;
               volunteerUpdateObject.availability.fri=true;
             }
@@ -588,7 +588,7 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.sat=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sat=true;
                volunteerUpdateObject.availability.sat=true;
             }
@@ -598,11 +598,11 @@ function saveVolunteerProfilew()
             volunteerUpdateObject.availability.sun=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sun=true;
                volunteerUpdateObject.availability.sun=true;
-            }   
-               */   
+            }
+               */
                   var availabilityString = "";
   if (volunteerRegObjectVol.availability.mon) {
     availabilityString += "MON ";
@@ -626,15 +626,15 @@ function saveVolunteerProfilew()
     availabilityString += "SUN ";
   }
   gblDays=availabilityString;
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                 
-                  
+
+
+
+
+
+
+
+
+
                   //days end
                   ///start schedule
                var availableId=kony.store.getItem("availId");
@@ -644,7 +644,7 @@ function saveVolunteerProfilew()
                    // var  frmT=volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.selectedKey+" "+volunteerMyProfilePage.volunteerMyProfileFromMeridiem.selectedKey;
                    // var  toTime=volunteerMyProfilePage.volunteerMyProfileToTimeDropdown.selectedKey+" "+volunteerMyProfilePage.volunteerMyProfileToMeridiem.selectedKey;
                   //  var schedule =[{"availabilityId": availableId,  "days":gblDays,"fromTime":frmT,"toTime":toTime}];// [{"days":"Mon","fromTime":"9 AM","toTime":"10 "}];
-                    
+
                   }else
                     {
                     //  var  frmT=volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.selectedKey+" "+volunteerMyProfilePage.volunteerMyProfileFromMeridiem.selectedKey;
@@ -652,15 +652,15 @@ function saveVolunteerProfilew()
                      // var schedule =[{"availabilityId": availableId,  "days":gblDays,"fromTime":frmT,"toTime":toTime}];// [{"days":"Mon","fromTime":"9 AM","toTime":"10 "}];
                     }
                   ///end schedule
-              
-               var skills =arrData;// [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}]; 
+
+               var skills =arrData;// [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}];
                   //start skilll
-                  
-                  
-                  
+
+
+
                   //end skill
                   // alert("in6666");
-                  
+
                   dataforVolProfile["emailAddress"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text;
                   dataforVolProfile["firstName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text;
                   dataforVolProfile["lastName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text;
@@ -671,7 +671,7 @@ function saveVolunteerProfilew()
                   dataforVolProfile["createdDate"]="2016-10-26" ;
                   //alert("in7");
                   dataforVolProfile["VolunteerScheduleDTO"]=gblscheduleArr;// schedule;
-               
+
             		dataforVolProfile["SkillsDTO"]=skills;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
                 //  alert("skill");
                   dataforVolProfile["userName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text;
@@ -684,7 +684,7 @@ function saveVolunteerProfilew()
                     //  alert("in10");
                    dataforVolProfile["businessUnit"]=volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
                   //start feb 16
-                  
+
                     var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
                   if(abotme==null||abotme=="null"||abotme=="")
                     {
@@ -698,25 +698,25 @@ function saveVolunteerProfilew()
                     }
                   dataforVolProfile["workDetails"]=work;
                   //
-                  
-                  
+
+
                 dataforVolProfile["file"]=kony.store.getItem("imageValUpdateVolunteer");
   				dataforVolProfile["fileName"]=kony.store.getItem("imageFileNameValUpdateVolunteer");
-                  
-    				kony.print("dataprintwhole from textbox:"+JSON.stringify(dataforVolProfile));            
+
+    				kony.print("dataprintwhole from textbox:"+JSON.stringify(dataforVolProfile));
  					kony.print("dataprintFile from textbox:"+dataforVolProfile["file"]);
                   kony.print("dataprintFilename from textbox:"+dataforVolProfile["fileName"]);
-                  
+
                  // alert("data from textbox:"+JSON.stringify(dataforVolProfile));
-                  
-                 
+
+
           //  mainPage.show();
-                  
+
                   mobileFabricConfigurationForMyProfileVol.integrationObj.invokeOperation(operationName,headers ,dataforVolProfile , saveVolunteerProfileSuccessCallbackk, saveVolunteerProfileErrorCallbackk);
                 }
-  
+
                 else
-                                alert ("Network unavailable. Please check your network settings. "); 
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 
@@ -724,7 +724,7 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16)
 {
    mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized=false;
   if (dataforVolProfile16 !== null && dataforVolProfile16.opstatus === 0){
-    
+
 // alert("profile got updated");
   //alert("inside success"+JSON.stringify(dataforVolProfile16));
     gblForRetreive=dataforVolProfile16.volunteerDto[0].VolunteersDTO[0];
@@ -737,15 +737,15 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16)
       kony.store.setItem("imgUrlVal", VolimgUrl);
         // alert("5");
       }else{
-        
+
        kony.store.setItem("imgUrlVal", "imgseglogo.png");
         // alert("6");
       }
-    
+
     //salma
     var len=dataforVolProfile16.volunteerDto[0].VolunteersDTO[0].schedule.length;
     //alert("len:"+len);
-    
+
      var availabilitydays=dataforVolProfile16.volunteerDto[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
     //alert("availabilitydays:"+availabilitydays);
     var availableFrom=dataforVolProfile16.volunteerDto[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.fromTime;
@@ -767,29 +767,29 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16)
                 //alert("sal2"+scheduleValNew);
               }
                      }
-    
-    
+
+
     //salma
-    
+
      mainPage.show();
     kony.store.removeItem("imageValUpdateVolunteer");
     kony.store.removeItem("imageFileNameValUpdateVolunteer");
-    
+
     //en mer
     //kony.store.getItem("imgUrlVal");
  //mainPage.destroy();
- 
+
     kony.application.dismissLoadingScreen();
   // hideSideBar();
   //volunteerMyProfilePage.destroy();
- 
+
   //mainPage.sideBarOverlay.isVisible=false;
-   
+
       }
 }
- 
- 
- 
+
+
+
 function saveVolunteerProfileErrorCallbackk(error)
 {
                 kony.print (" ********** Entering into getNotificationSuccessCallback ********** ");
@@ -807,7 +807,7 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
  // alert("before edit"+JSON.stringify(volunteerUpdateObject));
   var fieldId = fieldEdited.id;
   var fieldContent = fieldEdited.text;
- 
+
   switch (fieldId) {
     case "volunteerMyProfileFirstNameInput":
       volunteerUpdateObject.firstName = fieldContent;
@@ -824,20 +824,20 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
     case "volunteerMyProfileReenterPasswordInput":
       volunteerUpdateObject.reenteredPassword = fieldContent;
       break;
-    
+
     case "volunteerMyProfileCompanyInput":
      // volunteerUpdateObject.companyName = fieldContent;
-      
+
       volunteerUpdateObject.companyName = fieldEdited.selectedKey;
       //Begin of D012
       //Added additional conditons if volunteerUpdateObject.companyName contains a null value or a blank string
       if(volunteerUpdateObject.companyName=="Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName=="")
         {
           volunteerUpdateObject.companyName="";
-          
+
         }
       //End of D012
-      
+
       break;
     case "volunteerMyProfileRoleInput":
       volunteerUpdateObject.role = fieldContent;
@@ -852,7 +852,7 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
       if(volunteerUpdateObject.state=="Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state=="")
         {
           volunteerUpdateObject.state="";
-          
+
         }
       //End of D012
       break;
@@ -860,17 +860,17 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
       volunteerUpdateObject.address = fieldContent;
       break;
       //start merin dec20
-      
+
       case "volunteerMyProfileWorkDetailsInput":
       volunteerUpdateObject.workDetails = fieldContent;
       break;
       case "volunteerMyProfileAboutMeInput":
       volunteerUpdateObject.aboutMe = fieldContent;
       break;
-      
-      
+
+
       //end merin dec20
-      
+
     case "volunteerMyProfileContactNumberInput":
       volunteerUpdateObject.contactNumber = fieldContent;
       break;
@@ -900,26 +900,26 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
 function hideOutsideHoursModalUpdate() {
   //registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = false;
   volunteerMyProfilePage.outsidemodal.isVisible=false;
- 
+
 }
- 
+
 function hoursAgreeAndContinueUpdate() {
   hideOutsideHoursModalUpdate();
    var availId="";
-  
+
    var daySelected=volunteerMyProfilePage.listDays.selectedKey;
   var fromTime=volunteerMyProfilePage.listFromTime.selectedKey+" "+volunteerMyProfilePage.listFromTimeMeridiam.selectedKey;
   var toTime=volunteerMyProfilePage.listEndTime.selectedKey+" "+volunteerMyProfilePage.listEndTimeMeridiam.selectedKey;
-  
+
   var scheduleVal=daySelected+" "+fromTime+" TO "+toTime;
-  
-  
-  
+
+
+
    var testObj={
           lblSchedule:scheduleVal,
           imgclose:"cross.png",
           availId:availId
-          
+
         }
   //updateSummaryPageInfo();
  // registrationSummaryPage.show();
@@ -937,10 +937,10 @@ function hoursAgreeAndContinueUpdate() {
           {
              indexOfSchedule = 1;
              break;
-            
+
           }
-         
-        
+
+
       }
      if (indexOfSchedule != -1) {
        alert("this schedule already exists");
@@ -954,14 +954,14 @@ function hoursAgreeAndContinueUpdate() {
  // alert("update array"+JSON.stringify(volunteerUpdateObject.scheduleArray));
      setSegScheduleForUpdate(volunteerUpdateObject.scheduleArray);
      // alert("after adding"+JSON.stringify( volunteerUpdateObject.scheduleArray));
-      
+
       //code to reset
-      
+
       volunteerMyProfilePage.listDays.selectedKey="";
       volunteerMyProfilePage.listFromTime.selectedKey="";
       volunteerMyProfilePage.listFromTimeMeridiam.selectedKey="";
       volunteerMyProfilePage.listEndTime.selectedKey="";
       volunteerMyProfilePage.listEndTimeMeridiam.selectedKey="";
-    
- 
+
+
 }

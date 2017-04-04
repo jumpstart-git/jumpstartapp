@@ -502,13 +502,13 @@ function addWidgetsmainPage() {
     }, {}, {});
     CreateOpportunityButtonContainer.setDefaultUnit(kony.flex.DP);
     var MyActivityCreateOpportunityButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton100",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "100%",
         "id": "MyActivityCreateOpportunityButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1,
-        "skin": "jumpStartGreenButton100",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Create a brief",
         "top": "0dp",
         "width": "100%",
@@ -2504,13 +2504,13 @@ function addWidgetsmainPage() {
     sideBarHeader.setDefaultUnit(kony.flex.DP);
     var sideBarCompanyLogo = new kony.ui.Image2({
         "centerX": "50%",
-        "height": "60dp",
+        "height": "80dp",
         "id": "sideBarCompanyLogo",
         "isVisible": true,
         "skin": "slImage",
-        "src": "supplynationlogo2x.png",
+        "src": "jumpstartlogonotext.png",
         "top": "10%",
-        "width": "60dp"
+        "width": "80dp"
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
@@ -2522,7 +2522,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "skin": "CopyslLabel08def05ed32534a",
         "text": "My JumpStart",
-        "top": "10dp",
+        "top": "-5dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -2636,7 +2636,6 @@ function addWidgetsmainPage() {
         "height": "42.47%",
         "id": "checkList",
         "isVisible": true,
-        "left": "64.91%",
         "masterData": [
             ["cbg1", "."]
         ],
@@ -2646,7 +2645,6 @@ function addWidgetsmainPage() {
         ],
         "selectedKeys": ["cbg1"],
         "skin": "CopyslCheckBoxGroup0306443d20b8149",
-        "top": "30dp",
         "width": "35.09%",
         "zIndex": 1
     }, {
