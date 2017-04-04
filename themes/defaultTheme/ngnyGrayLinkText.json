@@ -14,16 +14,12 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "36b3b1ff",
+  "font_color": "707070ff",
   "font_name": "Helvetica",
   "font_size": 100,
   "font_style": "underline",
   "font_weight": "normal",
   "ipad": {
-    "font_size": 100,
-    "isForked": false
-  },
-  "iphone": {
     "font_size": 100,
     "isForked": false
   },

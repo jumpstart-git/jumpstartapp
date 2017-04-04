@@ -5,18 +5,42 @@
   },
   "desktopweb": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "font_color": "424242ff",
   "font_name": "Helvetica",
   "font_size": 104,
   "ipad": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "iphone": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "isDefaultSkin": false,
   "kiosk": {
@@ -26,31 +50,87 @@
   "kuid": "s0017120110f482b802e8385595ddf48",
   "spaan": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spaandroidtablet": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spabb": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spaip": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spaipad": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spawindowstablet": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "spawinphone8": {
     "font_size": 104,
-    "isForked": false
+    "isForked": true,
+    "shadow": {
+      "br": 0,
+      "color": "000000",
+      "inner": false,
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
   },
   "tabrcandroid": {
     "font_size": 104,

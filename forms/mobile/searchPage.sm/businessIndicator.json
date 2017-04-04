@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "businessIndicator",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "b09eb656352c43a2ad0ffeff395d6e87",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
