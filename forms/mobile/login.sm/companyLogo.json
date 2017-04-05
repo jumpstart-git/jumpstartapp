@@ -36,7 +36,7 @@
     "context": {
         "channel": "mobile",
         "formID": "login",
-        "platform": "android",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },

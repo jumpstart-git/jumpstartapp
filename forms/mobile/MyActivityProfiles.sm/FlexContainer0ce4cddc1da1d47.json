@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "3dp"
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "16dp"
     },
     "_margin_": [
         0,
@@ -29,31 +29,24 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "1%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "children": [
-        "opportunitiesIndicator",
-        "opportuitiesBtn1"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "opportunitiesFlex",
+    "id": "FlexContainer0ce4cddc1da1d47",
     "info": null,
     "isvisible": true,
-    "kuid": "a29d4621dc8b4845ab3c12b738fe2de2",
+    "kuid": "fb2a964135684c6692a40cd8dcd7cb1c",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "searchDataTypeFlex1",
-    "pf": "searchPage",
+    "parent": "volProfileContactContainer",
+    "pf": "MyActivityProfiles",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
