@@ -40,6 +40,7 @@
     "context": {
         "channel": "mobile",
         "formID": "LogHoursForms",
+        "ispercent": "",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
@@ -55,6 +56,10 @@
     "isvisible": true,
     "kuid": "b8ea56c4469e488ba9311602f092fce2",
     "masterdata": [
+        [
+            "0",
+            "0"
+        ],
         [
             "1",
             "1"
