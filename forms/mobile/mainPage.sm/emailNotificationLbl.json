@@ -24,13 +24,9 @@
     ],
     "_skin_": "sae1ad470db44ca09dc99ace378e4aa8",
     "_text_": "Email notifications",
-    "_top_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_width_": {
         "type": "string",
-        "value": "55%"
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
