@@ -18,13 +18,18 @@
             }
         }
     },
+<<<<<<< HEAD
     "projectGuid": "850c8292-c79b-4d13-b81a-55b5c3e2df08",
+=======
+    "projectGuid": "a2596400-fad7-4858-ba13-ad8f73b1ca8f",
+>>>>>>> 45a1e12989f2c14cef279a055d11d0da37f6711e
     "accountGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",
     "prototypeGuid": "DDQ9W",
     "id": "38e026ceda214cf88e999137a5268792",
     "channel": "mobile",
     "createdOn": 1480493819219,
     "noteGuid": "099e72c9-eba0-4745-b94a-86ede6c3942b",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "synced_on": "2017-04-04T10:12:37.363Z"
@@ -34,4 +39,7 @@
 =======
     "synced_on": "2017-04-03T06:04:07.900Z"
 >>>>>>> 495273c523532518d1d4052282791525d1668a9a
+=======
+    "synced_on": "2017-04-05T04:50:21.035Z"
+>>>>>>> 45a1e12989f2c14cef279a055d11d0da37f6711e
 }

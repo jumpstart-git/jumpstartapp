@@ -1,6 +1,10 @@
 {
     "mwaddrkey": "",
+<<<<<<< HEAD
     "projectCloudGuid": "cdab6642-d685-41d6-8ac9-e41ed40febb8",
+=======
+    "projectCloudGuid": "a2596400-fad7-4858-ba13-ad8f73b1ca8f",
+>>>>>>> 45a1e12989f2c14cef279a055d11d0da37f6711e
     "wap_android360_fontsize": "12",
     "isA11yConfigEnabled": false,
     "watchos_notificationcentericon_42": "",
@@ -221,11 +225,19 @@
     "wap_spaandroidtabmdpi_fontsize": "12",
     "konyVizVersion": "7.2.0",
     "prototype": {
+<<<<<<< HEAD
         "createdOn": "2017-04-04T13:22:19.735Z",
         "createdById": "be379915-1018-414c-a693-4fe6b1307220",
         "createdBy": "Carl%20Meyrick Cheng",
         "shareGuid": "WUBWR",
         "resourceId": "be48ad52-4fd5-44f2-9f41-ffb12ea90cdf",
+=======
+        "createdOn": "2017-04-05T04:49:33.229Z",
+        "createdById": "14266e12-23d0-4aa9-8ad4-cd22b8556d1a",
+        "createdBy": "Christopher%20Joseph Doctolero",
+        "shareGuid": "5MK92",
+        "resourceId": "12b85835-d520-4f6a-8c15-18e3a2a166eb",
+>>>>>>> 45a1e12989f2c14cef279a055d11d0da37f6711e
         "password": "",
         "PublishMode": "public"
     },
