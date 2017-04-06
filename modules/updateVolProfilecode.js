@@ -226,7 +226,8 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Missing Details", "Please Enter Company Name*");
     return false;
   }
-   
+  
+    //Start of defect D037
   else if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
     validationAlert("Missing Details", "Please Enter Work Details*");
     return false;
@@ -236,7 +237,7 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Missing Details", "Please Enter About Me*");
     return false;
   }
-    
+    //End of defect D037
   else if (!volunteerUpdateObject.role) {
     validationAlert("Missing Details", "Please Enter Role*");
     return false;
@@ -324,7 +325,7 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="") {
     return false;
   }
-  
+  //Start of defect D037
   if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
     return false;
   }
@@ -332,7 +333,7 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe==="" || volunteerUpdateObject.aboutMe===" ") {
     return false;
   }
-  
+  //End of D037
   if (!volunteerUpdateObject.role) {
     return false;
   }
@@ -704,7 +705,7 @@ function saveVolunteerProfilew()
                     //  alert("in10");
                    dataforVolProfile["businessUnit"]=volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
                   //start feb 16
-
+					//Start of defect D037
                     var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
                   if(abotme==null||abotme=="null"||abotme=="")
                     {
@@ -719,7 +720,7 @@ function saveVolunteerProfilew()
                       work = "";
                     }
                   dataforVolProfile["workDetails"]=work;
-                  //
+                  //End of defect D037
 
 
                 dataforVolProfile["file"]=kony.store.getItem("imageValUpdateVolunteer");
