@@ -458,7 +458,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
-        "text": "You all need your manager's approval and consent before understanding this task",
+        "text": "I have received my manager's approval and consent before undertaking this task.",
         "top": "40%",
         "width": "90%",
         "zIndex": 1
@@ -512,7 +512,7 @@ function addWidgetsscheduleNewForm() {
         "onClick": AS_RichText_6101c7fd29864c16b986f136358074eb,
         "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
         "skin": "CopyslRichText08d925a35bfe342",
-        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "top": "30dp",
         "width": "90%",
         "zIndex": 1

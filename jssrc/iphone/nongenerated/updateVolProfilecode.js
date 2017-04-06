@@ -210,7 +210,17 @@ function submitUpdateInfo() {
         } else if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
             validationAlert("Missing Details", "Please Enter Company Name*");
             return false;
-        } else if (!volunteerUpdateObject.role) {
+        }
+        //Start of defect D037
+        else if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails === "" || volunteerUpdateObject.workDetails === " ") {
+            validationAlert("Missing Details", "Please Enter Work Details*");
+            return false;
+        } else if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe === "" || volunteerUpdateObject.aboutMe === " ") {
+            validationAlert("Missing Details", "Please Enter About Me*");
+            return false;
+        }
+        //End of defect D037
+        else if (!volunteerUpdateObject.role) {
             validationAlert("Missing Details", "Please Enter Role*");
             return false;
         } else if (!volunteerUpdateObject.businessUnit) {
@@ -284,6 +294,14 @@ function validateUpdateInfo() {
     if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
         return false;
     }
+    //Start of defect D037
+    if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails === "" || volunteerUpdateObject.workDetails === " ") {
+        return false;
+    }
+    if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe === "" || volunteerUpdateObject.aboutMe === " ") {
+        return false;
+    }
+    //End of D037
     if (!volunteerUpdateObject.role) {
         return false;
     }
@@ -577,17 +595,20 @@ function saveVolunteerProfilew() {
         //  alert("in10");
         dataforVolProfile["businessUnit"] = volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
         //start feb 16
+        //Start of defect D037
         var abotme = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
         if (abotme == null || abotme == "null" || abotme == "") {
-            abotme = " ";
+            //abotme=" ";
+            abotme = ""
         }
         dataforVolProfile["aboutMe"] = abotme;
         var work = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
         if (work == null || work == "null" || work == "") {
-            work = " ";
+            //work=" ";
+            work = "";
         }
         dataforVolProfile["workDetails"] = work;
-        //
+        //End of defect D037
         dataforVolProfile["file"] = kony.store.getItem("imageValUpdateVolunteer");
         dataforVolProfile["fileName"] = kony.store.getItem("imageFileNameValUpdateVolunteer");
         kony.print("dataprintwhole from textbox:" + JSON.stringify(dataforVolProfile));

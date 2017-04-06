@@ -8377,7 +8377,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
-        "text": "You all need your manager's approval and consent before understanding this task",
+        "text": "I have received my manager's approval and consent before undertaking this task.",
         "top": "35%",
         "width": "90%",
         "zIndex": 1
@@ -8445,7 +8445,7 @@ function addWidgetsmainPage() {
         "onClick": AS_RichText_27a7fcb682904c84a39aa2134b49f8c8,
         "onTouchStart": AS_RichText_796d858af5d446fd9b7c521670dc8af7,
         "skin": "CopyslRichText0c9a74fa183874d",
-        "text": "I have read my <span style=\"color:#37b3b1\"><u>company’s policies and regulations</u></span> regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "text": "I have read my <span style=\"color:#37b3b1\"><u>company’s policies and regulations</u></span> regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "width": "100%",
         "zIndex": 1
     }, {
