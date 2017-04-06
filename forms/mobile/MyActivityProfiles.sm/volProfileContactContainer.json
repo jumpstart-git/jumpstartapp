@@ -42,8 +42,7 @@
     "children": [
         "contactAdressLbl",
         "volContactNumflex",
-        "volunteerEmailFlex",
-        "FlexContainer0ce4cddc1da1d47"
+        "volunteerEmailFlex"
     ],
     "clipbounds": true,
     "containerweight": 100,

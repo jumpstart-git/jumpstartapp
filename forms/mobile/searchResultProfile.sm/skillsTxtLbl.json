@@ -17,7 +17,7 @@
         1
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
@@ -61,6 +61,7 @@
     "isvisible": true,
     "kuid": "947962e6c8fd4685892716cc5897df6a",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "taskskillsFlex",
     "pf": "searchResultProfile",
     "tooltip": "",

@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_258953e6a1604973803206e010c14bc8": {
+        "id": "AS_FlexContainer_258953e6a1604973803206e010c14bc8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "scheduleNewForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "52743330124941c0b64a6f9c1f63791d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "OPEN_URL_ide_onTouchMove_1c58a9f9abab4996beccd95000033f62",
+            "type": "OPEN_URL",
+            "url": " http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf",
+            "callbackType": null
+        }]
+    }
+}

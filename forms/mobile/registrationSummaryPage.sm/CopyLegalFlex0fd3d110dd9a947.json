@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "3dp"
+        "value": "58%"
     },
     "_left_": {
         "type": "string",
-        "value": "16dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,27 +26,32 @@
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
-        "value": "1%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "CopyLegalLbl0328e1d8997464f",
+        "CopyRichText05ae4cf7d0a8c45"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "FlexContainer0ce4cddc1da1d47",
+    "id": "CopyLegalFlex0fd3d110dd9a947",
+    "ide_onTouchMove": "AS_FlexContainer_cbcedf5c957d4a0cbb7a59cda06d8abc",
+    "ide_onTouchStart": "AS_FlexContainer_5e2aa7339ea54ad2832bd61f3d203dc7",
     "info": null,
     "isvisible": true,
-    "kuid": "fb2a964135684c6692a40cd8dcd7cb1c",
+    "kuid": "2fcef2b670c0480a82d3d345d5b03396",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "volProfileContactContainer",
-    "pf": "MyActivityProfiles",
+    "parent": "CopyeligibiltyCriteriFlxScroll0d6a39065171f43",
+    "pf": "registrationSummaryPage",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

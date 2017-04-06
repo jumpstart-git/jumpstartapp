@@ -46,7 +46,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "CopytxtLbl0a256207b5c874a",
+    "id": "CopytxtLbl0866b5282a16448",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,10 +59,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "480f712e184b40b7b5634d633b435d4e",
+    "kuid": "fd9f687600954aa2b01fc4a74c8b5868",
     "name": "kony.ui.Label",
-    "parent": "CopymangersApprovalFlex02c9e067a552740",
-    "pf": "scheduleNewForm",
+    "parent": "CopymangersApprovalFlex03ae7b8f29fcb45",
+    "pf": "registrationSummaryPage",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

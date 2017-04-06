@@ -30,7 +30,7 @@
         "regScheduleHdrContainer",
         "regScheduleDatesContainer",
         "regScheduleScrollContainer",
-        "CopyeligibiltyCriteriFlxScroll0d5fab6ec683540",
+        "offManagerApprovalContainer",
         "outsideScheduletime",
         "regScheduleFooter"
     ],
@@ -81,7 +81,7 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone6",
+    "prevDevice": "iPhone5",
     "prevPlatform": "iphone",
     "retainscrollposition": false,
     "shellCSS": "iOS_iPhone6",
