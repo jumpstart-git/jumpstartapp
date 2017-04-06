@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "32dp"
     },
     "_left_": {
         "type": "string",
@@ -17,9 +17,9 @@
         0
     ],
     "_padding_": [
+        2,
         0,
-        0,
-        0,
+        2,
         0
     ],
     "_skin_": "s93cdfb2669c41f0836ed24cc4a70200",
@@ -68,6 +68,7 @@
         ]
     ],
     "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
     "parent": "assignToExistingTaskListBoxContainer",
     "pf": "mainPage",
     "selectedkey": "lb1",

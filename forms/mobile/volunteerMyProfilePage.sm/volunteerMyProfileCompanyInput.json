@@ -17,7 +17,7 @@
         0
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
@@ -37,6 +37,7 @@
     "context": {
         "channel": "mobile",
         "formID": "volunteerMyProfilePage",
+        "ispercent": "",
         "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
@@ -52,7 +53,7 @@
     "masterdata": [
         [
             "Select",
-            "Select from drop down menu"
+            "Select from drop down list"
         ],
         [
             "CBA",
@@ -68,6 +69,7 @@
         ]
     ],
     "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
     "parent": "volunteerMyProfileBody",
     "pf": "volunteerMyProfilePage",
     "selectedkeys": null,

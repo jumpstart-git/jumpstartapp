@@ -4,9 +4,8 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "42.47%"
+        "value": "50dp"
     },
-    "_left_": "64.91%",
     "_margin_": [
         0,
         0,
@@ -19,13 +18,20 @@
         0,
         0
     ],
+    "_right_": {
+        "type": "string",
+        "value": "2dp"
+    },
     "_skin_": "s1748da9198447e2b077d0ac549ff1c8",
-    "_top_": "30dp",
     "_width_": {
         "type": "string",
-        "value": "35.09%"
+        "value": "50dp"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "id": "checkList",
     "ide_onSelection": "AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518",
@@ -54,16 +60,9 @@
     "parent": "FlexContainer08d40d9191a9344",
     "pf": "mainPage",
     "selectedkey": null,
-    "selectedkeys": [
-        "cbg1"
-    ],
+    "selectedkeys": null,
     "selectedkeyvalue": null,
-    "selectedkeyvalues": [
-        [
-            "cbg1",
-            "."
-        ]
-    ],
+    "selectedkeyvalues": null,
     "size": 18,
     "tickedimage": "checkbx.png",
     "untickedimage": "markascomplete.png",

@@ -17,7 +17,7 @@
         1
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
@@ -61,6 +61,7 @@
     "isvisible": true,
     "kuid": "802019720df54f7b844392faf745fb7b",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "hoursFlex",
     "pf": "searchResultProfile",
     "tooltip": "",

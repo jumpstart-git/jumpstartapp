@@ -17,7 +17,7 @@
         0
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
@@ -74,6 +74,7 @@
         ]
     ],
     "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
     "parent": "AssignToExistingCardContainer",
     "pf": "searchResultProfile",
     "selectedkey": null,
