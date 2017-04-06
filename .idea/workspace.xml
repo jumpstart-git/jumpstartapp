@@ -2,45 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.team.cvs.core/.running" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/splash.png" afterPath="$PROJECT_DIR$/resources/common/splash.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.log" afterPath="$PROJECT_DIR$/.metadata/.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/com.pat.tool.keditor/themes/activeTheme.properties" afterPath="$PROJECT_DIR$/.metadata/.plugins/com.pat.tool.keditor/themes/activeTheme.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sample/HeadlessBuild.properties" afterPath="$PROJECT_DIR$/Sample/HeadlessBuild.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sample/build.xml" afterPath="$PROJECT_DIR$/Sample/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sample/projectProperties.json" afterPath="$PROJECT_DIR$/Sample/projectProperties.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sample/run.sh" afterPath="$PROJECT_DIR$/Sample/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ios/codesign.txt" afterPath="$PROJECT_DIR$/_ios/codesign.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ios/sdks.txt" afterPath="$PROJECT_DIR$/_ios/sdks.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konyplugins.xml" afterPath="$PROJECT_DIR$/konyplugins.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" />
@@ -62,11 +37,88 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="actions_for_JumpStartAbort1.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
+      <file leaf-file-name="BusinessAndVolunteerNotificationDetails.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/BusinessAndVolunteerNotificationDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="1034" column="51" lean-forward="true" selection-start-line="1034" selection-start-column="51" selection-end-line="1034" selection-end-column="51" />
+            <state relative-caret-position="180">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/jssrc/android/generated/mainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122955">
+              <caret line="8197" column="59" lean-forward="false" selection-start-line="8197" selection-start-column="59" selection-end-line="8197" selection-end-column="59" />
+              <folding>
+                <marker date="1491195393000" expanded="true" signature="115927:115941" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="117453:117467" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="118927:118941" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="149345:149360" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="150865:150880" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="152361:152376" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VolNotification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/VolNotification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3900">
+              <caret line="260" column="85" lean-forward="false" selection-start-line="260" selection-start-column="85" selection-end-line="260" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationBodyDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationBodyDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -93,6 +145,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" />
+        <option value="$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json" />
+        <option value="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" />
       </list>
     </option>
   </component>
@@ -103,10 +157,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1475" />
-    <option name="y" value="-88" />
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -124,16 +176,29 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -152,13 +217,6 @@
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -186,6 +244,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -221,30 +285,34 @@
       <updated>1491197619401</updated>
       <workItem from="1491197621969" duration="155000" />
       <workItem from="1491198945014" duration="27000" />
+      <workItem from="1491442274327" duration="114000" />
+      <workItem from="1491459443283" duration="1743000" />
+      <workItem from="1491521758584" duration="392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182000" />
+    <option name="totallyTimeSpent" value="6537000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1475" y="-88" width="1366" height="768" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25185186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21800947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -259,18 +327,164 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
+    <entry file="file://$PROJECT_DIR$/modules/BusinessAndVolunteerNotificationDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17663">
-          <caret line="1039" column="12" lean-forward="false" selection-start-line="1039" selection-start-column="12" selection-end-line="1039" selection-end-column="12" />
+        <state relative-caret-position="180">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/jssrc/android/generated/mainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122955">
+          <caret line="8197" column="59" lean-forward="false" selection-start-line="8197" selection-start-column="59" selection-end-line="8197" selection-end-column="59" />
+          <folding>
+            <marker date="1491195393000" expanded="true" signature="115927:115941" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="117453:117467" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="118927:118941" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="149345:149360" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="150865:150880" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="152361:152376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/VolNotification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="260" column="85" lean-forward="false" selection-start-line="260" selection-start-column="85" selection-end-line="260" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="1034" column="51" lean-forward="true" selection-start-line="1034" selection-start-column="51" selection-end-line="1034" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="1039" column="12" lean-forward="false" selection-start-line="1039" selection-start-column="12" selection-end-line="1039" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17663">
+          <caret line="1039" column="12" lean-forward="false" selection-start-line="1039" selection-start-column="12" selection-end-line="1039" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="1039" column="12" lean-forward="false" selection-start-line="1039" selection-start-column="12" selection-end-line="1039" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/jssrc/android/generated/mainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122955">
+          <caret line="8197" column="59" lean-forward="false" selection-start-line="8197" selection-start-column="59" selection-end-line="8197" selection-end-column="59" />
+          <folding>
+            <marker date="1491195393000" expanded="true" signature="115927:115941" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="117453:117467" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="118927:118941" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="149345:149360" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="150865:150880" ph="..." />
+            <marker date="1491195393000" expanded="true" signature="152361:152376" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/VolNotification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="260" column="85" lean-forward="false" selection-start-line="260" selection-start-column="85" selection-end-line="260" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/BusinessAndVolunteerNotificationDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding />
         </state>
       </provider>

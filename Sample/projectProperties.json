@@ -142,7 +142,6 @@
     "createdgaversion": "6.9.0",
     "currentgaversion": "7.2.1",
     "defaulttheme": "defaultTheme",
-    "isDefaultProject": true,
     "isDpScaleFactor": true,
     "isNewAppWithRespectToAndroidPackageName": "",
     "konyVizVersion": "7.2.1",
@@ -153,10 +152,10 @@
     "mwhttpsportkey": "",
     "mwportkey": "",
     "nativeContainerProperties": {
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
-        "isEnableJSContaineriOS": false,
-        "isModified": true
+        "isEnableJSContaineriOS": false
     },
     "project.type": "js",
     "project_version": "sprint25",
