@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "61%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s52be9c007c74c3d831d26efda0f881f",
-    "_text_": "",
+    "_skin_": "s74dcfc0876e4897a5e39442572bc549",
+    "_text_": "You all need your manager's approval and consent before understanding this task",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
-        "value": "35%"
+        "value": "90%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,15 +42,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "51%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "35%"
+        "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "opportunityBusinessName",
+    "contentalignment": 5,
+    "id": "CopytxtLbl0866b5282a16448",
     "info": null,
     "ipad": {
         "psp": {
@@ -63,10 +59,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "fdbb7c7e8f3242e2a7cff511eff35896",
+    "kuid": "4ee61e85680e46619bbeaf287e636c80",
     "name": "kony.ui.Label",
-    "parent": "opprtunitiesHeadingModal",
-    "pf": "searchResultProfile",
+    "parent": "CopymangersApprovalFlex03ae7b8f29fcb45",
+    "pf": "scheduleNewForm",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

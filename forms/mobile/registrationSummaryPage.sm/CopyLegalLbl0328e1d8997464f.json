@@ -6,10 +6,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "61%"
-    },
     "_margin_": [
         1,
         1,
@@ -22,15 +18,15 @@
         0,
         0
     ],
-    "_skin_": "s52be9c007c74c3d831d26efda0f881f",
-    "_text_": "",
+    "_skin_": "s5419001122e4840a308d4f50e0066ac",
+    "_text_": "Policy Requirements ",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "1%"
     },
     "_width_": {
-        "type": "string",
-        "value": "35%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,15 +38,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "51%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "35%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "opportunityBusinessName",
+    "id": "CopyLegalLbl0328e1d8997464f",
     "info": null,
     "ipad": {
         "psp": {
@@ -63,10 +55,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "fdbb7c7e8f3242e2a7cff511eff35896",
+    "kuid": "c5f639225ee84fdfb408c232b4a0c331",
     "name": "kony.ui.Label",
-    "parent": "opprtunitiesHeadingModal",
-    "pf": "searchResultProfile",
+    "parent": "CopyLegalFlex0fd3d110dd9a947",
+    "pf": "registrationSummaryPage",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

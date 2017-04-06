@@ -53,7 +53,7 @@
     "enablescrolling": true,
     "id": "opprtunitiesReadOnlyContainer",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "2ab661b7e7dc4cf6851415d4c4ca6e64",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

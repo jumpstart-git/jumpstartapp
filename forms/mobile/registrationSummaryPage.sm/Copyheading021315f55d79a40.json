@@ -19,7 +19,7 @@
         0
     ],
     "_skin_": "s5419001122e4840a308d4f50e0066ac",
-    "_text_": "Policy Requirements ",
+    "_text_": "Manager's Approval",
     "_top_": {
         "type": "string",
         "value": "1%"
@@ -42,7 +42,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "CopyLegalLbl005a3546cf9374c",
+    "id": "Copyheading021315f55d79a40",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +55,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "024a734d7cbd4b4e8f3676c4913c6dfa",
+    "kuid": "2436c5a83699461e8fbcdcd02c458d4b",
     "name": "kony.ui.Label",
-    "parent": "CopyLegalFlex004dd3040d80e4d",
-    "pf": "scheduleNewForm",
+    "parent": "CopymangersApprovalFlex03ae7b8f29fcb45",
+    "pf": "registrationSummaryPage",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

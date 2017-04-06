@@ -30,6 +30,7 @@
     "children": [
         "registrationSummaryContainer",
         "registrationSummaryBody",
+        "CopyeligibiltyCriteriFlxScroll0d6a39065171f43",
         "registrationPageFooter"
     ],
     "containerweight": 100,
