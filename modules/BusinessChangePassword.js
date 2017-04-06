@@ -1,21 +1,21 @@
 
-mobileFabricConfigurationForBusinessChangePassword= 
+mobileFabricConfigurationForBusinessChangePassword=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"BusinessChangePassword",
                                                                 operations:["changePasswordForBusiness"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,18 +33,18 @@ mobileFabricConfigurationForBusinessChangePassword=
 
 // Function to invoke getFoxNews Service call
 function BusinessBusinessChangePassword (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
- 
 
 
-  
+
+
       if (!mobileFabricConfigurationForBusinessChangePassword.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForBusinessChangePassword();
-            
+
       }
       else if (mobileFabricConfigurationForBusinessChangePassword.isKonySDKObjectInitialized)
       {
@@ -64,7 +64,7 @@ function initializeMobileFabricForBusinessChangePassword ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForBusinessChangePassword.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForBusinessChangePassword.konysdkObject.init(mobileFabricConfigurationForBusinessChangePassword.appKey,mobileFabricConfigurationForBusinessChangePassword.appSecret,mobileFabricConfigurationForBusinessChangePassword.serviceURL,initializeMobileFabricForBusinessChangePasswordSuccess,initializeMobileFabricForBusinessChangePasswordFailure);  
+                                mobileFabricConfigurationForBusinessChangePassword.konysdkObject.init(mobileFabricConfigurationForBusinessChangePassword.appKey,mobileFabricConfigurationForBusinessChangePassword.appSecret,mobileFabricConfigurationForBusinessChangePassword.serviceURL,initializeMobileFabricForBusinessChangePasswordSuccess,initializeMobileFabricForBusinessChangePasswordFailure);
       // alert(getNotification());
     }
                 else
@@ -100,7 +100,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForBusinessChangePassword.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -123,7 +123,7 @@ function loginMFFailure(error)
 
 function setBusinessChangePassword()
 {
-  
+
                 //alert("inside TaskDetails");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -133,49 +133,49 @@ function setBusinessChangePassword()
                 var operationName = mobileFabricConfigurationForBusinessChangePassword.integrationServices[0].operations[0];
                                 var headers= {};
 
-     
+
      // alert("operation name"+operationName);
                   var credentials={};
                   credentials["userName"]=kony.store.getItem("BusinessEmailId");
                   credentials["oldPassword"]=BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;
                   credentials["newPassword"]=BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
-                  
-                  
-                  
+
+
+
                 //alert("From AcceptedTask"+JSON.stringify(credentials));
                 mobileFabricConfigurationForBusinessChangePassword.integrationObj.invokeOperation(operationName, headers, credentials, getBusinessChangePasswordSuccessCallback, getBusinessChangePasswordErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getBusinessChangePasswordSuccessCallback(credentials)
 {
-  
+
   //alert("inside success"+JSON.stringify(credentials));
-  
-  
+
+
     if(credentials!="undefined"&& credentials!=undefined)
     {
       //alert("InSide"+JSON.stringify(credentials));
  var successValue=credentials.pwdChange;
-  
+
   var errcode=credentials.errorCode;
    var isBusiness=credentials.isBusiness;
      if
        ((successValue=="success")&&(errcode=="null"))
        {
-         
+
          kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      "alertTitle": "Confirmation",
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Password changed successfully",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
         // alert("Password changed successfully");
          logoutOfApplication();
          kony.application.dismissLoadingScreen();
@@ -185,14 +185,14 @@ function getBusinessChangePasswordSuccessCallback(credentials)
         alert("The current password doesn't match. Please re-enter the correct password");
         kony.application.dismissLoadingScreen();
       }
-      
-  }  
+
+  }
     }
- 
-   
- 
-  
- 
+
+
+
+
+
 
 
 function getBusinessChangePasswordErrorCallback (error)
@@ -204,7 +204,3 @@ function getBusinessChangePasswordErrorCallback (error)
 
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-
-
-
-

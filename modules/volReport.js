@@ -1,22 +1,22 @@
 //Type your code here
 //Type your code here
-mobileFabricConfigurationForGererateReportVolunteert= 
+mobileFabricConfigurationForGererateReportVolunteert=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:["VolReport"],
                                                                 operations:["VolSendReport"]
                                                 }
                                ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -34,8 +34,8 @@ mobileFabricConfigurationForGererateReportVolunteert=
 
 // Function to invoke getFoxNews Service call
 function generateReportVolunteerService (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
                 // Let's get the news type the user selected
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
@@ -51,7 +51,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForGererateReportVolunteert.isKonySDKObjectInitialized)
       {//alert("1");
            initializeMobileFabricForGererateReportVolunteert();
-            
+
       }
       else if (mobileFabricConfigurationForGererateReportVolunteert.isKonySDKObjectInitialized)
       {//alert("setGererateReportVolunteert");
@@ -71,7 +71,7 @@ function initializeMobileFabricForGererateReportVolunteert ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForGererateReportVolunteert.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForGererateReportVolunteert.konysdkObject.init(mobileFabricConfigurationForGererateReportVolunteert.appKey,mobileFabricConfigurationForGererateReportVolunteert.appSecret,mobileFabricConfigurationForGererateReportVolunteert.serviceURL,initializeMobileFabricForGererateReportVolunteertSuccess,initializeMobileFabricForGererateReportVolunteertFailure);  
+                                mobileFabricConfigurationForGererateReportVolunteert.konysdkObject.init(mobileFabricConfigurationForGererateReportVolunteert.appKey,mobileFabricConfigurationForGererateReportVolunteert.appSecret,mobileFabricConfigurationForGererateReportVolunteert.serviceURL,initializeMobileFabricForGererateReportVolunteertSuccess,initializeMobileFabricForGererateReportVolunteertFailure);
       // alert(getNotification());
     }
                 else
@@ -86,7 +86,7 @@ function initializeMobileFabricForGererateReportVolunteertSuccess(response)
                 mobileFabricConfigurationForGererateReportVolunteert.isKonySDKObjectInitialized=true;
                 kony.application.dismissLoadingScreen();
                 //authenticateMFUsingUserStore();
-     setGererateReportVolunteert();                
+     setGererateReportVolunteert();
   kony.print (" ********** Exiting out of initializeMobileFabricSuccess ********** ");
 }
 
@@ -107,7 +107,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForGererateReportVolunteert.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -130,7 +130,7 @@ function loginMFFailure(error)
 
 function setGererateReportVolunteert()
 {
-  
+
               //  alert("inside DeclineRequest");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -140,7 +140,7 @@ function setGererateReportVolunteert()
                 var operationName = mobileFabricConfigurationForGererateReportVolunteert.integrationServices[0].operations[0];
                                 var headers= {};
 
-      
+
     //  alert("operation name"+operationName);
                   var dataGenerateReport={};
                   dataGenerateReport["emailAddress"]=ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text;
@@ -154,21 +154,21 @@ function setGererateReportVolunteert()
                   var arr1=str1.split("/");
                   var actEndDate=arr1[2]+"-"+arr1[1]+"-"+arr1[0];
                   dataGenerateReport["endDate"] =actEndDate;
-                 
-                  
+
+
                  // alert("dataGenerateReport"+JSON.stringify(dataGenerateReport));
                 mobileFabricConfigurationForGererateReportVolunteert.integrationObj.invokeOperation(operationName, headers, dataGenerateReport, getGererateReportVolunteertSuccessCallback, getGererateReportVolunteertErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getGererateReportVolunteertSuccessCallback(dataGenerateReport)
 {
-  
+
   //alert("inside success"+JSON.stringify(dataGenerateReport));
-  
-  
+
+
     if(dataGenerateReport!="undefined"&& dataGenerateReport!=undefined)
     {
       //alert("InSide"+JSON.stringify(dataGenerateReport));
@@ -177,20 +177,22 @@ function getGererateReportVolunteertSuccessCallback(dataGenerateReport)
   mainPage.show();
         kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Volunteers hours report successfully sent to your email",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
   //alert("Volunteers hours report successfully sent to your email.");
   ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text="";
 kony.application.dismissLoadingScreen();
-  
-     
-  }  
+
+
+  }
     }
 
 
@@ -202,7 +204,7 @@ function getGererateReportVolunteertErrorCallback (error)
   ReportingPage.destroy();
   //hideSideBar();
   mainPage.show();
-   
+
 //     kony.ui.Alert({
 //       "alertType": constants.ALERT_TYPE_CONFIRMATION,
 //       "alertTitle": "Confirmation",
@@ -212,13 +214,13 @@ function getGererateReportVolunteertErrorCallback (error)
 //     }, {
 //       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
 //     });
-  
+
   ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text="";
   //ReportingPage.ReportingData.ReportingdataFlex.StartDateCalendar.formattedDate="";
   //ReportingPage.ReportingData.ReportingdataFlex.EndDateCalendar.formattedDate="";
-  
-  
-  
-  
+
+
+
+
   kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }

@@ -8,7 +8,7 @@ mobileFabricConfigurationForBusinessMarkAsComplete = {
         service: "BusinessMarkAsComplete",
         operations: ["setMarkAsComplete"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -28,7 +28,7 @@ function BusinessMarkAsComplete() {
         shouldShowLabelInBottom: "false",
         separatorHeight: 20
     });
-    //   gblMarkCompleteReq=valMarkComplete.widgetInfo.data[0].requestId; 
+    //   gblMarkCompleteReq=valMarkComplete.widgetInfo.data[0].requestId;
     //   alert("the selected"+JSON.stringify(gblMarkCompleteReq));
     // Let's get the news type the user selected
     //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
@@ -150,17 +150,19 @@ function getBusinessMarkAsCompleteErrorCallback(error) {
     BusinessCloseTaskService();
     kony.application.dismissLoadingScreen();
     // alert("Task is completed successfully");
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Task is completed successfully",
-        "alertHandler": "null"
+        "alertHandler": null
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
+    //End of D005
 }
 
 function saveClosedTaskDetails() {

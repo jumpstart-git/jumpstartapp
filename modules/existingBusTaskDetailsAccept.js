@@ -1,21 +1,21 @@
 
-mobileFabricConfigurationForRequestVolunteerTasks99= 
+mobileFabricConfigurationForRequestVolunteerTasks99=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"RequestToVolunteerOpp",
                                                                 operations:["requestToVolOpp"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,8 +33,8 @@ mobileFabricConfigurationForRequestVolunteerTasks99=
 
 // Function to invoke getFoxNews Service call
 function BusinessRequestToVolunteerAcceptTasks99 (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //    gblReqForTaskDetails=valBusRequestID.widgetInfo.data[0].lblRequestId;
 //   alert("the selected"+JSON.stringify(gblReqForTaskDetails));
@@ -52,7 +52,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForRequestVolunteerTasks99.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForRequestVolunteerTasks99();
-            
+
       }
       else if (mobileFabricConfigurationForRequestVolunteerTasks99.isKonySDKObjectInitialized)
       {
@@ -72,7 +72,7 @@ function initializeMobileFabricForRequestVolunteerTasks99 ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForRequestVolunteerTasks99.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForRequestVolunteerTasks99.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerTasks99.appKey,mobileFabricConfigurationForRequestVolunteerTasks99.appSecret,mobileFabricConfigurationForRequestVolunteerTasks99.serviceURL,initializeMobileFabricForRequestVolunteerTasks99Success,initializeMobileFabricForRequestVolunteerTasks99Failure);  
+                                mobileFabricConfigurationForRequestVolunteerTasks99.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerTasks99.appKey,mobileFabricConfigurationForRequestVolunteerTasks99.appSecret,mobileFabricConfigurationForRequestVolunteerTasks99.serviceURL,initializeMobileFabricForRequestVolunteerTasks99Success,initializeMobileFabricForRequestVolunteerTasks99Failure);
       // alert(getNotification());
     }
                 else
@@ -108,7 +108,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForRequestVolunteerTasks99.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -131,7 +131,7 @@ function loginMFFailure(error)
 
 function setRequestToVolunteerTasks99()
 {
-  
+
                 //alert("inside TaskDetails");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -142,7 +142,7 @@ function setRequestToVolunteerTasks99()
                                 var headers= {};
 /*
 {
-   
+
 "title":"Testing New Task",
 "details":"Testing New Task",
 "startDate":"2017-01-06",
@@ -163,7 +163,7 @@ searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.S
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.formattedDate;
 }
 */
-     
+
      // alert("operation name"+operationName);
                   var taskDetailsForBus99={};
                   taskDetailsForBus99["volunteerId"]=kony.store.getItem("volunteerId");
@@ -186,7 +186,7 @@ searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.E
     alert("No tasks/opportunity is available");
      kony.application.dismissLoadingScreen();
     return false;
-    
+
   }
                   var basicMessage=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text;
                   if((basicMessage===null) || (basicMessage==="null")||(basicMessage==="")||(basicMessage===" "))
@@ -194,44 +194,44 @@ searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.E
                        alert("please enter details in comment");
                        kony.application.dismissLoadingScreen();
                        return false;
-                        
+
                        //taskDetailsForBus99["message"]=basicMessage;
                      }
                   else{
                   var formatedText= basicMessage.replace(/(\r\n|\n|\r)/gm," ");
                   taskDetailsForBus99["message"]=formatedText;
                   }
-                  
+
                   taskDetailsForBus99["startDate"]= searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text;
                   taskDetailsForBus99["endDate"]=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text;
-  
+
 
                // alert(JSON.stringify(taskDetailsForBus99));
                 mobileFabricConfigurationForRequestVolunteerTasks99.integrationObj.invokeOperation(operationName, headers, taskDetailsForBus99, getRequestVolunteerTasksSuccessCallback, getRequestVolunteerTasksErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getRequestVolunteerTasksSuccessCallback(taskDetailsForBus99)
 {
-  
+
   //alert("inside success"+JSON.stringify(taskDetailsForBus99));
-  
-  
+
+
     if(taskDetailsForBus99!="undefined"&& taskDetailsForBus99!=undefined)
     {
       //alert("InSide"+JSON.stringify(taskDetailsForBus99));
 
  // alert("please enter task details");
-     
-  }  
+
+  }
     }
 
-   
- 
-  
- 
+
+
+
+
 
 
 function getRequestVolunteerTasksErrorCallback (error)
@@ -241,44 +241,40 @@ function getRequestVolunteerTasksErrorCallback (error)
                 kony.application.dismissLoadingScreen();
 kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Request has been sent successfully",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
 
-     // alert("Request has been sent successfully");  
+     // alert("Request has been sent successfully");
 searchResultProfile.opprtunitiesReadOnlyContainer.isVisible=false;
   var tempVal=[];
   var tempArray=[];
           tempArray.push("");
           tempArray.push("Select");
     tempVal.push(tempArray);
-  
-  
+
+
   //end
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.masterData=tempVal;
-  
-  
+
+
 //searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.masterData="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text = "";
-  
+
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text="";
 searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text="";
-  searchResultProfile.show();  
+  searchResultProfile.show();
 
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-
-
-
-  
- 
-

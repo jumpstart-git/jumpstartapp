@@ -10,11 +10,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -49,11 +51,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });

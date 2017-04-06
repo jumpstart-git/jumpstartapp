@@ -10,7 +10,7 @@ mobileFabricConfigurationForVolReview = {
         service: "Recommendation",
         operations: ["saveRecommendation"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -144,11 +144,13 @@ function getvolSendReviewSuccessCallback(sendReview1) {
         //D019: Adding Kony Info Alert
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Confirmation",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Recommendation has been sent",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });

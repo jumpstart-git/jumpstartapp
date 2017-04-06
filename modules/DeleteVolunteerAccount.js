@@ -1,23 +1,23 @@
 var gblExistingTaskId;//Type your code here
 
-mobileFabricConfigurationForDeleteVolunteerAccount = 
+mobileFabricConfigurationForDeleteVolunteerAccount =
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-                                //appSecret:"c600a59925b36419de1546056cd21557", 
+
+                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+                                //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
-                                
-                                integrationServices: 
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"DeleteVolunteer",
                                                                 operations:["deleteVolunteerById"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,8 +35,8 @@ mobileFabricConfigurationForDeleteVolunteerAccount =
 
 // Function to invoke getFoxNews Service call
 function DeleteVolunteerAccountService (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
  // alert("inside del vol service");
 
@@ -54,7 +54,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForDeleteVolunteerAccount.isKonySDKObjectInitialized)
       {
                                                 initializeMobileFabricForDeleteVolunteerAccount();
-            
+
       }
       else if (mobileFabricConfigurationForDeleteVolunteerAccount.isKonySDKObjectInitialized)
       {
@@ -74,7 +74,7 @@ function initializeMobileFabricForDeleteVolunteerAccount ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForDeleteVolunteerAccount.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForDeleteVolunteerAccount.konysdkObject.init(mobileFabricConfigurationForDeleteVolunteerAccount.appKey,mobileFabricConfigurationForDeleteVolunteerAccount.appSecret,mobileFabricConfigurationForDeleteVolunteerAccount.serviceURL,initializeMobileFabricForDeleteVolunteerAccountSuccess,initializeMobileFabricForDeleteVolunteerAccountFailure);  
+                                mobileFabricConfigurationForDeleteVolunteerAccount.konysdkObject.init(mobileFabricConfigurationForDeleteVolunteerAccount.appKey,mobileFabricConfigurationForDeleteVolunteerAccount.appSecret,mobileFabricConfigurationForDeleteVolunteerAccount.serviceURL,initializeMobileFabricForDeleteVolunteerAccountSuccess,initializeMobileFabricForDeleteVolunteerAccountFailure);
       // alert(getDeleteVolunteerAccount());
     }
                 else
@@ -111,7 +111,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfiguration.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -134,7 +134,7 @@ function loginMFFailure(error)
 
 function getDeleteVolunteerAccount()
 {
-  
+
               //alert("inside getDeleteVolunteerAccount");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -149,24 +149,24 @@ function getDeleteVolunteerAccount()
 //                                            // The user didn't pick a value so we'll show the alert
 //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
 //         }
-      
-      
+
+
       var VolDelAcId={} ;
-       VolDelAcId["id"]=kony.store.getItem("volunteerId"); //"1";//kony.store.getItem("businessId"); 
+       VolDelAcId["id"]=kony.store.getItem("volunteerId"); //"1";//kony.store.getItem("businessId");
   //alert("id"+VolDelAcId["id"]);
                 mobileFabricConfigurationForDeleteVolunteerAccount.integrationObj.invokeOperation(operationName, headers, VolDelAcId, getDeleteVolunteerAccountSuccessCallback, getDeleteVolunteerAccountErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getDeleteVolunteerAccountSuccessCallback (gblDeleteVolunteerAccountList)
 {
-  
+
  // alert("inside getDeleteVolunteerAccountSuccessCallback"+JSON.stringify(gblDeleteVolunteerAccountList));
   // Check the opstatus for 0 meaning it worked
   if (gblDeleteVolunteerAccountList !== null && gblDeleteVolunteerAccountList.opstatus === 0){//first if
-    
+
   if (gblDeleteVolunteerAccountList!=null && gblDeleteVolunteerAccountList!=undefined)
   {//second if
     if (gblDeleteVolunteerAccountList !== null && gblDeleteVolunteerAccountList!=undefined)
@@ -180,13 +180,13 @@ function getDeleteVolunteerAccountSuccessCallback (gblDeleteVolunteerAccountList
         delvolAccountResponse=gblDeleteVolunteerAccountList;
         getVolAccountDeleted(delvolAccountResponse);
         // var delvolAccountResponse=JSON.stringify(DeleteVolunteerAccountList);
-          //Setting the segment widgetdataMap 
-//          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"}; 
+          //Setting the segment widgetdataMap
+//          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"};
 //      //      Setting the data to the segment
 //      frmFoxNews.segNewsTitle.setVisibility(true);
 //          frmFoxNews.segNewsTitle.setData(DeleteVolunteerAccountList.MessageDTO.news_item.title);
 //          kony.application.dismissLoadingScreen();
-        
+
       //}//end of 4th if
     }//end of 3rd if
   }//end of 2nd if
@@ -217,7 +217,7 @@ function getVolAccountDeleted(delvolAccountResponse)
     {
     //alert("InSide getVolAccountDeleted"+JSON.stringify(delvolAccountResponse));
        var len = delvolAccountResponse.length;
- 
+
     var userDeleteSuccess=delvolAccountResponse.userDelete;
     var deleteErrorCode=delvolAccountResponse.errorCode;
 
@@ -226,14 +226,16 @@ function getVolAccountDeleted(delvolAccountResponse)
         //alert("Your account has been deleted successfully");
         kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Your account has been deleted successfully",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
         logoutOfApplication();
         kony.application.dismissLoadingScreen();
       }
@@ -241,22 +243,18 @@ function getVolAccountDeleted(delvolAccountResponse)
       alert("Please close all your on going open engagements");
       kony.application.dismissLoadingScreen();
     }
-              
-                
-   
+
+
+
   }
-   
-    
-    
+
+
+
 
   kony.application.dismissLoadingScreen();
-  //BusinessCloseTaskService ();  
-  }catch(e) 
+  //BusinessCloseTaskService ();
+  }catch(e)
   {
     //just to avoid undefined type error
   }
 }
-
-
-
-

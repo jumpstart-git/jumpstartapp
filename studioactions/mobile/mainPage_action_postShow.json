@@ -38,7 +38,7 @@
             "sequenceKUID": "setSegData",
             "display": "setSegData",
             "inputparams": [{
-                "name": "gblNoteResponse"
+                "name": "gblResponse"
             }],
             "parentId": null,
             "callbackType": null,

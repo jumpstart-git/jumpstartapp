@@ -10,11 +10,13 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
         // alert("Please select a task");
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });

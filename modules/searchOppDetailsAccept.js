@@ -1,21 +1,21 @@
 
-mobileFabricConfigurationForRequestVolunteerSearchOpp= 
+mobileFabricConfigurationForRequestVolunteerSearchOpp=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"RequestToVolunteerOpp",
                                                                 operations:["requestToVolOpp"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,8 +33,8 @@ mobileFabricConfigurationForRequestVolunteerSearchOpp=
 
 // Function to invoke getFoxNews Service call
 function BusinessRequestToVolunteerAcceptTaskOpp (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //    gblReqForTaskDetails=valBusRequestID.widgetInfo.data[0].lblRequestId;
 //   alert("the selected"+JSON.stringify(gblReqForTaskDetails));
@@ -52,7 +52,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForRequestVolunteerSearchOpp.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForRequestVolunteerTasksOpp();
-            
+
       }
       else if (mobileFabricConfigurationForRequestVolunteerSearchOpp.isKonySDKObjectInitialized)
       {
@@ -72,7 +72,7 @@ function initializeMobileFabricForRequestVolunteerTasksOpp ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForRequestVolunteerSearchOpp.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForRequestVolunteerSearchOpp.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerSearchOpp.appKey,mobileFabricConfigurationForRequestVolunteerSearchOpp.appSecret,mobileFabricConfigurationForRequestVolunteerSearchOpp.serviceURL,initializeMobileFabricForRequestVolunteerTasksOppSuccess,initializeMobileFabricForRequestVolunteerTasksOppFailure);  
+                                mobileFabricConfigurationForRequestVolunteerSearchOpp.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerSearchOpp.appKey,mobileFabricConfigurationForRequestVolunteerSearchOpp.appSecret,mobileFabricConfigurationForRequestVolunteerSearchOpp.serviceURL,initializeMobileFabricForRequestVolunteerTasksOppSuccess,initializeMobileFabricForRequestVolunteerTasksOppFailure);
       // alert(getNotification());
     }
                 else
@@ -108,7 +108,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForRequestVolunteerSearchOpp.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -131,7 +131,7 @@ function loginMFFailure(error)
 
 function setRequestToVolunteerTasksOpp()
 {
-  
+
                 //alert("inside TaskDetails");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -142,7 +142,7 @@ function setRequestToVolunteerTasksOpp()
                                 var headers= {};
 /*
 {
-   
+
 "title":"Testing New Task",
 "details":"Testing New Task",
 "startDate":"2017-01-06",
@@ -163,12 +163,12 @@ searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.S
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.formattedDate;
 }
 */
-     
+
      //alert("operation name"+operationName);
                   var taskDetailsForOppsaecrh={};
                   taskDetailsForOppsaecrh["volunteerId"]=kony.store.getItem("volunteerId");
                   taskDetailsForOppsaecrh["businessId"]=kony.store.getItem("busIdNew");//this is taken from store while setting data in searchPage Opp
-               
+
                   taskDetailsForOppsaecrh["title"]=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text;
              	 //taskDetailsForOppsaecrh["details"]= searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text;
                   taskDetailsForOppsaecrh["hoursRequired"]=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text;
@@ -187,51 +187,51 @@ searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.E
                     alert("enter details in comment");
                     return false;
                      kony.application.dismissLoadingScreen();
-                    
+
                     taskDetailsForOppsaecrh["message"]=basicMessage21;
-                    
+
                   }
                   else{
                   var formatedText23= basicMessage21.replace(/(\r\n|\n|\r)/gm," ");
                   taskDetailsForOppsaecrh["message"]=formatedText23;
                   }
-                  
+
 //                   var str=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.formattedDate;
 //                   var arr=str.split("/");
 //                   var actStartDate2=arr[2]+"-"+arr[1]+"-"+arr[0];
 //                   var str1=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.formattedDate;
 //                   var arr1=str1.split("/");
 //                   var actEndDate2=arr1[2]+"-"+arr1[1]+"-"+arr1[0];
-                 
+
                   taskDetailsForOppsaecrh["startDate"]= searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text;
                   taskDetailsForOppsaecrh["endDate"]=searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text;
-                             
+
                 //alert("details:"+JSON.stringify(taskDetailsForOppsaecrh));
                 mobileFabricConfigurationForRequestVolunteerSearchOpp.integrationObj.invokeOperation(operationName, headers, taskDetailsForOppsaecrh, getRequestVolunteerTasksOppSuccessCallback, getRequestVolunteerTasksOppErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getRequestVolunteerTasksOppSuccessCallback(taskDetailsForOppsaecrh1)
 {
-  
+
  // alert("inside success"+JSON.stringify(taskDetailsForOppsaecrh1));
-  
-  
+
+
     if(taskDetailsForOppsaecrh1!="undefined"&& taskDetailsForOppsaecrh1!=undefined)
     {
       //alert("InSide"+JSON.stringify(taskDetailsForOppsaecrh));
 //alert("please enter task details");
    kony.application.dismissLoadingScreen();
-     
-  }  
+
+  }
     }
 
-   
- 
-  
- 
+
+
+
+
 
 
 function getRequestVolunteerTasksOppErrorCallback (error)
@@ -241,34 +241,30 @@ function getRequestVolunteerTasksOppErrorCallback (error)
                 kony.application.dismissLoadingScreen();
  kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Request has been sent successfully",
-      "alertHandler":"null" 
+      "alertHandler":"null"
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
   //alert("Request has been sent successfully");
 
 
 searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text = "";
-  
+
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.taskDetailsRichTxt.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.startDateModalFlex.startDateTxt.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.endDateFlexModal.endDateTxtLbl.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text="";
   searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text="";
 searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text="";
- // searchResultProfile.show(); 
+ // searchResultProfile.show();
   searchResultProfile.opprtunitiesReadOnlyContainer.isVisible=false;
     //searchResultProfile.destroy();
 searchPage.show();
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-
-
-
-  
- 
-

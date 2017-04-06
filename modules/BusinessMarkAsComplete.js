@@ -1,21 +1,21 @@
 var gblReqClosedTask;
 var taskId;
-mobileFabricConfigurationForBusinessMarkAsComplete= 
+mobileFabricConfigurationForBusinessMarkAsComplete=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"BusinessMarkAsComplete",
                                                                 operations:["setMarkAsComplete"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,12 +35,12 @@ mobileFabricConfigurationForBusinessMarkAsComplete=
 
 
 function BusinessMarkAsComplete (){
-  
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
-  
-//   gblMarkCompleteReq=valMarkComplete.widgetInfo.data[0].requestId; 
+
+//   gblMarkCompleteReq=valMarkComplete.widgetInfo.data[0].requestId;
 //   alert("the selected"+JSON.stringify(gblMarkCompleteReq));
                 // Let's get the news type the user selected
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
@@ -56,7 +56,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForBusinessMarkAsComplete.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForBusinessMarkAsComplete();
-            
+
       }
       else if (mobileFabricConfigurationForBusinessMarkAsComplete.isKonySDKObjectInitialized)
       {
@@ -76,7 +76,7 @@ function initializeMobileFabricForBusinessMarkAsComplete ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForBusinessMarkAsComplete.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForBusinessMarkAsComplete.konysdkObject.init(mobileFabricConfigurationForBusinessMarkAsComplete.appKey,mobileFabricConfigurationForBusinessMarkAsComplete.appSecret,mobileFabricConfigurationForBusinessMarkAsComplete.serviceURL,initializeMobileFabricForBusinessMarkAsCompleteSuccess,initializeMobileFabricForBusinessMarkAsCompleteFailure);  
+                                mobileFabricConfigurationForBusinessMarkAsComplete.konysdkObject.init(mobileFabricConfigurationForBusinessMarkAsComplete.appKey,mobileFabricConfigurationForBusinessMarkAsComplete.appSecret,mobileFabricConfigurationForBusinessMarkAsComplete.serviceURL,initializeMobileFabricForBusinessMarkAsCompleteSuccess,initializeMobileFabricForBusinessMarkAsCompleteFailure);
       // alert(getNotification());
     }
                 else
@@ -112,7 +112,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForBusinessMarkAsComplete.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -135,7 +135,7 @@ function loginMFFailure(error)
 
 function setBusinessMarkAsComplete()
 {
-  
+
                 //alert("inside MarkAsComplete");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -145,7 +145,7 @@ function setBusinessMarkAsComplete()
                    var operationName = mobileFabricConfigurationForBusinessMarkAsComplete.integrationServices[0].operations[0];
                    var headers= {};
 
-      
+
                   //alert("operation name"+operationName);
                   var dataMarkAsComplete={};
                   dataMarkAsComplete["requestId"]=gblReqClosedTask;
@@ -156,53 +156,55 @@ function setBusinessMarkAsComplete()
                   mobileFabricConfigurationForBusinessMarkAsComplete.integrationObj.invokeOperation(operationName, headers, dataMarkAsComplete, getBusinessMarkAsCompleteSuccessCallback, getBusinessMarkAsCompleteErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getBusinessMarkAsCompleteSuccessCallback(dataMarkAsCompleteVal)
 {
-  
+
   //alert("inside success getBusinessMarkAsCompleteSuccessCallback"+JSON.stringify(dataMarkAsComplete));
-  
-  
+
+
     if(dataMarkAsCompleteVal!="undefined"&& dataMarkAsCompleteVal!=undefined)
     {
       //alert("InSide"+JSON.stringify(dataMarkAsComplete));
 //    BusinessOpenCloseTaskService();
 //    BusinessCloseTaskService ();
 //    alert("Task is successfully completed");
-   
+
   // mainPage.show();
-    
-     
-  }  
+
+
+  }
     }
 
- 
+
 function getBusinessMarkAsCompleteErrorCallback (error)
 {
                 kony.print (" ********** Entering into getNotificationSuccessCallback ********** ");
                 kony.print (" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
                 kony.application.dismissLoadingScreen();
-                mainPage.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.removeAll();              
+                mainPage.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.removeAll();
                 BusinessOpenCloseTaskService();
-                
+
                 mainPage.markAsCompleteGrayScreen.isVisible=false;
   				BusinessCloseTaskService ();
                 kony.application.dismissLoadingScreen();
               // alert("Task is completed successfully");
+   //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
    kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      "alertTitle": "Confirmation",
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Task is completed successfully",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
 
     kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
+    //End of D005
 }
 
 function saveClosedTaskDetails()
@@ -211,25 +213,25 @@ function saveClosedTaskDetails()
   if(kony.store.getItem("isBusOrVol")=="business")
   {
    var tempDataforClose=[];
-  
+
     var taskReq=mainPage.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems;//mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems;
-    taskId=taskReq[0].taskId; 
+    taskId=taskReq[0].taskId;
     gblReqClosedTask=taskReq[0].lblRequestId;
     var title=taskReq[0].openTaskName;
     var businessName=taskReq[0].openTaskBusiness;
      BusinessMarkAsComplete();
-   
-   
-   
+
+
+
    //mainPage.show();
-    
-    
-   
+
+
+
    }
-   
+
   }catch(err)
     {
-      
+
      // alert("the issue is "+JSON.stringify(err));
     }
 }

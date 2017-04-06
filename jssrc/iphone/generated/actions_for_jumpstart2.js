@@ -1095,7 +1095,8 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         if (isValidStartEnd === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //D040: changed alertTitle from null to "Action Required"
+                "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please enter today/future date for this engagement",
@@ -1107,7 +1108,8 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         } else if (isValidEndDate === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //D040: chenged alertTitle from null to "Action Required"
+                "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "End date should be a future date",

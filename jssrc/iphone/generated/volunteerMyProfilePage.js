@@ -704,6 +704,7 @@ function addWidgetsvolunteerMyProfilePage() {
     volunteerMyProfileSkillsList.setDefaultUnit(kony.flex.DP);
     var volunteerMyProfileSkillInputField = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
         "height": "40dp",
         "id": "volunteerMyProfileSkillInputField",
         "isVisible": true,
@@ -753,7 +754,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
         "top": 125,
-        "width": "40dp",
+        "width": "45dp",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -867,13 +868,14 @@ function addWidgetsvolunteerMyProfilePage() {
     }, {}, {});
     CopyregScheduleHeadingsContainer0d79665b2f9c545.setDefaultUnit(kony.flex.DP);
     var CopyAvaialabilityLabel051f0edd0ebc744 = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopyAvaialabilityLabel051f0edd0ebc744",
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel0138de9d7ded645",
         "text": "Availability*",
         "top": "3%",
-        "width": "100%",
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -891,7 +893,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "CopyregScheduleDatesFlex0e378c84e573e49",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "1dp",
+        "left": "0dp",
         "skin": "slFbox",
         "top": "10%",
         "width": "100%",
@@ -899,6 +901,7 @@ function addWidgetsvolunteerMyProfilePage() {
     }, {}, {});
     CopyregScheduleDatesFlex0e378c84e573e49.setDefaultUnit(kony.flex.DP);
     var listDays = new kony.ui.ListBox({
+        "centerX": "50%",
         "height": "40dp",
         "id": "listDays",
         "isVisible": true,
@@ -914,7 +917,7 @@ function addWidgetsvolunteerMyProfilePage() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "0dp",
-        "width": "100%",
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -930,13 +933,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var CopylblFromTime07d4b3afcf74b4a = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopylblFromTime07d4b3afcf74b4a",
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel017064f17fbcf4c",
         "text": "FromTime",
         "top": "20%",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -947,6 +951,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var listFromTime = new kony.ui.ListBox({
+        "centerX": "25%",
         "height": "40dp",
         "id": "listFromTime",
         "isVisible": true,
@@ -995,6 +1000,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listEndTime = new kony.ui.ListBox({
+        "centerX": "25%",
         "height": "40dp",
         "id": "listEndTime",
         "isVisible": true,
@@ -1043,6 +1049,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listFromTimeMeridiam = new kony.ui.ListBox({
+        "centerX": "75%",
         "height": "40dp",
         "id": "listFromTimeMeridiam",
         "isVisible": true,
@@ -1069,6 +1076,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listEndTimeMeridiam = new kony.ui.ListBox({
+        "centerX": "75%",
         "height": "40dp",
         "id": "listEndTimeMeridiam",
         "isVisible": true,
@@ -1095,13 +1103,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var CopylblTotime048af1bdb577146 = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopylblTotime048af1bdb577146",
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel0bc64944d36fe48",
         "text": "ToTime",
         "top": "50%",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -1112,7 +1121,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var CopyAddBtn0ecfcdaab0ea24b = new kony.ui.Button({
-        "centerX": "48%",
+        "centerX": "50%",
         "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "CopyAddBtn0ecfcdaab0ea24b",
@@ -1122,7 +1131,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "skin": "ngnyPrimaryGreenButton",
         "text": "+ Add Schedule",
         "top": "83%",
-        "width": "90%",
+        "width": "100%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,

@@ -460,10 +460,10 @@ function addWidgetsLogHoursForms() {
         "height": "20dp",
         "id": "indicatorImg",
         "isVisible": true,
-        "left": "-4dp",
+        "left": "-5dp",
         "skin": "slImage",
         "src": "lohourindicator.PNG",
-        "top": "2dp",
+        "top": "5dp",
         "width": "20dp",
         "zIndex": 1
     }, {
@@ -701,7 +701,6 @@ function addWidgetsLogHoursForms() {
     });
     var addHourCalendar = new kony.ui.Calendar({
         "calendarIcon": "calendaricon.png",
-        "centerX": "50%",
         "dateComponents": [28, 10, 2016, 0, 0, 0],
         "dateFormat": "dd/MM/yyyy",
         "day": 28,
@@ -719,7 +718,7 @@ function addWidgetsLogHoursForms() {
         "top": "5dp",
         "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
-        "width": "100%",
+        "width": "99%",
         "year": 2016,
         "zIndex": 1
     }, {
@@ -781,6 +780,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
             ["1", "1"],
             ["2", "2"],
             ["3", "3"],
@@ -863,6 +863,8 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
+            ["5", "5"],
             ["10", "10"],
             ["15", "15"],
             ["20", "20"],
@@ -942,7 +944,7 @@ function addWidgetsLogHoursForms() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "2dp",
+        "top": "5dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});

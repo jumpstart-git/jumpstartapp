@@ -1,21 +1,21 @@
 
-mobileFabricConfigurationForAcceptRequestTasks= 
+mobileFabricConfigurationForAcceptRequestTasks=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"BusinessAcceptRequestTasks",
                                                                 operations:["acceptRequestTasks"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,18 +33,18 @@ mobileFabricConfigurationForAcceptRequestTasks=
 
 // Function to invoke getFoxNews Service call
 function BusinessAcceptRequestTasks (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
- 
 
 
-  
+
+
       if (!mobileFabricConfigurationForAcceptRequestTasks.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForAcceptRequestTasks();
-            
+
       }
       else if (mobileFabricConfigurationForAcceptRequestTasks.isKonySDKObjectInitialized)
       {
@@ -64,7 +64,7 @@ function initializeMobileFabricForAcceptRequestTasks ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForAcceptRequestTasks.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForAcceptRequestTasks.konysdkObject.init(mobileFabricConfigurationForAcceptRequestTasks.appKey,mobileFabricConfigurationForAcceptRequestTasks.appSecret,mobileFabricConfigurationForAcceptRequestTasks.serviceURL,initializeMobileFabricForAcceptRequestTasksSuccess,initializeMobileFabricForAcceptRequestTasksFailure);  
+                                mobileFabricConfigurationForAcceptRequestTasks.konysdkObject.init(mobileFabricConfigurationForAcceptRequestTasks.appKey,mobileFabricConfigurationForAcceptRequestTasks.appSecret,mobileFabricConfigurationForAcceptRequestTasks.serviceURL,initializeMobileFabricForAcceptRequestTasksSuccess,initializeMobileFabricForAcceptRequestTasksFailure);
       // alert(getNotification());
     }
                 else
@@ -100,7 +100,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForAcceptRequestTasks.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -123,7 +123,7 @@ function loginMFFailure(error)
 
 function setAcceptRequestTasks()
 {
-  
+
                 //alert("inside TaskDetails");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -142,7 +142,7 @@ function setAcceptRequestTasks()
 
 }
 */
-     
+
      // alert("operation name"+operationName);
                   var busAcceptTaskDetails={};
                   busAcceptTaskDetails["taskId"]=kony.store.getItem("TaskIdFromSentSeg");
@@ -156,43 +156,43 @@ function setAcceptRequestTasks()
 //                   var basicMessage="";
 //                   var formatedText= basicMessage.replace(/(\r\n|\n|\r)/gm," ");
 //                   busAcceptTaskDetails["message"]=formatedText;
-                  
+
 //                   var str="";
 //                   var arr=str.split("/");
 //                   var actStartDate2=arr[2]+"-"+arr[1]+"-"+arr[0];
 //                   var str1="";
 //                   var arr1=str1.split("/");
 //                   var actEndDate2=arr1[2]+"-"+arr1[1]+"-"+arr1[0];
-                  
+
                   busAcceptTaskDetails["startDate"]=mainPage.BusinessRequestTaskDetailsModal.ReqTaskDetailsBody.reqTaskStartDateLabelInput.text;//actStartDate2;
                   busAcceptTaskDetails["endDate"]=mainPage.BusinessRequestTaskDetailsModal.ReqTaskDetailsBody.reqTaskEndDateLabelInput.text;//actEndDate2;
-                  
+
                 //alert("From AcceptedTask"+JSON.stringify(busAcceptTaskDetails));
                 mobileFabricConfigurationForAcceptRequestTasks.integrationObj.invokeOperation(operationName, headers, busAcceptTaskDetails, getAcceptRequestTasksSuccessCallback, getAcceptRequestTasksErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getAcceptRequestTasksSuccessCallback(busAcceptTaskDetails)
 {
-  
+
   //alert("inside success"+JSON.stringify(busAcceptTaskDetails));
-  
-  
+
+
     if(busAcceptTaskDetails!="undefined"&& busAcceptTaskDetails!=undefined)
     {
       //alert("InSide"+JSON.stringify(busAcceptTaskDetails));
- 
-  
-     
-  }  
+
+
+
+  }
     }
- 
-   
- 
-  
- 
+
+
+
+
+
 
 
 function getAcceptRequestTasksErrorCallback (error)
@@ -201,14 +201,14 @@ function getAcceptRequestTasksErrorCallback (error)
                 kony.print (" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
                 kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      "alertTitle": "Confirmation",
       "yesLabel": "OK",
       "noLabel":"No",
       "message": "Request has been moved to open task",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
            mainPage.BusinessRequestTaskDetailsModal.isVisible=false;
            mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.removeAll();
   			getBusinessRequestsService ();
@@ -216,18 +216,12 @@ function getAcceptRequestTasksErrorCallback (error)
 //   		   mainPage.destroy();
 //            mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;
 //       	   mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;
-//            BusinessRecommendationService(); 
+//            BusinessRecommendationService();
 //            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.MyActivityCreateOpportunityButton.isVisible=true;
-//            mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=false;             
-//            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible=true;             
-//            mainPage.unAssignedTasksContainer.isVisible=true;       
+//            mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=false;
+//            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible=true;
+//            mainPage.unAssignedTasksContainer.isVisible=true;
 //            mainPage.show();
 
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-
-
-
-  
- 
-

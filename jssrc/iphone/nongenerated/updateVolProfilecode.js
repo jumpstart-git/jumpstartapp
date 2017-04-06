@@ -41,7 +41,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.mon=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.mon=true;
                 volunteerUpdateObject.availability.mon=true;
               }
@@ -51,7 +51,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.tue=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.tue=true;
                 volunteerUpdateObject.availability.tue=true;
               }
@@ -61,7 +61,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.wed=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.wed=true;
                 volunteerUpdateObject.availability.wed=true;
               }
@@ -71,7 +71,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.thu=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.thu=true;
                  volunteerUpdateObject.availability.thu=true;
               }
@@ -81,7 +81,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.fri=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.fri=true;
                 volunteerUpdateObject.availability.fri=true;
               }
@@ -91,7 +91,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.sat=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.sat=true;
                  volunteerUpdateObject.availability.sat=true;
               }
@@ -101,12 +101,12 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.sun=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.sun=true;
                  volunteerUpdateObject.availability.sun=true;
               }
     */
-    ////end 
+    ////end
     // alert(JSON.stringify(volunteerUpdateObject));
     if (!volunteerUpdateObject.availability.mon && !volunteerUpdateObject.availability.tue && !volunteerUpdateObject.availability.wed && !volunteerUpdateObject.availability.thu && !volunteerUpdateObject.availability.fri && !volunteerUpdateObject.availability.sat && !volunteerUpdateObject.availability.sun) {
         kony.ui.Alert({
@@ -207,7 +207,7 @@ function submitUpdateInfo() {
         } else if (!volunteerUpdateObject.username) {
             validationAlert("Missing Details", "Please Enter User Name*");
             return false;
-        } else if (!volunteerUpdateObject.companyName) {
+        } else if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
             validationAlert("Missing Details", "Please Enter Company Name*");
             return false;
         } else if (!volunteerUpdateObject.role) {
@@ -261,7 +261,7 @@ function submitUpdateInfo() {
         validationAlert("Password Error", "Passwords must have at least 1 capital letter");
         return false;
     }
-    //alert(gblscheduleArr.length); 
+    //alert(gblscheduleArr.length);
     if (gblscheduleArr.length == "0.0") {
         alert("enter atleast 1 schedule");
         return false;
@@ -281,7 +281,7 @@ function validateUpdateInfo() {
     if (!volunteerUpdateObject.username) {
         return false;
     }
-    if (!volunteerUpdateObject.companyName) {
+    if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
         return false;
     }
     if (!volunteerUpdateObject.role) {
@@ -358,7 +358,7 @@ function initializeMobileFabricForMyProfileVol() {
 }
 
 function initializeMobileFabricForMyProfileVolSuccess(response) {
-    // alert("in2");        
+    // alert("in2");
     kony.print(" ********** Entering into initializeMobileFabricSuccess ********** ");
     // alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
     mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized = true;
@@ -442,14 +442,14 @@ function saveVolunteerProfilew() {
         }
         ///days start
         /*
-                  
+
         if(volunteerMyProfilePage.volunteerMyProfileMondayButton.skin=="jumpStartGrayButton90")
           {
             volunteerRegObjectVol.availability.mon=false;
             volunteerUpdateObject.availability.mon=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.mon=true;
               volunteerUpdateObject.availability.mon=true;
             }
@@ -459,7 +459,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.tue=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.tue=true;
               volunteerUpdateObject.availability.tue=true;
             }
@@ -469,7 +469,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.wed=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.wed=true;
               volunteerUpdateObject.availability.wed=true;
             }
@@ -479,7 +479,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.thu=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.thu=true;
                volunteerUpdateObject.availability.thu=true;
             }
@@ -489,7 +489,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.fri=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.fri=true;
               volunteerUpdateObject.availability.fri=true;
             }
@@ -499,7 +499,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.sat=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sat=true;
                volunteerUpdateObject.availability.sat=true;
             }
@@ -509,10 +509,10 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.sun=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sun=true;
                volunteerUpdateObject.availability.sun=true;
-            }   
+            }
                */
         var availabilityString = "";
         if (volunteerRegObjectVol.availability.mon) {
@@ -551,7 +551,7 @@ function saveVolunteerProfilew() {
             // var schedule =[{"availabilityId": availableId,  "days":gblDays,"fromTime":frmT,"toTime":toTime}];// [{"days":"Mon","fromTime":"9 AM","toTime":"10 "}];
         }
         ///end schedule
-        var skills = arrData; // [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}]; 
+        var skills = arrData; // [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}];
         //start skilll
         //end skill
         // alert("in6666");

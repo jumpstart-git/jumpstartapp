@@ -6,7 +6,7 @@ mobileFabricConfigurationForVolunteerUnCheckBox = {
         service: "checkBoxservice",
         operations: ["checkBox"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -138,7 +138,7 @@ function getCheckBoxFunctionSuccessCallback77(dataCheckBoxFunction16) {
 }
 
 function getCheckBoxFunctionErrorCallback77(error) {
-    //alert("inside error callback");             
+    //alert("inside error callback");
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
@@ -146,14 +146,15 @@ function getCheckBoxFunctionErrorCallback77(error) {
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
     kony.ui.Alert({
         //D022: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
-        //D022: Changed back to ALERT_TYPE_INFO as the ALRT_TYPE_CONFIRMATION didn't have any effect when 'Canceled' button is pressed.
-        "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertType": constants.ALERT_TYPE_CONFIRMATION,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Confirmation",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "No",
         //D022: Changed message from "Email notifications disabled" to "You have disabled email notification"
         "message": "You have disabled email notification",
-        "alertHandler": "null"
+        "alertHandler": null
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

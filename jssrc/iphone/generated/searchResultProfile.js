@@ -9,7 +9,7 @@ function addWidgetssearchResultProfile() {
         "height": "100%",
         "horizontalScrollIndicator": true,
         "id": "volunteerProfileContainer",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "pagingEnabled": false,
@@ -1392,7 +1392,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileAboutTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "About",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1456,7 +1456,7 @@ function addWidgetssearchResultProfile() {
         "id": "AdressLbl",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Contact Details",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -1635,7 +1635,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileBusinessActivityTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Business Activity",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1683,7 +1683,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileAffiliationsTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Professional Affiliations",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1731,7 +1731,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileReachTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Business Reach",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -3406,7 +3406,7 @@ function addWidgetssearchResultProfile() {
         "onSelection": AS_ListBox_40e6cfb5bbb54334bacd88300920c324,
         "selectedKey": "lb1",
         "selectedKeyValue": ["lb1", "Select"],
-        "skin": "CopyslListBox0c3af8383afd84a",
+        "skin": "jumpStartDropDown100",
         "top": "3dp",
         "width": "100%",
         "zIndex": 1
