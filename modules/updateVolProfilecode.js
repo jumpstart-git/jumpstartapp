@@ -226,7 +226,17 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Missing Details", "Please Enter Company Name*");
     return false;
   }
-
+   
+  else if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
+    validationAlert("Missing Details", "Please Enter Work Details*");
+    return false;
+  }
+    
+  else if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe==="" || volunteerUpdateObject.aboutMe===" ") {
+    validationAlert("Missing Details", "Please Enter About Me*");
+    return false;
+  }
+    
   else if (!volunteerUpdateObject.role) {
     validationAlert("Missing Details", "Please Enter Role*");
     return false;
@@ -314,9 +324,19 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="") {
     return false;
   }
+  
+  if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
+    return false;
+  }
+  
+  if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe==="" || volunteerUpdateObject.aboutMe===" ") {
+    return false;
+  }
+  
   if (!volunteerUpdateObject.role) {
     return false;
   }
+  
    if (!volunteerUpdateObject.businessUnit) {
     return false;
   }
@@ -688,13 +708,15 @@ function saveVolunteerProfilew()
                     var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
                   if(abotme==null||abotme=="null"||abotme=="")
                     {
-                      abotme=" ";
+                      //abotme=" ";
+                      abotme = ""
                     }
                   dataforVolProfile["aboutMe"]=abotme;
                   var work=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
                    if(work==null||work=="null"||work=="")
                     {
-                      work=" ";
+                      //work=" ";
+                      work = "";
                     }
                   dataforVolProfile["workDetails"]=work;
                   //
