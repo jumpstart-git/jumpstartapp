@@ -57,19 +57,6 @@
       "y": 0
     }
   },
-  "iphone": {
-    "background_color": "ebebebff",
-    "bg_type": "one",
-    "font_size": 110,
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "background_color": "ebebebff",
