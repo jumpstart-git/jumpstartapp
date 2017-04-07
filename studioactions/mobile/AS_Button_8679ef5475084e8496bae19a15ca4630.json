@@ -17,7 +17,7 @@
             "id": "SHOW_ALERT__9d760812b3114c0599b4a30364b41319",
             "type": "SHOW_ALERT",
             "alertType": "constants.ALERT_TYPE_CONFIRMATION",
-            "alertTitle": "Confirm",
+            "alertTitle": "Confirmation",
             "yesLabel": "Yes",
             "noLabel": "No",
             "alertIcon": "lohourindicator.PNG",
