@@ -388,13 +388,13 @@ function getLoginSuccessCallback(gblLoginData1) {
 
             if (companyName!="HPE" && companyName!="SupplyNation" && companyName!="CBA" && companyName!="DXC")
             {
-              alert("Illegal Company!");
+              alert("Illegal Company! This is for test purposes");
               kony.application.dismissLoadingScreen();
               return
             }
             else
             {
-                alert("Legit Company!");
+                alert("Legit Company! This is for test purposes");
             }
             //End of D058
 
