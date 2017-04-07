@@ -14,7 +14,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -53,7 +53,7 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
