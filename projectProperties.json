@@ -8,7 +8,7 @@
     "apppackagekey": "",
     "wap_android400_fontsize": "12",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false

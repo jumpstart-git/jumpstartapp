@@ -210,59 +210,59 @@ function validateVolunteerHoursUpdate() {
   var isUpdateInfoComplete = validateUpdateInfo();
   if (!isUpdateInfoComplete) {
     if (!volunteerUpdateObject.firstName) {
-         validationAlert("Missing Details", "Please Enter First Name*");
+         validationAlert("Action Required", "Please Enter First Name*");
     return false;
   }
   if (!volunteerUpdateObject.lastName) {
-     validationAlert("Missing Details", "Please Enter Last Name*");
+     validationAlert("Action Required", "Please Enter Last Name*");
     return false;
   }
   else if (!volunteerUpdateObject.username) {
-    validationAlert("Missing Details", "Please Enter User Name*");
+    validationAlert("Action Required", "Please Enter User Name*");
     return false;
   }
 
   else if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="") {
-    validationAlert("Missing Details", "Please Enter Company Name*");
+    validationAlert("Action Required", "Please Enter Company Name*");
     return false;
   }
-  
+
     //Start of defect D037
   else if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
-    validationAlert("Missing Details", "Please Enter Work Details*");
+    validationAlert("Action Required", "Please Enter Work Details*");
     return false;
   }
-    
+
   else if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe==="" || volunteerUpdateObject.aboutMe===" ") {
-    validationAlert("Missing Details", "Please Enter About Me*");
+    validationAlert("Action Required", "Please Enter About Me*");
     return false;
   }
     //End of defect D037
   else if (!volunteerUpdateObject.role) {
-    validationAlert("Missing Details", "Please Enter Role*");
+    validationAlert("Action Required", "Please Enter Role*");
     return false;
   }
   else  if (!volunteerUpdateObject.businessUnit) {
-     validationAlert("Missing Details", "Please Enter Business Unit*");
+     validationAlert("Action Required", "Please Enter Business Unit*");
     return false;
   }
   else  if (!volunteerUpdateObject.state || volunteerUpdateObject.state==="") {
-     validationAlert("Missing Details", "Please Select State*");
+     validationAlert("Action Required", "Please Select State*");
     return false;
   }
   else  if (!volunteerUpdateObject.address) {
-     validationAlert("Missing Details", "Please Enter Address*");
+     validationAlert("Action Required", "Please Enter Address*");
     return false;
   }
   else  if (!volunteerUpdateObject.contactNumber) {
-     validationAlert("Missing Details", "Please Enter Contact Number*");
+     validationAlert("Action Required", "Please Enter Contact Number*");
     return false;
   }
    else if (!volunteerUpdateObject.emailAddress) {
-     validationAlert("Missing Details", "Please Enter Email*");
+     validationAlert("Action Required", "Please Enter Email*");
     return false;
   }
-  //  validationAlert("Missing Details", "Please fill up all Mandatory Fields*"+JSON.stringify(volunteerUpdateObject));
+  //  validationAlert("Action Required", "Please fill up all Mandatory Fields*"+JSON.stringify(volunteerUpdateObject));
     return false;
   }
 
@@ -270,31 +270,31 @@ function validateVolunteerHoursUpdate() {
 
   var hasSkillUpdate =volunteerMyProfilePage.volunteerMyProfileSkillSegment.data; //volunteerUpdateObject.skillsArray.length;
   if (!hasSkillUpdate) {
-    validationAlert("Enter a Skill", "Please add at least 1 skill");
+    validationAlert("Action Required", "Please add at least 1 skill");
     return false;
   }
   var isValidEmail = validateEmailUpdate();
   if (!isValidEmail) {
-    validationAlert("Email Address Error", "Email address entered is not valid format");
+    validationAlert("Action Required", "Email address entered is not valid format");
    return false;
   }
       var isEqualPassword = validatePasswordEqualityUpdate();
   if (!isEqualPassword) {
-    validationAlert("Password Error", "Passwords entered are not equal");
+    validationAlert("Action Required", "Passwords entered are not equal");
     return false;
   }
      var isValidPassword = validatePasswordUpdate();
   if (isValidPassword == 1) {
-    validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+    validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
     return false;
   } else if (isValidPassword == 2) {
-    validationAlert("Password Error", "Passwords must have at least 1 special character");
+    validationAlert("Action Required", "Passwords must have at least 1 special character");
     return false;
   } else if (isValidPassword == 3) {
-    validationAlert("Password Error", "Passwords must have at least 1 digit");
+    validationAlert("Action Required", "Passwords must have at least 1 digit");
     return false;
   } else if (isValidPassword == 4) {
-    validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+    validationAlert("Action Required", "Passwords must have at least 1 capital letter");
     return false;
   }
     //alert(gblscheduleArr.length);
@@ -329,7 +329,7 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails==="" || volunteerUpdateObject.workDetails===" ") {
     return false;
   }
-  
+
   if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe==="" || volunteerUpdateObject.aboutMe===" ") {
     return false;
   }
@@ -337,7 +337,7 @@ function validateVolunteerHoursUpdate() {
   if (!volunteerUpdateObject.role) {
     return false;
   }
-  
+
    if (!volunteerUpdateObject.businessUnit) {
     return false;
   }

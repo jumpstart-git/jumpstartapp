@@ -133,7 +133,7 @@ function submitPersonalInfo() {
     if (isPersonalInfoComplete) {
         registrationAccountPage.show();
     } else {
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
@@ -196,7 +196,7 @@ function validatePassword() {
 function submitAccountInfo() {
     var isAccountInfoComplete = validateAccountInfo();
     if (!isAccountInfoComplete) {
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var isValidEmail = validateEmail();
@@ -297,7 +297,7 @@ function validateProfessionalInfo() {
 function submitProfessionalInfo() {
     var isProfessionalInfoComplete = validateProfessionalInfo();
     if (!isProfessionalInfoComplete) {
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var hasSkill = volunteerRegObject.skillsArray.length;

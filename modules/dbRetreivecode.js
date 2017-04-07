@@ -6,7 +6,7 @@ function populateUpdatePage()
     {
      // mainPage.destroy();
      //alert("1"+JSON.stringify(gblForRetreive));
-var valVolunteerId=gblForRetreive.volunteerId; 
+var valVolunteerId=gblForRetreive.volunteerId;
       kony.store.setItem("volunteerId", valVolunteerId);
       var skillList=" ";
 //console.log(JSON.stringify(res.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet));
@@ -18,14 +18,14 @@ for(var i=0;i<gblForRetreive.skillSet.length;i++)
 skillList=skillList+gblForRetreive.skillSet[i].SkillsDTO.skillName+",";
 
 }//end for
-  
- skillList=skillList.slice(0,-1);    
-      
+
+ skillList=skillList.slice(0,-1);
+
       ///skills end
       //var isBusOrVol=gblForRetreive["businessOrVolunteer"];
                    //kony.store.setItem("isBusOrVol",isBusOrVol);
 var firstName=gblForRetreive.firstName;
-kony.store.setItem("volLoginName", firstName);  
+kony.store.setItem("volLoginName", firstName);
        //alert("2");
 var lastName=gblForRetreive.lastName;
 var companyName=gblForRetreive.companyName;
@@ -41,35 +41,35 @@ var emailAddress=gblForRetreive.emailAddress;
       //start
       var localArr=[];
       volunteerUpdateObject.scheduleArray=[];
-    
+
       volunteerMyProfilePage.segUpdateSchedule.widgetDataMap={
-        
+
         "lblSchedule":"lblSchedule",
         "imgclose":"imgclose",
         "availId":"availId"
-        
+
       }
      for(var i=0;i<scheduleComplete.length;i++)
       {
         var scheduleVal=scheduleComplete[i].VolunteerScheduleDTO.days+" "+scheduleComplete[i].VolunteerScheduleDTO.fromTime+" TO "+scheduleComplete[i].VolunteerScheduleDTO.toTime;
         var availId=scheduleComplete[i].VolunteerScheduleDTO.availabilityId;
-        
+
         var testObj={
           lblSchedule:scheduleVal,
           imgclose:"cross.png",
           availId:availId
-          
+
         }
         localArr.push(testObj);
-        
+
       }
       volunteerMyProfilePage.segUpdateSchedule.setData(localArr);
-      
-     
+
+
      // volunteerUpdateObject.scheduleArray=localArr;
       for(var i=0;i<localArr.length;i++)
         {
-          
+
         volunteerUpdateObject.scheduleArray.push(localArr[i]);
         }
     //  alert("arrayyyyy"+JSON.stringify(volunteerUpdateObject.scheduleArray));
@@ -84,26 +84,26 @@ var emailAddress=gblForRetreive.emailAddress;
       var days=arr[0];
       var fromTime=arr[1]+" "+arr[2];
       var toTime=arr[4]+" "+arr[5];
-      
-      
+
+
       //end
       var testObj={
-        
+
         "availabilityId":volunteerUpdateObject.scheduleArray[i].availId,
         "days":days,
         "fromTime":fromTime,
         "toTime":toTime
-        
+
       }
        scheduleArr.push(testObj);
-      
+
 
     }
       gblscheduleArr=scheduleArr;
       scheduleArr=[];
-      
-      
-      
+
+
+
       //end convert to form
       //end
 var schedule=gblForRetreive.schedule[0].VolunteerScheduleDTO.days;
@@ -115,30 +115,30 @@ var schedule=gblForRetreive.schedule[0].VolunteerScheduleDTO.days;
       var pathVal=gblForRetreive.users[0].imagePath;
      //alert("4"+pathVal);
       if(pathVal != null && pathVal != "null"){
-      
+
       var VolimgUrl="http://ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/"+pathVal;
       kony.store.setItem("imgUrlVal", VolimgUrl);
         // alert("5");
       }else{
-        
+
        kony.store.setItem("imgUrlVal", "imgseglogo.png");
         // alert("6");
       }
        var VolimageurlPath  = kony.store.getItem("imgUrlVal");
-                   
+
                  if(VolimageurlPath !=null){
                   volunteerMyProfilePage.volunteerMyProfileHeader.volunteerMyProfilePic.src=VolimageurlPath;
-                 
+
                  }
-      
-        
+
+
       kony.store.setItem("schedule", schedule);
      //  alert("7");
-   
-   
+
+
      var arr=gblForRetreive.schedule[0].VolunteerScheduleDTO.days.split(" ");
       //alert("arr"+JSON.stringify(arr));
-      
+
 for(var k=0;k<arr.length;k++)
 {
 switch(arr[k])
@@ -200,7 +200,7 @@ break;
 
 }
 
-var fromTimeFull=gblForRetreive.schedule[0].VolunteerScheduleDTO.fromTime;  
+var fromTimeFull=gblForRetreive.schedule[0].VolunteerScheduleDTO.fromTime;
       kony.store.setItem("fromTimeFull", fromTimeFull);
       // alert("8");
       var fromTimeSplitted=fromTimeFull.split(" ");
@@ -210,7 +210,7 @@ var fromTimeFull=gblForRetreive.schedule[0].VolunteerScheduleDTO.fromTime;
       //volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.selectedKey=fromTime;//fromTime;
        var mArrMer=[  ["fromTimeMeridian", fromTimeMeridian]];
      // volunteerMyProfilePage.volunteerMyProfileFromMeridiem.selectedKey=fromTimeMeridian;//fromTime;
-       var toTimeFull=gblForRetreive.schedule[0].VolunteerScheduleDTO.toTime;   
+       var toTimeFull=gblForRetreive.schedule[0].VolunteerScheduleDTO.toTime;
       kony.store.setItem("toTimeFull", toTimeFull);
       // alert("9");
                 var toTimeSplitted=toTimeFull.split(" ");
@@ -225,15 +225,15 @@ var level=gblForRetreive.level;
 var longitude=gblForRetreive.longitude;
 var latitude=gblForRetreive.latitude;
 var contactNumber=gblForRetreive.contactNumber;
-var volunteerTaskId=gblForRetreive.volunteerTaskId;     
+var volunteerTaskId=gblForRetreive.volunteerTaskId;
 var businessUnit=gblForRetreive.businessUnit;
 var userName=gblForRetreive.users[0].userName;
 var password=gblForRetreive.users[0].password;
 var userId=gblForRetreive.users[0].userId;
-//var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;   
-      kony.store.setItem("userId", userId); 
+//var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
+      kony.store.setItem("userId", userId);
       // alert("10");
-      var usersUserTypeId=gblForRetreive.users[0].usersUserTypeId; 
+      var usersUserTypeId=gblForRetreive.users[0].usersUserTypeId;
 
     if(businessUnit===null||businessUnit==="null")
                      {
@@ -263,7 +263,7 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.tex
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= "";//aboutMe;
 }
 */
-      
+
 //Carl Cheng's code
 if(workDetails === null) {
   workDetails = "";
@@ -285,8 +285,8 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.tex
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text= contactNumber;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text= emailAddress;//" ";//emailAddress;
 
-      
-      
+
+
       var skillSegmentData=[];
        for (var i = 0; i < gblForRetreive.skillSet.length; i++) {
       var skillObj = {
@@ -297,8 +297,8 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInpu
       skillSegmentData.push(skillObj);
     }
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunteerMyProfileSkillSegment.setData(skillSegmentData);
-      
-      
+
+
       volunteerUpdateObject = {
   firstName : firstName,
   lastName : lastName,
@@ -315,7 +315,7 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunt
   contactNumber : contactNumber,
   emailAddress : emailAddress,
   skillsArray : gblForRetreive.skillSet,
-   scheduleArray:volunteerUpdateObject.scheduleArray,     
+   scheduleArray:volunteerUpdateObject.scheduleArray,
   availability : {
     mon : volunteerUpdateObject.availability.mon,
     tue : volunteerUpdateObject.availability.tue,
@@ -330,17 +330,17 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunt
     endMeridiem : toTimeMeridian
   }
 };
-      
-  
-      
+
+
+
 
   }catch(e)
     {
-      
+
       alert("the issue is "+e);
       kony.application.dismissLoadingScreen();
     }
-  
+
 
   //end big
 }
@@ -348,8 +348,8 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunt
 
 
 function loginServiceUpdate(){
-  kony.application.showLoadingScreen(null, "loading", 
-constants.LOADING_SCREEN_POSITION_FULL_SCREEN, false, true, {  
+  kony.application.showLoadingScreen(null, "loading",
+constants.LOADING_SCREEN_POSITION_FULL_SCREEN, false, true, {
 shouldShowLabelInBottom: "true", separatorHeight: 200} );
 
                 // Let's get the news type the user selected
@@ -366,7 +366,7 @@ shouldShowLabelInBottom: "true", separatorHeight: 200} );
       if (!mobileFabricConfigurationForLogin.isKonySDKObjectInitialized)
       {
                                                 initializeMobileFabricForLoginUpdate();
-            
+
       }
       else if (mobileFabricConfigurationForLogin.isKonySDKObjectInitialized)
       {
@@ -388,14 +388,14 @@ function initializeMobileFabricForLoginUpdate()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForLogin.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForLogin.konysdkObject.init(mobileFabricConfigurationForLogin.appKey,mobileFabricConfigurationForLogin.appSecret,mobileFabricConfigurationForLogin.serviceURL,initializeMobileFabricLoginSuccessUpdate,initializeMobileFabricLoginFailureUpdate);  
+                                mobileFabricConfigurationForLogin.konysdkObject.init(mobileFabricConfigurationForLogin.appKey,mobileFabricConfigurationForLogin.appSecret,mobileFabricConfigurationForLogin.serviceURL,initializeMobileFabricLoginSuccessUpdate,initializeMobileFabricLoginFailureUpdate);
        //alert("hi");
     }
                 else
                                 alert ("Network unavailable. Please check your network settings. ");
                 kony.print (" ********** Exiting out of initializeMobileFabric ********** ");
-  
- 
+
+
 }
 
 function initializeMobileFabricLoginSuccessUpdate(response)
@@ -426,7 +426,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForLogin.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -449,7 +449,7 @@ function loginMFFailure(error)
 
 function getLoginUpdate()
 {
-  
+
                // alert("inside getLogin");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -459,7 +459,7 @@ function getLoginUpdate()
                 var operationName = mobileFabricConfigurationForLogin.integrationServices[0].operations[0];
                                 var headers= {};
 
-      
+
      // alert("operation name"+operationName);
                   var dataLogin={};
                   dataLogin["userName"]=login.usernameField.text;
@@ -471,49 +471,48 @@ function getLoginUpdate()
                 mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName, headers, dataLogin, getLoginSuccessCallbackUpdate, getLoginErrorCallbackUpdate);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
- 
+
 function getLoginSuccessCallbackUpdate(gblLoginData)
 {
   try{
 // alert("inside success"+JSON.stringify(gblLoginData));
-  
-  
     if(gblLoginData!="undefined"&& gblLoginData!=undefined)
     {
          if((gblLoginData.LoginBusinessVolunteer[0]["result"]=="true"))
            {
-    
+
                 if((gblLoginData.LoginBusinessVolunteer[0]["result"]=="true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"]=="business"))
-                 { 
+                 {
 
-                
-                 }  //end of business 
-           
-    else{
-      
-      gblForRetreive=gblLoginData;
-      populateUpdatePage();
 
+                 }  //end of business
+
+                else
+                {
+
+                  gblForRetreive=gblLoginData;
+                  populateUpdatePage();
+
+                }
            }
-           }
- 
-else
-      {
-        
-        alert("Invalid credentials");
-      }
-   
-           }
-   kony.application.dismissLoadingScreen();
-  }catch(e)
-    {
-      
-      alert("the issue is "+e);
-      kony.application.dismissLoadingScreen();
+
+          else
+          {
+              alert("Invalid credentials");
+          }
+
     }
-  
+   kony.application.dismissLoadingScreen();
+
+  }
+  catch(e)
+  {
+    alert("the issue is "+e);
+    kony.application.dismissLoadingScreen();
+  }
+
 }
 
 function getLoginErrorCallbackUpdate(error)
@@ -524,4 +523,3 @@ function getLoginErrorCallbackUpdate(error)
       alert (" Network Error Please try again. "+JSON.stringify(error));
       kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-

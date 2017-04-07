@@ -16,9 +16,7 @@ function AS_Button_8679ef5475084e8496bae19a15ca4630(eventobject) {
     }
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"(Testing completed)
         "alertTitle": "Confirmation",
-        //END of D005
         "yesLabel": "Yes",
         "noLabel": "No",
         "alertIcon": "lohourindicator.PNG",
