@@ -43,7 +43,7 @@ function addWidgetsReportingPage() {
     }, {}, {});
     ReportingHdr.setDefaultUnit(kony.flex.DP);
     var ReportingLbl = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "45%",
         "centerY": "50%",
         "id": "ReportingLbl",
         "isVisible": true,

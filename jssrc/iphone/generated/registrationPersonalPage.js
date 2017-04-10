@@ -159,7 +159,7 @@ function addWidgetsregistrationPersonalPage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,

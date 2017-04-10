@@ -19,7 +19,7 @@
         0
     ],
     "_skin_": "sf16648bffa2466988371f799da3d5a3",
-    "_text_": "Done",
+    "_text_": "<u>Done</u>",
     "_top_": {
         "type": "number",
         "value": "0"
@@ -43,7 +43,7 @@
     "id": "viewRequestDone",
     "ide_onTouchStart": "AS_RichText_dc25bf7ae3f94d669fbd46ba637c72b6",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "cadbacad19004544b69c790f58a73148",
     "name": "kony.ui.RichText",
     "parent": "viewRequestModalFooter",

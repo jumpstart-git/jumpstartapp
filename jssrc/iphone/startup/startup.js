@@ -564,6 +564,8 @@ var appConfig = {
             }
         }
     },
+    svcDocRefresh: false,
+    svcDocRefreshTimeSecs: -1,
     eventTypes: ["FormEntry", "ServiceRequest", "Error", "Crash"],
     url: "https://cba-jumpstart.konycloud.com/JumpStartAbort1/MWServlet",
     secureurl: "https://cba-jumpstart.konycloud.com/JumpStartAbort1/MWServlet"

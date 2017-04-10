@@ -1,0 +1,11 @@
+{
+  "background_image": "splash.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s8f9e4e6e33d4bd0811b51046ac89b98",
+  "wType": "FlexContainer"
+}

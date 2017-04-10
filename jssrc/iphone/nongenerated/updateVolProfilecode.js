@@ -244,31 +244,31 @@ function submitUpdateInfo() {
     }
     var hasSkillUpdate = volunteerMyProfilePage.volunteerMyProfileSkillSegment.data; //volunteerUpdateObject.skillsArray.length;
     if (!hasSkillUpdate) {
-        validationAlert("Enter a Skill", "Please add at least 1 skill");
+        validationAlert("Action Required", "Please add at least 1 skill");
         return false;
     }
     var isValidEmail = validateEmailUpdate();
     if (!isValidEmail) {
-        validationAlert("Email Address Error", "Email address entered is not valid format");
+        validationAlert("Action Required", "Email address entered is not valid format");
         return false;
     }
     var isEqualPassword = validatePasswordEqualityUpdate();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Passwords entered are not equal");
+        validationAlert("Action Required", "Passwords entered are not equal");
         return false;
     }
     var isValidPassword = validatePasswordUpdate();
     if (isValidPassword == 1) {
-        validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+        validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
         return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Password Error", "Passwords must have at least 1 special character");
+        validationAlert("Action Required", "Passwords must have at least 1 special character");
         return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Password Error", "Passwords must have at least 1 digit");
+        validationAlert("Action Required", "Passwords must have at least 1 digit");
         return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+        validationAlert("Action Required", "Passwords must have at least 1 capital letter");
         return false;
     }
     //alert(gblscheduleArr.length);

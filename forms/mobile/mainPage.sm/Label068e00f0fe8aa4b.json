@@ -57,6 +57,7 @@
     "isvisible": true,
     "kuid": "b4401b01a1a141bb90e9e8ea0a9a98d0",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "acceptTaskSkillsModalHeader",
     "pf": "mainPage",
     "tooltip": "",

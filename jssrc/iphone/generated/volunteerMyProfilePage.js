@@ -372,9 +372,9 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0",
         "masterData": [
-            ["Select", "Select"],
+            ["Select", "Select from drop down list"],
             ["CBA", "CBA"],
-            ["HPE", "HPE"],
+            ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
         "onSelection": AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae,
@@ -384,7 +384,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -504,7 +504,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
-            ["Select", "Select"],
+            ["Select", "Select from drop down list"],
             ["NSW", "New South Wales"],
             ["ACT", "Australian Capital Territory"],
             ["QLD", "Queensland"],
@@ -521,7 +521,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -754,7 +754,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
         "top": 125,
-        "width": "45dp",
+        "width": "50dp",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -921,7 +921,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -988,7 +988,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -1037,7 +1037,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -1064,7 +1064,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -1091,7 +1091,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -1298,7 +1298,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "centerY": "27.32%",
         "id": "requestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyOrangeLabelText",
         "text": "Warning",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -1357,13 +1357,13 @@ function addWidgetsvolunteerMyProfilePage() {
     updateScheduleOutsideHoursFooter.setDefaultUnit(kony.flex.DP);
     var updateOutsideHoursYes = new kony.ui.Button({
         "centerX": "42%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "updateOutsideHoursYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_f43836994bb94ce2bebfdf4b6cb90080,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": 0,
         "width": "90%",

@@ -8,7 +8,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
-        "skin": "slFbox",
+        "skin": "CopyslFbox00dab66e224024d",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -189,7 +189,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_b74bf0ca08354ac482d50767e3733d00,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "33%",
+        "width": "32%",
         "zIndex": 1
     }, {}, {});
     activityNavContainer.setDefaultUnit(kony.flex.DP);
@@ -202,7 +202,8 @@ function addWidgetsmainPage() {
         "skin": "CopyslLabel06969984165bf40",
         "text": "Activity",
         "top": "0dp",
-        "width": "100%"
+        "width": "100%",
+        "zIndex": 2
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
@@ -222,7 +223,7 @@ function addWidgetsmainPage() {
         "left": "0dp",
         "skin": "jumpStartBGOrange",
         "top": "0dp",
-        "width": "90%",
+        "width": "100%",
         "zIndex": 1
     }, {}, {});
     activityIndicator.setDefaultUnit(kony.flex.DP);
@@ -293,7 +294,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_249850a57d2f494dacacd0e20957c063,
         "skin": "slFbox",
         "top": 0,
-        "width": "33%",
+        "width": "32%",
         "zIndex": 1
     }, {}, {});
     notificationNavContainer.setDefaultUnit(kony.flex.DP);
@@ -395,7 +396,7 @@ function addWidgetsmainPage() {
         "onTouchStart": AS_FlexContainer_b30e39e791ae4bbd88105a50997e9a96,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "45%",
+        "width": "37%",
         "zIndex": 1
     }, {}, {});
     recommendationNavContainer.setDefaultUnit(kony.flex.DP);
@@ -561,7 +562,7 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_61ea1e6a537b4f45a68bb7675000343f,
         "skin": "ngnyGrayLinkText",
-        "text": "<u>Refresh results</u>",
+        "text": "<u>Refresh Results</u>",
         "top": "6dp",
         "width": "50%",
         "zIndex": 1
@@ -957,7 +958,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "expand_task.png",
+        "src": "expand.png",
         "top": "0dp",
         "width": "25dp"
     }, {
@@ -1138,7 +1139,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "expand_task.png",
+        "src": "expand.png",
         "top": "0dp",
         "width": "25dp"
     }, {
@@ -1184,7 +1185,7 @@ function addWidgetsmainPage() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "myOpenTasksListContainer",
-        "isVisible": false,
+        "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
@@ -1305,7 +1306,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "expand_task.png",
+        "src": "expand.png",
         "top": "0dp",
         "width": "25dp"
     }, {
@@ -1724,7 +1725,7 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_580bb705ba4b48c78c357662dc41a0e2,
         "skin": "ngnyGrayLinkText",
-        "text": "<u>Refresh results</u>",
+        "text": "<u>Refresh Results</u>",
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -1803,7 +1804,7 @@ function addWidgetsmainPage() {
         "groupCells": false,
         "height": "475dp",
         "id": "segGroupNotification",
-        "isVisible": true,
+        "isVisible": false,
         "left": "9dp",
         "needPageIndicator": true,
         "pageOffDotImage": "pageoffdot.png",
@@ -1902,7 +1903,7 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
         "skin": "ngnyGrayLinkText",
-        "text": "<u>Refresh results</u>",
+        "text": "<u>Refresh Results</u>",
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -2002,7 +2003,7 @@ function addWidgetsmainPage() {
         "id": "myRecommendations",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "1%",
+        "left": "-100%",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
@@ -2051,7 +2052,7 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
         "skin": "ngnyGrayLinkText",
-        "text": "<u>Refresh results</u>",
+        "text": "<u>Refresh Results</u>",
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -2451,10 +2452,10 @@ function addWidgetsmainPage() {
         "clipBounds": true,
         "height": "100%",
         "id": "sideBarOverlay",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "onTouchStart": AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80,
-        "right": "-5dp",
+        "right": "0dp",
         "skin": "CopyslFbox0e592ef4af81d42",
         "top": "0dp",
         "width": "100%",
@@ -2483,7 +2484,7 @@ function addWidgetsmainPage() {
         "id": "sideBarMenu",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "0dp",
+        "left": "0%",
         "skin": "CopyslFbox0298ee6f8ba5249",
         "top": "0dp",
         "width": "100%"
@@ -2621,7 +2622,7 @@ function addWidgetsmainPage() {
     var FlexContainer08d40d9191a9344 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "40%",
+        "height": "60dp",
         "id": "FlexContainer08d40d9191a9344",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
@@ -2635,7 +2636,7 @@ function addWidgetsmainPage() {
     var emailNotificationLbl = new kony.ui.Label({
         "centerX": "39%",
         "centerY": "50%",
-        "height": "20%",
+        "height": "20dp",
         "id": "emailNotificationLbl",
         "isVisible": true,
         "left": "10%",
@@ -2658,7 +2659,7 @@ function addWidgetsmainPage() {
         "height": "55%",
         "id": "checkList",
         "isVisible": true,
-        "left": "5%",
+        "left": "35dp",
         "masterData": [
             ["cbg1", "."]
         ],
@@ -2667,9 +2668,10 @@ function addWidgetsmainPage() {
         "minHeight": "40%",
         "minWidth": "35%",
         "onSelection": AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518,
+        "right": "2dp",
         "skin": "CopyslCheckBoxGroup0306443d20b8149",
         "top": "0%",
-        "zIndex": 1
+        "zIndex": 2
     }, {
         "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_HORIZONTAL,
         "padding": [2, 0, 0, 1],
@@ -2735,6 +2737,276 @@ function addWidgetsmainPage() {
     sideBarFooter.add(sideBarLogout, sideBarNeedHelp);
     sideBarMenu.add(sideBarHeader, sideBarBody, sideBarFooter);
     sideBarMenuContainer.add(sideBarMenu);
+    var CopysideBarMenuContainer0d4dede9dc5f844 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopysideBarMenuContainer0d4dede9dc5f844",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "-90%",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "70%",
+        "zIndex": 1
+    }, {}, {});
+    CopysideBarMenuContainer0d4dede9dc5f844.setDefaultUnit(kony.flex.DP);
+    var CopysideBarMenu074d55cba625841 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopysideBarMenu074d55cba625841",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0%",
+        "skin": "CopyslFbox0298ee6f8ba5249",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    CopysideBarMenu074d55cba625841.setDefaultUnit(kony.flex.DP);
+    var CopysideBarHeader09843e4bf9ad24a = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30%",
+        "id": "CopysideBarHeader09843e4bf9ad24a",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    CopysideBarHeader09843e4bf9ad24a.setDefaultUnit(kony.flex.DP);
+    var CopysideBarCompanyLogo044fe7827b4dc4c = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "80dp",
+        "id": "CopysideBarCompanyLogo044fe7827b4dc4c",
+        "isVisible": true,
+        "skin": "slImage",
+        "src": "jumpstartlogonotext.png",
+        "top": "10%",
+        "width": "80dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var CopysideBarAppName012aa0712a08d4b = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopysideBarAppName012aa0712a08d4b",
+        "isVisible": true,
+        "skin": "CopyslLabel08def05ed32534a",
+        "text": "My JumpStart",
+        "top": "-5dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopysideBarAccountLabel044137fa594ea47 = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopysideBarAccountLabel044137fa594ea47",
+        "isVisible": true,
+        "skin": "CopyslLabel0208e1d1d2e1e4d",
+        "text": "Account",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopysideBarSeparator0ef14921323474f = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "2px",
+        "id": "CopysideBarSeparator0ef14921323474f",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0aebe370976674c",
+        "top": "20dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopysideBarHeader09843e4bf9ad24a.add(CopysideBarCompanyLogo044fe7827b4dc4c, CopysideBarAppName012aa0712a08d4b, CopysideBarAccountLabel044137fa594ea47, CopysideBarSeparator0ef14921323474f);
+    var CopysideBarBody04a9d6d56d1f148 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50%",
+        "id": "CopysideBarBody04a9d6d56d1f148",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopysideBarBody04a9d6d56d1f148.setDefaultUnit(kony.flex.DP);
+    var CopymyProfileLink0a38d9ad4f04045 = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopymyProfileLink0a38d9ad4f04045",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_RichText_b9c93e1222a5446a986df8bf26b092f7,
+        "onTouchStart": AS_RichText_c054155ae9024a5a9c2305607e76e4d8,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>My Profile</u>",
+        "top": "10dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopyReportingLink0744c88d344d64f = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopyReportingLink0744c88d344d64f",
+        "isVisible": false,
+        "left": "0dp",
+        "onTouchStart": AS_RichText_79a979c620b74de38fdedecd3e420bba,
+        "skin": "CopyslRichText0d8115a04b63b4f",
+        "text": "<u>Reporting</u>",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopyFlexContainer0fc0bd9d7cab040 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "60dp",
+        "id": "CopyFlexContainer0fc0bd9d7cab040",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "33%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopyFlexContainer0fc0bd9d7cab040.setDefaultUnit(kony.flex.DP);
+    var CopycheckList0ab0b62d95bba45 = new kony.ui.CheckBoxGroup({
+        "centerY": "50%",
+        "height": "35dp",
+        "id": "CopycheckList0ab0b62d95bba45",
+        "isVisible": true,
+        "masterData": [
+            ["cbg1", "."]
+        ],
+        "onSelection": AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c,
+        "right": "2dp",
+        "selectedKeyValues": [
+            ["cbg1", "."]
+        ],
+        "selectedKeys": ["cbg1"],
+        "skin": "CopyslCheckBoxGroup0306443d20b8149",
+        "width": "60dp",
+        "zIndex": 2
+    }, {
+        "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_VERTICAL,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "tickedImage": "checkbx.png",
+        "untickedImage": "markascomplete.png",
+        "viewType": constants.CHECKBOX_VIEW_TYPE_ONOFFSWITCH
+    });
+    var CopyemailNotificationLbl0dd337ff43bb042 = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "20dp",
+        "id": "CopyemailNotificationLbl0dd337ff43bb042",
+        "isVisible": true,
+        "left": "2%",
+        "skin": "CopyslLabel0d5ddd374374340",
+        "text": "Email notifications",
+        "width": "60%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopyFlexContainer0fc0bd9d7cab040.add(CopycheckList0ab0b62d95bba45, CopyemailNotificationLbl0dd337ff43bb042);
+    CopysideBarBody04a9d6d56d1f148.add(CopymyProfileLink0a38d9ad4f04045, CopyReportingLink0744c88d344d64f, CopyFlexContainer0fc0bd9d7cab040);
+    var CopysideBarFooter0535394d4d77344 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "20%",
+        "id": "CopysideBarFooter0535394d4d77344",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopysideBarFooter0535394d4d77344.setDefaultUnit(kony.flex.DP);
+    var CopysideBarLogout06941a0866fcf4b = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopysideBarLogout06941a0866fcf4b",
+        "isVisible": true,
+        "left": 0,
+        "onTouchStart": AS_RichText_39b50ab4a8304fbabfd147601b1115a7,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Logout</u>",
+        "top": "10dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopysideBarNeedHelp019d5ebe696a043 = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopysideBarNeedHelp019d5ebe696a043",
+        "isVisible": true,
+        "left": 0,
+        "onClick": AS_RichText_5d79aec263e54db28dfdcee5b746acff,
+        "onTouchStart": AS_RichText_4b804fcacb8f4f48aa023fa3ba60500a,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Need help?</u>",
+        "top": "30dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopysideBarFooter0535394d4d77344.add(CopysideBarLogout06941a0866fcf4b, CopysideBarNeedHelp019d5ebe696a043);
+    CopysideBarMenu074d55cba625841.add(CopysideBarHeader09843e4bf9ad24a, CopysideBarBody04a9d6d56d1f148, CopysideBarFooter0535394d4d77344);
+    CopysideBarMenuContainer0d4dede9dc5f844.add(CopysideBarMenu074d55cba625841);
     var mainPageModalsBackground = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -2895,7 +3167,7 @@ function addWidgetsmainPage() {
     cancelRequestModalContainer.add(requestModalHeader, requestModalBody, requestModalFooter);
     var sendRecommendation = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "49%",
+        "centerX": "50%",
         "centerY": "58%",
         "clipBounds": true,
         "height": "75%",
@@ -3522,7 +3794,7 @@ function addWidgetsmainPage() {
     var existingTaskListBox = new kony.ui.ListBox({
         "centerX": "50%",
         "focusSkin": "CopyslListBox070ac863d00c94c",
-        "height": "30dp",
+        "height": "32dp",
         "id": "existingTaskListBox",
         "isVisible": true,
         "left": "1dp",
@@ -3538,7 +3810,7 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 2, 0],
         "paddingInPixel": false
     }, {
         "dropDownImage": "listbox.png",
@@ -5116,10 +5388,10 @@ function addWidgetsmainPage() {
         "centerX": "50%",
         "centerY": "50%",
         "id": "viewRequestDone",
-        "isVisible": true,
+        "isVisible": false,
         "onTouchStart": AS_RichText_dc25bf7ae3f94d669fbd46ba637c72b6,
         "skin": "ngnyGrayLinkText",
-        "text": "Done",
+        "text": "<u>Done</u>",
         "top": 0,
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -6010,6 +6282,7 @@ function addWidgetsmainPage() {
         "height": "40dp",
         "id": "OpportunityCancelButton",
         "isVisible": true,
+        "left": "10dp",
         "onClick": AS_Button_6aa62b26a68f4aa4b142cb059a64f36a,
         "skin": "ngnyBackButton",
         "text": "Cancel",
@@ -6028,7 +6301,7 @@ function addWidgetsmainPage() {
     opportunityDetailsContainer.add(OpportunityHeaderContainer, EditOpprotunityBodyContainer, EditOpportunityFooterContainer);
     var TaskDetailsContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
+        "centerX": "40%",
         "centerY": "50.00%",
         "clipBounds": true,
         "height": "95%",
@@ -6479,7 +6752,7 @@ function addWidgetsmainPage() {
         "left": "33dp",
         "onClick": AS_Button_5532723bddcf4cbf8b4c7d1ff92534cd,
         "skin": "ngnyPrimaryGreenButton",
-        "text": "log hours",
+        "text": "Log Hours",
         "top": "6dp",
         "width": "90%",
         "zIndex": 1
@@ -6871,7 +7144,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel90",
-        "text": "TaskDetails",
+        "text": "Task Details",
         "top": "11dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -8586,7 +8859,7 @@ function addWidgetsmainPage() {
     });
     Footer.add(agreeBtn, RichText0857e178f83bc42);
     eligibiltyCriteriaModalContainer.add(Hdr, BodyFlex, eligibiltyCriteriFlxScroll, acceptTermsChekBoxFlex, Footer);
-    mainPage.add(mainPageBody, sideBarOverlay, sideBarMenuContainer, mainPageModalsBackground, cancelRequestModalContainer, sendRecommendation, declineRequestModalContainer, startEngagementModalContainer, acceptTaskModalContainer, acceptTaskDetailsModalContainer, acceptTaskSkillsModalContainer, acceptRequestModalContainer, viewRequestModalContainer, CreateOpportunityContainer, opportunityDetailsContainer, TaskDetailsContainer, BusinessRequestTaskDetailsModal, markAsCompleteGrayScreen, BusinessEndorsementModalGrayContainer, NotificationModalGrayContainer, eligibiltyCriteriaModalContainer);
+    mainPage.add(mainPageBody, sideBarOverlay, sideBarMenuContainer, CopysideBarMenuContainer0d4dede9dc5f844, mainPageModalsBackground, cancelRequestModalContainer, sendRecommendation, declineRequestModalContainer, startEngagementModalContainer, acceptTaskModalContainer, acceptTaskDetailsModalContainer, acceptTaskSkillsModalContainer, acceptRequestModalContainer, viewRequestModalContainer, CreateOpportunityContainer, opportunityDetailsContainer, TaskDetailsContainer, BusinessRequestTaskDetailsModal, markAsCompleteGrayScreen, BusinessEndorsementModalGrayContainer, NotificationModalGrayContainer, eligibiltyCriteriaModalContainer);
 };
 
 function mainPageGlobals() {

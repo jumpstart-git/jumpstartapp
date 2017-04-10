@@ -1778,16 +1778,16 @@ function addWidgetssearchResultProfile() {
     var requestToVolunteerModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "45%",
+        "centerY": "50%",
         "clipBounds": true,
-        "height": "85%",
+        "height": "90%",
         "id": "requestToVolunteerModal",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "jumpStartModalSkin",
         "top": "0dp",
-        "width": "85%"
+        "width": "90%"
     }, {}, {});
     requestToVolunteerModal.setDefaultUnit(kony.flex.DP);
     var requestToVolunteerHeader = new kony.ui.FlexContainer({
@@ -1888,7 +1888,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "dropDownImage": "listbox.png",
@@ -2046,16 +2046,16 @@ function addWidgetssearchResultProfile() {
     var requestAVolunteerModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "45%",
+        "centerY": "50%",
         "clipBounds": true,
-        "height": "80%",
+        "height": "90%",
         "id": "requestAVolunteerModal",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "jumpStartModalSkin",
         "top": "0dp",
-        "width": "85%"
+        "width": "90%"
     }, {}, {});
     requestAVolunteerModal.setDefaultUnit(kony.flex.DP);
     var requestAVolunteerHeader = new kony.ui.FlexContainer({
@@ -2156,7 +2156,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "dropDownImage": "listbox.png",
@@ -2404,7 +2404,7 @@ function addWidgetssearchResultProfile() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var opportunityBusinessName = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "51%",
         "centerY": "35%",
         "id": "opportunityBusinessName",
         "isVisible": true,
@@ -2590,7 +2590,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "dropDownImage": "listbox.png",
@@ -2646,7 +2646,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false,
@@ -2697,7 +2697,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false,
@@ -2747,7 +2747,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false,
@@ -2797,7 +2797,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false,
@@ -2907,6 +2907,7 @@ function addWidgetssearchResultProfile() {
     endDateFlexModal.add(endDateLbl, endDateTxtLbl);
     var commentsModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "10%",
         "centerX": "50%",
         "clipBounds": true,
         "height": "40%",
@@ -2915,7 +2916,7 @@ function addWidgetssearchResultProfile() {
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox075a01a0effe24b",
-        "top": "4dp",
+        "top": 4,
         "width": "90%",
         "zIndex": 1
     }, {}, {});
@@ -2941,6 +2942,7 @@ function addWidgetssearchResultProfile() {
         "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
         "centerX": "50%",
         "focusSkin": "CopyslTextArea0e0221f7b634049",
+        "height": "80%",
         "id": "commentsTxtBox",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
@@ -2952,7 +2954,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
         "paddingInPixel": false
     }, {

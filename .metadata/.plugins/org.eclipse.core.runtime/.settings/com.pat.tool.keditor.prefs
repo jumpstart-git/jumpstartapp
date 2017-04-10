@@ -1,0 +1,8 @@
+base_device_sdk_version=iphoneos10.2
+base_sim_sdk_version=iphonesimulator10.2
+eclipse.preferences.version=1
+enableHTMLPreviewEditor=true
+ios_sdk_version=0.2
+list_device_base_sdk=iphoneos10.2~\!~
+list_sim_base_sdk=iphonesimulator10.2~\!~appletvsimulator10.1~\!~watchsimulator3.1~\!~
+list_simulator_sdk=0.2~\!~0.1~\!~3.1~\!~

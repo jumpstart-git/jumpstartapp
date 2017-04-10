@@ -354,6 +354,131 @@ function addWidgetsregistrationSummaryPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     registrationSummaryBody.add(summUserNameTitle, summUserNameLabel, summEmailTitle, summEmailLabel, summContactNumberTitle, summContactNumberLabel, summPasswordTitle, summPasswordLabel, summAddressTitle, summAddressLabel, summCompanyTitle, summCompanyLabel, summRoleTitle, summRoleLabel, summSkillsTitle, summSkillsRT, summSkillsLabel, summAvailabilityTitle, summAvailabilityRT);
+    var CopyeligibiltyCriteriFlxScroll = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "24%",
+        "horizontalScrollIndicator": true,
+        "id": "CopyeligibiltyCriteriFlxScroll",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "slFSbox",
+        "top": "50dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopyeligibiltyCriteriFlxScroll.setDefaultUnit(kony.flex.DP);
+    var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "40%",
+        "id": "CopymangersApprovalFlex03ae7b8f29fcb45",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopymangersApprovalFlex03ae7b8f29fcb45.setDefaultUnit(kony.flex.DP);
+    var Copyheading021315f55d79a40 = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "Copyheading021315f55d79a40",
+        "isVisible": true,
+        "skin": "ngnyOrangeLabelText",
+        "text": "Manager's Approval",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopytxtLbl0866b5282a16448 = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopytxtLbl0866b5282a16448",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel09019c347377142",
+        "text": "You all need your manager's approval and consent before understanding this task",
+        "top": "40%",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopymangersApprovalFlex03ae7b8f29fcb45.add(Copyheading021315f55d79a40, CopytxtLbl0866b5282a16448);
+    var CopyLegalFlex0fd3d110dd9a947 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "58%",
+        "id": "CopyLegalFlex0fd3d110dd9a947",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onTouchMove": AS_FlexContainer_cbcedf5c957d4a0cbb7a59cda06d8abc,
+        "onTouchStart": AS_FlexContainer_5e2aa7339ea54ad2832bd61f3d203dc7,
+        "skin": "slFbox",
+        "top": "40%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopyLegalFlex0fd3d110dd9a947.setDefaultUnit(kony.flex.DP);
+    var CopyLegalLbl0328e1d8997464f = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopyLegalLbl0328e1d8997464f",
+        "isVisible": true,
+        "skin": "ngnyOrangeLabelText",
+        "text": "Policy Requirements ",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false,
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    var CopyRichText05ae4cf7d0a8c45 = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopyRichText05ae4cf7d0a8c45",
+        "isVisible": true,
+        "left": "101dp",
+        "onClick": AS_RichText_8725e935980241a59eec2dd1cde0d619,
+        "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
+        "skin": "CopyslRichText08d925a35bfe342",
+        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "top": "30dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "wrapping": constants.WIDGET_TEXT_WORD_WRAP
+    });
+    CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
+    CopyeligibiltyCriteriFlxScroll.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
     var registrationPageFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -405,7 +530,7 @@ function addWidgetsregistrationSummaryPage() {
         "showProgressIndicator": true
     });
     registrationPageFooter.add(registrationCancelButton, registrationSubmitButton);
-    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, registrationPageFooter);
+    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll, registrationPageFooter);
 };
 
 function registrationSummaryPageGlobals() {

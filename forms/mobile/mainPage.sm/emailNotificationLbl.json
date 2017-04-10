@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
+        "value": "20dp"
     },
     "_left_": {
         "type": "string",

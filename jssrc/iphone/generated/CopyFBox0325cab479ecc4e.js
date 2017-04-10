@@ -115,7 +115,7 @@ function initializeCopyFBox0325cab479ecc4e() {
         "hExpand": true,
         "margin": [1, 1, 1, 1],
         "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
+        "padding": [0, 0, 2, 0],
         "paddingInPixel": false,
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER

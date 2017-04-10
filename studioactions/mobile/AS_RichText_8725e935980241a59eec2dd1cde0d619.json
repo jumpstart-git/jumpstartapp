@@ -1,0 +1,23 @@
+{
+    "AS_RichText_8725e935980241a59eec2dd1cde0d619": {
+        "id": "AS_RichText_8725e935980241a59eec2dd1cde0d619",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "OPEN_URL_ide_onClick_314df515ea624262af44d6e17bd8c3dc",
+            "type": "OPEN_URL",
+            "url": " http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf",
+            "callbackType": null
+        }]
+    }
+}

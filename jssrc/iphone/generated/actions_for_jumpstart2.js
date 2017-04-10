@@ -808,7 +808,7 @@ function AS_Button_8679ef5475084e8496bae19a15ca4630(eventobject) {
     }
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "alertIcon": "lohourindicator.PNG",
@@ -967,7 +967,16 @@ function AS_Button_9292a5869b07452d9409477608e9427f(eventobject) {
     var skillsFromTextBox = mainPage.BusinessEndorsementModalContainer.SkillsTextBoxContainer.AnotherSkillInputField.text;
     var msg = mainPage.BusinessEndorsementModalContainer.MessageContaioner.EndorsingMessageTextArea.text;
     if (((skillsFromListBox == "Select") || (skillsFromListBox == "") || (skillsFromListBox == " ") || (skillsFromListBox == "null") || (skillsFromListBox == null)) && ((skillsFromTextBox == null) || (skillsFromTextBox == "null") || (skillsFromTextBox == ""))) {
-        alert("Please enter at least one skill to endorse");
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_INFO,
+            "alertTitle": "Action Required",
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please enter at least one skill to endorse",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
         return false;
     }
     // if(msg==null||msg=="null"||msg=="")
@@ -1544,6 +1553,12 @@ function AS_Button_dd04d69205504c73bb854cc564373e7a(eventobject) {
     }
 }
 
+function AS_Button_dda833af81ba49f6935152f022eee9d9(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_ddf18c07fa384a37a7de98362839b45d(eventobject) {
     LogHoursForms.show();
 }
@@ -1904,6 +1919,16 @@ function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     //     }
 }
 
+function AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
+    }
+}
+
 function AS_CheckBoxGroup_51154a24fa7345cfa76545f96566cb84(eventobject) {
     var checkBoxVal = mainPage.checkList.selectedKeys;
     //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
@@ -2027,7 +2052,15 @@ function AS_FlexContainer_249850a57d2f494dacacd0e20957c063(eventobject, x, y) {
     mainPage.mainPageBody.navBarScroller.endorsementsContainer.endorsementsIndicator.isVisible = false;
 }
 
+function AS_FlexContainer_258953e6a1604973803206e010c14bc8(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
+
 function AS_FlexContainer_263c73d94f7c4fb89cdab6eee512e067(eventobject, x, y) {}
+
+function AS_FlexContainer_2e42607dce0c415cad538cfff8a8c523(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
 
 function AS_FlexContainer_2fb923d1a2f14b00a019c1ffd9a698e9(eventobject, x, y) {
     if (kony.store.getItem("isBusOrVol") == "business") {
@@ -2207,6 +2240,10 @@ function AS_FlexContainer_5ac82d2dce54410d9ac7e4ff57cbc7ab(eventobject) {
 
 function AS_FlexContainer_5dc50c25822441908725817f568d0d08(eventobject, x, y) {
     return requestToVolunteerSetup.call(this);
+}
+
+function AS_FlexContainer_5e2aa7339ea54ad2832bd61f3d203dc7(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80(eventobject, x, y) {
@@ -2440,6 +2477,10 @@ function AS_FlexContainer_cae27a7e255946aba75457f13ce68dd9(eventobject, x, y) {}
 
 function AS_FlexContainer_cb3a212754044204a9fe5c94f1364cc6(eventobject, x, y) {
     volunteerPhoneNumber();
+}
+
+function AS_FlexContainer_cbcedf5c957d4a0cbb7a59cda06d8abc(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_FlexContainer_ce5e9090c68f49ae8582dc5c48f56a1f(eventobject) {}
@@ -3284,6 +3325,10 @@ function AS_RichText_19990c994176431f906e776d24643e82(eventobject, x, y) {
     mainPage.declineRequestModalContainer.declineRequestModalBody.declineRequestTextArea.text = "Good day!\n\nI have received your request but unfortunately I have to decline due to other commitments that may impact my availability.";
 }
 
+function AS_RichText_1a485b46074042bbab4157e2ca51218c(eventobject, linktext, attributes) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
+
 function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, attributes) {
     var seg = kony.store.getItem("segmentType");
     try {
@@ -3305,10 +3350,6 @@ function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, att
 }
 
 function AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea(eventobject, linktext, attributes) {}
-
-function AS_RichText_214b052e608a4321b07888227bf903d0(eventobject, x, y) {
-    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
-}
 
 function AS_RichText_25939b8e86014441b5a47e1b246b12e6(eventobject, linktext, attributes) {
     function SHOW_ALERT_ide_onClick_2dd5cb226a764f779f6f03045bd5bb9c_True() {}
@@ -3610,6 +3651,10 @@ function AS_RichText_5b2fab265c874cadaf62f39df2783b03(eventobject, x, y) {
     BusinessProfile.BusinessChangePasswordContainer.isVisible = true;
 }
 
+function AS_RichText_5d79aec263e54db28dfdcee5b746acff(eventobject, linktext, attributes) {
+    kony.application.openURL('http://www.supplynation.org.au/contactus')
+}
+
 function AS_RichText_5fe0b013d5cd4df68b5c961f47978705(eventobject, linktext, attributes) {
     //mamata
     mainPage.declineRequestModalContainer.isVisible = false;
@@ -3745,6 +3790,10 @@ function AS_RichText_7ccbb951657c4d96a2c062fde79742c4(eventobject, linktext, att
 
 function AS_RichText_7f64d44a877a4b07adafaf17065d9086(eventobject, x, y) {
     BusinessProfile.BusinessChangePasswordContainer.isVisible = false;
+}
+
+function AS_RichText_8725e935980241a59eec2dd1cde0d619(eventobject, linktext, attributes) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_RichText_875d4a300899481f8e1876ff911875a0(eventobject, linktext, attributes) {
@@ -3921,6 +3970,8 @@ function AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9(eventobject, x, y) {
 }
 
 function AS_RichText_b3895bce23c14431ae132346ea5b99c6(eventobject, linktext, attributes) {}
+
+function AS_RichText_b9c93e1222a5446a986df8bf26b092f7(eventobject, linktext, attributes) {}
 
 function AS_RichText_ba3a520a0bd6464caf7feb4297050d6d(eventobject, x, y) {
     return validateResendCode.call(this);
@@ -4137,7 +4188,7 @@ function AS_RichText_d0ca4f5592bd46868725fe2607686ba2(eventobject, x, y) {
 function AS_RichText_d6ff08f069db47e1b086860d0827fe7b(eventobject, linktext, attributes, context) {
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "message": "Do you really want to remove the brief?",

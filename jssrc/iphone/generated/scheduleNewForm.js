@@ -117,7 +117,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -183,7 +183,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -231,7 +231,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -258,7 +258,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -284,7 +284,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -400,7 +400,7 @@ function addWidgetsscheduleNewForm() {
         "showProgressIndicator": true
     });
     regScheduleScrollContainer.add(segSchedule);
-    var CopyeligibiltyCriteriFlxScroll0d5fab6ec683540 = new kony.ui.FlexScrollContainer({
+    var offManagerApprovalContainer = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
@@ -408,24 +408,24 @@ function addWidgetsscheduleNewForm() {
         "enableScrolling": true,
         "height": "24%",
         "horizontalScrollIndicator": true,
-        "id": "CopyeligibiltyCriteriFlxScroll0d5fab6ec683540",
-        "isVisible": true,
+        "id": "offManagerApprovalContainer",
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
+        "left": "10dp",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
-        "top": "68%",
+        "top": "78%",
         "verticalScrollIndicator": true,
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyeligibiltyCriteriFlxScroll0d5fab6ec683540.setDefaultUnit(kony.flex.DP);
-    var CopymangersApprovalFlex02c9e067a552740 = new kony.ui.FlexContainer({
+    offManagerApprovalContainer.setDefaultUnit(kony.flex.DP);
+    var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "40%",
-        "id": "CopymangersApprovalFlex02c9e067a552740",
+        "id": "CopymangersApprovalFlex03ae7b8f29fcb45",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
@@ -434,10 +434,10 @@ function addWidgetsscheduleNewForm() {
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopymangersApprovalFlex02c9e067a552740.setDefaultUnit(kony.flex.DP);
-    var Copyheading0b0ead1ad4d8b4b = new kony.ui.Label({
+    CopymangersApprovalFlex03ae7b8f29fcb45.setDefaultUnit(kony.flex.DP);
+    var Copyheading021315f55d79a40 = new kony.ui.Label({
         "centerX": "50%",
-        "id": "Copyheading0b0ead1ad4d8b4b",
+        "id": "Copyheading021315f55d79a40",
         "isVisible": true,
         "skin": "ngnyOrangeLabelText",
         "text": "Manager's Approval",
@@ -452,9 +452,9 @@ function addWidgetsscheduleNewForm() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    var CopytxtLbl0a256207b5c874a = new kony.ui.Label({
+    var CopytxtLbl0866b5282a16448 = new kony.ui.Label({
         "centerX": "50%",
-        "id": "CopytxtLbl0a256207b5c874a",
+        "id": "CopytxtLbl0866b5282a16448",
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
@@ -470,26 +470,26 @@ function addWidgetsscheduleNewForm() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    CopymangersApprovalFlex02c9e067a552740.add(Copyheading0b0ead1ad4d8b4b, CopytxtLbl0a256207b5c874a);
-    var CopyLegalFlex004dd3040d80e4d = new kony.ui.FlexContainer({
+    CopymangersApprovalFlex03ae7b8f29fcb45.add(Copyheading021315f55d79a40, CopytxtLbl0866b5282a16448);
+    var CopyLegalFlex0fd3d110dd9a947 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "58%",
-        "id": "CopyLegalFlex004dd3040d80e4d",
+        "id": "CopyLegalFlex0fd3d110dd9a947",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "onTouchMove": AS_FlexContainer_3fdb3c69d82645f4acec633fedc7f5c0,
-        "onTouchStart": AS_FlexContainer_93f6a05cc0de41daaa7ac5223ea25245,
+        "onTouchMove": AS_FlexContainer_258953e6a1604973803206e010c14bc8,
+        "onTouchStart": AS_FlexContainer_2e42607dce0c415cad538cfff8a8c523,
         "skin": "slFbox",
         "top": "40%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyLegalFlex004dd3040d80e4d.setDefaultUnit(kony.flex.DP);
-    var CopyLegalLbl005a3546cf9374c = new kony.ui.Label({
+    CopyLegalFlex0fd3d110dd9a947.setDefaultUnit(kony.flex.DP);
+    var CopyLegalLbl0328e1d8997464f = new kony.ui.Label({
         "centerX": "50%",
-        "id": "CopyLegalLbl005a3546cf9374c",
+        "id": "CopyLegalLbl0328e1d8997464f",
         "isVisible": true,
         "skin": "ngnyOrangeLabelText",
         "text": "Policy Requirements ",
@@ -504,12 +504,12 @@ function addWidgetsscheduleNewForm() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    var RichText09080837e1f084e = new kony.ui.RichText({
+    var CopyRichText05ae4cf7d0a8c45 = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "RichText09080837e1f084e",
+        "id": "CopyRichText05ae4cf7d0a8c45",
         "isVisible": true,
         "left": "101dp",
-        "onClick": AS_RichText_6101c7fd29864c16b986f136358074eb,
+        "onClick": AS_RichText_1a485b46074042bbab4157e2ca51218c,
         "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
         "skin": "CopyslRichText08d925a35bfe342",
         "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
@@ -523,8 +523,8 @@ function addWidgetsscheduleNewForm() {
     }, {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    CopyLegalFlex004dd3040d80e4d.add(CopyLegalLbl005a3546cf9374c, RichText09080837e1f084e);
-    CopyeligibiltyCriteriFlxScroll0d5fab6ec683540.add(CopymangersApprovalFlex02c9e067a552740, CopyLegalFlex004dd3040d80e4d);
+    CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
+    offManagerApprovalContainer.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
     var outsideScheduletime = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -734,7 +734,7 @@ function addWidgetsscheduleNewForm() {
         "showProgressIndicator": true
     });
     regScheduleFooter.add(backBtn, ContinueBtn);
-    scheduleNewForm.add(regScheduleHdrContainer, regScheduleDatesContainer, regScheduleScrollContainer, CopyeligibiltyCriteriFlxScroll0d5fab6ec683540, outsideScheduletime, regScheduleFooter);
+    scheduleNewForm.add(regScheduleHdrContainer, regScheduleDatesContainer, regScheduleScrollContainer, offManagerApprovalContainer, outsideScheduletime, regScheduleFooter);
 };
 
 function scheduleNewFormGlobals() {

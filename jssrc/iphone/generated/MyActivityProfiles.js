@@ -674,6 +674,7 @@ function addWidgetsMyActivityProfiles() {
     }, {}, {});
     volEmailTxtFlexx.setDefaultUnit(kony.flex.DP);
     var volEmailTxtt = new kony.ui.RichText({
+        "height": "30dp",
         "id": "volEmailTxtt",
         "isVisible": true,
         "left": "0dp",
@@ -690,22 +691,7 @@ function addWidgetsMyActivityProfiles() {
     });
     volEmailTxtFlexx.add(volEmailTxtt);
     volunteerEmailFlex.add(volunteerEmailImgFlex, volEmailTxtFlexx);
-    var FlexContainer0ce4cddc1da1d47 = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "clipBounds": true,
-        "height": "3dp",
-        "id": "FlexContainer0ce4cddc1da1d47",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "left": "16dp",
-        "skin": "slFbox",
-        "top": "0dp",
-        "width": "1%",
-        "zIndex": 1
-    }, {}, {});
-    FlexContainer0ce4cddc1da1d47.setDefaultUnit(kony.flex.DP);
-    FlexContainer0ce4cddc1da1d47.add();
-    volProfileContactContainer.add(contactAdressLbl, volContactNumflex, volunteerEmailFlex, FlexContainer0ce4cddc1da1d47);
+    volProfileContactContainer.add(contactAdressLbl, volContactNumflex, volunteerEmailFlex);
     var CopyvolunteerProfileContactContainer0809353de6aee44 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "centerX": "50%",
@@ -1658,6 +1644,7 @@ function addWidgetsMyActivityProfiles() {
     }, {}, {});
     emailIdContainerr.setDefaultUnit(kony.flex.DP);
     var emailTextAreaa = new kony.ui.RichText({
+        "height": "30dp",
         "id": "emailTextAreaa",
         "isVisible": true,
         "left": "0dp",

@@ -125,7 +125,7 @@ function getEmailSuccesssscallback(gblEmailCheckResult) {
     if (gblEmailCheckResult.isValid == "true") {
         submitAccountInfo();
     } else {
-        validationAlert("Email Id already exist.Please change");
+        validationAlert("A user with this email already exists.");
     }
     kony.application.dismissLoadingScreen();
 }

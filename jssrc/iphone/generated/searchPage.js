@@ -72,6 +72,7 @@ function addWidgetssearchPage() {
         "right": "17.66%",
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
+        "text": "Search",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "width": "69.84%",
         "zIndex": 1
@@ -82,7 +83,7 @@ function addWidgetssearchPage() {
         "paddingInPixel": false
     }, {
         "autoCorrect": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DONE,
+        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_SEARCH,
         "showClearButton": true,
         "showCloseButton": true,
         "showProgressIndicator": true,
@@ -327,7 +328,7 @@ function addWidgetssearchPage() {
         "id": "BusinessContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "5dp",
+        "left": "15dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -372,7 +373,7 @@ function addWidgetssearchPage() {
     BusinessContainer.add(businessIndicator, businessBtn1);
     var opportunitiesFlex = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
+        "centerX": "60%",
         "clipBounds": true,
         "height": "100%",
         "id": "opportunitiesFlex",
@@ -428,7 +429,7 @@ function addWidgetssearchPage() {
         "height": "70%",
         "id": "sortBtn",
         "isVisible": true,
-        "left": "75%",
+        "left": "85%",
         "onClick": AS_Button_9261e4378f044382b1cda53ed10bebae,
         "skin": "CopyslButtonGlossBlue03803f6ea3ee745",
         "text": "Sort",

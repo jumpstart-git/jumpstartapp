@@ -17,7 +17,7 @@
         1
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
@@ -61,6 +61,7 @@
     "isvisible": true,
     "kuid": "ae70add423a149b7a395329b674fe817",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "TaskDetailsHdrFlex",
     "pf": "searchResultProfile",
     "tooltip": "",

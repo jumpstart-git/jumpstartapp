@@ -19,7 +19,7 @@
     "_padding_": [
         0,
         0,
-        0,
+        2,
         0
     ],
     "_skin_": "s890309f8a3444a0ac3af25ef107b758",
@@ -59,6 +59,7 @@
     "isvisible": false,
     "kuid": "bd062ec41f2145feb8afc6f7b0730cfe",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "endorsementContactDetails",
     "pf": "CopyFBox0325cab479ecc4e",
     "tooltip": "",

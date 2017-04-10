@@ -133,14 +133,6 @@ function setvolSendReview() {
         sendReview["detail"] = mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
         //alert("msg:"+JSON.stringify(sendReview));
         //  alert("actual string=="+mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text);
-        mobileFabricConfigurationForVolReview.integrationObj.invokeOperation(operationName, headers, sendReview, getvolSendReviewSuccessCallback, getVolsendReviewErrorCallback);
-    } else alert("Network unavailable. Please check your network settings. ");
-}
-
-function getvolSendReviewSuccessCallback(sendReview1) {
-    //alert("inside success"+JSON.stringify(sendReview1));
-    if (sendReview1 != "undefined" && sendReview1 != undefined) {
-        // alert("InSide"+JSON.stringify(sendReview1));
         //D019: Adding Kony Info Alert
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
@@ -154,6 +146,15 @@ function getvolSendReviewSuccessCallback(sendReview1) {
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
+        //D0019: End of Fix Addition
+        mobileFabricConfigurationForVolReview.integrationObj.invokeOperation(operationName, headers, sendReview, getvolSendReviewSuccessCallback, getVolsendReviewErrorCallback);
+    } else alert("Network unavailable. Please check your network settings. ");
+}
+
+function getvolSendReviewSuccessCallback(sendReview1) {
+    //alert("inside success"+JSON.stringify(sendReview1));
+    if (sendReview1 != "undefined" && sendReview1 != undefined) {
+        // alert("InSide"+JSON.stringify(sendReview1));
     }
 }
 

@@ -12,7 +12,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "35dp"
     },
     "_margin_": [
         0,
@@ -26,10 +26,18 @@
         0,
         1
     ],
+    "_right_": {
+        "type": "string",
+        "value": "2dp"
+    },
     "_skin_": "s1748da9198447e2b077d0ac549ff1c8",
     "_top_": {
         "type": "string",
         "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60dp"
     },
     "_width_": "31.25%",
     "canUpdateUI": true,
@@ -100,5 +108,5 @@
             "enableCache": true
         }
     },
-    "zindex": 1
+    "zindex": 2
 }

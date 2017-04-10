@@ -135,7 +135,7 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
             "noLabel": "No",
             //D027: Changed message value from "Profile Uploaded Successfully" to "Profile logo was successfully updated"
             "message": "Profile logo was successfully updated",
-            "alertHandler": null
+            "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });

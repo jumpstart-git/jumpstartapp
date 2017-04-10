@@ -46,7 +46,7 @@
     "context": {
         "channel": "mobile",
         "formID": "LogHoursForms",
-        "platform": "android",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },

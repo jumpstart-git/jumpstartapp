@@ -186,7 +186,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel03343253918d34f",
-        "text": "working hours",
+        "text": "Working Hours",
         "top": "2dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -238,7 +238,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel03343253918d34f",
-        "text": "non-working hours",
+        "text": "Non-working Hours",
         "top": "2dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1

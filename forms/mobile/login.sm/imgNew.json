@@ -3,6 +3,10 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_base64_": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_height_": {
         "type": "string",
         "value": "100%"
@@ -28,7 +32,7 @@
     "_src_": "supplynationimgs_new.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "1dp"
     },
     "_width_": {
         "type": "string",

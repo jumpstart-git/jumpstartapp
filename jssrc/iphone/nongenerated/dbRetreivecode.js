@@ -184,7 +184,7 @@ function populateUpdatePage() {
         var userName = gblForRetreive.users[0].userName;
         var password = gblForRetreive.users[0].password;
         var userId = gblForRetreive.users[0].userId;
-        //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;   
+        //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
         kony.store.setItem("userId", userId);
         // alert("10");
         var usersUserTypeId = gblForRetreive.users[0].usersUserTypeId;
@@ -392,7 +392,7 @@ function getLoginSuccessCallbackUpdate(gblLoginData) {
         // alert("inside success"+JSON.stringify(gblLoginData));
         if (gblLoginData != "undefined" && gblLoginData != undefined) {
             if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true")) {
-                if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"] == "business")) {} //end of business 
+                if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"] == "business")) {} //end of business
                 else {
                     gblForRetreive = gblLoginData;
                     populateUpdatePage();

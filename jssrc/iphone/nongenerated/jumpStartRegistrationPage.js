@@ -201,26 +201,26 @@ function submitAccountInfo() {
     }
     var isValidEmail = validateEmail();
     if (!isValidEmail) {
-        validationAlert("Email address error", "Please check the format of the email address");
+        validationAlert("Warning", "Please check the format of the email address");
         return false;
     }
     var isEqualPassword = validatePasswordEquality();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Password entered does not match");
+        validationAlert("Warning", "Password entered does not match");
         return false;
     }
     var isValidPassword = validatePassword();
     if (isValidPassword == 1) {
-        validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+        validationAlert("Warning", "Passwords must have at least " + userValidation.passwordLength + " characters");
         return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Password Error", "Passwords must have at least 1 special character");
+        validationAlert("Warning", "Passwords must have at least 1 special character");
         return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Password Error", "Passwords must have at least 1 digit");
+        validationAlert("Warning", "Passwords must have at least 1 digit");
         return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+        validationAlert("Warning", "Passwords must have at least 1 capital letter");
         return false;
     }
     if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5) {
@@ -263,7 +263,7 @@ function addNewSkill() {
     } else {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Missing Skill Name",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "Please enter a skill name",
             "alertHandler": null
@@ -302,7 +302,7 @@ function submitProfessionalInfo() {
     }
     var hasSkill = volunteerRegObject.skillsArray.length;
     if (!hasSkill) {
-        validationAlert("Enter a skill", "Please add at least 1 skill");
+        validationAlert("Action Required", "Please add at least 1 skill");
         return false;
     }
     if (isProfessionalInfoComplete && hasSkill) {
@@ -425,7 +425,7 @@ function validateAvailability() {
     if (!volunteerRegObject.availability.mon && !volunteerRegObject.availability.tue && !volunteerRegObject.availability.wed && !volunteerRegObject.availability.thu && !volunteerRegObject.availability.fri && !volunteerRegObject.availability.sat && !volunteerRegObject.availability.sun) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Please select a day",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "At least one day of the week must be selected.",
             "alertHandler": null
@@ -453,7 +453,7 @@ function hoursAgreeAndContinue() {
     if (scheduleVal) {
         var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
         if (indexOfSchedule != -1) {
-            alert("this schedule already exists");
+            validationAlert("Warning", "This schedule already exists!");
             return false;
             //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
         }
@@ -469,7 +469,7 @@ function startLessThanEnd() {
     if (start >= end) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Incorrect Time",
+            "alertTitle": "Warning",
             "yesLabel": "OK",
             "message": "Start time must be less than end time.",
             "alertHandler": null
@@ -957,7 +957,7 @@ function getRegisterSuccessCallback(gblSave) {
             kony.application.dismissLoadingScreen();
         } //inner if
         else {
-            alert("This username already exists.Please change your email");
+            validationAlert("Warning", "This username already exists.Please change your email");
         }
     } //outer if
 }
