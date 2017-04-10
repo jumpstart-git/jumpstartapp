@@ -370,12 +370,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "volunteerMyProfileCompanyInput",
         "isVisible": true,
         "left": "0",
+        //Start of D058
         "masterData": [
             ["Select", "Select from drop down menu"],
             ["CBA", "CBA"],
-            ["HPE", "HPE"],
+            ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
+        //End of D058
         "onSelection": AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae,
         "skin": "CopyslListBox008256acffc1a4b",
         "top": "0dp",
