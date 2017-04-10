@@ -67,6 +67,7 @@
     "channel": "mobile",
     "createdOn": 1477902249179,
     "noteGuid": "fe4daefd-89bc-42fe-9216-a37977611c5d",
+<<<<<<< HEAD
     "synced_on": "2017-04-10T00:32:33.411Z",
     "requirements": {
         "660f2ce584d44ab7bfd2137b797089f0": {
@@ -86,4 +87,7 @@
             }
         }
     }
+=======
+    "synced_on": "2017-04-10T05:42:21.333Z"
+>>>>>>> 42d15999640cd1d2468ad586ac5b9b3fb0a9794b
 }

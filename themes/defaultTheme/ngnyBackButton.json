@@ -1,4 +1,14 @@
 {
+  "android": {
+    "isForked": true,
+    "text_shadow": {
+      "br": 0,
+      "color": "000000",
+      "nm": 0,
+      "x": 0,
+      "y": 0
+    }
+  },
   "background_color": "d4d4d4ff",
   "bg_type": "one",
   "border_color": "ffffffff",
@@ -26,7 +36,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -51,20 +61,17 @@
     "isForked": true,
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
     }
   },
   "iphone": {
-    "background_color": "ebebebff",
-    "bg_type": "one",
-    "font_size": 110,
     "isForked": true,
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -99,7 +106,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -132,7 +139,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -165,7 +172,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -198,7 +205,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -231,7 +238,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -264,7 +271,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -297,7 +304,7 @@
     },
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0
@@ -316,7 +323,7 @@
     "isForked": true,
     "text_shadow": {
       "br": 0,
-      "color": "000000ff",
+      "color": "000000",
       "nm": 0,
       "x": 0,
       "y": 0

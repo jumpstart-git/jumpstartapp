@@ -8,7 +8,7 @@
     "apppackagekey": "",
     "wap_android400_fontsize": "12",
     "nativeContainerProperties": {
-        "isModified": false,
+        "isModified": true,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -198,6 +198,7 @@
     "statusBarHidden": "false",
     "wap_bb360_fontsize": "12",
     "defaultSkins": "{\"CheckBoxGroup\":{\"skin\":\"se70ad226dc44bdfabed0ea9abcb75df\",\"focusSkin\":null}}",
+    "export.type": "studioviz",
     "wap_spawindowstab_fontsize": "12",
     "isNewAppWithRespectToAndroidPackageName": "",
     "accountCloudGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",

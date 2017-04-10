@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
@@ -38,7 +38,8 @@
     "children": [
         "usernameField",
         "passwordField",
-        "signInButton"
+        "signInButton",
+        "Button076093b19f13149"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -27,7 +27,11 @@
     "_skin_": "s015494b912d485cae4fa930c5af4def",
     "_top_": {
         "type": "string",
+<<<<<<< HEAD
         "value": "60dp"
+=======
+        "value": "5%"
+>>>>>>> 42d15999640cd1d2468ad586ac5b9b3fb0a9794b
     },
     "_width_": {
         "type": "string",

@@ -243,7 +243,7 @@ function expandCollapseGroup(group, groupName) {
   if ((mainPage[container].isVisible === true)) {
     mainPage[container].isVisible = false;
     
-    transExpandCollapse.rotate(90);
+    transExpandCollapse.rotate(0);
     mainPage[image].animate(
   
     kony.ui.createAnimation({
@@ -265,7 +265,7 @@ function expandCollapseGroup(group, groupName) {
   } else {
     mainPage[container].isVisible = true;
     
-    transExpandCollapse.rotate(0);
+    transExpandCollapse.rotate(-90);
     mainPage[image].animate(
     kony.ui.createAnimation({
       "100": {

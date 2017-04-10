@@ -47,7 +47,7 @@
     "iphone": {
         "render": true
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "0a85cc8c59a44f1ba879f852d98fd67c",
     "linkskin": "s0017120110f482b802e8385595ddf48",
     "name": "kony.ui.RichText",
