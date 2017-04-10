@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
+        "value": "15%"
     },
     "_left_": {
         "type": "string",
@@ -24,10 +24,6 @@
     ],
     "_percent_": true,
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
-    "_top_": {
-        "type": "string",
-        "value": "-1%"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"
