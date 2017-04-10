@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf16648bffa2466988371f799da3d5a3",
+    "_text_": "<u>Need help?</u>",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "CopysideBarNeedHelp019d5ebe696a043",
+    "ide_onClick": "AS_RichText_5d79aec263e54db28dfdcee5b746acff",
+    "ide_onTouchStart": "AS_RichText_4b804fcacb8f4f48aa023fa3ba60500a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "31e0724409484c77a895f9c26ab5839b",
+    "name": "kony.ui.RichText",
+    "parent": "CopysideBarFooter0535394d4d77344",
+    "pf": "mainPage",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

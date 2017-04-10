@@ -27,12 +27,13 @@
     "_skin_": "s015494b912d485cae4fa930c5af4def",
     "_top_": {
         "type": "string",
-        "value": "6dp"
+        "value": "60dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
+    "accessibilityconfig": {},
     "allboxes": [],
     "android": {
         "render": true

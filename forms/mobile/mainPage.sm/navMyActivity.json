@@ -62,5 +62,6 @@
     "parent": "activityNavContainer",
     "pf": "mainPage",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 2
 }

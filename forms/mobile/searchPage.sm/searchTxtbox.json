@@ -24,10 +24,15 @@
         "value": "17.66%"
     },
     "_skin_": "sfe32220eb1749d19bc0868d1af0c500",
-    "_text_": "",
+    "_text_": "Search",
     "_width_": {
         "type": "string",
         "value": "69.84%"
+    },
+    "android": {
+        "psp": {
+            "keyboardActionLabel": 3
+        }
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -45,7 +50,13 @@
     "id": "searchTxtbox",
     "ide_onTextChange": "AS_TextField_547d8f0aabe647b4b0c0ba62b03a093c",
     "info": null,
+    "iphone": {
+        "psp": {
+            "keyboardActionLabel": 3
+        }
+    },
     "isvisible": true,
+    "keyboardactionlabel": 3,
     "keyboardtype": "A",
     "kuid": "86b4b9fff94a42b48aee85bbb376d43f",
     "mode": "A",

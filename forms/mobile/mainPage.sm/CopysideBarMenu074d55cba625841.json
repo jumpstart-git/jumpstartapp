@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s845f5d03053456faa34ef938323a4c6",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopysideBarHeader09843e4bf9ad24a",
+        "CopysideBarBody04a9d6d56d1f148",
+        "CopysideBarFooter0535394d4d77344"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopysideBarMenu074d55cba625841",
+    "info": null,
+    "isvisible": true,
+    "kuid": "da19d6949ac84751b6f3df249da75759",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "CopysideBarMenuContainer0d4dede9dc5f844",
+    "pf": "mainPage",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}
