@@ -1,23 +1,23 @@
 //Type your code here
-mobileFabricConfigurationForReportIndBusCode = 
+mobileFabricConfigurationForReportIndBusCode =
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-                                //appSecret:"c600a59925b36419de1546056cd21557", 
+
+
+                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+                                //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
-                                
-                                integrationServices: 
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"ReportIndBus",
                                                                 operations:["reportIndBusOperation"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,14 +35,14 @@ mobileFabricConfigurationForReportIndBusCode =
 
 // Function to invoke getFoxNews Service call
 function validateReportIndBusCode(){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
       if (!mobileFabricConfigurationForReportIndBusCode.isKonySDKObjectInitialized)
       {
                                                 mobileFabricConfigurationReportIndBusCodeValidation();
-            
+
       }
       else if (mobileFabricConfigurationForReportIndBusCode.isKonySDKObjectInitialized)
       {
@@ -53,24 +53,24 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
 function mobileFabricConfigurationReportIndBusCodeValidation()
 {
-    
+
  // alert (" ********** Entering into initializeMobileFabric ********** ");
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForReportIndBusCode.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForReportIndBusCode.konysdkObject.init(mobileFabricConfigurationForReportIndBusCode.appKey,mobileFabricConfigurationForReportIndBusCode.appSecret,mobileFabricConfigurationForReportIndBusCode.serviceURL,mobileFabricConfigurationCodeReportIndBusSuccess,mobileFabricConfigurationCodeReportIndBusFailure);  
+                                mobileFabricConfigurationForReportIndBusCode.konysdkObject.init(mobileFabricConfigurationForReportIndBusCode.appKey,mobileFabricConfigurationForReportIndBusCode.appSecret,mobileFabricConfigurationForReportIndBusCode.serviceURL,mobileFabricConfigurationCodeReportIndBusSuccess,mobileFabricConfigurationCodeReportIndBusFailure);
      //  alert("bbbb");
     }
                 else
                                 //alert ("Network unavailable. Please check your network settings. ");
                 kony.print (" ********** Exiting out of initializeMobileFabric ********** ");
-  
+
 }
 
 function mobileFabricConfigurationCodeReportIndBusSuccess(response)
 {
-                
+
   kony.print (" ********** Entering into initializeMobileFabricSuccess ********** ");
           //      alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
                 mobileFabricConfigurationForReportIndBusCode.isKonySDKObjectInitialized=true;
@@ -78,7 +78,7 @@ function mobileFabricConfigurationCodeReportIndBusSuccess(response)
                 //authenticateMFUsingUserStore();
      getReportIndBusCodeDataVal();
                 kony.print (" ********** Exiting out of initializeMobileFabricSuccess ********** ");
-  
+
 }
 
 function mobileFabricConfigurationCodeReportIndBusFailure(error)
@@ -98,7 +98,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfiguration.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
    kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -121,7 +121,7 @@ function loginMFFailure(error)
 
 function getReportIndBusCodeDataVal()
 {
-  
+
              //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
@@ -140,38 +140,40 @@ function getReportIndBusCodeDataVal()
                        var endVal=ReportingPage.EndDateCalendar.formattedDate;
                   var arrendVal=endVal.split('/');
                      data["endDate"]=arrendVal[2]+"-"+arrendVal[1]+"-"+arrendVal[0];
-                 
+
                  //alert("operation name"+operationName);
                  // alert("inputting"+JSON.stringify(data));
                 mobileFabricConfigurationForReportIndBusCode.integrationObj.invokeOperation(operationName, headers, data, reportIndBusCodeDataSuccessCallback, reportIndBusCodeDataErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
-  
+                                alert ("Network unavailable. Please check your network settings. ");
+
 }
 
 function reportIndBusCodeDataSuccessCallback (gblreportIndBusCodeData)
 {
-  
-  
+
+
 //alert(JSON.stringify("successsss"+JSON.stringify(gblreportIndBusCodeData)));
  // alert(gblCodeData["codeValidate"]);
   mainPage.show();
   hideSideBar();
    kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Business hours report successfully sent to your email",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
    // alert("Business hours report successfully sent to your email");
    ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text="";
-  
-  
+
+
   kony.application.dismissLoadingScreen();
 }
 function reportIndBusCodeDataErrorCallback(error)

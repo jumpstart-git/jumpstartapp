@@ -34,7 +34,7 @@
         }, {
             "id": "ADD_SNIPPET__3e43d0d9c6cc49baa93b83521b8ed6ed",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n      \"alertTitle\": null,\n      \"yesLabel\": \"OK\",\n  \t  \"noLabel\": \"Cancel\",\n      \"message\": \"Do you really want to remove hours\",\n      \"alertHandler\": appUpgrade1\n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    });",
+            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n  \t//[D005] [Alerts] \"Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation\"\n      \"alertTitle\": \"Warning\",\n  //End of D005\n      \"yesLabel\": \"OK\",\n  \t  \"noLabel\": \"Cancel\",\n      \"message\": \"Do you really want to remove hours?\",\n      \"alertHandler\": appUpgrade1\n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    });",
             "parentId": null,
             "callbackType": null
         }]

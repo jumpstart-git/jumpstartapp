@@ -7,7 +7,7 @@ mobileFabricConfigurationForVolNewAcceptTaskBtn = {
         service: "VolunteerAcceptRequestTasks",
         operations: ["volAcceptReqTasks"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -27,7 +27,7 @@ function VolNewAcceptTaskBtn() {
         shouldShowLabelInBottom: "false",
         separatorHeight: 20
     });
-    //kony.application.dismissLoadingScreen(); 
+    //kony.application.dismissLoadingScreen();
     //gblReqAcceptTaskBtn=val9.widgetInfo.data[0].lblRequestIdSent;
     // alert("the selected"+JSON.stringify(gblReqAcceptTaskBtn));
     // Let's get the news type the user selected
@@ -172,13 +172,15 @@ function getVolNewacceptlRequestErrorCallback99(error) {
     //       "yesLabel": "OK",
     //    "noLabel":"No",
     //       "message": "Task has been created under open task",
-    //       "alertHandler":"null" 
+    //       "alertHandler":"null"
     //     }, {
     //       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    //     }); 
+    //     });
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Confirmation",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Task has been created under open task",

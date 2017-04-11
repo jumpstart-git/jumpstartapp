@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopyFlexContainer0fc0bd9d7cab040.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopyReportingLink0744c88d344d64f.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopycheckList0ab0b62d95bba45.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopyemailNotificationLbl0dd337ff43bb042.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopymyProfileLink0a38d9ad4f04045.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarAccountLabel044137fa594ea47.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarAppName012aa0712a08d4b.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarBody04a9d6d56d1f148.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarCompanyLogo044fe7827b4dc4c.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarFooter0535394d4d77344.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarHeader09843e4bf9ad24a.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarLogout06941a0866fcf4b.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarMenu074d55cba625841.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarMenuContainer0d4dede9dc5f844.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarNeedHelp019d5ebe696a043.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CopysideBarSeparator0ef14921323474f.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/selectMessage.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/selectMessageLabel.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_5d79aec263e54db28dfdcee5b746acff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_5d79aec263e54db28dfdcee5b746acff.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_b9c93e1222a5446a986df8bf26b092f7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_b9c93e1222a5446a986df8bf26b092f7.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslFbox00dab66e224024d.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslLabel0824b9b19eb524a.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyeligibiltyCriteriFlxScroll0d6a39065171f43.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyeligibiltyCriteriFlxScroll.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/JumpStartAbort1globalsequences.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/jumpstart2globalsequences.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_jumpstart2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeadlessBuild.properties" afterPath="$PROJECT_DIR$/HeadlessBuild.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" afterPath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" afterPath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" afterPath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" />
@@ -12,86 +42,177 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" afterPath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" afterPath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" afterPath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/Button076093b19f13149.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/Button076093b19f13149.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/availabilityLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/availabilityLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/daysOfTheWeekContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/daysOfTheWeekContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromMeridiem.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromMeridiem.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromTimeContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromTimeContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromTimeDropdown.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/fromTimeDropdown.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/lblFrom.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/lblFrom.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/lblTo.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/lblTo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regFridayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regFridayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regMondayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regMondayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regOutsideHoursNo.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regOutsideHoursNo.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regOutsideHoursYes.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regOutsideHoursYes.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regSaturdayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regSaturdayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoBackButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoBackButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoContinueButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoContinueButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoFooter.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleInfoFooter.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursBody.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursBody.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursFooter.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursFooter.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursHeader.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursHeader.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursModal.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursModal.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursText.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regScheduleOutsideHoursText.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regSundayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regSundayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regThursdayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regThursdayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regTuesdayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regTuesdayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regWednesdayButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/regWednesdayButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/registrationPageScheduleTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/registrationPageScheduleTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/registrationSchedulePage.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/registrationSchedulePage.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/requestModalTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/requestModalTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/timeContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/timeContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toMeridiem.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toMeridiem.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toTimeContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toTimeContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toTimeDropdown.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSchedulePage.sm/toTimeDropdown.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/hoursDropDownList.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/hoursDropDownList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/minutesDropDownList.json" afterPath="$PROJECT_DIR$/forms/mobile/LogHoursForms.sm/minutesDropDownList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/imgNew.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/imgNew.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/loginHeader.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/loginHeader.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/loginImages.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/loginImages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/FlexContainer08d40d9191a9344.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/FlexContainer08d40d9191a9344.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/RichText0afad0c18cfe342.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/RichText0afad0c18cfe342.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/TaskDetailsContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/TaskDetailsContainer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/acceptTermsChekBoxFlex.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/acceptTermsChekBoxFlex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/activityIndicator.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/activityIndicator.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/agreeBtn.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/agreeBtn.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/checkList.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/emailNotificationLbl.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/emailNotificationLbl.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/endRichTxt.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/endRichTxt.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPage.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPage.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPageBody.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPageBody.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/myOpenTasksListContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/myOpenTasksListContainer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navMyActivity.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navMyActivity.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/notificationPageRefreshRichText.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/notificationPageRefreshRichText.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/recommendationRefreshRichText.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/recommendationRefreshRichText.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/refreshRichText.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/refreshRichText.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/segGroupNotification.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/segGroupNotification.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarOverlay.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarOverlay.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/txtLbl.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/txtLbl.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/viewRequestDone.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/viewRequestDone.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationPersonalPage.sm/regStateInput.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationPersonalPage.sm/regStateInput.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationProfessionalPage.sm/regCompanyInput.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationProfessionalPage.sm/regCompanyInput.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyLegalFlex0fd3d110dd9a947.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyLegalFlex0fd3d110dd9a947.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyLegalLbl0328e1d8997464f.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyLegalLbl0328e1d8997464f.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyRichText05ae4cf7d0a8c45.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyRichText05ae4cf7d0a8c45.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyeligibiltyCriteriFlxScroll0d6a39065171f43.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopyeligibiltyCriteriFlxScroll0d6a39065171f43.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/Copyheading021315f55d79a40.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/Copyheading021315f55d79a40.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopymangersApprovalFlex03ae7b8f29fcb45.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopymangersApprovalFlex03ae7b8f29fcb45.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopytxtLbl0866b5282a16448.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/CopytxtLbl0866b5282a16448.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/Label0ef92e4a265e147.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/Label0ef92e4a265e147.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationCancelButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationCancelButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationPageFooter.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationPageFooter.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSubmitButton.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSubmitButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryBody.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryBody.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryContainer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryPage.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/registrationSummaryPage.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAddressLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAddressLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAddressTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAddressTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAvailabilityRT.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAvailabilityRT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAvailabilityTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summAvailabilityTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summCompanyLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summCompanyLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summCompanyTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summCompanyTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summContactNumberLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summContactNumberLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summContactNumberTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summContactNumberTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summEmailLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summEmailLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summEmailTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summEmailTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summPasswordLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summPasswordLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summPasswordTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summPasswordTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summRoleLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summRoleLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summRoleTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summRoleTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsRT.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsRT.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summSkillsTitle.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summUserNameLabel.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summUserNameLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summUserNameTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/registrationSummaryPage.sm/summUserNameTitle.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopyRichText05ae4cf7d0a8c45.json" afterPath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopyRichText05ae4cf7d0a8c45.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopytxtLbl0866b5282a16448.json" afterPath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopytxtLbl0866b5282a16448.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopyupdateScheduleOutsideHoursText0f4ba96a1baf54f.json" afterPath="$PROJECT_DIR$/forms/mobile/scheduleNewForm.sm/CopyupdateScheduleOutsideHoursText0f4ba96a1baf54f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchPage.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchPage.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchTxtbox.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchTxtbox.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/TaskDetailsHdrFlex.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/TaskDetailsHdrFlex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/availabilityContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/availabilityContainer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/oppurtunity1DetailsBodyModalContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/oppurtunity1DetailsBodyModalContainer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/taskDetailsModalFlex.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/taskDetailsModalFlex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/taskskillsFlex.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/taskskillsFlex.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileAboutMeTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileAboutMeTitle.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileAddSkill.json" afterPath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileAddSkill.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileBody.json" afterPath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileBody.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileCompanyInput.json" afterPath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileCompanyInput.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileWorkDetailsTitle.json" afterPath="$PROJECT_DIR$/forms/mobile/volunteerMyProfilePage.sm/volunteerMyProfileWorkDetailsTitle.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/scheduleNewForm.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/scheduleNewForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationProfessionalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartRegistrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/BusinessProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/BusinessProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox01025bd15839e46.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox0325cab479ecc4e.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox0325cab479ecc4e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/FBox002ffa33914ea45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/LogHoursForms.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/LogHoursForms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/MyActivityProfiles.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/MyActivityProfiles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/businessDetailsConfirmationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/businessMyProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationAccountPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationDonePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPersonalPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPersonalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationProfessionalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSchedulePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSchedulePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSummaryPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSummaryPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/resetPasswordForm.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/resetPasswordForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konyplugins.xml" afterPath="$PROJECT_DIR$/konyplugins.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/searchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/userInfoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/volunteerMyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessVolunteerProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessVolunteerProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/VolProfileAfterSearch.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/VolProfileAfterSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/dbRetreivecode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/dbRetreivecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartActivityPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartRegistrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartSearchPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartSearchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartUserLoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/kony_sdk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loginFrstTimeCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loginFrstTimeCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/sendRecommendationcode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/sendRecommendationcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/updateVolProfilecode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/updateVolProfilecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volCancelReq.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volCancelReq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volviewProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volviewProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mBaas.properties" afterPath="$PROJECT_DIR$/mBaas.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/KonySyncLib.js" afterPath="$PROJECT_DIR$/modules/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware.properties" afterPath="$PROJECT_DIR$/middleware.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/modules/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/modules/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/modules/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/modules/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/modules/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/modules/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/modules/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/modules/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessVolunteerProfile.js" afterPath="$PROJECT_DIR$/modules/BusinessVolunteerProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/modules/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/modules/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/VolProfileAfterSearch.js" afterPath="$PROJECT_DIR$/modules/VolProfileAfterSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/checkList.js" afterPath="$PROJECT_DIR$/modules/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/dbRetreivecode.js" afterPath="$PROJECT_DIR$/modules/dbRetreivecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/modules/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartSearchPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartSearchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/loading.js" afterPath="$PROJECT_DIR$/modules/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/loginFrstTimeCode.js" afterPath="$PROJECT_DIR$/modules/loginFrstTimeCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/modules/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/modules/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/modules/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/modules/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/sendRecommendationcode.js" afterPath="$PROJECT_DIR$/modules/sendRecommendationcode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/unCheckList.js" afterPath="$PROJECT_DIR$/modules/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/updateVolProfilecode.js" afterPath="$PROJECT_DIR$/modules/updateVolProfilecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/volCancelReq.js" afterPath="$PROJECT_DIR$/modules/volCancelReq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/volReport.js" afterPath="$PROJECT_DIR$/modules/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/volviewProfile.js" afterPath="$PROJECT_DIR$/modules/volviewProfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectProperties.json" afterPath="$PROJECT_DIR$/projectProperties.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectprop.xml" afterPath="$PROJECT_DIR$/projectprop.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" afterPath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/markAsComplete.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/markAsComplete.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fbfed737da454414aae15fab452e5c5c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_40e6cfb5bbb54334bacd88300920c324.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_d6ff08f069db47e1b086860d0827fe7b.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_d6ff08f069db47e1b086860d0827fe7b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_d6ff08f069db47e1b086860d0827fe7b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_d6ff08f069db47e1b086860d0827fe7b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.js" afterPath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.json" afterPath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossBlue03803f6ea3ee745.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossBlue03803f6ea3ee745.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/CopyslCheckBoxGroup0306443d20b8149.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslCheckBoxGroup0306443d20b8149.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/CopyslFSbox09cf026619b994b.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslFSbox09cf026619b994b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/CopyslFbox0298ee6f8ba5249.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslFbox0298ee6f8ba5249.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/jumpStartBG222.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/jumpStartBG222.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/jumpStartStandardInputField.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/jumpStartStandardInputField.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,17 +233,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Desktop/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="344" column="162" lean-forward="false" selection-start-line="344" selection-start-column="162" selection-end-line="344" selection-end-column="162" />
+            <state relative-caret-position="239">
+              <caret line="182" column="68" lean-forward="true" selection-start-line="182" selection-start-column="68" selection-end-line="182" selection-end-column="68" />
               <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#webversion#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#1;n#table#3;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#11185#11191#1" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -169,10 +297,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="149" />
-    <option name="width" value="1366" />
-    <option name="height" value="538" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -203,6 +331,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jumpstart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="businessDetailsConfirmationPage.sm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -230,6 +412,13 @@
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -304,18 +493,18 @@
       <workItem from="1491529790031" duration="1449000" />
       <workItem from="1491780898946" duration="105000" />
       <workItem from="1491806123009" duration="1759000" />
-      <workItem from="1491867617642" duration="1314000" />
+      <workItem from="1491867617642" duration="4404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11241000" />
+    <option name="totallyTimeSpent" value="14331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="149" width="1366" height="538" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30888888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30527085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -349,14 +538,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#webversion#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#1;n#table#3;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11185#11191#1" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -367,14 +563,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#webversion#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#1;n#table#3;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11185#11191#1" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -412,6 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="77" lean-forward="true" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -441,6 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,6 +745,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270">
           <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,6 +753,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="3272" column="0" lean-forward="true" selection-start-line="3272" selection-start-column="0" selection-end-line="3272" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -564,19 +771,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/forms/mobile/businessDetailsConfirmationPage.sm/bdcAffiliationsInput.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/standardSchemas/xhtml1-strict.dtd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Desktop/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="344" column="162" lean-forward="false" selection-start-line="344" selection-start-column="162" selection-end-line="344" selection-end-column="162" />
+        <state relative-caret-position="239">
+          <caret line="182" column="68" lean-forward="true" selection-start-line="182" selection-start-column="68" selection-end-line="182" selection-end-column="68" />
           <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#webversion#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#0;n#table#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#1;n#table#3;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#2;n#tr#0;n#table#0;n#td#1;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11185#11191#1" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#layout#0;n#repeater#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

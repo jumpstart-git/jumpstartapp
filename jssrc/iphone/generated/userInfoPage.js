@@ -437,13 +437,13 @@ function addWidgetsuserInfoPage() {
     monContainer.setDefaultUnit(kony.flex.DP);
     var mondayButt = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "mondayButt",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_07cb5338058a42b381366e0fd754fe1a,
-        "skin": "CopyslButtonGlossBlue0ba05615168a342",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "M",
         "top": "0dp",
         "width": "40dp"
@@ -471,13 +471,13 @@ function addWidgetsuserInfoPage() {
     tuesContainer.setDefaultUnit(kony.flex.DP);
     var tuesdayButt = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ButtonGlossRed081a9b116361948",
         "height": "40dp",
         "id": "tuesdayButt",
         "isVisible": true,
         "left": "10dp",
         "onClick": AS_Button_c9123c82f53f477c91c06dc10c90cf3a,
-        "skin": "CopyslButtonGlossBlue0ba05615168a342",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "T",
         "top": "0dp",
         "width": "40dp"
@@ -505,13 +505,13 @@ function addWidgetsuserInfoPage() {
     wedContainer.setDefaultUnit(kony.flex.DP);
     var wednesdayButt = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ButtonGlossRed081a9b116361948",
         "height": "40dp",
         "id": "wednesdayButt",
         "isVisible": true,
         "left": "10dp",
         "onClick": AS_Button_83a5650a1fd54092aa2fecae3e7cddb2,
-        "skin": "CopyslButtonGlossBlue0ba05615168a342",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "W",
         "top": "0dp",
         "width": "40dp"
@@ -539,13 +539,13 @@ function addWidgetsuserInfoPage() {
     thursContainer.setDefaultUnit(kony.flex.DP);
     var thursdayButt = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ButtonGlossRed081a9b116361948",
         "height": "40dp",
         "id": "thursdayButt",
         "isVisible": true,
         "left": "10dp",
         "onClick": AS_Button_464ff8ae4d34452392e51dcda0fde9cc,
-        "skin": "CopyslButtonGlossBlue0ba05615168a342",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "TH",
         "top": "0dp",
         "width": "40dp"
@@ -573,13 +573,13 @@ function addWidgetsuserInfoPage() {
     friContainer.setDefaultUnit(kony.flex.DP);
     var fridayButt = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ButtonGlossRed081a9b116361948",
         "height": "40dp",
         "id": "fridayButt",
         "isVisible": true,
         "left": "10dp",
         "onClick": AS_Button_04cfbb34142c469d81d8ca8d5bc65e0d,
-        "skin": "CopyslButtonGlossBlue0ba05615168a342",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "F",
         "top": "0dp",
         "width": "40dp"
@@ -782,12 +782,12 @@ function addWidgetsuserInfoPage() {
     var Button0667cdbac0f0c46 = new kony.ui.Button({
         "bottom": "25dp",
         "centerX": "50%",
-        "focusSkin": "slButtonGlossRed",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "Button0667cdbac0f0c46",
         "isVisible": true,
         "left": 0,
-        "skin": "CopyslButtonGlossBlue09b22b83f041242",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add another schedule +",
         "top": "20dp",
         "width": "80%",
@@ -818,12 +818,12 @@ function addWidgetsuserInfoPage() {
     var continueButton = new kony.ui.Button({
         "centerX": "50.00%",
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0f5e9b292eb6f46",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "continueButton",
         "isVisible": true,
         "onClick": AS_Button_a7b0aead332447b8bef76dcfcc1fdabe,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "80%",
         "zIndex": 1

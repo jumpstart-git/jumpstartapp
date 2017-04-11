@@ -72,6 +72,7 @@ function addWidgetssearchPage() {
         "right": "17.66%",
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
+        "text": "Search",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "width": "69.84%",
         "zIndex": 1
@@ -82,7 +83,7 @@ function addWidgetssearchPage() {
         "paddingInPixel": false
     }, {
         "autoCorrect": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DONE,
+        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_SEARCH,
         "showClearButton": true,
         "showCloseButton": true,
         "showProgressIndicator": true,
@@ -327,7 +328,7 @@ function addWidgetssearchPage() {
         "id": "BusinessContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "5dp",
+        "left": "15dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -339,7 +340,7 @@ function addWidgetssearchPage() {
         "clipBounds": true,
         "height": "5%",
         "id": "businessIndicator",
-        "isVisible": false,
+        "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox030edd0b138f94a",
@@ -372,12 +373,13 @@ function addWidgetssearchPage() {
     BusinessContainer.add(businessIndicator, businessBtn1);
     var opportunitiesFlex = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "60%",
         "clipBounds": true,
         "height": "100%",
         "id": "opportunitiesFlex",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "35%",
+        "left": "5dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -386,6 +388,7 @@ function addWidgetssearchPage() {
     opportunitiesFlex.setDefaultUnit(kony.flex.DP);
     var opportunitiesIndicator = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
         "clipBounds": true,
         "height": "5%",
         "id": "opportunitiesIndicator",
@@ -400,16 +403,17 @@ function addWidgetssearchPage() {
     opportunitiesIndicator.setDefaultUnit(kony.flex.DP);
     opportunitiesIndicator.add();
     var opportuitiesBtn1 = new kony.ui.Button({
+        "centerX": "50%",
         "focusSkin": "CopyslButtonGlossRed0dbd46cf72e8741",
         "height": "95%",
         "id": "opportuitiesBtn1",
         "isVisible": true,
-        "left": "23dp",
+        "left": "46%",
         "onClick": AS_Button_82ea1740bfa9490382128cc94c1853b2,
         "skin": "salmaSkin",
         "text": "Brief",
         "top": "0dp",
-        "width": "100%",
+        "width": "10%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -425,7 +429,7 @@ function addWidgetssearchPage() {
         "height": "70%",
         "id": "sortBtn",
         "isVisible": true,
-        "left": "82%",
+        "left": "85%",
         "onClick": AS_Button_9261e4378f044382b1cda53ed10bebae,
         "skin": "CopyslButtonGlossBlue03803f6ea3ee745",
         "text": "Sort",
@@ -562,7 +566,7 @@ function addWidgetssearchPage() {
         }],
         "groupCells": false,
         "id": "segPredictive",
-        "isVisible": true,
+        "isVisible": false,
         "left": "40dp",
         "needPageIndicator": true,
         "onRowClick": AS_Segment_a10b49ad5346483ab77628da44d5d83f,

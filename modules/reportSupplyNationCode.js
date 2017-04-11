@@ -1,23 +1,23 @@
 //Type your code here
-mobileFabricConfigurationForReportSupplyNationCode = 
+mobileFabricConfigurationForReportSupplyNationCode =
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-                                //appSecret:"c600a59925b36419de1546056cd21557", 
+
+
+                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+                                //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
-                                
-                                integrationServices: 
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"ReportSupplyNation",
                                                                 operations:["supplyNationOperation"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,14 +35,14 @@ mobileFabricConfigurationForReportSupplyNationCode =
 
 // Function to invoke getFoxNews Service call
 function validateReportSupplyNationBusCode(){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
       if (!mobileFabricConfigurationForReportSupplyNationCode.isKonySDKObjectInitialized)
       {
                                                 mobileFabricConfigurationSupplyNationCodeValidation();
-            
+
       }
       else if (mobileFabricConfigurationForReportSupplyNationCode.isKonySDKObjectInitialized)
       {
@@ -53,24 +53,24 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
 function mobileFabricConfigurationSupplyNationCodeValidation()
 {
-    
+
  // alert (" ********** Entering into initializeMobileFabric ********** ");
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForReportSupplyNationCode.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForReportSupplyNationCode.konysdkObject.init(mobileFabricConfigurationForReportSupplyNationCode.appKey,mobileFabricConfigurationForReportSupplyNationCode.appSecret,mobileFabricConfigurationForReportSupplyNationCode.serviceURL,mobileFabricConfigurationCodeReportSupplyNationSuccess,mobileFabricConfigurationCodeReportSupplyNationFailure);  
+                                mobileFabricConfigurationForReportSupplyNationCode.konysdkObject.init(mobileFabricConfigurationForReportSupplyNationCode.appKey,mobileFabricConfigurationForReportSupplyNationCode.appSecret,mobileFabricConfigurationForReportSupplyNationCode.serviceURL,mobileFabricConfigurationCodeReportSupplyNationSuccess,mobileFabricConfigurationCodeReportSupplyNationFailure);
      //  alert("bbbb");
     }
                 else
                                 //alert ("Network unavailable. Please check your network settings. ");
                 kony.print (" ********** Exiting out of initializeMobileFabric ********** ");
-  
+
 }
 
 function mobileFabricConfigurationCodeReportSupplyNationSuccess(response)
 {
-                
+
   kony.print (" ********** Entering into initializeMobileFabricSuccess ********** ");
           //      alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
                 mobileFabricConfigurationForReportSupplyNationCode.isKonySDKObjectInitialized=true;
@@ -78,7 +78,7 @@ function mobileFabricConfigurationCodeReportSupplyNationSuccess(response)
                 //authenticateMFUsingUserStore();
      getReportSupplyNationCodeDataVal();
                 kony.print (" ********** Exiting out of initializeMobileFabricSuccess ********** ");
-  
+
 }
 
 function mobileFabricConfigurationCodeReportSupplyNationFailure(error)
@@ -98,7 +98,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfiguration.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
    kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -121,7 +121,7 @@ function loginMFFailure(error)
 
 function getReportSupplyNationCodeDataVal()
 {
-  
+
              //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
@@ -140,38 +140,40 @@ function getReportSupplyNationCodeDataVal()
                        var endVal=ReportingPage.EndDateCalendar.formattedDate;
                   var arrendVal=endVal.split('/');
                      data["endDate"]=arrendVal[2]+"-"+arrendVal[1]+"-"+arrendVal[0];
-                 
+
                 // alert("operation name"+operationName);
                  // alert("inputting"+JSON.stringify(data));
                 mobileFabricConfigurationForReportSupplyNationCode.integrationObj.invokeOperation(operationName, headers, data, reportSupplyNationCodeDataSuccessCallback, reportSupplyNationCodeDataErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
-  
+                                alert ("Network unavailable. Please check your network settings. ");
+
 }
 
 function reportSupplyNationCodeDataSuccessCallback (gblreportSupplyNAtionCodeData)
 {
-  
-  
+
+
 //alert(JSON.stringify("successsss"+JSON.stringify(gblreportSupplyNAtionCodeData)));
  // alert(gblCodeData["codeValidate"]);
   mainPage.show();
   hideSideBar();
    kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Supply Nation hours report successfully sent to your email",
-      "alertHandler":"null" 
+      "alertHandler":"null"
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
   //  alert("Supply Nation hours report successfully sent to your email");
    ReportingPage.ReportingData.ReportingdataFlex.ReceipientsTxtArea.text="";
-  
-  
+
+
   kony.application.dismissLoadingScreen();
 }
 function reportSupplyNationCodeDataErrorCallback(error)

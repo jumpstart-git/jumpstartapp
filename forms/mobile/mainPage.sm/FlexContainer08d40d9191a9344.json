@@ -26,7 +26,7 @@
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "33%"
+        "value": "33.00%"
     },
     "_width_": {
         "type": "string",
@@ -36,8 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "checkList",
-        "emailNotificationLbl"
+        "emailNotificationLbl",
+        "checkList"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +46,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "66315d5f95f543d3b407de11b54e3c74",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "sideBarBody",
     "pf": "mainPage",

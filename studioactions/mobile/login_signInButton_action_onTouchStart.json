@@ -28,7 +28,13 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": false
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET__3fae12e7b20c48c28e939300abede962",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var userText = login.loginContainer.loginBody.usernameField.text;\nvar passText = login.loginContainer.loginBody.passwordField.text;\nif(userText==\"null\"||userText==null||userText==\"\"||passText==\"null\"||passText==null||passText==\"\")\n{\n  kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_ERROR,\n      //[D005] [Alerts] \"Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation\"\n      \"alertTitle\": \"Action Required\",\n    //ENd of D005\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Email ID and Password Field cannot be blank\",\n      \"alertHandler\": null \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    });  \n}\nelse\n{\n  loginService();\n}",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

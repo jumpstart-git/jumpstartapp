@@ -132,7 +132,7 @@ function addWidgetsLogHoursForms() {
         "id": "lblTotalHours",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslLabel0480f34087e004e",
+        "skin": "ngnyOrangeLabelText",
         "text": "Engagement hours",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -186,7 +186,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel03343253918d34f",
-        "text": "working hours",
+        "text": "Working Hours",
         "top": "2dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -238,7 +238,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel03343253918d34f",
-        "text": "non-working hours",
+        "text": "Non-working Hours",
         "top": "2dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -251,7 +251,7 @@ function addWidgetsLogHoursForms() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var CopynumOfWorkingHours0a76ec538d2864f = new kony.ui.Label({
-        "centerX": "42%",
+        "centerX": "43%",
         "centerY": "50%",
         "id": "CopynumOfWorkingHours0a76ec538d2864f",
         "isVisible": true,
@@ -287,13 +287,13 @@ function addWidgetsLogHoursForms() {
     }, {}, {});
     AddHoursButtonContainer.setDefaultUnit(kony.flex.DP);
     var addHoursButton = new kony.ui.Button({
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "100%",
         "id": "addHoursButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_a2af3349d18c4d9fb5a7ef05ad71a946,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add hours",
         "top": "0dp",
         "width": "100%",
@@ -336,7 +336,7 @@ function addWidgetsLogHoursForms() {
     headerDateContainer.setDefaultUnit(kony.flex.DP);
     var labelDate = new kony.ui.Label({
         "centerX": "50%",
-        "centerY": "41%",
+        "centerY": "45%",
         "id": "labelDate",
         "isVisible": true,
         "left": "23dp",
@@ -405,6 +405,7 @@ function addWidgetsLogHoursForms() {
     headerNonWorkingHours.setDefaultUnit(kony.flex.DP);
     var InnerNonWorkingHoursContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
         "clipBounds": true,
         "height": "100%",
         "id": "InnerNonWorkingHoursContainer",
@@ -419,7 +420,7 @@ function addWidgetsLogHoursForms() {
     InnerNonWorkingHoursContainer.setDefaultUnit(kony.flex.DP);
     var nonWorkingHoursHeaderContainer = new kony.ui.Label({
         "centerX": "50%",
-        "centerY": 35,
+        "centerY": 45,
         "height": "76.47%",
         "id": "nonWorkingHoursHeaderContainer",
         "isVisible": true,
@@ -440,13 +441,13 @@ function addWidgetsLogHoursForms() {
     InnerNonWorkingHoursContainer.add(nonWorkingHoursHeaderContainer);
     var IndicatorContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerY": "49%",
+        "centerY": "70%",
         "clipBounds": true,
         "height": "73dp",
         "id": "IndicatorContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "-24dp",
+        "left": "-35dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": "20.80%",
@@ -459,10 +460,10 @@ function addWidgetsLogHoursForms() {
         "height": "20dp",
         "id": "indicatorImg",
         "isVisible": true,
-        "left": "-4dp",
+        "left": "-5dp",
         "skin": "slImage",
         "src": "lohourindicator.PNG",
-        "top": "2dp",
+        "top": "5dp",
         "width": "20dp",
         "zIndex": 1
     }, {
@@ -558,21 +559,21 @@ function addWidgetsLogHoursForms() {
         "left": "0dp",
         "skin": "jumpStartBGFFFBorder214",
         "top": "-9dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {}, {});
     logHoursFooterContainer.setDefaultUnit(kony.flex.DP);
     var cancelButton = new kony.ui.Button({
-        "centerX": "26.129999999999995%",
-        "centerY": "45.64%",
+        "centerY": "48%",
         "focusSkin": "jumpStartGrayButton110",
         "height": "45dp",
         "id": "cancelButton",
         "isVisible": true,
+        "left": "1%",
         "onClick": AS_Button_9f297c3f4cb5435189bf603ff9c20e67,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
-        "width": "46%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -582,16 +583,16 @@ function addWidgetsLogHoursForms() {
         "showProgressIndicator": true
     });
     var saveButton = new kony.ui.Button({
-        "centerX": "75%",
-        "centerY": "48.82%",
-        "focusSkin": "jump",
+        "centerY": "48%",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "saveButton",
         "isVisible": true,
+        "left": "51%",
         "onClick": AS_Button_9d364a3620574348a864e968abe750bc,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Save",
-        "width": "46%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -652,7 +653,7 @@ function addWidgetsLogHoursForms() {
         "id": "addHoursLabel",
         "isVisible": true,
         "left": "127dp",
-        "skin": "CopyslLabel02795e66a46954b",
+        "skin": "ngnyOrangeLabelText",
         "text": "Add hours",
         "top": "13dp",
         "width": "80%",
@@ -700,7 +701,6 @@ function addWidgetsLogHoursForms() {
     });
     var addHourCalendar = new kony.ui.Calendar({
         "calendarIcon": "calendaricon.png",
-        "centerX": "50%",
         "dateComponents": [28, 10, 2016, 0, 0, 0],
         "dateFormat": "dd/MM/yyyy",
         "day": 28,
@@ -716,8 +716,9 @@ function addWidgetsLogHoursForms() {
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
         "top": "5dp",
+        "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
-        "width": "100%",
+        "width": "99%",
         "year": 2016,
         "zIndex": 1
     }, {
@@ -779,6 +780,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
             ["1", "1"],
             ["2", "2"],
             ["3", "3"],
@@ -861,6 +863,8 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
+            ["5", "5"],
             ["10", "10"],
             ["15", "15"],
             ["20", "20"],
@@ -940,19 +944,19 @@ function addWidgetsLogHoursForms() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "2dp",
+        "top": "5dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     addHoursFooterContainer.setDefaultUnit(kony.flex.DP);
     var addHoursFooterbutton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "addHoursFooterbutton",
         "isVisible": true,
         "onClick": AS_Button_3e63010ecab440f8bc6dedecca979d47,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add hours",
         "top": "11%",
         "width": "90%",

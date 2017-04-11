@@ -7,7 +7,7 @@ mobileFabricConfigurationForRequestVolunteerTasks = {
         service: "RequestVolunteerTasks",
         operations: ["requestVolunteerTasks"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -154,9 +154,10 @@ function getBusRequestVolunteerTasksErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Request has been sent successfully",
@@ -164,6 +165,7 @@ function getBusRequestVolunteerTasksErrorCallback(error) {
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
+    //End of D005
     searchResultProfile.startEngagementModalContainer.isVisible = false;
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text = "";
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text = "";

@@ -33,6 +33,7 @@
         "type": "string",
         "value": "100%"
     },
+    "accessibilityconfig": {},
     "allboxes": [],
     "android": {
         "render": true

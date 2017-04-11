@@ -6,7 +6,7 @@ mobileFabricConfigurationForBusinessChangePassword = {
         service: "BusinessChangePassword",
         operations: ["changePasswordForBusiness"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -123,7 +123,7 @@ function getBusinessChangePasswordSuccessCallback(credentials) {
         if ((successValue == "success") && (errcode == "null")) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                "alertTitle": "Confirmation",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Password changed successfully",

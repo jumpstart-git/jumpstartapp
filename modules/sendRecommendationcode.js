@@ -2,22 +2,22 @@ var reviewtaskid;
 var gblSendreview;
 var businessId9;
 var requestId9;
-mobileFabricConfigurationForVolReview= 
+mobileFabricConfigurationForVolReview=
                 {
-                                 appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                 appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                                
-                                integrationServices: 
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"Recommendation",
                                                                 operations:["saveRecommendation"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,8 +35,8 @@ mobileFabricConfigurationForVolReview=
 
 // Function to invoke getFoxNews Service call
 function volSendReview (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
   //gblSendreview=val9.widgetInfo.data[0].lblRequestIdSent;
   //alert("the selected"+JSON.stringify(gblSendreview));
@@ -54,7 +54,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForVolReview.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForvolSendReview();
-            
+
       }
       else if (mobileFabricConfigurationForVolReview.isKonySDKObjectInitialized)
       {
@@ -74,7 +74,7 @@ function initializeMobileFabricForvolSendReview ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForVolReview.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForVolReview.konysdkObject.init(mobileFabricConfigurationForVolReview.appKey,mobileFabricConfigurationForVolReview.appSecret,mobileFabricConfigurationForVolReview.serviceURL,initializeMobileFabricForvolSendReviewSuccess,initializeMobileFabricForvolSendReviewFailure);  
+                                mobileFabricConfigurationForVolReview.konysdkObject.init(mobileFabricConfigurationForVolReview.appKey,mobileFabricConfigurationForVolReview.appSecret,mobileFabricConfigurationForVolReview.serviceURL,initializeMobileFabricForvolSendReviewSuccess,initializeMobileFabricForvolSendReviewFailure);
       // alert(getNotification());
     }
                 else
@@ -110,7 +110,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForVolReview.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -133,7 +133,7 @@ function loginMFFailure(error)
 
 function setvolSendReview()
 {
-  
+
                 //alert("inside CancelRequest");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -143,7 +143,7 @@ function setvolSendReview()
                 var operationName = mobileFabricConfigurationForVolReview.integrationServices[0].operations[0];
                                 var headers= {};
 
-      
+
     //alert("operation name"+operationName);
                   var sendReview={};
                   //alert("requestid:"+JSON.stringify(gblSendreview));
@@ -157,24 +157,36 @@ function setvolSendReview()
                  sendReview["detail"]=mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
                   //alert("msg:"+JSON.stringify(sendReview));
                 //  alert("actual string=="+mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text);
+                  //D019: Adding Kony Info Alert
+                  kony.ui.Alert({
+                    "alertType": constants.ALERT_TYPE_INFO,
+                    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                    "alertTitle": "Confirmation",
+                    //End of D005
+                    "yesLabel": "OK",
+                 "noLabel":"No",
+                    "message": "Recommendation has been sent",
+                    "alertHandler": null
+                  }, {
+                    "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+                  });
+                  //D0019: End of Fix Addition
                 mobileFabricConfigurationForVolReview.integrationObj.invokeOperation(operationName, headers, sendReview, getvolSendReviewSuccessCallback, getVolsendReviewErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getvolSendReviewSuccessCallback(sendReview1)
 {
-  
+
  //alert("inside success"+JSON.stringify(sendReview1));
-  
-  
+
     if(sendReview1!="undefined"&& sendReview1!=undefined)
     {
     // alert("InSide"+JSON.stringify(sendReview1));
-  
-     
-  }  
+
+  }
     }
 
 function getVolsendReviewErrorCallback (error)
@@ -193,13 +205,13 @@ function sendReviewDetailsss(){
     {
       var tempDataforClose99=[];
      // alert("it is volunteer");
-      
+
        //var taskVal= mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;
-      
+
       //alert("value:"+JSON.stringify(mainPage.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems));
     //alert("value9:"+JSON.stringify(mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems)); //mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems));
      var reviewtaskId =mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems; //mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems;
-      
+
    // var taskId = mainPage.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.selectedRowItems;
      // alert("gblSendreview:"+JSON.stringify(reviewtask));
       gblSendreview=reviewtaskId[0].taskId;
@@ -207,9 +219,9 @@ function sendReviewDetailsss(){
      // requestId9=reviewtaskId[0].lblRequestId;
    //alert("gblSendreview:"+JSON.stringify(gblSendreview));
        //alert("busId:"+JSON.stringify(businessId));
-  
 
-  
+
+
   //gblSendreview=val9.widgetInfo.data[0].lblRequestId;
   }
   }

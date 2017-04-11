@@ -7,7 +7,7 @@ mobileFabricConfigurationForCreateOpportunity = {
         service: "CreateOpportunities",
         operations: ["createOpportunities"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -121,7 +121,7 @@ function setCreateOpportunity() {
         var opprDetails = {};
         opprDetails["businessId"] = kony.store.getItem("businessId");
         opprDetails["title"] = mainPage.CreateOpportunityContainer.BodyContainer.opportunityTitleInputContainer.text;
-        //hoursRequired               
+        //hoursRequired
         var rawDetails = mainPage.CreateOpportunityContainer.BodyContainer.opportunityDetailsInputContainer.text;
         var modifiedDetails = rawDetails.replace(/(\r\n|\n|\r)/gm, "");
         opprDetails["details"] = modifiedDetails;
@@ -151,9 +151,10 @@ function getCreateOpportunityErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     //   alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Brief was successfully created",
@@ -161,6 +162,7 @@ function getCreateOpportunityErrorCallback(error) {
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
+    //D005
     mainPage.CreateOpportunityContainer.isVisible = false;
     mainPage.CreateOpportunityContainer.BodyContainer.opportunityTitleInputContainer.text = "";
     mainPage.CreateOpportunityContainer.BodyContainer.opportunityDetailsInputContainer.text = "";

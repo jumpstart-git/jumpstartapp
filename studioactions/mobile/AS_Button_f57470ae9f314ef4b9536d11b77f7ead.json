@@ -24,7 +24,7 @@
         }, {
             "id": "ADD_SNIPPET_ide_onClick_f2a750ed88ef4941b695f9b220c4c5ca",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var text=mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;\nif(text==\"null\"||text==null||text==\"\")\n  {\n    alert(\"Input your review\");\n  }\nelse{\nvolSendReview();\nmainPage.sendRecommendation.isVisible=false;\n}\n\n\n//mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text=\" \";",
+            "codeSnippet": "var text=mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;\nif(text==\"null\"||text==null||text==\"\")\n  {\n    //alert(\"Input your review\");\n    //D018: Commented out simple alert. Added kony ui error alert\n    kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_ERROR,\n      //[D005] [Alerts] \"Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation\"\n      \"alertTitle\": \"Action Required\",\n      //End of D005\n      \"yesLabel\": \"OK\",\n   \"noLabel\":\"No\",\n      \"message\": \"Please input your recommendation or click cancel to return to previous screen\",\n      \"alertHandler\": null \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_LEFT\n    });\n  }\nelse{\nvolSendReview();\nmainPage.sendRecommendation.isVisible=false;\n}\n\n\n//mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text=\" \";",
             "callbackType": null
         }, {
             "id": "NAVIGATE_TO_FORM__ide_onClick_3480fee22a5547f28575431a9b3eff94",

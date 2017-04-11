@@ -48,7 +48,7 @@
     "enablescrolling": true,
     "id": "taskskillsFlex",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "5b915e0f170e426e82c315d3f244c8e3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

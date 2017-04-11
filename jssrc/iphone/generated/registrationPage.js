@@ -126,7 +126,7 @@ function addWidgetsregistrationPage() {
         "centerY": "50%",
         "id": "regVolunteerLabel",
         "isVisible": true,
-        "skin": "jumpStartLabel120",
+        "skin": "ngnyWhiteLabelText",
         "text": "Skilled Volunteer",
         "width": "60%"
     }, {
@@ -177,7 +177,7 @@ function addWidgetsregistrationPage() {
         "isVisible": false,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
-        "skin": "jumpStartBGFFF",
+        "skin": "ngnyWhiteFlexBG",
         "top": "8%",
         "width": "100%",
         "zIndex": 1
@@ -202,14 +202,15 @@ function addWidgetsregistrationPage() {
     registrationPageHeader.add(regHeaderSubHeader, regSelectionParent, regInfoParent);
     var registrationPageFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerY": "5%",
         "clipBounds": true,
-        "height": "7.30%",
+        "height": "8%",
         "id": "registrationPageFooter",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
-        "left": "2dp",
+        "left": "3dp",
         "skin": "jumpStartBGFFFBorder214",
-        "top": "14dp",
+        "top": "0dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -220,7 +221,7 @@ function addWidgetsregistrationPage() {
         "id": "registrationCancelButton",
         "isVisible": true,
         "onClick": AS_Button_063412544d60470685da5107ca9ccd90,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
         "width": "48%"
     }, {
@@ -232,14 +233,14 @@ function addWidgetsregistrationPage() {
         "showProgressIndicator": true
     });
     var registrationSubmitButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "registrationSubmitButton",
         "isVisible": true,
         "left": 6,
         "onClick": AS_Button_2c9ae795eb29424bae81f77c391655ae,
         "right": "-13%",
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "48%"
     }, {

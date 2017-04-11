@@ -52,7 +52,7 @@ function addWidgetsregistrationDonePage() {
         "isVisible": true,
         "skin": "companyLogo",
         "src": "imgseglogo.png",
-        "top": "10%",
+        "top": "9%",
         "width": "80dp",
         "zIndex": 1
     }, {
@@ -137,12 +137,12 @@ function addWidgetsregistrationDonePage() {
     });
     var registrationDonePageContinue = new kony.ui.Button({
         "centerX": "50.00%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "registrationDonePageContinue",
         "isVisible": true,
         "onClick": AS_Button_a468a95fbe7e4cafbd454fc5ec558d92,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "10%",
         "width": "80%",

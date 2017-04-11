@@ -151,15 +151,27 @@ function setVolCancelRequest()
              
                   
                 var rawReqdata99=mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
-               if((rawReqdata99===null) || (rawReqdata99==="null")||(rawReqdata99==="")||(rawReqdata99===" "))
+              	 if((rawReqdata99===null) || (rawReqdata99==="null")||(rawReqdata99==="")||(rawReqdata99===" "))
                      {
-                        alert("please enter the details");
-                  kony.application.dismissLoadingScreen();
-                  return false;
+
+                       kony.ui.Alert({
+                        "alertType": constants.ALERT_TYPE_INFO,
+                        "alertTitle": "Action Required",
+                        "yesLabel": "OK",
+                        "noLabel": "No",
+                        "message": "Please enter the details",
+                        "alertHandler": null
+                        }, {
+                            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+                        });
+                      kony.application.dismissLoadingScreen();
+                      return false;
+                       
                      }
-                  else{
-                    var modifiedReqdata99=rawReqdata99.replace(/(\r\n|\n|\r)/gm," ");
-                 dataCancelVolRequest["message"]=modifiedReqdata99;//mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
+                  else
+                  {
+                    	var modifiedReqdata99=rawReqdata99.replace(/(\r\n|\n|\r)/gm," ");
+                 		dataCancelVolRequest["message"]=modifiedReqdata99;//mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
                   }
                   
                

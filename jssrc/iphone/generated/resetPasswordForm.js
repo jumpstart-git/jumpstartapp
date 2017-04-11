@@ -210,7 +210,7 @@ function addWidgetsresetPasswordForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel05e03a89db94f48",
-        "text": "an email will be sent to you with instructions on how to set your password",
+        "text": "An email will be sent to you with instructions on how to set your password.",
         "top": "40%",
         "width": "70%",
         "zIndex": 1
@@ -224,13 +224,13 @@ function addWidgetsresetPasswordForm() {
     });
     var passwordResetBtn = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "CopyslButtonGlossRed019df1440b9274b",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "passwordResetBtn",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_c529ff9f155a4abc8243ba9063d985f6,
-        "skin": "CopyslButtonGlossBlue0917c047f66ac47",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Reset Password",
         "top": "15%",
         "width": "70%",
@@ -253,7 +253,7 @@ function addWidgetsresetPasswordForm() {
         "skin": "CopyslRichText09a9bccbec21a47",
         "text": "<u>Need help?</u>",
         "top": "80%",
-        "width": "30%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,

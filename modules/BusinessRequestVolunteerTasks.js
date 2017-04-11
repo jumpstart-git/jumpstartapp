@@ -1,21 +1,21 @@
 var gblReqForTaskDetails;
-mobileFabricConfigurationForRequestVolunteerTasks= 
+mobileFabricConfigurationForRequestVolunteerTasks=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"RequestVolunteerTasks",
                                                                 operations:["requestVolunteerTasks"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,8 +33,8 @@ mobileFabricConfigurationForRequestVolunteerTasks=
 
 // Function to invoke getFoxNews Service call
 function BusinessRequestVolunteerTasks (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //    gblReqForTaskDetails=valBusRequestID.widgetInfo.data[0].lblRequestId;
 //   alert("the selected"+JSON.stringify(gblReqForTaskDetails));
@@ -52,7 +52,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForRequestVolunteerTasks.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForRequestVolunteerTasks();
-            
+
       }
       else if (mobileFabricConfigurationForRequestVolunteerTasks.isKonySDKObjectInitialized)
       {
@@ -72,7 +72,7 @@ function initializeMobileFabricForRequestVolunteerTasks ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForRequestVolunteerTasks.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForRequestVolunteerTasks.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerTasks.appKey,mobileFabricConfigurationForRequestVolunteerTasks.appSecret,mobileFabricConfigurationForRequestVolunteerTasks.serviceURL,initializeMobileFabricForRequestVolunteerTasksSuccess,initializeMobileFabricForRequestVolunteerTasksFailure);  
+                                mobileFabricConfigurationForRequestVolunteerTasks.konysdkObject.init(mobileFabricConfigurationForRequestVolunteerTasks.appKey,mobileFabricConfigurationForRequestVolunteerTasks.appSecret,mobileFabricConfigurationForRequestVolunteerTasks.serviceURL,initializeMobileFabricForRequestVolunteerTasksSuccess,initializeMobileFabricForRequestVolunteerTasksFailure);
       // alert(getNotification());
     }
                 else
@@ -108,7 +108,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfigurationForRequestVolunteerTasks.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -131,7 +131,7 @@ function loginMFFailure(error)
 
 function setRequestVolunteerTasks()
 {
-  
+
                 //alert("inside TaskDetails");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -141,58 +141,58 @@ function setRequestVolunteerTasks()
                 var operationName = mobileFabricConfigurationForRequestVolunteerTasks.integrationServices[0].operations[0];
                                 var headers= {};
 
-     
+
      // alert("operation name"+operationName);
                   var taskDetailsForVol={};
                   taskDetailsForVol["businessId"]=kony.store.getItem("businessId");
                   taskDetailsForVol["volunteerId"]=kony.store.getItem("selReqId");//this is taken from volunteer profile after search js file
-                  taskDetailsForVol["title"]=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text;      
+                  taskDetailsForVol["title"]=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text;
                   taskDetailsForVol["hoursRequired"]=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text;
                   taskDetailsForVol["taskSkills"]=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text;
                   var rawDetails=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text;
-                  
+
                   var modifiedDetails=rawDetails.replace(/(\r\n|\n|\r)/gm," ");
                   taskDetailsForVol["details"]=modifiedDetails;
                   var basicMessage=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text;
                   var formatedText= basicMessage.replace(/(\r\n|\n|\r)/gm," ");
                   taskDetailsForVol["message"]=formatedText;
-                  
+
                   var str=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.formattedDate;
                   var arr=str.split("/");
                   var actStartDate2=arr[2]+"-"+arr[1]+"-"+arr[0];
                   var str1=searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.EndDateCalendarInput.formattedDate;
                   var arr1=str1.split("/");
                   var actEndDate2=arr1[2]+"-"+arr1[1]+"-"+arr1[0];
-                  
+
                   taskDetailsForVol["startDate"]=actStartDate2;
                   taskDetailsForVol["endDate"]=actEndDate2;
-                  
+
                // alert(JSON.stringify(taskDetailsForVol));
                 mobileFabricConfigurationForRequestVolunteerTasks.integrationObj.invokeOperation(operationName, headers, taskDetailsForVol, getBusRequestVolunteerTasksSuccessCallback, getBusRequestVolunteerTasksErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getBusRequestVolunteerTasksSuccessCallback(taskDetailsForVol)
 {
-  
+
   //alert("inside success"+JSON.stringify(taskDetailsForVol));
-  
-  
+
+
     if(taskDetailsForVol!="undefined"&& taskDetailsForVol!=undefined)
     {
       //alert("InSide"+JSON.stringify(taskDetailsForVol));
- 
-  
-     
-  }  
+
+
+
+  }
     }
- 
-   
- 
-  
- 
+
+
+
+
+
 
 
 function getBusRequestVolunteerTasksErrorCallback (error)
@@ -200,29 +200,25 @@ function getBusRequestVolunteerTasksErrorCallback (error)
                 kony.print (" ********** Entering into getNotificationSuccessCallback ********** ");
                 kony.print (" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
                 kony.application.dismissLoadingScreen();
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
      kony.ui.Alert({
       "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+      "alertTitle": "Confirmation",
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Request has been sent successfully",
-      "alertHandler":"null" 
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    });        
+    });
+    //End of D005
 searchResultProfile.startEngagementModalContainer.isVisible=false;
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text="";
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TaskDetailsTextArea.text="";
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text="";
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text="";
 searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text="";
-searchResultProfile.show();  
+searchResultProfile.show();
 
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
-
-
-
-  
- 
-

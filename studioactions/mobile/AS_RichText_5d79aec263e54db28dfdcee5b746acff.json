@@ -1,0 +1,29 @@
+{
+    "AS_RichText_5d79aec263e54db28dfdcee5b746acff": {
+        "id": "AS_RichText_5d79aec263e54db28dfdcee5b746acff",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "contextObj": {
+            "name": "mainPage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "660f2ce584d44ab7bfd2137b797089f0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "OPEN_URL_ide_onClick_05c86dcffdbe4e55881086a1d4be2151",
+            "type": "OPEN_URL",
+            "url": "http://www.supplynation.org.au/contactus",
+            "callbackType": null
+        }]
+    }
+}

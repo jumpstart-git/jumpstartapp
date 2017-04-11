@@ -43,7 +43,7 @@ function addWidgetsReportingPage() {
     }, {}, {});
     ReportingHdr.setDefaultUnit(kony.flex.DP);
     var ReportingLbl = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "45%",
         "centerY": "50%",
         "id": "ReportingLbl",
         "isVisible": true,
@@ -241,6 +241,7 @@ function addWidgetsReportingPage() {
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
         "top": "11dp",
+        "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
         "width": "90%",
         "year": 2016,
@@ -317,7 +318,7 @@ function addWidgetsReportingPage() {
         "isVisible": true,
         "left": "19dp",
         "onClick": AS_Button_2fcd5c5fee8d4b7e8a42a88c96695455,
-        "skin": "CopyslButtonGlossBlue00a0580561cd74a",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
         "top": "0dp",
         "width": "42%",
@@ -331,14 +332,14 @@ function addWidgetsReportingPage() {
         "showProgressIndicator": true
     });
     var sendReportsBtn = new kony.ui.Button({
-        "focusSkin": "CopyslButtonGlossRed06db549818c7f4a",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "sendReportsBtn",
         "isVisible": true,
         "left": "52%",
         "onClick": AS_Button_7427b749460c4190b7d37fc9de5e757e,
-        "skin": "CopyslButtonGlossBlue0e2aec49907aa40",
-        "text": "Send Reports",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Send reports",
         "top": "0dp",
         "width": "43%",
         "zIndex": 1

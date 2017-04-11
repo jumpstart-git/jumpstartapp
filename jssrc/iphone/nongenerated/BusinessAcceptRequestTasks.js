@@ -6,7 +6,7 @@ mobileFabricConfigurationForAcceptRequestTasks = {
         service: "BusinessAcceptRequestTasks",
         operations: ["acceptRequestTasks"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -151,7 +151,7 @@ function getAcceptRequestTasksErrorCallback(error) {
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Request has been moved to open task",
@@ -166,11 +166,11 @@ function getAcceptRequestTasksErrorCallback(error) {
     //   		   mainPage.destroy();
     //            mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible=true;
     //       	   mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible=true;
-    //            BusinessRecommendationService(); 
+    //            BusinessRecommendationService();
     //            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.MyActivityCreateOpportunityButton.isVisible=true;
-    //            mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=false;             
-    //            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible=true;             
-    //            mainPage.unAssignedTasksContainer.isVisible=true;       
+    //            mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible=false;
+    //            mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible=true;
+    //            mainPage.unAssignedTasksContainer.isVisible=true;
     //            mainPage.show();
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }

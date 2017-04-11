@@ -6,7 +6,7 @@ mobileFabricConfigurationForGererateReportVolunteert = {
         service: ["BusinessDeclineRequest"],
         operations: ["setBusinessDeclineRequest"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -139,7 +139,9 @@ function getGererateReportVolunteertErrorCallback(error) {
     mainPage.show();
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Confirmation",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Volunteers hours report successfully sent to your email",

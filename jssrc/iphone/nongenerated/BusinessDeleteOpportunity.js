@@ -11,14 +11,14 @@ mobileFabricConfigurationForDeleteOpportunity = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
-    //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-    //appSecret:"c600a59925b36419de1546056cd21557", 
+    //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+    //appSecret:"c600a59925b36419de1546056cd21557",
     //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
     integrationServices: [{
         service: "BusinessDeleteOpportunity",
         operations: ["deleteOpportunity"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -125,7 +125,7 @@ function getDeleteOpportunity() {
         //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
         //         }
         var OppId = {};
-        OppId["id"] = kony.store.getItem("TaskIdFromOppSeg"); //"1";//kony.store.getItem("businessId"); 
+        OppId["id"] = kony.store.getItem("TaskIdFromOppSeg"); //"1";//kony.store.getItem("businessId");
         //alert("id"+OppId["id"]);
         mobileFabricConfigurationForDeleteOpportunity.integrationObj.invokeOperation(operationName, headers, OppId, getDeleteOpportunitySuccessCallback, getDeleteOpportunityErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
@@ -166,7 +166,7 @@ function getDeleteOpportunityErrorCallback(error) {
     mainPage.mainPageBody.mainPageContentParent.myActivity.unAssignedTasksContainer.unAssignedTaskListContainer.unassignedTaskList.removeAll();
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Brief has been removed from the list",
@@ -175,7 +175,7 @@ function getDeleteOpportunityErrorCallback(error) {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
     //mainPage.mainPageBody.mainPageContentParent.myActivity.unAssignedTasksContainer.unAssignedTaskListContainer.unassignedTaskList.removeAll();
-    //alert("Opportunity has been removed from the list");  
+    //alert("Opportunity has been removed from the list");
     BusinessOpenCloseTaskService();
     kony.application.dismissLoadingScreen();
     mainPage.destroy();
@@ -193,5 +193,5 @@ function getDeleteOpportunityErrorCallback(error) {
 function getBusinessOpportunityDeleted(delvOppResponse) {
     if (delvOppResponse != "undefined" && delvOppResponse != undefined) {}
     kony.application.dismissLoadingScreen();
-    //BusinessCloseTaskService ();  
+    //BusinessCloseTaskService ();
 }

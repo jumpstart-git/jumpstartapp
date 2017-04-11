@@ -48,7 +48,7 @@
     "enablescrolling": true,
     "id": "TaskDetailsHdrFlex",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "f84c9b12bf7f44d498b67c26e0e31fbc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

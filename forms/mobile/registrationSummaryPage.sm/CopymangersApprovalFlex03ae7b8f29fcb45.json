@@ -48,7 +48,7 @@
     "kuid": "9947baef437049ad8008a44f1530568c",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyeligibiltyCriteriFlxScroll0d6a39065171f43",
+    "parent": "CopyeligibiltyCriteriFlxScroll",
     "pf": "registrationSummaryPage",
     "snapgridsize": 10,
     "snaptogrid": true,

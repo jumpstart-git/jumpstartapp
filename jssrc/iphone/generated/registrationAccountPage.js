@@ -202,7 +202,7 @@ function addWidgetsregistrationAccountPage() {
         "isVisible": true,
         "left": "1%",
         "onClick": AS_Button_f27476381d2c47589514da1ebb5535c3,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Back",
         "width": "48%"
     }, {
@@ -215,13 +215,13 @@ function addWidgetsregistrationAccountPage() {
     });
     var regAccountInfoContinueButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "regAccountInfoContinueButton",
         "isVisible": true,
         "left": 6,
         "onClick": AS_Button_bcbbff717f3d44baa85e01e8e388552d,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "48%"
     }, {

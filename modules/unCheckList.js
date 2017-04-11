@@ -1,20 +1,20 @@
-mobileFabricConfigurationForVolunteerUnCheckBox= 
+mobileFabricConfigurationForVolunteerUnCheckBox=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                
-                            
-                                
-                                integrationServices: 
+
+
+
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"checkBoxservice",
                                                                 operations:["checkBox"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -33,8 +33,8 @@ mobileFabricConfigurationForVolunteerUnCheckBox=
 // Function to invoke getFoxNews Service call
 function UnCheckBoxFunction7(){
   //alert("1");
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //kony.application.dismissLoadingScreen();
                 // Let's get the news type the user selected
@@ -51,7 +51,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       if (!mobileFabricConfigurationForVolunteerUnCheckBox.isKonySDKObjectInitialized)
       {
            initializeMobileFabricForUnCheckBoxFunction();
-            
+
       }
       else if (mobileFabricConfigurationForVolunteerUnCheckBox.isKonySDKObjectInitialized)
       {
@@ -71,7 +71,7 @@ function initializeMobileFabricForUnCheckBoxFunction ()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForVolunteerUnCheckBox.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForVolunteerUnCheckBox.konysdkObject.init(mobileFabricConfigurationForVolunteerUnCheckBox.appKey,mobileFabricConfigurationForVolunteerUnCheckBox.appSecret,mobileFabricConfigurationForVolunteerUnCheckBox.serviceURL,initializeMobileFabricForUnCheckBoxFunctionSuccess,initializeMobileFabricForUnCheckBoxFunctionFailure);  
+                                mobileFabricConfigurationForVolunteerUnCheckBox.konysdkObject.init(mobileFabricConfigurationForVolunteerUnCheckBox.appKey,mobileFabricConfigurationForVolunteerUnCheckBox.appSecret,mobileFabricConfigurationForVolunteerUnCheckBox.serviceURL,initializeMobileFabricForUnCheckBoxFunctionSuccess,initializeMobileFabricForUnCheckBoxFunctionFailure);
       // alert(getNotification());
     }
                 else
@@ -107,7 +107,7 @@ function authenticateMFUsingUserStore(){
    mobileFabricConfigurationForVolunteerUnCheckBox.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -130,7 +130,7 @@ function loginMFFailure(error)
 
 function setUnCheckBoxFunction()
 {
-  
+
                 //alert("inside set");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -140,60 +140,64 @@ function setUnCheckBoxFunction()
                 var operationName = mobileFabricConfigurationForVolunteerUnCheckBox.integrationServices[0].operations[0];
                                 var headers= {};
 
-      
+
      // alert("operation name"+operationName);
                   var dataCheckBoxFunction={};
                   if(kony.store.getItem("isBusOrVol")=="business")
                     {
                       dataCheckBoxFunction["userName"]=kony.store.getItem("BusinessEmailId");
-                    
+
                     }
                else{
                   dataCheckBoxFunction["userName"]=kony.store.getItem("loginEmail");
                }
-                  
+
                dataCheckBoxFunction["accept"]="n";
                      //alert("dataCheckBoxFunction"+JSON.stringify(dataCheckBoxFunction));
                 mobileFabricConfigurationForVolunteerUnCheckBox.integrationObj.invokeOperation(operationName, headers, dataCheckBoxFunction, getCheckBoxFunctionSuccessCallback77, getCheckBoxFunctionErrorCallback77);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getCheckBoxFunctionSuccessCallback77(dataCheckBoxFunction16)
 {
-  
+
   //alert("inside success"+JSON.stringify(dataCheckBoxFunction16));
-  
-  
+
+
     if(dataCheckBoxFunction16!="undefined"&& dataCheckBoxFunction16!=undefined)
     {
       //alert("InSide"+JSON.stringify(dataCheckBoxFunction));
 
-  
-     
-  }  
+
+
+  }
    kony.application.dismissLoadingScreen();
     }
 
-   
+
 function getCheckBoxFunctionErrorCallback77 (error)
 {
-  //alert("inside error callback");             
+  //alert("inside error callback");
   kony.print (" ********** Entering into getNotificationSuccessCallback ********** ");
                 kony.print (" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
                 kony.application.dismissLoadingScreen();
               //  alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
                 kony.print (" ********** Exiting out of getNotificationSuccessCallback ********** ");
  kony.ui.Alert({
-      "alertType": constants.ALERT_TYPE_INFO,
-      "alertTitle": null,
+   //D022: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
+      "alertType": constants.ALERT_TYPE_CONFIRMATION,
+      //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+      "alertTitle": "Confirmation",
+      //End of D005
       "yesLabel": "OK",
    "noLabel":"No",
-      "message": "Email notifications disabled",
-      "alertHandler":"null" 
+   //D022: Changed message from "Email notifications disabled" to "You have disabled email notification"
+      "message": "You have disabled email notification",
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    }); 
+    });
  // alert("Email notifications disabled");
 }

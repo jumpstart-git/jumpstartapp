@@ -48,7 +48,7 @@
     "enablescrolling": true,
     "id": "taskDetailsModalFlex",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "0395eab2e0234f74bb4c74c908875bc5",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

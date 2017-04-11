@@ -50,7 +50,7 @@ function addWidgetsregistrationPersonalPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var regFirstNameInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_WORDS,
         "height": "40dp",
         "id": "regFirstNameInput",
         "isVisible": true,
@@ -93,7 +93,7 @@ function addWidgetsregistrationPersonalPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var regLastNameInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_WORDS,
         "height": "40dp",
         "id": "regLastNameInput",
         "isVisible": true,
@@ -142,7 +142,7 @@ function addWidgetsregistrationPersonalPage() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
-            ["Select", "Select from drop down menu"],
+            ["Select", "Select"],
             ["NSW", "New South Wales"],
             ["ACT", "Australian Capital Territory"],
             ["QLD", "Queensland"],
@@ -159,7 +159,7 @@ function addWidgetsregistrationPersonalPage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -335,13 +335,13 @@ function addWidgetsregistrationPersonalPage() {
     });
     var regPersonalInfoContinueButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "regPersonalInfoContinueButton",
         "isVisible": true,
         "left": 6,
         "onClick": AS_Button_fa66164ea64f4016979992ff3a464ad7,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "48%"
     }, {

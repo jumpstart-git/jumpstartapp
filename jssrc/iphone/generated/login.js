@@ -22,33 +22,45 @@ function addWidgetslogin() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "CopyslFbox038cb36c9175e46",
-        "top": "6dp",
+        "top": "5%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     loginHeader.setDefaultUnit(kony.flex.DP);
+    var FlexGroup0024f22dee05146 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "75%",
+        "id": "FlexGroup0024f22dee05146",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    FlexGroup0024f22dee05146.setDefaultUnit(kony.flex.DP);
     var companyLogo = new kony.ui.Image2({
-        "centerX": "50%",
-        "height": "60dp",
+        "height": "100%",
         "id": "companyLogo",
         "isVisible": true,
         "skin": "companyLogo",
-        "src": "supplynationlogo2x.png",
-        "top": "8%",
-        "width": "80dp",
+        "src": "jumpstartlogo2x.png",
+        "width": "100%",
         "zIndex": 1
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
+    FlexGroup0024f22dee05146.add(companyLogo);
     var CopyloginPageInfo0dbc3b1ffc4c64a = new kony.ui.RichText({
-        "centerX": "50%",
+        "centerX": "50.00%",
         "id": "CopyloginPageInfo0dbc3b1ffc4c64a",
-        "isVisible": true,
+        "isVisible": false,
         "skin": "jumpStartRT230",
         "text": "<span style=\"font-weight: bold\">JUMP</span>START",
-        "top": "7dp",
+        "top": 0,
         "width": "80%",
         "zIndex": 1
     }, {
@@ -59,7 +71,7 @@ function addWidgetslogin() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var Label0e726b18d95544a = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "49.96%",
         "id": "Label0e726b18d95544a",
         "isVisible": true,
         "left": "0dp",
@@ -82,7 +94,6 @@ function addWidgetslogin() {
         "left": "0dp",
         "skin": "jumpStartLabel120",
         "text": "Connecting People",
-        "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -93,17 +104,17 @@ function addWidgetslogin() {
         "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
-    loginHeader.add(companyLogo, CopyloginPageInfo0dbc3b1ffc4c64a, Label0e726b18d95544a, CopyLabel0ae99a693f6394a);
+    loginHeader.add(FlexGroup0024f22dee05146, CopyloginPageInfo0dbc3b1ffc4c64a, Label0e726b18d95544a, CopyLabel0ae99a693f6394a);
     var loginBody = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "30%",
+        "height": "40%",
         "id": "loginBody",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "0%",
+        "top": "0.00%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -164,12 +175,12 @@ function addWidgetslogin() {
     });
     var signInButton = new kony.ui.Button({
         "centerX": "50.00%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "signInButton",
         "isVisible": true,
         "onClick": AS_Button_c55a88368de54c408d5a02eef07ad463,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Login",
         "top": "6dp",
         "width": "80%",
@@ -182,38 +193,55 @@ function addWidgetslogin() {
     }, {
         "showProgressIndicator": true
     });
-    loginBody.add(usernameField, passwordField, signInButton);
+    var Button076093b19f13149 = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "slButtonGlossRed",
+        "height": "45dp",
+        "id": "Button076093b19f13149",
+        "isVisible": true,
+        "skin": "ngnyBackButton",
+        "text": "Register as a volunteer",
+        "top": "6dp",
+        "width": "80%",
+        "zIndex": 2
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "showProgressIndicator": true
+    });
+    loginBody.add(usernameField, passwordField, signInButton, Button076093b19f13149);
     var loginFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "20%",
+        "height": "15%",
         "id": "loginFooter",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "-1%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     loginFooter.setDefaultUnit(kony.flex.DP);
-    var loginRegisterLink = new kony.ui.Label({
+    var loginRegisterLink = new kony.ui.RichText({
         "centerX": "50%",
         "id": "loginRegisterLink",
-        "isVisible": true,
-        "left": "0dp",
-        "onTouchStart": AS_Label_2e641c70f5f84f80bb2d8fe88102e950,
-        "skin": "jumpStartLabelGreen120",
-        "text": "Register as a skilled volunteer",
-        "top": "21dp",
-        "width": "72%",
-        "zIndex": 2
+        "isVisible": false,
+        "linkSkin": "CopyslRichText09c893bc72d674b",
+        "onTouchStart": AS_RichText_58183f113bfb4950a774c5437a2f1324,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Register as a skilled volunteer</u>",
+        "top": "13dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {
-        "textCopyable": false,
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var forgotPasswordLink = new kony.ui.RichText({
@@ -221,10 +249,9 @@ function addWidgetslogin() {
         "id": "forgotPasswordLink",
         "isVisible": true,
         "linkSkin": "CopyslRichText09c893bc72d674b",
-        "onTouchStart": AS_RichText_40a28652bced44cf8930a409eb1821e0,
-        "skin": "jumpStartRtLink100",
+        "onTouchStart": AS_RichText_bab7a79099ac4a409c36fc1f1e48d543,
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Forgot password?</u>",
-        "top": "13dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -241,7 +268,7 @@ function addWidgetslogin() {
         "linkSkin": "CopyslRichText09c893bc72d674b",
         "onClick": AS_RichText_25939b8e86014441b5a47e1b246b12e6,
         "onTouchStart": AS_RichText_101d5ce6c83f4b2885695188561bfa47,
-        "skin": "jumpStartRtLink100",
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Need help?</u>",
         "top": "12dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -256,26 +283,27 @@ function addWidgetslogin() {
     loginFooter.add(loginRegisterLink, forgotPasswordLink, needHelpLink);
     var loginImages = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "0%",
         "clipBounds": true,
         "height": "10%",
         "id": "loginImages",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "1dp",
+        "left": "0dp",
         "skin": "slFbox",
-        "top": "10%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     loginImages.setDefaultUnit(kony.flex.DP);
     var imgNew = new kony.ui.Image2({
+        "bottom": "0dp",
         "height": "100%",
         "id": "imgNew",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
         "src": "supplynationimgs_new.png",
-        "top": "0dp",
+        "top": "1dp",
         "width": "100%",
         "zIndex": 1
     }, {
@@ -320,7 +348,7 @@ function addWidgetslogin() {
         "id": "codeValidationLbl",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslLabel0ef341893161d42",
+        "skin": "ngnyOrangeLabelText",
         "text": "Logging in for the first time?",
         "top": "15dp",
         "width": "75%",
@@ -392,7 +420,7 @@ function addWidgetslogin() {
         "left": "0dp",
         "onClick": AS_RichText_6a82d8aa4fcc448fb084c717b0967987,
         "onTouchStart": AS_RichText_ba3a520a0bd6464caf7feb4297050d6d,
-        "skin": "CopyslRichText01225eb7cd5fb40",
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Resend code to your email</u>\n",
         "top": "160dp",
         "width": "70%",
@@ -449,16 +477,16 @@ function addWidgetslogin() {
     validatecodeFooter.setDefaultUnit(kony.flex.DP);
     var submitBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0717d880851f847",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "submitBtn",
         "isVisible": true,
-        "left": "51%",
+        "left": "50%",
         "onClick": AS_Button_102be19028bf4b8e8c5f3de8263022bb,
-        "skin": "CopyslButtonGlossBlue0717d880851f847",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "10%",
-        "width": "48%",
+        "width": "40%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -470,16 +498,16 @@ function addWidgetslogin() {
     });
     var cancelBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossRed0bc9cae1915754e",
+        "focusSkin": "ngnyBackButton",
         "height": "45dp",
         "id": "cancelBtn",
         "isVisible": true,
-        "left": "1%",
+        "left": "10%",
         "onClick": AS_Button_a7a9f65b40a4414e8b46666fee11aefd,
-        "skin": "CopyslButtonGlossBlue0dfeab12c7cd543",
+        "skin": "ngnyBackButton",
         "text": "Back",
         "top": "10%",
-        "width": "48%",
+        "width": "40%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,

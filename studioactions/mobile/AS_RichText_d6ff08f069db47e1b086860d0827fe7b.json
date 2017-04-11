@@ -25,7 +25,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__459b9dca778c4859851088ab5ddd3cab",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n      \"alertTitle\": \"Confirm\",\n      \"yesLabel\": \"Yes\",\n   \"noLabel\":\"No\",\n      \"message\": \"Do you really want to remove the brief?\",\n      \"alertHandler\":appUpgradeCloseOpp \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_RIGHT\n    }); \n\n\nfunction appUpgradeCloseOpp(response)\n{\n  if(response==true)\n    {\n     unAssignedTaskSegData1();\n    }else\n      {\n        \n      }\n}\n",
+            "codeSnippet": "kony.ui.Alert({\n      \"alertType\": constants.ALERT_TYPE_CONFIRMATION,\n      \"alertTitle\": \"Confirmation\",\n      \"yesLabel\": \"Yes\",\n   \"noLabel\":\"No\",\n      \"message\": \"Do you really want to remove the brief?\",\n      \"alertHandler\":appUpgradeCloseOpp \n    }, {\n      \"iconPosition\": constants.ALERT_ICON_POSITION_RIGHT\n    }); \n\n\nfunction appUpgradeCloseOpp(response)\n{\n  if(response==true)\n    {\n     unAssignedTaskSegData1();\n    }else\n      {\n        \n      }\n}\n",
             "parentId": null,
             "callbackType": null
         }]
