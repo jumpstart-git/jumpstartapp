@@ -42,7 +42,7 @@
     "contentalignment": 5,
     "id": "CopyRichText05ae4cf7d0a8c45",
     "ide_onClick": "AS_RichText_8725e935980241a59eec2dd1cde0d619",
-    "ide_onTouchStart": "AS_RichText_214b052e608a4321b07888227bf903d0",
+    "ide_onTouchStart": "AS_FlexContainer_258953e6a1604973803206e010c14bc8",
     "info": null,
     "isvisible": true,
     "kuid": "8a635fc65a734ceb9d1571e015ddb211",

@@ -34,6 +34,10 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "regOutsideHoursNo",
@@ -43,7 +47,7 @@
     "isvisible": true,
     "kuid": "efeb497fd97e47a1a0bc3e431d30bb9d",
     "name": "kony.ui.RichText",
-    "parent": "regScheduleOutsideHoursFooter",
+    "parent": "scheduleCancelButtonContainer",
     "pf": "registrationSchedulePage",
     "wType": "RichText",
     "widgetalignment": 5,

@@ -510,7 +510,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "101dp",
         "onClick": AS_RichText_6101c7fd29864c16b986f136358074eb,
-        "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
+        "onTouchStart": AS_FlexContainer_258953e6a1604973803206e010c14bc8,
         "skin": "CopyslRichText08d925a35bfe342",
         "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
         "top": "30dp",

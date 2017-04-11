@@ -3081,7 +3081,7 @@ function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, att
 
 function AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea(eventobject, linktext, attributes) {}
 
-function AS_RichText_214b052e608a4321b07888227bf903d0(eventobject, x, y) {
+function AS_FlexContainer_258953e6a1604973803206e010c14bc8(eventobject, x, y) {
     kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
