@@ -562,7 +562,11 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_61ea1e6a537b4f45a68bb7675000343f,
         "skin": "ngnyGrayLinkText",
+<<<<<<< Updated upstream
         "text": "<u>Refresh Results</u>",
+=======
+        "text": "<u>Refresh results</u>",
+>>>>>>> Stashed changes
         "top": "6dp",
         "width": "50%",
         "zIndex": 1
@@ -1185,7 +1189,7 @@ function addWidgetsmainPage() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "myOpenTasksListContainer",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
@@ -1725,7 +1729,11 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_580bb705ba4b48c78c357662dc41a0e2,
         "skin": "ngnyGrayLinkText",
+<<<<<<< Updated upstream
         "text": "<u>Refresh Results</u>",
+=======
+        "text": "<u>Refresh results</u>",
+>>>>>>> Stashed changes
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -1804,7 +1812,7 @@ function addWidgetsmainPage() {
         "groupCells": false,
         "height": "475dp",
         "id": "segGroupNotification",
-        "isVisible": false,
+        "isVisible": true,
         "left": "9dp",
         "needPageIndicator": true,
         "pageOffDotImage": "pageoffdot.png",
@@ -1903,7 +1911,11 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
         "skin": "ngnyGrayLinkText",
+<<<<<<< Updated upstream
         "text": "<u>Refresh Results</u>",
+=======
+        "text": "<u>Refresh results</u>",
+>>>>>>> Stashed changes
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -2052,7 +2064,11 @@ function addWidgetsmainPage() {
         "left": "95dp",
         "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
         "skin": "ngnyGrayLinkText",
+<<<<<<< Updated upstream
         "text": "<u>Refresh Results</u>",
+=======
+        "text": "<u>Refresh results</u>",
+>>>>>>> Stashed changes
         "top": "3dp",
         "width": "50%",
         "zIndex": 1
@@ -2452,10 +2468,10 @@ function addWidgetsmainPage() {
         "clipBounds": true,
         "height": "100%",
         "id": "sideBarOverlay",
-        "isVisible": false,
+        "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "onTouchStart": AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80,
-        "right": "0dp",
+        "right": "-5dp",
         "skin": "CopyslFbox0e592ef4af81d42",
         "top": "0dp",
         "width": "100%",
@@ -2653,6 +2669,7 @@ function addWidgetsmainPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var checkList = new kony.ui.CheckBoxGroup({
+<<<<<<< Updated upstream
         "bottom": "25%",
         "centerX": "15%",
         "centerY": "50%",
@@ -2660,6 +2677,12 @@ function addWidgetsmainPage() {
         "id": "checkList",
         "isVisible": true,
         "left": "35dp",
+=======
+        "centerY": "50%",
+        "height": "50dp",
+        "id": "checkList",
+        "isVisible": true,
+>>>>>>> Stashed changes
         "masterData": [
             ["cbg1", "."]
         ],
@@ -2669,6 +2692,7 @@ function addWidgetsmainPage() {
         "minWidth": "35%",
         "onSelection": AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518,
         "right": "2dp",
+<<<<<<< Updated upstream
         "skin": "CopyslCheckBoxGroup0306443d20b8149",
         "top": "0%",
         "zIndex": 2
@@ -2923,6 +2947,10 @@ function addWidgetsmainPage() {
         "selectedKeys": ["cbg1"],
         "skin": "CopyslCheckBoxGroup0306443d20b8149",
         "width": "60dp",
+=======
+        "skin": "CopyslCheckBoxGroup0306443d20b8149",
+        "width": "50dp",
+>>>>>>> Stashed changes
         "zIndex": 2
     }, {
         "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_VERTICAL,
@@ -2933,10 +2961,17 @@ function addWidgetsmainPage() {
         "untickedImage": "markascomplete.png",
         "viewType": constants.CHECKBOX_VIEW_TYPE_ONOFFSWITCH
     });
+<<<<<<< Updated upstream
     var CopyemailNotificationLbl0dd337ff43bb042 = new kony.ui.Label({
         "centerY": "50%",
         "height": "20dp",
         "id": "CopyemailNotificationLbl0dd337ff43bb042",
+=======
+    var emailNotificationLbl = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "20dp",
+        "id": "emailNotificationLbl",
+>>>>>>> Stashed changes
         "isVisible": true,
         "left": "2%",
         "skin": "CopyslLabel0d5ddd374374340",

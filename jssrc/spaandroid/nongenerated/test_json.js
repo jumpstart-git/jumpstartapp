@@ -8,14 +8,21 @@ var MARKASCOMPLETETEXT = "Mark as Complete";
 var SENDRECOMMENDATION = "Send Recommendation";
 var SENDREPORTTEXT = "Send Report";
 var HAS_ACCEPTED_YOUR_REQUEST = "Has accepted your request";
-var CANCEL_REQUEST = "<a href='#' style='color: #000'>Cancel<br>Request</a>";
-var ACCEPT_TASK = "<a href='#' style='color: #000'>Accept<br>Task</a>";
-var CONTACT_REQUEST = "<a href='#' style='color: #000'>Contact</a>";
+var CANCEL_REQUEST = "<a href='#' style='color:#37b3b1'>Cancel<br>request</a>";
+var ACCEPT_TASK = "<a href='#' style='color: #37b3b1'>View task</a>";
+var CONTACT_REQUEST = "<a href='#' style='color: #37b3b1'>Contact</a>";
 var HAS_SENT_REQUEST = "Has sent you a request";
-var DECLINE_REQUEST = "<a href='#' style='color: #000'>Decline<br>Request</a>";
-var ACCEPT_REQUEST = "<a href='#' style='color: #000'>Accept<br>Request</a>";
-var VIEW_REQUEST = "<a href='#' style='color: #000'>View<br>Request</a>";
-var START_ENGAGEMENT = "<a href='#' style='color: #000'>Start<br>Engagement</a>";
+var DECLINE_REQUEST = "<a href='#' style='color: #37b3b1'>Decline<br>request</a>";
+var ACCEPT_REQUEST = "<a href='#' style='color: #37b3b1'>Accept<br>request</a>";
+var VIEW_REQUEST = "<a href='#' style='color: #37b3b1'>View<br>request</a>";
+var START_ENGAGEMENT = "<a href='#' style='color: #37b3b1'>Start<br>Engagement</a>";
+//mamata
+var MARK_AS_COMPLETE = "<a href='#' style='color: #37b3b1'>Mark as complete</a>";
+var SEND_RECOMMENDATION = "<a href='#' style='color: #37b3b1'>Send_Recommendation</a>";
+var Refresh_results = "<a href='#' style='color: #37b3b1'>Refresh results</a>";
+var EDIT = "<a href='#' style='color: #37b3b1'><u>edit</u></a>";
+var CLOSE = "<a href='#' style='color: #37b3b1'><u>close</u></a>";
+var ENDORESE_VOLUNTEER = "<a href='#' style='color: #37b3b1'><u>Endorse_volunteer</u></a>";
 // TEST DATA:
 var loggedInUserInfo = {
     firstName: 'Jar Jar',
@@ -125,6 +132,7 @@ var businessOpenTasksData = [{
     openTaskExpandThis: EXPANDICONIMG,
     markAsCompleteImage: MARKASCOMPLETEICON,
     markAsCompleteText: MARKASCOMPLETETEXT,
+    markAsCompleteRichText: MARK_AS_COMPLETE,
     sendReportImage: SENDREPORTICON,
     sendReportText: SENDREPORTTEXT
 }];

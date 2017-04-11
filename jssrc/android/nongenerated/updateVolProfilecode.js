@@ -576,6 +576,18 @@ function saveVolunteerProfilew() {
         dataforVolProfile["userId"] = kony.store.getItem("userId");
         //  alert("in10");
         dataforVolProfile["businessUnit"] = volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
+        //start feb 16
+        var abotme = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
+        if (abotme == null || abotme == "null" || abotme == "") {
+            abotme = " ";
+        }
+        dataforVolProfile["aboutMe"] = abotme;
+        var work = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
+        if (work == null || work == "null" || work == "") {
+            work = " ";
+        }
+        dataforVolProfile["workDetails"] = work;
+        //
         dataforVolProfile["file"] = kony.store.getItem("imageValUpdateVolunteer");
         dataforVolProfile["fileName"] = kony.store.getItem("imageFileNameValUpdateVolunteer");
         kony.print("dataprintwhole from textbox:" + JSON.stringify(dataforVolProfile));

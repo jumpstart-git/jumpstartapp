@@ -59,7 +59,11 @@ function onRegFieldUpdate(fieldEdited) {
             volunteerRegObject.aboutMe = fieldContent;
             break;
         case "regCompanyInput":
-            volunteerRegObject.companyName = fieldContent;
+            //volunteerRegObject.companyName = fieldContent;
+            volunteerRegObject.companyName = fieldEdited.selectedKey;
+            if (volunteerRegObject.companyName == "Select") {
+                volunteerRegObject.companyName = "";
+            }
             break;
         case "regRoleInput":
             volunteerRegObject.role = fieldContent;
@@ -68,10 +72,16 @@ function onRegFieldUpdate(fieldEdited) {
             volunteerRegObject.businessUnit = fieldContent;
             break;
         case "regStateInput":
-            volunteerRegObject.state = fieldContent;
+            volunteerRegObject.state = fieldEdited.selectedKey;
+            if (volunteerRegObject.state == "Select") {
+                volunteerRegObject.state = "";
+            }
             break;
         case "regAddressInput":
             volunteerRegObject.address = fieldContent;
+            break;
+        case "regCityInput":
+            volunteerRegObject.city = fieldContent;
             break;
         case "regContactNumberInput":
             volunteerRegObject.contactNumber = fieldContent;
@@ -101,6 +111,9 @@ function validatePersonalInfo() {
     if (!volunteerRegObject.address) {
         return false;
     }
+    if (!volunteerRegObject.city) {
+        return false;
+    }
     if (!volunteerRegObject.contactNumber) {
         return false;
     }
@@ -109,10 +122,15 @@ function validatePersonalInfo() {
 
 function submitPersonalInfo() {
     var isPersonalInfoComplete = validatePersonalInfo();
+    // alert("submitPersonalInfo"+JSON.stringify(volunteerRegObject));
     if (isPersonalInfoComplete) {
         registrationAccountPage.show();
     } else {
+<<<<<<< Updated upstream
         validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+=======
+        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+>>>>>>> Stashed changes
         return false;
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
@@ -175,17 +193,21 @@ function validatePassword() {
 function submitAccountInfo() {
     var isAccountInfoComplete = validateAccountInfo();
     if (!isAccountInfoComplete) {
+<<<<<<< Updated upstream
         validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+=======
+        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+>>>>>>> Stashed changes
         return false;
     }
     var isValidEmail = validateEmail();
     if (!isValidEmail) {
-        validationAlert("Email Address Error", "Email address entered is not valid format");
+        validationAlert("Email address error", "Please check the format of the email address");
         return false;
     }
     var isEqualPassword = validatePasswordEquality();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Passwords entered are not equal");
+        validationAlert("Password Error", "Password entered does not match");
         return false;
     }
     var isValidPassword = validatePassword();
@@ -217,14 +239,16 @@ function updateSkillsSegment() {
     if (volunteerRegObject.skillsArray.length > 0) {
         for (var i = 0; i < volunteerRegObject.skillsArray.length; i++) {
             var skillObj = {
-                "regSkillItem": volunteerRegObject.skillsArray[i]
+                "regSkillItem": volunteerRegObject.skillsArray[i],
+                "imgClose": "cross.png"
             };
             skillSegmentData.push(skillObj);
         }
         registrationProfessionalPage.regSkillsSegment.setData(skillSegmentData);
     } else {
         var emptySkillObj = {
-            "regSkillItem": ""
+            "regSkillItem": "",
+            "imgClose": ""
         };
         skillSegmentData.push(emptySkillObj);
         registrationProfessionalPage.regSkillsSegment.setData(skillSegmentData);
@@ -274,16 +298,22 @@ function validateProfessionalInfo() {
 function submitProfessionalInfo() {
     var isProfessionalInfoComplete = validateProfessionalInfo();
     if (!isProfessionalInfoComplete) {
+<<<<<<< Updated upstream
         validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+=======
+        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
+>>>>>>> Stashed changes
         return false;
     }
     var hasSkill = volunteerRegObject.skillsArray.length;
     if (!hasSkill) {
-        validationAlert("Enter a Skill", "Please add at least 1 skill");
+        validationAlert("Enter a skill", "Please add at least 1 skill");
         return false;
     }
     if (isProfessionalInfoComplete && hasSkill) {
-        registrationSchedulePage.show();
+        //registrationSchedulePage.show();
+        // CopyregistrationSchedulePage07348ad65c97f4c.show();
+        scheduleNewForm.show();
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
@@ -413,13 +443,29 @@ function validateAvailability() {
 }
 
 function hideOutsideHoursModal() {
-    registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = false;
+    scheduleNewForm.outsideScheduletime.isVisible = false;
+    //registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = false;
+    // CopyregistrationSchedulePage07348ad65c97f4c.regScheduleOutsideHoursModal.isVisible=false;
 }
 
 function hoursAgreeAndContinue() {
     hideOutsideHoursModal();
-    updateSummaryPageInfo();
-    registrationSummaryPage.show();
+    var daySelected = scheduleNewForm.listDays.selectedKey;
+    var fromTime = scheduleNewForm.listFromTime.selectedKey + " " + scheduleNewForm.listFromTimeMerdidian.selectedKey;
+    var toTime = scheduleNewForm.listToTime.selectedKey + " " + scheduleNewForm.listToTimeMeridian.selectedKey;
+    var scheduleVal = daySelected + " " + fromTime + " TO " + toTime;
+    //start duplicate check
+    if (scheduleVal) {
+        var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
+        if (indexOfSchedule != -1) {
+            alert("this schedule already exists");
+            return false;
+            //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
+        }
+    }
+    //end duplicate check
+    volunteerRegObject.scheduleArray.push(scheduleVal);
+    setScheduleSeg();
 }
 
 function startLessThanEnd() {
@@ -446,18 +492,49 @@ function validateVolunteerHours() {
     if (start >= 900 && end <= 1700) {
         return true;
     } else {
-        registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = true;
+        scheduleNewForm.outsideScheduletime.isVisible = true;
+        //  registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = true;
+        //CopyregistrationSchedulePage07348ad65c97f4c.regScheduleOutsideHoursModal.isVisible=true;
+        //  alert("outside");
         return false;
     }
 }
 
 function submitScheduleInfo() {
-    var hasAvailability = true; //validateAvailability();
+    var hasAvailability = validateAvailability(); // true;//validateAvailability();
+    if (hasAvailability === false) {
+        return false;
+    }
     var isCorrectTime = startLessThanEnd();
+    if (isCorrectTime === false) {
+        return false;
+    }
     var isValidHours = validateVolunteerHours();
     if (hasAvailability && isCorrectTime && isValidHours) {
-        updateSummaryPageInfo();
-        registrationSummaryPage.show();
+        //updateSummaryPageInfo();
+        //registrationSummaryPage.show();
+        var daySelected = scheduleNewForm.listDays.selectedKey;
+        var fromTime = scheduleNewForm.listFromTime.selectedKey + " " + scheduleNewForm.listFromTimeMerdidian.selectedKey;
+        var toTime = scheduleNewForm.listToTime.selectedKey + " " + scheduleNewForm.listToTimeMeridian.selectedKey;
+        var scheduleVal = daySelected + " " + fromTime + " TO " + toTime;
+        //start duplicate check
+        if (scheduleVal) {
+            var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
+            if (indexOfSchedule != -1) {
+                alert("this schedule already exists");
+                return false;
+                //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
+            }
+        }
+        //end duplicate check
+        volunteerRegObject.scheduleArray.push(scheduleVal);
+        setScheduleSeg();
+        scheduleNewForm.listDays.selectedKey = "";
+        scheduleNewForm.listFromTime.selectedKey = "";
+        scheduleNewForm.listFromTimeMerdidian.selectedKey = "";
+        scheduleNewForm.listToTime.selectedKey = "";
+        scheduleNewForm.listToTimeMeridian.selectedKey = "";
+        // alert("done");
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
@@ -469,8 +546,15 @@ function updateSummaryPageInfo() {
     registrationSummaryPage.summUserNameLabel.text = volunteerRegObject.emailAddress; //volunteerRegObject.firstName + " " + volunteerRegObject.lastName;
     registrationSummaryPage.summEmailLabel.text = volunteerRegObject.emailAddress;
     registrationSummaryPage.summContactNumberLabel.text = volunteerRegObject.contactNumber;
-    registrationSummaryPage.summPasswordLabel.text = volunteerRegObject.password;
-    registrationSummaryPage.summAddressLabel.text = volunteerRegObject.address + ", " + volunteerRegObject.state;
+    //start pass
+    var str = volunteerRegObject.password;
+    var text = "";
+    for (var i = 0; i < str.length; i++) {
+        text = text + "*";
+    }
+    //end pass
+    registrationSummaryPage.summPasswordLabel.text = text; //volunteerRegObject.password;
+    registrationSummaryPage.summAddressLabel.text = volunteerRegObject.address + ", " + volunteerRegObject.city + "," + volunteerRegObject.state;
     registrationSummaryPage.summCompanyLabel.text = volunteerRegObject.companyName;
     registrationSummaryPage.summRoleLabel.text = volunteerRegObject.role;
     var skillsString = "";
@@ -506,7 +590,16 @@ function updateSummaryPageInfo() {
     }
     gblDays = availabilityString;
     availabilityString += volunteerRegObject.availability.startTime + " " + volunteerRegObject.availability.startMeridiem + " - " + volunteerRegObject.availability.endTime + " " + volunteerRegObject.availability.endMeridiem;
-    registrationSummaryPage.summAvailabilityRT.text = availabilityString;
+    //registrationSummaryPage.summAvailabilityRT.text = availabilityString;
+    var scheduleString = "";
+    for (var i = 0; i < volunteerRegObject.scheduleArray.length; i++) {
+        if (scheduleString) {
+            scheduleString = scheduleString + ", " + volunteerRegObject.scheduleArray[i];
+        } else {
+            scheduleString = volunteerRegObject.scheduleArray[i];
+        }
+    }
+    registrationSummaryPage.summAvailabilityRT.text = scheduleString;
 }
 /**************************************** END OF SCHEDULE INFORMATION ****************************************/
 function submitRegistration() {
@@ -528,19 +621,23 @@ function submitRegistration() {
     gblRegistrationDetails["firstName"] = volunteerRegObject.firstName;
     gblRegistrationDetails["lastName"] = volunteerRegObject.lastName;
     gblRegistrationDetails["address"] = volunteerRegObject.address + ", " + volunteerRegObject.state;
+    gblRegistrationDetails["city"] = volunteerRegObject.city;
     gblRegistrationDetails["contactNumber"] = volunteerRegObject.contactNumber;
-    gblRegistrationDetails["email"] = volunteerRegObject.emailAddress;
+    gblRegistrationDetails["emailAddress"] = volunteerRegObject.emailAddress;
     gblRegistrationDetails["state"] = volunteerRegObject.state;
     gblRegistrationDetails["userName"] = volunteerRegObject.emailAddress;
     gblRegistrationDetails["password"] = volunteerRegObject.password;
     gblRegistrationDetails["companyName"] = volunteerRegObject.companyName;
     gblRegistrationDetails["role"] = volunteerRegObject.role;
+    gblRegistrationDetails["businessUnit"] = volunteerRegObject.businessUnit;
     gblRegistrationDetails["SkillsDTO"] = skills; ////need to cross check
-    gblRegistrationDetails["VolunteerScheduleDTO"] = schedule; //registrationSummaryPage.summAvailabilityRT.text;//need to check how to pass it
+    gblRegistrationDetails["VolunteerScheduleDTO"] = gblFinalSchedule; //finalSchedule;//schedule;//registrationSummaryPage.summAvailabilityRT.text;//need to check how to pass it
     //  gblRegistrationDetails["usersUserTypeId"]="11";//dont know which value should be passed
     // gblRegistrationDetails["volunteerTaskId"]="51" ;
     gblRegistrationDetails["createdDate"] = "2016-10-17";
-    //  alert("the input'"+JSON.stringify(gblRegistrationDetails));
+    gblRegistrationDetails["file"] = kony.store.getItem("imageVal");
+    gblRegistrationDetails["fileName"] = kony.store.getItem("imageFileNameVal"); //"abcdec6.jpg" ;kony.store.setItem("imageFileNameVal
+    // alert("the input'"+JSON.stringify(gblRegistrationDetails));
     //  alert("calling reg service");
     regService();
     //end merin
@@ -653,6 +750,10 @@ mobileFabricConfigurationForReg = {
 };
 // Function to invoke getFoxNews Service call
 function regService() {
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     if (!mobileFabricConfigurationForReg.isKonySDKObjectInitialized) {
         initializeMobileFabricForRegister();
     } else if (mobileFabricConfigurationForReg.isKonySDKObjectInitialized) {
@@ -796,28 +897,81 @@ function registerVolunteer() {
         //   alert("input=="+JSON.stringify(data));
         //                   data = JSON.stringify(data);
         //   mobileFabricConfigurationForReg.integrationObj.invokeOperation(operationName, {"Content-Type":"application/json"},data , getRegisterSuccessCallback, getRegisterErrorCallback);
+        //  alert("innnn"+JSON.stringify(gblRegistrationDetails));
         mobileFabricConfigurationForReg.integrationObj.invokeOperation(operationName, headers, gblRegistrationDetails, getRegisterSuccessCallback, getRegisterErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
 }
 
 function getRegisterSuccessCallback(gblSave) {
-    // alert("inside success"+JSON.stringify(gblSave));
-    registrationDonePage.registrationDonePageThankYou.text = "Thank you " + volunteerRegObject.firstName + "!";
-    registrationDonePage.show();
-    // Make sure to destroy registration forms after done to save memory.
-    registrationPage.destroy();
-    registrationPersonalPage.destroy();
-    registrationAccountPage.destroy();
-    registrationProfessionalPage.destroy();
-    registrationSchedulePage.destroy();
-    registrationSummaryPage.destroy();
+    //alert("inside success"+JSON.stringify(gblSave));
+    //start
+    if (gblSave !== null && gblSave.opstatus === 0) {
+        if (gblSave["success"] == "true") {
+            //start merin dec 19
+            volunteerRegObject = {
+                firstName: "",
+                lastName: "",
+                username: "",
+                password: "",
+                reenteredPassword: "",
+                workDetails: "",
+                aboutMe: "",
+                companyName: "",
+                role: "",
+                businessUnit: "",
+                state: "",
+                address: "",
+                contactNumber: "",
+                emailAddress: "",
+                skillsArray: [],
+                scheduleArray: [],
+                availability: {
+                    mon: false,
+                    tue: false,
+                    wed: false,
+                    thu: false,
+                    fri: false,
+                    sat: false,
+                    sun: false,
+                    startTime: "9:00",
+                    startMeridiem: "AM",
+                    endTime: "10:00",
+                    endMeridiem: "AM"
+                }
+            };
+            //end merin dec 19
+            registrationDonePage.registrationDonePageThankYou.text = "Thank you " + volunteerRegObject.firstName + "!";
+            registrationDonePage.emailTxt.text = registrationSummaryPage.summUserNameLabel.text;
+            registrationDonePage.show();
+            login.loginBody.usernameField.text = "";
+            login.loginBody.passwordField.text = "";
+            // Make sure to destroy registration forms after done to save memory.
+            registrationPage.destroy();
+            registrationPersonalPage.destroy();
+            registrationAccountPage.destroy();
+            registrationProfessionalPage.destroy();
+            registrationSchedulePage.destroy();
+            registrationSummaryPage.destroy();
+            //tank you page image
+            var volunteerImagePathAfterReg = gblSave.volunteerDto[0].VolunteersDTO.users.imagePath;
+            var imagePathAfterReg = "imgseglogo.png"
+            if (volunteerImagePathAfterReg != null && volunteerImagePathAfterReg != "null") {
+                imagePathAfterReg = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + volunteerImagePathAfterReg;
+            }
+            registrationDonePage.registerDoneVolunteerPic.src = imagePathAfterReg;
+            kony.application.dismissLoadingScreen();
+        } //inner if
+        else {
+            alert("This username already exists.Please change your email");
+        }
+    } //outer if
 }
 
 function getRegisterErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    // alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
+    // alert ("  Please try again. "+JSON.stringify(error));
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
 //end ser

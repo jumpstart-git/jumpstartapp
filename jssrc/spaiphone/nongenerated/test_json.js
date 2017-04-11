@@ -4,13 +4,25 @@ var PERSONICONBG = 'personiconbg.png';
 var EXPANDICONIMG = 'expand.png';
 var MARKASCOMPLETEICON = 'markascomplete.png';
 var SENDREPORTICON = 'sendreport.png';
-var MARKASCOMPLETETEXT = "<a href='#' style='color: #169bd5'>Mark as Complete</a>";
-var SENDREPORTTEXT = "<a href='#' style='color: #169bd5'>Send Report</a>";
+var MARKASCOMPLETETEXT = "Mark as Complete";
+var SENDRECOMMENDATION = "Send Recommendation";
+var SENDREPORTTEXT = "Send Report";
 var HAS_ACCEPTED_YOUR_REQUEST = "Has accepted your request";
-var CANCEL_REQUEST = "<a href='#' style='color: #000'>Cancel<br>Request</a>";
-var ACCEPT_REQUEST = "<a href='#' style='color: #000'>Accept<br>Task</a>";
-var START_ENGAGEMENT = "<a href='#' style='color: #000'>Start<br>Engagement</a>";
-var CONTACT_REQUEST = "<a href='#' style='color: #000'>Contact</a>";
+var CANCEL_REQUEST = "<a href='#' style='color:#37b3b1'>Cancel<br>request</a>";
+var ACCEPT_TASK = "<a href='#' style='color: #37b3b1'>View task</a>";
+var CONTACT_REQUEST = "<a href='#' style='color: #37b3b1'>Contact</a>";
+var HAS_SENT_REQUEST = "Has sent you a request";
+var DECLINE_REQUEST = "<a href='#' style='color: #37b3b1'>Decline<br>request</a>";
+var ACCEPT_REQUEST = "<a href='#' style='color: #37b3b1'>Accept<br>request</a>";
+var VIEW_REQUEST = "<a href='#' style='color: #37b3b1'>View<br>request</a>";
+var START_ENGAGEMENT = "<a href='#' style='color: #37b3b1'>Start<br>Engagement</a>";
+//mamata
+var MARK_AS_COMPLETE = "<a href='#' style='color: #37b3b1'>Mark as complete</a>";
+var SEND_RECOMMENDATION = "<a href='#' style='color: #37b3b1'>Send_Recommendation</a>";
+var Refresh_results = "<a href='#' style='color: #37b3b1'>Refresh results</a>";
+var EDIT = "<a href='#' style='color: #37b3b1'><u>edit</u></a>";
+var CLOSE = "<a href='#' style='color: #37b3b1'><u>close</u></a>";
+var ENDORESE_VOLUNTEER = "<a href='#' style='color: #37b3b1'><u>Endorse_volunteer</u></a>";
 // TEST DATA:
 var loggedInUserInfo = {
     firstName: 'Jar Jar',
@@ -94,6 +106,7 @@ var acceptedRequests = [{
     acceptTask: ACCEPT_REQUEST,
     contactRequest: CONTACT_REQUEST
 }];
+// BUSINESS TEST DATA:
 var businessAcceptedRequests = [{
     acceptedRequestStatus: "New",
     acceptedRequestBusinessName: "Ra's Al Gul",
@@ -101,6 +114,15 @@ var businessAcceptedRequests = [{
     cancelRequest: CANCEL_REQUEST,
     acceptTask: START_ENGAGEMENT,
     contactRequest: CONTACT_REQUEST
+}];
+var businessSentRequests = [{
+    sentRequestImage: "imagedrag.png",
+    sentRequestStatus: "Pending",
+    sentRequestBusinessName: "Peter Parker",
+    sentRequestLabel: HAS_SENT_REQUEST,
+    declineRequest: DECLINE_REQUEST,
+    acceptRequest: START_ENGAGEMENT,
+    viewRequest: VIEW_REQUEST
 }];
 var businessOpenTasksData = [{
     openTaskPersonIconBg: PERSONICONBG,
@@ -110,6 +132,7 @@ var businessOpenTasksData = [{
     openTaskExpandThis: EXPANDICONIMG,
     markAsCompleteImage: MARKASCOMPLETEICON,
     markAsCompleteText: MARKASCOMPLETETEXT,
+    markAsCompleteRichText: MARK_AS_COMPLETE,
     sendReportImage: SENDREPORTICON,
     sendReportText: SENDREPORTTEXT
 }];
@@ -119,8 +142,8 @@ var businessClosedTasksData = [{
     closedTaskName: 'R&D',
     closedTaskBusiness: 'Anthony Stark',
     closedTaskExpandThis: EXPANDICONIMG,
-    markAsCompleteImage: MARKASCOMPLETEICON,
-    markAsCompleteText: MARKASCOMPLETETEXT,
+    markAsCompleteImage: "",
+    markAsCompleteText: "",
     sendReportImage: SENDREPORTICON,
     sendReportText: SENDREPORTTEXT
 }];

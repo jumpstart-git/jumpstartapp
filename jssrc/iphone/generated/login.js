@@ -229,7 +229,11 @@ function addWidgetslogin() {
     var loginRegisterLink = new kony.ui.RichText({
         "centerX": "50%",
         "id": "loginRegisterLink",
+<<<<<<< Updated upstream
         "isVisible": false,
+=======
+        "isVisible": true,
+>>>>>>> Stashed changes
         "linkSkin": "CopyslRichText09c893bc72d674b",
         "onTouchStart": AS_RichText_58183f113bfb4950a774c5437a2f1324,
         "skin": "ngnyGrayLinkText",

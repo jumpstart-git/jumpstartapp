@@ -246,7 +246,7 @@ function mfobjectsecureinvokerasync(inputParam, serviceID, objectID, callBack) {
 };
 
 function appmenuseq() {
-    mainPage.show();
+    login.show();
 };
 
 function callAppMenu() {

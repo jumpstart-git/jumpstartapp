@@ -133,8 +133,12 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
             "alertTitle": "Confirmation",
             "yesLabel": "OK",
             "noLabel": "No",
+<<<<<<< Updated upstream
             //D027: Changed message value from "Profile Uploaded Successfully" to "Profile logo was successfully updated"
             "message": "Profile logo was successfully updated",
+=======
+            "message": "Profile Uploaded Successfully",
+>>>>>>> Stashed changes
             "alertHandler": "null"
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT

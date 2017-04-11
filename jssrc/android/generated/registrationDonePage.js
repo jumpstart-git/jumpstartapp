@@ -14,6 +14,21 @@ function addWidgetsregistrationDonePage() {
         "zIndex": 1
     }, {}, {});
     registrationDonePageHeader.setDefaultUnit(kony.flex.DP);
+    var registrationDonePageCompanyLogo = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "50dp",
+        "id": "registrationDonePageCompanyLogo",
+        "isVisible": true,
+        "skin": "companyLogo",
+        "src": "supplynationlogo2x.png",
+        "top": "10%",
+        "width": "50dp",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
     var registrationDonePageThankYou = new kony.ui.RichText({
         "centerX": "50%",
         "id": "registrationDonePageThankYou",
@@ -28,7 +43,22 @@ function addWidgetsregistrationDonePage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    registrationDonePageHeader.add(registrationDonePageThankYou);
+    var registerDoneVolunteerPic = new kony.ui.Image2({
+        "centerX": "50%",
+        "height": "80dp",
+        "id": "registerDoneVolunteerPic",
+        "isVisible": true,
+        "skin": "companyLogo",
+        "src": "imgseglogo.png",
+        "top": "9%",
+        "width": "80dp",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    registrationDonePageHeader.add(registrationDonePageCompanyLogo, registrationDonePageThankYou, registerDoneVolunteerPic);
     var registrationDonePageBody = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -98,12 +128,12 @@ function addWidgetsregistrationDonePage() {
     }, {});
     var registrationDonePageContinue = new kony.ui.Button({
         "centerX": "50.00%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "registrationDonePageContinue",
         "isVisible": true,
         "onClick": AS_Button_a468a95fbe7e4cafbd454fc5ec558d92,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "10%",
         "width": "80%",

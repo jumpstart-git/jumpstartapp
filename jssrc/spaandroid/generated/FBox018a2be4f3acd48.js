@@ -144,15 +144,15 @@ function initializeFBox018a2be4f3acd48() {
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    var recommendationTimePassed = new kony.ui.Label({
+    var recommendationReceivedTime = new kony.ui.Label({
         "bottom": 5,
-        "id": "recommendationTimePassed",
+        "id": "recommendationReceivedTime",
         "isVisible": true,
-        "right": "10dp",
+        "right": "6dp",
         "skin": "jumpStartLabel90",
         "text": "Label",
         "top": "10dp",
-        "width": "50%",
+        "width": "80.37%",
         "zIndex": 1
     }, {
         "containerWeight": 100,
@@ -168,6 +168,6 @@ function initializeFBox018a2be4f3acd48() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    recommendationDetailContainer.add(recommendationContactName, recommendationContactDetails, recommendationText, recommendationTimePassed);
+    recommendationDetailContainer.add(recommendationContactName, recommendationContactDetails, recommendationText, recommendationReceivedTime);
     FBox018a2be4f3acd48.add(recommendationContactImage, recommendationDetailContainer);
 }

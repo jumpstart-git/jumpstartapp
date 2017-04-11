@@ -2,7 +2,7 @@ function initializeFBox0add1169d948e49() {
     FBox0add1169d948e49 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "40%",
+        "height": "22%",
         "id": "FBox0add1169d948e49",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,

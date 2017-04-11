@@ -1,7 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="" />
+=======
+    <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sample/resources/mobile/native/iphone/splash@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Sample/resources/tablet/native/ipad/splash@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/android/generated/JumpStartAbort1globalsequences.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/JumpStartAbort1globalsequences.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_JumpStartAbort1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/JumpStartAbort1globalsequences.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/Temp0763afb691ec34c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/actions_for_JumpStartAbort1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMyActivityRequestts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0a68c9c601d7046.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0a770daf321f044.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0e63b85f9514944.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0f9037d0e9d804e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/JumpStartAbort1globalsequences.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/Temp0763afb691ec34c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/actions_for_JumpStartAbort1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/flxContainerHome.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/flxFormRegistrationOption.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/formMessages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/formMessagesMainPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/frmDashBoard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/myProfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/mainPageFunctions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/mainPageNavigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchPageFunctions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/userLogin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/common/splash@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/native/iphone/splash@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/tablet/native/ipad/splash@2x.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jumpstart" afterPath="$PROJECT_DIR$/jumpstart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" afterPath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" afterPath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" afterPath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/536f7e9fe153427d92b5be23fc9c32de.json" afterPath="$PROJECT_DIR$/annotations/mobile/536f7e9fe153427d92b5be23fc9c32de.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/660f2ce584d44ab7bfd2137b797089f0.json" afterPath="$PROJECT_DIR$/annotations/mobile/660f2ce584d44ab7bfd2137b797089f0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/978359e3903240dfb78c032239f21d2b.json" afterPath="$PROJECT_DIR$/annotations/mobile/978359e3903240dfb78c032239f21d2b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" afterPath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" afterPath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" afterPath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/BusinessProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/BusinessProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox01025bd15839e46.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0325cab479ecc4e.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0325cab479ecc4e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox002ffa33914ea45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/LogHoursForms.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/LogHoursForms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/MyActivityProfiles.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/MyActivityProfiles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/ReportingPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/ReportingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/appskins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/businessDetailsConfirmationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/businessMyProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationAccountPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationDonePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationPersonalPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationPersonalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationProfessionalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationSchedulePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationSchedulePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationSummaryPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationSummaryPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/resetPasswordForm.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/resetPasswordForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/scheduleNewForm.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/scheduleNewForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/searchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/searchResultProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/userInfoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/AddKsid.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/AddKsid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMyActivityRequests.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMyActivityRequests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/PushNotificationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/PushNotificationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/dbRetreivecode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/dbRetreivecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartActivityPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartUserLoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/kony_sdk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/android/startup/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/BusinessProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/BusinessProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox01025bd15839e46.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox0325cab479ecc4e.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox0325cab479ecc4e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/FBox002ffa33914ea45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/LogHoursForms.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/LogHoursForms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/MyActivityProfiles.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/MyActivityProfiles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/businessDetailsConfirmationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/businessMyProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationAccountPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationDonePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPersonalPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationPersonalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationProfessionalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSchedulePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSchedulePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSummaryPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/registrationSummaryPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/resetPasswordForm.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/resetPasswordForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/searchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/userInfoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/volunteerMyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessAcceptRequestTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessChangePassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessDeleteOpportunity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessRequestVolunteerTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/DeleteVolunteerAccount.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/existingBusTaskDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartActivityPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/kony_sdk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/loading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportCodeForIndBusiness.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/volReport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox00fe78492e0da42.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox00fe78492e0da42.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox01025bd15839e46.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox09e1c06f6a9bb44.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox09e1c06f6a9bb44.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox002ffa33914ea45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox011becb3c7bfa4f.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox011becb3c7bfa4f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox018a2be4f3acd48.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox018a2be4f3acd48.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox05b71795fc3da47.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox05b71795fc3da47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0788b6c38d49d4b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0dac93f59f6db45.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0dac93f59f6db45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0e89732147d1641.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0e89732147d1641.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/appskins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessDetailsConfirmationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessMyProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationAccountPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationDonePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPersonalPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPersonalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationProfessionalPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSchedulePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSchedulePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSummaryPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSummaryPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchResultProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/userInfoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/volunteerMyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessDeclineRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessDeclineRequest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMarkAsComplete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessNotificationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessNotificationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessOpenTaskCloseTaskDetails.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessOpenTaskCloseTaskDetails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessSearch.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessVolunteerProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessVolunteerProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessRequestVolunteerPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessRequestVolunteerPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessStartEngagement.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessStartEngagement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCancelRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCancelRequest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCompanyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCompanyProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/MyOpenTasksForVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/MyOpenTasksForVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/RequestToVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/RequestToVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolNotification.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolNotification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolProfileAfterSearch.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolProfileAfterSearch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerCancelRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerCancelRequest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerRequestTo.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerRequestTo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerAcceptTaskBtn.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerAcceptTaskBtn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerDeclineRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerDeclineRequest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerMyActivityy.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerMyActivityy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/acceptReqVol.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/acceptReqVol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/appLogout.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/appLogout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartActivityPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartPageNavigation.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartPageNavigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRecommendationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRecommendationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartSearchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartSearchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartUserLoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/kony_sdk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/taskDetailsForVolunteers.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/taskDetailsForVolunteers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/test_json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volCancelReq.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volCancelReq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/startup/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox00fe78492e0da42.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox00fe78492e0da42.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox09e1c06f6a9bb44.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox09e1c06f6a9bb44.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox011becb3c7bfa4f.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox011becb3c7bfa4f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox018a2be4f3acd48.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox018a2be4f3acd48.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox05b71795fc3da47.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox05b71795fc3da47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0788b6c38d49d4b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0943a0d8ad0544d.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0943a0d8ad0544d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0add1169d948e49.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0add1169d948e49.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/application.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/appskins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/searchPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/userInfoPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/appLogout.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/appLogout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/kony_sdk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/myActivity.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/myActivity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/require.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/require.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/test_json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/startup/startup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mBaas.properties" afterPath="$PROJECT_DIR$/mBaas.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware.properties" afterPath="$PROJECT_DIR$/middleware.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectprop.xml" afterPath="$PROJECT_DIR$/projectprop.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" afterPath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" />
+    </list>
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,8 +254,90 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Desktop/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="153">
               <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+=======
+            <state relative-caret-position="180">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/jssrc/android/generated/mainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122955">
+              <caret line="8197" column="59" lean-forward="false" selection-start-line="8197" selection-start-column="59" selection-end-line="8197" selection-end-column="59" />
+              <folding>
+                <marker date="1491195393000" expanded="true" signature="115927:115941" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="117453:117467" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="118927:118941" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="149345:149360" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="150865:150880" ph="..." />
+                <marker date="1491195393000" expanded="true" signature="152361:152376" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VolNotification.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/VolNotification.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3900">
+              <caret line="260" column="85" lean-forward="false" selection-start-line="260" selection-start-column="85" selection-end-line="260" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationBodyDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="10" lean-forward="false" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationBodyDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationDetailsLabel.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jumpstart/forms/mobile/mainPage.sm/NotificationDetailsLabel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+>>>>>>> Stashed changes
               <folding />
             </state>
           </provider>
@@ -192,16 +507,27 @@
       <workItem from="1491442274327" duration="114000" />
       <workItem from="1491459443283" duration="1743000" />
       <workItem from="1491521758584" duration="469000" />
+<<<<<<< Updated upstream
       <workItem from="1491529790031" duration="1449000" />
       <workItem from="1491780898946" duration="105000" />
+=======
+      <workItem from="1491529790031" duration="2394000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="8168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="9008000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+>>>>>>> Stashed changes
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21742313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -210,7 +536,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -416,6 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="-270">
           <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
           <folding />
@@ -426,6 +757,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+=======
+        <state relative-caret-position="381">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>

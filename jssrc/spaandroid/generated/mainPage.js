@@ -38,7 +38,7 @@ function addWidgetsmainPage() {
         "onTouchEnd": AS_FlexContainer_e942b364329c4bfdb7027d857cb5692b,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "15%",
+        "width": "12.00%",
         "zIndex": 1
     }, {}, {});
     sideBarToggleContainer.setDefaultUnit(kony.flex.DP);
@@ -48,7 +48,7 @@ function addWidgetsmainPage() {
         "height": "30dp",
         "id": "sideBarToggle",
         "isVisible": true,
-        "left": "0dp",
+        "left": "8dp",
         "skin": "slImage",
         "src": "sidebar.png",
         "top": "0dp"
@@ -65,7 +65,7 @@ function addWidgetsmainPage() {
         "id": "appHeaderTitleContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
-        "left": "0dp",
+        "left": "-2dp",
         "skin": "slFbox",
         "top": "0dp",
         "width": "70%",
@@ -77,7 +77,7 @@ function addWidgetsmainPage() {
         "height": "40dp",
         "id": "appPageProfilePic",
         "isVisible": true,
-        "left": "20%",
+        "left": "2%",
         "skin": "slImage",
         "src": "imgseglogo.png",
         "top": "0dp",
@@ -92,7 +92,7 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "appPageGreeting",
         "isVisible": true,
-        "left": "10dp",
+        "left": "5dp",
         "skin": "CopyslLabel05bf6920b75014c",
         "text": "Hello",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -108,7 +108,7 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "lblBusorVolName",
         "isVisible": true,
-        "left": "10dp",
+        "left": "3dp",
         "skin": "CopyslLabel05bf6920b75014c",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -123,21 +123,21 @@ function addWidgetsmainPage() {
     var searchButtonContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "100%",
+        "height": "99.51%",
         "id": "searchButtonContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
+        "left": "14dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "15%",
+        "width": "15.07%",
         "zIndex": 1
     }, {}, {});
     searchButtonContainer.setDefaultUnit(kony.flex.DP);
     var searchButton = new kony.ui.Button({
-        "centerX": "31%",
+        "centerX": "38%",
         "centerY": "50%",
-        "height": "20dp",
+        "height": "38%",
         "id": "searchButton",
         "isVisible": true,
         "left": "10dp",
@@ -145,7 +145,7 @@ function addWidgetsmainPage() {
         "skin": "CopyslButtonGlossBlue05f7e1311090944",
         "text": "Button",
         "top": "15dp",
-        "width": "20dp",
+        "width": "50%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -184,9 +184,10 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
+        "onTouchStart": AS_FlexContainer_b74bf0ca08354ac482d50767e3733d00,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "35%",
+        "width": "32%",
         "zIndex": 1
     }, {}, {});
     activityNavContainer.setDefaultUnit(kony.flex.DP);
@@ -287,10 +288,10 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": 0,
-        "onClick": AS_FlexContainer_98ad2948134c4b5bbf52dc62fa833805,
+        "onTouchStart": AS_FlexContainer_249850a57d2f494dacacd0e20957c063,
         "skin": "slFbox",
         "top": 0,
-        "width": "35%",
+        "width": "32%",
         "zIndex": 1
     }, {}, {});
     notificationNavContainer.setDefaultUnit(kony.flex.DP);
@@ -330,16 +331,32 @@ function addWidgetsmainPage() {
     notificationIndicator.setDefaultUnit(kony.flex.DP);
     notificationIndicator.add();
     notificationNavContainer.add(navNotifications, notificationIndicator);
-    var navEndorsements = new kony.ui.Label({
+    var endorsementsContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
         "height": "100%",
+        "id": "endorsementsContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": 0,
+        "onTouchStart": AS_FlexContainer_6b4ca0e1ddef4db0915b830860773aa2,
+        "skin": "slFbox",
+        "top": 0,
+        "width": "33%",
+        "zIndex": 1
+    }, {}, {});
+    endorsementsContainer.setDefaultUnit(kony.flex.DP);
+    var navEndorsements = new kony.ui.Label({
+        "height": "95%",
         "id": "navEndorsements",
-        "isVisible": false,
+        "isVisible": true,
         "left": "0dp",
-        "onTouchEnd": AS_Label_aa89a83117354a428c60df29bee9a46c,
+        "onTouchEnd": AS_Label_b4172a3037a7474c862e44f90dacb3f2,
+        "onTouchStart": AS_Label_23df805b483e437dbbf7b2c98f49f344,
         "skin": "CopyslLabel06969984165bf40",
         "text": "Endorsements",
         "top": "0dp",
-        "width": "35%"
+        "width": "100%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
@@ -348,6 +365,23 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
+    var endorsementsIndicator = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "5%",
+        "id": "endorsementsIndicator",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "jumpStartBGOrange",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    endorsementsIndicator.setDefaultUnit(kony.flex.DP);
+    endorsementsIndicator.add();
+    endorsementsContainer.add(navEndorsements, endorsementsIndicator);
     var recommendationNavContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -356,9 +390,10 @@ function addWidgetsmainPage() {
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
+        "onTouchStart": AS_FlexContainer_b30e39e791ae4bbd88105a50997e9a96,
         "skin": "slFbox",
         "top": "0dp",
-        "width": "45%",
+        "width": "37%",
         "zIndex": 1
     }, {}, {});
     recommendationNavContainer.setDefaultUnit(kony.flex.DP);
@@ -414,7 +449,7 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    navBarScroller.add(activityNavContainer, navEvents, navNews, navMessages, notificationNavContainer, navEndorsements, recommendationNavContainer, navMessageConversation);
+    navBarScroller.add(activityNavContainer, navEvents, navNews, navMessages, notificationNavContainer, endorsementsContainer, recommendationNavContainer, navMessageConversation);
     var mainPageContentParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -435,7 +470,7 @@ function addWidgetsmainPage() {
         "bounces": true,
         "clipBounds": true,
         "enableScrolling": true,
-        "height": "100%",
+        "height": "94.25%",
         "horizontalScrollIndicator": true,
         "id": "myActivity",
         "isVisible": true,
@@ -449,12 +484,93 @@ function addWidgetsmainPage() {
         "width": "100%"
     }, {}, {});
     myActivity.setDefaultUnit(kony.flex.DP);
+    var CreateOpportunityButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "10%",
+        "id": "CreateOpportunityButtonContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "1dp",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {}, {});
+    CreateOpportunityButtonContainer.setDefaultUnit(kony.flex.DP);
+    var MyActivityCreateOpportunityButton = new kony.ui.Button({
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "100%",
+        "id": "MyActivityCreateOpportunityButton",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_Button_f5ed84b5ee7648ca8b37b2f668ad41e1,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Create a brief",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    CreateOpportunityButtonContainer.add(MyActivityCreateOpportunityButton);
+    var RefreshContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "27dp",
+        "id": "RefreshContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "21dp",
+        "skin": "slFbox",
+        "top": "6dp",
+        "width": "89.38%",
+        "zIndex": 1
+    }, {}, {});
+    RefreshContainer.setDefaultUnit(kony.flex.DP);
+    var refreshButton = new kony.ui.Button({
+        "height": "129.63%",
+        "id": "refreshButton",
+        "isVisible": false,
+        "left": "255dp",
+        "onClick": AS_Button_ef9d782efbb843a2af32d76859191241,
+        "skin": "CopyslButtonGlossBlue0772af87d4a3c4d",
+        "top": "-5dp",
+        "width": "12.02%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var refreshRichText = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "refreshRichText",
+        "isVisible": true,
+        "left": "95dp",
+        "onTouchStart": AS_RichText_61ea1e6a537b4f45a68bb7675000343f,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Refresh results</u>",
+        "top": "6dp",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    RefreshContainer.add(refreshButton, refreshRichText);
     var myAcceptedRequests = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "centerX": "50%",
         "clipBounds": true,
         "id": "myAcceptedRequests",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "myAcceptedRequestsOverallContainer",
@@ -463,9 +579,101 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     myAcceptedRequests.setDefaultUnit(kony.flex.DP);
+    var myAcceptedRequestsHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "myAcceptedRequestsHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "onTouchStart": AS_FlexContainer_cfd527e91ca24efb98abe8143d3d09f8,
+        "skin": "ngnyGreenFlexBG",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    myAcceptedRequestsHeader.setDefaultUnit(kony.flex.DP);
+    var myAcceptedRequestsExpandImageParent = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "myAcceptedRequestsExpandImageParent",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    myAcceptedRequestsExpandImageParent.setDefaultUnit(kony.flex.DP);
+    var myAcceptedRequestsExpandImage = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "25dp",
+        "id": "myAcceptedRequestsExpandImage",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "expand_task.png",
+        "top": "0dp",
+        "width": "25dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    myAcceptedRequestsExpandImageParent.add(myAcceptedRequestsExpandImage);
+    var myAcceptedRequestsHeaderLabelParent = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "myAcceptedRequestsHeaderLabelParent",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {}, {});
+    myAcceptedRequestsHeaderLabelParent.setDefaultUnit(kony.flex.DP);
+    var myAcceptedRequestsHeaderLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "myAcceptedRequestsHeaderLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelWhite130",
+        "text": "Requests",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    myAcceptedRequestsHeaderLabelParent.add(myAcceptedRequestsHeaderLabel);
+    myAcceptedRequestsHeader.add(myAcceptedRequestsExpandImageParent, myAcceptedRequestsHeaderLabelParent);
+    var myAcceptedRequestsListContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "myAcceptedRequestsListContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "35dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    myAcceptedRequestsListContainer.setDefaultUnit(kony.flex.DP);
     var acceptedRequestsSegment = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "data": [{
+            "ActaulMessage": "",
             "acceptTask": "",
             "acceptedRequestBusinessName": "",
             "acceptedRequestImage": "",
@@ -473,7 +681,8 @@ function addWidgetsmainPage() {
             "acceptedRequestStatus": "",
             "cancelRequest": "",
             "contactRequest": "",
-            "lblRequestId": ""
+            "lblRequestId": "",
+            "requestMessage": ""
         }],
         "groupCells": false,
         "id": "acceptedRequestsSegment",
@@ -486,7 +695,9 @@ function addWidgetsmainPage() {
         "rowFocusSkin": "seg2Focus",
         "rowSkin": "jumpStartSegmentSkin",
         "rowTemplate": FBox05b71795fc3da47,
-        "scrollingEvents": {},
+        "scrollingEvents": {
+            "onPull": AS_Segment_515264bd371548348504c5441bf9abb5
+        },
         "sectionHeaderSkin": "sliPhoneSegmentHeader",
         "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
         "separatorColor": "64646400",
@@ -514,13 +725,14 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    myAcceptedRequests.add(acceptedRequestsSegment);
+    myAcceptedRequestsListContainer.add(acceptedRequestsSegment);
+    myAcceptedRequests.add(myAcceptedRequestsHeader, myAcceptedRequestsListContainer);
     var mySentRequests = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "centerX": "50%",
         "clipBounds": true,
         "id": "mySentRequests",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "myAcceptedRequestsOverallContainer",
@@ -529,6 +741,97 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     mySentRequests.setDefaultUnit(kony.flex.DP);
+    var mySentRequestsHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "mySentRequestsHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "onTouchStart": AS_FlexContainer_663b9e1a50524ad4a465c143f89d5609,
+        "skin": "ngnyGreenFlexBG",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    mySentRequestsHeader.setDefaultUnit(kony.flex.DP);
+    var mySentRequestsExpandImageParent = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "mySentRequestsExpandImageParent",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    mySentRequestsExpandImageParent.setDefaultUnit(kony.flex.DP);
+    var mySentRequestsExpandImage = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "25dp",
+        "id": "mySentRequestsExpandImage",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "expand_task.png",
+        "top": "0dp",
+        "width": "25dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    mySentRequestsExpandImageParent.add(mySentRequestsExpandImage);
+    var mySentRequestsHeaderLabelParent = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "mySentRequestsHeaderLabelParent",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {}, {});
+    mySentRequestsHeaderLabelParent.setDefaultUnit(kony.flex.DP);
+    var mySentRequestsHeaderLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "mySentRequestsHeaderLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelWhite130",
+        "text": "Requests",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    mySentRequestsHeaderLabelParent.add(mySentRequestsHeaderLabel);
+    mySentRequestsHeader.add(mySentRequestsExpandImageParent, mySentRequestsHeaderLabelParent);
+    var mySentRequestsListContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "mySentRequestsListContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "44dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    mySentRequestsListContainer.setDefaultUnit(kony.flex.DP);
     var sentRequestsSegment = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "data": [{
@@ -546,6 +849,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "needPageIndicator": true,
+        "onRowClick": AS_Segment_be6fb3f80ae4453da0eef0c00961b918,
         "pageOffDotImage": "pageoffdot.png",
         "pageOnDotImage": "pageondot.png",
         "retainSelection": false,
@@ -580,7 +884,183 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    mySentRequests.add(sentRequestsSegment);
+    mySentRequestsListContainer.add(sentRequestsSegment);
+    mySentRequests.add(mySentRequestsHeader, mySentRequestsListContainer);
+    var unAssignedTasksContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "unAssignedTasksContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "15dp",
+        "width": "90%"
+    }, {}, {});
+    unAssignedTasksContainer.setDefaultUnit(kony.flex.DP);
+    var unAssignedTasksHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "unAssignedTasksHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "onTouchStart": AS_FlexContainer_30736cdefc9f4a7fad59b12ff27cc077,
+        "skin": "ngnyGreenFlexBG",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    unAssignedTasksHeader.setDefaultUnit(kony.flex.DP);
+    var expandImageContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "expandImageContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onTouchStart": AS_FlexContainer_eee6ea73b5ea492cac8656782b276f77,
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    expandImageContainer.setDefaultUnit(kony.flex.DP);
+    var unAssignedTaskExpandImage = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "25dp",
+        "id": "unAssignedTaskExpandImage",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "expand.png",
+        "top": "0dp",
+        "width": "25dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    expandImageContainer.add(unAssignedTaskExpandImage);
+    var myUnAssignedTaskHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50dp",
+        "id": "myUnAssignedTaskHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {}, {});
+    myUnAssignedTaskHeader.setDefaultUnit(kony.flex.DP);
+    var unAssignedTaskLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "unAssignedTaskLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelWhite130",
+        "text": "Unassigned Tasks",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    myUnAssignedTaskHeader.add(unAssignedTaskLabel);
+    unAssignedTasksHeader.add(expandImageContainer, myUnAssignedTaskHeader);
+    var unAssignedTaskListContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "unAssignedTaskListContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "50dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    unAssignedTaskListContainer.setDefaultUnit(kony.flex.DP);
+    var unassignedTaskList = new kony.ui.SegmentedUI2({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "data": [{
+            "TaskBusOrVolName": "",
+            "businessId": "",
+            "closeRichText": "",
+            "contactNumber": "",
+            "createdDate": "",
+            "editRichText": "",
+            "endDate": "",
+            "hoursRequired": "",
+            "lblDate": "",
+            "lblRequestId ": "",
+            "lblTaskId ": "",
+            "markAsCompleteRichText": "",
+            "notAssigned": "",
+            "profilePic": "",
+            "segType": "",
+            "startDate": "",
+            "taskDetails": "",
+            "taskId": "",
+            "taskName": "",
+            "taskReqId": "",
+            "volunteerId": ""
+        }],
+        "groupCells": false,
+        "id": "unassignedTaskList",
+        "isVisible": false,
+        "left": "0dp",
+        "needPageIndicator": true,
+        "pageOffDotImage": "pageoffdot.png",
+        "pageOnDotImage": "pageondot.png",
+        "retainSelection": false,
+        "rowFocusSkin": "seg2Focus",
+        "rowSkin": "jumpStartSegmentSkin",
+        "rowTemplate": CopyFBox065d0320c900743,
+        "scrollingEvents": {},
+        "sectionHeaderSkin": "sliPhoneSegmentHeader",
+        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
+        "separatorColor": "64646400",
+        "separatorRequired": true,
+        "separatorThickness": 1,
+        "showScrollbars": false,
+        "top": "0dp",
+        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
+        "widgetDataMap": {
+            "CreatedDateContainer": "CreatedDateContainer",
+            "EditAndCloseContainer": "EditAndCloseContainer",
+            "TaskBusOrVolName": "TaskBusOrVolName",
+            "closeRichText": "closeRichText",
+            "createdDate": "createdDate",
+            "editRichText": "editRichText",
+            "lblDate": "lblDate",
+            "markAsCompleteRichText": "markAsCompleteRichText",
+            "notAssigned": "notAssigned",
+            "profilePic": "profilePic",
+            "taskContainer": "taskContainer",
+            "taskId": "taskId",
+            "taskName": "taskName",
+            "taskProfileImageContainer": "taskProfileImageContainer",
+            "taskReqId": "taskReqId",
+            "unassignedTaskParentContainer": "unassignedTaskParentContainer"
+        },
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    unAssignedTaskListContainer.add(unassignedTaskList);
+    unAssignedTasksContainer.add(unAssignedTasksHeader, unAssignedTaskListContainer);
     var myOpenTasksParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "centerX": "50%",
@@ -603,7 +1083,7 @@ function addWidgetsmainPage() {
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "onTouchStart": AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe,
-        "skin": "jumpStartBGTeal",
+        "skin": "ngnyGreenFlexBG",
         "top": "0dp",
         "width": "100%"
     }, {}, {});
@@ -629,7 +1109,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "expand_task.png",
+        "src": "expand.png",
         "top": "0dp",
         "width": "25dp"
     }, {
@@ -675,7 +1155,7 @@ function addWidgetsmainPage() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "myOpenTasksListContainer",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
@@ -687,18 +1167,26 @@ function addWidgetsmainPage() {
     var myOpenTasksList = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "data": [{
+            "contactNumber": "",
+            "endDate": "",
             "lblRequestId": "",
+            "lblRequestId ": "",
+            "lblTaskId ": "",
             "markAsCompleteRichText": "",
-            "markAsCompleteText": "",
             "openTaskBusiness": "",
             "openTaskName": "",
-            "openTaskPersonProfilePic": ""
+            "openTaskPersonProfilePic": "",
+            "segType": "open",
+            "startDate": "",
+            "taskDetails": "",
+            "taskId": ""
         }],
         "groupCells": false,
         "id": "myOpenTasksList",
-        "isVisible": true,
+        "isVisible": false,
         "left": "0dp",
         "needPageIndicator": true,
+        "onRowClick": AS_Segment_9bdb3704db05419d913b9e86104e6dea,
         "pageOffDotImage": "pageoffdot.png",
         "pageOnDotImage": "pageondot.png",
         "retainSelection": false,
@@ -717,13 +1205,13 @@ function addWidgetsmainPage() {
         "widgetDataMap": {
             "lblRequestId": "lblRequestId",
             "markAsCompleteRichText": "markAsCompleteRichText",
-            "markAsCompleteText": "markAsCompleteText",
             "myOpenTaskDetailParent": "myOpenTaskDetailParent",
             "myOpenTaskProfileImageParent": "myOpenTaskProfileImageParent",
             "myOpenTaskTop": "myOpenTaskTop",
             "openTaskBusiness": "openTaskBusiness",
             "openTaskName": "openTaskName",
-            "openTaskPersonProfilePic": "openTaskPersonProfilePic"
+            "openTaskPersonProfilePic": "openTaskPersonProfilePic",
+            "taskId": "taskId"
         },
         "width": "100%",
         "zIndex": 1
@@ -755,7 +1243,7 @@ function addWidgetsmainPage() {
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "onTouchStart": AS_FlexContainer_00116715facc4593b10937138e2d90aa,
-        "skin": "jumpStartBGTeal",
+        "skin": "ngnyGreenFlexBG",
         "top": "0dp",
         "width": "100%"
     }, {}, {});
@@ -781,7 +1269,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "expand_task.png",
+        "src": "expand.png",
         "top": "0dp",
         "width": "25dp"
     }, {
@@ -827,7 +1315,7 @@ function addWidgetsmainPage() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "myClosedTasksListContainer",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
@@ -839,16 +1327,24 @@ function addWidgetsmainPage() {
     var myClosedTasksList = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "data": [{
+            "businessId": "",
             "closedTaskBusiness": "",
             "closedTaskName": "",
             "closedTaskPersonProfilePic": "",
-            "markAsCompleteText": ""
+            "detail": "",
+            "markAsCompleteText": "",
+            "request_id": "",
+            "segType": "close",
+            "sendRecommendation": "",
+            "taskId": "",
+            "volunteerId": ""
         }],
         "groupCells": false,
         "id": "myClosedTasksList",
-        "isVisible": true,
+        "isVisible": false,
         "left": "0dp",
         "needPageIndicator": true,
+        "onRowClick": AS_Segment_a52ffce90f1a4961b2dfed2b0b64337e,
         "pageOffDotImage": "pageoffdot.png",
         "pageOnDotImage": "pageondot.png",
         "retainSelection": false,
@@ -865,13 +1361,16 @@ function addWidgetsmainPage() {
         "top": "0dp",
         "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
         "widgetDataMap": {
+            "businessId": "businessId",
             "closedTaskBusiness": "closedTaskBusiness",
             "closedTaskName": "closedTaskName",
             "closedTaskPersonProfilePic": "closedTaskPersonProfilePic",
             "markAsCompleteText": "markAsCompleteText",
             "myClosedTaskDetailParent": "myClosedTaskDetailParent",
             "myClosedTaskProfileImageParent": "myClosedTaskProfileImageParent",
-            "myClosedTaskTop": "myClosedTaskTop"
+            "myClosedTaskTop": "myClosedTaskTop",
+            "sendRecommendation": "sendRecommendation",
+            "taskId": "taskId"
         },
         "width": "100%",
         "zIndex": 1
@@ -887,7 +1386,7 @@ function addWidgetsmainPage() {
         "centerX": "50%",
         "clipBounds": true,
         "id": "myBookmarks",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
@@ -903,7 +1402,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
-        "skin": "jumpStartBGTeal",
+        "skin": "ngnyGreenFlexBG",
         "top": "0dp",
         "width": "100%"
     }, {}, {});
@@ -972,7 +1471,7 @@ function addWidgetsmainPage() {
     CopyFlexContainer08060752c4e724c.add(CopyLabel0c3dbb3e65d364c);
     CopyFlexContainer086ea79821e6847.add(CopyFlexContainer070aa354f5b6a41, CopyFlexContainer08060752c4e724c);
     myBookmarks.add(CopyFlexContainer086ea79821e6847);
-    myActivity.add(myAcceptedRequests, mySentRequests, myOpenTasksParent, myClosedTasksParent, myBookmarks);
+    myActivity.add(CreateOpportunityButtonContainer, RefreshContainer, myAcceptedRequests, mySentRequests, unAssignedTasksContainer, myOpenTasksParent, myClosedTasksParent, myBookmarks);
     var myEvents = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
@@ -1062,7 +1561,7 @@ function addWidgetsmainPage() {
         "id": "myMessages",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "99.84%",
+        "left": "100%",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
@@ -1076,75 +1575,10 @@ function addWidgetsmainPage() {
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50.00%",
         "data": [{
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "JohnDoe",
-            "lblDay": "Yesterday",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Dave Jameson",
-            "lblDay": "Sun",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Jane Doe",
-            "lblDay": "Sat",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Bob Nicolas",
-            "lblDay": "Sat",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Reily O'reily",
-            "lblDay": "Fri",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Spike, Spiegel",
-            "lblDay": "Sep 7",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "John Johnz",
-            "lblDay": "Sep 6",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Robert",
-            "lblDay": "Sep 5",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Miky",
-            "lblDay": "Sep 4",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Hazel",
-            "lblDay": "Aug 30",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Harry",
-            "lblDay": "Aug 17",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Vinilda",
-            "lblDay": "Aug 14",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "James",
-            "lblDay": "Aug 10",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
-        }, {
-            "contactImage": "imgseglogo.png",
-            "lblContactName": "Rawn",
-            "lblDay": "Jul 5",
-            "lblMessage": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo"
+            "contactImage": "",
+            "lblContactName": "",
+            "lblDay": "",
+            "lblMessage": ""
         }],
         "groupCells": false,
         "height": "575dp",
@@ -1201,23 +1635,66 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     myNotifications.setDefaultUnit(kony.flex.DP);
+    var notificationRefreshContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30dp",
+        "id": "notificationRefreshContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "10dp",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "92.44%",
+        "zIndex": 1
+    }, {}, {});
+    notificationRefreshContainer.setDefaultUnit(kony.flex.DP);
+    var notificationRefreshButton = new kony.ui.Button({
+        "height": "107.17%",
+        "id": "notificationRefreshButton",
+        "isVisible": false,
+        "left": "268dp",
+        "onClick": AS_Button_919d65dbfcbd4a708628240c170310d9,
+        "skin": "CopyslButtonGlossBlue0772af87d4a3c4d",
+        "top": "-2dp",
+        "width": "12.08%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var notificationPageRefreshRichText = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "notificationPageRefreshRichText",
+        "isVisible": true,
+        "left": "95dp",
+        "onTouchStart": AS_RichText_580bb705ba4b48c78c357662dc41a0e2,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Refresh results</u>",
+        "top": "3dp",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    notificationRefreshContainer.add(notificationRefreshButton, notificationPageRefreshRichText);
     var segMessageNotification = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "50%",
+        "centerY": "48%",
         "data": [{
             "notificationContactImage": "",
             "notificationContactName": "",
-            "notificationDay": "",
-            "notificationMeaasageType": ""
-        }, {
-            "notificationContactImage": "",
-            "notificationContactName": "",
+            "notificationContent": "",
             "notificationDay": "",
             "notificationMeaasageType": ""
         }],
         "groupCells": false,
-        "height": "95%",
+        "height": "95.47%",
         "id": "segMessageNotification",
         "isVisible": true,
         "left": "0dp",
@@ -1232,15 +1709,16 @@ function addWidgetsmainPage() {
         "scrollingEvents": {},
         "sectionHeaderSkin": "sliPhoneSegmentHeader",
         "selectionBehavior": constants.SEGUI_SINGLE_SELECT_BEHAVIOR,
-        "separatorColor": "4d4d4d64",
+        "separatorColor": "4d4d4d00",
         "separatorRequired": true,
-        "separatorThickness": 10,
+        "separatorThickness": 1,
         "showScrollbars": false,
         "top": "0dp",
         "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
         "widgetDataMap": {
             "notificationContactImage": "notificationContactImage",
             "notificationContactName": "notificationContactName",
+            "notificationContent": "notificationContent",
             "notificationDay": "notificationDay",
             "notificationDetailContainer": "notificationDetailContainer",
             "notificationMeaasageType": "notificationMeaasageType"
@@ -1260,23 +1738,11 @@ function addWidgetsmainPage() {
             "lblDay": "",
             "lblFrom": "",
             "lblNotificationType": ""
-        }, {
-            "lblCompanyLogo": "",
-            "lblCompanyName": "",
-            "lblDay": "",
-            "lblFrom": "",
-            "lblNotificationType": ""
-        }, {
-            "lblCompanyLogo": "",
-            "lblCompanyName": "",
-            "lblDay": "",
-            "lblFrom": "",
-            "lblNotificationType": ""
         }],
         "groupCells": false,
         "height": "475dp",
         "id": "segGroupNotification",
-        "isVisible": false,
+        "isVisible": true,
         "left": "9dp",
         "needPageIndicator": true,
         "pageOffDotImage": "pageoffdot.png",
@@ -1307,7 +1773,7 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    myNotifications.add(segMessageNotification, segGroupNotification);
+    myNotifications.add(notificationRefreshContainer, segMessageNotification, segGroupNotification);
     var myEndorsements = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
@@ -1318,7 +1784,7 @@ function addWidgetsmainPage() {
         "horizontalScrollIndicator": true,
         "id": "myEndorsements",
         "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
+        "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "100%",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
@@ -1329,24 +1795,123 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     myEndorsements.setDefaultUnit(kony.flex.DP);
-    var Label0205014444a5342 = new kony.ui.Label({
-        "centerX": "50%",
-        "id": "Label0205014444a5342",
+    var endorsementrefreshBtn = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30dp",
+        "id": "endorsementrefreshBtn",
         "isVisible": true,
-        "skin": "slLabel",
-        "text": "Endorsements",
-        "top": "20dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "10dp",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "92.44%",
+        "zIndex": 1
+    }, {}, {});
+    endorsementrefreshBtn.setDefaultUnit(kony.flex.DP);
+    var endRefreshBtn = new kony.ui.Button({
+        "height": "111.59%",
+        "id": "endRefreshBtn",
+        "isVisible": false,
+        "left": "267dp",
+        "onClick": AS_Button_b2c5b26ff29f4a909862e033008e3592,
+        "skin": "CopyslButtonGlossBlue0772af87d4a3c4d",
+        "top": "-3dp",
+        "width": "12.08%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
+    }, {});
+    var endRichTxt = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "endRichTxt",
+        "isVisible": true,
+        "left": "95dp",
+        "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Refresh results</u>",
+        "top": "3dp",
+        "width": "50%",
+        "zIndex": 1
     }, {
-        "renderAsAnchor": false,
-        "textCopyable": false
-    });
-    myEndorsements.add(Label0205014444a5342);
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    endorsementrefreshBtn.add(endRefreshBtn, endRichTxt);
+    var endorsementsSeg = new kony.ui.SegmentedUI2({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "data": [{
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "endorsementContactName": "",
+            "endorsementReceivedTime": "",
+            "endorsementSkill": "",
+            "endorsementTaskName": "",
+            "endorsementText": "",
+            "endorsentContactImage": ""
+        }, {
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "endorsementContactName": "",
+            "endorsementReceivedTime": "",
+            "endorsementSkill": "",
+            "endorsementTaskName": "",
+            "endorsementText": "",
+            "endorsentContactImage": ""
+        }, {
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "endorsementContactName": "",
+            "endorsementReceivedTime": "",
+            "endorsementSkill": "",
+            "endorsementTaskName": "",
+            "endorsementText": "",
+            "endorsentContactImage": ""
+        }],
+        "groupCells": false,
+        "height": "99.91%",
+        "id": "endorsementsSeg",
+        "isVisible": true,
+        "left": "0dp",
+        "needPageIndicator": true,
+        "pageOffDotImage": "pageoffdot.png",
+        "pageOnDotImage": "pageondot.png",
+        "retainSelection": false,
+        "rowFocusSkin": "seg2Focus",
+        "rowSkin": "seg2Normal",
+        "rowTemplate": CopyFBox0325cab479ecc4e,
+        "scrollingEvents": {},
+        "sectionHeaderSkin": "sliPhoneSegmentHeader",
+        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
+        "separatorColor": "57575700",
+        "separatorRequired": true,
+        "separatorThickness": 1,
+        "showScrollbars": false,
+        "top": "0dp",
+        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
+        "widgetDataMap": {
+            "endorsementContactDetails": "endorsementContactDetails",
+            "endorsementContactName": "endorsementContactName",
+            "endorsementDetailContainer": "endorsementDetailContainer",
+            "endorsementReceivedTime": "endorsementReceivedTime",
+            "endorsementSkill": "endorsementSkill",
+            "endorsementTaskName": "endorsementTaskName",
+            "endorsementText": "endorsementText",
+            "endorsentContactImage": "endorsentContactImage"
+        },
+        "width": "95%",
+        "zIndex": 1
+    }, {
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    myEndorsements.add(endorsementrefreshBtn, endorsementsSeg);
     var myRecommendations = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
@@ -1356,9 +1921,9 @@ function addWidgetsmainPage() {
         "height": "100%",
         "horizontalScrollIndicator": true,
         "id": "myRecommendations",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "100.00%",
+        "left": "-100%",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
@@ -1368,34 +1933,87 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     myRecommendations.setDefaultUnit(kony.flex.DP);
+    var recRefreshButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30dp",
+        "id": "recRefreshButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "10dp",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "92.44%",
+        "zIndex": 1
+    }, {}, {});
+    recRefreshButtonContainer.setDefaultUnit(kony.flex.DP);
+    var recRefreshButton = new kony.ui.Button({
+        "height": "111.59%",
+        "id": "recRefreshButton",
+        "isVisible": false,
+        "left": "267dp",
+        "onClick": AS_Button_8ae701ee477d43a193ccca1488f4b617,
+        "skin": "CopyslButtonGlossBlue0772af87d4a3c4d",
+        "top": "-3dp",
+        "width": "12.08%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var recommendationRefreshRichText = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "recommendationRefreshRichText",
+        "isVisible": true,
+        "left": "95dp",
+        "onTouchStart": AS_RichText_4a9ef318da794d109c48c441442e8956,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Refresh results</u>",
+        "top": "3dp",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    recRefreshButtonContainer.add(recRefreshButton, recommendationRefreshRichText);
     var segRecommendation = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
         "centerY": "50%",
         "data": [{
-            "recommendationContactCompanyName": "CBA",
-            "recommendationContactDesignation": "Manager at ",
-            "recommendationContactImage": "personimg.png",
-            "recommendationContactName": "Joe Smith",
-            "recommendationText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-            "recommendationTimePassed": "an hour ago"
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "recommendationContactCompanyName": "",
+            "recommendationContactDesignation": "",
+            "recommendationContactImage": "",
+            "recommendationContactName": "",
+            "recommendationReceivedTime": "",
+            "recommendationText": ""
         }, {
-            "recommendationContactCompanyName": "P&G",
-            "recommendationContactDesignation": "Tester at ",
-            "recommendationContactImage": "personimg.png",
-            "recommendationContactName": "Jane Doe",
-            "recommendationText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-            "recommendationTimePassed": "2 days ago"
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "recommendationContactCompanyName": "",
+            "recommendationContactDesignation": "",
+            "recommendationContactImage": "",
+            "recommendationContactName": "",
+            "recommendationReceivedTime": "",
+            "recommendationText": ""
         }, {
-            "recommendationContactCompanyName": "Unilever",
-            "recommendationContactDesignation": "Trader at ",
-            "recommendationContactImage": "personimg.png",
-            "recommendationContactName": "Salvor Hardin",
-            "recommendationText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-            "recommendationTimePassed": "1 month ago"
+            "CopyrecommendationContactCompanyName0835a9f801ba846": "Label",
+            "CopyrecommendationContactDesignation008ea58cf583447": "Label",
+            "recommendationContactCompanyName": "",
+            "recommendationContactDesignation": "",
+            "recommendationContactImage": "",
+            "recommendationContactName": "",
+            "recommendationReceivedTime": "",
+            "recommendationText": ""
         }],
         "groupCells": false,
-        "height": "95%",
+        "height": "99.91%",
         "id": "segRecommendation",
         "isVisible": true,
         "left": "0dp",
@@ -1409,10 +2027,11 @@ function addWidgetsmainPage() {
         "scrollingEvents": {},
         "sectionHeaderSkin": "sliPhoneSegmentHeader",
         "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
-        "separatorColor": "64646464",
+        "separatorColor": "57575700",
         "separatorRequired": true,
-        "separatorThickness": 10,
+        "separatorThickness": 1,
         "showScrollbars": false,
+        "top": "0dp",
         "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
         "widgetDataMap": {
             "recommendationContactCompanyName": "recommendationContactCompanyName",
@@ -1421,8 +2040,8 @@ function addWidgetsmainPage() {
             "recommendationContactImage": "recommendationContactImage",
             "recommendationContactName": "recommendationContactName",
             "recommendationDetailContainer": "recommendationDetailContainer",
-            "recommendationText": "recommendationText",
-            "recommendationTimePassed": "recommendationTimePassed"
+            "recommendationReceivedTime": "recommendationReceivedTime",
+            "recommendationText": "recommendationText"
         },
         "width": "95%",
         "zIndex": 1
@@ -1430,15 +2049,15 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    myRecommendations.add(segRecommendation);
+    myRecommendations.add(recRefreshButtonContainer, segRecommendation);
     var flxMessageConversation = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
         "id": "flxMessageConversation",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "100%",
+        "left": "0%",
         "skin": "CopyslFbox05cacec4e49a24b",
         "top": "0dp",
         "width": "100%",
@@ -1732,10 +2351,10 @@ function addWidgetsmainPage() {
         "clipBounds": true,
         "height": "100%",
         "id": "sideBarOverlay",
-        "isVisible": false,
+        "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "onTouchStart": AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80,
-        "right": "0dp",
+        "right": "-5dp",
         "skin": "CopyslFbox0e592ef4af81d42",
         "top": "0dp",
         "width": "100%",
@@ -1764,7 +2383,7 @@ function addWidgetsmainPage() {
         "id": "sideBarMenu",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
-        "left": "0dp",
+        "left": "0%",
         "skin": "CopyslFbox0298ee6f8ba5249",
         "top": "0dp",
         "width": "100%"
@@ -1785,13 +2404,13 @@ function addWidgetsmainPage() {
     sideBarHeader.setDefaultUnit(kony.flex.DP);
     var sideBarCompanyLogo = new kony.ui.Image2({
         "centerX": "50%",
-        "height": "60dp",
+        "height": "80dp",
         "id": "sideBarCompanyLogo",
         "isVisible": true,
         "skin": "slImage",
-        "src": "supplynationlogo2x.png",
+        "src": "jumpstartlogonotext.png",
         "top": "10%",
-        "width": "60dp"
+        "width": "80dp"
     }, {
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
         "padding": [0, 0, 0, 0],
@@ -1803,7 +2422,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "skin": "CopyslLabel08def05ed32534a",
         "text": "My JumpStart",
-        "top": "10dp",
+        "top": "-5dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -1869,8 +2488,9 @@ function addWidgetsmainPage() {
         "id": "myProfileLink",
         "isVisible": true,
         "left": "0dp",
+        "onClick": AS_RichText_f979aad53c1142ecbe5962c51bc1ddef,
         "onTouchStart": AS_RichText_c054155ae9024a5a9c2305607e76e4d8,
-        "skin": "CopyslRichText0d8115a04b63b4f",
+        "skin": "ngnyGrayLinkText",
         "text": "<u>My Profile</u>",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -1879,7 +2499,73 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    sideBarBody.add(myProfileLink);
+    var ReportingLink = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "ReportingLink",
+        "isVisible": false,
+        "left": "0dp",
+        "onTouchStart": AS_RichText_79a979c620b74de38fdedecd3e420bba,
+        "skin": "CopyslRichText0d8115a04b63b4f",
+        "text": "<u>Reporting</u>",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var FlexContainer08d40d9191a9344 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "60dp",
+        "id": "FlexContainer08d40d9191a9344",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "33%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    FlexContainer08d40d9191a9344.setDefaultUnit(kony.flex.DP);
+    var checkList = new kony.ui.CheckBoxGroup({
+        "centerY": "50%",
+        "height": "50dp",
+        "id": "checkList",
+        "isVisible": true,
+        "masterData": [
+            ["cbg1", "."]
+        ],
+        "onSelection": AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518,
+        "right": "2dp",
+        "skin": "CopyslCheckBoxGroup0306443d20b8149",
+        "width": "50dp",
+        "zIndex": 2
+    }, {
+        "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_VERTICAL,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var emailNotificationLbl = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "20dp",
+        "id": "emailNotificationLbl",
+        "isVisible": true,
+        "left": "2%",
+        "skin": "CopyslLabel0d5ddd374374340",
+        "text": "Email notifications",
+        "width": "60%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    FlexContainer08d40d9191a9344.add(checkList, emailNotificationLbl);
+    sideBarBody.add(myProfileLink, ReportingLink, FlexContainer08d40d9191a9344);
     var sideBarFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -1900,7 +2586,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": 0,
         "onTouchStart": AS_RichText_39b50ab4a8304fbabfd147601b1115a7,
-        "skin": "CopyslRichText03c4caa091a9245",
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Logout</u>",
         "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -1915,7 +2601,9 @@ function addWidgetsmainPage() {
         "id": "sideBarNeedHelp",
         "isVisible": true,
         "left": 0,
-        "skin": "CopyslRichText03c4caa091a9245",
+        "onClick": AS_RichText_69306abd2de8425a8086f4b28852e0bc,
+        "onTouchStart": AS_RichText_4b804fcacb8f4f48aa023fa3ba60500a,
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Need help?</u>",
         "top": "30dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -1978,11 +2666,11 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "requestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
-        "text": "Cancel Request",
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Cancel request",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {
@@ -2015,7 +2703,7 @@ function addWidgetsmainPage() {
         "left": "0dp",
         "numberOfVisibleLines": 3,
         "skin": "jumpStartTextAreaSkin",
-        "text": "Good day!\n\nI have received your confirmation but unfortunately I have to cancel my initial request/acceptance of your request due to certain conditions that may hinder me to fulfill the task at hand.",
+        "text": "Good day!\n\nI have received your request but unfortunately I have to decline due to other commitments that may impact my availability..",
         "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
         "top": "0dp",
         "width": "90%",
@@ -2044,14 +2732,14 @@ function addWidgetsmainPage() {
     requestModalFooter.setDefaultUnit(kony.flex.DP);
     var cancelRequestYes = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "cancelRequestYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_56849e05360f4daba001e01291f6323e,
-        "skin": "jumpStartGreenButton110",
-        "text": "Send Message",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Cancel Request",
         "top": "15dp",
         "width": "90%",
         "zIndex": 1
@@ -2066,22 +2754,160 @@ function addWidgetsmainPage() {
         "id": "cancelRequestNo",
         "isVisible": true,
         "onClick": AS_RichText_9230d3beb1b94c34995122d6e8139943,
-        "onTouchStart": AS_RichText_33e420002b474104a5b6e9bec3f82699,
-        "skin": "jumpStartRTGreen130",
+        "onTouchStart": AS_RichText_ebb97dc3961c4b1abaff09338d24c4a3,
+        "skin": "ngnyGrayLinkText",
         "text": "Cancel",
         "top": 20,
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "50%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
     requestModalFooter.add(cancelRequestYes, cancelRequestNo);
     cancelRequestModalContainer.add(requestModalHeader, requestModalBody, requestModalFooter);
+    var sendRecommendation = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "58%",
+        "clipBounds": true,
+        "height": "75%",
+        "id": "sendRecommendation",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "jumpStartModalSkin",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    sendRecommendation.setDefaultUnit(kony.flex.DP);
+    var sendRecommendationModalHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "20%",
+        "id": "sendRecommendationModalHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    sendRecommendationModalHeader.setDefaultUnit(kony.flex.DP);
+    var sendRecommendationModalTitle = new kony.ui.Label({
+        "centerX": "50%",
+        "centerY": "50%",
+        "id": "sendRecommendationModalTitle",
+        "isVisible": true,
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Send Recommendation",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    sendRecommendationModalHeader.add(sendRecommendationModalTitle);
+    var sendRecommendationModalBody = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50%",
+        "id": "sendRecommendationModalBody",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    sendRecommendationModalBody.setDefaultUnit(kony.flex.DP);
+    var sendRecommendationTextArea = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "focusSkin": "jumpStartTextAreaSkin",
+        "height": "100%",
+        "id": "sendRecommendationTextArea",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
+        "left": "0dp",
+        "numberOfVisibleLines": 3,
+        "skin": "jumpStartTextAreaSkin",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [3, 3, 3, 3],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    sendRecommendationModalBody.add(sendRecommendationTextArea);
+    var sendRecommendationModalFooter = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30%",
+        "id": "sendRecommendationModalFooter",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    sendRecommendationModalFooter.setDefaultUnit(kony.flex.DP);
+    var sendRecommendationYes = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
+        "id": "sendRecommendationYes",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_Button_f57470ae9f314ef4b9536d11b77f7ead,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Send Message",
+        "top": "13dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var sendRecommendationNo2 = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "CopyslButtonGlossRed0e86d09ba91e540",
+        "height": "45dp",
+        "id": "sendRecommendationNo2",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_Button_fad1112456d34dd0b6ab342ef98b80ef,
+        "skin": "ngnyBackButton",
+        "text": "Cancel",
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    sendRecommendationModalFooter.add(sendRecommendationYes, sendRecommendationNo2);
+    sendRecommendation.add(sendRecommendationModalHeader, sendRecommendationModalBody, sendRecommendationModalFooter);
     var declineRequestModalContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50.00%",
+        "centerX": "50%",
         "centerY": "50.00%",
         "clipBounds": true,
         "height": "75%",
@@ -2114,7 +2940,7 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "CopyrequestModalTitle0c3fd54c7c77f41",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Decline Request",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -2151,7 +2977,7 @@ function addWidgetsmainPage() {
         "left": "0dp",
         "numberOfVisibleLines": 3,
         "skin": "jumpStartTextAreaSkin",
-        "text": "Good day!\n\nWe have recieved your request but unfortunately we have to decline your request due to other commitments that may impact my availability.",
+        "text": "Good day!\n\nI have received your request but unfortunately I have to decline due to other commitments that may impact my availability.",
         "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
         "top": "0dp",
         "width": "90%",
@@ -2180,14 +3006,14 @@ function addWidgetsmainPage() {
     declineRequestModalFooter.setDefaultUnit(kony.flex.DP);
     var declineRequestYes = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "declineRequestYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_e53dc5e292c44b34a1ffdfbdf33fd8d8,
-        "skin": "jumpStartGreenButton110",
-        "text": "Send Message",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Decline request",
         "top": "15dp",
         "width": "90%",
         "zIndex": 1
@@ -2202,8 +3028,8 @@ function addWidgetsmainPage() {
         "id": "declineRequestNo",
         "isVisible": true,
         "onClick": AS_RichText_5fe0b013d5cd4df68b5c961f47978705,
-        "onTouchStart": AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca,
-        "skin": "jumpStartRTGreen130",
+        "onTouchStart": AS_RichText_19990c994176431f906e776d24643e82,
+        "skin": "markAsComplete",
         "text": "Cancel",
         "top": 20,
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -2218,7 +3044,7 @@ function addWidgetsmainPage() {
     var startEngagementModalContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "50%",
+        "centerY": "50.03%",
         "clipBounds": true,
         "height": "95%",
         "id": "startEngagementModalContainer",
@@ -2265,33 +3091,17 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "onClick": AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b,
+        "onClick": AS_FlexContainer_ed74b6eca2554fd1a12165ae92025666,
         "skin": "slFbox",
         "top": "0dp",
         "width": "20%"
     }, {}, {});
     startEngagmentPreviousParent.setDefaultUnit(kony.flex.DP);
-    var startEngagmentPreviousImage = new kony.ui.Image2({
-        "centerX": "50%",
-        "centerY": "50%",
-        "height": "40dp",
-        "id": "startEngagmentPreviousImage",
-        "isVisible": false,
-        "left": "0dp",
-        "skin": "slImage",
-        "src": "previous.png",
-        "top": "0dp",
-        "width": "40dp"
-    }, {
-        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
     var strartEngagementBackBtn = new kony.ui.Button({
-        "height": "27.03%",
+        "height": "40.54%",
         "id": "strartEngagementBackBtn",
         "isVisible": true,
-        "left": "38dp",
+        "left": "18dp",
         "onClick": AS_Button_b8b7e62c17ff4f09978c26587cf3c336,
         "skin": "CopyslButtonGlossBlue0c1a6517000b344",
         "top": "16dp",
@@ -2299,11 +3109,11 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "displayText": true,
+        "displayText": false,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    startEngagmentPreviousParent.add(startEngagmentPreviousImage, strartEngagementBackBtn);
+    startEngagmentPreviousParent.add(strartEngagementBackBtn);
     var startEngagmentHeaderDetailsParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -2333,12 +3143,11 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var CopyLabel0d9d1d28dd0b840 = new kony.ui.Label({
-        "id": "CopyLabel0d9d1d28dd0b840",
+    var lblStartEngagementBusinessName = new kony.ui.Label({
+        "id": "lblStartEngagementBusinessName",
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel120Bold",
-        "text": "Jane Doe",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -2349,7 +3158,7 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    startEngagmentHeaderDetailsParent.add(Label060c497160a804b, CopyLabel0d9d1d28dd0b840);
+    startEngagmentHeaderDetailsParent.add(Label060c497160a804b, lblStartEngagementBusinessName);
     startEngagmentHeaderDetails.add(startEngagmentPreviousParent, startEngagmentHeaderDetailsParent);
     var startEngagmentHeaderActions = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -2385,7 +3194,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "personicongray.png",
+        "src": "imgseglogo.png",
         "top": "10dp",
         "width": "30dp"
     }, {
@@ -2398,8 +3207,9 @@ function addWidgetsmainPage() {
         "id": "RichText0be3bd35bf41a49",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_67a414a1afe94522a2d1e16347726d33,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">View Profile</a>",
+        "text": "<a href=\"#\" style=\"color: #37b3b1\">View Profile</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -2409,11 +3219,11 @@ function addWidgetsmainPage() {
         "paddingInPixel": false
     }, {});
     FlexContainer08f25f7edc6c340.add(Image0ce1ce26846474a, RichText0be3bd35bf41a49);
-    var CopyFlexContainer01ec2a14ea67245 = new kony.ui.FlexContainer({
+    var startEngagementCallContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
-        "id": "CopyFlexContainer01ec2a14ea67245",
+        "id": "startEngagementCallContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
@@ -2421,15 +3231,15 @@ function addWidgetsmainPage() {
         "top": "0dp",
         "width": "34%"
     }, {}, {});
-    CopyFlexContainer01ec2a14ea67245.setDefaultUnit(kony.flex.DP);
-    var CopyImage008378c44961e41 = new kony.ui.Image2({
+    startEngagementCallContainer.setDefaultUnit(kony.flex.DP);
+    var CallIcon = new kony.ui.Image2({
         "centerX": "50%",
         "height": "30dp",
-        "id": "CopyImage008378c44961e41",
+        "id": "CallIcon",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "callicongrey.png",
+        "src": "callicon.png",
         "top": "10dp",
         "width": "30dp"
     }, {
@@ -2437,13 +3247,14 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    var CopyRichText0cff3276ff6fd48 = new kony.ui.RichText({
+    var CallRichText = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "CopyRichText0cff3276ff6fd48",
+        "id": "CallRichText",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_4b292320515146c5a8184a2451447b77,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">Call</a>",
+        "text": "<a href=\"#\" style=\"color: #37b3b1\">Call</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -2452,12 +3263,12 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyFlexContainer01ec2a14ea67245.add(CopyImage008378c44961e41, CopyRichText0cff3276ff6fd48);
-    var CopyFlexContainer04d68d5aecdbd45 = new kony.ui.FlexContainer({
+    startEngagementCallContainer.add(CallIcon, CallRichText);
+    var messageContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
-        "id": "CopyFlexContainer04d68d5aecdbd45",
+        "id": "messageContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
@@ -2465,11 +3276,11 @@ function addWidgetsmainPage() {
         "top": "0dp",
         "width": "34%"
     }, {}, {});
-    CopyFlexContainer04d68d5aecdbd45.setDefaultUnit(kony.flex.DP);
-    var CopyImage047136a00c7174b = new kony.ui.Image2({
+    messageContainer.setDefaultUnit(kony.flex.DP);
+    var impChatIcon = new kony.ui.Image2({
         "centerX": "50%",
         "height": "30dp",
-        "id": "CopyImage047136a00c7174b",
+        "id": "impChatIcon",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
@@ -2481,13 +3292,14 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    var CopyRichText08802f88b637244 = new kony.ui.RichText({
+    var messageRichText = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "CopyRichText08802f88b637244",
+        "id": "messageRichText",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_2789ef5f0cc540749ee37969fb746bdb,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">Message</a>",
+        "text": "<a href=\"#\" style=\"color: #37b3b1\">Message</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -2496,8 +3308,8 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyFlexContainer04d68d5aecdbd45.add(CopyImage047136a00c7174b, CopyRichText08802f88b637244);
-    startEngagmentHeaderActions.add(FlexContainer08f25f7edc6c340, CopyFlexContainer01ec2a14ea67245, CopyFlexContainer04d68d5aecdbd45);
+    messageContainer.add(impChatIcon, messageRichText);
+    startEngagmentHeaderActions.add(FlexContainer08f25f7edc6c340, startEngagementCallContainer, messageContainer);
     var startEngagmentHeaderAssignToTask = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -2513,26 +3325,26 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     startEngagmentHeaderAssignToTask.setDefaultUnit(kony.flex.DP);
-    var FlexContainer00116ecf60f434e = new kony.ui.FlexContainer({
+    var assignToExistingTaskContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "25dp",
-        "id": "FlexContainer00116ecf60f434e",
+        "id": "assignToExistingTaskContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "slFbox",
         "top": "5dp",
-        "width": "100%",
+        "width": "97.04%",
         "zIndex": 1
     }, {}, {});
-    FlexContainer00116ecf60f434e.setDefaultUnit(kony.flex.DP);
-    var Label0cc205c719cd040 = new kony.ui.Label({
-        "id": "Label0cc205c719cd040",
+    assignToExistingTaskContainer.setDefaultUnit(kony.flex.DP);
+    var lblAssigntoExistingTask = new kony.ui.Label({
+        "id": "lblAssigntoExistingTask",
         "isVisible": true,
-        "left": "0dp",
+        "left": "1dp",
         "skin": "jumpStartLabel90",
-        "text": "Assign to existing task?",
+        "text": "Assign existing task",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -2544,63 +3356,63 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    FlexContainer00116ecf60f434e.add(Label0cc205c719cd040);
-    var CopyFlexContainer08d65c89807cd48 = new kony.ui.FlexContainer({
+    assignToExistingTaskContainer.add(lblAssigntoExistingTask);
+    var assignToExistingTaskListBoxContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "70%",
-        "id": "CopyFlexContainer08d65c89807cd48",
+        "height": "44.72%",
+        "id": "assignToExistingTaskListBoxContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "0dp",
+        "top": "2dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyFlexContainer08d65c89807cd48.setDefaultUnit(kony.flex.DP);
-    var TextField0b2c25e050ddd44 = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "height": "40dp",
-        "id": "TextField0b2c25e050ddd44",
+    assignToExistingTaskListBoxContainer.setDefaultUnit(kony.flex.DP);
+    var existingTaskListBox = new kony.ui.ListBox({
+        "centerX": "50%",
+        "focusSkin": "CopyslListBox070ac863d00c94c",
+        "height": "32dp",
+        "id": "existingTaskListBox",
         "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-        "left": "0dp",
-        "secureTextEntry": false,
-        "skin": "jumpStartStandardInputField",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "0dp",
-        "width": "80%"
+        "left": "1dp",
+        "masterData": [
+            ["lb1", "Select"]
+        ],
+        "onSelection": AS_ListBox_b96d06ad93cc4b95b9ddb1e14225ddbf,
+        "selectedKey": "lb1",
+        "selectedKeyValue": ["lb1", "Select"],
+        "skin": "CopyslListBox0c3af8383afd84a",
+        "top": "3dp",
+        "width": "235dp",
+        "zIndex": 1
     }, {
-        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [3, 0, 0, 0],
+        "padding": [2, 0, 2, 0],
         "paddingInPixel": false
-    }, {
-        "autoComplete": false,
-        "autoCorrect": false
-    });
-    var FlexContainer0c745a890668f47 = new kony.ui.FlexContainer({
+    }, {});
+    var yesButtonContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "40dp",
-        "id": "FlexContainer0c745a890668f47",
-        "isVisible": true,
+        "height": "30dp",
+        "id": "yesButtonContainer",
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "5dp",
+        "left": "-217dp",
         "skin": "jumpStartBG215",
-        "top": "0dp",
-        "width": "15%",
+        "top": "4dp",
+        "width": "16.45%",
         "zIndex": 1
     }, {}, {});
-    FlexContainer0c745a890668f47.setDefaultUnit(kony.flex.DP);
+    yesButtonContainer.setDefaultUnit(kony.flex.DP);
     var Label0bf92f774186e49 = new kony.ui.Label({
         "centerX": "50%",
         "id": "Label0bf92f774186e49",
-        "isVisible": true,
+        "isVisible": false,
         "left": "0dp",
         "skin": "jumpStartLabel200Bold",
-        "text": "...",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -2611,9 +3423,26 @@ function addWidgetsmainPage() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    FlexContainer0c745a890668f47.add(Label0bf92f774186e49);
-    CopyFlexContainer08d65c89807cd48.add(TextField0b2c25e050ddd44, FlexContainer0c745a890668f47);
-    startEngagmentHeaderAssignToTask.add(FlexContainer00116ecf60f434e, CopyFlexContainer08d65c89807cd48);
+    var btnIsExistingTask = new kony.ui.Button({
+        "focusSkin": "CopyslButtonGlossRed08abba14bc86e4c",
+        "height": "100%",
+        "id": "btnIsExistingTask",
+        "isVisible": false,
+        "left": "0dp",
+        "skin": "CopyslButtonGlossBlue0e5dc43ec76eb47",
+        "text": "Yes",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    yesButtonContainer.add(Label0bf92f774186e49, btnIsExistingTask);
+    assignToExistingTaskListBoxContainer.add(existingTaskListBox, yesButtonContainer);
+    startEngagmentHeaderAssignToTask.add(assignToExistingTaskContainer, assignToExistingTaskListBoxContainer);
     startEngagementModalHeader.add(startEngagmentHeaderDetails, startEngagmentHeaderActions, startEngagmentHeaderAssignToTask);
     var startEngagementModalBody = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
@@ -2642,7 +3471,7 @@ function addWidgetsmainPage() {
         "id": "startEngagementTaskTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Task Title",
         "top": "10dp",
         "width": "90%"
@@ -2656,15 +3485,15 @@ function addWidgetsmainPage() {
     });
     var startEngagementTaskTitleField = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "centerX": "50%",
         "height": "40dp",
         "id": "startEngagementTaskTitleField",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
         "secureTextEntry": false,
-        "skin": "jumpStartStandardInputField",
+        "skin": "CopyslTextBox0a31600a67fd64b",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "5dp",
+        "top": "4dp",
         "width": "90%",
         "zIndex": 1
     }, {
@@ -2681,7 +3510,7 @@ function addWidgetsmainPage() {
         "id": "startEngagementTaskDetails",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Task Details",
         "top": "10dp",
         "width": "90%"
@@ -2700,7 +3529,7 @@ function addWidgetsmainPage() {
         "height": "120dp",
         "id": "startEngagementTaskDetailsTextArea",
         "isVisible": true,
-        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_CHAT,
         "numberOfVisibleLines": 3,
         "skin": "jumpStartTextAreaSkin",
         "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
@@ -2714,12 +3543,51 @@ function addWidgetsmainPage() {
     }, {
         "autoCorrect": false
     });
+    var LabelHoursRequired = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "LabelHoursRequired",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Duration of Engagement",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var duratationOfEngagementInput = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "duratationOfEngagementInput",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
     var startEngagementStartDate = new kony.ui.Label({
         "centerX": "50%",
         "id": "startEngagementStartDate",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Start Date",
         "top": "10dp",
         "width": "90%"
@@ -2749,6 +3617,7 @@ function addWidgetsmainPage() {
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
         "top": "5dp",
+        "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
         "width": "90%",
         "year": 2016,
@@ -2763,7 +3632,7 @@ function addWidgetsmainPage() {
         "id": "startEngagementEndDate",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "End Date",
         "top": "10dp",
         "width": "90%"
@@ -2803,7 +3672,45 @@ function addWidgetsmainPage() {
         "padding": [3, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    startEngagementModalBody.add(startEngagementTaskTitle, startEngagementTaskTitleField, startEngagementTaskDetails, startEngagementTaskDetailsTextArea, startEngagementStartDate, startDateCalendarInput, startEngagementEndDate, endDateCalendarInput);
+    var CommentsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CommentsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Comments",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var CommentsRichText = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "focusSkin": "jumpStartTextAreaSkin",
+        "height": "120dp",
+        "id": "CommentsRichText",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_CHAT,
+        "numberOfVisibleLines": 3,
+        "skin": "jumpStartTextAreaSkin",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "5dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [2, 2, 2, 2],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    startEngagementModalBody.add(startEngagementTaskTitle, startEngagementTaskTitleField, startEngagementTaskDetails, startEngagementTaskDetailsTextArea, LabelHoursRequired, duratationOfEngagementInput, startEngagementStartDate, startDateCalendarInput, startEngagementEndDate, endDateCalendarInput, CommentsLabel, CommentsRichText);
     var startEngagementModalFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -2820,13 +3727,13 @@ function addWidgetsmainPage() {
     startEngagementModalFooter.setDefaultUnit(kony.flex.DP);
     var startEngagement = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0f5e9b292eb6f46",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "startEngagement",
         "isVisible": true,
         "onClick": AS_Button_8937be6ef1c14c11b1799fe6815abc7e,
         "right": "10dp",
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Start",
         "top": "15dp",
         "width": "45%",
@@ -2845,7 +3752,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": 10,
         "onClick": AS_Button_6c414d0da69e45eb9e18a50ec0d9274d,
-        "skin": "jumpStartDisableButton",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
         "top": "15dp",
         "width": "45%",
@@ -2892,7 +3799,7 @@ function addWidgetsmainPage() {
         "centerX": "50%",
         "id": "acceptTaskModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Eligibility Criteria",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -2999,23 +3906,9 @@ function addWidgetsmainPage() {
         "zIndex": 1
     }, {}, {});
     acceptTaskModalFooter.setDefaultUnit(kony.flex.DP);
-    var CopycancelRequestNo02a7c05ccf4f74a = new kony.ui.RichText({
-        "centerX": "50%",
-        "id": "CopycancelRequestNo02a7c05ccf4f74a",
-        "isVisible": true,
-        "skin": "jumpStartRTBlueLink130",
-        "text": "<u>Terms & Conditions</u>",
-        "top": 5,
-        "width": kony.flex.USE_PREFFERED_SIZE,
-        "zIndex": 1
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
     var agreeToTaskButton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "jump",
         "height": "50dp",
         "id": "agreeToTaskButton",
         "isVisible": true,
@@ -3038,7 +3931,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "onClick": AS_RichText_f1342c5021ec46068c03ed07300dbd87,
         "onTouchStart": AS_RichText_33e420002b474104a5b6e9bec3f82699,
-        "skin": "jumpStartRTBlueLink130",
+        "skin": "ngnyGrayLinkText",
         "text": "<u>Do it later</u>",
         "top": 20,
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -3048,12 +3941,12 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    acceptTaskModalFooter.add(CopycancelRequestNo02a7c05ccf4f74a, agreeToTaskButton, CopycancelRequestNo0df4de238bde24e);
+    acceptTaskModalFooter.add(agreeToTaskButton, CopycancelRequestNo0df4de238bde24e);
     acceptTaskModalContainer.add(acceptTaskModalHeader, acceptTaskModalBody, acceptTaskModalFooter);
     var acceptTaskDetailsModalContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "50%",
+        "centerY": "50.00%",
         "clipBounds": true,
         "height": "95%",
         "id": "acceptTaskDetailsModalContainer",
@@ -3111,7 +4004,7 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "height": "40dp",
         "id": "acceptTaskDetailsPreviousImage",
-        "isVisible": true,
+        "isVisible": false,
         "left": "0dp",
         "skin": "slImage",
         "src": "previous.png",
@@ -3122,7 +4015,23 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    acceptTaskDetailsPreviousParent.add(acceptTaskDetailsPreviousImage);
+    var AcceptBackBtn = new kony.ui.Button({
+        "height": "38.96%",
+        "id": "AcceptBackBtn",
+        "isVisible": true,
+        "left": "14dp",
+        "onClick": AS_Button_db0bf370a0c3499f8dda80469463a8c7,
+        "skin": "CopyslButtonGlossBlue06279fedfcf8e4d",
+        "top": "16dp",
+        "width": "33.68%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    acceptTaskDetailsPreviousParent.add(acceptTaskDetailsPreviousImage, AcceptBackBtn);
     var CopystartEngagmentHeaderDetailsParent07958b4bef26b4f = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -3157,7 +4066,6 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel120Bold",
-        "text": "Jane Doe",
         "top": "5dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -3204,7 +4112,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "personicongray.png",
+        "src": "imgseglogo.png",
         "top": "10dp",
         "width": "30dp"
     }, {
@@ -3217,8 +4125,9 @@ function addWidgetsmainPage() {
         "id": "CopyRichText06bba209338574d",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_64f60642307f4d68891aea6f3323788a,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">View Profile</a>",
+        "text": "<a href=\"#\" style=\"color:  #37b3b1\">View Profile</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -3228,11 +4137,11 @@ function addWidgetsmainPage() {
         "paddingInPixel": false
     }, {});
     CopyFlexContainer0800965ae495e4c.add(CopyImage0280b651d9eb142, CopyRichText06bba209338574d);
-    var CopyFlexContainer0c089afc5465942 = new kony.ui.FlexContainer({
+    var acceptTaskCall = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
-        "id": "CopyFlexContainer0c089afc5465942",
+        "id": "acceptTaskCall",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
@@ -3240,16 +4149,16 @@ function addWidgetsmainPage() {
         "top": "0dp",
         "width": "34%"
     }, {}, {});
-    CopyFlexContainer0c089afc5465942.setDefaultUnit(kony.flex.DP);
-    var CopyImage0ea36e1b27bf04a = new kony.ui.Image2({
+    acceptTaskCall.setDefaultUnit(kony.flex.DP);
+    var CallImage = new kony.ui.Image2({
         "bottom": 0,
         "centerX": "50%",
         "height": "30dp",
-        "id": "CopyImage0ea36e1b27bf04a",
+        "id": "CallImage",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
-        "src": "callicongrey.png",
+        "src": "callicon.png",
         "top": "10dp",
         "width": "30dp"
     }, {
@@ -3257,13 +4166,14 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    var CopyRichText05524d10ed20249 = new kony.ui.RichText({
+    var RichTextCall = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "CopyRichText05524d10ed20249",
+        "id": "RichTextCall",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_7ccbb951657c4d96a2c062fde79742c4,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">Call</a>",
+        "text": "<a href=\"#\" style=\"color:  #37b3b1\">Call</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -3272,12 +4182,12 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyFlexContainer0c089afc5465942.add(CopyImage0ea36e1b27bf04a, CopyRichText05524d10ed20249);
-    var CopyFlexContainer027a73c44a3d741 = new kony.ui.FlexContainer({
+    acceptTaskCall.add(CallImage, RichTextCall);
+    var AcceptTaskMessageContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "100%",
-        "id": "CopyFlexContainer027a73c44a3d741",
+        "id": "AcceptTaskMessageContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
@@ -3285,11 +4195,11 @@ function addWidgetsmainPage() {
         "top": "0dp",
         "width": "34%"
     }, {}, {});
-    CopyFlexContainer027a73c44a3d741.setDefaultUnit(kony.flex.DP);
-    var CopyImage0205c44793c464f = new kony.ui.Image2({
+    AcceptTaskMessageContainer.setDefaultUnit(kony.flex.DP);
+    var imessageLogo = new kony.ui.Image2({
         "centerX": "50%",
         "height": "30dp",
-        "id": "CopyImage0205c44793c464f",
+        "id": "imessageLogo",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
@@ -3301,13 +4211,14 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    var CopyRichText0925d713a58b341 = new kony.ui.RichText({
+    var imessageRichText = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "CopyRichText0925d713a58b341",
+        "id": "imessageRichText",
         "isVisible": true,
         "left": "5dp",
+        "onClick": AS_RichText_45be57ca65c1419986dd2ee513f25601,
         "skin": "jumpStartRtLink100",
-        "text": "<a href=\"#\" style=\"color: #000\">Message</a>",
+        "text": "<a href=\"#\" style=\"color:  #37b3b1\">Message</a>",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
@@ -3316,8 +4227,8 @@ function addWidgetsmainPage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyFlexContainer027a73c44a3d741.add(CopyImage0205c44793c464f, CopyRichText0925d713a58b341);
-    CopystartEngagmentHeaderActions0becdf72e3b274a.add(CopyFlexContainer0800965ae495e4c, CopyFlexContainer0c089afc5465942, CopyFlexContainer027a73c44a3d741);
+    AcceptTaskMessageContainer.add(imessageLogo, imessageRichText);
+    CopystartEngagmentHeaderActions0becdf72e3b274a.add(CopyFlexContainer0800965ae495e4c, acceptTaskCall, AcceptTaskMessageContainer);
     acceptTaskDetailsModalHeader.add(CopystartEngagmentHeaderDetails05c3f0a6993dd4b, CopystartEngagmentHeaderActions0becdf72e3b274a);
     var acceptTaskDetailsModalBody = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
@@ -3347,7 +4258,6 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel80",
-        "text": "Kindly confirm some engagement details below:",
         "top": "10dp",
         "width": "90%"
     }, {
@@ -3363,7 +4273,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementTaskTitle0c7e98509622a40",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Task Title",
         "top": "10dp",
         "width": "90%"
@@ -3381,8 +4291,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementTaskTitle09c8c16c0f4cb4f",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabelReadOnly",
-        "text": "Procurement Consultation",
+        "skin": "jumpStartLabelReadOnly99",
         "top": "10dp",
         "width": "90%"
     }, {
@@ -3398,7 +4307,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementTaskDetails0a18337357b4b42",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Task Details",
         "top": "10dp",
         "width": "90%"
@@ -3416,8 +4325,7 @@ function addWidgetsmainPage() {
         "id": "RichText086cf577b0bee44",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartRTReadOnly",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "skin": "jumpStartRTReadOnly99",
         "top": "5dp",
         "width": "90%",
         "zIndex": 1
@@ -3431,7 +4339,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementStartDate02225626a6a2944",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Start Date",
         "top": "10dp",
         "width": "90%"
@@ -3449,8 +4357,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementTaskTitle05227206fe96b4a",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabelReadOnly",
-        "text": " September 15, 2016",
+        "skin": "jumpStartLabelReadOnly99",
         "top": "10dp",
         "width": "90%"
     }, {
@@ -3466,7 +4373,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementEndDate0503bf2317bc34d",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "End Date",
         "top": "10dp",
         "width": "90%"
@@ -3485,8 +4392,7 @@ function addWidgetsmainPage() {
         "id": "CopystartEngagementTaskTitle0d258ad25591a49",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabelReadOnly",
-        "text": "December 15, 2016",
+        "skin": "jumpStartLabelReadOnly99",
         "top": "10dp",
         "width": "90%"
     }, {
@@ -3531,13 +4437,13 @@ function addWidgetsmainPage() {
     acceptTaskDetailsModalFooter.setDefaultUnit(kony.flex.DP);
     var CopystartEngagement0e3cd864659974b = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0f5e9b292eb6f46",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "CopystartEngagement0e3cd864659974b",
         "isVisible": true,
         "onClick": AS_Button_e04575295a194fac83b2a430a78f83ad,
         "right": "10dp",
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Accept",
         "top": "15dp",
         "width": "45%",
@@ -3634,12 +4540,12 @@ function addWidgetsmainPage() {
     });
     var Button0fdf6cf4ba17044 = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "Button0fdf6cf4ba17044",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Select all",
         "top": "15dp",
         "width": "100%",
@@ -3736,7 +4642,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "left": 10,
         "onClick": AS_Button_b3b28f3c172144378c1c9e4a9d8b4738,
-        "skin": "jumpStartDisableButton",
+        "skin": "ngnyBackButton",
         "text": "Cancel",
         "top": "15dp",
         "width": "45%",
@@ -3749,12 +4655,12 @@ function addWidgetsmainPage() {
     }, {});
     var CopystartEngagement0c36935d6f65542 = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0f5e9b292eb6f46",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "CopystartEngagement0c36935d6f65542",
         "isVisible": true,
         "right": "10dp",
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Accept",
         "top": "15dp",
         "width": "45%",
@@ -3802,7 +4708,7 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "acceptRequestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Accept Request",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -3860,13 +4766,13 @@ function addWidgetsmainPage() {
     acceptRequestModalFooter.setDefaultUnit(kony.flex.DP);
     var acceptRequestYes = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "acceptRequestYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_80dfa1bc68ad4325be817ed653bc9943,
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Accept",
         "top": "15dp",
         "width": "90%",
@@ -3883,7 +4789,7 @@ function addWidgetsmainPage() {
         "isVisible": true,
         "onClick": AS_RichText_71610d1cc94c44ebab8199fdf7ab5b2b,
         "onTouchStart": AS_RichText_dc484199ad004556881eb9bf4a117c0f,
-        "skin": "jumpStartRTGreen130",
+        "skin": "markAsComplete",
         "text": "Cancel",
         "top": 20,
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -3900,14 +4806,14 @@ function addWidgetsmainPage() {
         "centerX": "50%",
         "centerY": "50%",
         "clipBounds": true,
-        "height": "50%",
+        "height": "60%",
         "id": "viewRequestModalContainer",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "jumpStartModalSkin",
         "top": "0dp",
-        "width": "90%",
+        "width": "80%",
         "zIndex": 1
     }, {}, {});
     viewRequestModalContainer.setDefaultUnit(kony.flex.DP);
@@ -3930,8 +4836,8 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "viewRequestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
-        "text": "View Request",
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "View brief",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -3991,9 +4897,9 @@ function addWidgetsmainPage() {
         "centerY": "50%",
         "id": "viewRequestDone",
         "isVisible": true,
-        "onTouchStart": AS_RichText_e3aee1ae013e4111a55c362d7f768c08,
-        "skin": "jumpStartRTGreen130",
-        "text": "Done",
+        "onTouchStart": AS_RichText_dc25bf7ae3f94d669fbd46ba637c72b6,
+        "skin": "ngnyGrayLinkText",
+        "text": "<u>Done</u>",
         "top": 0,
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
@@ -4004,7 +4910,3363 @@ function addWidgetsmainPage() {
     }, {});
     viewRequestModalFooter.add(viewRequestDone);
     viewRequestModalContainer.add(viewRequestModalHeader, viewRequestModalBody, viewRequestModalFooter);
-    mainPage.add(mainPageBody, sideBarOverlay, sideBarMenuContainer, mainPageModalsBackground, cancelRequestModalContainer, declineRequestModalContainer, startEngagementModalContainer, acceptTaskModalContainer, acceptTaskDetailsModalContainer, acceptTaskSkillsModalContainer, acceptRequestModalContainer, viewRequestModalContainer);
+    var CreateOpportunityContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "95%",
+        "id": "CreateOpportunityContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "jumpStartModalSkin",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    CreateOpportunityContainer.setDefaultUnit(kony.flex.DP);
+    var headerContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "headerContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    headerContainer.setDefaultUnit(kony.flex.DP);
+    var createOpportunityHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "60dp",
+        "id": "createOpportunityHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    createOpportunityHeader.setDefaultUnit(kony.flex.DP);
+    var backButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "backButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onClick": AS_FlexContainer_9b737b9091164aa7bf7ea116db32882f,
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    backButtonContainer.setDefaultUnit(kony.flex.DP);
+    var backButton = new kony.ui.Button({
+        "height": "40.54%",
+        "id": "backButton",
+        "isVisible": true,
+        "left": "18dp",
+        "onClick": AS_Button_9fc7a0254a8f42b1a9f7454faea23818,
+        "skin": "CopyslButtonGlossBlue0c1a6517000b344",
+        "top": "16dp",
+        "width": "29.63%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    backButtonContainer.add(backButton);
+    var createOpportunityLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "createOpportunityLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%"
+    }, {}, {});
+    createOpportunityLabelContainer.setDefaultUnit(kony.flex.DP);
+    var lblCreateOpportunity = new kony.ui.Label({
+        "centerX": "36%",
+        "id": "lblCreateOpportunity",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel90",
+        "text": "Create Brief",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    createOpportunityLabelContainer.add(lblCreateOpportunity);
+    createOpportunityHeader.add(backButtonContainer, createOpportunityLabelContainer);
+    headerContainer.add(createOpportunityHeader);
+    var BodyContainer = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "centerX": "50%",
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "80%",
+        "horizontalScrollIndicator": true,
+        "id": "BodyContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "jumpStartFlexScrollBG242",
+        "top": "0dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    BodyContainer.setDefaultUnit(kony.flex.DP);
+    var opportunityTitleLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "opportunityTitleLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Task title*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var opportunityTitleInputContainer = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "opportunityTitleInputContainer",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var opportunityDetailsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "opportunityDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "What do you need assistance with? *",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var opportunityDetailsInputContainer = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "focusSkin": "jumpStartTextAreaSkin",
+        "height": "120dp",
+        "id": "opportunityDetailsInputContainer",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_CHAT,
+        "numberOfVisibleLines": 3,
+        "skin": "jumpStartTextAreaSkin",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "5dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [2, 2, 2, 2],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    var Skills = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "Skills",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "What skills do you need the right person to have? *",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var skillsInput = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "skillsInput",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var hoursLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "hoursLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Duration of engagement*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var hoursInput = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "hoursInput",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var startDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "startDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Start date*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var opportunityStartDateCalendarInput = new kony.ui.Calendar({
+        "calendarIcon": "calendaricon.png",
+        "centerX": "50%",
+        "dateComponents": [28, 10, 2016, 0, 0, 0],
+        "dateFormat": "dd/MM/yyyy",
+        "day": 28,
+        "focusSkin": "jumpStartCalendarSkin",
+        "formattedDate": "28/10/2016",
+        "height": "40dp",
+        "hour": 0,
+        "id": "opportunityStartDateCalendarInput",
+        "isVisible": true,
+        "left": "0dp",
+        "minutes": 0,
+        "month": 10,
+        "seconds": 0,
+        "skin": "jumpStartCalendarSkin",
+        "top": "5dp",
+        "viewConfig": {},
+        "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
+        "width": "90%",
+        "year": 2016,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var endateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "endateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "End date*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var opportunityEndateCalendarInput = new kony.ui.Calendar({
+        "bottom": "15dp",
+        "calendarIcon": "calendaricon.png",
+        "centerX": "50%",
+        "dateComponents": [28, 10, 2016, 0, 0, 0],
+        "dateFormat": "dd/MM/yyyy",
+        "day": 28,
+        "focusSkin": "jumpStartCalendarSkin",
+        "formattedDate": "28/10/2016",
+        "height": "40dp",
+        "hour": 0,
+        "id": "opportunityEndateCalendarInput",
+        "isVisible": true,
+        "left": "0dp",
+        "minutes": 0,
+        "month": 10,
+        "seconds": 0,
+        "skin": "jumpStartCalendarSkin",
+        "top": "5dp",
+        "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
+        "width": "90%",
+        "year": 2016,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    BodyContainer.add(opportunityTitleLabel, opportunityTitleInputContainer, opportunityDetailsLabel, opportunityDetailsInputContainer, Skills, skillsInput, hoursLabel, hoursInput, startDateLabel, opportunityStartDateCalendarInput, endateLabel, opportunityEndateCalendarInput);
+    var opportunityFooterContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "10%",
+        "id": "opportunityFooterContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "-5dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    opportunityFooterContainer.setDefaultUnit(kony.flex.DP);
+    var createOpportunityButton = new kony.ui.Button({
+        "centerY": "45%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "40dp",
+        "id": "createOpportunityButton",
+        "isVisible": true,
+        "onClick": AS_Button_2dd078c72d6d4317a70a98ff6984381a,
+        "right": "8dp",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Create brief",
+        "top": "0dp",
+        "width": "48.99%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var cancelButton = new kony.ui.Button({
+        "centerY": "45%",
+        "focusSkin": "jumpStartGrayButton110",
+        "height": "40dp",
+        "id": "cancelButton",
+        "isVisible": true,
+        "left": 5,
+        "onClick": AS_Button_38f3c0da38354f3ab85fd6586b0cd03d,
+        "skin": "ngnyBackButton",
+        "text": "Cancel",
+        "top": "0dp",
+        "width": "45%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    opportunityFooterContainer.add(createOpportunityButton, cancelButton);
+    CreateOpportunityContainer.add(headerContainer, BodyContainer, opportunityFooterContainer);
+    var opportunityDetailsContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "95%",
+        "id": "opportunityDetailsContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "jumpStartModalSkin",
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    opportunityDetailsContainer.setDefaultUnit(kony.flex.DP);
+    var OpportunityHeaderContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "OpportunityHeaderContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    OpportunityHeaderContainer.setDefaultUnit(kony.flex.DP);
+    var OppHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "60dp",
+        "id": "OppHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    OppHeader.setDefaultUnit(kony.flex.DP);
+    var OppBackButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "OppBackButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onClick": AS_FlexContainer_781b1d915cdb40199b25d6ae5c13c0b9,
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    OppBackButtonContainer.setDefaultUnit(kony.flex.DP);
+    var EditOppBackButton = new kony.ui.Button({
+        "height": "40.54%",
+        "id": "EditOppBackButton",
+        "isVisible": true,
+        "left": "18dp",
+        "onClick": AS_Button_1f098121ce6c4698b0dc798f7c6da987,
+        "skin": "CopyslButtonGlossBlue0c1a6517000b344",
+        "top": "16dp",
+        "width": "29.63%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    OppBackButtonContainer.add(EditOppBackButton);
+    var EditOppLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "EditOppLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%"
+    }, {}, {});
+    EditOppLabelContainer.setDefaultUnit(kony.flex.DP);
+    var lblEditOpportunity = new kony.ui.Label({
+        "centerX": "36%",
+        "id": "lblEditOpportunity",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel90",
+        "text": "Edit Brief",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    EditOppLabelContainer.add(lblEditOpportunity);
+    OppHeader.add(OppBackButtonContainer, EditOppLabelContainer);
+    OpportunityHeaderContainer.add(OppHeader);
+    var EditOpprotunityBodyContainer = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "centerX": "50%",
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "75%",
+        "horizontalScrollIndicator": true,
+        "id": "EditOpprotunityBodyContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "jumpStartFlexScrollBG242",
+        "top": "0dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    EditOpprotunityBodyContainer.setDefaultUnit(kony.flex.DP);
+    var OppTitleLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppTitleLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Task Title*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppTitleInputLabel = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "OppTitleInputLabel",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var OppDetailsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Task Details*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppDetailsInputLabel = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "focusSkin": "jumpStartTextAreaSkin",
+        "height": "120dp",
+        "id": "OppDetailsInputLabel",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_CHAT,
+        "numberOfVisibleLines": 3,
+        "skin": "jumpStartTextAreaSkin",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "5dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [2, 2, 2, 2],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    var OppSkillsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppSkillsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Skills*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppSkillsInputLabel = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "OppSkillsInputLabel",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var OppHoursLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppHoursLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Duration of Engagement*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppHoursInputLabel = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "height": "40dp",
+        "id": "OppHoursInputLabel",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "18dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0a31600a67fd64b",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    var OppStartDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppStartDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Start Date*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppStartDateCalendarInput = new kony.ui.Calendar({
+        "calendarIcon": "calendaricon.png",
+        "centerX": "50%",
+        "dateComponents": [28, 10, 2016, 0, 0, 0],
+        "dateFormat": "dd/MM/yyyy",
+        "day": 28,
+        "focusSkin": "jumpStartCalendarSkin",
+        "formattedDate": "28/10/2016",
+        "height": "40dp",
+        "hour": 0,
+        "id": "OppStartDateCalendarInput",
+        "isVisible": true,
+        "left": "0dp",
+        "minutes": 0,
+        "month": 10,
+        "seconds": 0,
+        "skin": "jumpStartCalendarSkin",
+        "top": "5dp",
+        "viewConfig": {},
+        "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
+        "width": "90%",
+        "year": 2016,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var OppEndDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "OppEndDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "End Date*",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var OppEndDateCalendarInput = new kony.ui.Calendar({
+        "bottom": "15dp",
+        "calendarIcon": "calendaricon.png",
+        "centerX": "50%",
+        "dateComponents": [28, 10, 2016, 0, 0, 0],
+        "dateFormat": "dd/MM/yyyy",
+        "day": 28,
+        "focusSkin": "jumpStartCalendarSkin",
+        "formattedDate": "28/10/2016",
+        "height": "40dp",
+        "hour": 0,
+        "id": "OppEndDateCalendarInput",
+        "isVisible": true,
+        "left": "0dp",
+        "minutes": 0,
+        "month": 10,
+        "seconds": 0,
+        "skin": "jumpStartCalendarSkin",
+        "top": "5dp",
+        "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
+        "width": "90%",
+        "year": 2016,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    EditOpprotunityBodyContainer.add(OppTitleLabel, OppTitleInputLabel, OppDetailsLabel, OppDetailsInputLabel, OppSkillsLabel, OppSkillsInputLabel, OppHoursLabel, OppHoursInputLabel, OppStartDateLabel, OppStartDateCalendarInput, OppEndDateLabel, OppEndDateCalendarInput);
+    var EditOpportunityFooterContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "8%",
+        "id": "EditOpportunityFooterContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "20dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    EditOpportunityFooterContainer.setDefaultUnit(kony.flex.DP);
+    var EditOpportunityButton = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "40dp",
+        "id": "EditOpportunityButton",
+        "isVisible": true,
+        "onClick": AS_Button_c744708682c64883bbf34dca04f06842,
+        "right": "10dp",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Save brief",
+        "top": "0dp",
+        "width": "48.99%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var OpportunityCancelButton = new kony.ui.Button({
+        "focusSkin": "jumpStartGrayButton110",
+        "height": "40dp",
+        "id": "OpportunityCancelButton",
+        "isVisible": true,
+        "left": "10dp",
+        "onClick": AS_Button_6aa62b26a68f4aa4b142cb059a64f36a,
+        "skin": "ngnyBackButton",
+        "text": "Cancel",
+        "top": "0dp",
+        "width": "45%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    EditOpportunityFooterContainer.add(EditOpportunityButton, OpportunityCancelButton);
+    opportunityDetailsContainer.add(OpportunityHeaderContainer, EditOpprotunityBodyContainer, EditOpportunityFooterContainer);
+    var TaskDetailsContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50.00%",
+        "clipBounds": true,
+        "height": "95%",
+        "id": "TaskDetailsContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "jumpStartModalSkin",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    TaskDetailsContainer.setDefaultUnit(kony.flex.DP);
+    var TaskDetailsHeaderContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "27.66%",
+        "id": "TaskDetailsHeaderContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    TaskDetailsHeaderContainer.setDefaultUnit(kony.flex.DP);
+    var headerTopContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "30%",
+        "id": "headerTopContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox02df153eb178940",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    headerTopContainer.setDefaultUnit(kony.flex.DP);
+    var taskDetailsBackButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "taskDetailsBackButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onClick": AS_FlexContainer_98d3aa24541b4a29995d52d254def029,
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    taskDetailsBackButtonContainer.setDefaultUnit(kony.flex.DP);
+    var taskDetailsBackButton = new kony.ui.Button({
+        "centerY": "50%",
+        "height": "50%",
+        "id": "taskDetailsBackButton",
+        "isVisible": true,
+        "left": "14dp",
+        "onClick": AS_Button_1b9973fd47864a118682f953ae6422ed,
+        "skin": "CopyslButtonGlossBlue06279fedfcf8e4d",
+        "top": "8dp",
+        "width": "25%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    taskDetailsBackButtonContainer.add(taskDetailsBackButton);
+    var TaskDetailsLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "TaskDetailsLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%"
+    }, {}, {});
+    TaskDetailsLabelContainer.setDefaultUnit(kony.flex.DP);
+    var TaskDetailsLabel = new kony.ui.Label({
+        "centerX": "35%",
+        "id": "TaskDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel90",
+        "text": "Engagement details",
+        "top": "12dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    TaskDetailsLabelContainer.add(TaskDetailsLabel);
+    headerTopContainer.add(taskDetailsBackButtonContainer, TaskDetailsLabelContainer);
+    var taskDetailsViewProfileContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "35%",
+        "id": "taskDetailsViewProfileContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0e32fded6e3c34d",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    taskDetailsViewProfileContainer.setDefaultUnit(kony.flex.DP);
+    var detailsViewProfileContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "detailsViewProfileContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "70%"
+    }, {}, {});
+    detailsViewProfileContainer.setDefaultUnit(kony.flex.DP);
+    var profileLogo = new kony.ui.Image2({
+        "centerX": "11%",
+        "centerY": "50%",
+        "height": "30dp",
+        "id": "profileLogo",
+        "isVisible": true,
+        "left": "15dp",
+        "skin": "slImage",
+        "src": "imgseglogo.png",
+        "top": "10dp",
+        "width": "30dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var profileName = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "profileName",
+        "isVisible": true,
+        "left": "3dp",
+        "skin": "CopyslLabel0cad04721cf8549",
+        "text": "volName",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    detailsViewProfileContainer.add(profileLogo, profileName);
+    var viewProfileRichTextContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "viewProfileRichTextContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "30%"
+    }, {}, {});
+    viewProfileRichTextContainer.setDefaultUnit(kony.flex.DP);
+    var viewProfileRichtext = new kony.ui.RichText({
+        "centerX": "43%",
+        "centerY": "50%",
+        "id": "viewProfileRichtext",
+        "isVisible": true,
+        "left": "5dp",
+        "onClick": AS_RichText_dddb86c2252f4d83bdf8692481e8ce26,
+        "onTouchStart": AS_RichText_897a9ec383b647819186c427c31cd996,
+        "skin": "ngnyGrayLinkText",
+        "text": "View Profile\n",
+        "top": "9dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    viewProfileRichTextContainer.add(viewProfileRichtext);
+    taskDetailsViewProfileContainer.add(detailsViewProfileContainer, viewProfileRichTextContainer);
+    var callAndMessageContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "25%",
+        "id": "callAndMessageContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "1dp",
+        "skin": "CopyslFbox07715bfb69a3440",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    callAndMessageContainer.setDefaultUnit(kony.flex.DP);
+    var callContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "callContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0a38d5701e12144",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    callContainer.setDefaultUnit(kony.flex.DP);
+    var OpenTaskCallContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "77.21%",
+        "id": "OpenTaskCallContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "19dp",
+        "onTouchStart": AS_FlexContainer_b650b086d238460b8818950d23cdc2ae,
+        "skin": "slFbox",
+        "top": "5dp",
+        "width": "45.77%",
+        "zIndex": 1
+    }, {}, {});
+    OpenTaskCallContainer.setDefaultUnit(kony.flex.DP);
+    var phoneImg = new kony.ui.Image2({
+        "bottom": 0,
+        "centerX": "32%",
+        "centerY": "50%",
+        "height": "16dp",
+        "id": "phoneImg",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "callicon.png",
+        "top": "7dp",
+        "width": "16dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var callLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "callLabel",
+        "isVisible": true,
+        "left": "7dp",
+        "skin": "CopyslLabel0ebb70b22f7f94f",
+        "text": "Call",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    OpenTaskCallContainer.add(phoneImg, callLabel);
+    callContainer.add(OpenTaskCallContainer);
+    var messageContaine = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "messageContaine",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "-1dp",
+        "skin": "CopyslFbox001158a2205b843",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    messageContaine.setDefaultUnit(kony.flex.DP);
+    var OpenTasKMessageContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "77.21%",
+        "id": "OpenTasKMessageContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "19dp",
+        "onTouchStart": AS_FlexContainer_f170d61dd5724eaab0c1ba4c6839047c,
+        "skin": "slFbox",
+        "top": "5dp",
+        "width": "59.17%",
+        "zIndex": 1
+    }, {}, {});
+    OpenTasKMessageContainer.setDefaultUnit(kony.flex.DP);
+    var iMessageContainer = new kony.ui.Image2({
+        "centerY": "50%",
+        "height": "20dp",
+        "id": "iMessageContainer",
+        "isVisible": true,
+        "left": "2dp",
+        "skin": "slImage",
+        "src": "messageicon.png",
+        "top": "8dp",
+        "width": "20dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var imsgLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "imsgLabel",
+        "isVisible": true,
+        "left": "4dp",
+        "skin": "CopyslLabel07af6ceffc57c40",
+        "text": "Message",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    OpenTasKMessageContainer.add(iMessageContainer, imsgLabel);
+    messageContaine.add(OpenTasKMessageContainer);
+    callAndMessageContainer.add(callContainer, messageContaine);
+    TaskDetailsHeaderContainer.add(headerTopContainer, taskDetailsViewProfileContainer, callAndMessageContainer);
+    var totalHoursContainers = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "13%",
+        "id": "totalHoursContainers",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0%",
+        "skin": "slFbox",
+        "top": "0%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    totalHoursContainers.setDefaultUnit(kony.flex.DP);
+    var TotalHoursTopContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "37dp",
+        "id": "TotalHoursTopContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0e32fded6e3c34d",
+        "top": "-6dp",
+        "width": "100%"
+    }, {}, {});
+    TotalHoursTopContainer.setDefaultUnit(kony.flex.DP);
+    var TotalHoursLabel = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "TotalHoursLabel",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    TotalHoursLabel.setDefaultUnit(kony.flex.DP);
+    var hoursStaticLabel = new kony.ui.Label({
+        "centerX": "52%",
+        "id": "hoursStaticLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "ngnyOrangeLabelText",
+        "text": "Total hours logged",
+        "top": "13dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    TotalHoursLabel.add(hoursStaticLabel);
+    var calculatedHours = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "calculatedHours",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    calculatedHours.setDefaultUnit(kony.flex.DP);
+    var totalWorkedHours = new kony.ui.Label({
+        "id": "totalWorkedHours",
+        "isVisible": true,
+        "left": "64dp",
+        "skin": "CopyslLabel0d258769e7e3d4c",
+        "text": "36.5 Hours",
+        "top": "15dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    calculatedHours.add(totalWorkedHours);
+    TotalHoursTopContainer.add(TotalHoursLabel, calculatedHours);
+    var LogHoursButton = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "37dp",
+        "id": "LogHoursButton",
+        "isVisible": true,
+        "left": "33dp",
+        "onClick": AS_Button_5532723bddcf4cbf8b4c7d1ff92534cd,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Log Hours",
+        "top": "6dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    totalHoursContainers.add(TotalHoursTopContainer, LogHoursButton);
+    var TaskDetailsBodyContainer = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "centerX": "50%",
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "50%",
+        "horizontalScrollIndicator": true,
+        "id": "TaskDetailsBodyContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "jumpStartFlexScrollBG242",
+        "top": "0dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    TaskDetailsBodyContainer.setDefaultUnit(kony.flex.DP);
+    var taskTitleLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "taskTitleLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Engagement title",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var taskTitleLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "taskTitleLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var taskDetails = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "taskDetails",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Engagement details",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var taskDetailsRichText = new kony.ui.RichText({
+        "centerX": "50.00%",
+        "height": "80dp",
+        "id": "taskDetailsRichText",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartRTReadOnly99",
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [3, 3, 3, 3],
+        "paddingInPixel": false
+    }, {});
+    var taskSkills = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "taskSkills",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Skills",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var taskSkillSInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "taskSkillSInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var HoursRequiredLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "HoursRequiredLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Duration of engagement",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var HoursRequiredLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "HoursRequiredLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var startTextLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "startTextLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Start date",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var startTextInputLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "startTextInputLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var endDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "endDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "End date",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var endDateInputLabel = new kony.ui.Label({
+        "bottom": "10dp",
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "endDateInputLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var CopylblTaskId05506a820fff04e = new kony.ui.Label({
+        "id": "CopylblTaskId05506a820fff04e",
+        "isVisible": false,
+        "left": "45dp",
+        "skin": "CopyslLabel0c573c25067d644",
+        "text": "Label",
+        "top": "22dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    TaskDetailsBodyContainer.add(taskTitleLabel, taskTitleLabelInput, taskDetails, taskDetailsRichText, taskSkills, taskSkillSInput, HoursRequiredLabel, HoursRequiredLabelInput, startTextLabel, startTextInputLabel, endDateLabel, endDateInputLabel, CopylblTaskId05506a820fff04e);
+    var footerBackButton = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "8%",
+        "id": "footerBackButton",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    footerBackButton.setDefaultUnit(kony.flex.DP);
+    var taskDetailsFooterBackButton = new kony.ui.Button({
+        "centerX": "50%",
+        "centerY": "50%",
+        "focusSkin": "jumpStartGrayButton110",
+        "height": "90%",
+        "id": "taskDetailsFooterBackButton",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_Button_befcc7bde6f448c7a741fcb75da25edb,
+        "skin": "ngnyBackButton",
+        "text": "Back",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    footerBackButton.add(taskDetailsFooterBackButton);
+    TaskDetailsContainer.add(TaskDetailsHeaderContainer, totalHoursContainers, TaskDetailsBodyContainer, footerBackButton);
+    var BusinessRequestTaskDetailsModal = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "95%",
+        "id": "BusinessRequestTaskDetailsModal",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "jumpStartModalSkin",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    BusinessRequestTaskDetailsModal.setDefaultUnit(kony.flex.DP);
+    var RequestTaskDetailsHeader = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "27.66%",
+        "id": "RequestTaskDetailsHeader",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    RequestTaskDetailsHeader.setDefaultUnit(kony.flex.DP);
+    var ReqHeaderTopContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "30%",
+        "id": "ReqHeaderTopContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox02df153eb178940",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    ReqHeaderTopContainer.setDefaultUnit(kony.flex.DP);
+    var hrdBackButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "hrdBackButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onClick": AS_FlexContainer_a6cbc2130b064370b0fd4ddc2b2267d1,
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "20%"
+    }, {}, {});
+    hrdBackButtonContainer.setDefaultUnit(kony.flex.DP);
+    var hdrBackButton = new kony.ui.Button({
+        "centerY": "50%",
+        "height": "50%",
+        "id": "hdrBackButton",
+        "isVisible": true,
+        "left": "14dp",
+        "onClick": AS_Button_987ed40abba641e992e5181628036c39,
+        "skin": "CopyslButtonGlossBlue06279fedfcf8e4d",
+        "top": "8dp",
+        "width": "25%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    hrdBackButtonContainer.add(hdrBackButton);
+    var hdrTaskDeatailsLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "hdrTaskDeatailsLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "80%"
+    }, {}, {});
+    hdrTaskDeatailsLabelContainer.setDefaultUnit(kony.flex.DP);
+    var hdrTaskDetailsLabel = new kony.ui.Label({
+        "centerX": "35%",
+        "id": "hdrTaskDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel90",
+        "text": "Task Details",
+        "top": "11dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    hdrTaskDeatailsLabelContainer.add(hdrTaskDetailsLabel);
+    ReqHeaderTopContainer.add(hrdBackButtonContainer, hdrTaskDeatailsLabelContainer);
+    var reqProfileContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "35%",
+        "id": "reqProfileContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0e32fded6e3c34d",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    reqProfileContainer.setDefaultUnit(kony.flex.DP);
+    var ReqProfileVolNameContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "ReqProfileVolNameContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "70%"
+    }, {}, {});
+    ReqProfileVolNameContainer.setDefaultUnit(kony.flex.DP);
+    var imgReqProfilePic = new kony.ui.Image2({
+        "centerX": "11%",
+        "centerY": "50%",
+        "height": "30dp",
+        "id": "imgReqProfilePic",
+        "isVisible": true,
+        "left": "15dp",
+        "skin": "slImage",
+        "src": "imgseglogo.png",
+        "top": "10dp",
+        "width": "30dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var volNameLabel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "volNameLabel",
+        "isVisible": true,
+        "left": "3dp",
+        "skin": "CopyslLabel0cad04721cf8549",
+        "text": "volName",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    ReqProfileVolNameContainer.add(imgReqProfilePic, volNameLabel);
+    var ReqViewProfileRichTextContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "ReqViewProfileRichTextContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "30%"
+    }, {}, {});
+    ReqViewProfileRichTextContainer.setDefaultUnit(kony.flex.DP);
+    var ViewVolProfileRichText = new kony.ui.RichText({
+        "centerX": "43%",
+        "centerY": "50%",
+        "id": "ViewVolProfileRichText",
+        "isVisible": true,
+        "left": "5dp",
+        "onClick": AS_RichText_ddbb912261b744e0910cd634e4bddeb6,
+        "onTouchStart": AS_RichText_d0ca4f5592bd46868725fe2607686ba2,
+        "skin": "ngnyGrayLinkText",
+        "text": "View Profile",
+        "top": "9dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ReqViewProfileRichTextContainer.add(ViewVolProfileRichText);
+    reqProfileContainer.add(ReqProfileVolNameContainer, ReqViewProfileRichTextContainer);
+    var ReqContactContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "25%",
+        "id": "ReqContactContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "1dp",
+        "skin": "CopyslFbox07715bfb69a3440",
+        "top": "0dp",
+        "width": "100%"
+    }, {}, {});
+    ReqContactContainer.setDefaultUnit(kony.flex.DP);
+    var ReqCallContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "ReqCallContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0a38d5701e12144",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    ReqCallContainer.setDefaultUnit(kony.flex.DP);
+    var CallIconAndTextContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "77.21%",
+        "id": "CallIconAndTextContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "onTouchStart": AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5,
+        "skin": "slFbox",
+        "top": "5dp",
+        "width": "41.42%",
+        "zIndex": 1
+    }, {}, {});
+    CallIconAndTextContainer.setDefaultUnit(kony.flex.DP);
+    var imgCall = new kony.ui.Image2({
+        "bottom": 0,
+        "centerX": "32%",
+        "centerY": "50%",
+        "height": "16dp",
+        "id": "imgCall",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "slImage",
+        "src": "callicon.png",
+        "top": "7dp",
+        "width": "16dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var requestCallLAbel = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "requestCallLAbel",
+        "isVisible": true,
+        "left": "7dp",
+        "skin": "CopyslLabel0ebb70b22f7f94f",
+        "text": "Call",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    CallIconAndTextContainer.add(imgCall, requestCallLAbel);
+    ReqCallContainer.add(CallIconAndTextContainer);
+    var reqMsgContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "reqMsgContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "-1dp",
+        "skin": "CopyslFbox001158a2205b843",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    reqMsgContainer.setDefaultUnit(kony.flex.DP);
+    var RequestTaskMessageContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "77.21%",
+        "id": "RequestTaskMessageContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "19dp",
+        "onTouchStart": AS_FlexContainer_2fb923d1a2f14b00a019c1ffd9a698e9,
+        "skin": "slFbox",
+        "top": "5dp",
+        "width": "56.88%",
+        "zIndex": 1
+    }, {}, {});
+    RequestTaskMessageContainer.setDefaultUnit(kony.flex.DP);
+    var reqMsgImg = new kony.ui.Image2({
+        "centerY": "50%",
+        "height": "20dp",
+        "id": "reqMsgImg",
+        "isVisible": true,
+        "left": "2dp",
+        "skin": "slImage",
+        "src": "messageicon.png",
+        "top": "8dp",
+        "width": "20dp"
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var reqMessageLabel = new kony.ui.Label({
+        "centerY": "47%",
+        "id": "reqMessageLabel",
+        "isVisible": true,
+        "left": "3dp",
+        "skin": "CopyslLabel07af6ceffc57c40",
+        "text": "Message",
+        "top": "8dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    RequestTaskMessageContainer.add(reqMsgImg, reqMessageLabel);
+    reqMsgContainer.add(RequestTaskMessageContainer);
+    ReqContactContainer.add(ReqCallContainer, reqMsgContainer);
+    RequestTaskDetailsHeader.add(ReqHeaderTopContainer, reqProfileContainer, ReqContactContainer);
+    var ReqTaskDetailsTotalHours = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "ReqTaskDetailsTotalHours",
+        "isVisible": false,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    ReqTaskDetailsTotalHours.setDefaultUnit(kony.flex.DP);
+    var CopyTotalHoursTopContainer0bdffc185e2de48 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "37dp",
+        "id": "CopyTotalHoursTopContainer0bdffc185e2de48",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "CopyslFbox0e32fded6e3c34d",
+        "top": "-6dp",
+        "width": "100%"
+    }, {}, {});
+    CopyTotalHoursTopContainer0bdffc185e2de48.setDefaultUnit(kony.flex.DP);
+    var CopyTotalHoursLabel0b348a995981946 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "CopyTotalHoursLabel0b348a995981946",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    CopyTotalHoursLabel0b348a995981946.setDefaultUnit(kony.flex.DP);
+    var CopyhoursStaticLabel078eb13f05c8948 = new kony.ui.Label({
+        "centerX": "36%",
+        "id": "CopyhoursStaticLabel078eb13f05c8948",
+        "isVisible": true,
+        "left": "52dp",
+        "skin": "CopyslLabel0c3ebc7f8097b4b",
+        "text": "Total Hours",
+        "top": "13dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    CopyTotalHoursLabel0b348a995981946.add(CopyhoursStaticLabel078eb13f05c8948);
+    var CopycalculatedHours097c85dcdff1443 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "CopycalculatedHours097c85dcdff1443",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "50%"
+    }, {}, {});
+    CopycalculatedHours097c85dcdff1443.setDefaultUnit(kony.flex.DP);
+    var CopytotalWorkedHours0c7a747fa25a745 = new kony.ui.Label({
+        "id": "CopytotalWorkedHours0c7a747fa25a745",
+        "isVisible": true,
+        "left": "64dp",
+        "skin": "CopyslLabel0d258769e7e3d4c",
+        "text": "36.5 Hours",
+        "top": "15dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    CopycalculatedHours097c85dcdff1443.add(CopytotalWorkedHours0c7a747fa25a745);
+    CopyTotalHoursTopContainer0bdffc185e2de48.add(CopyTotalHoursLabel0b348a995981946, CopycalculatedHours097c85dcdff1443);
+    var CopyLogHoursButton08b9606ddeee54b = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "jumpStartGreenButton100",
+        "height": "37dp",
+        "id": "CopyLogHoursButton08b9606ddeee54b",
+        "isVisible": true,
+        "left": "33dp",
+        "onClick": AS_Button_831e68be72a4442a95aaba1a7ad15158,
+        "skin": "jumpStartGreenButton100",
+        "text": "log hours",
+        "top": "6dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ReqTaskDetailsTotalHours.add(CopyTotalHoursTopContainer0bdffc185e2de48, CopyLogHoursButton08b9606ddeee54b);
+    var ReqTaskDetailsBody = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "centerX": "50%",
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "60.21%",
+        "horizontalScrollIndicator": true,
+        "id": "ReqTaskDetailsBody",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "jumpStartFlexScrollBG242",
+        "top": "0dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    ReqTaskDetailsBody.setDefaultUnit(kony.flex.DP);
+    var reqTaskTitleLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskTitleLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Task Title",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskTitleLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "reqTaskTitleLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskDetailsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Task Details",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskDetailsLabelInput = new kony.ui.RichText({
+        "centerX": "50.00%",
+        "height": "80dp",
+        "id": "reqTaskDetailsLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartRTReadOnly99",
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [3, 3, 3, 3],
+        "paddingInPixel": false
+    }, {});
+    var reqTaskHoursLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskHoursLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Duration of Engagement",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskHoursLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "reqTaskHoursLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskSkillsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskSkillsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Skills",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskSkillsLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "reqTaskSkillsLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskStartDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskStartDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Start Date",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskStartDateLabelInput = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "reqTaskStartDateLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskEndDateLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqTaskEndDateLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "End Date",
+        "top": "10dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var reqTaskEndDateLabelInput = new kony.ui.Label({
+        "bottom": "10dp",
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "reqTaskEndDateLabelInput",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var requestTaskId = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "requestTaskId",
+        "isVisible": false,
+        "left": "0dp",
+        "skin": "jumpStartLabelReadOnly99",
+        "top": "4dp",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    ReqTaskDetailsBody.add(reqTaskTitleLabel, reqTaskTitleLabelInput, reqTaskDetailsLabel, reqTaskDetailsLabelInput, reqTaskHoursLabel, reqTaskHoursLabelInput, reqTaskSkillsLabel, reqTaskSkillsLabelInput, reqTaskStartDateLabel, reqTaskStartDateLabelInput, reqTaskEndDateLabel, reqTaskEndDateLabelInput, requestTaskId);
+    var ReqTaskDetailsFooter = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "8%",
+        "id": "ReqTaskDetailsFooter",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "21dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    ReqTaskDetailsFooter.setDefaultUnit(kony.flex.DP);
+    var reqTaskBackButton = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "jumpStartGrayButton110",
+        "height": "40dp",
+        "id": "reqTaskBackButton",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_Button_06308078c9ae4d1dab30aae8e5b60b81,
+        "skin": "jumpStartGrayButton110",
+        "text": "Back",
+        "top": "9%",
+        "width": "48%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var AcceptButton = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "40dp",
+        "id": "AcceptButton",
+        "isVisible": true,
+        "left": "2%",
+        "onClick": AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Accept",
+        "top": "9%",
+        "width": "49%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ReqTaskDetailsFooter.add(reqTaskBackButton, AcceptButton);
+    BusinessRequestTaskDetailsModal.add(RequestTaskDetailsHeader, ReqTaskDetailsTotalHours, ReqTaskDetailsBody, ReqTaskDetailsFooter);
+    var markAsCompleteGrayScreen = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "markAsCompleteGrayScreen",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "CopyslFbox0bdacea7888a540",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    markAsCompleteGrayScreen.setDefaultUnit(kony.flex.DP);
+    var MarkAsCompleteModalContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "245dp",
+        "id": "MarkAsCompleteModalContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "8dp",
+        "skin": "CopyslFbox00b8b340e26e84d",
+        "top": "360dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    MarkAsCompleteModalContainer.setDefaultUnit(kony.flex.DP);
+    var staticLAbelMarkAsComplete = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "staticLAbelMarkAsComplete",
+        "isVisible": true,
+        "left": "137dp",
+        "skin": "ngnyOrangeLabelText",
+        "text": "Mark engagment as complete",
+        "top": "36dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var markAsCompleteButton = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
+        "id": "markAsCompleteButton",
+        "isVisible": true,
+        "left": "53dp",
+        "onClick": AS_Button_6eb3b55f20db4cc4a788148e796483ba,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Mark as complete",
+        "top": "30dp",
+        "width": "85%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var CancelRichText = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CancelRichText",
+        "isVisible": true,
+        "left": "126dp",
+        "onClick": AS_RichText_e01f591f5e544a28985552b5f5687a2d,
+        "onTouchStart": AS_RichText_44420397b0474621a6cc3106c0203916,
+        "skin": "ngnyGrayLinkText",
+        "text": "Cancel",
+        "top": "37dp",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    MarkAsCompleteModalContainer.add(staticLAbelMarkAsComplete, markAsCompleteButton, CancelRichText);
+    markAsCompleteGrayScreen.add(MarkAsCompleteModalContainer);
+    var BusinessEndorsementModalGrayContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "BusinessEndorsementModalGrayContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "CopyslFbox0802925ab966641",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    BusinessEndorsementModalGrayContainer.setDefaultUnit(kony.flex.DP);
+    var BusinessEndorsementModalContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "90%",
+        "id": "BusinessEndorsementModalContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "CopyslFbox025bfb307840c4d",
+        "top": "0dp",
+        "width": "85%",
+        "zIndex": 1
+    }, {}, {});
+    BusinessEndorsementModalContainer.setDefaultUnit(kony.flex.DP);
+    var EndorseMentHeaderContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "15%",
+        "id": "EndorseMentHeaderContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    EndorseMentHeaderContainer.setDefaultUnit(kony.flex.DP);
+    var VolNameContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "VolNameContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    VolNameContainer.setDefaultUnit(kony.flex.DP);
+    var EndorsementLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "EndorsementLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "3dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {}, {});
+    EndorsementLabelContainer.setDefaultUnit(kony.flex.DP);
+    var EndorseLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "EndorseLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "ngnyOrangeLabelText",
+        "text": "Endorse",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    EndorsementLabelContainer.add(EndorseLabel);
+    VolNameContainer.add(EndorsementLabelContainer);
+    var CompanyNameContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "30dp",
+        "id": "CompanyNameContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "2dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {}, {});
+    CompanyNameContainer.setDefaultUnit(kony.flex.DP);
+    var CompanyName = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CompanyName",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0a9734dc6fe474c",
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    CompanyNameContainer.add(CompanyName);
+    EndorseMentHeaderContainer.add(VolNameContainer, CompanyNameContainer);
+    var SkillsListBoxContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "16.31%",
+        "id": "SkillsListBoxContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "4dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    SkillsListBoxContainer.setDefaultUnit(kony.flex.DP);
+    var selectSkillSaLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "selectSkillSaLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel04439ee48f0ad4e",
+        "text": "Select skill to endorse volunteer from drop down list",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var VolunteerSkillsListbox = new kony.ui.ListBox({
+        "centerX": "50%",
+        "focusSkin": "CopyslListBox0276fe4df1fab42",
+        "height": "30dp",
+        "id": "VolunteerSkillsListbox",
+        "isVisible": true,
+        "left": "0dp",
+        "masterData": [
+            ["lb1", "Select"]
+        ],
+        "onSelection": AS_ListBox_1d4f72cf0af34cb79b523b99af66f5ad,
+        "skin": "CopyslListBox013984524b6be45",
+        "top": "44dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    SkillsListBoxContainer.add(selectSkillSaLabel, VolunteerSkillsListbox);
+    var orLabelContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "3.74%",
+        "id": "orLabelContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "5dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    orLabelContainer.setDefaultUnit(kony.flex.DP);
+    var orLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "centerY": "50%",
+        "id": "orLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel032ef571dc84648",
+        "text": "or",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    orLabelContainer.add(orLabel);
+    var SkillsTextBoxContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "14.15%",
+        "id": "SkillsTextBoxContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "14dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    SkillsTextBoxContainer.setDefaultUnit(kony.flex.DP);
+    var anotherSkillsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "anotherSkillsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel04439ee48f0ad4e",
+        "text": "Other skills not listed",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var AnotherSkillInputField = new kony.ui.TextBox2({
+        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "focusSkin": "CopyslTextBox052b73dedfeeb4f",
+        "height": "40dp",
+        "id": "AnotherSkillInputField",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
+        "left": "21dp",
+        "secureTextEntry": false,
+        "skin": "CopyslTextBox0871f8f9b3c854d",
+        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
+        "top": "25dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [3, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "autoComplete": false,
+        "autoCorrect": false
+    });
+    SkillsTextBoxContainer.add(anotherSkillsLabel, AnotherSkillInputField);
+    var MessageContaioner = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "centerX": "50%",
+        "clipBounds": true,
+        "id": "MessageContaioner",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    MessageContaioner.setDefaultUnit(kony.flex.DP);
+    var MessageLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "MessageLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel04439ee48f0ad4e",
+        "text": "Additional comments",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var EndorsingMessageTextArea = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "height": "80dp",
+        "id": "EndorsingMessageTextArea",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
+        "left": "2dp",
+        "numberOfVisibleLines": 3,
+        "skin": "CopyslTextArea0bbff3a674b0447",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "24dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [2, 2, 2, 2],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    MessageContaioner.add(MessageLabel, EndorsingMessageTextArea);
+    var EndorsementFooterContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "22.32%",
+        "id": "EndorsementFooterContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "20dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    EndorsementFooterContainer.setDefaultUnit(kony.flex.DP);
+    var EndorseSkillsButton = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "40dp",
+        "id": "EndorseSkillsButton",
+        "isVisible": true,
+        "onClick": AS_Button_9292a5869b07452d9409477608e9427f,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Endorse volunteer",
+        "top": "5%",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var cancelLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "cancelLabel",
+        "isVisible": true,
+        "onTouchStart": AS_Label_cf0d6ae535a5440fa1f5347b2a542bc4,
+        "skin": "jumpStartLabelGreen120",
+        "text": "Cancel",
+        "top": "19%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    EndorsementFooterContainer.add(EndorseSkillsButton, cancelLabel);
+    BusinessEndorsementModalContainer.add(EndorseMentHeaderContainer, SkillsListBoxContainer, orLabelContainer, SkillsTextBoxContainer, MessageContaioner, EndorsementFooterContainer);
+    BusinessEndorsementModalGrayContainer.add(BusinessEndorsementModalContainer);
+    var NotificationModalGrayContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "NotificationModalGrayContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "CopyslFbox0fec70816e26a47",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationModalGrayContainer.setDefaultUnit(kony.flex.DP);
+    var NotificationDetailsContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "80%",
+        "id": "NotificationDetailsContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "70dp",
+        "skin": "CopyslFbox0da4cef90937f49",
+        "top": "293dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationDetailsContainer.setDefaultUnit(kony.flex.DP);
+    var NotificationDetailsHeaderContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "15.96%",
+        "id": "NotificationDetailsHeaderContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationDetailsHeaderContainer.setDefaultUnit(kony.flex.DP);
+    var NotificationDetailsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "centerY": "50%",
+        "id": "NotificationDetailsLabel",
+        "isVisible": true,
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Notification Details",
+        "width": "90%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    NotificationDetailsHeaderContainer.add(NotificationDetailsLabel);
+    var NotificationTitleContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "19.32%",
+        "id": "NotificationTitleContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "15dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationTitleContainer.setDefaultUnit(kony.flex.DP);
+    var NotificationTitleLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "NotificationTitleLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0b07a0bbe73ad49",
+        "text": "Notification title",
+        "top": "7dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var NotificationTitleInputLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "NotificationTitleInputLabel",
+        "isVisible": true,
+        "left": "33dp",
+        "skin": "CopyslLabel00953c9219a8b4b",
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    NotificationTitleContainer.add(NotificationTitleLabel, NotificationTitleInputLabel);
+    var NotificationDetailsContainerBody = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "53.14%",
+        "id": "NotificationDetailsContainerBody",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationDetailsContainerBody.setDefaultUnit(kony.flex.DP);
+    var NotificationBodyDetailsLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "NotificationBodyDetailsLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0b07a0bbe73ad49",
+        "text": "Notification details",
+        "top": "7dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var NotificationDetailsTextArea = new kony.ui.TextArea2({
+        "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
+        "id": "NotificationDetailsTextArea",
+        "isVisible": true,
+        "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
+        "left": "38dp",
+        "numberOfVisibleLines": 3,
+        "skin": "CopyslTextArea03f486510904043",
+        "textInputMode": constants.TEXTAREA_INPUT_MODE_ANY,
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "padding": [2, 2, 2, 2],
+        "paddingInPixel": false
+    }, {
+        "autoCorrect": false
+    });
+    NotificationDetailsContainerBody.add(NotificationBodyDetailsLabel, NotificationDetailsTextArea);
+    var NotificationDoneButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "12.56%",
+        "id": "NotificationDoneButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "-42dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    NotificationDoneButtonContainer.setDefaultUnit(kony.flex.DP);
+    var DoneRichText = new kony.ui.RichText({
+        "centerX": "50%",
+        "centerY": "50%",
+        "id": "DoneRichText",
+        "isVisible": true,
+        "onTouchStart": AS_RichText_99e68ad5e1a44fc195a5f6e0a4fb9d7e,
+        "skin": "markAsComplete",
+        "text": "Done",
+        "top": 0,
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    NotificationDoneButtonContainer.add(DoneRichText);
+    NotificationDetailsContainer.add(NotificationDetailsHeaderContainer, NotificationTitleContainer, NotificationDetailsContainerBody, NotificationDoneButtonContainer);
+    NotificationModalGrayContainer.add(NotificationDetailsContainer);
+    var eligibiltyCriteriaModalContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "95%",
+        "id": "eligibiltyCriteriaModalContainer",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "CopyslFbox0a17c224344144d",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    eligibiltyCriteriaModalContainer.setDefaultUnit(kony.flex.DP);
+    var Hdr = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "10%",
+        "id": "Hdr",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    Hdr.setDefaultUnit(kony.flex.DP);
+    var hdrLbl = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "hdrLbl",
+        "isVisible": true,
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Accept Request",
+        "top": "9dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    Hdr.add(hdrLbl);
+    var BodyFlex = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "20%",
+        "id": "BodyFlex",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0%",
+        "skin": "CopyslFbox03397d5d0805b4c",
+        "top": "10%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    BodyFlex.setDefaultUnit(kony.flex.DP);
+    var reqmsgLbl = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "reqmsgLbl",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel01b20904faf4043",
+        "text": "Request message from business",
+        "top": "2%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    BodyFlex.add(reqmsgLbl);
+    var eligibiltyCriteriFlxScroll = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "centerX": "50%",
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "40%",
+        "horizontalScrollIndicator": true,
+        "id": "eligibiltyCriteriFlxScroll",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "CopyslFSbox09720299f2f0348",
+        "top": "30%",
+        "verticalScrollIndicator": true,
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    eligibiltyCriteriFlxScroll.setDefaultUnit(kony.flex.DP);
+    var mangersApprovalFlex = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50%",
+        "id": "mangersApprovalFlex",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    mangersApprovalFlex.setDefaultUnit(kony.flex.DP);
+    var heading = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "heading",
+        "isVisible": true,
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Manager's Approval",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var txtLbl = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "txtLbl",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel09019c347377142",
+        "text": "You all need your manager's approval and consent before understanding this task",
+        "top": "35%",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    mangersApprovalFlex.add(heading, txtLbl);
+    var LegalFlex = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "50%",
+        "id": "LegalFlex",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "50%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    LegalFlex.setDefaultUnit(kony.flex.DP);
+    var LegalLbl = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "LegalLbl",
+        "isVisible": true,
+        "skin": "ngnyLargeOrangeLabelText",
+        "text": "Policy Requirements ",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var FlexContainer0f7e2ed7a777043 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "65%",
+        "id": "FlexContainer0f7e2ed7a777043",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "35%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    FlexContainer0f7e2ed7a777043.setDefaultUnit(kony.flex.DP);
+    var RichText0afad0c18cfe342 = new kony.ui.RichText({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "RichText0afad0c18cfe342",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_RichText_27a7fcb682904c84a39aa2134b49f8c8,
+        "onTouchStart": AS_RichText_796d858af5d446fd9b7c521670dc8af7,
+        "skin": "CopyslRichText0c9a74fa183874d",
+        "text": "I have read my <span style=\"color:#37b3b1\"><u>company’s policies and regulations</u></span> regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    FlexContainer0f7e2ed7a777043.add(RichText0afad0c18cfe342);
+    LegalFlex.add(LegalLbl, FlexContainer0f7e2ed7a777043);
+    eligibiltyCriteriFlxScroll.add(mangersApprovalFlex, LegalFlex);
+    var acceptTermsChekBoxFlex = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "10%",
+        "id": "acceptTermsChekBoxFlex",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0%",
+        "skin": "slFbox",
+        "top": "70%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    acceptTermsChekBoxFlex.setDefaultUnit(kony.flex.DP);
+    var agreeLbl = new kony.ui.Label({
+        "id": "agreeLbl",
+        "isVisible": true,
+        "left": "0%",
+        "skin": "CopyslLabel054b95df1c51d4d",
+        "text": "I agree to all conditions stated above",
+        "top": "25dp",
+        "width": "60%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_RIGHT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var chckBoxFlex = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "100%",
+        "id": "chckBoxFlex",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "66.67%",
+        "skin": "slFbox",
+        "top": "1dp",
+        "width": "26%",
+        "zIndex": 1
+    }, {}, {});
+    chckBoxFlex.setDefaultUnit(kony.flex.DP);
+    var chckBoxx = new kony.ui.CheckBoxGroup({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "chckBoxx",
+        "isVisible": true,
+        "left": "13%",
+        "masterData": [
+            ["cbg1", "."]
+        ],
+        "onSelection": AS_CheckBoxGroup_f2bc0c786f4e4391a9b09374f1707aeb,
+        "skin": "CopyslCheckBoxGroup0b12a0925ec1641",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "itemOrientation": constants.CHECKBOX_ITEM_ORIENTATION_HORIZONTAL,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    chckBoxFlex.add(chckBoxx);
+    acceptTermsChekBoxFlex.add(agreeLbl, chckBoxFlex);
+    var Footer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "20%",
+        "id": "Footer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "80%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    Footer.setDefaultUnit(kony.flex.DP);
+    var agreeBtn = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "40dp",
+        "id": "agreeBtn",
+        "isVisible": false,
+        "left": "0dp",
+        "onClick": AS_Button_7a7d24bf2d21474e9e22079f8eac7bce,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Agree and Continue",
+        "top": "0dp",
+        "width": "80%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var RichText0857e178f83bc42 = new kony.ui.RichText({
+        "centerX": "50%",
+        "height": "40dp",
+        "id": "RichText0857e178f83bc42",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_RichText_30f0a796a36d4dc1a3a5220f10cc5c04,
+        "onTouchStart": AS_RichText_0e85ebcdf7a748258ca19a76e6f299bb,
+        "skin": "markAsComplete",
+        "text": "Cancel",
+        "top": "50%",
+        "width": "50%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    Footer.add(agreeBtn, RichText0857e178f83bc42);
+    eligibiltyCriteriaModalContainer.add(Hdr, BodyFlex, eligibiltyCriteriFlxScroll, acceptTermsChekBoxFlex, Footer);
+    mainPage.add(mainPageBody, sideBarOverlay, sideBarMenuContainer, mainPageModalsBackground, cancelRequestModalContainer, sendRecommendation, declineRequestModalContainer, startEngagementModalContainer, acceptTaskModalContainer, acceptTaskDetailsModalContainer, acceptTaskSkillsModalContainer, acceptRequestModalContainer, viewRequestModalContainer, CreateOpportunityContainer, opportunityDetailsContainer, TaskDetailsContainer, BusinessRequestTaskDetailsModal, markAsCompleteGrayScreen, BusinessEndorsementModalGrayContainer, NotificationModalGrayContainer, eligibiltyCriteriaModalContainer);
 };
 
 function mainPageGlobals() {
@@ -4015,6 +8277,7 @@ function mainPageGlobals() {
         "id": "mainPage",
         "layoutType": kony.flex.FREE_FORM,
         "needAppMenu": false,
+        "postShow": AS_Form_b9875c9fde3d4c8fa1a4389df9ffed9d,
         "preShow": AS_Form_683e8141b8fd42a0898dcaa41d91db36,
         "skin": "CopyslForm0a1732219089f4c"
     }, {

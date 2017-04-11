@@ -15,26 +15,27 @@ function initializeFBox05b71795fc3da47() {
         "id": "acceptedRequestsTop",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
-        "left": "0dp",
         "skin": "slFbox",
-        "top": "0dp",
+        "top": "10dp",
         "width": "100%"
     }, {}, {});
     acceptedRequestsTop.setDefaultUnit(kony.flex.DP);
     var acceptedRequestImageParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "100dp",
+        "height": "60dp",
         "id": "acceptedRequestImageParent",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "30%"
+        "width": "25%"
     }, {}, {});
     acceptedRequestImageParent.setDefaultUnit(kony.flex.DP);
     var acceptedRequestImage = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
         "height": "100%",
         "id": "acceptedRequestImage",
         "isVisible": true,
@@ -42,7 +43,7 @@ function initializeFBox05b71795fc3da47() {
         "skin": "slImage",
         "src": "imagedrag.png",
         "top": "0dp",
-        "width": "95%"
+        "width": "100%"
     }, {
         "containerWeight": 100,
         "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
@@ -56,7 +57,7 @@ function initializeFBox05b71795fc3da47() {
     var acceptedRequestInfoParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "100dp",
+        "height": "80dp",
         "id": "acceptedRequestInfoParent",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
@@ -67,29 +68,6 @@ function initializeFBox05b71795fc3da47() {
         "zIndex": 1
     }, {}, {});
     acceptedRequestInfoParent.setDefaultUnit(kony.flex.DP);
-    var acceptedRequestStatus = new kony.ui.Label({
-        "id": "acceptedRequestStatus",
-        "isVisible": true,
-        "right": "10dp",
-        "skin": "acceptedRequestStatusSkin",
-        "text": "Label",
-        "top": "10dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
-        "zIndex": 1
-    }, {
-        "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [1, 1, 1, 1],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "renderAsAnchor": false,
-        "textCopyable": false
-    });
     var acceptedRequestBusinessName = new kony.ui.Label({
         "id": "acceptedRequestBusinessName",
         "isVisible": true,
@@ -97,7 +75,8 @@ function initializeFBox05b71795fc3da47() {
         "skin": "jumpStartSegmentTitle",
         "text": "Label",
         "top": "0dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
     }, {
         "containerWeight": 100,
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -119,6 +98,53 @@ function initializeFBox05b71795fc3da47() {
         "skin": "jumpStartSegmentSubTitle",
         "text": "Label",
         "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var acceptedRequestStatus = new kony.ui.Label({
+        "id": "acceptedRequestStatus",
+        "isVisible": true,
+        "left": "3dp",
+        "right": "10dp",
+        "skin": "acceptedRequestStatusSkin",
+        "text": "Label",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var lblRequestId = new kony.ui.Label({
+        "id": "lblRequestId",
+        "isVisible": false,
+        "left": "3dp",
+        "skin": "CopyslLabel0cb3f3dc5ea7244",
+        "text": "Label",
+        "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -135,7 +161,7 @@ function initializeFBox05b71795fc3da47() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    acceptedRequestInfoParent.add(acceptedRequestStatus, acceptedRequestBusinessName, acceptedRequestLabel);
+    acceptedRequestInfoParent.add(acceptedRequestBusinessName, acceptedRequestLabel, acceptedRequestStatus, lblRequestId);
     acceptedRequestsTop.add(acceptedRequestImageParent, acceptedRequestInfoParent);
     var acceptedRequestsBottom = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -150,13 +176,13 @@ function initializeFBox05b71795fc3da47() {
         "width": "100%"
     }, {}, {});
     acceptedRequestsBottom.setDefaultUnit(kony.flex.DP);
-    var cancelRequest = new kony.ui.RichText({
+    var contactRequest = new kony.ui.RichText({
         "centerY": "50%",
-        "id": "cancelRequest",
+        "id": "contactRequest",
         "isVisible": true,
         "left": "0dp",
-        "onClick": AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f,
-        "skin": "rtRequestsActionSkin",
+        "onClick": AS_RichText_d139311450264a85ba1ca9faefef3f8a,
+        "skin": "markEngageGreenButton",
         "text": "RichText",
         "top": "0dp",
         "width": "33%",
@@ -177,8 +203,8 @@ function initializeFBox05b71795fc3da47() {
         "id": "acceptTask",
         "isVisible": true,
         "left": "0dp",
-        "onClick": AS_RichText_78687b17505c48ef9ec3726f0ba1d95d,
-        "skin": "rtRequestsActionSkin",
+        "onClick": AS_RichText_f4afce1bcee84abaad223a921a040045,
+        "skin": "markEngageGreenButton",
         "text": "RichText",
         "top": "0dp",
         "width": "34%",
@@ -194,13 +220,13 @@ function initializeFBox05b71795fc3da47() {
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    var contactRequest = new kony.ui.RichText({
+    var cancelRequest = new kony.ui.RichText({
         "centerY": "50%",
-        "id": "contactRequest",
+        "id": "cancelRequest",
         "isVisible": true,
         "left": "0dp",
-        "onClick": AS_RichText_d139311450264a85ba1ca9faefef3f8a,
-        "skin": "rtRequestsActionSkin",
+        "onClick": AS_RichText_407b0568036d4033a12445989aaf483c,
+        "skin": "markEngageGreenButton",
         "text": "RichText",
         "top": "0dp",
         "width": "33%",
@@ -216,6 +242,6 @@ function initializeFBox05b71795fc3da47() {
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    acceptedRequestsBottom.add(cancelRequest, acceptTask, contactRequest);
+    acceptedRequestsBottom.add(contactRequest, acceptTask, cancelRequest);
     FBox05b71795fc3da47.add(acceptedRequestsTop, acceptedRequestsBottom);
 }

@@ -753,7 +753,11 @@ function addWidgetsvolunteerMyProfilePage() {
         "right": "0dp",
         "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
+<<<<<<< Updated upstream
         "top": 125,
+=======
+        "top": 0,
+>>>>>>> Stashed changes
         "width": "50dp",
         "zIndex": 1
     }, {

@@ -158,7 +158,7 @@ function getCreateOpportunityErrorCallback(error) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Brief was successfully created",
-        "alertHandler": null
+        "alertHandler": "null"
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

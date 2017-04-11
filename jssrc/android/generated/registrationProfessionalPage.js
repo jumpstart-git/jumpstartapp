@@ -78,7 +78,7 @@ function addWidgetsregistrationProfessionalPage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -236,14 +236,14 @@ function addWidgetsregistrationProfessionalPage() {
     addNewSkill.setDefaultUnit(kony.flex.DP);
     var addNewSkillButton = new kony.ui.Button({
         "bottom": "0dp",
-        "focusSkin": "jumpStartGreenButton200",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "addNewSkillButton",
         "isVisible": true,
         "left": 0,
         "onClick": AS_FlexContainer_fcc498e6663e40768ed0b376737c1e66,
         "right": "0dp",
-        "skin": "jumpStartGreenButton100",
+        "skin": "ngnyGreenRegistrationButton",
         "text": "Add",
         "top": 0,
         "width": "100%",
@@ -348,13 +348,13 @@ function addWidgetsregistrationProfessionalPage() {
     }, {});
     var regProfessionalInfoContinueButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "regProfessionalInfoContinueButton",
         "isVisible": true,
         "left": 8,
         "onClick": AS_Button_6c6b552ce8594adeb1ed7ccdddd213a0,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "48%"
     }, {

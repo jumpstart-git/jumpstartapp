@@ -275,14 +275,14 @@ function addWidgetssearchResultProfile() {
     volunteerProfileContactActions.add(volunteerProfileBookmark, volunteerProfileCall, volunteerProfileEmail);
     var requestAVolunteer = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "requestAVolunteer",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_f3075a508e024615b2e365abb06ea12b,
-        "skin": "jump",
-        "text": "Request For Volunteer",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Request for volunteer",
         "top": "9dp",
         "width": "90%",
         "zIndex": 1
@@ -429,7 +429,7 @@ function addWidgetssearchResultProfile() {
         "id": "volunteerProfileAboutText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "About Nick Giles",
         "top": "0dp",
         "width": "100%"
@@ -487,7 +487,7 @@ function addWidgetssearchResultProfile() {
         "id": "contactAdressLbl",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange150new",
+        "skin": "ngnyOrangeLabelText",
         "text": "Contact Details",
         "textStyle": {
             "letterSpacing": 0,
@@ -787,7 +787,7 @@ function addWidgetssearchResultProfile() {
         "id": "volunteerProfileAvailabilityText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Schedule of availability",
         "top": "0dp",
         "width": "100%"
@@ -923,7 +923,7 @@ function addWidgetssearchResultProfile() {
         "id": "volunteerProfileSkillsText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Skills\n",
         "top": "0dp",
         "width": "100%"
@@ -1008,7 +1008,7 @@ function addWidgetssearchResultProfile() {
         "id": "volunteerProfileWorkExperienceText",
         "isVisible": true,
         "left": "0dp",
-        "skin": "CopyslRichText011049b35f34d40new",
+        "skin": "ngnyOrangeHeaderText",
         "text": "Work Experience",
         "top": "0dp",
         "width": "100%"
@@ -1307,14 +1307,14 @@ function addWidgetssearchResultProfile() {
     businessProfileContactActions.add(businessProfileBookmark, businessProfileCall, businessProfileEmail);
     var requestToVolunteerButton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "requestToVolunteerButton",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_d9548a946ba24ef5a52b3107c5a81fe9,
-        "skin": "jump",
-        "text": "Request To Volunteer",
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Request to volunteer",
         "top": "10dp",
         "width": "90%",
         "zIndex": 1
@@ -1342,7 +1342,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileAboutTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "About",
         "textStyle": {
             "letterSpacing": 0,
@@ -1410,7 +1410,7 @@ function addWidgetssearchResultProfile() {
         "id": "AdressLbl",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Contact Details",
         "textStyle": {
             "letterSpacing": 0,
@@ -1588,7 +1588,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileBusinessActivityTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Business Activity",
         "textStyle": {
             "letterSpacing": 0,
@@ -1637,7 +1637,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileAffiliationsTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Professional Affiliations",
         "textStyle": {
             "letterSpacing": 0,
@@ -1686,7 +1686,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileReachTitle",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyOrangeLabelText",
         "text": "Business Reach",
         "textStyle": {
             "letterSpacing": 0,
@@ -1734,16 +1734,16 @@ function addWidgetssearchResultProfile() {
     var requestToVolunteerModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "45%",
+        "centerY": "50%",
         "clipBounds": true,
-        "height": "85%",
+        "height": "90%",
         "id": "requestToVolunteerModal",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "jumpStartModalSkin",
         "top": "0dp",
-        "width": "85%"
+        "width": "90%"
     }, {}, {});
     requestToVolunteerModal.setDefaultUnit(kony.flex.DP);
     var requestToVolunteerHeader = new kony.ui.FlexContainer({
@@ -1848,7 +1848,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -1960,12 +1960,12 @@ function addWidgetssearchResultProfile() {
     requestToVolunteerFooter.setDefaultUnit(kony.flex.DP);
     var sendVolunteerRequestButton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "sendVolunteerRequestButton",
         "isVisible": true,
         "onClick": AS_Button_0d87a87ab5bd4552a60cca8b24ed2876,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Submit Request",
         "top": "5%",
         "width": "90%",
@@ -2001,16 +2001,16 @@ function addWidgetssearchResultProfile() {
     var requestAVolunteerModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
-        "centerY": "45%",
+        "centerY": "50%",
         "clipBounds": true,
-        "height": "80%",
+        "height": "90%",
         "id": "requestAVolunteerModal",
         "isVisible": false,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "jumpStartModalSkin",
         "top": "0dp",
-        "width": "85%"
+        "width": "90%"
     }, {}, {});
     requestAVolunteerModal.setDefaultUnit(kony.flex.DP);
     var requestAVolunteerHeader = new kony.ui.FlexContainer({
@@ -2115,7 +2115,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -2189,12 +2189,12 @@ function addWidgetssearchResultProfile() {
     requestAVolunteerFooter.setDefaultUnit(kony.flex.DP);
     var requestAVolunteerSubmit = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "requestAVolunteerSubmit",
         "isVisible": true,
         "onClick": AS_Button_084a6e37b3e34b0c848a45390f3b841a,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Submit Request",
         "top": "5%",
         "width": "90%",
@@ -2353,7 +2353,7 @@ function addWidgetssearchResultProfile() {
         "textCopyable": false
     });
     var opportunityBusinessName = new kony.ui.Label({
-        "centerX": "50%",
+        "centerX": "51%",
         "centerY": "35%",
         "id": "opportunityBusinessName",
         "isVisible": true,
@@ -2517,7 +2517,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -2575,7 +2575,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false
@@ -2618,7 +2618,7 @@ function addWidgetssearchResultProfile() {
     });
     var taskDetailsRichTxt = new kony.ui.Label({
         "centerX": "50%",
-        "height": "60%",
+        "height": "40%",
         "id": "taskDetailsRichTxt",
         "isVisible": true,
         "left": "0dp",
@@ -2632,7 +2632,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false
@@ -2688,7 +2688,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false
@@ -2744,7 +2744,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "textCopyable": false
@@ -2865,6 +2865,7 @@ function addWidgetssearchResultProfile() {
     endDateFlexModal.add(endDateLbl, endDateTxtLbl);
     var commentsModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "10%",
         "centerX": "50%",
         "clipBounds": true,
         "height": "40%",
@@ -2873,7 +2874,7 @@ function addWidgetssearchResultProfile() {
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox075a01a0effe24b",
-        "top": "4dp",
+        "top": 4,
         "width": "90%",
         "zIndex": 1
     }, {}, {});
@@ -2902,6 +2903,7 @@ function addWidgetssearchResultProfile() {
         "autoCapitalize": constants.TEXTAREA_AUTO_CAPITALIZE_NONE,
         "centerX": "50%",
         "focusSkin": "CopyslTextArea0e0221f7b634049",
+        "height": "80%",
         "id": "commentsTxtBox",
         "isVisible": true,
         "keyBoardStyle": constants.TEXTAREA_KEY_BOARD_STYLE_DEFAULT,
@@ -2913,7 +2915,7 @@ function addWidgetssearchResultProfile() {
         "width": "90%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
         "paddingInPixel": false
     }, {});
@@ -2935,13 +2937,13 @@ function addWidgetssearchResultProfile() {
     opportunitiesFooter.setDefaultUnit(kony.flex.DP);
     var opprtunitiesAcceptBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "opprtunitiesAcceptBtn",
         "isVisible": true,
         "onClick": AS_Button_fbfed737da454414aae15fab452e5c5c,
         "right": "10dp",
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Request to volunteer",
         "top": "15dp",
         "width": "45%",
@@ -3359,7 +3361,7 @@ function addWidgetssearchResultProfile() {
         "onSelection": AS_ListBox_40e6cfb5bbb54334bacd88300920c324,
         "selectedKey": "lb1",
         "selectedKeyValue": ["lb1", "Select"],
-        "skin": "CopyslListBox0c3af8383afd84a",
+        "skin": "jumpStartDropDown100",
         "top": "3dp",
         "width": "100%",
         "zIndex": 1
@@ -3693,6 +3695,7 @@ function addWidgetssearchResultProfile() {
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
         "top": "5dp",
+        "viewConfig": {},
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
         "width": "90%",
         "year": 2016,
@@ -3786,14 +3789,14 @@ function addWidgetssearchResultProfile() {
     }, {});
     var StartEngagementButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "StartEngagementButton",
         "isVisible": true,
         "left": "3dp",
         "onClick": AS_Button_99e8fcfe74224ca997ce775e4cafcdc1,
         "right": "10dp",
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Start",
         "top": "15dp",
         "width": "48%",

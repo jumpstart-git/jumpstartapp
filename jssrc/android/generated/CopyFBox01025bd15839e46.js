@@ -39,7 +39,7 @@ function initializeCopyFBox01025bd15839e46() {
         "height": "15dp",
         "id": "imgClose",
         "isVisible": true,
-        "left": "73dp",
+        "right": "10dp",
         "skin": "slImage",
         "src": "imagedrag.png",
         "top": "6dp",

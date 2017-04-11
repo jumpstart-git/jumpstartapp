@@ -2,22 +2,22 @@ function initializeFBox011becb3c7bfa4f() {
     FBox011becb3c7bfa4f = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "50%",
+        "height": "20%",
         "id": "FBox011becb3c7bfa4f",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
     }, {}, {});
     FBox011becb3c7bfa4f.setDefaultUnit(kony.flex.DP);
-    var contactImage = new kony.ui.Image2({
-        "height": "74.44%",
-        "id": "contactImage",
+    var notificationContactImage = new kony.ui.Image2({
+        "height": "50dp",
+        "id": "notificationContactImage",
         "isVisible": true,
-        "left": "0dp",
+        "left": "2%",
         "skin": "slImage",
         "src": "imagedrag.png",
-        "top": "0dp",
-        "width": "22%",
+        "top": "15dp",
+        "width": "50dp",
         "zIndex": 1
     }, {
         "containerWeight": 100,
@@ -28,13 +28,26 @@ function initializeFBox011becb3c7bfa4f() {
         "paddingInPixel": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    var lblContactName = new kony.ui.Label({
-        "id": "lblContactName",
+    var notificationDetailContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "notificationDetailContainer",
         "isVisible": true,
-        "left": "24%",
-        "skin": "CopyslLabel0f11d4a84ba1c4c",
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "25%",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "75%",
+        "zIndex": 1
+    }, {}, {});
+    notificationDetailContainer.setDefaultUnit(kony.flex.DP);
+    var notificationContactName = new kony.ui.Label({
+        "id": "notificationContactName",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyjumpStartLabel088663be2d34540",
         "text": "Label",
-        "top": "15%",
+        "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -51,13 +64,13 @@ function initializeFBox011becb3c7bfa4f() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblMeaasageType = new kony.ui.Label({
-        "id": "lblMeaasageType",
+    var notificationMeaasageType = new kony.ui.Label({
+        "id": "notificationMeaasageType",
         "isVisible": true,
-        "left": "24%",
-        "skin": "CopyslLabel0c847444f8b024d",
+        "left": "0dp",
+        "skin": "CopyjumpStartLabel083d28612b0ec4b",
         "text": "Label",
-        "top": "42%",
+        "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -74,13 +87,37 @@ function initializeFBox011becb3c7bfa4f() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblDay = new kony.ui.Label({
-        "id": "lblDay",
+    var notificationContent = new kony.ui.Label({
+        "id": "notificationContent",
+        "isVisible": false,
+        "left": "8dp",
+        "skin": "CopyjumpStartLabel088663be2d34540",
+        "text": "Label",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    notificationDetailContainer.add(notificationContactName, notificationMeaasageType, notificationContent);
+    var notificationDay = new kony.ui.Label({
+        "bottom": "5dp",
+        "id": "notificationDay",
         "isVisible": true,
-        "left": "24%",
+        "right": "10dp",
         "skin": "CopyslLabel07361d094f2e14a",
         "text": "Label",
-        "top": "67dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -97,5 +134,5 @@ function initializeFBox011becb3c7bfa4f() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    FBox011becb3c7bfa4f.add(contactImage, lblContactName, lblMeaasageType, lblDay);
+    FBox011becb3c7bfa4f.add(notificationContactImage, notificationDetailContainer, notificationDay);
 }

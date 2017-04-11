@@ -2,6 +2,9 @@
 var loggedInUserObject = {
     user: ""
 };
+var gblForRetreive;
+var gblLoginData;
+var gblemailVal;
 
 function doSignIn() {
     var usernameInput = login.usernameField.text;
@@ -73,7 +76,7 @@ function getUserInfo() {
     } else if (loggedInUserObject.user === "indigenousBusiness") {}
 }
 //Type your code here
-//Type your code here
+// START OF LOGIN: 
 mobileFabricConfigurationForLogin = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
@@ -82,80 +85,49 @@ mobileFabricConfigurationForLogin = {
         service: "CBALogin",
         operations: ["getLoginDetails"]
     }],
-    /*identityServices: 
-                                [
-                                                {
-                                                                service:"userstore",
-                                                                username:"ravichandra.pitchuka@kony.com",
-                password: "Kony@123"
-                                                }
-                                ],*/
     konysdkObject: null,
     authClient: null,
     integrationObj: null,
     isKonySDKObjectInitialized: false,
     isMFAuthenticated: false
 };
-// Function to invoke getFoxNews Service call
+
 function loginService() {
-    //   kony.application.showLoadingScreen(null, "loading", 
-    // constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {  
-    // shouldShowLabelInBottom: "true", separatorHeight: 200} );
-    // Let's get the news type the user selected
-    //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
-    //alert ("########## Selected Key:" + selectedKey);
-    // Let's first check that the user picked a valid value
-    //if (!kony.string.equalsIgnoreCase(selectedKey, "none")){
-    // Populating the input params for the service call and invoking the service
-    // We're passing in the selected key for the user's selection in the combobox
-    // var inputParams = {serviceID:"getFoxNews",newsType:selectedKey};
-    // Now we make the call to the service using our input parameters and specifying
-    // the function processServiceResults as our callback when the service returns results
-    // appmiddlewareinvokerasync(inputParams, processServiceResults);
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     if (!mobileFabricConfigurationForLogin.isKonySDKObjectInitialized) {
         initializeMobileFabricForLogin();
     } else if (mobileFabricConfigurationForLogin.isKonySDKObjectInitialized) {
         getLogin();
     }
 }
-//            else{
-//                                            // The user didn't pick a value so we'll show the alert
-//                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
-//            }
-//}
+
 function initializeMobileFabricForLogin() {
-    //alert (" ********** Entering into initializeMobileFabric ********** ");
-    //getLoginSuccessCallback(gblLoginData);
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-        //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
         mobileFabricConfigurationForLogin.konysdkObject = new kony.sdk();
         mobileFabricConfigurationForLogin.konysdkObject.init(mobileFabricConfigurationForLogin.appKey, mobileFabricConfigurationForLogin.appSecret, mobileFabricConfigurationForLogin.serviceURL, initializeMobileFabricLoginSuccess, initializeMobileFabricLoginFailure);
-        //alert("hi");
-    } else alert("Network unavailable. Please check your network settings. ");
+    } else {
+        alert("Network unavailable. Please check your network settings. ");
+    }
     kony.print(" ********** Exiting out of initializeMobileFabric ********** ");
 }
 
 function initializeMobileFabricLoginSuccess(response) {
-    kony.print(" ********** Entering into initializeMobileFabricSuccess ********** ");
-    //     alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
+    kony.print(" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
     mobileFabricConfigurationForLogin.isKonySDKObjectInitialized = true;
-    // kony.application.dismissLoadingScreen();
-    //authenticateMFUsingUserStore();
     getLogin();
     kony.print(" ********** Exiting out of initializeMobileFabricSuccess ********** ");
 }
 
 function initializeMobileFabricLoginFailure(error) {
-    kony.print(" ********** Entering into initializeMobileFabricFailure ********** ");
-    //   alert (" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
+    kony.print(" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    //    alert (" Unable to initialize the application. Please try again. ");
-    kony.print(" ********** Exiting out of initializeMobileFabricFailure ********** ");
+    kony.print(" Unable to initialize the application. Please try again. ");
 }
 
 function authenticateMFUsingUserStore() {
-    //alert (" ********** Entering into authenticateMFUsingUserStore ********** ");
-    //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
     mobileFabricConfigurationForLogin.authClient = mobileFabricConfigurationForLogin.konysdkObject.getIdentityService(mobileFabricConfigurationForLogin.identityServices[0].service);
     var authParams = {
         "userid": mobileFabricConfigurationForLogin.identityServices[0].username,
@@ -166,238 +138,292 @@ function authenticateMFUsingUserStore() {
 }
 
 function loginMFSuccess(response) {
-    //          alert (" ********** Entering into loginMFSuccess ********** ");
-    //          alert(" ********** Success loginMFSuccess response : " + JSON.stringify(response) + " ********** ");
     mobileFabricConfigurationForLogin.isMFAuthenticated = true;
-    //  kony.application.dismissLoadingScreen();
     getNotification();
     kony.print(" ********** Exiting out of loginMFSuccess ********** ");
 }
 
 function loginMFFailure(error) {
-    kony.print(" ********** Entering into loginMFFailure ********** ");
     kony.print(" ********** Failure in loginMFFailure: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
     alert(" Unable to authenticate to Server, Login failed. Please try again. ");
-    kony.print(" ********** Exiting out of loginMFFailure ********** ");
 }
 
 function getLogin() {
-    // alert("inside getLogin");
-    //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-        //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
         mobileFabricConfigurationForLogin.integrationObj = mobileFabricConfigurationForLogin.konysdkObject.getIntegrationService(mobileFabricConfigurationForLogin.integrationServices[0].service);
         var operationName = mobileFabricConfigurationForLogin.integrationServices[0].operations[0];
         var headers = {};
-        // alert("operation name"+operationName);
         var dataLogin = {};
         dataLogin["userName"] = login.usernameField.text;
         dataLogin["password"] = login.passwordField.text;
-        //var data={"userName":login.usernameField.text,
-        //"password":login.passwordField.text};
-        // dataLogin={userName:"volunteerFirst",password:"Password"};
-        //  alert("dataLogin"+JSON.stringify(dataLogin));
         mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName, headers, dataLogin, getLoginSuccessCallback, getLoginErrorCallback);
-    } else alert("Network unavailable. Please check your network settings. ");
+    } else {
+        alert("Network unavailable. Please check your network settings. ");
+    }
 }
 
-function getLoginSuccessCallback(gblLoginData) {
+function getLoginSuccessCallback(gblLoginData1) {
     try {
-        // alert("inside success"+JSON.stringify(gblLoginData));
+        gblLoginData = gblLoginData1;
         if (gblLoginData != "undefined" && gblLoginData != undefined) {
-            // alert("1");
-            // if (gblLoginData["LoginBusinessVolunteer"].length > 0)
-            // {
-            //      var tempData = [];
-            //      var len = gblLoginData.LoginBusinessVolunteer.length;
-            if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"] == "business")) {
-                //alert("inside set data");     
-                var businessIdVal = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessId;
-                kony.store.setItem("businessId", businessIdVal);
-                // kony.store.getItem("businessId"); 
-                //alert("inside set data"+businessIdVal); 
-                var isBusOrVol = gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"];
-                kony.store.setItem("isBusOrVol", isBusOrVol);
-                var businessName = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessName;
-                // kony.store.setItem(busLoginName, businessName);  
-                var ACNNumber = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].acnNumber;
-                var businessAddress = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].address1;
-                var numberofBusinessOwners = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].numberOfIndigenousOwners;
-                var numberOfEmployees = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].numberOfEmployees;
-                var percentageOfBusinessOwnership = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].percentOfIndigenousOwnership;
-                var percentageOfEmployment = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].percentIndigenousEmployment;
-                var businessSector = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].sector;
-                var professionalAffiliations = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].affiliations;
-                var aboutCompany = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].indigenousBusinessesCol;
-                var businessReach = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].business_reach;
-                var businessActivity = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].sector;
-                businessMyProfile.businessMyProfileBody.bmpBusinessNameInput.text = businessName;
-                businessMyProfile.businessMyProfileBody.bmpNumbersInput.text = ACNNumber;
-                businessMyProfile.businessMyProfileBody.bmpBusinessAddressInput.text = businessAddress;
-                businessMyProfile.businessMyProfileBody.bmpNoOfIndiOwnersInput.text = numberofBusinessOwners;
-                businessMyProfile.businessMyProfileBody.bmpPercentOfIndiOwnershipInput.text = numberOfEmployees;
-                businessMyProfile.businessMyProfileBody.bmpNoOfEmployeesInput.text = percentageOfBusinessOwnership;
-                businessMyProfile.businessMyProfileBody.bmpPercentIndiEmploymentInput.text = percentageOfEmployment;
-                businessMyProfile.businessMyProfileBody.bmpSectorInput.text = businessSector;
-                businessMyProfile.businessMyProfileBody.bmpAffiliationsInput.text = professionalAffiliations;
-                businessMyProfile.show();
-                kony.application.dismissLoadingScreen();
-                //CompanyProfile
-                searchResultProfile.businessProfileContainer.businessProfileDetailsHeader.CompanyNameAndAddressContainer.BusinessProfileCompanyNameAndAddressContaine.text = businessName;
-                searchResultProfile.businessProfileContainer.businessProfileDetailsHeader.CompanyNameAndAddressContainer.CompanyAddressContainer.CompanyAddressLabel.text = businessAddress;
-                searchResultProfile.businessProfileContainer.businessProfileAboutContainer.businessProfileAboutText.text = aboutCompany;
-                searchResultProfile.businessProfileContainer.businessProfileBusinessActivityContainer.businessProfileBusinessActivityText.text = businessActivity;
-                searchResultProfile.businessProfileContainer.businessProfileAffiliationsContainer.businessProfileAffiliationsText.text = professionalAffiliations;
-                searchResultProfile.businessProfileContainer.businessProfileReachContainer.businessProfileReachText.text = businessReach;
-            } else {
-                // alert("inside else");
-                var valVolunteerId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerId;
-                kony.store.setItem("volunteerId", valVolunteerId);
-                // kony.store.getItem("volunteerId"); 
-                ////skills start
-                var skillList = " ";
-                //console.log(JSON.stringify(res.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet));
-                for (var i = 0; i < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet.length; i++) {
-                    skillList += gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillName;
-                }
-                ///skills end
-                var isBusOrVol = gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"];
-                kony.store.setItem("isBusOrVol", isBusOrVol);
-                var firstName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].firstName;
-                //kony.store.setItem(volLoginName, firstName);  
-                var lastName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].lastName;
-                var companyName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
-                var role = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].role;
-                //var skillSet=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet;
-                var aboutMe = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].aboutMe;
-                var workDetails = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].workDetails;
-                var state = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].state;
-                var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
-                var schedule = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
-                kony.store.setItem("schedule", schedule);
-                ///start merin
-                ///start merin
-                var arr = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days.split(" ");
-                //alert("arr"+JSON.stringify(arr));
-                for (var k = 0; k < arr.length; k++) {
-                    switch (arr[k]) {
-                        case "MON":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileMondayButton.skin = "jumpStartGreenButton90";
-                                break;
+            if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true")) {
+                if ((gblLoginData.LoginBusinessVolunteer[0]["result"] == "true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"] == "business")) {
+                    var businessIdVal = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessId;
+                    kony.store.setItem("businessId", businessIdVal);
+                    var isBusOrVol = gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"];
+                    kony.store.setItem("isBusOrVol", isBusOrVol);
+                    var adminVal = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessUserId.adminCredential;
+                    kony.store.setItem("adminVal", adminVal);
+                    var adminValnew = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessUserId.acceptEmail;
+                    kony.store.setItem("adminValnew", adminValnew);
+                    var businessName = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessName;
+                    kony.store.setItem("loginBusinessName", businessName);
+                    var ACNNumber = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].acnNumber;
+                    var busImgPath = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessUserId.imagePath;
+                    var businessAddress = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].address1;
+                    var numberofBusinessOwners = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].numberOfIndigenousOwners;
+                    var numberOfEmployees = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].numberOfEmployees;
+                    var percentageOfBusinessOwnership = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].percentOfIndigenousOwnership;
+                    var percentageOfEmployment = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].percentIndigenousEmployment;
+                    var businessSector = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].sector;
+                    var professionalAffiliations = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].affiliations;
+                    var aboutCompany = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].indigenousBusinessesCol;
+                    var businessReach = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].business_reach;
+                    var businessActivity = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].sector;
+                    var skills = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].skills;
+                    var city = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].city;
+                    var hours = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].hours;
+                    var opportunities = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].opportunities;
+                    var notForProfit = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].notForProfit;
+                    var noExperience = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].noExperience;
+                    var private = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].privatee;
+                    var governmentExperience = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].governmentExperience;
+                    var businessContactNumber = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].phoneNumber;
+                    var busEmail = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessUserId.userName;
+                    kony.store.setItem("loginEmail", busEmail);
+                    kony.store.setItem("BusinessEmailId", busEmail);
+                    if (null != busImgPath && busImgPath != "null") {
+                        var imgUrl = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + busImgPath;
+                        kony.store.setItem("imgUrlBusiness", imgUrl);
+                    } else {
+                        kony.store.setItem("imgUrlBusiness", "imgseglogo.png");
+                    }
+                    if (ACNNumber === null || ACNNumber === "null") {
+                        ACNNumber = " ";
+                    }
+                    if (businessAddress === null || businessAddress === "null") {
+                        businessAddress = " ";
+                    }
+                    if (numberofBusinessOwners === null | numberofBusinessOwners === "null") {
+                        numberofBusinessOwners = " ";
+                    }
+                    if (numberOfEmployees === null || numberOfEmployees === "null") {
+                        numberOfEmployees = " ";
+                    }
+                    if (percentageOfBusinessOwnership === null || percentageOfBusinessOwnership === "null") {
+                        percentageOfBusinessOwnership = " ";
+                    }
+                    if (percentageOfEmployment === null || percentageOfEmployment === "null") {
+                        percentageOfEmployment = " ";
+                    }
+                    if (businessSector === null || businessSector === "null") {
+                        businessSector = " ";
+                    }
+                    if (professionalAffiliations === null || professionalAffiliations === "null") {
+                        professionalAffiliations = " ";
+                    }
+                    if (aboutCompany === null || aboutCompany === "null") {
+                        aboutCompany = " ";
+                    }
+                    if (businessActivity === null || businessActivity === "null") {
+                        businessActivity = " ";
+                    }
+                    if (skills === null || skills === "null") {
+                        skills = " ";
+                    }
+                    if (hours === null || hours === "null") {
+                        hours = " ";
+                    }
+                    if (opportunities === null || opportunities === "null") {
+                        opportunities = " ";
+                    }
+                    var imageurlPath = kony.store.getItem("imgUrlBusiness");
+                    if (imageurlPath != null) {
+                        BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.imgContainer.imgBusinessLogo.src = "";
+                        BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.imgContainer.imgBusinessLogo.src = imageurlPath;
+                    }
+                    BusinessProfile.businessProfileContainer.businessProfileDetailsContainer.businessProfileHeaderContainer.companyNameContainer.lblCompanyName.text = businessName;
+                    BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.companyNameContainer.companyAddressContainer.lblcompanyAddress.text = businessAddress;
+                    BusinessProfile.businessProfileDetailsContainer.aboutCompanyContainer.AboutRichtext.text = aboutCompany;
+                    BusinessProfile.businessProfileDetailsContainer.ContactInfoContainer.contactNumberContainer.phoneNumContainer.phoneNumRichText.text = businessContactNumber;
+                    BusinessProfile.businessProfileDetailsContainer.ContactInfoContainer.emailContainer.emailIdContainer.emailIdRichText.text = busEmail;
+                    BusinessProfile.businessProfileDetailsContainer.businessActivityContainer.BusinessActivityRichText.text = businessActivity;
+                    BusinessProfile.businessProfileDetailsContainer.AffiliationContainer.affiliationRichText.text = professionalAffiliations;
+                    BusinessProfile.businessProfileDetailsContainer.businessReachContainer.businessReachrichText.text = businessReach;
+                    BusinessProfile.businessProfileDetailsContainer.LoginDetailsContainer.loginEmailIdContainer.lblLoggedInEmail.text = busEmail;
+                    BusinessProfile.businessProfileContainer.businessProfileDetailsContainer.businessProfileHeaderContainer.companyNameContainer.lblCompanyName.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.companyNameContainer.companyAddressContainer.lblcompanyAddress.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.aboutCompanyContainer.AboutRichtext.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.ContactInfoContainer.contactNumberContainer.phoneNumContainer.phoneNumRichText.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.ContactInfoContainer.emailContainer.emailIdContainer.emailIdRichText.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.businessActivityContainer.BusinessActivityRichText.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.AffiliationContainer.affiliationRichText.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.businessReachContainer.businessReachrichText.setEnabled(false);
+                    BusinessProfile.businessProfileDetailsContainer.LoginDetailsContainer.loginEmailIdContainer.setEnabled(false);
+                    BusinessProfile.show();
+                    kony.application.dismissLoadingScreen();
+                    //start comment
+                    mainPage.mainPageBody.navBarScroller.recommendationNavContainer.isVisible = true;
+                    mainPage.mainPageContentParent.myRecommendations.isVisible = true;
+                    mainPage.mainPageBody.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible = true;
+                    mainPage.TaskDetailsContainer.totalHoursContainers.LogHoursButton.isVisible = false;
+                    mainPage.mainPageContentParent.myActivity.CreateOpportunityButtonContainer.isVisible = true;
+                    mainPage.unAssignedTasksContainer.isVisible = true;
+                    var ksid = kony.store.getItem("KSID");
+                    if ((ksid !== "null") && (ksid !== null) && (ksid !== "undefined") && (ksid !== undefined) && (ksid !== "")) {
+                        AttachKSIDService();
+                    }
+                    // End of business 
+                } else {
+                    if (gblLoginData.LoginBusinessVolunteer[0]["isFirstLogin"] == "true") {
+                        gblemailVal = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
+                        login.validateCodeContainer.isVisible = true;
+                        kony.application.dismissLoadingScreen();
+                    } else {
+                        var valVolunteerId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerId;
+                        kony.store.setItem("volunteerId", valVolunteerId);
+                        var skillList = " ";
+                        for (var i = 0; i < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet.length; i++) {
+                            skillList = skillList + gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillName + ",";
+                        }
+                        skillList = skillList.slice(0, -1);
+                        ///skills end
+                        var isBusOrVol = gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"];
+                        kony.store.setItem("isBusOrVol", isBusOrVol);
+                        var adminVal = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].adminCredential;
+                        kony.store.setItem("adminVal", adminVal);
+                        var adminValnew9 = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].acceptEmail;
+                        kony.store.setItem("adminValnew", adminValnew9);
+                        var firstName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].firstName;
+                        kony.store.setItem("volLoginName", firstName);
+                        var lastName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].lastName;
+                        var companyName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
+                        var role = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].role;
+                        var aboutMe = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].aboutMe;
+                        var workDetails = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].workDetails;
+                        var state = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].state;
+                        var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
+                        kony.store.setItem("loginEmail", emailAddress);
+                        var schedule = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
+                        var availId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.availabilityId;
+                        kony.store.setItem("availId", availId);
+                        kony.store.setItem("schedule", schedule);
+                        var daySelectedNew = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
+                        var fromTimeNew = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.fromTime;
+                        var toTimeNew = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.toTime;
+                        var scheduleValNew = daySelectedNew + " " + fromTimeNew + " TO " + toTimeNew;
+                        for (var s = 0; s < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule.length; s++) {
+                            if (s === 0) {
+                                scheduleValNew = scheduleValNew + "\n";
+                                kony.store.setItem("scheduleValNew", scheduleValNew);
+                            } else {
+                                scheduleValNew = scheduleValNew + gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[s].VolunteerScheduleDTO.days + " " + gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[s].VolunteerScheduleDTO.fromTime + " TO " + gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[s].VolunteerScheduleDTO.toTime + "\n";
+                                kony.store.setItem("scheduleValNew", scheduleValNew);
                             }
-                        case "TUE":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileTuesdayButton.skin = "jumpStartGreenButton90";
-                                break;
-                            }
-                        case "WED":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileWednesdayButton.skin = "jumpStartGreenButton90";
-                                break;
-                            }
-                        case "THU":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileThursdayButton.skin = "jumpStartGreenButton90";
-                                break;
-                            }
-                        case "FRI":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileFridayButton.skin = "jumpStartGreenButton90";
-                                break;
-                            }
-                        case "SAT":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileSaturdayButton.skin = "jumpStartGreenButton90";
-                                break;
-                                break;
-                            }
-                        case "SUN":
-                            {
-                                volunteerMyProfilePage.volunteerMyProfileSundayButton.skin = "jumpStartGreenButton90";
-                                break;
-                            }
+                        }
+                        var pathVal = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].imagePath;
+                        if (null != pathVal && pathVal != "null") {
+                            var VolimgUrl = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + pathVal;
+                            kony.store.setItem("imgUrlVal", VolimgUrl);
+                        } else {
+                            kony.store.setItem("imgUrlVal", "imgseglogo.png");
+                        }
+                        var VolimageurlPath = kony.store.getItem("imgUrlVal");
+                        if (VolimageurlPath != null) {
+                            volunteerMyProfilePage.volunteerMyProfileHeader.volunteerMyProfilePic.src = VolimageurlPath;
+                        }
+                        kony.store.setItem("schedule", schedule);
+                        var arr = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days.split(" ");
+                        var fromTimeFull = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.fromTime;
+                        kony.store.setItem("fromTimeFull", fromTimeFull);
+                        var fromTimeSplitted = fromTimeFull.split(" ");
+                        var fromTime = fromTimeSplitted[0];
+                        var fromTimeMeridian = fromTimeSplitted[1];
+                        var mArr = [
+                            ["fromTime", fromTime]
+                        ];
+                        var mArrMer = [
+                            ["fromTimeMeridian", fromTimeMeridian]
+                        ];
+                        var toTimeFull = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.toTime;
+                        kony.store.setItem("toTimeFull", toTimeFull);
+                        var toTimeSplitted = toTimeFull.split(" ");
+                        var toTime = toTimeSplitted[0];
+                        var toTimeMeridian = toTimeSplitted[1];
+                        var mArr1 = [
+                            ["toTime", toTime]
+                        ];
+                        var mArr1Mer = [
+                            ["toTimeMeridian", toTimeMeridian]
+                        ];
+                        var address = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].address;
+                        var level = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].level;
+                        var longitude = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].longitude;
+                        var latitude = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].latitude;
+                        var contactNumber = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].contactNumber;
+                        var volunteerTaskId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerTaskId;
+                        var businessUnit = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].businessUnit;
+                        var userName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userName;
+                        var password = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].password;
+                        var userId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userId;
+                        kony.store.setItem("userId", userId);
+                        var usersUserTypeId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
+                        if (businessUnit === null || businessUnit === "null") {
+                            businessUnit = " ";
+                        }
+                        mainPage.mainPageBody.mainPageContentParent.myActivity.unAssignedTasksContainer.isVisible = false;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text = firstName;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text = lastName;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text = userName;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = " "; //workDetails;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = " "; //aboutMe;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text = companyName;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text = role;
+                        volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text = businessUnit;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.text = state;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.text = address;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text = contactNumber;
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text = emailAddress; //" ";//emailAddress;
+                        var skillSegmentData = [];
+                        for (var i = 0; i < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet.length; i++) {
+                            var skillObj = {
+                                "volunteerMyProfileSkillItem": gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillName,
+                                "skillIdHidden": gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillId
+                            };
+                            skillSegmentData.push(skillObj);
+                        }
+                        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunteerMyProfileSkillSegment.setData(skillSegmentData);
+                        gblForRetreive = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0];
+                        var DivInfo = kony.os.deviceInfo();
+                        var ksid = kony.store.getItem("KSID");
+                        if ((ksid !== "null") && (ksid !== null) && (ksid !== "undefined") && (ksid !== undefined) && (ksid !== "")) {
+                            AttachKSIDService();
+                        } else {
+                            mainPage.show();
+                        }
                     }
                 }
-                //end merin
-                //emd merin
-                var fromTimeFull = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.fromTime;
-                kony.store.setItem("fromTimeFull", fromTimeFull);
-                var fromTimeSplitted = fromTimeFull.split(" ");
-                var fromTime = fromTimeSplitted[0];
-                var fromTimeMeridian = fromTimeSplitted[1];
-                // var fromTime="1";  
-                //start merin
-                var mArr = [
-                    ["fromTime", fromTime]
-                ];
-                volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.masterData = mArr;
-                volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.selectedKey = "fromTime"; //fromTime;
-                //  volunteerMyProfilePage.volunteerMyProfileFromTimeDropdown.selectedKeyValue=["fromTime",fromTime] ;
-                var mArrMer = [
-                    ["fromTimeMeridian", fromTimeMeridian]
-                ];
-                volunteerMyProfilePage.volunteerMyProfileFromMeridiem.masterData = mArrMer;
-                volunteerMyProfilePage.volunteerMyProfileFromMeridiem.selectedKey = "fromTimeMeridian"; //fromTime;
-                // volunteerMyProfilePage.volunteerMyProfileFromMeridiem.selectedKeyValue=["fromTimeMeridian",fromTimeMeridian] ;
-                var toTimeFull = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.toTime;
-                kony.store.setItem("toTimeFull", toTimeFull);
-                var toTimeSplitted = toTimeFull.split(" ");
-                var toTime = toTimeSplitted[0];
-                var toTimeMeridian = toTimeSplitted[1];
-                // volunteerMyProfilePage.volunteerMyProfileToTimeDropdown.selectedKey=toTime;
-                var mArr1 = [
-                    ["toTime", toTime]
-                ];
-                volunteerMyProfilePage.volunteerMyProfileToTimeDropdown.masterData = mArr1;
-                volunteerMyProfilePage.volunteerMyProfileToTimeDropdown.selectedKey = "toTime"; //fromTime;
-                //  volunteerMyProfilePage.volunteerMyProfileToTimeDropdown.selectedKeyValue=["toTime",toTime] ;
-                var mArr1Mer = [
-                    ["toTimeMeridian", toTimeMeridian]
-                ];
-                volunteerMyProfilePage.volunteerMyProfileToMeridiem.masterData = mArr1Mer;
-                volunteerMyProfilePage.volunteerMyProfileToMeridiem.selectedKey = "toTimeMeridian"; //fromTime;
-                // volunteerMyProfilePage.volunteerMyProfileToMeridiem.selectedKeyValue=["toTimeMeridian",toTimeMeridian] ;
-                var address = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].address;
-                var level = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].level;
-                var longitude = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].longitude;
-                var latitude = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].latitude;
-                var contactNumber = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].contactNumber;
-                var volunteerTaskId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerTaskId;
-                var businessUnit = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].businessUnit;
-                var userName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userName;
-                var password = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].password;
-                var userId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userId;
-                var usersUserTypeId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text = firstName;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text = lastName;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text = userName;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = workDetails;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = aboutMe;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text = companyName;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text = role;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileBusinessUnitInput.text = businessUnit;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.text = state;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.text = address;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text = contactNumber;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text = emailAddress;
-                volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text = skillList;
-                //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileTimeContainer.fromTimeContainer.lblFrom.text=fromTime;
-                //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileTimeContainer.toTimeContainer.lblTo.text=toTime;
-                volunteerMyProfilePage.show();
-                //volunteerMyProfilePage.volunteerMyProfileBody
-                //volunteerMyProfilePage.volunteerMyProfileBody
-                //                alert("Failure1"+gblLoginData.LoginBusinessVolunteer[0]["result"]); 
-                //                alert("Failure2"+gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"]); 
+            } else {
+                alert("Invalid credentials");
+                kony.application.dismissLoadingScreen();
             }
         }
-        // }
-        kony.application.dismissLoadingScreen();
     } catch (e) {
-        alert("the issue is " + e);
+        alert("Network Error Please try again.");
+        kony.print(" ********** Failure: " + JSON.stringify(e) + " ********** ");
         kony.application.dismissLoadingScreen();
     }
 }
@@ -406,6 +432,6 @@ function getLoginErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    //     alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
+    alert("Network Error Please try again. " + JSON.stringify(error));
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }

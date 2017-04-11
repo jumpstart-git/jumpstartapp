@@ -354,7 +354,11 @@ function addWidgetsregistrationSummaryPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     registrationSummaryBody.add(summUserNameTitle, summUserNameLabel, summEmailTitle, summEmailLabel, summContactNumberTitle, summContactNumberLabel, summPasswordTitle, summPasswordLabel, summAddressTitle, summAddressLabel, summCompanyTitle, summCompanyLabel, summRoleTitle, summRoleLabel, summSkillsTitle, summSkillsRT, summSkillsLabel, summAvailabilityTitle, summAvailabilityRT);
+<<<<<<< Updated upstream
     var CopyeligibiltyCriteriFlxScroll = new kony.ui.FlexScrollContainer({
+=======
+    var CopyeligibiltyCriteriFlxScroll0d6a39065171f43 = new kony.ui.FlexScrollContainer({
+>>>>>>> Stashed changes
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
@@ -362,7 +366,11 @@ function addWidgetsregistrationSummaryPage() {
         "enableScrolling": true,
         "height": "24%",
         "horizontalScrollIndicator": true,
+<<<<<<< Updated upstream
         "id": "CopyeligibiltyCriteriFlxScroll",
+=======
+        "id": "CopyeligibiltyCriteriFlxScroll0d6a39065171f43",
+>>>>>>> Stashed changes
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
@@ -374,7 +382,11 @@ function addWidgetsregistrationSummaryPage() {
         "width": "100%",
         "zIndex": 1
     }, {}, {});
+<<<<<<< Updated upstream
     CopyeligibiltyCriteriFlxScroll.setDefaultUnit(kony.flex.DP);
+=======
+    CopyeligibiltyCriteriFlxScroll0d6a39065171f43.setDefaultUnit(kony.flex.DP);
+>>>>>>> Stashed changes
     var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -478,7 +490,11 @@ function addWidgetsregistrationSummaryPage() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
+<<<<<<< Updated upstream
     CopyeligibiltyCriteriFlxScroll.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
+=======
+    CopyeligibiltyCriteriFlxScroll0d6a39065171f43.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
+>>>>>>> Stashed changes
     var registrationPageFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -530,7 +546,11 @@ function addWidgetsregistrationSummaryPage() {
         "showProgressIndicator": true
     });
     registrationPageFooter.add(registrationCancelButton, registrationSubmitButton);
+<<<<<<< Updated upstream
     registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll, registrationPageFooter);
+=======
+    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll0d6a39065171f43, registrationPageFooter);
+>>>>>>> Stashed changes
 };
 
 function registrationSummaryPageGlobals() {

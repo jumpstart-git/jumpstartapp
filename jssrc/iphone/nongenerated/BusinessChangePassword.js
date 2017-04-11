@@ -127,7 +127,7 @@ function getBusinessChangePasswordSuccessCallback(credentials) {
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Password changed successfully",
-                "alertHandler": null
+                "alertHandler": "null"
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });

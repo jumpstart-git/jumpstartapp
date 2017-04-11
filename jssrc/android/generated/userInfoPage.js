@@ -100,12 +100,12 @@ function addWidgetsuserInfoPage() {
     var continueButton = new kony.ui.Button({
         "centerX": "50.00%",
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossBlue0f5e9b292eb6f46",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "continueButton",
         "isVisible": true,
         "onClick": AS_Button_a7b0aead332447b8bef76dcfcc1fdabe,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "80%",
         "zIndex": 1

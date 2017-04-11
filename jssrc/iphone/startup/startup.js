@@ -8,7 +8,7 @@ var appConfig = {
     serverIp: "127.0.0.1",
     serverPort: "80",
     secureServerPort: "443",
-    isDebug: true,
+    isDebug: false,
     middlewareContext: "JumpStartAbort1",
     isturlbase: "https://cba-jumpstart.konycloud.com/services",
     isMFApp: true,
@@ -670,6 +670,6 @@ function onSuccessSDKCallBack() {
 kony.application.setApplicationMode(constants.APPLICATION_MODE_NATIVE);
 //If default locale is specified. This is set even before any other app life cycle event is called.
 loadResources();
-// If you wish to debug Application Initialization events, now is the time to
-// place breakpoints.
-debugger;
+kony.print = function() {
+    return;
+};

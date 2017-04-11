@@ -1,22 +1,6 @@
 //Type your code here
 function cancelRequest() {
-    mainPage.mainPageModalsBackground.isVisible = true;
-    mainPage.mainPageModalsBackground.animate(kony.ui.createAnimation({
-        "100": {
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            },
-            "backgroundColor": "7a7a7a00",
-            "opacity": 0.4
-        }
-    }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 0.25
-    }, {
-        "animationEnd": function() {}
-    });
+    showModalBackground();
     mainPage.cancelRequestModalContainer.isVisible = true;
     mainPage.cancelRequestModalContainer.animate(kony.ui.createAnimation({
         "100": {
@@ -36,29 +20,16 @@ function cancelRequest() {
     });
 }
 
-function closeModal() {
-    mainPage.mainPageModalsBackground.animate(kony.ui.createAnimation({
-        "100": {
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            },
-            "opacity": 0.01
-        }
-    }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 0.25
-    }, {
-        "animationEnd": {}
-    });
-    mainPage.cancelRequestModalContainer.animate(kony.ui.createAnimation({
+function declineRequest() {
+    showModalBackground();
+    mainPage.declineRequestModalContainer.isVisible = true;
+    mainPage.declineRequestModalContainer.animate(kony.ui.createAnimation({
         "100": {
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             },
             "backgroundColor": "ffffff00",
-            "opacity": 0.01
+            "opacity": 100
         }
     }), {
         "delay": 0,
@@ -68,45 +39,14 @@ function closeModal() {
     }, {
         "animationEnd": {}
     });
-    mainPage.acceptTaskModalContainer.animate(kony.ui.createAnimation({
-        "100": {
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            },
-            "backgroundColor": "ffffff00",
-            "opacity": 0.01
-        }
-    }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 0.25
-    }, {
-        "animationEnd": {}
-    });
-    mainPage.mainPageModalsBackground.isVisible = false;
-    mainPage.cancelRequestModalContainer.isVisible = false;
-    mainPage.acceptTaskModalContainer.isVisible = false;
+}
+
+function acceptRequest() {
+    showModalBackground();
 }
 
 function acceptTask() {
-    mainPage.mainPageModalsBackground.isVisible = true;
-    mainPage.mainPageModalsBackground.animate(kony.ui.createAnimation({
-        "100": {
-            "stepConfig": {
-                "timingFunction": kony.anim.EASE
-            },
-            "backgroundColor": "7a7a7a00",
-            "opacity": 0.4
-        }
-    }), {
-        "delay": 0,
-        "iterationCount": 1,
-        "fillMode": kony.anim.FILL_MODE_FORWARDS,
-        "duration": 0.25
-    }, {
-        "animationEnd": function() {}
-    });
+    showModalBackground();
     mainPage.acceptTaskModalContainer.isVisible = true;
     mainPage.acceptTaskModalContainer.animate(kony.ui.createAnimation({
         "100": {
@@ -124,6 +64,131 @@ function acceptTask() {
     }, {
         "animationEnd": {}
     });
+}
+
+function showAcceptTaskDetails() {
+    fadeInModal(mainPage.acceptTaskDetailsModalContainer);
+}
+
+function startEngagement() {
+    showModalBackground();
+    mainPage.startEngagementModalContainer.isVisible = true;
+    mainPage.startEngagementModalContainer.animate(kony.ui.createAnimation({
+        "100": {
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            },
+            "backgroundColor": "ffffff00",
+            "opacity": 100
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 0.25
+    }, {
+        "animationEnd": {}
+    });
+}
+
+function checkIfTaskOrStartEngagement(type) {
+    //if (loggedInUserObject.user === "volunteer") {
+    if (kony.store.getItem("isBusOrVol") == "volunteer") {
+        if (type) {
+            acceptRequest();
+        } else {
+            acceptTask();
+        }
+    } else if (kony.store.getItem("isBusOrVol") == "business") {
+        startEngagement();
+    }
+}
+
+function closeModal() {
+    mainPage.mainPageModalsBackground.animate(kony.ui.createAnimation({
+        "100": {
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            },
+            "opacity": 0.01
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 0.25
+    }, {
+        "animationEnd": {}
+    });
+    fadeOutModal(mainPage.cancelRequestModalContainer);
+    fadeOutModal(mainPage.declineRequestModalContainer);
+    fadeOutModal(mainPage.acceptTaskModalContainer);
+    fadeOutModal(mainPage.startEngagementModalContainer);
+}
+
+function showModalBackground() {
+    mainPage.mainPageModalsBackground.isVisible = true;
+    mainPage.mainPageModalsBackground.animate(kony.ui.createAnimation({
+        "100": {
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            },
+            "backgroundColor": "7a7a7a00",
+            "opacity": 0.4
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 0.25
+    }, {
+        "animationEnd": function() {}
+    });
+}
+
+function fadeInModal(modal) {
+    modal.isVisible = true;
+    modal.animate(kony.ui.createAnimation({
+        "100": {
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            },
+            "backgroundColor": "ffffff00",
+            "opacity": 100
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 0.25
+    }, {
+        "animationEnd": {}
+    });
+}
+
+function fadeOutThisModal(modal) {
+    modal.animate(kony.ui.createAnimation({
+        "100": {
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            },
+            "backgroundColor": "ffffff00",
+            "opacity": 0.01
+        }
+    }), {
+        "delay": 0,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 0.25
+    }, {
+        "animationEnd": {}
+    });
+    modal.isVisible = false;
+}
+// This also hides the gray modal BG.
+function fadeOutModal(modal) {
+    fadeOutThisModal(modal);
+    mainPage.mainPageModalsBackground.isVisible = false;
 }
 
 function contactRequest() {

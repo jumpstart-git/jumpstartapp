@@ -170,7 +170,7 @@ function getDeleteOpportunityErrorCallback(error) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Brief has been removed from the list",
-        "alertHandler": null
+        "alertHandler": "null"
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
