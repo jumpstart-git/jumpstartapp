@@ -1,6 +1,6 @@
 {
     "mwaddrkey": "",
-    "projectCloudGuid": "a2596400-fad7-4858-ba13-ad8f73b1ca8f",
+    "projectCloudGuid": "14b607d7-1b5f-463e-9e23-615cad0164de",
     "wap_android360_fontsize": "12",
     "isA11yConfigEnabled": false,
     "watchos_notificationcentericon_42": "",
@@ -201,7 +201,7 @@
     "export.type": "studioviz",
     "wap_spawindowstab_fontsize": "12",
     "isNewAppWithRespectToAndroidPackageName": "",
-    "accountCloudGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",
+    "accountCloudGuid": "13d31bac-4815-462b-9980-53a79ed9a4b7",
     "defaulttheme": "defaultTheme",
     "watchos_shortlooknotificationicon_38": "",
     "appaddrkey": "",
@@ -222,11 +222,11 @@
     "wap_spaandroidtabmdpi_fontsize": "12",
     "konyVizVersion": "7.2.0",
     "prototype": {
-        "createdOn": "2017-04-04T13:22:19.735Z",
-        "createdById": "be379915-1018-414c-a693-4fe6b1307220",
-        "createdBy": "Carl%20Meyrick Cheng",
-        "shareGuid": "5MK92",
-        "resourceId": "12b85835-d520-4f6a-8c15-18e3a2a166eb",
+        "createdOn": "2017-04-11T01:24:49.230Z",
+        "createdById": "ff444120-c761-44be-825c-beb52b943905",
+        "createdBy": "John Saulo",
+        "shareGuid": "K2495",
+        "resourceId": "2f0be1c7-790b-41f7-b620-3dd5d0b30fec",
         "password": "",
         "PublishMode": "public"
     },
