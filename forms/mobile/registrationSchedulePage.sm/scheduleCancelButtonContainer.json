@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "35%"
+        "value": "45dp"
     },
     "_left_": {
         "type": "string",
@@ -23,36 +23,38 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_skin_": "s4c4eb50be4e4f209adfe0a47c00ee45",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "regOutsideHoursYes",
-        "scheduleCancelButtonContainer"
+        "regOutsideHoursNo"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "regScheduleOutsideHoursFooter",
+    "id": "scheduleCancelButtonContainer",
     "info": null,
     "isvisible": true,
-    "kuid": "e89972b5cf9c4770b3bb4507cf328c61",
+    "kuid": "0ffeaec14b3847f9b56b87a80d7f4b42",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "regScheduleOutsideHoursContainer",
+    "parent": "regScheduleOutsideHoursFooter",
     "pf": "registrationSchedulePage",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

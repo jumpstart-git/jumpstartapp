@@ -67,16 +67,6 @@
       "y": 0
     }
   },
-  "iphone": {
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "background_color": "ebebebff",

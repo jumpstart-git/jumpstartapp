@@ -51,9 +51,9 @@ function AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject) {
     function SHOW_ALERT__3a08468624404da9b9a6790b3c565778_True() {}
     VolAcceptTaskBtn.call(this);
     // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); 
+    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
     // mainPage.destroy();
-    // mainPage.show(); 
+    // mainPage.show();
 }
 
 function activity_acceptTaskDetailsPreviousParent_onClick(eventobject) {
@@ -62,7 +62,7 @@ function activity_acceptTaskDetailsPreviousParent_onClick(eventobject) {
 
 function AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show(); 
+    //mainPage.show();
 }
 
 function activity_acceptTaskSkillsPreviousParent_onClick(eventobject) {
@@ -134,7 +134,7 @@ function AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, att
         //     var todayDate=day+"/"+month+"/"+year;
         //     kony.store.setItem("todayDate", todayDate);
         //     //end merin
-        //     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year]; 
+        //     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year];
         //     mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];
         var seg1 = mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;
         var segment1 = seg1[0].segType;
@@ -3350,6 +3350,10 @@ function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, att
 }
 
 function AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea(eventobject, linktext, attributes) {}
+
+function AS_FlexContainer_258953e6a1604973803206e010c14bc8(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
 
 function AS_RichText_25939b8e86014441b5a47e1b246b12e6(eventobject, linktext, attributes) {
     function SHOW_ALERT_ide_onClick_2dd5cb226a764f779f6f03045bd5bb9c_True() {}
