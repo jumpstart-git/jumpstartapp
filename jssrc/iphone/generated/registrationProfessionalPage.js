@@ -57,7 +57,7 @@ function addWidgetsregistrationProfessionalPage() {
         "masterData": [
             ["Select", "Select from drop down menu"],
             ["CBA", "CBA"],
-            ["HPE", "HPE"],
+            ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
         "onSelection": AS_ListBox_94e2428d02de4f88943f8ba16108872e,

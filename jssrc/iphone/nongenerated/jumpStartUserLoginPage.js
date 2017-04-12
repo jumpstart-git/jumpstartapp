@@ -310,20 +310,18 @@ function getLoginSuccessCallback(gblLoginData1) {
                         var lastName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].lastName;
                         //Start of defect D058
                         var companyName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
-                        if (companyName != "HPE" && companyName != "SupplyNation" && companyName != "CBA" && companyName != "DXC") {
-                            alert("Illegal Company! This is for test purposes");
+                        var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
+                        if ((companyName != "HPE" && companyName != "SupplyNation" && companyName != "CBA" && companyName != "DXC") || (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0)) {
+                            validationAlert("Warning", "This volunteer is associated with an unauthorized company or domain. Access is denied!");
                             kony.application.dismissLoadingScreen();
-                            return
-                        } else {
-                            alert("Legit Company! This is for test purposes");
+                            return;
                         }
+                        kony.store.setItem("loginEmail", emailAddress);
                         //End of D058
                         var role = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].role;
                         var aboutMe = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].aboutMe;
                         var workDetails = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].workDetails;
                         var state = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].state;
-                        var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
-                        kony.store.setItem("loginEmail", emailAddress);
                         var schedule = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
                         var availId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.availabilityId;
                         kony.store.setItem("availId", availId);

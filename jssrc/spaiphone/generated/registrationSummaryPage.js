@@ -350,7 +350,7 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     registrationSummaryBody.add(summUserNameTitle, summUserNameLabel, summEmailTitle, summEmailLabel, summContactNumberTitle, summContactNumberLabel, summPasswordTitle, summPasswordLabel, summAddressTitle, summAddressLabel, summCompanyTitle, summCompanyLabel, summRoleTitle, summRoleLabel, summSkillsTitle, summSkillsRT, summSkillsLabel, summAvailabilityTitle, summAvailabilityRT);
-    var CopyeligibiltyCriteriFlxScroll0d6a39065171f43 = new kony.ui.FlexScrollContainer({
+    var CopyeligibiltyCriteriFlxScroll = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
@@ -358,7 +358,7 @@ function addWidgetsregistrationSummaryPage() {
         "enableScrolling": true,
         "height": "24%",
         "horizontalScrollIndicator": true,
-        "id": "CopyeligibiltyCriteriFlxScroll0d6a39065171f43",
+        "id": "CopyeligibiltyCriteriFlxScroll",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
@@ -370,7 +370,7 @@ function addWidgetsregistrationSummaryPage() {
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyeligibiltyCriteriFlxScroll0d6a39065171f43.setDefaultUnit(kony.flex.DP);
+    CopyeligibiltyCriteriFlxScroll.setDefaultUnit(kony.flex.DP);
     var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -472,7 +472,7 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
-    CopyeligibiltyCriteriFlxScroll0d6a39065171f43.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
+    CopyeligibiltyCriteriFlxScroll.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
     var registrationPageFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -520,7 +520,7 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     registrationPageFooter.add(registrationCancelButton, registrationSubmitButton);
-    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll0d6a39065171f43, registrationPageFooter);
+    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll, registrationPageFooter);
 };
 
 function registrationSummaryPageGlobals() {

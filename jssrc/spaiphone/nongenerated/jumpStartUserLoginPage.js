@@ -76,7 +76,7 @@ function getUserInfo() {
     } else if (loggedInUserObject.user === "indigenousBusiness") {}
 }
 //Type your code here
-// START OF LOGIN: 
+// START OF LOGIN:
 mobileFabricConfigurationForLogin = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
@@ -109,7 +109,7 @@ function initializeMobileFabricForLogin() {
         mobileFabricConfigurationForLogin.konysdkObject = new kony.sdk();
         mobileFabricConfigurationForLogin.konysdkObject.init(mobileFabricConfigurationForLogin.appKey, mobileFabricConfigurationForLogin.appSecret, mobileFabricConfigurationForLogin.serviceURL, initializeMobileFabricLoginSuccess, initializeMobileFabricLoginFailure);
     } else {
-        alert("Network unavailable. Please check your network settings. ");
+        validationAlert("Warning", "Network unavailable. Please check your network settings. ");
     }
     kony.print(" ********** Exiting out of initializeMobileFabric ********** ");
 }
@@ -146,7 +146,7 @@ function loginMFSuccess(response) {
 function loginMFFailure(error) {
     kony.print(" ********** Failure in loginMFFailure: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    alert(" Unable to authenticate to Server, Login failed. Please try again. ");
+    validationAlert("Warning", "Unable to authenticate to Server, Login failed. Please try again.");
 }
 
 function getLogin() {
@@ -159,7 +159,7 @@ function getLogin() {
         dataLogin["password"] = login.passwordField.text;
         mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName, headers, dataLogin, getLoginSuccessCallback, getLoginErrorCallback);
     } else {
-        alert("Network unavailable. Please check your network settings. ");
+        validationAlert("Warning", "Network unavailable. Please check your network settings. ");
     }
 }
 
@@ -284,7 +284,7 @@ function getLoginSuccessCallback(gblLoginData1) {
                     if ((ksid !== "null") && (ksid !== null) && (ksid !== "undefined") && (ksid !== undefined) && (ksid !== "")) {
                         AttachKSIDService();
                     }
-                    // End of business 
+                    // End of business
                 } else {
                     if (gblLoginData.LoginBusinessVolunteer[0]["isFirstLogin"] == "true") {
                         gblemailVal = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
@@ -308,13 +308,20 @@ function getLoginSuccessCallback(gblLoginData1) {
                         var firstName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].firstName;
                         kony.store.setItem("volLoginName", firstName);
                         var lastName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].lastName;
+                        //Start of defect D058
                         var companyName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
+                        var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
+                        if ((companyName != "HPE" && companyName != "SupplyNation" && companyName != "CBA" && companyName != "DXC") || (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0)) {
+                            validationAlert("Warning", "This volunteer is associated with an unauthorized company or domain. Access is denied!");
+                            kony.application.dismissLoadingScreen();
+                            return;
+                        }
+                        kony.store.setItem("loginEmail", emailAddress);
+                        //End of D058
                         var role = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].role;
                         var aboutMe = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].aboutMe;
                         var workDetails = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].workDetails;
                         var state = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].state;
-                        var emailAddress = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
-                        kony.store.setItem("loginEmail", emailAddress);
                         var schedule = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.days;
                         var availId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].schedule[0].VolunteerScheduleDTO.availabilityId;
                         kony.store.setItem("availId", availId);
@@ -417,12 +424,12 @@ function getLoginSuccessCallback(gblLoginData1) {
                     }
                 }
             } else {
-                alert("Invalid credentials");
+                validationAlert("Warning", "Invalid credentials");
                 kony.application.dismissLoadingScreen();
             }
         }
     } catch (e) {
-        alert("Network Error Please try again.");
+        validationAlert("Warning", "Network Error Please try again.");
         kony.print(" ********** Failure: " + JSON.stringify(e) + " ********** ");
         kony.application.dismissLoadingScreen();
     }
@@ -432,6 +439,19 @@ function getLoginErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    alert("Network Error Please try again. " + JSON.stringify(error));
+    validationAlert("Warning", "Network Error Please try again. " + JSON.stringify(error));
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
+}
+//04.07.2017 To make alert validation less of a hassle.
+// Utility functions
+function validationAlert(title, description) {
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_ERROR,
+        "alertTitle": title,
+        "yesLabel": "OK",
+        "message": description,
+        "alertHandler": null
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+    });
 }

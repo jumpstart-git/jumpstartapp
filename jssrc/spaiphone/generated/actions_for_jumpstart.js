@@ -1,200 +1,4 @@
-<<<<<<< Updated upstream:jssrc/android/generated/actions_for_JumpStartAbort1.js
-//actions.js file
-function AcceptedRequest_SentSegmentCallContainer(eventobject, x, y) {
-    return AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y);
-}
-
-function AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y) {
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        var segTypeCheckforVolCall = kony.store.getItem("segmentType");
-        // alert(segType1);
-        try {
-            if (segTypeCheckforVolCall != "null" || segTypeCheckforVolCall != null) {
-                if (segTypeCheckforVolCall == "sent") {
-                    //alert("Isinde open seg " + segType1);
-                    callContactSentSeg();
-                }
-            }
-        } catch (e) {
-            //alert(e);
-        }
-    } else {
-        var segTypeforBusCal = kony.store.getItem("segmentType");
-        //alert("the clicked segTypement is ="+segTypeforBusCal);
-        try {
-            if (segTypeforBusCal != "null" || segTypeforBusCal != null) {
-                //     //alert("Inside Accepted segType after first segType");
-                if (segTypeforBusCal == "accepted") {
-                    // alert("Inside Accepted segType");
-                    callBusFromAcceptedSeg();
-                }
-            }
-        } catch (e) {
-            alert("aError is" + e);
-        }
-    }
-}
-
-function activity_acceptRequestCancel_onTouchStart(eventobject, x, y) {
-    return AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y);
-}
-
-function AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y) {
-    mainPage.acceptRequestModalContainer.isVisible = false;
-    mainPage.show();
-}
-
-function activity_acceptTaskButton_onClick(eventobject) {
-    return AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject);
-}
-
-function AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject) {
-    function SHOW_ALERT__3a08468624404da9b9a6790b3c565778_True() {}
-    VolAcceptTaskBtn.call(this);
-    // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
-    // mainPage.destroy();
-    // mainPage.show();
-}
-
-function activity_acceptTaskDetailsPreviousParent_onClick(eventobject) {
-    return AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject);
-}
-
-function AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject) {
-    mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
-}
-
-function activity_acceptTaskSkillsPreviousParent_onClick(eventobject) {
-    return AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject);
-}
-
-function AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject) {
-    return fadeOutThisModal.call(this, mainPage.acceptTaskSkillsModalContainer);
-}
-
-function activity_agreeToTaskButton_onClick(eventobject) {
-    return AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject);
-}
-
-function AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject) {}
-
-function activity_cancelEngagement_onClick(eventobject) {
-    return AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject);
-}
-
-function AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject) {
-    mainPage.startEngagementModalContainer.isVisible = false;
-    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text = "";
-    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text = "";
-    //mainPage.show();
-}
-
-function activity_cancelRequest_onClick(eventobject, linktext, attributes) {
-    return AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes);
-}
-
-function AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes) {
-    saveReqForCancel.call(this);
-    saveCancelVolReqId.call(this);
-}
-
-function activity_declineRequestNo_onClick(eventobject, linktext, attributes) {
-    return AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes);
-}
-
-function AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes) {}
-
-function activity_declineRequest_onClick() {
-    return AS_RichText_6ba9770d62c743cdab62cff095284540();
-}
-
-function AS_RichText_6ba9770d62c743cdab62cff095284540() {
-    mainPage.declineRequestModalContainer.isVisible = true;
-    saveReqForBusDecline.call(this);
-}
-
-function activity_requestTask_onClick(eventobject, linktext, attributes, context) {
-    return AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context);
-}
-
-function AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context) {
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        getBusinessReqTaskDetailsService();
-        // getBusinessReqTaskDetailsService();
-        //     BusinessExistingTaskTaskService ();
-        //     mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem("loginBusinessName");
-        //     mainPage.startEngagementModalContainer.isVisible=true;
-        //     //start merin
-        //     var d= new Date();
-        //     var day=d.getDate();
-        //     var month=d.getMonth();
-        //     month=month+1;
-        //     var year=d.getFullYear();
-        //     var todayDate=day+"/"+month+"/"+year;
-        //     kony.store.setItem("todayDate", todayDate);
-        //     //end merin
-        //     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year];
-        //     mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];
-        var seg1 = mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;
-        var segment1 = seg1[0].segType;
-        kony.store.setItem("segmentType", segment1);
-    } else {
-        mainPage.acceptRequestModalContainer.isVisible = true;
-    }
-    saveReqForBusStartEngaeSent.call(this);
-    saveReqId.call(this);
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        saveBusIdForVolViewProfileSentSeg();
-    }
-}
-
-function activity_startEngagementPreviousParent_onClick(eventobject) {
-    return AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject);
-}
-
-function AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject) {
-    return closeModal.call(this);
-}
-
-function activity_startEngagement_onClick(eventobject) {
-    return AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject);
-}
-
-function AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject) {
-    function SHOW_ALERT__fb69992dd17440ddbecebec1fc81e811_True() {} //indeginousTaskDetails();
-    var title = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text;
-    var details = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text;
-    var endDate = mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.formattedDate;
-    var startDate = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
-    var hours = mainPage.startEngagementModalContainer.startEngagementModalBody.duratationOfEngagementInput.text;
-    var endDate1 = kony.store.getItem("todayDate"); //   give todays's date'
-    var startdate1 = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
-    var isValidEndDate = validateDate(startDate, endDate);
-    var isValidStartEnd = validateStartDate(startdate1, endDate1);
-    if (title === null || title === "" || title === "null") {
-        alert("Please enter a task title");
-    } else if (details === null || details === "" || details === "null") {
-        alert("Please enter task details");
-    } else if (hours == null || hours == "null" || hours == "") {
-        alert("Please enter hours required to complete the task");
-    } else {
-        //alert("isValidStartEnd"+isValidStartEnd);
-        if (isValidStartEnd === false) {
-            validationAlert("Start Date should be greater than or equal to today's date");
-        } else if (isValidEndDate === false) {
-            validationAlert("End Date should be greater than or equal to start date");
-        } else {
-            //alert("done");
-            indeginousTaskDetails();
-        }
-    }
-}
-
-=======
 //actions.js file 
->>>>>>> Stashed changes:jssrc/spaiphone/generated/actions_for_jumpstart.js
 function AS_Button_04cfbb34142c469d81d8ca8d5bc65e0d(eventobject) {}
 
 function AS_Button_06308078c9ae4d1dab30aae8e5b60b81(eventobject) {
@@ -233,7 +37,7 @@ function AS_Button_0d87a87ab5bd4552a60cca8b24ed2876(eventobject) {
         requestVolunteerByBusiness1();
     }
     // searchResultProfile.requestToVolunteerModal.isVisible=false;
-    // searchPage.show();
+    // searchPage.show(); 
 }
 
 function AS_Button_102b6bf5ed1848b1ab72a98c4080fef5(eventobject) {
@@ -269,7 +73,7 @@ function AS_Button_175a73b33d63400f969d9134fd454626(eventobject) {
 
 function AS_Button_1b9973fd47864a118682f953ae6422ed(eventobject) {
     mainPage.TaskDetailsContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_1de03b70f35049199d0592659096a750(eventobject) {
@@ -408,9 +212,9 @@ function AS_Button_343ad16654424590a92a9098bc3d7153(eventobject) {
     function SHOW_ALERT_ide_onClick_1527a3680dfa4d70acd3b56380a534a8_True() {}
     VolAcceptTaskBtn.call(this);
     // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
+    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); 
     // mainPage.destroy();
-    // mainPage.show();
+    // mainPage.show(); 
 }
 
 function AS_Button_343bf3187ac44ec8a76d74d71d2b5e7d(eventobject) {
@@ -715,9 +519,9 @@ function AS_Button_787530031fef4f11bc1b769f1f91b1dd(eventobject) {
     function SHOW_ALERT_ide_onClick_77c00b4d84a048f69f1821b726903fba_True() {}
     VolAcceptTaskBtn.call(this);
     // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
+    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); 
     // mainPage.destroy();
-    // mainPage.show();
+    // mainPage.show(); 
 }
 
 function AS_Button_7a7d24bf2d21474e9e22079f8eac7bce(eventobject) {
@@ -812,7 +616,7 @@ function AS_Button_8679ef5475084e8496bae19a15ca4630(eventobject) {
     }
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "alertIcon": "lohourindicator.PNG",
@@ -971,11 +775,20 @@ function AS_Button_9292a5869b07452d9409477608e9427f(eventobject) {
     var skillsFromTextBox = mainPage.BusinessEndorsementModalContainer.SkillsTextBoxContainer.AnotherSkillInputField.text;
     var msg = mainPage.BusinessEndorsementModalContainer.MessageContaioner.EndorsingMessageTextArea.text;
     if (((skillsFromListBox == "Select") || (skillsFromListBox == "") || (skillsFromListBox == " ") || (skillsFromListBox == "null") || (skillsFromListBox == null)) && ((skillsFromTextBox == null) || (skillsFromTextBox == "null") || (skillsFromTextBox == ""))) {
-        alert("Please enter at least one skill to endorse");
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_INFO,
+            "alertTitle": "Action Required",
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please enter at least one skill to endorse",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
         return false;
     }
     // if(msg==null||msg=="null"||msg=="")
-    //   {
+    //   {  
     //        alert("Please enter message for endorsement");
     //     return false;
     //   }
@@ -1018,7 +831,7 @@ function AS_Button_957df1d174b6435aa5f1073cfa71de90(eventobject) {
 
 function AS_Button_987ed40abba641e992e5181628036c39(eventobject) {
     mainPage.BusinessRequestTaskDetailsModal.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
@@ -1034,15 +847,15 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     var startdate3 = searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.StartDateCalendarInput.formattedDate;
     var isValidEndDate = validateDate(startDate2, endDate2);
     var isValidStartEnd = validateStartDate(startdate3, endDate3);
-    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
     if (title2 === null || title2 === "" || title2 === "null") {
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
             "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter a task title",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1054,7 +867,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter task details",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1066,7 +879,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter skill required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1078,7 +891,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter hours required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1090,7 +903,7 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter message",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -1100,11 +913,12 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         if (isValidStartEnd === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
+                //D040: changed alertTitle from null to "Action Required"
                 "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please enter today/future date for this engagement",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1112,11 +926,12 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         } else if (isValidEndDate === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
+                //D040: chenged alertTitle from null to "Action Required"
                 "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "End date should be a future date",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1126,7 +941,6 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
             BusinessRequestVolunteerTasks();
         }
     }
-    //End of D005
 }
 
 function AS_Button_9a96cef61836483c96b15c263b2b639e(eventobject) {}
@@ -1216,7 +1030,7 @@ function AS_Button_aa3e3d85d1ad4363aa2228b03b71875f(eventobject) {
 
 function AS_Button_ac67f947cd2d4582b92181772cd6a40a(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_ae18dbb7220b4a80a20985154d13a7d4(eventobject) {
@@ -1262,9 +1076,9 @@ function AS_Button_bd249e35d7f5428ea07f21adbae991c8(eventobject) {
     function SHOW_ALERT_ide_onClick_ee1d1b410d53400aa6064d015ca89af0_True() {}
     VolAcceptTaskBtn.call(this);
     // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
+    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); 
     // mainPage.destroy();
-    // mainPage.show();
+    // mainPage.show(); 
 }
 
 function AS_Button_bd7db8e1514f431dacae75ed5f8ed7a3(eventobject) {
@@ -1508,12 +1322,12 @@ function AS_Button_daf0f8ba85654d20965734e04213bc0e(eventobject) {
 
 function AS_Button_db0bf370a0c3499f8dda80469463a8c7(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_dc8aa82b60d146248de333630a31e677(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_dd04d69205504c73bb854cc564373e7a(eventobject) {
@@ -1545,6 +1359,12 @@ function AS_Button_dd04d69205504c73bb854cc564373e7a(eventobject) {
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text = "";
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
     }
+}
+
+function AS_Button_dda833af81ba49f6935152f022eee9d9(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
 }
 
 function AS_Button_ddf18c07fa384a37a7de98362839b45d(eventobject) {
@@ -1635,7 +1455,7 @@ function AS_Button_ef9d782efbb843a2af32d76859191241(eventobject) {
 
 function AS_Button_eff7b023275949cbb6d6d41224dead65(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_Button_f197f02f5c294e089d477ddb4ef9a33e(eventobject) {
@@ -1711,7 +1531,20 @@ function AS_Button_f43836994bb94ce2bebfdf4b6cb90080(eventobject) {
 function AS_Button_f57470ae9f314ef4b9536d11b77f7ead(eventobject) {
     var text = mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
     if (text == "null" || text == null || text == "") {
-        alert("Input your review");
+        //alert("Input your review");
+        //D018: Commented out simple alert. Added kony ui error alert
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please input your recommendation or click cancel to return to previous screen",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
     } else {
         volSendReview();
         mainPage.sendRecommendation.isVisible = false;
@@ -1789,11 +1622,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1828,11 +1663,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1888,6 +1725,16 @@ function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     //    //   alert("he is volunteer");
     //       requestVolunteerByBusiness1();
     //     }
+}
+
+function AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
+    }
 }
 
 function AS_CheckBoxGroup_51154a24fa7345cfa76545f96566cb84(eventobject) {
@@ -1989,7 +1836,7 @@ function AS_FlexContainer_1fafa4792ceb4465aef1c5c9b74a8e2a(eventobject, x, y) {
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -2089,12 +1936,12 @@ function AS_FlexContainer_381d5a2f9497418b988169822e58e794(eventobject, x, y) {
     //       {
     //        // alert("Inside Accepted segType");
     //         callBusFromAcceptedSeg();
-    //      }
+    //      } 
     //     else if(segTypeforBusCal=="open")
     //   {
     //     //alert("Inside Open segType");
     //     callBusContactOpenSeg();
-    //        //alert("Inside Accepted segType");
+    //        //alert("Inside Accepted segType"); 
     //   }
     //      else if(segTypeforBusCal=="close")
     //   {
@@ -2139,7 +1986,7 @@ function AS_FlexContainer_3decb290eaa64329b591006933cbc4cd(eventobject, x, y) {
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -2277,12 +2124,12 @@ function AS_FlexContainer_7270f6b967f84aa99d2f3d0d30479d63(eventobject, x, y) {
     //       {
     //        // alert("Inside Accepted segType");
     //         callBusFromAcceptedSeg();
-    //      }
+    //      } 
     //     else if(segTypeforBusCal=="open")
     //   {
     //     //alert("Inside Open segType");
     //     callBusContactOpenSeg();
-    //        //alert("Inside Accepted segType");
+    //        //alert("Inside Accepted segType"); 
     //   }
     //      else if(segTypeforBusCal=="close")
     //   {
@@ -2333,12 +2180,12 @@ function AS_FlexContainer_98ad2948134c4b5bbf52dc62fa833805(eventobject) {}
 
 function AS_FlexContainer_98d3aa24541b4a29995d52d254def029(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_FlexContainer_98f74fb48fe1473cbdd90ffdd1e6534d(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_FlexContainer_99a99ac5ad5e41798db3cd0d51d72592(eventobject, x, y) {}
@@ -2355,7 +2202,7 @@ function AS_FlexContainer_a26b51c0f2e54fb9bb5a9d9ed22add4c(eventobject, x, y) {}
 
 function AS_FlexContainer_a6cbc2130b064370b0fd4ddc2b2267d1(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_FlexContainer_b30e39e791ae4bbd88105a50997e9a96(eventobject, x, y) {
@@ -2401,7 +2248,7 @@ function AS_FlexContainer_b650b086d238460b8818950d23cdc2ae(eventobject, x, y) {
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -2464,12 +2311,12 @@ function AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe(eventobject, x, y) {
 
 function AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_FlexContainer_e69e8a3c678543e089873840524029ee(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_FlexContainer_e81eff96496c4deebd60d83fd77b0128(eventobject, x, y) {
@@ -2505,7 +2352,7 @@ function AS_FlexContainer_e81eff96496c4deebd60d83fd77b0128(eventobject, x, y) {
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -2561,7 +2408,7 @@ function AS_FlexContainer_f170d61dd5724eaab0c1ba4c6839047c(eventobject, x, y) {
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -2815,7 +2662,7 @@ function AS_Form_f88bb7b8e2064c079e1772aeeafc4396(eventobject) {
 
 function AS_Form_ff88a823a12642bd9500657d6a2e0b06(eventobject) {
     var DivInfo = kony.os.deviceInfo();
-    //    //alert(DivInfo.name);
+    //    //alert(DivInfo.name); 
     if (DivInfo.name === "iPhone") {
         getPushNote();
     }
@@ -2855,7 +2702,7 @@ function AS_Image_1934850e80344832bd5ee347f826ac37(eventobject, x, y) {
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -2981,11 +2828,13 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
     if ((searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey === "Select") || (searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey === "")) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -2999,6 +2848,11 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
         return false;
     } else {
+        //D013: Add code snippet to display task details on valid selection
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.isVisible = true;
+        //D013: End of addition
         gblExistingBusTaskId = searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKeyValue;
         var id = gblExistingBusTaskId[0];
         //alert(JSON.stringify(gblExistingBusTaskId));
@@ -3046,11 +2900,13 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
         // alert("Please select a task");
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -3159,7 +3015,7 @@ function AS_RichText_0283195679b341f1a643b1f4ebfd38b7(eventobject, linktext, att
                 callContactfromStartEngagementFromAcceptedrequestSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactfromStartEngagementSentRequestSeg();
                 //}
             }
@@ -3179,7 +3035,7 @@ function AS_RichText_066f6c4a6e3245549cd0da96d121a38e(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -3220,7 +3076,7 @@ function AS_RichText_0d0180c427964d89b1e55cf0d91967ab(eventobject, linktext, att
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -3291,7 +3147,7 @@ function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -3324,7 +3180,7 @@ function AS_RichText_2789ef5f0cc540749ee37969fb746bdb(eventobject, linktext, att
                 callContactfromStartEngagementFromAcceptedrequestSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactfromStartEngagementSentRequestSeg();
                 //}
             }
@@ -3377,7 +3233,7 @@ function AS_RichText_34d79e47c53345a59de9709864f21864(eventobject, linktext, att
                 callContactfromStartEngagementFromAcceptedrequestSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactfromStartEngagementSentRequestSeg();
                 //}
             }
@@ -3433,7 +3289,7 @@ function AS_RichText_45be57ca65c1419986dd2ee513f25601(eventobject, linktext, att
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -3476,7 +3332,7 @@ function AS_RichText_4b292320515146c5a8184a2451447b77(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -3506,7 +3362,7 @@ function AS_RichText_4d3bec3407c74a89933aa244f3b9e7a7(eventobject, linktext, att
                 callContactfromStartEngagementFromAcceptedrequestSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactfromStartEngagementSentRequestSeg();
                 //}
             }
@@ -3583,7 +3439,7 @@ function AS_RichText_58801e7602f942fc97e2cf254097d926(eventobject, linktext, att
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -3601,6 +3457,10 @@ function AS_RichText_5ade2461b2cf4f26be5a058568dc9b84(eventobject, linktext, att
 function AS_RichText_5b2fab265c874cadaf62f39df2783b03(eventobject, x, y) {
     BusinessProfile.BusinessChangePasswordContainer.ChangePasswordContainer.ChangePasswordBOdyContainer.loggedInBusinessEmailId.text = kony.store.getItem("BusinessEmailId");
     BusinessProfile.BusinessChangePasswordContainer.isVisible = true;
+}
+
+function AS_RichText_5d79aec263e54db28dfdcee5b746acff(eventobject, linktext, attributes) {
+    kony.application.openURL('http://www.supplynation.org.au/contactus')
 }
 
 function AS_RichText_5fe0b013d5cd4df68b5c961f47978705(eventobject, linktext, attributes) {
@@ -3682,7 +3542,7 @@ function AS_RichText_6a82d8aa4fcc448fb084c717b0967987(eventobject, linktext, att
 
 function AS_RichText_71610d1cc94c44ebab8199fdf7ab5b2b(eventobject, linktext, attributes) {
     mainPage.acceptRequestModalContainer.isVisible = false;
-    //mainPage.show();
+    //mainPage.show(); 
 }
 
 function AS_RichText_7545c330a78641979b460c83ee3acd1e(eventobject, x, y) {}
@@ -3725,7 +3585,7 @@ function AS_RichText_7ccbb951657c4d96a2c062fde79742c4(eventobject, linktext, att
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -3773,7 +3633,7 @@ function AS_RichText_875d4a300899481f8e1876ff911875a0(eventobject, linktext, att
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -3903,7 +3763,7 @@ function AS_RichText_af52073dd3d34f32a71a2fa9d46dd502(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -3918,6 +3778,8 @@ function AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9(eventobject, x, y) {
 }
 
 function AS_RichText_b3895bce23c14431ae132346ea5b99c6(eventobject, linktext, attributes) {}
+
+function AS_RichText_b9c93e1222a5446a986df8bf26b092f7(eventobject, linktext, attributes) {}
 
 function AS_RichText_ba3a520a0bd6464caf7feb4297050d6d(eventobject, x, y) {
     return validateResendCode.call(this);
@@ -3957,7 +3819,7 @@ function AS_RichText_bce7a00902be46b99449de68522a9971(eventobject, linktext, att
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -3978,7 +3840,7 @@ function AS_RichText_c20e2b9fcce8495a8638c738fe0f95ca(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -4037,7 +3899,7 @@ function AS_RichText_c74e19ff9c3a4d69beac4cc030f93914(eventobject, linktext, att
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segType2 == "close") {
                     //Code for close task details message text
                 }
@@ -4110,7 +3972,7 @@ function AS_RichText_d0821982169a4f8f80e5abf615b8f36a(eventobject, linktext, att
                     contactVolunteerFromAcceptTaskDetailsPage();
                 } else if (segType2 == "open") {
                     callContactfromOpenTaskVolunteer();
-                    // alert("Inside Open segType");
+                    // alert("Inside Open segType"); 
                 } else if (segType2 == "close") {
                     callContactfromCloseTaskVolunteer();
                 }
@@ -4134,7 +3996,7 @@ function AS_RichText_d0ca4f5592bd46868725fe2607686ba2(eventobject, x, y) {
 function AS_RichText_d6ff08f069db47e1b086860d0827fe7b(eventobject, linktext, attributes, context) {
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "message": "Do you really want to remove the brief?",
@@ -4194,7 +4056,7 @@ function AS_RichText_dec43d3474be4b14aa1b0c87cc4a0176(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -4235,7 +4097,7 @@ function AS_RichText_e49a8fe8f615487b9dbee78c42b134a8(eventobject, linktext, att
                 callContactfromStartEngagementFromAcceptedrequestSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactfromStartEngagementSentRequestSeg();
                 //}
             }
@@ -4275,7 +4137,7 @@ function AS_RichText_e6693a60dd674a7b8d59132b242be10d(eventobject, linktext, att
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -4296,7 +4158,7 @@ function AS_RichText_ea66e5af4a8340d3b4ae4d19f6aa6f49(eventobject, linktext, att
                 callVolFromAcceptedSeg();
             } else if (seg == "sent") {
                 // {
-                //alert("Inside Accepted Seg");
+                //alert("Inside Accepted Seg"); 
                 callContactSentSeg();
                 //}
             }
@@ -4326,7 +4188,7 @@ function AS_RichText_f4afce1bcee84abaad223a921a040045(eventobject, linktext, att
         BusinessExistingTaskTaskService();
         mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text = kony.store.getItem("loginBusinessName");
         mainPage.startEngagementModalContainer.isVisible = true;
-        //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=["01","01","2016"];
+        //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=["01","01","2016"]; 
         var d = new Date();
         var day = d.getDate();
         var month = d.getMonth();
@@ -4392,7 +4254,7 @@ function AS_RichText_f78cfc83a55b4063a7a0297be47cd129(eventobject, linktext, att
                 } else if (segTypeforBusCal == "open") {
                     //alert("Inside Open segType");
                     callBusContactOpenSeg();
-                    //alert("Inside Accepted segType");
+                    //alert("Inside Accepted segType"); 
                 } else if (segTypeforBusCal == "close") {
                     callBusFromeCloseSeg();
                 }
@@ -4414,7 +4276,7 @@ function AS_RichText_fa45a6f0ef24436dbc6b83d021c77e25(eventobject, linktext, att
         BusinessExistingTaskTaskService();
         mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text = kony.store.getItem("loginBusinessName");
         mainPage.startEngagementModalContainer.isVisible = true;
-        //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=["01","01","2016"];
+        //mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=["01","01","2016"]; 
         var d = new Date();
         var day = d.getDate();
         var month = d.getMonth();
@@ -4470,10 +4332,12 @@ function AS_Segment_129e92e809394c59bd592175b01d09f1(eventobject, sectionNumber,
     removeHours.call(this, eventobject);
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Warning",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "Cancel",
-        "message": "Do you really want to remove hours",
+        "message": "Do you really want to remove hours?",
         "alertHandler": appUpgrade1
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
@@ -5000,7 +4864,24 @@ function login_signInButton_action_onTouchStart(eventobject, x, y) {
 }
 
 function AS_Button_c55a88368de54c408d5a02eef07ad463(eventobject, x, y) {
-    return loginService.call(this);
+    var userText = login.loginContainer.loginBody.usernameField.text;
+    var passText = login.loginContainer.loginBody.passwordField.text;
+    if (userText == "null" || userText == null || userText == "" || passText == "null" || passText == null || passText == "") {
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //ENd of D005
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Email ID and Password Field cannot be blank",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
+    } else {
+        loginService();
+    }
 }
 
 function mainPage_acceptTaskEngagment_action_onClick(eventobject, linktext, attributes, context) {

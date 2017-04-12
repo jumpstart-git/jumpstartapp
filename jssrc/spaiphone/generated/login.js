@@ -22,7 +22,7 @@ function addWidgetslogin() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "CopyslFbox038cb36c9175e46",
-        "top": "6dp",
+        "top": "5%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -106,7 +106,7 @@ function addWidgetslogin() {
     var loginBody = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "30%",
+        "height": "40%",
         "id": "loginBody",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
@@ -181,17 +181,33 @@ function addWidgetslogin() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    loginBody.add(usernameField, passwordField, signInButton);
+    var Button076093b19f13149 = new kony.ui.Button({
+        "centerX": "50%",
+        "focusSkin": "slButtonGlossRed",
+        "height": "45dp",
+        "id": "Button076093b19f13149",
+        "isVisible": true,
+        "skin": "ngnyBackButton",
+        "text": "Register as a volunteer",
+        "top": "6dp",
+        "width": "80%",
+        "zIndex": 2
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    loginBody.add(usernameField, passwordField, signInButton, Button076093b19f13149);
     var loginFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "20%",
+        "height": "15%",
         "id": "loginFooter",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "-1%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -199,7 +215,7 @@ function addWidgetslogin() {
     var loginRegisterLink = new kony.ui.RichText({
         "centerX": "50%",
         "id": "loginRegisterLink",
-        "isVisible": true,
+        "isVisible": false,
         "linkSkin": "CopyslRichText09c893bc72d674b",
         "onTouchStart": AS_RichText_58183f113bfb4950a774c5437a2f1324,
         "skin": "ngnyGrayLinkText",
@@ -220,7 +236,6 @@ function addWidgetslogin() {
         "onTouchStart": AS_RichText_bab7a79099ac4a409c36fc1f1e48d543,
         "skin": "ngnyGrayLinkText",
         "text": "<u>Forgot password?</u>",
-        "top": "13dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -248,6 +263,7 @@ function addWidgetslogin() {
     loginFooter.add(loginRegisterLink, forgotPasswordLink, needHelpLink);
     var loginImages = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": "0%",
         "clipBounds": true,
         "height": "10%",
         "id": "loginImages",
@@ -255,19 +271,19 @@ function addWidgetslogin() {
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "10%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     loginImages.setDefaultUnit(kony.flex.DP);
     var imgNew = new kony.ui.Image2({
+        "bottom": "0dp",
         "height": "100%",
         "id": "imgNew",
         "isVisible": true,
         "left": "0dp",
         "skin": "slImage",
         "src": "supplynationimgs_new.png",
-        "top": "0dp",
+        "top": "1dp",
         "width": "100%",
         "zIndex": 1
     }, {

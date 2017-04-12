@@ -132,7 +132,7 @@ function reportIndBusCodeDataSuccessCallback(gblreportIndBusCodeData) {
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Business hours report successfully sent to your email",
-        "alertHandler": "null"
+        "alertHandler": null
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

@@ -6,7 +6,7 @@ mobileFabricConfigurationForCreateEndorsements = {
         service: "BusinessSaveEndorsement",
         operations: ["saveEndorsement"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -133,9 +133,10 @@ function getCreateEndorsementsErrorCallback(error) {
     kony.store.removeItem("VolunteerIdForSkills");
     kony.store.removeItem("ClosedTaskId");
     kony.store.removeItem("skillsOfSelectedVolunteers");
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        "alertTitle": "Confirmation",
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Volunteer was successfully endorsed",
@@ -143,7 +144,8 @@ function getCreateEndorsementsErrorCallback(error) {
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
-    // alert("Volunteer was successfully endorsed");  
+    //D005
+    // alert("Volunteer was successfully endorsed");
     mainPage.BusinessEndorsementModalGrayContainer.isVisible = false;
     mainPage.BusinessEndorsementModalContainer.MessageContaioner.EndorsingMessageTextArea.text = "";
     mainPage.BusinessEndorsementModalContainer.SkillsTextBoxContainer.AnotherSkillInputField.text = "";

@@ -610,7 +610,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartRT140",
-        "text": "You have entered a schedule outside regular working hours.You have selected available volunteering hours that are outside regular working hours. Please confirm this information is correct to continue.",
+        "text": "You have entered a schedule that is outside of regular working hours. This will be reflected in your volunteering hours log.",
         "top": "65dp",
         "width": "90%"
     }, {

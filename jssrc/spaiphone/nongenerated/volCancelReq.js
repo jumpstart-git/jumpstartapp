@@ -124,7 +124,16 @@ function setVolCancelRequest() {
         //dataCancelVolRequest["message"]=mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;//"trial";//mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;//"salma again actual";//mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;
         var rawReqdata99 = mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
         if ((rawReqdata99 === null) || (rawReqdata99 === "null") || (rawReqdata99 === "") || (rawReqdata99 === " ")) {
-            alert("please enter the details");
+            kony.ui.Alert({
+                "alertType": constants.ALERT_TYPE_INFO,
+                "alertTitle": "Action Required",
+                "yesLabel": "OK",
+                "noLabel": "No",
+                "message": "Please enter the details",
+                "alertHandler": null
+            }, {
+                "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+            });
             kony.application.dismissLoadingScreen();
             return false;
         } else {
