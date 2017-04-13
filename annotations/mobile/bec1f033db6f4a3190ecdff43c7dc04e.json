@@ -32,9 +32,9 @@
             }
         }
     },
-    "projectGuid": "14b607d7-1b5f-463e-9e23-615cad0164de",
-    "accountGuid": "13d31bac-4815-462b-9980-53a79ed9a4b7",
-    "prototypeGuid": "K2495",
+    "projectGuid": "521186d8-2875-4f88-bdf4-fb01e5bc3ebe",
+    "accountGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",
+    "prototypeGuid": "T5XIL",
     "id": "bec1f033db6f4a3190ecdff43c7dc04e",
     "channel": "mobile",
     "createdOn": 1477902249182,
@@ -57,5 +57,5 @@
             }
         }
     },
-    "synced_on": "2017-04-11T13:31:11.484Z"
+    "synced_on": "2017-04-13T02:14:31.499Z"
 }

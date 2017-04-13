@@ -65,6 +65,7 @@
     "isvisible": true,
     "kuid": "2262054a43d24992a987d2220650ef5b",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "regScheduleHdrContainer",
     "pf": "scheduleNewForm",
     "tooltip": "",
