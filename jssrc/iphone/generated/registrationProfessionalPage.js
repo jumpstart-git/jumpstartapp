@@ -55,21 +55,21 @@ function addWidgetsregistrationProfessionalPage() {
         "id": "regCompanyInput",
         "isVisible": true,
         "masterData": [
-            ["Select", "Select from drop down menu"],
+            ["Select", "Select from drop down list"],
             ["CBA", "CBA"],
-            ["HPE", "HPE"],
+            ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
         "onSelection": AS_ListBox_94e2428d02de4f88943f8ba16108872e,
         "selectedKey": "Select",
-        "selectedKeyValue": ["Select", "Select from drop down menu"],
+        "selectedKeyValue": ["Select", "Select from drop down list"],
         "skin": "CopyslListBox0aacaabda81f94d",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,

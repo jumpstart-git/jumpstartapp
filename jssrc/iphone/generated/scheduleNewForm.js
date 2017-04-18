@@ -44,7 +44,7 @@ function addWidgetsscheduleNewForm() {
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "5%",
+        "top": "7%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -97,11 +97,11 @@ function addWidgetsscheduleNewForm() {
     }, {}, {});
     regScheduleDatesFlex.setDefaultUnit(kony.flex.DP);
     var listDays = new kony.ui.ListBox({
+        "centerX": "50%",
         "focusSkin": "jumpStartDropDown100",
         "height": "40dp",
         "id": "listDays",
         "isVisible": true,
-        "left": "20dp",
         "masterData": [
             ["MON", "MONDAY"],
             ["TUE", "TUESDAY"],
@@ -113,11 +113,11 @@ function addWidgetsscheduleNewForm() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "10dp",
-        "width": "83%",
+        "width": "80%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -150,7 +150,7 @@ function addWidgetsscheduleNewForm() {
         "height": "40dp",
         "id": "listFromTime",
         "isVisible": true,
-        "left": "20dp",
+        "left": "10%",
         "masterData": [
             ["1:00", "1:00"],
             ["1:30", "1:30"],
@@ -179,11 +179,11 @@ function addWidgetsscheduleNewForm() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "29%",
-        "width": "40%",
+        "width": "37.50%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -198,7 +198,7 @@ function addWidgetsscheduleNewForm() {
         "focusSkin": "jumpStartDropDown100",
         "id": "listToTime",
         "isVisible": true,
-        "left": "20dp",
+        "left": "10%",
         "masterData": [
             ["1:00", "1:00"],
             ["1:30", "1:30"],
@@ -227,11 +227,11 @@ function addWidgetsscheduleNewForm() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "57%",
-        "width": "40%",
+        "width": "37.50%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -247,18 +247,18 @@ function addWidgetsscheduleNewForm() {
         "height": "40dp",
         "id": "listFromTimeMerdidian",
         "isVisible": true,
-        "left": "48%",
         "masterData": [
             ["AM", "AM"],
             ["PM", "PM"]
         ],
+        "right": "10%",
         "skin": "jumpStartDropDown100",
         "top": "29%",
-        "width": "40%",
+        "width": "37.50%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -273,18 +273,18 @@ function addWidgetsscheduleNewForm() {
         "focusSkin": "jumpStartDropDown100",
         "id": "listToTimeMeridian",
         "isVisible": true,
-        "left": "48%",
         "masterData": [
             ["AM", "AM"],
             ["PM", "PM"]
         ],
+        "right": "10%",
         "skin": "jumpStartDropDown100",
         "top": "57%",
-        "width": "40%",
+        "width": "37.50%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [2, 0, 0, 0],
+        "padding": [2, 0, 1, 0],
         "paddingInPixel": false
     }, {
         "groupCells": false,
@@ -313,7 +313,7 @@ function addWidgetsscheduleNewForm() {
         "wrapping": constants.WIDGET_TEXT_WORD_WRAP
     });
     var AddBtn = new kony.ui.Button({
-        "centerX": "47.29%",
+        "centerX": "50%",
         "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "AddBtn",
@@ -323,7 +323,7 @@ function addWidgetsscheduleNewForm() {
         "skin": "ngnyPrimaryGreenButton",
         "text": "+ Add Schedule",
         "top": "75%",
-        "width": "84%",
+        "width": "80%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -510,7 +510,6 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "101dp",
         "onClick": AS_RichText_1a485b46074042bbab4157e2ca51218c,
-        "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
         "skin": "CopyslRichText08d925a35bfe342",
         "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "top": "30dp",
@@ -610,7 +609,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartRT140",
-        "text": "You have entered a schedule outside regular working hours.You have selected available volunteering hours that are outside regular working hours. Please confirm this information is correct to continue.",
+        "text": "You have entered a schedule that is outside of regular working hours. This will be reflected in your volunteering hours log.",
         "top": "65dp",
         "width": "90%"
     }, {

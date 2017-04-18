@@ -2659,7 +2659,7 @@ function addWidgetsmainPage() {
         "height": "55%",
         "id": "checkList",
         "isVisible": true,
-        "left": "35dp",
+        "left": "5%",
         "masterData": [
             ["cbg1", "."]
         ],
@@ -2668,7 +2668,7 @@ function addWidgetsmainPage() {
         "minHeight": "40%",
         "minWidth": "35%",
         "onSelection": AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518,
-        "right": "2dp",
+        "right": 0,
         "skin": "CopyslCheckBoxGroup0306443d20b8149",
         "top": "0%",
         "zIndex": 2

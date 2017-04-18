@@ -81,7 +81,7 @@ function addWidgetsresetPasswordForm() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel040102c3d3b924d",
-        "text": "Back to login",
+        "text": "Back to Login",
         "top": "0dp",
         "width": "100%",
         "zIndex": 1

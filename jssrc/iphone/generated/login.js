@@ -199,6 +199,7 @@ function addWidgetslogin() {
         "height": "45dp",
         "id": "Button076093b19f13149",
         "isVisible": true,
+        "onClick": AS_Button_0f59a0f92f724438b5ea9a1898bd513d,
         "skin": "ngnyBackButton",
         "text": "Register as a volunteer",
         "top": "6dp",
@@ -222,6 +223,7 @@ function addWidgetslogin() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
+        "top": 0,
         "width": "100%",
         "zIndex": 1
     }, {}, {});

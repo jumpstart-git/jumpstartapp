@@ -17,15 +17,18 @@ var CONTACT_REQUEST = "<a href='#' style='color: #37b3b1'>Contact</a>";
 var HAS_SENT_REQUEST = "Has sent you a request";
 var DECLINE_REQUEST = "<a href='#' style='color: #37b3b1'>Decline<br>request</a>";
 var ACCEPT_REQUEST = "<a href='#' style='color: #37b3b1'>Accept<br>request</a>";
-var VIEW_REQUEST = "<a href='#' style='color: #37b3b1'>View<br>request</a>"; 
+var VIEW_REQUEST = "<a href='#' style='color: #37b3b1'>View<br>request</a>";
 
 var START_ENGAGEMENT = "<a href='#' style='color: #37b3b1'>Start<br>Engagement</a>";
 //mamata
 var MARK_AS_COMPLETE="<a href='#' style='color: #37b3b1'>Mark as complete</a>";
 var SEND_RECOMMENDATION="<a href='#' style='color: #37b3b1'>Send_Recommendation</a>";
 var Refresh_results="<a href='#' style='color: #37b3b1'>Refresh results</a>";
-var EDIT="<a href='#' style='color: #37b3b1'><u>edit</u></a>";
-var CLOSE="<a href='#' style='color: #37b3b1'><u>close</u></a>";
+//Start of defect D029
+//Capitalized the words 'edit' and 'close'.
+var EDIT="<a href='#' style='color: #37b3b1'><u>Edit</u></a>";
+var CLOSE="<a href='#' style='color: #37b3b1'><u>Close</u></a>";
+//End of defect D029
 var ENDORESE_VOLUNTEER="<a href='#' style='color: #37b3b1'><u>Endorse_volunteer</u></a>";
 // TEST DATA:
 
@@ -47,8 +50,8 @@ var loggedInUserInfo = {
 
 // My Activities - Open Tasks
 var myOpenTasksData = [
-  { openTaskPersonIconBg: PERSONICONBG, 
-   openTaskPersonProfilePic: "personicon.png", 
+  { openTaskPersonIconBg: PERSONICONBG,
+   openTaskPersonProfilePic: "personicon.png",
    openTaskName: 'Contract Consultation',
    openTaskBusiness: 'Indigenous Business A',
    openTaskExpandThis: EXPANDICONIMG,
@@ -56,8 +59,8 @@ var myOpenTasksData = [
    markAsCompleteText: MARKASCOMPLETETEXT,
    sendReportImage: SENDREPORTICON,
    sendReportText: SENDREPORTTEXT
-  }, { openTaskPersonIconBg: PERSONICONBG, 
-   openTaskPersonProfilePic: "personicon.png", 
+  }, { openTaskPersonIconBg: PERSONICONBG,
+   openTaskPersonProfilePic: "personicon.png",
    openTaskName: 'Supplies Management',
    openTaskBusiness: 'Indigenous Business B',
    openTaskExpandThis: EXPANDICONIMG,
@@ -71,8 +74,8 @@ var myOpenTasksData = [
 
 // My Activities - Closed Tasks
 var myClosedTasksData = [
-  { closedTaskPersonIconBg: PERSONICONBG, 
-   closedTaskPersonProfilePic: "personicon.png", 
+  { closedTaskPersonIconBg: PERSONICONBG,
+   closedTaskPersonProfilePic: "personicon.png",
    closedTaskName: 'Marketing',
    closedTaskBusiness: 'Indigenous Business C',
    closedTaskExpandThis: EXPANDICONIMG,
@@ -80,8 +83,8 @@ var myClosedTasksData = [
    markAsCompleteText: MARKASCOMPLETETEXT,
    sendReportImage: SENDREPORTICON,
    sendReportText: SENDREPORTTEXT
-  }, { closedTaskPersonIconBg: PERSONICONBG, 
-   closedTaskPersonProfilePic: "personicon.png", 
+  }, { closedTaskPersonIconBg: PERSONICONBG,
+   closedTaskPersonProfilePic: "personicon.png",
    closedTaskName: 'Research',
    closedTaskBusiness: 'Indigenous Business D',
    closedTaskExpandThis: EXPANDICONIMG,
@@ -89,8 +92,8 @@ var myClosedTasksData = [
    markAsCompleteText: MARKASCOMPLETETEXT,
    sendReportImage: SENDREPORTICON,
    sendReportText: SENDREPORTTEXT
-  }, { closedTaskPersonIconBg: PERSONICONBG, 
-   closedTaskPersonProfilePic: "personicon.png", 
+  }, { closedTaskPersonIconBg: PERSONICONBG,
+   closedTaskPersonProfilePic: "personicon.png",
    closedTaskName: 'Programming',
    closedTaskBusiness: 'Indigenous Business E',
    closedTaskExpandThis: EXPANDICONIMG,
@@ -148,8 +151,8 @@ var businessSentRequests = [
 ];
 
 var businessOpenTasksData = [
-  { openTaskPersonIconBg: PERSONICONBG, 
-   openTaskPersonProfilePic: "personicon.png", 
+  { openTaskPersonIconBg: PERSONICONBG,
+   openTaskPersonProfilePic: "personicon.png",
    openTaskName: 'Contract Consultation',
    openTaskBusiness: 'Amanda Wall',
    openTaskExpandThis: EXPANDICONIMG,
@@ -162,8 +165,8 @@ var businessOpenTasksData = [
 ];
 
 var businessClosedTasksData = [
-  { closedTaskPersonIconBg: PERSONICONBG, 
-   closedTaskPersonProfilePic: "personicon.png", 
+  { closedTaskPersonIconBg: PERSONICONBG,
+   closedTaskPersonProfilePic: "personicon.png",
    closedTaskName: 'R&D',
    closedTaskBusiness: 'Anthony Stark',
    closedTaskExpandThis: EXPANDICONIMG,

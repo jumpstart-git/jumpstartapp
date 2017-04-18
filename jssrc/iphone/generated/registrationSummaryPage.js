@@ -464,7 +464,6 @@ function addWidgetsregistrationSummaryPage() {
         "isVisible": true,
         "left": "101dp",
         "onClick": AS_RichText_8725e935980241a59eec2dd1cde0d619,
-        "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
         "skin": "CopyslRichText08d925a35bfe342",
         "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
         "top": "30dp",

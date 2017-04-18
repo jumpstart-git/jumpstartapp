@@ -2298,6 +2298,7 @@ function addWidgetssearchResultProfile() {
     opprtunitiesReadOnlyContainer.setDefaultUnit(kony.flex.DP);
     var oppurtunityDetailsHdrModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
         "clipBounds": true,
         "height": "15%",
         "id": "oppurtunityDetailsHdrModal",
