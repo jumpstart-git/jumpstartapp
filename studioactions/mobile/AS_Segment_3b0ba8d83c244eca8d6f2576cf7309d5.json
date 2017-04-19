@@ -1,0 +1,29 @@
+{
+    "AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5": {
+        "id": "AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onRowClick_dd2e92ef05c24251bc1137a08a3d5e02",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "removeSchedule",
+            "display": "removeSchedule",
+            "inputparams": [{
+                "name": "rowObject",
+                "value": " eventobject"
+            }],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

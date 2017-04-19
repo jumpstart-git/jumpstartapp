@@ -1,0 +1,20 @@
+{
+    "AS_Button_edf83feaa9fe47a7855ed1f1a459a40f": {
+        "id": "AS_Button_edf83feaa9fe47a7855ed1f1a459a40f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_c1d23f63fda045c2b86cf8c10eaaa20c",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "addSchedule",
+            "display": "addSchedule",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

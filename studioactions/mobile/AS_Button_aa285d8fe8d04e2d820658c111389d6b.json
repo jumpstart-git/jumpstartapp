@@ -1,0 +1,20 @@
+{
+    "AS_Button_aa285d8fe8d04e2d820658c111389d6b": {
+        "id": "AS_Button_aa285d8fe8d04e2d820658c111389d6b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_b4d687721b364cdf93414cae6a70575a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getScheduleFormat",
+            "display": "getScheduleFormat",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}
