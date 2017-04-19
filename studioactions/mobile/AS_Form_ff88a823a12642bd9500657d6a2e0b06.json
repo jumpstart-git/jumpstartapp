@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__87ba43a87ae74195bb70dde99bc308e9",
             "type": "ADD_SNIPPET",
-            "codeSnippet": " var DivInfo=kony.os.deviceInfo();\n//    //alert(DivInfo.name); \nif(DivInfo.name===\"iPhone\")\n{\n     getPushNote();\n     \n   \n   }",
+            "codeSnippet": " var DivInfo=kony.os.deviceInfo();\nlogin.statusBarForegroundColor=\"ffffff\";\n//    //alert(DivInfo.name); \nif(DivInfo.name===\"iPhone\")\n{\n     getPushNote();\n     \n   \n   }",
             "parentId": null,
             "callbackType": null
         }]
