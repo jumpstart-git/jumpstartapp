@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "35dp"
+        "value": "40dp"
     },
     "_wrapping_": 2,
     "canUpdateUI": true,
