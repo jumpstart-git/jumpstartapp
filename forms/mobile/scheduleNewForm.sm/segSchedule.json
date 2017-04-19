@@ -38,11 +38,11 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "1%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "autogrowmode": 1,
     "canUpdateUI": true,
@@ -54,7 +54,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "segSchedule",
-    "ide_onRowClick": "AS_Segment_44ab36382c5144c0a002fbe8531a8626",
+    "ide_onRowClick": "AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5",
     "info": null,
     "ipad": {
         "psp": {
@@ -69,6 +69,10 @@
     "isvisible": true,
     "kuid": "2052a46db6314401b0580a69042cd944",
     "masterdata": {},
+    "minheight": {
+        "type": "string",
+        "value": "5%"
+    },
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
     "pageoffdotimage": "pageoffdot.png",
@@ -76,7 +80,7 @@
     "paginationconfig": {
         "position": "bottom"
     },
-    "parent": "regScheduleScrollContainer",
+    "parent": "scheduleNewFormContainer",
     "pf": "scheduleNewForm",
     "retainselection": false,
     "rowTemplateId": "9896a57a53d34bb3a4d2138f378baf9c",

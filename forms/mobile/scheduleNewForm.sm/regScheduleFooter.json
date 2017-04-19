@@ -6,8 +6,8 @@
         "value": "8%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "type": "number",
+        "value": "0"
     },
     "_margin_": [
         0,
@@ -25,8 +25,8 @@
     "_percent_": true,
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
-        "type": "string",
-        "value": "92%"
+        "type": "number",
+        "value": "0"
     },
     "_width_": {
         "type": "string",
@@ -48,7 +48,7 @@
     "kuid": "65c87d4a8e3e454b91cfe9797caa07fe",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "scheduleNewForm",
+    "parent": "scheduleNewFormContainer",
     "pf": "scheduleNewForm",
     "snapgridsize": 10,
     "snaptogrid": true,

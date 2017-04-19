@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "saab8ca76b7940f8a6a837ee6fc75a6c",
     "_top_": {
         "type": "string",
-        "value": "57%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -35,31 +35,38 @@
     "allboxes": [],
     "allowhorizontalbounce": false,
     "allowverticalbounce": true,
-    "bounces": true,
+    "bounces": false,
+    "bouncesZoom": false,
     "canUpdateUI": true,
-    "children": [
-        "segSchedule"
-    ],
+    "children": [],
     "clipbounds": true,
     "containerweight": 100,
     "decelerat": false,
     "dragg": false,
-    "enablescrolling": true,
+    "enablescrolling": false,
     "horizontalscrollindicator": true,
     "id": "regScheduleScrollContainer",
     "info": null,
+    "iphone": {
+        "psp": {
+            "bouncesZoom": false
+        }
+    },
     "isvisible": true,
     "kuid": "e1cdbdaa7d8e498abd99d52ac217f55e",
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
-    "parent": "scheduleNewForm",
+    "parent": "scheduleNewFormContainer",
     "pf": "scheduleNewForm",
     "scrolldirection": 2,
     "snapgridsize": 10,
-    "snaptogrid": true,
+    "snaptogrid": false,
     "track": false,
     "verticalscrollindicator": true,
+    "vizProps": {
+        "hide": true
+    },
     "wType": "FlexScrollContainer",
     "widgetalignment": 1,
     "zindex": 1
