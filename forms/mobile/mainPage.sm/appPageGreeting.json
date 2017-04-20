@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "23dp"
     },
     "_margin_": [
         1,
@@ -55,9 +55,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "c13fa34a0d784cabb3a59752a49d8c90",
+    "kuid": "b8335c9d074c4c37827951ef3fbb99d2",
     "name": "kony.ui.Label",
-    "parent": "appHeaderTitleContainer",
+    "parent": "ProfileSidebar",
     "pf": "mainPage",
     "tooltip": "",
     "wType": "Label"

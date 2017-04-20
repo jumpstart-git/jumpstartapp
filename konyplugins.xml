@@ -14,17 +14,13 @@
     <pluginInfo version-no="7.2.1.GA_v201612131930" plugin-id="com.kony.fpreview" plugin-name="Kony Functional Preview Plugin"/>
     <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.api" plugin-name="StudioViz API"/>
     <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.chrome.api" plugin-name="StudioViz Chrome API"/>
-    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.chrome.win64" plugin-name="StudioViz Chrome"/>
-    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.core.win64" plugin-name="StudioViz Core"/>
-    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.nodejs.win64" plugin-name="StudioViz NodeJS"/>
+    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.chrome.mac64" plugin-name="StudioViz Chrome"/>
+    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.core.mac64" plugin-name="StudioViz Core"/>
+    <pluginInfo version-no="7.2.1.GA_v201612140112" plugin-id="com.kony.studio.viz.nodejs.mac64" plugin-name="StudioViz NodeJS"/>
     <pluginInfo version-no="7.2.1.GA_v201612132322" plugin-id="com.kony.reference.architecture" plugin-name="Reference Architecture"/>
     <pluginInfo version-no="7.2.1.GA_v201612131901" plugin-id="com.pat.tabrcandroid" plugin-name="Tablet Android"/>
     <pluginInfo version-no="7.2.1.GA_v201612131911" plugin-id="com.kony.bb10" plugin-name="Kony Blackberry 10"/>
-    <pluginInfo version-no="7.2.1.GA_v201612132137" plugin-id="com.kony.windowsphone8" plugin-name="Windows Phone 8 Plug-in"/>
-    <pluginInfo version-no="7.2.1.GA_v201612132051" plugin-id="com.kony.windows8" plugin-name="Windows 8.1 Plug-in"/>
-    <pluginInfo version-no="7.2.1.GA_v201612132156" plugin-id="com.kony.windows10" plugin-name="Windows 10 Plug-in"/>
     <pluginInfo version-no="7.2.1.GA_v201612131901" plugin-id="com.pat.android" plugin-name="Android"/>
-    <pluginInfo version-no="7.2.1.GA_v201612132125" plugin-id="com.kony.windows" plugin-name="Windows Desktop Plug-in"/>
     <pluginInfo version-no="7.2.1.GA_v201612131850" plugin-id="com.kony.spa" plugin-name="SPA"/>
     <pluginInfo version-no="7.2.1.GA_v201612131919" plugin-id="com.kony.desktopweb" plugin-name="Kony Desktop Web"/>
     <pluginInfo version-no="7.2.1.GA_v201612132050" plugin-id="com.kony.webcommons" plugin-name="Kony Web Commons"/>

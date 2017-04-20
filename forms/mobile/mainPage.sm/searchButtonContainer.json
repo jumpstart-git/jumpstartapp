@@ -5,10 +5,6 @@
         "type": "string",
         "value": "99.51%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "14dp"
-    },
     "_margin_": [
         0,
         0,
@@ -23,6 +19,10 @@
         0
     ],
     "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "15.07%"
+        "value": "88%"
     },
     "allboxes": [],
     "autogrowmode": 0,

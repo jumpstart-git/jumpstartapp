@@ -23,7 +23,7 @@
     "_src_": "jumpstartlogonotext.png",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a6d1231060ab43b2bd8f395a7058485e",
     "name": "kony.ui.Image2",
     "parent": "sideBarHeader",

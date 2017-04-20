@@ -1,0 +1,39 @@
+{
+    "AS_RichText_0d038155c1474567aaca15e97228611d": {
+        "id": "AS_RichText_0d038155c1474567aaca15e97228611d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_0c498c180e544f4ba6802371ad42b9d0",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navigateToMyProfile",
+            "display": "navigateToMyProfile",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_de2e09a616904c29b5a369f9975f3f72",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "navToProfilePage",
+            "display": "navToProfilePage",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": true
+        }, {
+            "id": "ADD_SNIPPET_ide_onTouchStart_13e529ef9bfe481891fed4bf930906b7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//alert(\"show profile\");\n//volunteerMyProfilePage.show();\n//mainPage.sideBarMenuContainer.isVisible=false;\n if(kony.store.getItem(\"isBusOrVol\")=== \"business\")\n   {     \n//      businessMyProfile.businessMyProfileFooter.isVisible=false;\n//      businessMyProfile.BusinessProfilefooterWith2Buttons.isVisible=true;\n     //businessMyProfile.show();\n     BusinessProfile.show();\n     searchResultProfile.volunteerProfileContainer.isVisible=false;\n     searchResultProfile.businessProfileContainer.isVisible=true;\n     \n     \n   // alert(\"BusinessProfile\");\n    }\nelse  {\n    volunteerMyProfilePage.show();\n  //volunteerMyProfilePage.volunteerMyProfileFooter.isVisible=false;\n  volunteerMyProfilePage.volunteerMyProfileFooter2Buttons.isVisible=true;\n  mainPage.destroy();\n  //alert(\"volunteerprofile\");\n  }\n \n  \n \n",
+            "callbackType": null
+        }]
+    }
+}

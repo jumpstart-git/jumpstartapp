@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__cf7eba0cb45f433798902dcd0a06c8c1",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "login.validateCodeContainer.isVisible=false;\n//D045 Add code to hide modular background\nlogin.validateCodeContainerModular.isVisible=false;\nlogin.validateCodeText.text=\"\";\n",
+            "codeSnippet": "login.validateCodeContainer.isVisible=false;\nlogin.validateCodeText.text=\"\";\n",
             "parentId": null,
             "callbackType": null
         }]
