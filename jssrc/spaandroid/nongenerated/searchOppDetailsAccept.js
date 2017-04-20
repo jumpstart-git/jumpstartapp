@@ -6,7 +6,7 @@ mobileFabricConfigurationForRequestVolunteerSearchOpp = {
         service: "RequestToVolunteerOpp",
         operations: ["requestToVolOpp"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -118,7 +118,7 @@ function setRequestToVolunteerTasksOpp() {
         var headers = {};
         /*
         {
-           
+
         "title":"Testing New Task",
         "details":"Testing New Task",
         "startDate":"2017-01-06",
@@ -192,11 +192,13 @@ function getRequestVolunteerTasksOppErrorCallback(error) {
     kony.application.dismissLoadingScreen();
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Confirmation",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Request has been sent successfully",
-        "alertHandler": "null"
+        "alertHandler": null
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });
@@ -208,7 +210,7 @@ function getRequestVolunteerTasksOppErrorCallback(error) {
     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.skillsTxtLbl.text = "";
     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.hoursFlex.hoursTxtLbl.text = "";
     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
-    // searchResultProfile.show(); 
+    // searchResultProfile.show();
     searchResultProfile.opprtunitiesReadOnlyContainer.isVisible = false;
     //searchResultProfile.destroy();
     searchPage.show();

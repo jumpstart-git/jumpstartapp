@@ -1,4 +1,196 @@
 //actions.js file 
+function AcceptedRequest_SentSegmentCallContainer(eventobject, x, y) {
+    return AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y);
+}
+
+function AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y) {
+    if (kony.store.getItem("isBusOrVol") == "business") {
+        var segTypeCheckforVolCall = kony.store.getItem("segmentType");
+        // alert(segType1);
+        try {
+            if (segTypeCheckforVolCall != "null" || segTypeCheckforVolCall != null) {
+                if (segTypeCheckforVolCall == "sent") {
+                    //alert("Isinde open seg " + segType1);
+                    callContactSentSeg();
+                }
+            }
+        } catch (e) {
+            //alert(e);
+        }
+    } else {
+        var segTypeforBusCal = kony.store.getItem("segmentType");
+        //alert("the clicked segTypement is ="+segTypeforBusCal);
+        try {
+            if (segTypeforBusCal != "null" || segTypeforBusCal != null) {
+                //     //alert("Inside Accepted segType after first segType");
+                if (segTypeforBusCal == "accepted") {
+                    // alert("Inside Accepted segType");
+                    callBusFromAcceptedSeg();
+                }
+            }
+        } catch (e) {
+            alert("aError is" + e);
+        }
+    }
+}
+
+function activity_acceptRequestCancel_onTouchStart(eventobject, x, y) {
+    return AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y);
+}
+
+function AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y) {
+    mainPage.acceptRequestModalContainer.isVisible = false;
+    mainPage.show();
+}
+
+function activity_acceptTaskButton_onClick(eventobject) {
+    return AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject);
+}
+
+function AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject) {
+    function SHOW_ALERT__3a08468624404da9b9a6790b3c565778_True() {}
+    VolAcceptTaskBtn.call(this);
+    // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
+    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
+    // mainPage.destroy();
+    // mainPage.show();
+}
+
+function activity_acceptTaskDetailsPreviousParent_onClick(eventobject) {
+    return AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject);
+}
+
+function AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject) {
+    mainPage.acceptTaskDetailsModalContainer.isVisible = false;
+    //mainPage.show();
+}
+
+function activity_acceptTaskSkillsPreviousParent_onClick(eventobject) {
+    return AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject);
+}
+
+function AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject) {
+    return fadeOutThisModal.call(this, mainPage.acceptTaskSkillsModalContainer);
+}
+
+function activity_agreeToTaskButton_onClick(eventobject) {
+    return AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject);
+}
+
+function AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject) {}
+
+function activity_cancelEngagement_onClick(eventobject) {
+    return AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject);
+}
+
+function AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject) {
+    mainPage.startEngagementModalContainer.isVisible = false;
+    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text = "";
+    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text = "";
+    //mainPage.show();
+}
+
+function activity_cancelRequest_onClick(eventobject, linktext, attributes) {
+    return AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes);
+}
+
+function AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes) {
+    saveReqForCancel.call(this);
+    saveCancelVolReqId.call(this);
+}
+
+function activity_declineRequestNo_onClick(eventobject, linktext, attributes) {
+    return AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes);
+}
+
+function AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes) {}
+
+function activity_declineRequest_onClick() {
+    return AS_RichText_6ba9770d62c743cdab62cff095284540();
+}
+
+function AS_RichText_6ba9770d62c743cdab62cff095284540() {
+    mainPage.declineRequestModalContainer.isVisible = true;
+    saveReqForBusDecline.call(this);
+}
+
+function activity_requestTask_onClick(eventobject, linktext, attributes, context) {
+    return AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context);
+}
+
+function AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context) {
+    if (kony.store.getItem("isBusOrVol") == "business") {
+        getBusinessReqTaskDetailsService();
+        // getBusinessReqTaskDetailsService();
+        //     BusinessExistingTaskTaskService ();
+        //     mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem("loginBusinessName");
+        //     mainPage.startEngagementModalContainer.isVisible=true;
+        //     //start merin
+        //     var d= new Date();
+        //     var day=d.getDate();
+        //     var month=d.getMonth();
+        //     month=month+1;
+        //     var year=d.getFullYear();
+        //     var todayDate=day+"/"+month+"/"+year;
+        //     kony.store.setItem("todayDate", todayDate);
+        //     //end merin
+        //     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year];
+        //     mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];
+        var seg1 = mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;
+        var segment1 = seg1[0].segType;
+        kony.store.setItem("segmentType", segment1);
+    } else {
+        mainPage.acceptRequestModalContainer.isVisible = true;
+    }
+    saveReqForBusStartEngaeSent.call(this);
+    saveReqId.call(this);
+    if (kony.store.getItem("isBusOrVol") == "business") {
+        saveBusIdForVolViewProfileSentSeg();
+    }
+}
+
+function activity_startEngagementPreviousParent_onClick(eventobject) {
+    return AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject);
+}
+
+function AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject) {
+    return closeModal.call(this);
+}
+
+function activity_startEngagement_onClick(eventobject) {
+    return AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject);
+}
+
+function AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject) {
+    function SHOW_ALERT__fb69992dd17440ddbecebec1fc81e811_True() {} //indeginousTaskDetails();
+    var title = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text;
+    var details = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text;
+    var endDate = mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.formattedDate;
+    var startDate = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
+    var hours = mainPage.startEngagementModalContainer.startEngagementModalBody.duratationOfEngagementInput.text;
+    var endDate1 = kony.store.getItem("todayDate"); //   give todays's date'
+    var startdate1 = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
+    var isValidEndDate = validateDate(startDate, endDate);
+    var isValidStartEnd = validateStartDate(startdate1, endDate1);
+    if (title === null || title === "" || title === "null") {
+        alert("Please enter a task title");
+    } else if (details === null || details === "" || details === "null") {
+        alert("Please enter task details");
+    } else if (hours == null || hours == "null" || hours == "") {
+        alert("Please enter hours required to complete the task");
+    } else {
+        //alert("isValidStartEnd"+isValidStartEnd);
+        if (isValidStartEnd === false) {
+            validationAlert("Start Date should be greater than or equal to today's date");
+        } else if (isValidEndDate === false) {
+            validationAlert("End Date should be greater than or equal to start date");
+        } else {
+            //alert("done");
+            indeginousTaskDetails();
+        }
+    }
+}
+
 function AS_Button_04cfbb34142c469d81d8ca8d5bc65e0d(eventobject) {}
 
 function AS_Button_06308078c9ae4d1dab30aae8e5b60b81(eventobject) {
@@ -3159,6 +3351,10 @@ function AS_RichText_1d4b3b783ae1422280096ad628d8e9a8(eventobject, linktext, att
 
 function AS_RichText_1dcce3224b9744dcb1bb9c618f17f1ea(eventobject, linktext, attributes) {}
 
+function AS_FlexContainer_258953e6a1604973803206e010c14bc8(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
+
 function AS_RichText_25939b8e86014441b5a47e1b246b12e6(eventobject, linktext, attributes) {
     function SHOW_ALERT_ide_onClick_2dd5cb226a764f779f6f03045bd5bb9c_True() {}
     kony.application.openURL('http://www.supplynation.org.au/contactus')
@@ -4615,206 +4811,6 @@ function AS_TitleBar_ae8b7e317f31435fbec5933e1fe84b39(eventobject) {
     gblFirstTime = false;
 }
 
-function AcceptedRequest_SentSegmentCallContainer(eventobject, x, y) {
-    return AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y);
-}
-
-function AS_FlexContainer_a98dd2502cf84883a678f6e9d321c3e5(eventobject, x, y) {
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        var segTypeCheckforVolCall = kony.store.getItem("segmentType");
-        // alert(segType1);
-        try {
-            if (segTypeCheckforVolCall != "null" || segTypeCheckforVolCall != null) {
-                if (segTypeCheckforVolCall == "sent") {
-                    //alert("Isinde open seg " + segType1);
-                    callContactSentSeg();
-                }
-            }
-        } catch (e) {
-            //alert(e);
-        }
-    } else {
-        var segTypeforBusCal = kony.store.getItem("segmentType");
-        //alert("the clicked segTypement is ="+segTypeforBusCal);
-        try {
-            if (segTypeforBusCal != "null" || segTypeforBusCal != null) {
-                //     //alert("Inside Accepted segType after first segType");
-                if (segTypeforBusCal == "accepted") {
-                    // alert("Inside Accepted segType");
-                    callBusFromAcceptedSeg();
-                }
-            }
-        } catch (e) {
-            alert("aError is" + e);
-        }
-    }
-}
-
-function BusinessProfileContinueButton_OnClick(eventobject) {
-    return AS_Button_78e83321b8d049d8881d7b082294720b(eventobject);
-}
-
-function AS_Button_78e83321b8d049d8881d7b082294720b(eventobject) {
-    mainPage.show();
-}
-
-function activity_acceptRequestCancel_onTouchStart(eventobject, x, y) {
-    return AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y);
-}
-
-function AS_RichText_dc484199ad004556881eb9bf4a117c0f(eventobject, x, y) {
-    mainPage.acceptRequestModalContainer.isVisible = false;
-    mainPage.show();
-}
-
-function activity_acceptTaskButton_onClick(eventobject) {
-    return AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject);
-}
-
-function AS_Button_e04575295a194fac83b2a430a78f83ad(eventobject) {
-    function SHOW_ALERT__3a08468624404da9b9a6790b3c565778_True() {}
-    VolAcceptTaskBtn.call(this);
-    // mainPage.acceptTaskDetailsModalContainer.isVisible=false;
-    // mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll(); 
-    // mainPage.destroy();
-    // mainPage.show(); 
-}
-
-function activity_acceptTaskDetailsPreviousParent_onClick(eventobject) {
-    return AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject);
-}
-
-function AS_FlexContainer_a9b7c2a1e29842379edf92fc604340b9(eventobject) {
-    mainPage.acceptTaskDetailsModalContainer.isVisible = false;
-    //mainPage.show(); 
-}
-
-function activity_acceptTaskSkillsPreviousParent_onClick(eventobject) {
-    return AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject);
-}
-
-function AS_Button_b3b28f3c172144378c1c9e4a9d8b4738(eventobject) {
-    return fadeOutThisModal.call(this, mainPage.acceptTaskSkillsModalContainer);
-}
-
-function activity_agreeToTaskButton_onClick(eventobject) {
-    return AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject);
-}
-
-function AS_Button_76f1a39663974d7bae74ccbc28d3c429(eventobject) {}
-
-function activity_cancelEngagement_onClick(eventobject) {
-    return AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject);
-}
-
-function AS_Button_6c414d0da69e45eb9e18a50ec0d9274d(eventobject) {
-    mainPage.startEngagementModalContainer.isVisible = false;
-    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text = "";
-    mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text = "";
-    //mainPage.show();
-}
-
-function activity_cancelRequest_onClick(eventobject, linktext, attributes) {
-    return AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes);
-}
-
-function AS_RichText_a8fe80bfbf2e418ca8cfeea30b981e7f(eventobject, linktext, attributes) {
-    saveReqForCancel.call(this);
-    saveCancelVolReqId.call(this);
-}
-
-function activity_declineRequestNo_onClick(eventobject, linktext, attributes) {
-    return AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes);
-}
-
-function AS_RichText_135583c3a6e44cdb9f1f24b2fbc9aaca(eventobject, linktext, attributes) {}
-
-function activity_declineRequest_onClick() {
-    return AS_RichText_6ba9770d62c743cdab62cff095284540();
-}
-
-function AS_RichText_6ba9770d62c743cdab62cff095284540() {
-    mainPage.declineRequestModalContainer.isVisible = true;
-    saveReqForBusDecline.call(this);
-}
-
-function activity_requestTask_onClick(eventobject, linktext, attributes, context) {
-    return AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context);
-}
-
-function AS_RichText_85d484007c2e4304a6d3b7ae6c841d8b(eventobject, linktext, attributes, context) {
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        getBusinessReqTaskDetailsService();
-        // getBusinessReqTaskDetailsService();
-        //     BusinessExistingTaskTaskService ();
-        //     mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderDetails.startEngagmentHeaderDetailsParent.lblStartEngagementBusinessName.text=kony.store.getItem("loginBusinessName");
-        //     mainPage.startEngagementModalContainer.isVisible=true;
-        //     //start merin
-        //     var d= new Date();
-        //     var day=d.getDate();
-        //     var month=d.getMonth();
-        //     month=month+1;
-        //     var year=d.getFullYear();
-        //     var todayDate=day+"/"+month+"/"+year;
-        //     kony.store.setItem("todayDate", todayDate);
-        //     //end merin
-        //     mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.dateComponents=[day,month,year]; 
-        //     mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.dateComponents=[day,month,year];
-        var seg1 = mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.selectedRowItems;
-        var segment1 = seg1[0].segType;
-        kony.store.setItem("segmentType", segment1);
-    } else {
-        mainPage.acceptRequestModalContainer.isVisible = true;
-    }
-    saveReqForBusStartEngaeSent.call(this);
-    saveReqId.call(this);
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        saveBusIdForVolViewProfileSentSeg();
-    }
-}
-
-function activity_startEngagementPreviousParent_onClick(eventobject) {
-    return AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject);
-}
-
-function AS_FlexContainer_8d92dc546c0a420bb37705944e794b3b(eventobject) {
-    return closeModal.call(this);
-}
-
-function activity_startEngagement_onClick(eventobject) {
-    return AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject);
-}
-
-function AS_Button_8937be6ef1c14c11b1799fe6815abc7e(eventobject) {
-    function SHOW_ALERT__fb69992dd17440ddbecebec1fc81e811_True() {} //indeginousTaskDetails();
-    var title = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskTitleField.text;
-    var details = mainPage.startEngagementModalContainer.startEngagementModalBody.startEngagementTaskDetailsTextArea.text;
-    var endDate = mainPage.startEngagementModalContainer.startEngagementModalBody.endDateCalendarInput.formattedDate;
-    var startDate = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
-    var hours = mainPage.startEngagementModalContainer.startEngagementModalBody.duratationOfEngagementInput.text;
-    var endDate1 = kony.store.getItem("todayDate"); //   give todays's date'
-    var startdate1 = mainPage.startEngagementModalContainer.startEngagementModalBody.startDateCalendarInput.formattedDate;
-    var isValidEndDate = validateDate(startDate, endDate);
-    var isValidStartEnd = validateStartDate(startdate1, endDate1);
-    if (title === null || title === "" || title === "null") {
-        alert("Please enter a task title");
-    } else if (details === null || details === "" || details === "null") {
-        alert("Please enter task details");
-    } else if (hours == null || hours == "null" || hours == "") {
-        alert("Please enter hours required to complete the task");
-    } else {
-        //alert("isValidStartEnd"+isValidStartEnd);
-        if (isValidStartEnd === false) {
-            validationAlert("Start Date should be greater than or equal to today's date");
-        } else if (isValidEndDate === false) {
-            validationAlert("End Date should be greater than or equal to start date");
-        } else {
-            //alert("done");
-            indeginousTaskDetails();
-        }
-    }
-}
-
 function businessDetailsConfirmation_buttons_onClick(eventobject) {
     return AS_Button_3f0b779809604cbebc08b5f48b09b3dd(eventobject);
 }
@@ -4839,14 +4835,12 @@ function AS_TextField_76fc6da85889407eb4b1eb48be13eb7b(eventobject, changedtext)
     return onBusinessDetailsUpdate.call(this, eventobject);
 }
 
-function login_registerButton_oTS(eventobject, x, y) {
-    return AS_RichText_58183f113bfb4950a774c5437a2f1324(eventobject, x, y);
+function BusinessProfileContinueButton_OnClick(eventobject) {
+    return AS_Button_78e83321b8d049d8881d7b082294720b(eventobject);
 }
 
-function AS_RichText_58183f113bfb4950a774c5437a2f1324(eventobject, x, y) {
-    kony.store.removeItem("imageVal");
-    kony.store.removeItem("imageFileNameVal");
-    registrationPage.show();
+function AS_Button_78e83321b8d049d8881d7b082294720b(eventobject) {
+    mainPage.show();
 }
 
 function login_registerButton_onTouchStart(eventobject, x, y) {
@@ -4854,6 +4848,16 @@ function login_registerButton_onTouchStart(eventobject, x, y) {
 }
 
 function AS_Label_2e641c70f5f84f80bb2d8fe88102e950(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
+function login_registerButton_oTS(eventobject, x, y) {
+    return AS_RichText_58183f113bfb4950a774c5437a2f1324(eventobject, x, y);
+}
+
+function AS_RichText_58183f113bfb4950a774c5437a2f1324(eventobject, x, y) {
     kony.store.removeItem("imageVal");
     kony.store.removeItem("imageFileNameVal");
     registrationPage.show();

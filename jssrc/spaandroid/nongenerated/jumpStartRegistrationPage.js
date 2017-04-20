@@ -38,10 +38,16 @@ function onRegFieldUpdate(fieldEdited) {
     var fieldContent = fieldEdited.text;
     switch (fieldId) {
         case "regFirstNameInput":
-            volunteerRegObject.firstName = fieldContent;
+            //D007: Adding code to capitalize first character for fieldContent and fieldContent
+            //volunteerRegObject.firstname = fieldContent;
+            volunteerRegObject.firstName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
+            //End of D007
             break;
         case "regLastNameInput":
-            volunteerRegObject.lastName = fieldContent;
+            //D007: Adding code to capitalize first character for fieldContent and fieldContent
+            //volunteerRegObject.lastname = fieldContent;
+            volunteerRegObject.lastName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
+            //End of D007
             break;
         case "regUsernameInput":
             volunteerRegObject.username = fieldContent;
@@ -59,11 +65,12 @@ function onRegFieldUpdate(fieldEdited) {
             volunteerRegObject.aboutMe = fieldContent;
             break;
         case "regCompanyInput":
-            //volunteerRegObject.companyName = fieldContent;
+            //Start of D012
             volunteerRegObject.companyName = fieldEdited.selectedKey;
-            if (volunteerRegObject.companyName == "Select") {
+            if (volunteerRegObject.companyName === "Select" || volunteerRegObject.companyName === null || volunteerRegObject.companyName === "") {
                 volunteerRegObject.companyName = "";
             }
+            //End of D012
             break;
         case "regRoleInput":
             volunteerRegObject.role = fieldContent;
@@ -73,7 +80,7 @@ function onRegFieldUpdate(fieldEdited) {
             break;
         case "regStateInput":
             volunteerRegObject.state = fieldEdited.selectedKey;
-            if (volunteerRegObject.state == "Select") {
+            if (volunteerRegObject.state === "Select" || volunteerRegObject.state === null || volunteerRegObject.state === "") {
                 volunteerRegObject.state = "";
             }
             break;
@@ -126,11 +133,7 @@ function submitPersonalInfo() {
     if (isPersonalInfoComplete) {
         registrationAccountPage.show();
     } else {
-<<<<<<< Updated upstream
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
-=======
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
->>>>>>> Stashed changes
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
@@ -189,44 +192,55 @@ function validatePassword() {
         return 1;
     }
 }
-
+//Start of D058
+function validateEmailDomain() {
+    var emailAddress = volunteerRegObject.emailAddress;
+    if (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0) {
+        return false;
+    }
+    return true;
+}
+//End of D058
 function submitAccountInfo() {
     var isAccountInfoComplete = validateAccountInfo();
     if (!isAccountInfoComplete) {
-<<<<<<< Updated upstream
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
-=======
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
->>>>>>> Stashed changes
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var isValidEmail = validateEmail();
     if (!isValidEmail) {
-        validationAlert("Email address error", "Please check the format of the email address");
+        validationAlert("Warning", "Please check the format of the email address");
         return false;
     }
     var isEqualPassword = validatePasswordEquality();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Password entered does not match");
+        validationAlert("Warning", "Password entered does not match");
         return false;
     }
     var isValidPassword = validatePassword();
     if (isValidPassword == 1) {
-        validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+        validationAlert("Warning", "Passwords must have at least " + userValidation.passwordLength + " characters");
         return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Password Error", "Passwords must have at least 1 special character");
+        validationAlert("Warning", "Passwords must have at least 1 special character");
         return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Password Error", "Passwords must have at least 1 digit");
+        validationAlert("Warning", "Passwords must have at least 1 digit");
         return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+        validationAlert("Warning", "Passwords must have at least 1 capital letter");
         return false;
     }
-    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5) {
+    //Start of D058
+    var isValidateEmailDomain = validateEmailDomain();
+    if (!isValidateEmailDomain) {
+        validationAlert("Warning", "Please make sure your email address is associated with either '@dxc.com', '@supplynation.org.au', or '@cba.com.au'.");
+        return false;
+    }
+    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {
         registrationProfessionalPage.show();
     }
+    //End of D058
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - END: myString");
@@ -264,7 +278,7 @@ function addNewSkill() {
     } else {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Missing Skill Name",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "Please enter a skill name",
             "alertHandler": null
@@ -298,16 +312,12 @@ function validateProfessionalInfo() {
 function submitProfessionalInfo() {
     var isProfessionalInfoComplete = validateProfessionalInfo();
     if (!isProfessionalInfoComplete) {
-<<<<<<< Updated upstream
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
-=======
-        validationAlert("Missing Details", "Please complete all mandatory fields marked with *");
->>>>>>> Stashed changes
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var hasSkill = volunteerRegObject.skillsArray.length;
     if (!hasSkill) {
-        validationAlert("Enter a skill", "Please add at least 1 skill");
+        validationAlert("Action Required", "Please add at least 1 skill");
         return false;
     }
     if (isProfessionalInfoComplete && hasSkill) {
@@ -430,7 +440,7 @@ function validateAvailability() {
     if (!volunteerRegObject.availability.mon && !volunteerRegObject.availability.tue && !volunteerRegObject.availability.wed && !volunteerRegObject.availability.thu && !volunteerRegObject.availability.fri && !volunteerRegObject.availability.sat && !volunteerRegObject.availability.sun) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Please select a day",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "At least one day of the week must be selected.",
             "alertHandler": null
@@ -458,7 +468,7 @@ function hoursAgreeAndContinue() {
     if (scheduleVal) {
         var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
         if (indexOfSchedule != -1) {
-            alert("this schedule already exists");
+            validationAlert("Warning", "This schedule already exists!");
             return false;
             //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
         }
@@ -474,7 +484,7 @@ function startLessThanEnd() {
     if (start >= end) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Incorrect Time",
+            "alertTitle": "Warning",
             "yesLabel": "OK",
             "message": "Start time must be less than end time.",
             "alertHandler": null
@@ -962,7 +972,7 @@ function getRegisterSuccessCallback(gblSave) {
             kony.application.dismissLoadingScreen();
         } //inner if
         else {
-            alert("This username already exists.Please change your email");
+            validationAlert("Warning", "This username already exists.Please change your email");
         }
     } //outer if
 }

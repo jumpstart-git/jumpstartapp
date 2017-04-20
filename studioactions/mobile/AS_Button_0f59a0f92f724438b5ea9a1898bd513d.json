@@ -1,0 +1,34 @@
+{
+    "AS_Button_0f59a0f92f724438b5ea9a1898bd513d": {
+        "id": "AS_Button_0f59a0f92f724438b5ea9a1898bd513d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9baabbc6d41349079a24e9f9fb8688b5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.store.removeItem(\"imageVal\");\nkony.store.removeItem(\"imageFileNameVal\");",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___e72f3af627544403a9a297bba1b8e409",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "registrationPage",
+            "formKUID": "45590dbf8d50498f8dac0f82dd6523c7",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

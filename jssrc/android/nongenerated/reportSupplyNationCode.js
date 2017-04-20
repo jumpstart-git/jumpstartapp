@@ -3,14 +3,14 @@ mobileFabricConfigurationForReportSupplyNationCode = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
-    //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-    //appSecret:"c600a59925b36419de1546056cd21557", 
+    //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+    //appSecret:"c600a59925b36419de1546056cd21557",
     //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
     integrationServices: [{
         service: "ReportSupplyNation",
         operations: ["supplyNationOperation"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -126,7 +126,9 @@ function reportSupplyNationCodeDataSuccessCallback(gblreportSupplyNAtionCodeData
     hideSideBar();
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Confirmation",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "No",
         "message": "Supply Nation hours report successfully sent to your email",

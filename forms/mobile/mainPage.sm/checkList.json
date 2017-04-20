@@ -12,7 +12,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "35dp"
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -27,17 +27,13 @@
         1
     ],
     "_right_": {
-        "type": "string",
-        "value": "2dp"
+        "type": "number",
+        "value": "0"
     },
     "_skin_": "s1748da9198447e2b077d0ac549ff1c8",
     "_top_": {
         "type": "string",
         "value": "0%"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "60dp"
     },
     "_width_": "31.25%",
     "canUpdateUI": true,

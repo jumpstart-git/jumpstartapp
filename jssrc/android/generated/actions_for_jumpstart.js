@@ -40,6 +40,12 @@ function AS_Button_0d87a87ab5bd4552a60cca8b24ed2876(eventobject) {
     // searchPage.show(); 
 }
 
+function AS_Button_0f59a0f92f724438b5ea9a1898bd513d(eventobject) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_102b6bf5ed1848b1ab72a98c4080fef5(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -269,6 +275,12 @@ function AS_Button_47f078e3a22f4674b7e9178a14c00f23(eventobject) {
     return addNewSkillUpdateee.call(this);
 }
 
+function AS_Button_4ba9be44ba8c440cbdfb35e33ee0b95d(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_4dfe6c9e001f40eca415531a76e2e273(eventobject) {
     searchResultProfile.startEngagementModalContainer.isVisible = false;
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text = "";
@@ -327,6 +339,8 @@ function AS_Button_57e757da8c0e4154b815dffa14c05a90(eventobject) {
     ReportingPage.ReportingContainer.ReportingActionsContainer.corporateFlexContainer.corporateIndicatorFlex.isVisible = false;
     ReportingPage.ReportingContainer.ReportingActionsContainer.supplyNationContainer.supplyNationIndicator.isVisible = false;
 }
+
+function AS_Button_58a1239db4ce4f1a977f3a691319a188(eventobject, x, y) {}
 
 function AS_Button_5a822dd9fa4343f19cd554abbbb01fb3(eventobject) {
     searchResultProfile.startEngagementModalContainer.isVisible = false;
@@ -616,7 +630,7 @@ function AS_Button_8679ef5475084e8496bae19a15ca4630(eventobject) {
     }
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "alertIcon": "lohourindicator.PNG",
@@ -775,7 +789,16 @@ function AS_Button_9292a5869b07452d9409477608e9427f(eventobject) {
     var skillsFromTextBox = mainPage.BusinessEndorsementModalContainer.SkillsTextBoxContainer.AnotherSkillInputField.text;
     var msg = mainPage.BusinessEndorsementModalContainer.MessageContaioner.EndorsingMessageTextArea.text;
     if (((skillsFromListBox == "Select") || (skillsFromListBox == "") || (skillsFromListBox == " ") || (skillsFromListBox == "null") || (skillsFromListBox == null)) && ((skillsFromTextBox == null) || (skillsFromTextBox == "null") || (skillsFromTextBox == ""))) {
-        alert("Please enter at least one skill to endorse");
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_INFO,
+            "alertTitle": "Action Required",
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please enter at least one skill to endorse",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
         return false;
     }
     // if(msg==null||msg=="null"||msg=="")
@@ -839,13 +862,14 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     var isValidEndDate = validateDate(startDate2, endDate2);
     var isValidStartEnd = validateStartDate(startdate3, endDate3);
     if (title2 === null || title2 === "" || title2 === "null") {
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter a task title",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -853,11 +877,11 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     } else if (details2 === null || details2 === "" || details2 === "null") {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter task details",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -865,11 +889,11 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     } else if (skills2 == null || skills2 == "null" || skills2 == "") {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter skill required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -877,11 +901,11 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     } else if (hours2 == null || hours2 == "null" || hours2 == "") {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter hours required to complete the task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -889,11 +913,11 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
     } else if (messge2 == null || messge2 == "null" || messge2 == "") {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please enter message",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -903,11 +927,12 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         if (isValidStartEnd === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //D040: changed alertTitle from null to "Action Required"
+                "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please enter today/future date for this engagement",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -915,11 +940,12 @@ function AS_Button_99e8fcfe74224ca997ce775e4cafcdc1(eventobject) {
         } else if (isValidEndDate === false) {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //D040: chenged alertTitle from null to "Action Required"
+                "alertTitle": "Action Required",
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "End date should be a future date",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1037,6 +1063,8 @@ function AS_Button_af46e1839f6e43c5a3361243e5d819f1(eventobject) {
         gblIsVol = true;
     }
 }
+
+function AS_Button_afb13a1455b543269454fbcb7c7dcfab(eventobject) {}
 
 function AS_Button_b2c5b26ff29f4a909862e033008e3592(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "volunteer") {
@@ -1349,6 +1377,12 @@ function AS_Button_dd04d69205504c73bb854cc564373e7a(eventobject) {
     }
 }
 
+function AS_Button_dda833af81ba49f6935152f022eee9d9(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_ddf18c07fa384a37a7de98362839b45d(eventobject) {
     LogHoursForms.show();
 }
@@ -1513,7 +1547,20 @@ function AS_Button_f43836994bb94ce2bebfdf4b6cb90080(eventobject) {
 function AS_Button_f57470ae9f314ef4b9536d11b77f7ead(eventobject) {
     var text = mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
     if (text == "null" || text == null || text == "") {
-        alert("Input your review");
+        //alert("Input your review");
+        //D018: Commented out simple alert. Added kony ui error alert
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Please input your recommendation or click cancel to return to previous screen",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
     } else {
         volSendReview();
         mainPage.sendRecommendation.isVisible = false;
@@ -1591,11 +1638,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1630,11 +1679,13 @@ function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
         if (title9 === null || title9 === "" || title9 === "null") {
             kony.ui.Alert({
                 "alertType": constants.ALERT_TYPE_INFO,
-                "alertTitle": null,
+                //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+                "alertTitle": "Action Required",
+                //End of D005
                 "yesLabel": "OK",
                 "noLabel": "No",
                 "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-                "alertHandler": "null"
+                "alertHandler": null
             }, {
                 "iconPosition": constants.ALERT_ICON_POSITION_LEFT
             });
@@ -1675,6 +1726,12 @@ function AS_Button_fe953aeb6be94dfcb3ee8c7a51645924(eventobject) {
     scheduleNewForm.show();
 }
 
+function AS_Button_ffb71ae710f14cd9a31f9bc62b0f88f2(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -1690,6 +1747,16 @@ function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     //    //   alert("he is volunteer");
     //       requestVolunteerByBusiness1();
     //     }
+}
+
+function AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
+    }
 }
 
 function AS_CheckBoxGroup_51154a24fa7345cfa76545f96566cb84(eventobject) {
@@ -2783,11 +2850,13 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
     if ((searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey === "Select") || (searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKey === "")) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please send message to indigenous business to express interest to volunteer as you currently don't have any briefs available to volunteer",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -2801,6 +2870,11 @@ function AS_ListBox_2f77ddc1d1f44df68125d83f467a39d9(eventobject) {
         searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.commentsModal.commentsTxtBox.text = "";
         return false;
     } else {
+        //D013: Add code snippet to display task details on valid selection
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskDetailsModalFlex.isVisible = true;
+        searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.taskskillsFlex.isVisible = true;
+        //D013: End of addition
         gblExistingBusTaskId = searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.oppurtunities1ListModal.assignToExistingTaskListBox1.selectedKeyValue;
         var id = gblExistingBusTaskId[0];
         //alert(JSON.stringify(gblExistingBusTaskId));
@@ -2848,11 +2922,13 @@ function AS_ListBox_40e6cfb5bbb54334bacd88300920c324(eventobject) {
         // alert("Please select a task");
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //End of D005
             "yesLabel": "OK",
             "noLabel": "No",
             "message": "Please select a task",
-            "alertHandler": "null"
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
@@ -3405,6 +3481,10 @@ function AS_RichText_5b2fab265c874cadaf62f39df2783b03(eventobject, x, y) {
     BusinessProfile.BusinessChangePasswordContainer.isVisible = true;
 }
 
+function AS_RichText_5d79aec263e54db28dfdcee5b746acff(eventobject, linktext, attributes) {
+    kony.application.openURL('http://www.supplynation.org.au/contactus')
+}
+
 function AS_RichText_5fe0b013d5cd4df68b5c961f47978705(eventobject, linktext, attributes) {
     //mamata
     mainPage.declineRequestModalContainer.isVisible = false;
@@ -3721,6 +3801,8 @@ function AS_RichText_b2cac1454f9a4a5b96e68047bb6a8db9(eventobject, x, y) {
 
 function AS_RichText_b3895bce23c14431ae132346ea5b99c6(eventobject, linktext, attributes) {}
 
+function AS_RichText_b9c93e1222a5446a986df8bf26b092f7(eventobject, linktext, attributes) {}
+
 function AS_RichText_ba3a520a0bd6464caf7feb4297050d6d(eventobject, x, y) {
     return validateResendCode.call(this);
 }
@@ -3936,7 +4018,7 @@ function AS_RichText_d0ca4f5592bd46868725fe2607686ba2(eventobject, x, y) {
 function AS_RichText_d6ff08f069db47e1b086860d0827fe7b(eventobject, linktext, attributes, context) {
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Confirm",
+        "alertTitle": "Confirmation",
         "yesLabel": "Yes",
         "noLabel": "No",
         "message": "Do you really want to remove the brief?",
@@ -4264,6 +4346,8 @@ function AS_RichText_fac39ba759ec43de9444a58266eca74f(eventobject, linktext, att
     mainPage.show();
 }
 
+function AS_RichText_fd1b4d64636b4e0b98cc769babb47668(eventobject, x, y) {}
+
 function AS_RichText_fef272d3e61b46b69d01e363fe6800d3(eventobject, linktext, attributes) {
     // callVolfromStartEngagementFromAcceptedrequestSeg();
 }
@@ -4272,10 +4356,12 @@ function AS_Segment_129e92e809394c59bd592175b01d09f1(eventobject, sectionNumber,
     removeHours.call(this, eventobject);
     kony.ui.Alert({
         "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": null,
+        //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+        "alertTitle": "Warning",
+        //End of D005
         "yesLabel": "OK",
         "noLabel": "Cancel",
-        "message": "Do you really want to remove hours",
+        "message": "Do you really want to remove hours?",
         "alertHandler": appUpgrade1
     }, {
         "iconPosition": constants.ALERT_ICON_POSITION_LEFT
@@ -4802,7 +4888,24 @@ function login_signInButton_action_onTouchStart(eventobject, x, y) {
 }
 
 function AS_Button_c55a88368de54c408d5a02eef07ad463(eventobject, x, y) {
-    return loginService.call(this);
+    var userText = login.loginContainer.loginBody.usernameField.text;
+    var passText = login.loginContainer.loginBody.passwordField.text;
+    if (userText == "null" || userText == null || userText == "" || passText == "null" || passText == null || passText == "") {
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_ERROR,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Action Required",
+            //ENd of D005
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Email ID and Password Field cannot be blank",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
+    } else {
+        loginService();
+    }
 }
 
 function mainPage_acceptTaskEngagment_action_onClick(eventobject, linktext, attributes, context) {

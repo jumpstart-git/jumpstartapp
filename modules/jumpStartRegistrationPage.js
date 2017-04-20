@@ -225,6 +225,18 @@ function validatePassword() {
   }
 }
 
+//Start of D058
+function validateEmailDomain() {
+  var emailAddress = volunteerRegObject.emailAddress;
+  if (emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0)
+  {
+    return false;
+  }
+
+  return true;
+}
+//End of D058
+
 function submitAccountInfo() {
   var isAccountInfoComplete = validateAccountInfo();
   if (!isAccountInfoComplete) {
@@ -259,11 +271,17 @@ function submitAccountInfo() {
     return false;
   }
 
-  if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5) {
-    registrationProfessionalPage.show();
-
-
+  //Start of D058
+  var isValidateEmailDomain = validateEmailDomain();
+  if (!isValidateEmailDomain) {
+    validationAlert("Warning", "Please make sure your email address is associated with either '@dxc.com', '@supplynation.org.au', or '@cba.com.au'.");
+    return false;
   }
+
+  if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {
+    registrationProfessionalPage.show();
+  }
+  //End of D058
 
   kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
   kony.print(volunteerRegObject);
@@ -363,9 +381,6 @@ function submitProfessionalInfo() {
     //registrationSchedulePage.show();
    // CopyregistrationSchedulePage07348ad65c97f4c.show();
     scheduleNewForm.show();
-
-
-
 
   }
 

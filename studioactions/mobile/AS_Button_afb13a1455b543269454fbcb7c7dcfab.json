@@ -1,0 +1,18 @@
+{
+    "AS_Button_afb13a1455b543269454fbcb7c7dcfab": {
+        "id": "AS_Button_afb13a1455b543269454fbcb7c7dcfab",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bec1f033db6f4a3190ecdff43c7dc04e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -148,7 +148,7 @@ function addWidgetsregistrationPersonalPage() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
-            ["Select", "Select from drop down menu"],
+            ["Select", "Select"],
             ["NSW", "New South Wales"],
             ["ACT", "Australian Capital Territory"],
             ["QLD", "Queensland"],

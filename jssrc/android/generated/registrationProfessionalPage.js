@@ -60,14 +60,11 @@ function addWidgetsregistrationProfessionalPage() {
         "height": "40dp",
         "id": "regCompanyInput",
         "isVisible": true,
-        //Start of Defect 058
         "masterData": [
             ["Select", "Select from drop down menu"],
             ["CBA", "CBA"],
-            //["HPE","HPE"],
             ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
-        //End of Defect 058
         ],
         "onSelection": AS_ListBox_94e2428d02de4f88943f8ba16108872e,
         "selectedKey": "Select",

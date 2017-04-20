@@ -2338,6 +2338,40 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {}, {});
     oppurtunity1DetailsBodyModalContainer.setDefaultUnit(kony.flex.DP);
+    var selectMessage = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "24%",
+        "id": "selectMessage",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {}, {});
+    selectMessage.setDefaultUnit(kony.flex.DP);
+    var selectMessageLabel = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "selectMessageLabel",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel0824b9b19eb524a",
+        "text": "Select an existing brief to volunteer for or send a message to the Indigenous business with your interest to volunteer",
+        "top": "10dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    selectMessage.add(selectMessageLabel);
     var availabilityContainer = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
@@ -2354,7 +2388,7 @@ function addWidgetssearchResultProfile() {
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "CopyslFSbox0d782e1182de14a",
-        "top": "0dp",
+        "top": "4dp",
         "verticalScrollIndicator": true,
         "width": "90%",
         "zIndex": 1
@@ -2458,7 +2492,7 @@ function addWidgetssearchResultProfile() {
         "clipBounds": true,
         "height": "20%",
         "id": "TaskDetailsHdrFlex",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox0db107654f31e40",
@@ -2508,7 +2542,7 @@ function addWidgetssearchResultProfile() {
         "clipBounds": true,
         "height": "20%",
         "id": "taskDetailsModalFlex",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox0db107654f31e40",
@@ -2559,7 +2593,7 @@ function addWidgetssearchResultProfile() {
         "clipBounds": true,
         "height": "20%",
         "id": "taskskillsFlex",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "CopyslFbox0db107654f31e40",
@@ -2810,7 +2844,7 @@ function addWidgetssearchResultProfile() {
         "autoCorrect": false
     });
     commentsModal.add(commentsLbl, commentsTxtBox);
-    oppurtunity1DetailsBodyModalContainer.add(availabilityContainer, oppurtunities1ListModal, TaskDetailsHdrFlex, taskDetailsModalFlex, taskskillsFlex, hoursFlex, startDateModalFlex, endDateFlexModal, commentsModal);
+    oppurtunity1DetailsBodyModalContainer.add(selectMessage, availabilityContainer, oppurtunities1ListModal, TaskDetailsHdrFlex, taskDetailsModalFlex, taskskillsFlex, hoursFlex, startDateModalFlex, endDateFlexModal, commentsModal);
     var opportunitiesFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,

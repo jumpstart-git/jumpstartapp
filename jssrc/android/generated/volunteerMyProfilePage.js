@@ -34,7 +34,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
-        "centerX": "50%",
+        "centerX": "50.00%",
         "clipBounds": true,
         "enableScrolling": true,
         "height": "75%",
@@ -272,7 +272,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Work experience",
+        "text": "Work experience*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -311,7 +311,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "About me",
+        "text": "About me*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -370,14 +370,12 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "volunteerMyProfileCompanyInput",
         "isVisible": true,
         "left": "0",
-        //Start of D058
         "masterData": [
             ["Select", "Select from drop down list"],
             ["CBA", "CBA"],
             ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
-        //End of D058
         "onSelection": AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae,
         "skin": "CopyslListBox008256acffc1a4b",
         "top": "0dp",
@@ -747,7 +745,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "right": "0dp",
         "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
-        "top": 0,
+        "top": 125,
         "width": "50dp",
         "zIndex": 1
     }, {

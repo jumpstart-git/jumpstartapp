@@ -34,7 +34,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
-        "centerX": "50%",
+        "centerX": "50.00%",
         "clipBounds": true,
         "enableScrolling": true,
         "height": "75%",
@@ -252,7 +252,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Work experience",
+        "text": "Work experience*",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -290,7 +290,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "About me",
+        "text": "About me*",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -348,7 +348,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "masterData": [
             ["Select", "Select from drop down list"],
             ["CBA", "CBA"],
-            ["HPE", "HPE"],
+            ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
         "onSelection": AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae,
@@ -671,7 +671,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "right": "0dp",
         "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
-        "top": 0,
+        "top": 125,
         "width": "50dp",
         "zIndex": 1
     }, {

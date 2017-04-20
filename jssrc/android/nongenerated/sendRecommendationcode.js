@@ -10,7 +10,7 @@ mobileFabricConfigurationForVolReview = {
         service: "Recommendation",
         operations: ["saveRecommendation"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -133,6 +133,20 @@ function setvolSendReview() {
         sendReview["detail"] = mainPage.sendRecommendation.sendRecommendationModalBody.sendRecommendationTextArea.text;
         //alert("msg:"+JSON.stringify(sendReview));
         //  alert("actual string=="+mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text);
+        //D019: Adding Kony Info Alert
+        kony.ui.Alert({
+            "alertType": constants.ALERT_TYPE_INFO,
+            //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+            "alertTitle": "Confirmation",
+            //End of D005
+            "yesLabel": "OK",
+            "noLabel": "No",
+            "message": "Recommendation has been sent",
+            "alertHandler": null
+        }, {
+            "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+        });
+        //D0019: End of Fix Addition
         mobileFabricConfigurationForVolReview.integrationObj.invokeOperation(operationName, headers, sendReview, getvolSendReviewSuccessCallback, getVolsendReviewErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
 }

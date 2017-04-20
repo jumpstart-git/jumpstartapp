@@ -41,7 +41,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.mon=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.mon=true;
                 volunteerUpdateObject.availability.mon=true;
               }
@@ -51,7 +51,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.tue=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.tue=true;
                 volunteerUpdateObject.availability.tue=true;
               }
@@ -61,7 +61,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.wed=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.wed=true;
                 volunteerUpdateObject.availability.wed=true;
               }
@@ -71,7 +71,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.thu=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.thu=true;
                  volunteerUpdateObject.availability.thu=true;
               }
@@ -81,7 +81,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.fri=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.fri=true;
                 volunteerUpdateObject.availability.fri=true;
               }
@@ -91,7 +91,7 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.sat=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.sat=true;
                  volunteerUpdateObject.availability.sat=true;
               }
@@ -101,12 +101,12 @@ function validateAvailabilityUpdate() {
               volunteerUpdateObject.availability.sun=false;
             }else
               {
-                
+
                  volunteerRegObjectVol.availability.sun=true;
                  volunteerUpdateObject.availability.sun=true;
               }
     */
-    ////end 
+    ////end
     // alert(JSON.stringify(volunteerUpdateObject));
     if (!volunteerUpdateObject.availability.mon && !volunteerUpdateObject.availability.tue && !volunteerUpdateObject.availability.wed && !volunteerUpdateObject.availability.thu && !volunteerUpdateObject.availability.fri && !volunteerUpdateObject.availability.sat && !volunteerUpdateObject.availability.sun) {
         kony.ui.Alert({
@@ -198,70 +198,80 @@ function submitUpdateInfo() {
     var isUpdateInfoComplete = validateUpdateInfo();
     if (!isUpdateInfoComplete) {
         if (!volunteerUpdateObject.firstName) {
-            validationAlert("Missing Details", "Please Enter First Name*");
+            validationAlert("Action Required", "Please Enter First Name*");
             return false;
         }
         if (!volunteerUpdateObject.lastName) {
-            validationAlert("Missing Details", "Please Enter Last Name*");
+            validationAlert("Action Required", "Please Enter Last Name*");
             return false;
         } else if (!volunteerUpdateObject.username) {
-            validationAlert("Missing Details", "Please Enter User Name*");
+            validationAlert("Action Required", "Please Enter User Name*");
             return false;
-        } else if (!volunteerUpdateObject.companyName) {
-            validationAlert("Missing Details", "Please Enter Company Name*");
-            return false;
-        } else if (!volunteerUpdateObject.role) {
-            validationAlert("Missing Details", "Please Enter Role*");
-            return false;
-        } else if (!volunteerUpdateObject.businessUnit) {
-            validationAlert("Missing Details", "Please Enter Business Unit*");
-            return false;
-        } else if (!volunteerUpdateObject.state || volunteerUpdateObject.state === "") {
-            validationAlert("Missing Details", "Please Select State*");
-            return false;
-        } else if (!volunteerUpdateObject.address) {
-            validationAlert("Missing Details", "Please Enter Address*");
-            return false;
-        } else if (!volunteerUpdateObject.contactNumber) {
-            validationAlert("Missing Details", "Please Enter Contact Number*");
-            return false;
-        } else if (!volunteerUpdateObject.emailAddress) {
-            validationAlert("Missing Details", "Please Enter Email*");
+        } else if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
+            validationAlert("Action Required", "Please Enter Company Name*");
             return false;
         }
-        //  validationAlert("Missing Details", "Please fill up all Mandatory Fields*"+JSON.stringify(volunteerUpdateObject));
+        //Start of defect D037
+        else if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails === "" || volunteerUpdateObject.workDetails === " ") {
+            validationAlert("Action Required", "Please Enter Work Details*");
+            return false;
+        } else if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe === "" || volunteerUpdateObject.aboutMe === " ") {
+            validationAlert("Action Required", "Please Enter About Me*");
+            return false;
+        }
+        //End of defect D037
+        else if (!volunteerUpdateObject.role) {
+            validationAlert("Action Required", "Please Enter Role*");
+            return false;
+        } else if (!volunteerUpdateObject.businessUnit) {
+            validationAlert("Action Required", "Please Enter Business Unit*");
+            return false;
+        } else if (!volunteerUpdateObject.state || volunteerUpdateObject.state === "") {
+            validationAlert("Action Required", "Please Select State*");
+            return false;
+        } else if (!volunteerUpdateObject.address) {
+            validationAlert("Action Required", "Please Enter Address*");
+            return false;
+        } else if (!volunteerUpdateObject.contactNumber) {
+            validationAlert("Action Required", "Please Enter Contact Number*");
+            return false;
+        } else if (!volunteerUpdateObject.emailAddress) {
+            validationAlert("Action Required", "Please Enter Email*");
+            return false;
+        }
+        //  validationAlert("Action Required", "Please fill up all Mandatory Fields*"+JSON.stringify(volunteerUpdateObject));
         return false;
     }
     var hasSkillUpdate = volunteerMyProfilePage.volunteerMyProfileSkillSegment.data; //volunteerUpdateObject.skillsArray.length;
     if (!hasSkillUpdate) {
-        validationAlert("Enter a Skill", "Please add at least 1 skill");
+        validationAlert("Action Required", "Please add at least 1 skill");
         return false;
     }
     var isValidEmail = validateEmailUpdate();
     if (!isValidEmail) {
-        validationAlert("Email Address Error", "Email address entered is not valid format");
+        validationAlert("Action Required", "Email address entered is not valid format");
         return false;
     }
     var isEqualPassword = validatePasswordEqualityUpdate();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Passwords entered are not equal");
+        validationAlert("Action Required", "Passwords entered are not equal");
         return false;
     }
     var isValidPassword = validatePasswordUpdate();
     if (isValidPassword == 1) {
-        validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+        validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
         return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Password Error", "Passwords must have at least 1 special character");
+        validationAlert("Action Required", "Passwords must have at least 1 special character");
         return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Password Error", "Passwords must have at least 1 digit");
+        validationAlert("Action Required", "Passwords must have at least 1 digit");
         return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+        validationAlert("Action Required", "Passwords must have at least 1 capital letter");
         return false;
     }
-    //alert(gblscheduleArr.length); 
+    //alert(gblscheduleArr.length);
     if (gblscheduleArr.length == "0.0") {
         alert("enter atleast 1 schedule");
         return false;
@@ -281,9 +291,17 @@ function validateUpdateInfo() {
     if (!volunteerUpdateObject.username) {
         return false;
     }
-    if (!volunteerUpdateObject.companyName) {
+    if (!volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
         return false;
     }
+    //Start of defect D037
+    if (!volunteerUpdateObject.workDetails || volunteerUpdateObject.workDetails === "" || volunteerUpdateObject.workDetails === " ") {
+        return false;
+    }
+    if (!volunteerUpdateObject.aboutMe || volunteerUpdateObject.aboutMe === "" || volunteerUpdateObject.aboutMe === " ") {
+        return false;
+    }
+    //End of D037
     if (!volunteerUpdateObject.role) {
         return false;
     }
@@ -358,7 +376,7 @@ function initializeMobileFabricForMyProfileVol() {
 }
 
 function initializeMobileFabricForMyProfileVolSuccess(response) {
-    // alert("in2");        
+    // alert("in2");
     kony.print(" ********** Entering into initializeMobileFabricSuccess ********** ");
     // alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
     mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized = true;
@@ -442,14 +460,14 @@ function saveVolunteerProfilew() {
         }
         ///days start
         /*
-                  
+
         if(volunteerMyProfilePage.volunteerMyProfileMondayButton.skin=="jumpStartGrayButton90")
           {
             volunteerRegObjectVol.availability.mon=false;
             volunteerUpdateObject.availability.mon=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.mon=true;
               volunteerUpdateObject.availability.mon=true;
             }
@@ -459,7 +477,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.tue=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.tue=true;
               volunteerUpdateObject.availability.tue=true;
             }
@@ -469,7 +487,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.wed=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.wed=true;
               volunteerUpdateObject.availability.wed=true;
             }
@@ -479,7 +497,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.thu=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.thu=true;
                volunteerUpdateObject.availability.thu=true;
             }
@@ -489,7 +507,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.fri=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.fri=true;
               volunteerUpdateObject.availability.fri=true;
             }
@@ -499,7 +517,7 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.sat=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sat=true;
                volunteerUpdateObject.availability.sat=true;
             }
@@ -509,10 +527,10 @@ function saveVolunteerProfilew() {
             volunteerUpdateObject.availability.sun=false;
           }else
             {
-              
+
                volunteerRegObjectVol.availability.sun=true;
                volunteerUpdateObject.availability.sun=true;
-            }   
+            }
                */
         var availabilityString = "";
         if (volunteerRegObjectVol.availability.mon) {
@@ -551,7 +569,7 @@ function saveVolunteerProfilew() {
             // var schedule =[{"availabilityId": availableId,  "days":gblDays,"fromTime":frmT,"toTime":toTime}];// [{"days":"Mon","fromTime":"9 AM","toTime":"10 "}];
         }
         ///end schedule
-        var skills = arrData; // [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}]; 
+        var skills = arrData; // [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}];
         //start skilll
         //end skill
         // alert("in6666");
@@ -577,17 +595,20 @@ function saveVolunteerProfilew() {
         //  alert("in10");
         dataforVolProfile["businessUnit"] = volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
         //start feb 16
+        //Start of defect D037
         var abotme = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
         if (abotme == null || abotme == "null" || abotme == "") {
-            abotme = " ";
+            //abotme=" ";
+            abotme = ""
         }
         dataforVolProfile["aboutMe"] = abotme;
         var work = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
         if (work == null || work == "null" || work == "") {
-            work = " ";
+            //work=" ";
+            work = "";
         }
         dataforVolProfile["workDetails"] = work;
-        //
+        //End of defect D037
         dataforVolProfile["file"] = kony.store.getItem("imageValUpdateVolunteer");
         dataforVolProfile["fileName"] = kony.store.getItem("imageFileNameValUpdateVolunteer");
         kony.print("dataprintwhole from textbox:" + JSON.stringify(dataforVolProfile));
@@ -685,9 +706,12 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
         case "volunteerMyProfileCompanyInput":
             // volunteerUpdateObject.companyName = fieldContent;
             volunteerUpdateObject.companyName = fieldEdited.selectedKey;
-            if (volunteerUpdateObject.companyName == "Select") {
+            //Begin of D012
+            //Added additional conditons if volunteerUpdateObject.companyName contains a null value or a blank string
+            if (volunteerUpdateObject.companyName == "Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName == "") {
                 volunteerUpdateObject.companyName = "";
             }
+            //End of D012
             break;
         case "volunteerMyProfileRoleInput":
             volunteerUpdateObject.role = fieldContent;
@@ -697,9 +721,12 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
             break;
         case "volunteerMyProfileStateInput":
             volunteerUpdateObject.state = fieldEdited.selectedKey;
-            if (volunteerUpdateObject.state == "Select") {
+            //Begin of D012
+            //Added additional conditons if volunteerUpdateObject.state contains a null value or a blank string
+            if (volunteerUpdateObject.state == "Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state == "") {
                 volunteerUpdateObject.state = "";
             }
+            //End of D012
             break;
         case "volunteerMyProfileAddressInput":
             volunteerUpdateObject.address = fieldContent;

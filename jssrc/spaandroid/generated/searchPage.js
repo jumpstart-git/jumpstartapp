@@ -70,6 +70,7 @@ function addWidgetssearchPage() {
         "right": "17.66%",
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
+        "text": "Search",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "width": "69.84%",
         "zIndex": 1

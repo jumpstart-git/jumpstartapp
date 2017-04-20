@@ -70,6 +70,7 @@ function addWidgetssearchPage() {
         "right": "17.66%",
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
+        "text": "Search",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "width": "69.84%",
         "zIndex": 1
@@ -80,7 +81,7 @@ function addWidgetssearchPage() {
         "paddingInPixel": false
     }, {
         "autoFilter": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
+        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_SEARCH,
         "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
     });
     var searchBtn = new kony.ui.Button({

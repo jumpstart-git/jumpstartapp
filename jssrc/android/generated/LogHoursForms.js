@@ -806,6 +806,7 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
             ["1", "1"],
             ["2", "2"],
             ["3", "3"],
@@ -886,6 +887,8 @@ function addWidgetsLogHoursForms() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
+            ["0", "0"],
+            ["5", "5"],
             ["10", "10"],
             ["15", "15"],
             ["20", "20"],

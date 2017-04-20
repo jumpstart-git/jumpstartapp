@@ -52,7 +52,7 @@
     <attributes name="Text_Messaging" value="true"/>
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value="false"/>
-    <attributes name="appnamekey" value="JumpStartAbort1"/>
+    <attributes name="appnamekey" value="JumpStart"/>
     <attributes name="currentgaversion" value="7.2.1.GA_v201612132236"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
@@ -287,7 +287,7 @@
     <attributes name="andtargetsdkkey" value="7.0"/>
     <attributes name="win8bgagentclassname" value=""/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>
-    <attributes name="appversionkey" value="1.0.0"/>
+    <attributes name="appversionkey" value="1.1"/>
     <attributes name="WRITE_EXTERNAL_STORAGE" value="false"/>
     <attributes name="wp8tilestitlekey" value=""/>
     <attributes name="wp10versionbuildkey" value="0"/>
@@ -371,7 +371,7 @@
     <attributes name="wp10versionminorkey" value="0"/>
     <attributes name="Shared_User_Certificate" value="true"/>
     <attributes name="log_level" value="ERROR"/>
-    <attributes name="vendornamekey" value="KonyLabs"/>
+    <attributes name="vendornamekey" value="SupplyNation"/>
     <attributes name="ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
     <attributes name="wp8iconicsmallkey" value=""/>
     <attributes name="apploadeventkey" value="None"/>
@@ -438,10 +438,10 @@
     <attributes name="win8lockscreennotificationskey" value="Not set"/>
     <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="false"/>
     <attributes name="ID_CAP_APPOINTMENTS" value="true"/>
-    <attributes name="applogokey" value="0=,1=icon.png,8=,50=,42=,16=,18=,48=,43=,1000=,1001=,1002=,9999=,9998=,9997="/>
+    <attributes name="applogokey" value="0=icon.png,1=,8=,50=,42=,16=,18=,48=,43=,1000=,1001=,1002=,9999=,9998=,9997="/>
     <attributes name="camerasettings" value=""/>
     <attributes name="WP8_ID_CAP_NETWORKING" value="true"/>
-    <attributes name="appversioncode" value="1"/>
+    <attributes name="appversioncode" value="2"/>
     <attributes name="SET_ANIMATION_SCALE" value="false"/>
     <attributes name="webcam" value="false"/>
     <attributes name="wp81spackagenamekey" value="JumpStartAbort1"/>
@@ -518,7 +518,7 @@
     <attributes name="musicLibrary" value="false"/>
     <attributes name="READ_LOGS" value="false"/>
     <attributes name="wp8flipmediumkey" value=""/>
-    <attributes name="appidkey" value="JumpStartAbort1"/>
+    <attributes name="appidkey" value="JumpStart"/>
     <attributes name="iospopuptransitioncorrection" value="true"/>
     <attributes name="androidloadindicatorkey" value="true"/>
     <attributes name="CONTROL_LOCATION_UPDATES" value="false"/>
@@ -552,7 +552,7 @@
     <attributes name="Videos_Library_Access" value="true"/>
     <attributes name="wp8enforceMaxMemory" value="false"/>
     <attributes name="wp10codeGeneration" value="false"/>
-    <attributes name="build" value="release"/>
+    <attributes name="build" value="debug"/>
     <attributes name="certs_key_store_type" value="JKS"/>
     <attributes name="spaandroidtab800basefontsize" value="12"/>
     <attributes name="defaultlocalekey" value=""/>

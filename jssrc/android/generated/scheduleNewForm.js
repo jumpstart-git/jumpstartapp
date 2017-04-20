@@ -439,7 +439,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
-        "text": "You all need your manager's approval and consent before understanding this task",
+        "text": "I have received my manager's approval and consent before undertaking this task.",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -497,9 +497,8 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "101dp",
         "onClick": AS_RichText_1a485b46074042bbab4157e2ca51218c,
-        "onTouchStart": AS_RichText_214b052e608a4321b07888227bf903d0,
         "skin": "CopyslRichText08d925a35bfe342",
-        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "top": "30dp",
         "width": "90%",
         "zIndex": 1
@@ -598,7 +597,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartRT140",
-        "text": "You have entered a schedule outside regular working hours.You have selected available volunteering hours that are outside regular working hours. Please confirm this information is correct to continue.",
+        "text": "You have entered a schedule that is outside of regular working hours. This will be reflected in your volunteering hours log.",
         "top": "65dp",
         "width": "90%"
     }, {

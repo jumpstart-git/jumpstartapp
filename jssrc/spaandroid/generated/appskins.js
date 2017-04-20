@@ -134,6 +134,7 @@ function skinsInit() {
     CopyslFbox001158a2205b843 = "CopyslFbox001158a2205b843";
     CopyslFbox0080c61265e8d45 = "CopyslFbox0080c61265e8d45";
     CopyslFbox00b8b340e26e84d = "CopyslFbox00b8b340e26e84d";
+    CopyslFbox00dab66e224024d = "CopyslFbox00dab66e224024d";
     CopyslFbox025bfb307840c4d = "CopyslFbox025bfb307840c4d";
     CopyslFbox026726f85603440 = "CopyslFbox026726f85603440";
     CopyslFbox027bfefdb3d9f4e = "CopyslFbox027bfefdb3d9f4e";
@@ -318,6 +319,7 @@ function skinsInit() {
     CopyslLabel07c2f7fad339e4f = "CopyslLabel07c2f7fad339e4f";
     CopyslLabel07dc0a944e51b41 = "CopyslLabel07dc0a944e51b41";
     CopyslLabel0802c9407bd9049 = "CopyslLabel0802c9407bd9049";
+    CopyslLabel0824b9b19eb524a = "CopyslLabel0824b9b19eb524a";
     CopyslLabel0831bc50255164c = "CopyslLabel0831bc50255164c";
     CopyslLabel08b9ecf2b91a04f = "CopyslLabel08b9ecf2b91a04f";
     CopyslLabel08cf74d77254449 = "CopyslLabel08cf74d77254449";
@@ -572,6 +574,7 @@ function skinsInit() {
     ngnyGrayLinkText = "ngnyGrayLinkText";
     ngnyGreenFlexBG = "ngnyGreenFlexBG";
     ngnyGreenRegistrationButton = "ngnyGreenRegistrationButton";
+    ngnyGreyFlexBG = "ngnyGreyFlexBG";
     ngnyLargeOrangeLabelText = "ngnyLargeOrangeLabelText";
     ngnyOrangeHeaderText = "ngnyOrangeHeaderText";
     ngnyOrangeLabelText = "ngnyOrangeLabelText";
@@ -607,6 +610,7 @@ function skinsInit() {
     slPhone = "slPhone";
     slPopup = "slPopup";
     slRichText = "slRichText";
+    slRichText031030c0a768d4f = "slRichText031030c0a768d4f";
     slStaticNotificationForm = "slStaticNotificationForm";
     slTab = "slTab";
     slTextArea = "slTextArea";

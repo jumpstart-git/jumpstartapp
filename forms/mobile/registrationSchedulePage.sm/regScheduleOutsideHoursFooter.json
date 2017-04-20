@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "regOutsideHoursYes",
-        "regOutsideHoursNo"
+        "scheduleCancelButtonContainer"
     ],
     "clipbounds": true,
     "containerweight": 100,

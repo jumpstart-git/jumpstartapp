@@ -3,7 +3,7 @@ function setLoginData() {
     //alert("inside else");
     var valVolunteerId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerId;
     kony.store.setItem("volunteerId", valVolunteerId);
-    // kony.store.getItem("volunteerId"); 
+    // kony.store.getItem("volunteerId");
     ////skills start
     var skillList = " ";
     //console.log(JSON.stringify(res.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet));
@@ -96,7 +96,7 @@ function setLoginData() {
     var fromTimeSplitted = fromTimeFull.split(" ");
     var fromTime = fromTimeSplitted[0];
     var fromTimeMeridian = fromTimeSplitted[1];
-    // var fromTime="1";  
+    // var fromTime="1";
     //start merin
     var mArr = [
         ["fromTime", fromTime]
@@ -138,7 +138,7 @@ function setLoginData() {
     var userName = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userName;
     var password = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].password;
     var userId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].userId;
-    //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;   
+    //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
     kony.store.setItem("userId", userId);
     var usersUserTypeId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
     if (businessUnit === null || businessUnit === "null") {
@@ -149,8 +149,8 @@ function setLoginData() {
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text = userName;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
-    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = " "; //workDetails;
-    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = " "; //aboutMe;
+    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = ""; //workDetails;
+    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = ""; //aboutMe;
     //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text= companyName;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey = companyName;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text = role;
@@ -179,7 +179,7 @@ function setLoginData() {
     gblForRetreive = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0];
     //Start Push
     var DivInfo = kony.os.deviceInfo();
-    // alert(DivInfo.name); 
+    // alert(DivInfo.name);
     if (DivInfo.name === "iPhone") {
         // getPushNote();
         var ksid = kony.store.getItem("KSID");
@@ -193,6 +193,6 @@ function setLoginData() {
     } else {
         mainPage.show();
     }
-    //       //end push  
-    //mainPage.show();      
+    //       //end push
+    //mainPage.show();
 }

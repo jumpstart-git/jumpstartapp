@@ -6,7 +6,7 @@ mobileFabricConfigurationForBusinessLogoUpload = {
         service: ["UpdateBusinessLogo"],
         operations: ["uploadBusinessImage"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -124,16 +124,18 @@ function uploadBusinessLogoSuccessCallback(uploadImageData) {
             imagePathAfterUpdate = "http://ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + businessImagePathAfterUpdate;
         }
         kony.store.setItem("imgUrlBusiness", imagePathAfterUpdate);
-        // alert("updated url"+JSON.stringify(kony.store.getItem("imgUrlBusiness"))); 
-        // BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.imgContainer.imgBusinessLogo.src=imagePathAfterUpdate;  
+        // alert("updated url"+JSON.stringify(kony.store.getItem("imgUrlBusiness")));
+        // BusinessProfile.businessProfileDetailsContainer.businessProfileHeaderContainer.imgContainer.imgBusinessLogo.src=imagePathAfterUpdate;
         //mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src=imagePathAfterUpdate;
         kony.ui.Alert({
+            //D027: Changed alertType from ALERT_TYPE_INFO to ALERT_TYPE_CONFIRMATION
             "alertType": constants.ALERT_TYPE_INFO,
-            "alertTitle": null,
+            "alertTitle": "Confirmation",
             "yesLabel": "OK",
             "noLabel": "No",
-            "message": "Profile Uploaded Successfully",
-            "alertHandler": "null"
+            //D027: Changed message value from "Profile Uploaded Successfully" to "Profile logo was successfully updated"
+            "message": "Profile logo was successfully updated",
+            "alertHandler": null
         }, {
             "iconPosition": constants.ALERT_ICON_POSITION_LEFT
         });
