@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "45dp"
     },
     "_left_": {
         "type": "string",
-        "value": "-100%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,33 +23,35 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s845f5d03053456faa34ef938323a4c6",
+    "_skin_": "s4c4eb50be4e4f209adfe0a47c00ee45",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "85%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "sideBarHeader",
-        "sideBarBody",
-        "sideBarFooter"
+        "CancelRichText"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "sideBarMenu",
+    "id": "markEngagementCancelButton",
     "info": null,
     "isvisible": true,
-    "kuid": "a7dba7bdf1da45518d09d2ac99d19e71",
+    "kuid": "ea828ee370f648ada265adb9693c79e9",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "sideBarMenuContainer",
+    "parent": "MarkAsCompleteModalContainer",
     "pf": "mainPage",
     "snapgridsize": 10,
     "snaptogrid": true,

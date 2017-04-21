@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "sf16648bffa2466988371f799da3d5a3",
+    "_skin_": "s2c7645b4f0d4d4c861ad43a3e435c3c",
     "_text_": "Cancel",
     "_top_": {
         "type": "string",
@@ -38,6 +38,10 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "CancelRichText",
@@ -47,7 +51,7 @@
     "isvisible": true,
     "kuid": "2006a1bfe08a46a6b575938123485576",
     "name": "kony.ui.RichText",
-    "parent": "MarkAsCompleteModalContainer",
+    "parent": "markEngagementCancelButton",
     "pf": "mainPage",
     "wType": "RichText",
     "widgetalignment": 5,

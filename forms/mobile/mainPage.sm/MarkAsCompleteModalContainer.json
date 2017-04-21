@@ -46,7 +46,7 @@
     "children": [
         "staticLAbelMarkAsComplete",
         "markAsCompleteButton",
-        "CancelRichText"
+        "markEngagementCancelButton"
     ],
     "clipbounds": true,
     "containerweight": 100,
