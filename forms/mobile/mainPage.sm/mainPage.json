@@ -103,7 +103,7 @@
     "paddinginpixel": false,
     "platform": "iphone",
     "prevDevice": "iPhone5",
-    "prevPlatform": "android",
+    "prevPlatform": "spaip",
     "retainscrollposition": false,
     "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,

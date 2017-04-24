@@ -5,10 +5,6 @@
         "type": "string",
         "value": "100%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "5dp"
-    },
     "_margin_": [
         0,
         0,
@@ -29,8 +25,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "45%"
     },
     "allboxes": [],
     "autogrowmode": 0,

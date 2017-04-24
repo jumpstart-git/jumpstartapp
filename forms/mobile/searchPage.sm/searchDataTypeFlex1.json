@@ -47,7 +47,7 @@
     "containerweight": 100,
     "decelerat": false,
     "dragg": false,
-    "enablescrolling": true,
+    "enablescrolling": false,
     "focusskin": "s54f8950bcc14148b828dae15155f58f",
     "horizontalscrollindicator": true,
     "id": "searchDataTypeFlex1",
@@ -63,7 +63,7 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "track": false,
-    "verticalscrollindicator": true,
+    "verticalscrollindicator": false,
     "wType": "FlexScrollContainer",
     "widgetalignment": 1,
     "zindex": 1
