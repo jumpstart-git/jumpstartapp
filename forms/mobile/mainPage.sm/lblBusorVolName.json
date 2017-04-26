@@ -55,9 +55,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "8cdcd8b8533b47d792abc70d1b8d214b",
+    "kuid": "4ee6be5e79954d6e90631f145c61056e",
     "name": "kony.ui.Label",
-    "parent": "appHeaderTitleContainer",
+    "parent": "ProfileSidebar",
     "pf": "mainPage",
     "tooltip": "",
     "wType": "Label"

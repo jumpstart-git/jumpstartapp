@@ -75,15 +75,15 @@
                 "createdByEmail": "john@ngny.com.au",
                 "label": "F",
                 "createdOn": "1491799721818",
-                "lastModifiedTime": 1491800962591,
+                "lastModifiedTime": 1492665402241,
                 "active": 1,
                 "widgetId": "660f2ce584d44ab7bfd2137b797089f0",
                 "formId": "660f2ce584d44ab7bfd2137b797089f0",
                 "channel": "mobile",
                 "requirementId": "007a-ba2b-b463-88b6-fd37-6444",
-                "body": "<p>Volunteer:<br>Sidebar:&nbsp;To fix the switch of the email notification.</p><p>To add the terms and conditions to this page.<br>To introduce more colour to the sidebar.</p><p>To change Teal to be in line with our colour theme.<br>To have Open Tasks open after first time login.</p><p>Capitalize R in Results of Refresh Results</p><p>Sort breaks the product if pressed multiple times.</p><p>- To update the icons on this page (burger menu/usericon/search icon)</p><p>Change the teal background to a subtle grey.</p><p>To replace the search icon with a button etc.</p><p><br></p><p><br></p>"
+                "body": "<p>Volunteer:<br><span style=\"background-color:#008000\">Sidebar:&nbsp;To fix the switch of the email notification.</span></p><p>To add the terms and conditions to this page.<br><span style=\"background-color:#008000;\">To introduce more colour to the sidebar.</span></p><p>To change Teal to be in line with our colour theme.<br><span style=\"background-color:#008000\">To have Open Tasks open after first time login.</span></p><p><span style=\"background-color:#008000\">Capitalize R in Results of Refresh Results</span></p><p>Sort breaks the product if pressed multiple times.</p><p>- To update the icons on this page (burger menu/usericon/search icon)</p><p><span style=\"background-color:#008000\">Change the teal background to a subtle grey.</span></p><p>To replace the search icon with a button etc.</p><p><br></p><p><br></p>"
             }
         }
     },
-    "synced_on": "2017-04-20T06:05:44.869Z"
+    "synced_on": "2017-04-26T02:06:10.765Z"
 }

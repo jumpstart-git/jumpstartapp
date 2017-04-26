@@ -4,11 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "38%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "10dp"
+        "value": "40dp"
     },
     "_margin_": [
         6,
@@ -22,31 +18,26 @@
         0,
         0
     ],
-    "_skin_": "s5e2b2437fd94962926891187e1638f1",
-    "_text_": "Button",
-    "_top_": {
+    "_right_": {
         "type": "string",
-        "value": "15dp"
+        "value": "10dp"
     },
+    "_skin_": "scb999fe5da847ed995b125fa4d9e0b2",
+    "_text_": "",
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "90dp"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "38%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "disabledSkins": {
-        "focusSkin": "sabedbeb54524573817ae83b94dcf3e5"
-    },
+    "disabledSkins": {},
     "displaytext": false,
+    "focusskin": "s79c74f3a32f45a582958aa5ffde2f5e",
     "id": "searchButton",
     "ide_onClick": "AS_Button_3d555c25db1f4257a45b1f9c9ba15f18",
     "info": null,

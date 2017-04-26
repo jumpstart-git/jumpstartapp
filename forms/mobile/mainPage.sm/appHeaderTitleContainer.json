@@ -36,16 +36,16 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "appPageProfilePic",
-        "appPageGreeting",
-        "lblBusorVolName"
+        "appPageProfilePic2",
+        "appPageGreeting2",
+        "lblBusorVolName2"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "appHeaderTitleContainer",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "070f603de7794e43aa67a7917eaa5965",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",

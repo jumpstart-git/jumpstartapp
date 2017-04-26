@@ -54,7 +54,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ea484467d60346bd8e66f8a082f658ce",
     "name": "kony.ui.Label",
     "parent": "sideBarHeader",

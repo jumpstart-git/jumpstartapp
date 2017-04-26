@@ -4,22 +4,22 @@ function AS_Form_683e8141b8fd42a0898dcaa41d91db36(eventobject) {
     //mainPage.cancelRequestModalContainer.isVisible = false;
     if (kony.store.getItem("isBusOrVol") == "business") {
         // alert("a");
-        mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text = kony.store.getItem("loginBusinessName");
+        mainPage.lblBusorVolName.text = kony.store.getItem("loginBusinessName");
         var imageurlPath = kony.store.getItem("imgUrlBusiness");
         if (imageurlPath != null) {
             //alert("jst before setting"+imageurlPath);
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = "";
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = imageurlPath;
+            mainPage.appPageProfilePic.src = "";
+            mainPage.appPageProfilePic.src = imageurlPath;
         }
         //BusinessExistingOpenTaskService();
         getBusinessRequestsService();
         //BusinessRecommendationService();
     } else {
         // alert("it is volunteer");
-        mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text = kony.store.getItem("volLoginName");
+        mainPage.lblBusorVolName.text = kony.store.getItem("volLoginName");
         var VolimageurlPath = kony.store.getItem("imgUrlVal");
         if (VolimageurlPath != null) {
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = VolimageurlPath;
+            mainPage.appPageProfilePic.src = VolimageurlPath;
         }
         getVolunteerRequestsService1();
     }

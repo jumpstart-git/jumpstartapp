@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "70dp"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "33.00%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,8 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "emailNotificationLbl",
-        "checkList"
+        "checkList",
+        "emailNotificationLbl"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +45,7 @@
     "id": "FlexContainer08d40d9191a9344",
     "info": null,
     "isvisible": true,
-    "kuid": "66315d5f95f543d3b407de11b54e3c74",
+    "kuid": "e285656ac3bb449387afa0a66b3b5768",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "sideBarBody",

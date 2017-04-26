@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "20dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "1dp"
     },
     "_margin_": [
         1,
@@ -25,8 +25,8 @@
     "_skin_": "sae1ad470db44ca09dc99ace378e4aa8",
     "_text_": "Email notifications",
     "_width_": {
-        "type": "string",
-        "value": "55%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,10 +36,6 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "39%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
@@ -59,7 +55,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "ff9703de3aa64f2aaaa0cd13ff7a5343",
+    "kuid": "b602da446379442688eb0078d15d16d2",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
     "parent": "FlexContainer08d40d9191a9344",

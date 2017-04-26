@@ -2,13 +2,17 @@
     "@class": "com.kony.gen.viz.model.component.KVizRichText",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "number",
+        "value": "25"
+    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
     "_left_": {
         "type": "number",
-        "value": "0"
+        "value": "75"
     },
     "_margin_": [
         0,
@@ -22,11 +26,11 @@
         0,
         0
     ],
-    "_skin_": "sf16648bffa2466988371f799da3d5a3",
+    "_skin_": "s12dc90ce0c842f1ae78b2ef5ffcfabd",
     "_text_": "<u>Need help?</u>",
     "_top_": {
         "type": "string",
-        "value": "30dp"
+        "value": "25dp"
     },
     "_width_": {
         "type": "ref",
@@ -34,10 +38,6 @@
     },
     "_wrapping_": 2,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "sideBarNeedHelp",

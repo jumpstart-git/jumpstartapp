@@ -56,7 +56,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone5",
+    "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -102,10 +102,10 @@
     "noteId": "007a-ba2b-b463-88b6-fd37-6444",
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone6",
-    "prevPlatform": "android",
+    "prevDevice": "iPhone5",
+    "prevPlatform": "spaip",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
