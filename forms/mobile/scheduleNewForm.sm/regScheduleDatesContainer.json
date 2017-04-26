@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "52%"
+        "value": "54%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "5dp"
     },
     "_width_": {
         "type": "string",
@@ -48,7 +48,7 @@
     "kuid": "f1936f3268f2425e952804ff9d1df05f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "scheduleNewForm",
+    "parent": "scheduleNewFormContainer",
     "pf": "scheduleNewForm",
     "snapgridsize": 10,
     "snaptogrid": true,

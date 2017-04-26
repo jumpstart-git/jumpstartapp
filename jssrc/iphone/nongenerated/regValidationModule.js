@@ -119,6 +119,8 @@ function regCodeDataSuccessCallback(gblCodeData) {
     if (gblCodeData["codeValidate"] == "success") {
         setLoginData();
         login.validateCodeContainer.isVisible = false;
+        //D045 Add code to hide modular background
+        login.validateCodeContainerModular.isVisible = false;
         login.validateCodeText.text = "";
     } else {
         alert("Code inputted was incorrect. Please verify the code and try again");

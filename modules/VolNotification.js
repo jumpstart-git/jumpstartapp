@@ -61,11 +61,12 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //                                            // The user didn't pick a value so we'll show the alert
 //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
 //            }
+
 }
 
 function initializeMobileFabricForNotificationForVolunteer ()
 {
-//alert (" ********** Entering into initializeMobileFabric ********** ");
+// alert (" ********** Entering into initializeMobileFabric ********** ");
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
@@ -73,18 +74,19 @@ function initializeMobileFabricForNotificationForVolunteer ()
                                 mobileFabricConfigurationForVolunteerNotification.konysdkObject.init(mobileFabricConfigurationForVolunteerNotification.appKey,mobileFabricConfigurationForVolunteerNotification.appSecret,mobileFabricConfigurationForVolunteerNotification.serviceURL,initializeMobileFabricForNotificationForVolunteerSuccess,initializeMobileFabricForNotificationForVolunteerFailure);  
       // alert(getNotification());
     }
-                else
-                                alert ("Network unavailable. Please check your network settings. ");
-   kony.application.dismissLoadingScreen();
+                else {
+					alert ("Network unavailable. Please check your network settings. ");
+					kony.application.dismissLoadingScreen();                  
+                }
                 kony.print (" ********** Exiting out of initializeMobileFabric ********** ");
 }
 
 function initializeMobileFabricForNotificationForVolunteerSuccess(response)
 {
                 kony.print (" ********** Entering into initializeMobileFabricSuccess ********** ");
-                //alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
+//                 alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
                 mobileFabricConfigurationForVolunteerNotification.isKonySDKObjectInitialized=true;
-                kony.application.dismissLoadingScreen();
+//                 kony.application.dismissLoadingScreen();
                 //authenticateMFUsingUserStore();
    getNotificationforVolunteer();
                 kony.print (" ********** Exiting out of initializeMobileFabricSuccess ********** ");
@@ -93,7 +95,7 @@ function initializeMobileFabricForNotificationForVolunteerSuccess(response)
 function initializeMobileFabricForNotificationForVolunteerFailure(error)
 {
                 kony.print (" ********** Entering into initializeMobileFabricFailure ********** ");
-           //     alert (" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
+//                alert (" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
                 kony.application.dismissLoadingScreen();
               //  alert (" Unable to initialize the application. Please try again. ");
                 kony.print (" ********** Exiting out of initializeMobileFabricFailure ********** ");
@@ -131,7 +133,7 @@ function loginMFFailure(error)
 function getNotificationforVolunteer()
 {
   
-             // alert("insidegetNotificationforVolunteer");
+//              alert("insidegetNotificationforVolunteer");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
@@ -152,20 +154,21 @@ function getNotificationforVolunteer()
 //alert("vol id:"+JSON.stringify(noteVolId["id"]));
                 mobileFabricConfigurationForVolunteerNotification.integrationObj.invokeOperation(operationName, headers, noteVolId,getNotificationforVolunteerSuccessCallback,getNotificationforVolunteerErrorCallback);
                 }
-                else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                else {
+					alert ("Network unavailable. Please check your network settings. ");
+                    kony.application.dismissLoadingScreen();
+                }
 }
 
 function getNotificationforVolunteerSuccessCallback (gblVolNotificationList)
 {
   
-  //alert("inside success"+JSON.stringify(gblVolNotificationList));
+//   alert("inside success"+JSON.stringify(gblVolNotificationList));
   // Check the opstatus for 0 meaning it worked
-  if (gblVolNotificationList !== null &&gblVolNotificationList.opstatus === 0){
-    
+  if (gblVolNotificationList !== null && gblVolNotificationList.opstatus === 0){
     if (gblVolNotificationList.notificationList!== null && gblVolNotificationList.notificationList!== undefined){
-    if (gblVolNotificationList.notificationList[0].NotificationDTO !== null&&gblVolNotificationList.notificationList[0].NotificationDTO!=undefined){
-       // alert("2");
+      if (gblVolNotificationList.notificationList[0].NotificationDTO !== null && gblVolNotificationList.notificationList[0].NotificationDTO!=undefined){
+//        alert("2");
       // Making sure we have at least 1 article returned
       if (gblVolNotificationList.notificationList.length > 0){
         // Now we know we have results so we'll print them out to check
@@ -184,6 +187,8 @@ function getNotificationforVolunteerSuccessCallback (gblVolNotificationList)
       }
     }
   }
+  else 
+   kony.application.dismissLoadingScreen(); //if there are no notifs for the user
  }
   else{
                 kony.application.dismissLoadingScreen();
@@ -250,7 +255,6 @@ mainPage.mainPageBody.mainPageContentParent.myNotifications.segMessageNotificati
         };
   
  
-  
   if (gblVolNoteResponse["notificationList"].length > 0) {
                 var tempVolNotData = [];
                 var len =gblVolNoteResponse["notificationList"].length;
@@ -311,7 +315,9 @@ mainPage.mainPageBody.mainPageContentParent.myNotifications.segMessageNotificati
     kony.application.dismissLoadingScreen();
     mainPage.mainPageContentParent.myNotifications.isVisible=true;
   }
-  
+      else {
+    	kony.application.dismissLoadingScreen();        
+      }
     }
 
   

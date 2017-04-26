@@ -51,7 +51,7 @@
     "kuid": "7303dc6a8991456db7fa2eeda6553ced",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "scheduleNewForm",
+    "parent": "scheduleNewFormContainer",
     "pf": "scheduleNewForm",
     "snapgridsize": 10,
     "snaptogrid": true,

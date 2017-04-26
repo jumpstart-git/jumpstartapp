@@ -30,19 +30,19 @@
     },
     "_width_": {
         "type": "string",
-        "value": "84%"
+        "value": "80%"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "47.29%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
     "id": "AddBtn",
-    "ide_onClick": "AS_Button_e21ac211a8a8413da63f77c6eac41fda",
+    "ide_onClick": "AS_Button_edf83feaa9fe47a7855ed1f1a459a40f",
     "info": null,
     "isvisible": true,
     "kuid": "cd0b223b36b14c6ebdf23e503b837b3d",

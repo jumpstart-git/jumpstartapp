@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_skin_": "s2526c4dc1064a40adb4c9f6d3b9aaf7",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -36,6 +36,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "ProfileSidebar",
         "sideBarCompanyLogo",
         "sideBarAppName",
         "sideBarAccountLabel",

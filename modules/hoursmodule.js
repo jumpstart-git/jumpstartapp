@@ -32,6 +32,13 @@ var dateVal=arr[2]+"-"+arr[1]+"-"+arr[0];
   var hoursVal=LogHoursForms.hoursDropDownList.selectedKey;
   var minutesVal=LogHoursForms.minutesDropDownList.selectedKey;
   var isNonWorkingHour=LogHoursForms.CheckBoxGroup00dcf0e4d6e6a45.selectedKeys;
+  //D067 Add code to convert time
+  		if(minutesVal > 0){
+			minutesVal = minutesVal/60;
+			minutesVal = Math.round(minutesVal * 100)/100;
+			minutesVal = String(minutesVal).substr(2);
+		}
+  //End of code addition
   var timeVal=hoursVal+"."+minutesVal;
   
   if(isNonWorkingHour!=null)

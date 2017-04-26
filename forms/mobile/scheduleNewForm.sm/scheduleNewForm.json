@@ -25,14 +25,12 @@
             "windowSoftInputMode": 2
         }
     },
+    "bounces": false,
+    "bounceszoom": false,
     "canUpdateUI": true,
     "children": [
-        "regScheduleHdrContainer",
-        "regScheduleDatesContainer",
-        "regScheduleScrollContainer",
-        "offManagerApprovalContainer",
-        "outsideScheduletime",
-        "regScheduleFooter"
+        "scheduleNewFormContainer",
+        "outsideScheduletime"
     ],
     "containerweight": 100,
     "currentLocale": "default",
@@ -42,11 +40,15 @@
     "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "enablescrolling": false,
+    "formtransparencyduringpostshow": 100,
+    "headeroverlap": false,
     "id": "scheduleNewForm",
     "ide_preShow": "AS_Form_c04c2de481c948ae876453c2c425440f",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 1,
+    "invokedProperty": "headers",
     "ipad": {
         "psp": {
             "inputAccessoryViewType": 4
@@ -55,6 +57,8 @@
     "iphone": {
         "needAppMenu": false,
         "psp": {
+            "bouncesZoom": false,
+            "formTransparencyDuringPostShow": 100,
             "inputAccessoryViewType": 1,
             "titleBarConfig": {
                 "buttonClosureLeftSideView": "",
@@ -77,6 +81,7 @@
     "isvisible": true,
     "kuid": "52743330124941c0b64a6f9c1f63791d",
     "layouttype": 2,
+    "menuposition": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
@@ -86,7 +91,7 @@
     "retainscrollposition": false,
     "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,
-    "snaptogrid": true,
+    "snaptogrid": false,
     "spaan": {
         "needAppMenu": false
     },

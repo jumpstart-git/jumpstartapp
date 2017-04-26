@@ -1,15 +1,15 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "JumpStartAbort1",
-    appName: "JumpStartAbort1",
-    appVersion: "1.0.0",
+    appId: "JumpStart",
+    appName: "JumpStart",
+    appVersion: "1.1",
     platformVersion: null,
     serverIp: "127.0.0.1",
     serverPort: "80",
     secureServerPort: "443",
     isDebug: false,
-    middlewareContext: "JumpStartAbort1",
+    middlewareContext: "JumpStart",
     isturlbase: "https://cba-jumpstart.konycloud.com/services",
     isMFApp: true,
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
@@ -567,8 +567,8 @@ var appConfig = {
     svcDocRefresh: false,
     svcDocRefreshTimeSecs: -1,
     eventTypes: ["FormEntry", "ServiceRequest", "Error", "Crash"],
-    url: "https://cba-jumpstart.konycloud.com/JumpStartAbort1/MWServlet",
-    secureurl: "https://cba-jumpstart.konycloud.com/JumpStartAbort1/MWServlet"
+    url: "https://cba-jumpstart.konycloud.com/JumpStart/MWServlet",
+    secureurl: "https://cba-jumpstart.konycloud.com/JumpStart/MWServlet"
 };
 sessionID = "";
 

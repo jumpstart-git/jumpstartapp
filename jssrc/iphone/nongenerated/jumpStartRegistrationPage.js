@@ -192,7 +192,15 @@ function validatePassword() {
         return 1;
     }
 }
-
+//Start of D058
+function validateEmailDomain() {
+    var emailAddress = volunteerRegObject.emailAddress;
+    if (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0) {
+        return false;
+    }
+    return true;
+}
+//End of D058
 function submitAccountInfo() {
     var isAccountInfoComplete = validateAccountInfo();
     if (!isAccountInfoComplete) {
@@ -223,9 +231,18 @@ function submitAccountInfo() {
         validationAlert("Warning", "Passwords must have at least 1 capital letter");
         return false;
     }
-    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5) {
+    //Start of D058
+    var isValidateEmailDomain = validateEmailDomain();
+    if (!isValidateEmailDomain) {
+        //Start of D051
+        validationAlert("Warning", "The domain of the email you have entered is not registered.");
+        //End of D051
+        return false;
+    }
+    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {
         registrationProfessionalPage.show();
     }
+    //End of D058
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - END: myString");

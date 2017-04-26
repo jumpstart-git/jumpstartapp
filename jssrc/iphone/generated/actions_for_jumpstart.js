@@ -40,6 +40,12 @@ function AS_Button_0d87a87ab5bd4552a60cca8b24ed2876(eventobject) {
     // searchPage.show(); 
 }
 
+function AS_Button_0f59a0f92f724438b5ea9a1898bd513d(eventobject) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_102b6bf5ed1848b1ab72a98c4080fef5(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -269,6 +275,12 @@ function AS_Button_47f078e3a22f4674b7e9178a14c00f23(eventobject) {
     return addNewSkillUpdateee.call(this);
 }
 
+function AS_Button_4ba9be44ba8c440cbdfb35e33ee0b95d(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_4dfe6c9e001f40eca415531a76e2e273(eventobject) {
     searchResultProfile.startEngagementModalContainer.isVisible = false;
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.TitleInputField.text = "";
@@ -327,6 +339,8 @@ function AS_Button_57e757da8c0e4154b815dffa14c05a90(eventobject) {
     ReportingPage.ReportingContainer.ReportingActionsContainer.corporateFlexContainer.corporateIndicatorFlex.isVisible = false;
     ReportingPage.ReportingContainer.ReportingActionsContainer.supplyNationContainer.supplyNationIndicator.isVisible = false;
 }
+
+function AS_Button_58a1239db4ce4f1a977f3a691319a188(eventobject, x, y) {}
 
 function AS_Button_5a822dd9fa4343f19cd554abbbb01fb3(eventobject) {
     searchResultProfile.startEngagementModalContainer.isVisible = false;
@@ -1011,6 +1025,10 @@ function AS_Button_a95ff095cd2d4c0faf96630c73f24b5d(eventobject) {
     //mainPage.show();
 }
 
+function AS_Button_aa285d8fe8d04e2d820658c111389d6b(eventobject) {
+    return getScheduleFormat.call(this);
+}
+
 function AS_Button_aa3e3d85d1ad4363aa2228b03b71875f(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -1049,6 +1067,8 @@ function AS_Button_af46e1839f6e43c5a3361243e5d819f1(eventobject) {
         gblIsVol = true;
     }
 }
+
+function AS_Button_afb13a1455b543269454fbcb7c7dcfab(eventobject) {}
 
 function AS_Button_b2c5b26ff29f4a909862e033008e3592(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "volunteer") {
@@ -1325,6 +1345,10 @@ function AS_Button_db0bf370a0c3499f8dda80469463a8c7(eventobject) {
     //mainPage.show(); 
 }
 
+function AS_Button_dc6cf53afef74ce497dd0a2c3c81d777(eventobject) {
+    return hoursAgreeAndContinue.call(this);
+}
+
 function AS_Button_dc8aa82b60d146248de333630a31e677(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
     //mainPage.show(); 
@@ -1384,6 +1408,10 @@ function AS_Button_df13c25023874207a65c88b802d79b02(eventobject) {
     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.availabiltyTxt.text = availabilty;
 }
 
+function AS_Button_df291e0c7eb746038635f1ad35f928df(eventobject) {
+    registrationProfessionalPage.show();
+}
+
 function AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         BusinessAcceptRequestTasks();
@@ -1441,6 +1469,10 @@ function AS_Button_eb96d11911454d8e91cb3994fb686bf4(eventobject) {
 
 function AS_Button_ec9397f10e6e482bb595acb81c6014bf(eventobject, x, y) {
     return addNewSkill.call(this);
+}
+
+function AS_Button_edf83feaa9fe47a7855ed1f1a459a40f(eventobject) {
+    return addSchedule.call(this);
 }
 
 function AS_Button_ef9d782efbb843a2af32d76859191241(eventobject) {
@@ -1710,6 +1742,12 @@ function AS_Button_fe953aeb6be94dfcb3ee8c7a51645924(eventobject) {
     scheduleNewForm.show();
 }
 
+function AS_Button_ffb71ae710f14cd9a31f9bc62b0f88f2(eventobject, x, y) {
+    kony.store.removeItem("imageVal");
+    kony.store.removeItem("imageFileNameVal");
+    registrationPage.show();
+}
+
 function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -1725,6 +1763,16 @@ function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     //    //   alert("he is volunteer");
     //       requestVolunteerByBusiness1();
     //     }
+}
+
+function AS_CheckBoxGroup_2dc7471871904355a8c132f5cb7d1bff(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
+    }
 }
 
 function AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c(eventobject) {
@@ -1754,6 +1802,16 @@ function AS_CheckBoxGroup_5e729be7102843cfa93c156269a715dd(eventobject) {
         mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = true;
     } else {
         mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = false;
+    }
+}
+
+function AS_CheckBoxGroup_7adc15c2250c45df839525a862e0bc1f(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
     }
 }
 
@@ -2003,6 +2061,12 @@ function AS_FlexContainer_3fdb3c69d82645f4acec633fedc7f5c0(eventobject, x, y) {
 
 function AS_FlexContainer_419555f6d1944647bc52c183eef72c57(eventobject, x, y) {}
 
+function AS_FlexContainer_41d5a34b95944163a1650bf4b58c495b(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
+
+function AS_FlexContainer_483c1cbbcb2f4ca5b45f075d2688f53f(eventobject, x, y) {}
+
 function AS_FlexContainer_485f51a4822a4e759c93ec4b98fe60bc(eventobject, x, y) {}
 
 function AS_FlexContainer_494ae416d6d04db69d1d2ec5f3d65c93(eventobject) {
@@ -2216,6 +2280,10 @@ function AS_FlexContainer_b3a212d52bac4901b784c4c9714714ed(eventobject) {
     mainPage.mainPageBody.navBarScroller.activityNavContainer.activityIndicator.isVisible = false;
     mainPage.mainPageBody.navBarScroller.notificationNavContainer.notificationIndicator.isVisible = false;
     mainPage.mainPageBody.navBarScroller.recommendationNavContainer.recommendationIndicator.isVisible = true;
+}
+
+function AS_FlexContainer_b3e975edbb0c4c0fbf129176c165b158(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_FlexContainer_b650b086d238460b8818950d23cdc2ae(eventobject, x, y) {
@@ -2533,6 +2601,7 @@ function AS_Form_683e8141b8fd42a0898dcaa41d91db36(eventobject) {
         mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text = kony.store.getItem("volLoginName");
         var VolimageurlPath = kony.store.getItem("imgUrlVal");
         if (VolimageurlPath != null) {
+            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = "";
             mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = VolimageurlPath;
         }
         getVolunteerRequestsService1();
@@ -2672,6 +2741,8 @@ function AS_Image_03b6c3d236894551a5decbc650f84125(eventobject, x, y) {
     return openDialog.call(this);
 }
 
+function AS_Image_1756fa2a81574791943136eba7c5bcf8(eventobject, imagesrc, issuccess) {}
+
 function AS_Image_1934850e80344832bd5ee347f826ac37(eventobject, x, y) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         var segTypeCheckforVolCall = kony.store.getItem("segmentType");
@@ -2724,6 +2795,8 @@ function AS_Image_d114a1de352e4d47a3263593f343e3f3(eventobject, imagesrc, issucc
 function AS_Image_d97a71e9637c4514a8b1c7bdf35f416c(eventobject, x, y) {
     return openDialogForBusiness.call(this);
 }
+
+function AS_Image_e8e4bd72c460496080f219c3e47f1bc9(eventobject, x, y) {}
 
 function AS_Image_fd8eba264c9143189babb4bea113c3fc(eventobject, x, y) {
     return changeProfPicVolunteer.call(this);
@@ -2958,6 +3031,10 @@ function AS_ListBox_9ce4e80690f64aadaede38f2779e9975(eventobject) {
     //alert(tsetGetID);
 }
 
+function AS_ListBox_aa0cee9cf07a479cbfbebdb7fc2c52ef(eventobject) {
+    return onRegFieldUpdate.call(this, eventobject);
+}
+
 function AS_ListBox_b96d06ad93cc4b95b9ddb1e14225ddbf(eventobject) {
     // gblExistingTaskId=mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.selectedKeyValue;
     // var id=gblExistingTaskId[0];
@@ -3087,6 +3164,27 @@ function AS_RichText_0d0180c427964d89b1e55cf0d91967ab(eventobject, linktext, att
     }
 }
 
+function AS_RichText_0d038155c1474567aaca15e97228611d(eventobject, x, y) {
+    //alert("show profile");
+    //volunteerMyProfilePage.show();
+    //mainPage.sideBarMenuContainer.isVisible=false;
+    if (kony.store.getItem("isBusOrVol") === "business") {
+        //      businessMyProfile.businessMyProfileFooter.isVisible=false;
+        //      businessMyProfile.BusinessProfilefooterWith2Buttons.isVisible=true;
+        //businessMyProfile.show();
+        BusinessProfile.show();
+        searchResultProfile.volunteerProfileContainer.isVisible = false;
+        searchResultProfile.businessProfileContainer.isVisible = true;
+        // alert("BusinessProfile");
+    } else {
+        volunteerMyProfilePage.show();
+        //volunteerMyProfilePage.volunteerMyProfileFooter.isVisible=false;
+        volunteerMyProfilePage.volunteerMyProfileFooter2Buttons.isVisible = true;
+        mainPage.destroy();
+        //alert("volunteerprofile");
+    }
+}
+
 function AS_RichText_0e85ebcdf7a748258ca19a76e6f299bb(eventobject, x, y) {
     mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = false;
     mainPage.eligibiltyCriteriaModalContainer.acceptTermsChekBoxFlex.chckBoxFlex.chckBoxx.masterData = [
@@ -3109,6 +3207,10 @@ function AS_RichText_14f32e89539e418c9d4f462b73533382(eventobject, linktext, att
         //alert("inside snippet");
         volunteerViewProfilePageService();
     }
+}
+
+function AS_RichText_157903ef62f840a68bb802b935e4b093(eventobject, linktext, attributes) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_RichText_16c11585f0de42caa968969bd4e21bde(eventobject, x, y) {
@@ -3253,6 +3355,10 @@ function AS_RichText_407b0568036d4033a12445989aaf483c(eventobject, linktext, att
     mainPage.cancelRequestModalContainer.isVisible = true;
     saveCancelVolReqId.call(this);
     saveReqForCancel.call(this);
+}
+
+function AS_RichText_4135e9845b634c85a398fc866db01008(eventobject, linktext, attributes) {
+    scheduleNewForm.outsideScheduletime.isVisible = false;
 }
 
 function AS_RichText_44420397b0474621a6cc3106c0203916(eventobject, x, y) {
@@ -3507,6 +3613,8 @@ function AS_RichText_62d2e670d3a146f58141e05208398840(eventobject, linktext, att
     }
 }
 
+function AS_RichText_63e05d4792ee49ff84a4025d858f4100(eventobject, linktext, attributes) {}
+
 function AS_RichText_64f60642307f4d68891aea6f3323788a(eventobject, linktext, attributes) {
     if (kony.store.getItem("isBusOrVol") == "volunteer") {
         IndigenousBusinessViewProfileService();
@@ -3667,6 +3775,25 @@ function AS_RichText_8be722f5bb4349d2bad731306f67b5e2(eventobject, linktext, att
 function AS_RichText_8d10f40eabc1477a8115c5167105b377(eventobject, linktext, attributes) {
     ReportingPage.show();
     alert("inside onrowclick");
+}
+
+function AS_RichText_8e341278b19c42ad86e9eb9da9e17f9d(eventobject, linktext, attributes, context) {
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_CONFIRMATION,
+        "alertTitle": "Confirmation",
+        "yesLabel": "Yes",
+        "noLabel": "No",
+        "message": "Do you really want to remove the brief?",
+        "alertHandler": appUpgradeCloseOpp
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_RIGHT
+    });
+
+    function appUpgradeCloseOpp(response) {
+        if (response == true) {
+            unAssignedTaskSegData1();
+        } else {}
+    }
 }
 
 function AS_RichText_8ef5e3b3c4eb49679f4a1707c01ad4dd(eventobject, linktext, attributes) {
@@ -4324,6 +4451,8 @@ function AS_RichText_fac39ba759ec43de9444a58266eca74f(eventobject, linktext, att
     mainPage.show();
 }
 
+function AS_RichText_fd1b4d64636b4e0b98cc769babb47668(eventobject, x, y) {}
+
 function AS_RichText_fef272d3e61b46b69d01e363fe6800d3(eventobject, linktext, attributes) {
     // callVolfromStartEngagementFromAcceptedrequestSeg();
 }
@@ -4346,6 +4475,10 @@ function AS_Segment_129e92e809394c59bd592175b01d09f1(eventobject, sectionNumber,
 
 function AS_Segment_1a35f0773f8f485484cb32855b01b64f(eventobject, sectionNumber, rowNumber) {
     return removeSkillForVolUpdate.call(this, eventobject);
+}
+
+function AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5(eventobject, sectionNumber, rowNumber) {
+    return removeSchedule.call(this, eventobject);
 }
 
 function AS_Segment_40a3c921256e40bd85f3e68049e6ad36(eventobject, sectionNumber, rowNumber) {

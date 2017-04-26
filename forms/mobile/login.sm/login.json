@@ -28,6 +28,7 @@
     "canUpdateUI": true,
     "children": [
         "loginContainer",
+        "validateCodeContainerModular",
         "validateCodeContainer"
     ],
     "containerweight": 100,

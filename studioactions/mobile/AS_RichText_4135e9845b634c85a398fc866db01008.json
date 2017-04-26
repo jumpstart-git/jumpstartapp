@@ -1,0 +1,23 @@
+{
+    "AS_RichText_4135e9845b634c85a398fc866db01008": {
+        "id": "AS_RichText_4135e9845b634c85a398fc866db01008",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "linktext"
+        }, {
+            "datatype": "string",
+            "name": "attributes"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_07cc1bb8903a4e8f88d65f92ebb41587",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "scheduleNewForm.outsideScheduletime.isVisible=false;",
+            "callbackType": null
+        }]
+    }
+}

@@ -274,7 +274,9 @@ function submitAccountInfo() {
   //Start of D058
   var isValidateEmailDomain = validateEmailDomain();
   if (!isValidateEmailDomain) {
-    validationAlert("Warning", "Please make sure your email address is associated with either '@dxc.com', '@supplynation.org.au', or '@cba.com.au'.");
+    //Start of D051
+    validationAlert("Warning", "The domain of the email you have entered is not registered.");
+    //End of D051
     return false;
   }
 

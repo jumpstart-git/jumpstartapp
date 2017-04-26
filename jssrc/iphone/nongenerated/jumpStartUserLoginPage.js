@@ -289,6 +289,8 @@ function getLoginSuccessCallback(gblLoginData1) {
                     if (gblLoginData.LoginBusinessVolunteer[0]["isFirstLogin"] == "true") {
                         gblemailVal = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
                         login.validateCodeContainer.isVisible = true;
+                        //D045 Add code to make modular bg visible
+                        login.validateCodeContainerModular.isVisible = true;
                         kony.application.dismissLoadingScreen();
                     } else {
                         var valVolunteerId = gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].volunteerId;

@@ -3,14 +3,14 @@ mobileFabricConfigurationForBusinessOpenCloseTask = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
-    //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-    //appSecret:"c600a59925b36419de1546056cd21557", 
+    //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+    //appSecret:"c600a59925b36419de1546056cd21557",
     //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
     integrationServices: [{
         service: "GetMyActivityOpenTasks",
         operations: ["getOpenTaskByBusinessId"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -125,7 +125,7 @@ function getBusinessOpenCloseTask() {
         //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
         //         }
         var dataBusId = {};
-        dataBusId["id"] = kony.store.getItem("businessId"); //"1";//kony.store.getItem("businessId"); 
+        dataBusId["id"] = kony.store.getItem("businessId"); //"1";//kony.store.getItem("businessId");
         //  alert("operation name"+dataBusId["id"]);
         mobileFabricConfigurationForBusinessOpenCloseTask.integrationObj.invokeOperation(operationName, headers, dataBusId, getBusinessOpenCloseTaskSuccessCallback, getBusinessOpenCloseTaskErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
@@ -148,8 +148,8 @@ function getBusinessOpenCloseTaskSuccessCallback(gblBusinessOpenCloseTaskList) {
                     gblTaskResponse = gblBusinessOpenCloseTaskList;
                     setTaskSegData(gblTaskResponse);
                     // var gblTaskResponse=JSON.stringify(BusinessOpenCloseTaskList);
-                    //Setting the segment widgetdataMap 
-                    //          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"}; 
+                    //Setting the segment widgetdataMap
+                    //          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"};
                     //      //      Setting the data to the segment
                     //      frmFoxNews.segNewsTitle.setVisibility(true);
                     //          frmFoxNews.segNewsTitle.setData(BusinessOpenCloseTaskList.MessageDTO.news_item.title);

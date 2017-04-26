@@ -4,7 +4,7 @@
   "border_color": "000000ff",
   "border_style": "plain",
   "border_type": 0,
-  "border_width": 0,
+  "border_width": 1,
   "isDefaultSkin": false,
   "kuid": "s35dcd98d3f94cabbaa665000dcb813e",
   "wType": "FlexContainer"

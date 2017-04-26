@@ -66,7 +66,7 @@ function initializeFBox0788b6c38d49d4b() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "78%",
+        "width": "100%",
         "zIndex": 1
     }, {}, {});
     myOpenTaskDetailParent.setDefaultUnit(kony.flex.DP);

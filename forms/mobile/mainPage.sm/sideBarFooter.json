@@ -1,13 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_height_": {
+    "_bottom_": {
         "type": "string",
-        "value": "20%"
+        "value": "20dp"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_margin_": [
         0,
@@ -23,20 +23,18 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
+    "_skin_": "sb0330648ef94fd7ad06fc27ffa107ed",
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
+        "SeparatorEmail",
         "sideBarLogout",
+        "SeparatorLogout",
         "sideBarNeedHelp"
     ],
     "clipbounds": true,

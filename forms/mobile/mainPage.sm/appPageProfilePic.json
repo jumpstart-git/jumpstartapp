@@ -4,12 +4,12 @@
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
-        "type": "string",
-        "value": "40dp"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "2%"
+        "value": "10dp"
     },
     "_margin_": [
         0,
@@ -51,9 +51,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "9118b24f20da4de798353dcc2aaea435",
+    "kuid": "a01dcf9647b3496cab7871a9956c9c0d",
     "name": "kony.ui.Image2",
-    "parent": "appHeaderTitleContainer",
+    "parent": "ProfileSidebar",
     "pf": "mainPage",
     "srcType": 1,
     "wType": "Image",

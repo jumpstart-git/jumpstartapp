@@ -15,7 +15,7 @@
     "_padding_": [
         2,
         0,
-        0,
+        1,
         0
     ],
     "_skin_": "s8ce730d49f149fd926d85741a5899f7",
@@ -33,6 +33,7 @@
     "context": {
         "channel": "mobile",
         "formID": "registrationProfessionalPage",
+        "ispercent": "",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
@@ -48,7 +49,7 @@
     "masterdata": [
         [
             "Select",
-            "Select from drop down menu"
+            "Select from drop down list"
         ],
         [
             "CBA",
@@ -71,7 +72,7 @@
     "selectedkeys": null,
     "selectedkeyvalue": [
         "Select",
-        "Select from drop down menu"
+        "Select from drop down list"
     ],
     "selectedkeyvalues": null,
     "size": 18,

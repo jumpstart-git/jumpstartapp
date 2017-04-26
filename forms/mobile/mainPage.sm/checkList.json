@@ -3,16 +3,16 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_bottom_": {
-        "type": "string",
-        "value": "25%"
+        "type": "number",
+        "value": "0"
     },
     "_height_": {
         "type": "string",
-        "value": "55%"
+        "value": "70%"
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "5dp"
     },
     "_margin_": [
         0,
@@ -35,19 +35,18 @@
         "type": "string",
         "value": "0%"
     },
-    "_width_": "31.25%",
-    "canUpdateUI": true,
-    "centerx": {
+    "_width_": {
         "type": "string",
-        "value": "15%"
+        "value": "32%"
     },
+    "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "43%"
     },
     "containerweight": 100,
     "id": "checkList",
-    "ide_onSelection": "AS_CheckBoxGroup_c2d2104377b94ac29d181a1b042ff518",
+    "ide_onSelection": "AS_CheckBoxGroup_2dc7471871904355a8c132f5cb7d1bff",
     "info": null,
     "ipad": {
         "psp": {
@@ -61,29 +60,13 @@
     },
     "isvisible": true,
     "itemorientation": "horizontal",
-    "kuid": "eb77d5c20a874aac83d29af1aea59310",
+    "kuid": "d3bd83ec4587440fbb6e4ee6bc6e1da6",
     "masterdata": [
         [
             "cbg1",
             "."
         ]
     ],
-    "maxheight": {
-        "type": "string",
-        "value": "55%"
-    },
-    "maxwidth": {
-        "type": "string",
-        "value": "35%"
-    },
-    "minheight": {
-        "type": "string",
-        "value": "40%"
-    },
-    "minwidth": {
-        "type": "string",
-        "value": "35%"
-    },
     "name": "kony.ui.CheckBoxGroup",
     "orientation": "horizontal",
     "paddinginpixel": false,

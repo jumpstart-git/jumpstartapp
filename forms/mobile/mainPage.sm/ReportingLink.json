@@ -2,13 +2,17 @@
     "@class": "com.kony.gen.viz.model.component.KVizRichText",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "number",
+        "value": "25"
+    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "75dp"
     },
     "_margin_": [
         0,
@@ -26,7 +30,7 @@
     "_text_": "<u>Reporting</u>",
     "_top_": {
         "type": "string",
-        "value": "20dp"
+        "value": "25dp"
     },
     "_width_": {
         "type": "ref",
@@ -34,16 +38,12 @@
     },
     "_wrapping_": 2,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "ReportingLink",
     "ide_onTouchStart": "AS_RichText_79a979c620b74de38fdedecd3e420bba",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "4011c786a4fe410db3f6f035c83e79a0",
     "name": "kony.ui.RichText",
     "parent": "sideBarBody",
