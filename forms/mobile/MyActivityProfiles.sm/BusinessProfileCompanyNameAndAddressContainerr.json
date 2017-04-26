@@ -26,11 +26,11 @@
     "_text_": "The Supplies  Company",
     "_top_": {
         "type": "string",
-        "value": "25%"
+        "value": "15%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "90%"
     },
     "_wrapping_": 2,
     "android": {
@@ -57,9 +57,15 @@
     },
     "isvisible": true,
     "kuid": "d5428b30af1b4902956a0af19fc67c96",
+    "maxnumberoflines": 2,
+    "maxwidth": {
+        "type": "string",
+        "value": "90%"
+    },
     "name": "kony.ui.Label",
     "parent": "CompanyNameAndAddressContainerr",
     "pf": "MyActivityProfiles",
+    "texttruncateposition": 3,
     "tooltip": "",
     "wType": "Label"
 }
