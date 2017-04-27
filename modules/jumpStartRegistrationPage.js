@@ -232,7 +232,7 @@ function validateEmailDomain() {
   var count = 0;
 
   for (var i = 0; i < domains.length; i++) {
-    if (emailAddress.indexOf(domains[i]))>=0
+    if (emailAddress.indexOf(domains[i])>=0)
     {
         count++;
     }
@@ -243,7 +243,7 @@ function validateEmailDomain() {
   //   return false;
   // }
 
-  if count > 0
+  if (count > 0)
   {
     return true;
   }
@@ -291,7 +291,8 @@ function submitAccountInfo() {
   var isValidateEmailDomain = validateEmailDomain();
   if (!isValidateEmailDomain) {
     //Start of D051
-    validationAlert("Warning", "The domain of the email you have entered is not registered.");
+    var domain = volunteerRegObject.emailAddress.substr(volunteerRegObject.emailAddress.indexOf("@"), volunteerRegObject.emailAddress.length);
+    validationAlert("Warning", "The domain of the email ,'" + domain + "', you have entered is not registered.");
     //End of D051
     return false;
   }

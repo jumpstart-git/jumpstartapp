@@ -394,20 +394,20 @@ function getLoginSuccessCallback(gblLoginData1) {
             var countCompany = 0;
 
             for (var i = 0; i < domainsList.length; i++) {
-              if (emailAddress.indexOf(domainsList[i]))>=0
+              if (emailAddress.indexOf(domainsList[i])>=0)
               {
                   countEmail++;
               }
             }
 
             for (var j = 0; j < companyNameList.length; j++) {
-              if (companyName.indexOf(companyNameList[j]))>=0
+              if (companyName.indexOf(companyNameList[j])>=0)
               {
                   countCompany++;
               }
             }
 
-            if (countEmail === 0)||(countCompany === 0)
+            if ((countEmail === 0)||(countCompany === 0))
             {
               validationAlert("Warning","This volunteer is associated with an unauthorized company or domain. Access is denied!");
               kony.application.dismissLoadingScreen();
