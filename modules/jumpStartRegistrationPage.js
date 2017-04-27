@@ -227,13 +227,29 @@ function validatePassword() {
 
 //Start of D058
 function validateEmailDomain() {
+  var domains = ["@hpe.com","@dxc.com","@supplynation.org.au","@cba.com.au"];
   var emailAddress = volunteerRegObject.emailAddress;
-  if (emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0)
-  {
-    return false;
+  var count = 0;
+
+  for (var i = 0; i < domains.length; i++) {
+    if (emailAddress.indexOf(domains[i])>=0)
+    {
+        count++;
+    }
   }
 
-  return true;
+  // if (emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0)
+  // {
+  //   return false;
+  // }
+
+  if (count > 0)
+  {
+    return true;
+  }
+
+  return false;
+
 }
 //End of D058
 
@@ -275,7 +291,8 @@ function submitAccountInfo() {
   var isValidateEmailDomain = validateEmailDomain();
   if (!isValidateEmailDomain) {
     //Start of D051
-    validationAlert("Warning", "The domain of the email you have entered is not registered.");
+    var domain = volunteerRegObject.emailAddress.substr(volunteerRegObject.emailAddress.indexOf("@"), volunteerRegObject.emailAddress.length);
+    validationAlert("Warning", "The domain of the email ,'" + domain + "', you have entered is not registered.");
     //End of D051
     return false;
   }
