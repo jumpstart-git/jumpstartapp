@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -19,40 +23,38 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s7402769af5340818f6ecb76bbb6e1eb",
+    "_skin_": "s4c4eb50be4e4f209adfe0a47c00ee45",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5%"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "85%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "60%"
+        "value": "50%"
     },
     "children": [
-        "opportunitiesIndicator",
-        "opportuitiesBtn1"
+        "CancelRichText"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "opportunitiesFlex",
+    "id": "markEngagementCancelButton",
     "info": null,
     "isvisible": true,
-    "kuid": "a29d4621dc8b4845ab3c12b738fe2de2",
-    "layouttype": 2,
+    "kuid": "ea828ee370f648ada265adb9693c79e9",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "searchDataTypeFlex1",
-    "pf": "searchPage",
+    "parent": "MarkAsCompleteModalContainer",
+    "pf": "mainPage",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

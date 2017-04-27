@@ -390,7 +390,7 @@ function getLoginSuccessCallback(gblLoginData1) {
             var emailAddress=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
 
 
-            if ((companyName!="HPE" && companyName!="SupplyNation" && companyName!="CBA" && companyName!="DXC")||(emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0))
+            if ((companyName!="HPE" && companyName!="SupplyNation" && companyName!="CBA" && companyName!="DXC") && companyName!="NGNY" ||(emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@gmail.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0 && emailAddress.indexOf("@bankwest.com.au")<0 && emailAddress.indexOf("@colonialfirststate.com.au")<0 && emailAddress.indexOf("@ngny.com.au")<0))
             {
               validationAlert("Warning","This volunteer is associated with an unauthorized company or domain. Access is denied!");
               kony.application.dismissLoadingScreen();

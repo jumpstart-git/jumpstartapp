@@ -29,8 +29,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "10%"
+        "type": "ref",
+        "value": "preferred"
     },
     "canUpdateUI": true,
     "centerx": {

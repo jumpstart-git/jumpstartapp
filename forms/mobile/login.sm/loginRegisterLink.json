@@ -23,7 +23,7 @@
     "_text_": "<u>Register as a skilled volunteer</u>",
     "_top_": {
         "type": "string",
-        "value": "13dp"
+        "value": "13px"
     },
     "_width_": {
         "type": "ref",

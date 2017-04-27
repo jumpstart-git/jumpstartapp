@@ -30,10 +30,7 @@
         0
     ],
     "_skin_": "s55ff7c72cb84c188702e85271586a0e",
-    "_top_": {
-        "type": "string",
-        "value": "5dp"
-    },
+    "_top_": "5dp",
     "_width_": {
         "type": "string",
         "value": "90%"
@@ -41,10 +38,7 @@
     "advview": "default",
     "calendaricon": "calendaricon.png",
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
+    "centerx": "50%",
     "containerweight": 100,
     "contentalignment": 4,
     "datecomponents": [

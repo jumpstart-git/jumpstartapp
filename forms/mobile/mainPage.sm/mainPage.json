@@ -56,7 +56,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone4",
+    "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -103,9 +103,9 @@
     "paddinginpixel": false,
     "platform": "iphone",
     "prevDevice": "iPhone5",
-    "prevPlatform": "android",
+    "prevPlatform": "spaip",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone4",
+    "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
