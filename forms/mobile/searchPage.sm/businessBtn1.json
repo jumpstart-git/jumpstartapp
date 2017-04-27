@@ -29,8 +29,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -38,7 +38,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
     "focusskin": "s993e6adafd14250881d25d4a4f9f43d",

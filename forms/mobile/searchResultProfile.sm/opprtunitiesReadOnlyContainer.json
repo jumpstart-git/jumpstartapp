@@ -37,11 +37,11 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "67.19%"
+        "value": "50%"
     },
     "centery": {
         "type": "string",
-        "value": "54.56%"
+        "value": "50%"
     },
     "children": [
         "oppurtunityDetailsHdrModal",
