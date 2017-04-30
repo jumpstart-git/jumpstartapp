@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/backchevrongreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/jump_start.mov" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/searchbutton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/searchbuttonpressed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/markEngagementCancelButton.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/BlackText.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossBlue035ff560f53dc4e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossRed08c85b07b0e7949.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyGreenBackButton.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyPressedBackButton.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyPressedSearchButton.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnySearchButton.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jumpstart" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/defaultTheme/jumpStartLabelGreen120.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyGreenLabel.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/backchevron.png" afterPath="$PROJECT_DIR$/resources/common/backchevron.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/callicon.png" afterPath="$PROJECT_DIR$/resources/common/callicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/emailicon.png" afterPath="$PROJECT_DIR$/resources/common/emailicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/imgseglogo.png" afterPath="$PROJECT_DIR$/resources/common/imgseglogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/location.png" afterPath="$PROJECT_DIR$/resources/common/location.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/messageicon.png" afterPath="$PROJECT_DIR$/resources/common/messageicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/searchicon.png" afterPath="$PROJECT_DIR$/resources/common/searchicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/common/sidebar.png" afterPath="$PROJECT_DIR$/resources/common/sidebar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jumpstart" afterPath="$PROJECT_DIR$/jumpstart" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeadlessBuild.properties" afterPath="$PROJECT_DIR$/HeadlessBuild.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" afterPath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" afterPath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" afterPath="$PROJECT_DIR$/annotations/mobile/45590dbf8d50498f8dac0f82dd6523c7.json" />
@@ -34,49 +15,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" afterPath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" afterPath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" afterPath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/forgotPasswordLink.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/forgotPasswordLink.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/login.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/loginRegisterLink.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/loginRegisterLink.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CancelRichText.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/CancelRichText.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/EditOpportunityButton.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/EditOpportunityButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/MarkAsCompleteModalContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/MarkAsCompleteModalContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/ProfileLink.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/ProfileLink.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/ReportingLink.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/ReportingLink.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/activityNavContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/activityNavContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/endorsementsContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/endorsementsContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPage.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/mainPage.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navBarScroller.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navBarScroller.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navRecommendations.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/navRecommendations.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/notificationNavContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/notificationNavContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/recommendationNavContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/recommendationNavContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/searchButton.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/searchButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarLogout.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarLogout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarNeedHelp.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/sideBarNeedHelp.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/BusinessContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/BusinessContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/businessBtn1.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/businessBtn1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/businessIndicator.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/businessIndicator.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportuitiesBtn1.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportuitiesBtn1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportunitiesFlex.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportunitiesFlex.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportunitiesIndicator.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/opportunitiesIndicator.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchBackBtn.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchBackBtn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchBtn.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchBtn.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchDataTypeFlex1.json" afterPath="$PROJECT_DIR$/forms/mobile/searchPage.sm/searchDataTypeFlex1.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/CancelButton.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/CancelButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/EndDateCalendarInput.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/EndDateCalendarInput.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/StartEngagementButton.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/StartEngagementButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/startEngagementFooterContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/startEngagementFooterContainer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konyplugins.xml" afterPath="$PROJECT_DIR$/konyplugins.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lua_widget_m4_info.properties" afterPath="$PROJECT_DIR$/lua_widget_m4_info.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/MyActivityProfiles.sm/BusinessProfileCompanyNameAndAddressContainerr.json" afterPath="$PROJECT_DIR$/forms/mobile/MyActivityProfiles.sm/BusinessProfileCompanyNameAndAddressContainerr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/BusinessProfileCompanyNameAndAddressContaine.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/BusinessProfileCompanyNameAndAddressContaine.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/CompanyNameAndAddressContainer.json" afterPath="$PROJECT_DIR$/forms/mobile/searchResultProfile.sm/CompanyNameAndAddressContainer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mBaas.properties" afterPath="$PROJECT_DIR$/mBaas.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" afterPath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/splashscreenproperties.json" afterPath="$PROJECT_DIR$/splashscreenproperties.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossBlue05f7e1311090944.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/CopyslButtonGlossBlue05f7e1311090944.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyBackButton.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/defaultTheme/ngnyGrayLinkText.json" afterPath="$PROJECT_DIR$/themes/defaultTheme/ngnyGrayLinkText.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgetinfo.properties" afterPath="$PROJECT_DIR$/widgetinfo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mobile/segments/FBox002ffa33914ea45.sm/CompanyNameLbl.json" afterPath="$PROJECT_DIR$/templates/mobile/segments/FBox002ffa33914ea45.sm/CompanyNameLbl.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mobile/segments/FBox002ffa33914ea45.sm/volunteerName.json" afterPath="$PROJECT_DIR$/templates/mobile/segments/FBox002ffa33914ea45.sm/volunteerName.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mobile/segments/FBox0788b6c38d49d4b.sm/myOpenTaskDetailParent.json" afterPath="$PROJECT_DIR$/templates/mobile/segments/FBox0788b6c38d49d4b.sm/myOpenTaskDetailParent.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/mobile/segments/FBox0788b6c38d49d4b.sm/openTaskBusiness.json" afterPath="$PROJECT_DIR$/templates/mobile/segments/FBox0788b6c38d49d4b.sm/openTaskBusiness.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -107,7 +56,7 @@
       <file leaf-file-name="AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="405">
               <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
               <folding />
             </state>
@@ -117,8 +66,8 @@
       <file leaf-file-name="jumpStartUserLoginPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/jumpStartUserLoginPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="392" column="400" lean-forward="true" selection-start-line="392" selection-start-column="400" selection-end-line="392" selection-end-column="400" />
+            <state relative-caret-position="182">
+              <caret line="396" column="58" lean-forward="false" selection-start-line="396" selection-start-column="58" selection-end-line="396" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -211,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,7 +230,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,6 +238,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -389,33 +341,34 @@
       <workItem from="1493190163923" duration="120000" />
       <workItem from="1493265867041" duration="444000" />
       <workItem from="1493274095557" duration="1920000" />
-      <workItem from="1493336826351" duration="330000" />
+      <workItem from="1493336826351" duration="800000" />
+      <workItem from="1493340456402" duration="26000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20320000" />
+    <option name="totallyTimeSpent" value="20816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10789632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10729355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25052854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +575,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="405">
           <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding />
         </state>
@@ -630,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/jumpStartUserLoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="392" column="400" lean-forward="true" selection-start-line="392" selection-start-column="400" selection-end-line="392" selection-end-column="400" />
+        <state relative-caret-position="182">
+          <caret line="396" column="58" lean-forward="false" selection-start-line="396" selection-start-column="58" selection-end-line="396" selection-end-column="58" />
           <folding />
         </state>
       </provider>

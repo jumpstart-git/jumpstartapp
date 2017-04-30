@@ -388,14 +388,32 @@ function getLoginSuccessCallback(gblLoginData1) {
             //Start of defect D058
             var companyName=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
             var emailAddress=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
+            var domainsList = ["@hpe.com","@dxc.com","@supplynation.org.au","@cba.com.au"];
+            var companyNameList = ["HPE", "SupplyNation", "CBA", "DXC"];
+            var countEmail = 0;
+            var countCompany = 0;
 
+            for (var i = 0; i < domainsList.length; i++) {
+              if (emailAddress.indexOf(domainsList[i])>=0)
+              {
+                  countEmail++;
+              }
+            }
 
-            if ((companyName!="HPE" && companyName!="SupplyNation" && companyName!="CBA" && companyName!="DXC") && companyName!="NGNY" ||(emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@gmail.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0 && emailAddress.indexOf("@bankwest.com.au")<0 && emailAddress.indexOf("@colonialfirststate.com.au")<0 && emailAddress.indexOf("@ngny.com.au")<0))
+            for (var j = 0; j < companyNameList.length; j++) {
+              if (companyName.indexOf(companyNameList[j])>=0)
+              {
+                  countCompany++;
+              }
+            }
+
+            if ((countEmail === 0)||(countCompany === 0))
             {
               validationAlert("Warning","This volunteer is associated with an unauthorized company or domain. Access is denied!");
               kony.application.dismissLoadingScreen();
               return;
             }
+
 
             kony.store.setItem("loginEmail", emailAddress);
             //End of D058
