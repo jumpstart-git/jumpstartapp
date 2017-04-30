@@ -20,7 +20,7 @@
         0,
         0,
         0,
-        0
+        3
     ],
     "_skin_": "s5419001122e4840a308d4f50e0066ac",
     "_text_": "Business Activity",
@@ -57,6 +57,7 @@
     "isvisible": true,
     "kuid": "176b36d27b984984ab953a00b5164317",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "businessProfileBusinessActivityContainer",
     "pf": "searchResultProfile",
     "tooltip": "",

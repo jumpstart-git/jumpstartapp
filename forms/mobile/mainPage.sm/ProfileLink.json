@@ -11,8 +11,8 @@
         "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "75"
+        "type": "string",
+        "value": "75dp"
     },
     "_margin_": [
         0,
