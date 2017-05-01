@@ -156,7 +156,7 @@
     <attributes name="WP8_ID_CAP_REMOVABLE_STORAGE" value="true"/>
     <attributes name="WP8_ID_CAP_LOCATION" value="true"/>
     <attributes name="wp10widelogokey" value=""/>
-    <attributes name="protectedmodeenabled_android" value="false"/>
+    <attributes name="protectedmodeenabled_android" value="true"/>
     <attributes name="Documents_Library_Access" value="true"/>
     <attributes name="CHANGE_COMPONENT_ENABLED_STATE" value="false"/>
     <attributes name="FLASHLIGHT" value="false"/>

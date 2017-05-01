@@ -18,9 +18,9 @@
             }
         }
     },
-    "projectGuid": "521186d8-2875-4f88-bdf4-fb01e5bc3ebe",
+    "projectGuid": "3f6add2d-1c64-4b91-9092-d7a2a2edf69d",
     "accountGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",
-    "prototypeGuid": "T5XIL",
+    "prototypeGuid": "UCB54",
     "id": "f388a97e38204f59abf2ecfb0e7f5d27",
     "channel": "mobile",
     "createdOn": 1477902250188,
@@ -43,5 +43,5 @@
             }
         }
     },
-    "synced_on": "2017-04-27T23:46:27.594Z"
+    "synced_on": "2017-04-30T23:15:24.117Z"
 }
