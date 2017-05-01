@@ -2,7 +2,7 @@ function initializeFBox0943a0d8ad0544d() {
     FBox0943a0d8ad0544d = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "13%",
+        "height": "12%",
         "id": "FBox0943a0d8ad0544d",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
@@ -58,7 +58,7 @@ function initializeFBox0943a0d8ad0544d() {
         "left": "18%",
         "skin": "CopyslLabel04f4fe9b7d8374f",
         "text": "Label",
-        "top": "60%",
+        "top": "55%",
         "width": "60%",
         "zIndex": 1
     }, {
@@ -78,7 +78,7 @@ function initializeFBox0943a0d8ad0544d() {
     var lblDay = new kony.ui.Label({
         "id": "lblDay",
         "isVisible": true,
-        "left": "219dp",
+        "left": "223dp",
         "skin": "CopyslLabel054c2b26183d343",
         "text": "Label",
         "top": "17%",

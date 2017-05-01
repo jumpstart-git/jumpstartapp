@@ -1,4 +1,5 @@
-var gblReqClosedTask = [];
+var gblReqClosedTask;
+var taskId;
 mobileFabricConfigurationForBusinessMarkAsComplete = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
@@ -7,7 +8,7 @@ mobileFabricConfigurationForBusinessMarkAsComplete = {
         service: "BusinessMarkAsComplete",
         operations: ["setMarkAsComplete"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -21,8 +22,12 @@ mobileFabricConfigurationForBusinessMarkAsComplete = {
     isKonySDKObjectInitialized: false,
     isMFAuthenticated: false
 };
-// Function to invoke getFoxNews Service call
+// Function to invoke getFoxNews Service call LOADING_SCREEN_POSITION_FULL_SCREEN
 function BusinessMarkAsComplete() {
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     //   gblMarkCompleteReq=valMarkComplete.widgetInfo.data[0].requestId;
     //   alert("the selected"+JSON.stringify(gblMarkCompleteReq));
     // Let's get the news type the user selected
@@ -115,18 +120,23 @@ function setBusinessMarkAsComplete() {
         var headers = {};
         //alert("operation name"+operationName);
         var dataMarkAsComplete = {};
-        dataMarkAsComplete["requestId"] = gblReqClosedTask["lblRequestId"]; //1;//kony.store.getItem("requestId");
+        dataMarkAsComplete["requestId"] = gblReqClosedTask;
+        dataMarkAsComplete["taskId"] = taskId; //["lblRequestId"];//1;//kony.store.getItem("requestId");
         //dataMarkAsComplete["message"]="MerinnnnReal";
         dataMarkAsComplete["message"] = "Business Marks Task as complete";
-        //     alert("dataMarkAsComplete"+JSON.stringify(dataMarkAsComplete));
+        // alert("dataMarkAsComplete"+JSON.stringify(dataMarkAsComplete));
         mobileFabricConfigurationForBusinessMarkAsComplete.integrationObj.invokeOperation(operationName, headers, dataMarkAsComplete, getBusinessMarkAsCompleteSuccessCallback, getBusinessMarkAsCompleteErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
 }
 
-function getBusinessMarkAsCompleteSuccessCallback(dataMarkAsComplete) {
-    // alert("inside success"+JSON.stringify(dataMarkAsComplete));
-    if (dataMarkAsComplete != "undefined" && dataMarkAsComplete != undefined) {
+function getBusinessMarkAsCompleteSuccessCallback(dataMarkAsCompleteVal) {
+    //alert("inside success getBusinessMarkAsCompleteSuccessCallback"+JSON.stringify(dataMarkAsComplete));
+    if (dataMarkAsCompleteVal != "undefined" && dataMarkAsCompleteVal != undefined) {
         //alert("InSide"+JSON.stringify(dataMarkAsComplete));
+        //    BusinessOpenCloseTaskService();
+        //    BusinessCloseTaskService ();
+        //    alert("Task is successfully completed");
+        // mainPage.show();
     }
 }
 
@@ -134,33 +144,40 @@ function getBusinessMarkAsCompleteErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    //    alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
+    mainPage.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.removeAll();
+    BusinessOpenCloseTaskService();
+    mainPage.markAsCompleteGrayScreen.isVisible = false;
+    BusinessCloseTaskService();
+    kony.application.dismissLoadingScreen();
+    // alert("Task is completed successfully");
+    //[D005] [Alerts] "Ensure all Alerts are categorized and updated - whether its:  - Action Required - Warning - Confirmation"
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_INFO,
+        "alertTitle": "Confirmation",
+        "yesLabel": "OK",
+        "noLabel": "No",
+        "message": "Task is completed successfully",
+        "alertHandler": null
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+    });
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
+    //End of D005
 }
 
-function saveClosedTaskDetails(closedTaskVal) {
-    if (kony.store.getItem("isBusOrVol") == "business") {
-        var tempDataforClose = [];
-        // alert("the row is="+JSON.stringify(closedTaskVal));
-        gblReqClosedTask["requestId"] = val.widgetInfo.selectedRowItems[0]["lblRequestId"];
-        gblReqClosedTask["taskName"] = val.widgetInfo.selectedRowItems[0]["openTaskName"];
-        gblReqClosedTask["taskBusinessName"] = val.widgetInfo.selectedRowItems[0]["openTaskBusiness"];
-        BusinessMarkAsComplete();
-        // alert("gblReqClosedTask");
-        //     mainPage.mainPageBody.mainPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.widgetDataMap={
-        //       "closedTaskPersonProfilePic":"closedTaskPersonProfilePic",   
-        //       "closedTaskName":"closedTaskName",
-        //       "closedTaskBusiness":"closedTaskBusiness"
-        //  };
-        //   var textDataforClosedTask = {
-        //                         closedTaskPersonProfilePic : "imgseglogo.png",
-        //                         closedTaskName: gblReqClosedTask["openTaskName"],
-        //                         closedTaskBusiness: gblReqClosedTask["taskBusinessName"],
-        //                         lblRequestId:gblReqClosedTask["requestId"]
-        // //                      markAsCompleteText:MARK_A
-        // //                      markAsCompleteRichText: MARK_AS_COMPLETE
-        //                     };
-        // 			tempDataforClose.push(textDataforClosedTask);
-        //     mainPage.mainPageBody.mainSPageContentParent.myActivity.myClosedTasksParent.myClosedTasksListContainer.myClosedTasksList.setData(tempDataforClose);
+function saveClosedTaskDetails() {
+    try {
+        if (kony.store.getItem("isBusOrVol") == "business") {
+            var tempDataforClose = [];
+            var taskReq = mainPage.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems; //mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.selectedRowItems;
+            taskId = taskReq[0].taskId;
+            gblReqClosedTask = taskReq[0].lblRequestId;
+            var title = taskReq[0].openTaskName;
+            var businessName = taskReq[0].openTaskBusiness;
+            BusinessMarkAsComplete();
+            //mainPage.show();
+        }
+    } catch (err) {
+        // alert("the issue is "+JSON.stringify(err));
     }
 }

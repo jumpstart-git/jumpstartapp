@@ -34,7 +34,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
-        "centerX": "50%",
+        "centerX": "50.00%",
         "clipBounds": true,
         "enableScrolling": true,
         "height": "75%",
@@ -57,7 +57,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "First Name*",
+        "text": "First name*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -100,7 +100,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Last Name*",
+        "text": "Last name*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -272,7 +272,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Work Details    ",
+        "text": "Work experience*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -311,7 +311,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "About Me",
+        "text": "About me*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -350,7 +350,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Company Name*",
+        "text": "Company name*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -370,14 +370,12 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "volunteerMyProfileCompanyInput",
         "isVisible": true,
         "left": "0",
-        //Start of D058
         "masterData": [
-            ["Select", "Select from drop down menu"],
+            ["Select", "Select from drop down list"],
             ["CBA", "CBA"],
             ["DXC", "DXC"],
             ["SupplyNation", "SupplyNation"]
         ],
-        //End of D058
         "onSelection": AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae,
         "skin": "CopyslListBox008256acffc1a4b",
         "top": "0dp",
@@ -385,7 +383,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -439,7 +437,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Business Unit",
+        "text": "Business unit",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -503,7 +501,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
-            ["Select", "Select"],
+            ["Select", "Select from drop down list"],
             ["NSW", "New South Wales"],
             ["ACT", "Australian Capital Territory"],
             ["QLD", "Queensland"],
@@ -520,7 +518,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -574,7 +572,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Contact Number*",
+        "text": "Contact number*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -617,7 +615,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel10099",
-        "text": "Email Address*",
+        "text": "Email address*",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -676,14 +674,13 @@ function addWidgetsvolunteerMyProfilePage() {
     });
     var volunteerMyProfileSkillListContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "centerX": "50%",
         "clipBounds": true,
         "id": "volunteerMyProfileSkillListContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "0dp",
+        "top": "10dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -696,13 +693,13 @@ function addWidgetsvolunteerMyProfilePage() {
         "layoutType": kony.flex.FLOW_VERTICAL,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "0dp",
         "width": "85%",
         "zIndex": 1
     }, {}, {});
     volunteerMyProfileSkillsList.setDefaultUnit(kony.flex.DP);
     var volunteerMyProfileSkillInputField = new kony.ui.TextBox2({
         "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
+        "centerX": "50%",
         "height": "40dp",
         "id": "volunteerMyProfileSkillInputField",
         "isVisible": true,
@@ -711,7 +708,6 @@ function addWidgetsvolunteerMyProfilePage() {
         "secureTextEntry": false,
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "10dp",
         "width": "100%",
         "zIndex": 1
     }, {
@@ -732,25 +728,25 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "volunteerMyProfileAddNewSkill",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
         "skin": "CopyslFbox031eaa932cffc41",
+        "top": "0dp",
         "width": "15%",
         "zIndex": 1
     }, {}, {});
     volunteerMyProfileAddNewSkill.setDefaultUnit(kony.flex.DP);
     var volunteerMyProfileAddSkill = new kony.ui.Button({
         "bottom": "0dp",
-        "focusSkin": "jumpStartGreenButton200",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "volunteerMyProfileAddSkill",
         "isVisible": true,
         "left": 0,
         "onClick": AS_Button_47f078e3a22f4674b7e9178a14c00f23,
         "right": "0dp",
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Add",
-        "top": 0,
-        "width": "40dp",
+        "top": 125,
+        "width": "50dp",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -814,7 +810,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "id": "volunteerMyProfileScheduleLabel",
         "isVisible": true,
         "skin": "CopyslLabel02fc111ae931f4f",
-        "text": "Schedule Information",
+        "text": "Schedule information",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -858,6 +854,7 @@ function addWidgetsvolunteerMyProfilePage() {
     }, {}, {});
     CopyregScheduleHeadingsContainer0d79665b2f9c545.setDefaultUnit(kony.flex.DP);
     var CopyAvaialabilityLabel051f0edd0ebc744 = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopyAvaialabilityLabel051f0edd0ebc744",
         "isVisible": true,
         "left": "0dp",
@@ -868,7 +865,7 @@ function addWidgetsvolunteerMyProfilePage() {
             "strikeThrough": false
         },
         "top": "3%",
-        "width": "100%",
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -893,6 +890,7 @@ function addWidgetsvolunteerMyProfilePage() {
     }, {}, {});
     CopyregScheduleDatesFlex0e378c84e573e49.setDefaultUnit(kony.flex.DP);
     var listDays = new kony.ui.ListBox({
+        "centerX": "50%",
         "height": "40dp",
         "id": "listDays",
         "isVisible": true,
@@ -908,17 +906,18 @@ function addWidgetsvolunteerMyProfilePage() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "0dp",
-        "width": "60%",
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var CopylblFromTime07d4b3afcf74b4a = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopylblFromTime07d4b3afcf74b4a",
         "isVisible": true,
         "left": "0dp",
@@ -929,7 +928,7 @@ function addWidgetsvolunteerMyProfilePage() {
             "strikeThrough": false
         },
         "top": "20%",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -939,6 +938,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "textCopyable": false
     });
     var listFromTime = new kony.ui.ListBox({
+        "centerX": "25%",
         "height": "40dp",
         "id": "listFromTime",
         "isVisible": true,
@@ -975,13 +975,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listEndTime = new kony.ui.ListBox({
+        "centerX": "25%",
         "height": "40dp",
         "id": "listEndTime",
         "isVisible": true,
@@ -1018,13 +1019,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listFromTimeMeridiam = new kony.ui.ListBox({
+        "centerX": "75%",
         "height": "40dp",
         "id": "listFromTimeMeridiam",
         "isVisible": true,
@@ -1039,13 +1041,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var listEndTimeMeridiam = new kony.ui.ListBox({
+        "centerX": "75%",
         "height": "40dp",
         "id": "listEndTimeMeridiam",
         "isVisible": true,
@@ -1060,13 +1063,14 @@ function addWidgetsvolunteerMyProfilePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
         "viewType": constants.LISTBOX_VIEW_TYPE_LISTVIEW
     });
     var CopylblTotime048af1bdb577146 = new kony.ui.Label({
+        "centerX": "50%",
         "id": "CopylblTotime048af1bdb577146",
         "isVisible": true,
         "left": "0dp",
@@ -1077,7 +1081,7 @@ function addWidgetsvolunteerMyProfilePage() {
             "strikeThrough": false
         },
         "top": "50%",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "90%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -1087,17 +1091,17 @@ function addWidgetsvolunteerMyProfilePage() {
         "textCopyable": false
     });
     var CopyAddBtn0ecfcdaab0ea24b = new kony.ui.Button({
-        "centerX": "48%",
-        "focusSkin": "CopyslButtonGlossRed08c10eb8b472641",
+        "centerX": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "CopyAddBtn0ecfcdaab0ea24b",
         "isVisible": true,
         "left": "0%",
         "onClick": AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d,
-        "skin": "CopyslButtonGlossBlue08537af98c6284e",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "+ Add Schedule",
         "top": "83%",
-        "width": "90%",
+        "width": "100%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -1184,13 +1188,13 @@ function addWidgetsvolunteerMyProfilePage() {
     var DeleteVolunteerButton = new kony.ui.Button({
         "centerX": "50%",
         "centerY": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedRegistrationButton",
         "height": "40dp",
         "id": "DeleteVolunteerButton",
         "isVisible": true,
         "left": "13dp",
         "onClick": AS_Button_8679ef5475084e8496bae19a15ca4630,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Delete account",
         "top": "12dp",
         "width": "100%",
@@ -1253,7 +1257,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "centerY": "27.32%",
         "id": "requestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyOrangeLabelText",
         "text": "Warning",
         "textStyle": {
             "letterSpacing": 0,
@@ -1313,13 +1317,13 @@ function addWidgetsvolunteerMyProfilePage() {
     updateScheduleOutsideHoursFooter.setDefaultUnit(kony.flex.DP);
     var updateOutsideHoursYes = new kony.ui.Button({
         "centerX": "42%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "updateOutsideHoursYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_f43836994bb94ce2bebfdf4b6cb90080,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": 0,
         "width": "90%",
@@ -1383,12 +1387,12 @@ function addWidgetsvolunteerMyProfilePage() {
     var Save = new kony.ui.Button({
         "centerX": "74%",
         "centerY": "48.82%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "Save",
         "isVisible": true,
         "onClick": AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Save",
         "width": "46%"
     }, {

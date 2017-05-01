@@ -20,7 +20,7 @@ function initializeCopyFBox00fe78492e0da42() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "10dp",
-        "width": "90%"
+        "width": "95%"
     }, {}, {});
     myClosedTaskTop.setDefaultUnit(kony.flex.DP);
     var myClosedTaskProfileImageParent = new kony.ui.FlexContainer({
@@ -67,7 +67,7 @@ function initializeCopyFBox00fe78492e0da42() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "60%",
+        "width": "78%",
         "zIndex": 1
     }, {}, {});
     myClosedTaskDetailParent.setDefaultUnit(kony.flex.DP);
@@ -118,7 +118,7 @@ function initializeCopyFBox00fe78492e0da42() {
     });
     var markAsCompleteText = new kony.ui.Label({
         "id": "markAsCompleteText",
-        "isVisible": true,
+        "isVisible": false,
         "left": "15dp",
         "skin": "jumpStartLabelGreen90",
         "text": "Label",
@@ -139,7 +139,74 @@ function initializeCopyFBox00fe78492e0da42() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    myClosedTaskDetailParent.add(closedTaskName, closedTaskBusiness, markAsCompleteText);
+    var taskId = new kony.ui.Label({
+        "id": "taskId",
+        "isVisible": false,
+        "left": "15dp",
+        "skin": "jumpStartLabelGreen90",
+        "text": "Label",
+        "top": "10dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var businessId = new kony.ui.Label({
+        "id": "businessId",
+        "isVisible": false,
+        "left": "15dp",
+        "skin": "jumpStartLabelGreen90",
+        "text": "Label",
+        "top": "10dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var sendRecommendation = new kony.ui.RichText({
+        "id": "sendRecommendation",
+        "isVisible": true,
+        "left": "0dp",
+        "onClick": AS_RichText_0039d256ac0e4b1fb29256f8759bd4a9,
+        "skin": "CopyslRichText086a11a63a3c74e",
+        "text": "RichText",
+        "top": "5dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {});
+    myClosedTaskDetailParent.add(closedTaskName, closedTaskBusiness, markAsCompleteText, taskId, businessId, sendRecommendation);
     myClosedTaskTop.add(myClosedTaskProfileImageParent, myClosedTaskDetailParent);
     CopyFBox00fe78492e0da42.add(myClosedTaskTop);
 }

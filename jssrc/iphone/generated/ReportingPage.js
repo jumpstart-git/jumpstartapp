@@ -118,7 +118,7 @@ function addWidgetsReportingPage() {
         "bounces": true,
         "centerX": "50%",
         "clipBounds": true,
-        "enableScrolling": true,
+        "enableScrolling": false,
         "height": "90%",
         "horizontalScrollIndicator": true,
         "id": "ReportingdataFlex",
@@ -299,6 +299,7 @@ function addWidgetsReportingPage() {
     ReportingdataFlex.add(FlexContainer09ad03cca127049, ReceipientsTxtArea, StartDateLbl, StartDateCalendar, EndDateLbl, EndDateCalendar);
     var ReportingButtons = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "bottom": 10,
         "clipBounds": true,
         "height": "10%",
         "id": "ReportingButtons",
@@ -306,7 +307,6 @@ function addWidgetsReportingPage() {
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "90%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});

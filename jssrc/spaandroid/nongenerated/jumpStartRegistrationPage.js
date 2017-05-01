@@ -38,10 +38,16 @@ function onRegFieldUpdate(fieldEdited) {
     var fieldContent = fieldEdited.text;
     switch (fieldId) {
         case "regFirstNameInput":
-            volunteerRegObject.firstName = fieldContent;
+            //D007: Adding code to capitalize first character for fieldContent and fieldContent
+            //volunteerRegObject.firstname = fieldContent;
+            volunteerRegObject.firstName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
+            //End of D007
             break;
         case "regLastNameInput":
-            volunteerRegObject.lastName = fieldContent;
+            //D007: Adding code to capitalize first character for fieldContent and fieldContent
+            //volunteerRegObject.lastname = fieldContent;
+            volunteerRegObject.lastName = fieldContent.charAt(0).toUpperCase() + fieldContent.slice(1);
+            //End of D007
             break;
         case "regUsernameInput":
             volunteerRegObject.username = fieldContent;
@@ -59,7 +65,12 @@ function onRegFieldUpdate(fieldEdited) {
             volunteerRegObject.aboutMe = fieldContent;
             break;
         case "regCompanyInput":
-            volunteerRegObject.companyName = fieldContent;
+            //Start of D012
+            volunteerRegObject.companyName = fieldEdited.selectedKey;
+            if (volunteerRegObject.companyName === "Select" || volunteerRegObject.companyName === null || volunteerRegObject.companyName === "") {
+                volunteerRegObject.companyName = "";
+            }
+            //End of D012
             break;
         case "regRoleInput":
             volunteerRegObject.role = fieldContent;
@@ -68,10 +79,16 @@ function onRegFieldUpdate(fieldEdited) {
             volunteerRegObject.businessUnit = fieldContent;
             break;
         case "regStateInput":
-            volunteerRegObject.state = fieldContent;
+            volunteerRegObject.state = fieldEdited.selectedKey;
+            if (volunteerRegObject.state === "Select" || volunteerRegObject.state === null || volunteerRegObject.state === "") {
+                volunteerRegObject.state = "";
+            }
             break;
         case "regAddressInput":
             volunteerRegObject.address = fieldContent;
+            break;
+        case "regCityInput":
+            volunteerRegObject.city = fieldContent;
             break;
         case "regContactNumberInput":
             volunteerRegObject.contactNumber = fieldContent;
@@ -101,6 +118,9 @@ function validatePersonalInfo() {
     if (!volunteerRegObject.address) {
         return false;
     }
+    if (!volunteerRegObject.city) {
+        return false;
+    }
     if (!volunteerRegObject.contactNumber) {
         return false;
     }
@@ -109,10 +129,11 @@ function validatePersonalInfo() {
 
 function submitPersonalInfo() {
     var isPersonalInfoComplete = validatePersonalInfo();
+    // alert("submitPersonalInfo"+JSON.stringify(volunteerRegObject));
     if (isPersonalInfoComplete) {
         registrationAccountPage.show();
     } else {
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
@@ -171,40 +192,55 @@ function validatePassword() {
         return 1;
     }
 }
-
+//Start of D058
+function validateEmailDomain() {
+    var emailAddress = volunteerRegObject.emailAddress;
+    if (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0) {
+        return false;
+    }
+    return true;
+}
+//End of D058
 function submitAccountInfo() {
     var isAccountInfoComplete = validateAccountInfo();
     if (!isAccountInfoComplete) {
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var isValidEmail = validateEmail();
     if (!isValidEmail) {
-        validationAlert("Email Address Error", "Email address entered is not valid format");
+        validationAlert("Warning", "Please check the format of the email address");
         return false;
     }
     var isEqualPassword = validatePasswordEquality();
     if (!isEqualPassword) {
-        validationAlert("Password Error", "Passwords entered are not equal");
+        validationAlert("Warning", "Password entered does not match");
         return false;
     }
     var isValidPassword = validatePassword();
     if (isValidPassword == 1) {
-        validationAlert("Password Error", "Passwords must have at least " + userValidation.passwordLength + " characters");
+        validationAlert("Warning", "Passwords must have at least " + userValidation.passwordLength + " characters");
         return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Password Error", "Passwords must have at least 1 special character");
+        validationAlert("Warning", "Passwords must have at least 1 special character");
         return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Password Error", "Passwords must have at least 1 digit");
+        validationAlert("Warning", "Passwords must have at least 1 digit");
         return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Password Error", "Passwords must have at least 1 capital letter");
+        validationAlert("Warning", "Passwords must have at least 1 capital letter");
         return false;
     }
-    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5) {
+    //Start of D058
+    var isValidateEmailDomain = validateEmailDomain();
+    if (!isValidateEmailDomain) {
+        validationAlert("Warning", "Please make sure your email address is associated with either '@dxc.com', '@supplynation.org.au', or '@cba.com.au'.");
+        return false;
+    }
+    if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {
         registrationProfessionalPage.show();
     }
+    //End of D058
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - END: myString");
@@ -217,14 +253,16 @@ function updateSkillsSegment() {
     if (volunteerRegObject.skillsArray.length > 0) {
         for (var i = 0; i < volunteerRegObject.skillsArray.length; i++) {
             var skillObj = {
-                "regSkillItem": volunteerRegObject.skillsArray[i]
+                "regSkillItem": volunteerRegObject.skillsArray[i],
+                "imgClose": "cross.png"
             };
             skillSegmentData.push(skillObj);
         }
         registrationProfessionalPage.regSkillsSegment.setData(skillSegmentData);
     } else {
         var emptySkillObj = {
-            "regSkillItem": ""
+            "regSkillItem": "",
+            "imgClose": ""
         };
         skillSegmentData.push(emptySkillObj);
         registrationProfessionalPage.regSkillsSegment.setData(skillSegmentData);
@@ -240,7 +278,7 @@ function addNewSkill() {
     } else {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Missing Skill Name",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "Please enter a skill name",
             "alertHandler": null
@@ -274,16 +312,18 @@ function validateProfessionalInfo() {
 function submitProfessionalInfo() {
     var isProfessionalInfoComplete = validateProfessionalInfo();
     if (!isProfessionalInfoComplete) {
-        validationAlert("Action Required", "Please fill up all Mandatory Fields*");
+        validationAlert("Action Required", "Please complete all mandatory fields marked with *");
         return false;
     }
     var hasSkill = volunteerRegObject.skillsArray.length;
     if (!hasSkill) {
-        validationAlert("Enter a Skill", "Please add at least 1 skill");
+        validationAlert("Action Required", "Please add at least 1 skill");
         return false;
     }
     if (isProfessionalInfoComplete && hasSkill) {
-        registrationSchedulePage.show();
+        //registrationSchedulePage.show();
+        // CopyregistrationSchedulePage07348ad65c97f4c.show();
+        scheduleNewForm.show();
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
@@ -400,7 +440,7 @@ function validateAvailability() {
     if (!volunteerRegObject.availability.mon && !volunteerRegObject.availability.tue && !volunteerRegObject.availability.wed && !volunteerRegObject.availability.thu && !volunteerRegObject.availability.fri && !volunteerRegObject.availability.sat && !volunteerRegObject.availability.sun) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Please select a day",
+            "alertTitle": "Action Required",
             "yesLabel": "OK",
             "message": "At least one day of the week must be selected.",
             "alertHandler": null
@@ -413,13 +453,29 @@ function validateAvailability() {
 }
 
 function hideOutsideHoursModal() {
-    registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = false;
+    scheduleNewForm.outsideScheduletime.isVisible = false;
+    //registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = false;
+    // CopyregistrationSchedulePage07348ad65c97f4c.regScheduleOutsideHoursModal.isVisible=false;
 }
 
 function hoursAgreeAndContinue() {
     hideOutsideHoursModal();
-    updateSummaryPageInfo();
-    registrationSummaryPage.show();
+    var daySelected = scheduleNewForm.listDays.selectedKey;
+    var fromTime = scheduleNewForm.listFromTime.selectedKey + " " + scheduleNewForm.listFromTimeMerdidian.selectedKey;
+    var toTime = scheduleNewForm.listToTime.selectedKey + " " + scheduleNewForm.listToTimeMeridian.selectedKey;
+    var scheduleVal = daySelected + " " + fromTime + " TO " + toTime;
+    //start duplicate check
+    if (scheduleVal) {
+        var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
+        if (indexOfSchedule != -1) {
+            validationAlert("Warning", "This schedule already exists!");
+            return false;
+            //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
+        }
+    }
+    //end duplicate check
+    volunteerRegObject.scheduleArray.push(scheduleVal);
+    setScheduleSeg();
 }
 
 function startLessThanEnd() {
@@ -428,7 +484,7 @@ function startLessThanEnd() {
     if (start >= end) {
         kony.ui.Alert({
             "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": "Incorrect Time",
+            "alertTitle": "Warning",
             "yesLabel": "OK",
             "message": "Start time must be less than end time.",
             "alertHandler": null
@@ -446,18 +502,49 @@ function validateVolunteerHours() {
     if (start >= 900 && end <= 1700) {
         return true;
     } else {
-        registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = true;
+        scheduleNewForm.outsideScheduletime.isVisible = true;
+        //  registrationSchedulePage.regScheduleOutsideHoursModal.isVisible = true;
+        //CopyregistrationSchedulePage07348ad65c97f4c.regScheduleOutsideHoursModal.isVisible=true;
+        //  alert("outside");
         return false;
     }
 }
 
 function submitScheduleInfo() {
-    var hasAvailability = true; //validateAvailability();
+    var hasAvailability = validateAvailability(); // true;//validateAvailability();
+    if (hasAvailability === false) {
+        return false;
+    }
     var isCorrectTime = startLessThanEnd();
+    if (isCorrectTime === false) {
+        return false;
+    }
     var isValidHours = validateVolunteerHours();
     if (hasAvailability && isCorrectTime && isValidHours) {
-        updateSummaryPageInfo();
-        registrationSummaryPage.show();
+        //updateSummaryPageInfo();
+        //registrationSummaryPage.show();
+        var daySelected = scheduleNewForm.listDays.selectedKey;
+        var fromTime = scheduleNewForm.listFromTime.selectedKey + " " + scheduleNewForm.listFromTimeMerdidian.selectedKey;
+        var toTime = scheduleNewForm.listToTime.selectedKey + " " + scheduleNewForm.listToTimeMeridian.selectedKey;
+        var scheduleVal = daySelected + " " + fromTime + " TO " + toTime;
+        //start duplicate check
+        if (scheduleVal) {
+            var indexOfSchedule = volunteerRegObject.scheduleArray.indexOf(scheduleVal);
+            if (indexOfSchedule != -1) {
+                alert("this schedule already exists");
+                return false;
+                //volunteerRegObject.scheduleArray.splice(indexOfSchedule, 1);
+            }
+        }
+        //end duplicate check
+        volunteerRegObject.scheduleArray.push(scheduleVal);
+        setScheduleSeg();
+        scheduleNewForm.listDays.selectedKey = "";
+        scheduleNewForm.listFromTime.selectedKey = "";
+        scheduleNewForm.listFromTimeMerdidian.selectedKey = "";
+        scheduleNewForm.listToTime.selectedKey = "";
+        scheduleNewForm.listToTimeMeridian.selectedKey = "";
+        // alert("done");
     }
     kony.print("__________________________________________$$$$$$$$$$$$$$$$$$$$$$$$$$ DEBUG - START: myString");
     kony.print(volunteerRegObject);
@@ -469,8 +556,15 @@ function updateSummaryPageInfo() {
     registrationSummaryPage.summUserNameLabel.text = volunteerRegObject.emailAddress; //volunteerRegObject.firstName + " " + volunteerRegObject.lastName;
     registrationSummaryPage.summEmailLabel.text = volunteerRegObject.emailAddress;
     registrationSummaryPage.summContactNumberLabel.text = volunteerRegObject.contactNumber;
-    registrationSummaryPage.summPasswordLabel.text = volunteerRegObject.password;
-    registrationSummaryPage.summAddressLabel.text = volunteerRegObject.address + ", " + volunteerRegObject.state;
+    //start pass
+    var str = volunteerRegObject.password;
+    var text = "";
+    for (var i = 0; i < str.length; i++) {
+        text = text + "*";
+    }
+    //end pass
+    registrationSummaryPage.summPasswordLabel.text = text; //volunteerRegObject.password;
+    registrationSummaryPage.summAddressLabel.text = volunteerRegObject.address + ", " + volunteerRegObject.city + "," + volunteerRegObject.state;
     registrationSummaryPage.summCompanyLabel.text = volunteerRegObject.companyName;
     registrationSummaryPage.summRoleLabel.text = volunteerRegObject.role;
     var skillsString = "";
@@ -506,7 +600,16 @@ function updateSummaryPageInfo() {
     }
     gblDays = availabilityString;
     availabilityString += volunteerRegObject.availability.startTime + " " + volunteerRegObject.availability.startMeridiem + " - " + volunteerRegObject.availability.endTime + " " + volunteerRegObject.availability.endMeridiem;
-    registrationSummaryPage.summAvailabilityRT.text = availabilityString;
+    //registrationSummaryPage.summAvailabilityRT.text = availabilityString;
+    var scheduleString = "";
+    for (var i = 0; i < volunteerRegObject.scheduleArray.length; i++) {
+        if (scheduleString) {
+            scheduleString = scheduleString + ", " + volunteerRegObject.scheduleArray[i];
+        } else {
+            scheduleString = volunteerRegObject.scheduleArray[i];
+        }
+    }
+    registrationSummaryPage.summAvailabilityRT.text = scheduleString;
 }
 /**************************************** END OF SCHEDULE INFORMATION ****************************************/
 function submitRegistration() {
@@ -528,19 +631,23 @@ function submitRegistration() {
     gblRegistrationDetails["firstName"] = volunteerRegObject.firstName;
     gblRegistrationDetails["lastName"] = volunteerRegObject.lastName;
     gblRegistrationDetails["address"] = volunteerRegObject.address + ", " + volunteerRegObject.state;
+    gblRegistrationDetails["city"] = volunteerRegObject.city;
     gblRegistrationDetails["contactNumber"] = volunteerRegObject.contactNumber;
-    gblRegistrationDetails["email"] = volunteerRegObject.emailAddress;
+    gblRegistrationDetails["emailAddress"] = volunteerRegObject.emailAddress;
     gblRegistrationDetails["state"] = volunteerRegObject.state;
     gblRegistrationDetails["userName"] = volunteerRegObject.emailAddress;
     gblRegistrationDetails["password"] = volunteerRegObject.password;
     gblRegistrationDetails["companyName"] = volunteerRegObject.companyName;
     gblRegistrationDetails["role"] = volunteerRegObject.role;
+    gblRegistrationDetails["businessUnit"] = volunteerRegObject.businessUnit;
     gblRegistrationDetails["SkillsDTO"] = skills; ////need to cross check
-    gblRegistrationDetails["VolunteerScheduleDTO"] = schedule; //registrationSummaryPage.summAvailabilityRT.text;//need to check how to pass it
+    gblRegistrationDetails["VolunteerScheduleDTO"] = gblFinalSchedule; //finalSchedule;//schedule;//registrationSummaryPage.summAvailabilityRT.text;//need to check how to pass it
     //  gblRegistrationDetails["usersUserTypeId"]="11";//dont know which value should be passed
     // gblRegistrationDetails["volunteerTaskId"]="51" ;
     gblRegistrationDetails["createdDate"] = "2016-10-17";
-    //  alert("the input'"+JSON.stringify(gblRegistrationDetails));
+    gblRegistrationDetails["file"] = kony.store.getItem("imageVal");
+    gblRegistrationDetails["fileName"] = kony.store.getItem("imageFileNameVal"); //"abcdec6.jpg" ;kony.store.setItem("imageFileNameVal
+    // alert("the input'"+JSON.stringify(gblRegistrationDetails));
     //  alert("calling reg service");
     regService();
     //end merin
@@ -653,6 +760,10 @@ mobileFabricConfigurationForReg = {
 };
 // Function to invoke getFoxNews Service call
 function regService() {
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     if (!mobileFabricConfigurationForReg.isKonySDKObjectInitialized) {
         initializeMobileFabricForRegister();
     } else if (mobileFabricConfigurationForReg.isKonySDKObjectInitialized) {
@@ -796,28 +907,81 @@ function registerVolunteer() {
         //   alert("input=="+JSON.stringify(data));
         //                   data = JSON.stringify(data);
         //   mobileFabricConfigurationForReg.integrationObj.invokeOperation(operationName, {"Content-Type":"application/json"},data , getRegisterSuccessCallback, getRegisterErrorCallback);
+        //  alert("innnn"+JSON.stringify(gblRegistrationDetails));
         mobileFabricConfigurationForReg.integrationObj.invokeOperation(operationName, headers, gblRegistrationDetails, getRegisterSuccessCallback, getRegisterErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");
 }
 
 function getRegisterSuccessCallback(gblSave) {
-    // alert("inside success"+JSON.stringify(gblSave));
-    registrationDonePage.registrationDonePageThankYou.text = "Thank you " + volunteerRegObject.firstName + "!";
-    registrationDonePage.show();
-    // Make sure to destroy registration forms after done to save memory.
-    registrationPage.destroy();
-    registrationPersonalPage.destroy();
-    registrationAccountPage.destroy();
-    registrationProfessionalPage.destroy();
-    registrationSchedulePage.destroy();
-    registrationSummaryPage.destroy();
+    //alert("inside success"+JSON.stringify(gblSave));
+    //start
+    if (gblSave !== null && gblSave.opstatus === 0) {
+        if (gblSave["success"] == "true") {
+            //start merin dec 19
+            volunteerRegObject = {
+                firstName: "",
+                lastName: "",
+                username: "",
+                password: "",
+                reenteredPassword: "",
+                workDetails: "",
+                aboutMe: "",
+                companyName: "",
+                role: "",
+                businessUnit: "",
+                state: "",
+                address: "",
+                contactNumber: "",
+                emailAddress: "",
+                skillsArray: [],
+                scheduleArray: [],
+                availability: {
+                    mon: false,
+                    tue: false,
+                    wed: false,
+                    thu: false,
+                    fri: false,
+                    sat: false,
+                    sun: false,
+                    startTime: "9:00",
+                    startMeridiem: "AM",
+                    endTime: "10:00",
+                    endMeridiem: "AM"
+                }
+            };
+            //end merin dec 19
+            registrationDonePage.registrationDonePageThankYou.text = "Thank you " + volunteerRegObject.firstName + "!";
+            registrationDonePage.emailTxt.text = registrationSummaryPage.summUserNameLabel.text;
+            registrationDonePage.show();
+            login.loginBody.usernameField.text = "";
+            login.loginBody.passwordField.text = "";
+            // Make sure to destroy registration forms after done to save memory.
+            registrationPage.destroy();
+            registrationPersonalPage.destroy();
+            registrationAccountPage.destroy();
+            registrationProfessionalPage.destroy();
+            registrationSchedulePage.destroy();
+            registrationSummaryPage.destroy();
+            //tank you page image
+            var volunteerImagePathAfterReg = gblSave.volunteerDto[0].VolunteersDTO.users.imagePath;
+            var imagePathAfterReg = "imgseglogo.png"
+            if (volunteerImagePathAfterReg != null && volunteerImagePathAfterReg != "null") {
+                imagePathAfterReg = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + volunteerImagePathAfterReg;
+            }
+            registrationDonePage.registerDoneVolunteerPic.src = imagePathAfterReg;
+            kony.application.dismissLoadingScreen();
+        } //inner if
+        else {
+            validationAlert("Warning", "This username already exists.Please change your email");
+        }
+    } //outer if
 }
 
 function getRegisterErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
-    // alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
+    // alert ("  Please try again. "+JSON.stringify(error));
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
 //end ser

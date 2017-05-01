@@ -2282,8 +2282,8 @@ function addWidgetssearchResultProfile() {
     volunteerRequestContainer.add(requestToVolunteerModal, requestAVolunteerModal);
     var opprtunitiesReadOnlyContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
-        "centerY": "50%",
+        "centerX": "67.19%",
+        "centerY": "54.56%",
         "clipBounds": true,
         "height": "95%",
         "id": "opprtunitiesReadOnlyContainer",

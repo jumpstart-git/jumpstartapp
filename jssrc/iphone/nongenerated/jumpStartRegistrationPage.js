@@ -234,7 +234,9 @@ function submitAccountInfo() {
     //Start of D058
     var isValidateEmailDomain = validateEmailDomain();
     if (!isValidateEmailDomain) {
+        //Start of D051
         validationAlert("Warning", "The domain of the email you have entered is not registered.");
+        //End of D051
         return false;
     }
     if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {

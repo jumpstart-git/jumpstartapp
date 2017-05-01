@@ -152,7 +152,7 @@ function addWidgetslogin() {
         "height": "45dp",
         "id": "passwordField",
         "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_EMAIL,
+        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
         "placeholder": "Password",
         "secureTextEntry": true,
         "skin": "CopyslTextBox04ce2606b588643",
@@ -315,18 +315,36 @@ function addWidgetslogin() {
     }, {});
     loginImages.add(imgNew);
     loginContainer.add(loginHeader, loginBody, loginFooter, loginImages);
+    var validateCodeContainerModular = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "50%",
+        "clipBounds": true,
+        "height": "100%",
+        "id": "validateCodeContainerModular",
+        "isVisible": false,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "24dp",
+        "skin": "CopyslFbox088f0e0b504f945",
+        "top": "86dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    validateCodeContainerModular.setDefaultUnit(kony.flex.DP);
+    validateCodeContainerModular.add();
     var validateCodeContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
+        "centerY": "50%",
         "clipBounds": true,
-        "height": "100%",
+        "height": "90%",
         "id": "validateCodeContainer",
         "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0%",
         "skin": "CopyslFbox0382bdbd8cfc442",
         "top": "0dp",
-        "width": "100%",
+        "width": "80%",
         "zIndex": 1
     }, {}, {});
     validateCodeContainer.setDefaultUnit(kony.flex.DP);
@@ -483,7 +501,7 @@ function addWidgetslogin() {
         "height": "45dp",
         "id": "submitBtn",
         "isVisible": true,
-        "left": "50%",
+        "left": "53%",
         "onClick": AS_Button_102be19028bf4b8e8c5f3de8263022bb,
         "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
@@ -504,7 +522,7 @@ function addWidgetslogin() {
         "height": "45dp",
         "id": "cancelBtn",
         "isVisible": true,
-        "left": "10%",
+        "left": "7%",
         "onClick": AS_Button_a7a9f65b40a4414e8b46666fee11aefd,
         "skin": "ngnyBackButton",
         "text": "Back",
@@ -521,7 +539,7 @@ function addWidgetslogin() {
     });
     validatecodeFooter.add(submitBtn, cancelBtn);
     validateCodeContainer.add(validateCodeHdr, validateCodeBody, validatecodeFooter);
-    login.add(loginContainer, validateCodeContainer);
+    login.add(loginContainer, validateCodeContainerModular, validateCodeContainer);
 };
 
 function loginGlobals() {

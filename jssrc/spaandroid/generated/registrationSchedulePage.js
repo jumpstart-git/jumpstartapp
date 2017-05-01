@@ -22,7 +22,7 @@ function addWidgetsregistrationSchedulePage() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartLabel180",
-        "text": "Schedule Information",
+        "text": "Availability Information",
         "top": "20dp",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -34,13 +34,13 @@ function addWidgetsregistrationSchedulePage() {
         "textCopyable": false
     });
     var availabilityLabel = new kony.ui.Label({
-        "centerX": "50%",
         "id": "availabilityLabel",
         "isVisible": true,
-        "skin": "jumpStartLabel100",
-        "text": "Availability*",
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "text": "Day of the week*",
         "top": "20dp",
-        "width": "100%"
+        "width": kony.flex.USE_PREFFERED_SIZE
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -108,7 +108,7 @@ function addWidgetsregistrationSchedulePage() {
     });
     var fromMeridiem = new kony.ui.ListBox({
         "focusSkin": "jumpStartDropDown100",
-        "height": "70dp",
+        "height": "45dp",
         "id": "fromMeridiem",
         "isVisible": true,
         "masterData": [
@@ -125,7 +125,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {});
     fromTimeContainer.add(lblFrom, fromMeridiem);
@@ -159,7 +159,7 @@ function addWidgetsregistrationSchedulePage() {
     });
     var toMeridiem = new kony.ui.ListBox({
         "focusSkin": "jumpStartDropDown100",
-        "height": "70dp",
+        "height": "45dp",
         "id": "toMeridiem",
         "isVisible": true,
         "masterData": [
@@ -176,7 +176,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {});
     toTimeContainer.add(lblTo, toMeridiem);
@@ -184,9 +184,9 @@ function addWidgetsregistrationSchedulePage() {
     regScheduleInfoContainer.add(registrationPageScheduleTitle, availabilityLabel, daysOfTheWeekContainer, timeContainer);
     var regScheduleInfoFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "bottom": "0dp",
+        "bottom": "4dp",
         "clipBounds": true,
-        "height": "10%",
+        "height": "45dp",
         "id": "regScheduleInfoFooter",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
@@ -198,15 +198,15 @@ function addWidgetsregistrationSchedulePage() {
     regScheduleInfoFooter.setDefaultUnit(kony.flex.DP);
     var regScheduleInfoBackButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton120",
-        "height": "100%",
+        "focusSkin": "jumpStartGreenButton",
+        "height": "45dp",
         "id": "regScheduleInfoBackButton",
         "isVisible": true,
-        "left": "0%",
+        "left": "1%",
         "onClick": AS_Button_175a73b33d63400f969d9134fd454626,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Back",
-        "width": "50%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -215,15 +215,15 @@ function addWidgetsregistrationSchedulePage() {
     }, {});
     var regScheduleInfoContinueButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton120",
-        "height": "100%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
         "id": "regScheduleInfoContinueButton",
         "isVisible": true,
-        "left": 0,
+        "left": 7,
         "onClick": AS_Button_0e0b60a287be4f9a9c6fddeb813125b5,
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
-        "width": "50%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -277,7 +277,7 @@ function addWidgetsregistrationSchedulePage() {
         "centerY": "50%",
         "id": "requestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Warning",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
@@ -313,7 +313,7 @@ function addWidgetsregistrationSchedulePage() {
         "top": "0dp",
         "width": "90%"
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_TOP_CENTER,
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
         "padding": [2, 2, 2, 2],
         "paddingInPixel": false
     }, {});
@@ -334,13 +334,13 @@ function addWidgetsregistrationSchedulePage() {
     regScheduleOutsideHoursFooter.setDefaultUnit(kony.flex.DP);
     var regOutsideHoursYes = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jumpStartGreenButton110",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "regOutsideHoursYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f5d4786a61e4507804b2e211de4800a,
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": "15dp",
         "width": "90%",
@@ -351,12 +351,27 @@ function addWidgetsregistrationSchedulePage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
+    var scheduleCancelButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "scheduleCancelButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "top": "5dp",
+        "width": "90%"
+    }, {}, {});
+    scheduleCancelButtonContainer.setDefaultUnit(kony.flex.DP);
     var regOutsideHoursNo = new kony.ui.RichText({
         "centerX": "50%",
+        "centerY": "50%",
         "id": "regOutsideHoursNo",
         "isVisible": true,
+        "onClick": AS_RichText_c27b302f6b7a4a9290f211e6e3852ef5,
         "onTouchStart": AS_RichText_cc11bc18ec5f417295c622bdded5da6b,
-        "skin": "jumpStartRTGreen130",
+        "skin": "markAsComplete",
         "text": "Cancel",
         "top": 20,
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -366,7 +381,8 @@ function addWidgetsregistrationSchedulePage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    regScheduleOutsideHoursFooter.add(regOutsideHoursYes, regOutsideHoursNo);
+    scheduleCancelButtonContainer.add(regOutsideHoursNo);
+    regScheduleOutsideHoursFooter.add(regOutsideHoursYes, scheduleCancelButtonContainer);
     regScheduleOutsideHoursContainer.add(regScheduleOutsideHoursHeader, regScheduleOutsideHoursBody, regScheduleOutsideHoursFooter);
     regScheduleOutsideHoursModal.add(regScheduleOutsideHoursContainer);
     registrationSchedulePage.add(regScheduleInfoContainer, regScheduleInfoFooter, regScheduleOutsideHoursModal);

@@ -29,9 +29,8 @@ function initializeFBox011becb3c7bfa4f() {
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
     var notificationDetailContainer = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
-        "height": "100%",
         "id": "notificationDetailContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
@@ -46,7 +45,7 @@ function initializeFBox011becb3c7bfa4f() {
         "id": "notificationContactName",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel120Bold",
+        "skin": "CopyjumpStartLabel088663be2d34540",
         "text": "Label",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -69,7 +68,7 @@ function initializeFBox011becb3c7bfa4f() {
         "id": "notificationMeaasageType",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "CopyjumpStartLabel083d28612b0ec4b",
         "text": "Label",
         "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
@@ -88,7 +87,30 @@ function initializeFBox011becb3c7bfa4f() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    notificationDetailContainer.add(notificationContactName, notificationMeaasageType);
+    var notificationContent = new kony.ui.Label({
+        "id": "notificationContent",
+        "isVisible": false,
+        "left": "8dp",
+        "skin": "CopyjumpStartLabel088663be2d34540",
+        "text": "Label",
+        "top": "20dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "hExpand": true,
+        "margin": [1, 1, 1, 1],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    notificationDetailContainer.add(notificationContactName, notificationMeaasageType, notificationContent);
     var notificationDay = new kony.ui.Label({
         "bottom": "5dp",
         "id": "notificationDay",

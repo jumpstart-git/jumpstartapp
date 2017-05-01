@@ -414,14 +414,6 @@ function getLoginSuccessCallback(gblLoginData1) {
               return;
             }
 
-            /*
-            if ((companyName!="HPE" && companyName!="SupplyNation" && companyName!="CBA" && companyName!="DXC")||(emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0))
-            {
-              validationAlert("Warning","This volunteer is associated with an unauthorized company or domain. Access is denied!");
-              kony.application.dismissLoadingScreen();
-              return;
-            }
-            */
 
             kony.store.setItem("loginEmail", emailAddress);
             //End of D058

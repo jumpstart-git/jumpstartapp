@@ -1,5 +1,23 @@
 function addWidgetsscheduleNewForm() {
     scheduleNewForm.setDefaultUnit(kony.flex.DP);
+    var scheduleNewFormContainer = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "100%",
+        "horizontalScrollIndicator": true,
+        "id": "scheduleNewFormContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    scheduleNewFormContainer.setDefaultUnit(kony.flex.DP);
     var regScheduleHdrContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -38,13 +56,13 @@ function addWidgetsscheduleNewForm() {
     var regScheduleDatesContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "52%",
+        "height": "54%",
         "id": "regScheduleDatesContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
         "skin": "slFbox",
-        "top": "7%",
+        "top": "5dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -89,9 +107,8 @@ function addWidgetsscheduleNewForm() {
         "id": "regScheduleDatesFlex",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
         "skin": "slFbox",
-        "top": "5%",
+        "top": "7%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -319,7 +336,7 @@ function addWidgetsscheduleNewForm() {
         "id": "AddBtn",
         "isVisible": true,
         "left": "0dp",
-        "onClick": AS_Button_e21ac211a8a8413da63f77c6eac41fda,
+        "onClick": AS_Button_edf83feaa9fe47a7855ed1f1a459a40f,
         "skin": "ngnyPrimaryGreenButton",
         "text": "+ Add Schedule",
         "top": "75%",
@@ -335,71 +352,6 @@ function addWidgetsscheduleNewForm() {
     });
     regScheduleDatesFlex.add(listDays, lblFromTime, listFromTime, listToTime, listFromTimeMerdidian, listToTimeMeridian, lblTotime, AddBtn);
     regScheduleDatesContainer.add(regScheduleHeadingsContainer, regScheduleDatesFlex);
-    var regScheduleScrollContainer = new kony.ui.FlexScrollContainer({
-        "allowHorizontalBounce": false,
-        "allowVerticalBounce": true,
-        "bounces": true,
-        "clipBounds": true,
-        "enableScrolling": true,
-        "height": "10%",
-        "horizontalScrollIndicator": true,
-        "id": "regScheduleScrollContainer",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
-        "pagingEnabled": false,
-        "scrollDirection": kony.flex.SCROLL_VERTICAL,
-        "skin": "slFSbox",
-        "top": "57%",
-        "verticalScrollIndicator": true,
-        "width": "100%",
-        "zIndex": 1
-    }, {}, {});
-    regScheduleScrollContainer.setDefaultUnit(kony.flex.DP);
-    var segSchedule = new kony.ui.SegmentedUI2({
-        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "data": [{
-            "imgclose": "pinbsal.png",
-            "lblSchedule": ""
-        }],
-        "groupCells": false,
-        "id": "segSchedule",
-        "isVisible": true,
-        "left": "0dp",
-        "needPageIndicator": true,
-        "onRowClick": AS_Segment_44ab36382c5144c0a002fbe8531a8626,
-        "pageOffDotImage": "pageoffdot.png",
-        "pageOnDotImage": "pageondot.png",
-        "retainSelection": false,
-        "rowFocusSkin": "seg2Focus",
-        "rowSkin": "Copyseg07ddee451e42741",
-        "rowTemplate": FBox0495998e57f7e42,
-        "scrollingEvents": {},
-        "sectionHeaderSkin": "sliPhoneSegmentHeader",
-        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
-        "separatorRequired": false,
-        "separatorThickness": 0,
-        "showScrollbars": false,
-        "top": "5%",
-        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
-        "widgetDataMap": {
-            "imgclose": "imgclose",
-            "lblSchedule": "lblSchedule"
-        },
-        "width": "100%",
-        "zIndex": 1
-    }, {
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "bounces": true,
-        "editStyle": constants.SEGUI_EDITING_STYLE_NONE,
-        "enableDictionary": false,
-        "indicator": constants.SEGUI_NONE,
-        "progressIndicatorColor": constants.PROGRESS_INDICATOR_COLOR_WHITE,
-        "showProgressIndicator": true
-    });
-    regScheduleScrollContainer.add(segSchedule);
     var offManagerApprovalContainer = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
@@ -409,13 +361,13 @@ function addWidgetsscheduleNewForm() {
         "height": "24%",
         "horizontalScrollIndicator": true,
         "id": "offManagerApprovalContainer",
-        "isVisible": false,
+        "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "10dp",
+        "left": "0dp",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
-        "top": "78%",
+        "top": "0%",
         "verticalScrollIndicator": true,
         "width": "100%",
         "zIndex": 1
@@ -459,7 +411,7 @@ function addWidgetsscheduleNewForm() {
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
         "text": "I have received my manager's approval and consent before undertaking this task.",
-        "top": "40%",
+        "top": "45%",
         "width": "90%",
         "zIndex": 1
     }, {
@@ -479,8 +431,8 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "onTouchMove": AS_FlexContainer_258953e6a1604973803206e010c14bc8,
-        "onTouchStart": AS_FlexContainer_2e42607dce0c415cad538cfff8a8c523,
+        "onTouchMove": AS_FlexContainer_41d5a34b95944163a1650bf4b58c495b,
+        "onTouchStart": AS_FlexContainer_b3e975edbb0c4c0fbf129176c165b158,
         "skin": "slFbox",
         "top": "40%",
         "width": "100%",
@@ -509,7 +461,7 @@ function addWidgetsscheduleNewForm() {
         "id": "CopyRichText05ae4cf7d0a8c45",
         "isVisible": true,
         "left": "101dp",
-        "onClick": AS_RichText_1a485b46074042bbab4157e2ca51218c,
+        "onClick": AS_RichText_157903ef62f840a68bb802b935e4b093,
         "skin": "CopyslRichText08d925a35bfe342",
         "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "top": "30dp",
@@ -524,6 +476,132 @@ function addWidgetsscheduleNewForm() {
     });
     CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
     offManagerApprovalContainer.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
+    var regScheduleScrollContainer = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": false,
+        "clipBounds": true,
+        "enableScrolling": false,
+        "height": "0dp",
+        "horizontalScrollIndicator": true,
+        "id": "regScheduleScrollContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "slFSbox",
+        "top": "0%",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {
+        "bouncesZoom": false
+    });
+    regScheduleScrollContainer.setDefaultUnit(kony.flex.DP);
+    regScheduleScrollContainer.add();
+    var segSchedule = new kony.ui.SegmentedUI2({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "data": [{
+            "imgclose": "pinbsal.png",
+            "lblSchedule": ""
+        }],
+        "groupCells": false,
+        "id": "segSchedule",
+        "isVisible": true,
+        "left": "0dp",
+        "minHeight": "5%",
+        "needPageIndicator": true,
+        "onRowClick": AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5,
+        "pageOffDotImage": "pageoffdot.png",
+        "pageOnDotImage": "pageondot.png",
+        "retainSelection": false,
+        "rowFocusSkin": "seg2Focus",
+        "rowSkin": "Copyseg07ddee451e42741",
+        "rowTemplate": FBox0495998e57f7e42,
+        "scrollingEvents": {},
+        "sectionHeaderSkin": "sliPhoneSegmentHeader",
+        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
+        "separatorRequired": false,
+        "separatorThickness": 0,
+        "showScrollbars": false,
+        "top": "1%",
+        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
+        "widgetDataMap": {
+            "imgclose": "imgclose",
+            "lblSchedule": "lblSchedule"
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "bounces": true,
+        "editStyle": constants.SEGUI_EDITING_STYLE_NONE,
+        "enableDictionary": false,
+        "indicator": constants.SEGUI_NONE,
+        "progressIndicatorColor": constants.PROGRESS_INDICATOR_COLOR_WHITE,
+        "showProgressIndicator": true
+    });
+    var regScheduleFooter = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "8%",
+        "id": "regScheduleFooter",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": 0,
+        "skin": "slFbox",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    regScheduleFooter.setDefaultUnit(kony.flex.DP);
+    var backBtn = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "CopyslButtonGlossRed09def2ebdd0f64b",
+        "height": "45dp",
+        "id": "backBtn",
+        "isVisible": true,
+        "left": "15dp",
+        "onClick": AS_Button_df291e0c7eb746038635f1ad35f928df,
+        "skin": "CopyslButtonGlossBlue0d4f4bac1d68944",
+        "text": "Back",
+        "top": "0dp",
+        "width": "45%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "showProgressIndicator": true
+    });
+    var ContinueBtn = new kony.ui.Button({
+        "centerY": "50%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
+        "id": "ContinueBtn",
+        "isVisible": true,
+        "left": "52%",
+        "onClick": AS_Button_aa285d8fe8d04e2d820658c111389d6b,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Continue",
+        "top": "0dp",
+        "width": "45%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "showProgressIndicator": true
+    });
+    regScheduleFooter.add(backBtn, ContinueBtn);
+    scheduleNewFormContainer.add(regScheduleHdrContainer, regScheduleDatesContainer, offManagerApprovalContainer, regScheduleScrollContainer, segSchedule, regScheduleFooter);
     var outsideScheduletime = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -564,7 +642,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "onTouchStart": AS_FlexContainer_832c6cfc7b0040a3a56b3eaba68083cd,
+        "onTouchStart": AS_FlexContainer_483c1cbbcb2f4ca5b45f075d2688f53f,
         "skin": "slFbox",
         "top": "0dp",
         "width": "100%",
@@ -641,7 +719,7 @@ function addWidgetsscheduleNewForm() {
         "id": "CopyupdateOutsideHoursYes0441ff65cf2744c",
         "isVisible": true,
         "left": "0dp",
-        "onClick": AS_Button_7cc9e7db933542dfa9d930e523285359,
+        "onClick": AS_Button_dc6cf53afef74ce497dd0a2c3c81d777,
         "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": 0,
@@ -659,7 +737,7 @@ function addWidgetsscheduleNewForm() {
         "centerX": "50%",
         "id": "CopyupdateOutsideHoursNo01981f9e7412e4d",
         "isVisible": true,
-        "onClick": AS_RichText_a1dba61c2ae5490298daafe88875d5a6,
+        "onClick": AS_RichText_4135e9845b634c85a398fc866db01008,
         "onTouchStart": AS_RichText_cc11bc18ec5f417295c622bdded5da6b,
         "skin": "markAsComplete",
         "text": "Cancel",
@@ -676,69 +754,14 @@ function addWidgetsscheduleNewForm() {
     CopyupdateScheduleOutsideHoursFooter0fa3a4f94d3914b.add(CopyupdateOutsideHoursYes0441ff65cf2744c, CopyupdateOutsideHoursNo01981f9e7412e4d);
     Copyoutsidecontainer0f55695b9f53340.add(CopyupdateScheduleOutsideHoursHeader057fed1f833eb46, CopyupdateScheduleOutsideHoursBody064265a36578f4a, CopyupdateScheduleOutsideHoursFooter0fa3a4f94d3914b);
     outsideScheduletime.add(Copyoutsidecontainer0f55695b9f53340);
-    var regScheduleFooter = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "clipBounds": true,
-        "height": "8%",
-        "id": "regScheduleFooter",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
-        "skin": "slFbox",
-        "top": "92%",
-        "width": "100%",
-        "zIndex": 1
-    }, {}, {});
-    regScheduleFooter.setDefaultUnit(kony.flex.DP);
-    var backBtn = new kony.ui.Button({
-        "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossRed09def2ebdd0f64b",
-        "height": "45dp",
-        "id": "backBtn",
-        "isVisible": true,
-        "left": "15dp",
-        "onClick": AS_Button_90cc3226d17d4c55a077d6f01f79c068,
-        "skin": "CopyslButtonGlossBlue0d4f4bac1d68944",
-        "text": "Back",
-        "top": "0dp",
-        "width": "45%",
-        "zIndex": 1
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "displayText": true,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "showProgressIndicator": true
-    });
-    var ContinueBtn = new kony.ui.Button({
-        "centerY": "50%",
-        "focusSkin": "ngnyPressedGreenButton",
-        "height": "45dp",
-        "id": "ContinueBtn",
-        "isVisible": true,
-        "left": "52%",
-        "onClick": AS_Button_0758697c36314de6be86afd5f5e75602,
-        "skin": "ngnyPrimaryGreenButton",
-        "text": "Continue",
-        "top": "0dp",
-        "width": "45%",
-        "zIndex": 1
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "displayText": true,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "showProgressIndicator": true
-    });
-    regScheduleFooter.add(backBtn, ContinueBtn);
-    scheduleNewForm.add(regScheduleHdrContainer, regScheduleDatesContainer, regScheduleScrollContainer, offManagerApprovalContainer, outsideScheduletime, regScheduleFooter);
+    scheduleNewForm.add(scheduleNewFormContainer, outsideScheduletime);
 };
 
 function scheduleNewFormGlobals() {
     scheduleNewForm = new kony.ui.Form2({
         "addWidgets": addWidgetsscheduleNewForm,
+        "bounces": false,
+        "enableScrolling": false,
         "enabledForIdleTimeout": false,
         "id": "scheduleNewForm",
         "layoutType": kony.flex.FREE_FORM,
@@ -751,11 +774,13 @@ function scheduleNewFormGlobals() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {
+        "bounces": false,
+        "bouncesZoom": false,
         "configureExtendBottom": false,
         "configureExtendTop": false,
         "configureStatusBarStyle": false,
         "footerOverlap": false,
-        "formTransparencyDuringPostShow": "100",
+        "formTransparencyDuringPostShow": 100,
         "headerOverlap": false,
         "inputAccessoryViewType": constants.FORM_INPUTACCESSORYVIEW_DEFAULT,
         "needsIndicatorDuringPostShow": false,

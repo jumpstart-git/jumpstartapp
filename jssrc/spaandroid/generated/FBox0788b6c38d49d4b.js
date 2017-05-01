@@ -19,7 +19,7 @@ function initializeFBox0788b6c38d49d4b() {
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "skin": "slFbox",
         "top": "10dp",
-        "width": "90%"
+        "width": "95%"
     }, {}, {});
     myOpenTaskTop.setDefaultUnit(kony.flex.DP);
     var myOpenTaskProfileImageParent = new kony.ui.FlexContainer({
@@ -66,17 +66,17 @@ function initializeFBox0788b6c38d49d4b() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "79.15%",
+        "width": "78%",
         "zIndex": 1
     }, {}, {});
     myOpenTaskDetailParent.setDefaultUnit(kony.flex.DP);
     var openTaskName = new kony.ui.Label({
         "id": "openTaskName",
         "isVisible": true,
-        "left": "5dp",
+        "left": "3%",
         "skin": "CopyslLabel0d3a9436b495d4b",
         "text": "Label",
-        "top": "0dp",
+        "top": "8px",
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
         "containerWeight": 100,
@@ -95,10 +95,10 @@ function initializeFBox0788b6c38d49d4b() {
     var openTaskBusiness = new kony.ui.Label({
         "id": "openTaskBusiness",
         "isVisible": true,
-        "left": "5dp",
+        "left": "3%",
         "skin": "CopyslLabel0236bd2e010ec4a",
         "text": "Label",
-        "top": "0dp",
+        "top": "12px",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -115,8 +115,8 @@ function initializeFBox0788b6c38d49d4b() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var markAsCompleteText = new kony.ui.Label({
-        "id": "markAsCompleteText",
+    var taskId = new kony.ui.Label({
+        "id": "taskId",
         "isVisible": false,
         "left": "15dp",
         "skin": "jumpStartLabelGreen90",
@@ -140,7 +140,7 @@ function initializeFBox0788b6c38d49d4b() {
     });
     var lblRequestId = new kony.ui.Label({
         "id": "lblRequestId",
-        "isVisible": true,
+        "isVisible": false,
         "left": "121dp",
         "skin": "CopyslLabel0c46eb9dc3fc448",
         "text": "Label",
@@ -162,19 +162,18 @@ function initializeFBox0788b6c38d49d4b() {
         "textCopyable": false
     });
     var markAsCompleteRichText = new kony.ui.RichText({
-        "height": "20dp",
         "id": "markAsCompleteRichText",
         "isVisible": true,
-        "left": "5dp",
-        "onClick": AS_RichText_4aa2825b6d21400bb786f06eee737ea2,
-        "skin": "CopyslRichText0f6cb1e7030024f",
-        "text": "RichText",
-        "top": "4dp",
-        "width": "48.78%",
+        "left": "0%",
+        "onClick": AS_RichText_657672998ca44e6ebfa2d4fd1ed09d74,
+        "skin": "markEngageGreenButton",
+        "text": "Cancel",
+        "top": "15px",
+        "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
         "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
         "hExpand": true,
         "margin": [0, 0, 0, 0],
         "marginInPixel": false,
@@ -183,7 +182,7 @@ function initializeFBox0788b6c38d49d4b() {
         "vExpand": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    myOpenTaskDetailParent.add(openTaskName, openTaskBusiness, markAsCompleteText, lblRequestId, markAsCompleteRichText);
+    myOpenTaskDetailParent.add(openTaskName, openTaskBusiness, taskId, lblRequestId, markAsCompleteRichText);
     myOpenTaskTop.add(myOpenTaskProfileImageParent, myOpenTaskDetailParent);
     FBox0788b6c38d49d4b.add(myOpenTaskTop);
 }

@@ -55,7 +55,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summUserNameTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "User Name",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -74,7 +74,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -87,7 +87,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summEmailTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Email",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -106,7 +106,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -119,7 +119,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summContactNumberTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Contact",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -138,7 +138,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -151,7 +151,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summPasswordTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Password",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -170,7 +170,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -183,7 +183,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summAddressTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Address",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -202,7 +202,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -215,7 +215,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summCompanyTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Company",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -234,7 +234,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -247,7 +247,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summRoleTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Role",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -266,7 +266,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0dp",
         "skin": "jumpStartLabel100WBorder",
         "top": "5dp",
-        "width": "100%"
+        "width": "95%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [2, 2, 2, 2],
@@ -279,7 +279,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summSkillsTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Skills",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -296,7 +296,7 @@ function addWidgetsregistrationSummaryPage() {
         "isVisible": true,
         "skin": "jumpStartRT100WBorder",
         "top": "0dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -323,7 +323,7 @@ function addWidgetsregistrationSummaryPage() {
         "id": "summAvailabilityTitle",
         "isVisible": true,
         "left": "0dp",
-        "skin": "jumpStartLabel100",
+        "skin": "jumpStartLabel10099",
         "text": "Availability",
         "top": "15dp",
         "width": kony.flex.USE_PREFFERED_SIZE
@@ -342,7 +342,7 @@ function addWidgetsregistrationSummaryPage() {
         "left": "0",
         "skin": "jumpStartRT100WBorder",
         "top": "0dp",
-        "width": "100%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
@@ -350,30 +350,152 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     registrationSummaryBody.add(summUserNameTitle, summUserNameLabel, summEmailTitle, summEmailLabel, summContactNumberTitle, summContactNumberLabel, summPasswordTitle, summPasswordLabel, summAddressTitle, summAddressLabel, summCompanyTitle, summCompanyLabel, summRoleTitle, summRoleLabel, summSkillsTitle, summSkillsRT, summSkillsLabel, summAvailabilityTitle, summAvailabilityRT);
+    var CopyeligibiltyCriteriFlxScroll = new kony.ui.FlexScrollContainer({
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": true,
+        "bounces": true,
+        "clipBounds": true,
+        "enableScrolling": true,
+        "height": "24%",
+        "horizontalScrollIndicator": true,
+        "id": "CopyeligibiltyCriteriFlxScroll",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_VERTICAL,
+        "skin": "slFSbox",
+        "top": "50dp",
+        "verticalScrollIndicator": true,
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopyeligibiltyCriteriFlxScroll.setDefaultUnit(kony.flex.DP);
+    var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "40%",
+        "id": "CopymangersApprovalFlex03ae7b8f29fcb45",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopymangersApprovalFlex03ae7b8f29fcb45.setDefaultUnit(kony.flex.DP);
+    var Copyheading021315f55d79a40 = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "Copyheading021315f55d79a40",
+        "isVisible": true,
+        "skin": "ngnyOrangeLabelText",
+        "text": "Manager's Approval",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var CopytxtLbl0866b5282a16448 = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopytxtLbl0866b5282a16448",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "CopyslLabel09019c347377142",
+        "text": "You all need your manager's approval and consent before understanding this task",
+        "top": "40%",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    CopymangersApprovalFlex03ae7b8f29fcb45.add(Copyheading021315f55d79a40, CopytxtLbl0866b5282a16448);
+    var CopyLegalFlex0fd3d110dd9a947 = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "58%",
+        "id": "CopyLegalFlex0fd3d110dd9a947",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "onTouchMove": AS_FlexContainer_cbcedf5c957d4a0cbb7a59cda06d8abc,
+        "onTouchStart": AS_FlexContainer_5e2aa7339ea54ad2832bd61f3d203dc7,
+        "skin": "slFbox",
+        "top": "40%",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    CopyLegalFlex0fd3d110dd9a947.setDefaultUnit(kony.flex.DP);
+    var CopyLegalLbl0328e1d8997464f = new kony.ui.Label({
+        "centerX": "50%",
+        "id": "CopyLegalLbl0328e1d8997464f",
+        "isVisible": true,
+        "skin": "ngnyOrangeLabelText",
+        "text": "Policy Requirements ",
+        "top": "1%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "renderAsAnchor": false,
+        "textCopyable": false
+    });
+    var CopyRichText05ae4cf7d0a8c45 = new kony.ui.RichText({
+        "centerX": "50%",
+        "id": "CopyRichText05ae4cf7d0a8c45",
+        "isVisible": true,
+        "left": "101dp",
+        "onClick": AS_RichText_8725e935980241a59eec2dd1cde0d619,
+        "skin": "CopyslRichText08d925a35bfe342",
+        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "top": "30dp",
+        "width": "90%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
+    CopyeligibiltyCriteriFlxScroll.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
     var registrationPageFooter = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "10%",
+        "height": "45dp",
         "id": "registrationPageFooter",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "jumpStartBGFFFBorder214",
-        "top": "0dp",
+        "top": "16dp",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
     registrationPageFooter.setDefaultUnit(kony.flex.DP);
     var registrationCancelButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton120",
+        "focusSkin": "jumpStartGrayButton110",
         "height": "100%",
         "id": "registrationCancelButton",
         "isVisible": true,
-        "left": "0%",
+        "left": "1%",
         "onClick": AS_Button_fe953aeb6be94dfcb3ee8c7a51645924,
         "skin": "jumpStartGrayButton110",
         "text": "Cancel",
-        "width": "50%"
+        "width": "46.94%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -381,14 +503,15 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     var registrationSubmitButton = new kony.ui.Button({
-        "focusSkin": "jumpStartGreenButton120",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "100%",
         "id": "registrationSubmitButton",
         "isVisible": true,
+        "left": 11,
         "onClick": AS_Button_cb90a5ede5774015985fe53dbbc6a6a8,
-        "skin": "jumpStartGreenButton110",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Register",
-        "width": "50%"
+        "width": "48%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -396,7 +519,7 @@ function addWidgetsregistrationSummaryPage() {
         "paddingInPixel": false
     }, {});
     registrationPageFooter.add(registrationCancelButton, registrationSubmitButton);
-    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, registrationPageFooter);
+    registrationSummaryPage.add(registrationSummaryContainer, registrationSummaryBody, CopyeligibiltyCriteriFlxScroll, registrationPageFooter);
 };
 
 function registrationSummaryPageGlobals() {

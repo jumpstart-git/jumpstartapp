@@ -204,7 +204,7 @@ function addWidgetsBusinessProfile() {
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
         "id": "companyProfileContactOptions",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "left": "0dp",
         "skin": "slFbox",
@@ -352,7 +352,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblLoginDetails",
         "isVisible": true,
         "left": "10dp",
-        "skin": "CopyslLabel079fe67b224404a",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Login details",
         "textStyle": {
             "letterSpacing": 0,
@@ -385,6 +385,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblEmail",
         "isVisible": true,
         "left": "0dp",
+        "right": "2%",
         "skin": "CopyslLabel055000dcec51f41",
         "text": "Email:",
         "textStyle": {
@@ -404,7 +405,7 @@ function addWidgetsBusinessProfile() {
     var lblLoggedInEmail = new kony.ui.Label({
         "id": "lblLoggedInEmail",
         "isVisible": true,
-        "left": "0dp",
+        "left": "2dp",
         "skin": "CopyslLabel055000dcec51f41",
         "text": "supplycompany@mail.com",
         "textStyle": {
@@ -440,6 +441,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblPassword",
         "isVisible": true,
         "left": "0dp",
+        "right": "2%",
         "skin": "CopyslLabel055000dcec51f41",
         "text": "Password:",
         "textStyle": {
@@ -459,7 +461,7 @@ function addWidgetsBusinessProfile() {
     var changePasswordRichText = new kony.ui.RichText({
         "id": "changePasswordRichText",
         "isVisible": true,
-        "left": "0dp",
+        "left": "2dp",
         "onTouchStart": AS_RichText_5b2fab265c874cadaf62f39df2783b03,
         "skin": "CopyslRichText03031643224134b",
         "text": "<u>Change Password</u>\n",
@@ -509,7 +511,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblAbout",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "About",
         "textStyle": {
             "letterSpacing": 0,
@@ -578,7 +580,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblContactDetails",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange150new",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Contact details",
         "textStyle": {
             "letterSpacing": 0,
@@ -780,7 +782,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblBusinessActivityContainer",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Business activity",
         "textStyle": {
             "letterSpacing": 0,
@@ -829,7 +831,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblAffiliation",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Professional affiliations",
         "textStyle": {
             "letterSpacing": 0,
@@ -878,7 +880,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblBusinessReach",
         "isVisible": true,
         "left": "10dp",
-        "skin": "jumpStartLabelOrange130",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Business reach",
         "textStyle": {
             "letterSpacing": 0,
@@ -923,15 +925,15 @@ function addWidgetsBusinessProfile() {
     }, {}, {});
     continueButtonContainer.setDefaultUnit(kony.flex.DP);
     var continueButton = new kony.ui.Button({
-        "bottom": "2dp",
+        "bottom": "20dp",
         "centerX": "50%",
-        "focusSkin": "jump",
-        "height": "40dp",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "50dp",
         "id": "continueButton",
         "isVisible": true,
         "left": "36dp",
         "onClick": AS_Button_7bf81a92fedc4957be3f7b1a2a109185,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "0dp",
         "width": "90%",
@@ -1345,13 +1347,13 @@ function addWidgetsBusinessProfile() {
     ChangePasswordFooterContainer.setDefaultUnit(kony.flex.DP);
     var ChangePasswordButton = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "ChangePasswordButton",
         "isVisible": true,
         "left": "37dp",
         "onClick": AS_Button_f197f02f5c294e089d477ddb4ef9a33e,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Change Password",
         "top": "0dp",
         "width": "90%",

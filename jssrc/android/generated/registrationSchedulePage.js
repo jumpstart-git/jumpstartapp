@@ -37,9 +37,9 @@ function addWidgetsregistrationSchedulePage() {
         "textCopyable": false
     });
     var availabilityLabel = new kony.ui.Label({
-        "centerX": "12%",
         "id": "availabilityLabel",
         "isVisible": true,
+        "left": "0dp",
         "skin": "jumpStartLabel10099",
         "text": "Day of the week*",
         "textStyle": {
@@ -274,7 +274,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -299,7 +299,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -378,7 +378,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -403,7 +403,7 @@ function addWidgetsregistrationSchedulePage() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -434,7 +434,7 @@ function addWidgetsregistrationSchedulePage() {
         "isVisible": true,
         "left": "1%",
         "onClick": AS_Button_175a73b33d63400f969d9134fd454626,
-        "skin": "jumpStartGrayButton110",
+        "skin": "ngnyBackButton",
         "text": "Back",
         "width": "48%"
     }, {
@@ -445,13 +445,13 @@ function addWidgetsregistrationSchedulePage() {
     }, {});
     var regScheduleInfoContinueButton = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "regScheduleInfoContinueButton",
         "isVisible": true,
         "left": 7,
         "onClick": AS_Button_0e0b60a287be4f9a9c6fddeb813125b5,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "48%"
     }, {
@@ -507,7 +507,7 @@ function addWidgetsregistrationSchedulePage() {
         "centerY": "50%",
         "id": "requestModalTitle",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyLargeOrangeLabelText",
         "text": "Warning",
         "textStyle": {
             "letterSpacing": 0,
@@ -567,13 +567,13 @@ function addWidgetsregistrationSchedulePage() {
     regScheduleOutsideHoursFooter.setDefaultUnit(kony.flex.DP);
     var regOutsideHoursYes = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "regOutsideHoursYes",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_3f5d4786a61e4507804b2e211de4800a,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": "15dp",
         "width": "90%",
@@ -584,8 +584,23 @@ function addWidgetsregistrationSchedulePage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
+    var scheduleCancelButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "scheduleCancelButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
+        "skin": "ngnyGreyFlexBG",
+        "top": "5dp",
+        "width": "90%"
+    }, {}, {});
+    scheduleCancelButtonContainer.setDefaultUnit(kony.flex.DP);
     var regOutsideHoursNo = new kony.ui.RichText({
         "centerX": "50%",
+        "centerY": "50%",
         "id": "regOutsideHoursNo",
         "isVisible": true,
         "onClick": AS_RichText_c27b302f6b7a4a9290f211e6e3852ef5,
@@ -600,7 +615,8 @@ function addWidgetsregistrationSchedulePage() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    regScheduleOutsideHoursFooter.add(regOutsideHoursYes, regOutsideHoursNo);
+    scheduleCancelButtonContainer.add(regOutsideHoursNo);
+    regScheduleOutsideHoursFooter.add(regOutsideHoursYes, scheduleCancelButtonContainer);
     regScheduleOutsideHoursContainer.add(regScheduleOutsideHoursHeader, regScheduleOutsideHoursBody, regScheduleOutsideHoursFooter);
     regScheduleOutsideHoursModal.add(regScheduleOutsideHoursContainer);
     registrationSchedulePage.add(regScheduleInfoContainer, regScheduleInfoFooter, regScheduleOutsideHoursModal);

@@ -29,9 +29,10 @@ mobileFabricConfigurationForVolunteer = {
 };
 // Function to invoke getFoxNews Service call
 function volunteerService() {
-    //   kony.application.showLoadingScreen(null, "loading", 
-    // constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {  
-    // shouldShowLabelInBottom: "true", separatorHeight: 200} );
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     //alert("1");
     // Let's get the news type the user selected
     //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
@@ -147,7 +148,10 @@ function getVolunteerSuccessCallback(gblVolunteersList) {
                 // Now we know we have results so we'll print them out to check
                 //alert ("########## Response received from service call: "+JSON.stringify(gblVolunteersList.volunteersList));
                 gblResponse = gblVolunteersList;
+                gblForPred = gblVolunteersList;
+                gblForVolSort = gblVolunteersList;
                 setSegData(gblResponse);
+                check28();
                 // var gblResponse=JSON.stringify(notificationList);
                 //Setting the segment widgetdataMap 
                 //          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"}; 
@@ -209,15 +213,31 @@ function setSegData(gblResponse) {
             "SegActionsDownFlex": "SegActionsDownFlex",
             "SegVolunteerUpFlex": "SegVolunteerUpFlex",
             "SegmentMainFlex": "SegmentMainFlex",
-            "VolunteerLevel": "VolunteerLevel",
-            "bookMarkBtn": "bookMarkBtn",
-            "bookmarkRichTxt": "bookmarkRichTxt",
-            "distanceRichTxt": "distanceRichTxt",
-            "mapBtn": "mapBtn",
+            "VolunteerPosition": "VolunteerPosition",
+            "searchBookmarkImage": "searchBookmarkImage",
+            //"bookmarkRichTxt": "bookmarkRichTxt",
+            //"distanceRichTxt": "distanceRichTxt",
+            "searchDistanceImage": "searchDistanceImage",
             "volunteerImg": "volunteerImg",
             "volunteerName": "volunteerName",
             "volunteerPosition": "volunteerPosition",
-            "volunteerId": "volunteerId"
+            "volunteerId": "volunteerId",
+            "contactNumber": "contactNumber",
+            "searchBookmarkLabel": "searchBookmarkLabel",
+            "searchDistanceLabel": "searchDistanceLabel"
+                //             "CompanyNameLbl": "CompanyNameLbl",
+                //             "SegActionsDownFlex": "SegActionsDownFlex",
+                //             "SegVolunteerUpFlex": "SegVolunteerUpFlex",
+                //             "SegmentMainFlex": "SegmentMainFlex",
+                //             "VolunteerLevel": "VolunteerLevel",
+                //             "bookMarkBtn": "bookMarkBtn",
+                //             "bookmarkRichTxt": "bookmarkRichTxt",
+                //             "distanceRichTxt": "distanceRichTxt",
+                //             "mapBtn": "mapBtn",
+                //             "volunteerImg": "volunteerImg",
+                //             "volunteerName": "volunteerName",
+                //             "volunteerPosition": "volunteerPosition",
+                //   			"volunteerId":"volunteerId"
         };
         if (gblResponse["volunteersList"].length > 0) {
             var tempData = [];
@@ -226,20 +246,45 @@ function setSegData(gblResponse) {
                 var cmpnyName = gblResponse["volunteersList"][i]["VolunteersDTO"][0].companyName;
                 var volunteerfNme = gblResponse["volunteersList"][i]["VolunteersDTO"][0].firstName;
                 var volunteerLNme = gblResponse["volunteersList"][i]["VolunteersDTO"][0].lastName;
-                var volunteerFullNme = volunteerfNme + " " + volunteerLNme
-                var volunteerPostn = gblResponse["volunteersList"][i]["VolunteersDTO"][0].role;
+                //D007: Adding code to capitalize first character for volunteerfNme and volunteerLnme
+                var fNme = volunteerfNme.charAt(0).toUpperCase() + volunteerfNme.slice(1);
+                var lNme = volunteerLNme.charAt(0).toUpperCase() + volunteerLNme.slice(1);
+                var volunteerFullNme = fNme + " " + lNme;
+                //D007: End of code addition. Commented out line below
+                //var volunteerFullNme= volunteerfNme + " " +volunteerLNme
+                var volunteerPostn = gblResponse["volunteersList"][i]["VolunteersDTO"][0].role + "  ";
                 var volId = gblResponse["volunteersList"][i]["VolunteersDTO"][0].volunteerId;
+                var volAdress = gblResponse["volunteersList"][i]["VolunteersDTO"][0].address;
+                var volunteerImgPath = gblResponse["volunteersList"][i]["VolunteersDTO"][0]["users"][0].imagePath;
+                var volPhoneNum1 = gblResponse["volunteersList"][i]["VolunteersDTO"][0].contactNumber;
+                var imagepathVol = "imgseglogo.png";
+                if (volunteerImgPath != null && volunteerImgPath != "null") {
+                    imagepathVol = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + volunteerImgPath;
+                }
                 var testData = {
                     "CompanyNameLbl": cmpnyName,
                     "VolunteerLevel": "Specialist Level",
-                    "bookMarkBtn": "Button",
-                    "bookmarkRichTxt": "<u>BookMark</u>",
+                    "searchBookmarkImage": " ", //bookmarkoff.png",
+                    "searchBookmarkLabel": " ", // "Bookmark",
                     "distanceRichTxt": "<u>10km</u>",
+                    "searchDistanceImage": "location.png",
+                    "searchDistanceLabel": volAdress,
                     "mapBtn": "Button",
-                    "volunteerImg": "imgseglogo.png",
+                    "volunteerImg": imagepathVol, // "imgseglogo.png",
                     "volunteerName": volunteerFullNme,
                     "volunteerPosition": volunteerPostn,
-                    "volunteerId": volId
+                    "volunteerId": volId,
+                    "contactNumber": volPhoneNum1
+                        //      "CompanyNameLbl": cmpnyName,
+                        //             "VolunteerLevel": "Specialist Level",
+                        //             "bookMarkBtn": "Button",
+                        //             "bookmarkRichTxt": "<u>BookMark</u>",
+                        //             "distanceRichTxt": "<u>10km</u>",
+                        //             "mapBtn": "Button",
+                        //             "volunteerImg": "imgseglogo.png",
+                        //             "volunteerName": volunteerFullNme,
+                        //             "volunteerPosition": volunteerPostn,
+                        //                     "volunteerId":volId
                 };
                 tempData.push(testData);
             }

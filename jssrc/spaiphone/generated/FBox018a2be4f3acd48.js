@@ -1,23 +1,23 @@
 function initializeFBox018a2be4f3acd48() {
     FBox018a2be4f3acd48 = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
         "clipBounds": true,
-        "height": "40%",
+        "height": "preferred",
         "id": "FBox018a2be4f3acd48",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
     }, {}, {});
     FBox018a2be4f3acd48.setDefaultUnit(kony.flex.DP);
-    var Image0e199e8acd9454f = new kony.ui.Image2({
-        "height": "28.74%",
-        "id": "Image0e199e8acd9454f",
+    var recommendationContactImage = new kony.ui.Image2({
+        "height": "50dp",
+        "id": "recommendationContactImage",
         "isVisible": true,
-        "left": "0%",
+        "left": "10dp",
         "skin": "slImage",
         "src": "imagedrag.png",
-        "top": "0%",
-        "width": "15%",
+        "top": "10dp",
+        "width": "50dp",
         "zIndex": 1
     }, {
         "containerWeight": 100,
@@ -28,13 +28,26 @@ function initializeFBox018a2be4f3acd48() {
         "paddingInPixel": false,
         "widgetAlignment": constants.WIDGET_ALIGN_CENTER
     }, {});
-    var Label08519845324a14f = new kony.ui.Label({
-        "id": "Label08519845324a14f",
+    var recommendationDetailContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "recommendationDetailContainer",
         "isVisible": true,
-        "left": "16%",
-        "skin": "CopyslLabel045032e00d39d4a",
+        "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "25%",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "75%",
+        "zIndex": 1
+    }, {}, {});
+    recommendationDetailContainer.setDefaultUnit(kony.flex.DP);
+    var recommendationContactName = new kony.ui.Label({
+        "id": "recommendationContactName",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel110",
         "text": "Label",
-        "top": "5%",
+        "top": "10dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -51,13 +64,26 @@ function initializeFBox018a2be4f3acd48() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblDesignation = new kony.ui.Label({
-        "id": "lblDesignation",
+    var recommendationContactDetails = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
+        "clipBounds": true,
+        "id": "recommendationContactDetails",
         "isVisible": true,
-        "left": "16%",
-        "skin": "CopyslLabel0642c0c1697714b",
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0",
+        "skin": "slFbox",
+        "top": "3dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    recommendationContactDetails.setDefaultUnit(kony.flex.DP);
+    var recommendationContactDesignation = new kony.ui.Label({
+        "id": "recommendationContactDesignation",
+        "isVisible": true,
+        "left": "0dp",
+        "skin": "jumpStartLabel90",
         "text": "Label",
-        "top": "15%",
+        "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -74,13 +100,13 @@ function initializeFBox018a2be4f3acd48() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblCompanyName = new kony.ui.Label({
-        "id": "lblCompanyName",
+    var recommendationContactCompanyName = new kony.ui.Label({
+        "id": "recommendationContactCompanyName",
         "isVisible": true,
-        "left": "36%",
-        "skin": "CopyslLabel02fe2418d7e334b",
+        "left": "5dp",
+        "skin": "jumpStartLabelGreen90",
         "text": "Label",
-        "top": "15%",
+        "top": "0dp",
         "width": kony.flex.USE_PREFFERED_SIZE,
         "zIndex": 1
     }, {
@@ -97,18 +123,40 @@ function initializeFBox018a2be4f3acd48() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblDay = new kony.ui.Label({
-        "id": "lblDay",
+    recommendationContactDetails.add(recommendationContactDesignation, recommendationContactCompanyName);
+    var recommendationText = new kony.ui.RichText({
+        "id": "recommendationText",
         "isVisible": true,
-        "left": "79%",
-        "skin": "CopyslLabel052edda5c86b245",
-        "text": "Label",
-        "top": "15%",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "left": "0dp",
+        "skin": "jumpStartRT100Black",
+        "text": "RichText",
+        "top": "5dp",
+        "width": "90%",
         "zIndex": 1
     }, {
         "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_TOP_LEFT,
+        "hExpand": true,
+        "margin": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false,
+        "vExpand": false,
+        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
+    }, {});
+    var recommendationReceivedTime = new kony.ui.Label({
+        "bottom": 5,
+        "id": "recommendationReceivedTime",
+        "isVisible": true,
+        "right": "6dp",
+        "skin": "jumpStartLabel90",
+        "text": "Label",
+        "top": "10dp",
+        "width": "80.37%",
+        "zIndex": 1
+    }, {
+        "containerWeight": 100,
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_RIGHT,
         "hExpand": true,
         "margin": [1, 1, 1, 1],
         "marginInPixel": false,
@@ -120,29 +168,6 @@ function initializeFBox018a2be4f3acd48() {
         "renderAsAnchor": false,
         "textCopyable": false
     });
-    var lblRecommendationText = new kony.ui.Label({
-        "height": "68.97%",
-        "id": "lblRecommendationText",
-        "isVisible": true,
-        "left": "16.00%",
-        "skin": "CopyslLabel0a6ea74ce32074a",
-        "text": "Label",
-        "top": "25.18%",
-        "width": "83.38%",
-        "zIndex": 1
-    }, {
-        "containerWeight": 100,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "hExpand": true,
-        "margin": [1, 1, 1, 1],
-        "marginInPixel": false,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false,
-        "vExpand": false,
-        "widgetAlignment": constants.WIDGET_ALIGN_CENTER
-    }, {
-        "renderAsAnchor": false,
-        "textCopyable": false
-    });
-    FBox018a2be4f3acd48.add(Image0e199e8acd9454f, Label08519845324a14f, lblDesignation, lblCompanyName, lblDay, lblRecommendationText);
+    recommendationDetailContainer.add(recommendationContactName, recommendationContactDetails, recommendationText, recommendationReceivedTime);
+    FBox018a2be4f3acd48.add(recommendationContactImage, recommendationDetailContainer);
 }

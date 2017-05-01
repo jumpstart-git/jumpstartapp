@@ -81,7 +81,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -123,7 +123,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -165,7 +165,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -226,7 +226,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -268,7 +268,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -329,7 +329,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -371,7 +371,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -413,7 +413,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -455,7 +455,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -497,7 +497,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "9dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -539,7 +539,7 @@ function addWidgetsbusinessMyProfile() {
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "9dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {
         "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
@@ -656,15 +656,15 @@ function addWidgetsbusinessMyProfile() {
     });
     var bmpReachContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "49%",
         "clipBounds": true,
         "height": "55dp",
         "id": "bmpReachContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "11dp",
-        "width": "98%",
+        "width": "95%",
         "zIndex": 1
     }, {}, {});
     bmpReachContainer.setDefaultUnit(kony.flex.DP);
@@ -795,11 +795,11 @@ function addWidgetsbusinessMyProfile() {
     });
     var bmpGovExpParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "centerX": "49%",
         "clipBounds": true,
         "id": "bmpGovExpParent",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "10dp",
         "width": "98%",
@@ -836,7 +836,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblLocalCouncils",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "Local Councils",
         "textStyle": {
@@ -871,7 +871,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblGovtStateTerritory",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "State and Territory",
         "textStyle": {
@@ -920,7 +920,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblGovtExpCommonwealth",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "Commonwealth",
         "textStyle": {
@@ -955,7 +955,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblbmpGovExpInternational",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "International",
         "textStyle": {
@@ -996,12 +996,12 @@ function addWidgetsbusinessMyProfile() {
     });
     var bmpPrivateContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "49%",
         "clipBounds": true,
         "height": "40dp",
         "id": "bmpPrivateContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "0dp",
         "skin": "CopyslFbox0acdf85d25e6545",
         "top": "10dp",
         "width": "98%",
@@ -1025,7 +1025,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblbmpPrivateMultinational",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "Large Multinational",
         "textStyle": {
@@ -1060,7 +1060,7 @@ function addWidgetsbusinessMyProfile() {
         "height": "40dp",
         "id": "lblbmpPrivateSME",
         "isVisible": false,
-        "left": "4dp",
+        "left": "0dp",
         "skin": "CopyslLabel0bc3c53060dc444",
         "text": "Small and Medium Enterprises",
         "textStyle": {
@@ -1081,11 +1081,11 @@ function addWidgetsbusinessMyProfile() {
     bmpPrivateContainer.add(bmpPrivateMultinationalButtonContainer, bmpPrivateSMEButtonContainer);
     var bmpOtherInfoContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
-        "centerX": "49%",
         "clipBounds": true,
         "id": "bmpOtherInfoContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
+        "left": "0dp",
         "skin": "slFbox",
         "top": "20dp",
         "width": "97%",
@@ -1160,7 +1160,7 @@ function addWidgetsbusinessMyProfile() {
             "strikeThrough": false
         },
         "top": "0dp",
-        "width": "101%"
+        "width": "100%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -1267,14 +1267,14 @@ function addWidgetsbusinessMyProfile() {
     }, {}, {});
     businessMyProfileFooter.setDefaultUnit(kony.flex.DP);
     var businessMyProfileSaveButton = new kony.ui.Button({
-        "centerX": "50%",
-        "centerY": "50%",
-        "focusSkin": "jumpStartGreenButton",
-        "height": "40dp",
+        "centerX": "50.00%",
+        "centerY": "50.00%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
         "id": "businessMyProfileSaveButton",
         "isVisible": true,
         "onClick": AS_Button_2734c15dfb1342599c619a91e8e7d7b1,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "width": "89.06%"
     }, {
@@ -1301,14 +1301,14 @@ function addWidgetsbusinessMyProfile() {
     var BusinessProfileContinueButton = new kony.ui.Button({
         "centerX": "72%",
         "centerY": "51%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "BusinessProfileContinueButton",
         "isVisible": true,
         "onClick": AS_Button_fc4ccf04c3434ac98e2da763805b5750,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
-        "width": "45.00%"
+        "width": "40%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
@@ -1316,16 +1316,17 @@ function addWidgetsbusinessMyProfile() {
         "paddingInPixel": false
     }, {});
     var BusinessProfileSaveButton = new kony.ui.Button({
-        "centerX": "26%",
+        "centerX": "28%",
         "centerY": "51%",
-        "focusSkin": "jumpStartGreenButton",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "BusinessProfileSaveButton",
         "isVisible": true,
+        "left": "0dp",
         "onClick": AS_Button_42d5fe199fbd4a02834ab76d2b7f6ff6,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Save",
-        "width": "45%"
+        "width": "40%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,

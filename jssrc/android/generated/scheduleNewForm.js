@@ -119,11 +119,11 @@ function addWidgetsscheduleNewForm() {
         ],
         "skin": "jumpStartDropDown100",
         "top": "10dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "83%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -187,7 +187,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -230,7 +230,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -252,7 +252,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -273,7 +273,7 @@ function addWidgetsscheduleNewForm() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [2, 0, 0, 0],
         "paddingInPixel": false
     }, {
         "applySkinsToPopup": true,
@@ -301,13 +301,13 @@ function addWidgetsscheduleNewForm() {
     });
     var AddBtn = new kony.ui.Button({
         "centerX": "47.29%",
-        "focusSkin": "CopyslButtonGlossRed031e5a4de220049",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "AddBtn",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_e21ac211a8a8413da63f77c6eac41fda,
-        "skin": "CopyslButtonGlossBlue08537af98c6284e",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "+ Add Schedule",
         "top": "75%",
         "width": "84%",
@@ -378,7 +378,7 @@ function addWidgetsscheduleNewForm() {
         "paddingInPixel": false
     }, {});
     regScheduleScrollContainer.add(segSchedule);
-    var CopyeligibiltyCriteriFlxScroll0d5fab6ec683540 = new kony.ui.FlexScrollContainer({
+    var offManagerApprovalContainer = new kony.ui.FlexScrollContainer({
         "allowHorizontalBounce": false,
         "allowVerticalBounce": true,
         "bounces": true,
@@ -386,24 +386,24 @@ function addWidgetsscheduleNewForm() {
         "enableScrolling": true,
         "height": "24%",
         "horizontalScrollIndicator": true,
-        "id": "CopyeligibiltyCriteriFlxScroll0d5fab6ec683540",
-        "isVisible": true,
+        "id": "offManagerApprovalContainer",
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
+        "left": "10dp",
         "pagingEnabled": false,
         "scrollDirection": kony.flex.SCROLL_VERTICAL,
         "skin": "slFSbox",
-        "top": "68%",
+        "top": "78%",
         "verticalScrollIndicator": true,
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyeligibiltyCriteriFlxScroll0d5fab6ec683540.setDefaultUnit(kony.flex.DP);
-    var CopymangersApprovalFlex02c9e067a552740 = new kony.ui.FlexContainer({
+    offManagerApprovalContainer.setDefaultUnit(kony.flex.DP);
+    var CopymangersApprovalFlex03ae7b8f29fcb45 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "40%",
-        "id": "CopymangersApprovalFlex02c9e067a552740",
+        "id": "CopymangersApprovalFlex03ae7b8f29fcb45",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
@@ -412,12 +412,12 @@ function addWidgetsscheduleNewForm() {
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopymangersApprovalFlex02c9e067a552740.setDefaultUnit(kony.flex.DP);
-    var Copyheading0b0ead1ad4d8b4b = new kony.ui.Label({
+    CopymangersApprovalFlex03ae7b8f29fcb45.setDefaultUnit(kony.flex.DP);
+    var Copyheading021315f55d79a40 = new kony.ui.Label({
         "centerX": "50%",
-        "id": "Copyheading0b0ead1ad4d8b4b",
+        "id": "Copyheading021315f55d79a40",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyOrangeLabelText",
         "text": "Manager's Approval",
         "textStyle": {
             "letterSpacing": 0,
@@ -433,13 +433,13 @@ function addWidgetsscheduleNewForm() {
     }, {
         "textCopyable": false
     });
-    var CopytxtLbl0a256207b5c874a = new kony.ui.Label({
+    var CopytxtLbl0866b5282a16448 = new kony.ui.Label({
         "centerX": "50%",
-        "id": "CopytxtLbl0a256207b5c874a",
+        "id": "CopytxtLbl0866b5282a16448",
         "isVisible": true,
         "left": "0dp",
         "skin": "CopyslLabel09019c347377142",
-        "text": "You all need your manager's approval and consent before understanding this task",
+        "text": "I have received my manager's approval and consent before undertaking this task.",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -454,28 +454,28 @@ function addWidgetsscheduleNewForm() {
     }, {
         "textCopyable": false
     });
-    CopymangersApprovalFlex02c9e067a552740.add(Copyheading0b0ead1ad4d8b4b, CopytxtLbl0a256207b5c874a);
-    var CopyLegalFlex004dd3040d80e4d = new kony.ui.FlexContainer({
+    CopymangersApprovalFlex03ae7b8f29fcb45.add(Copyheading021315f55d79a40, CopytxtLbl0866b5282a16448);
+    var CopyLegalFlex0fd3d110dd9a947 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "58%",
-        "id": "CopyLegalFlex004dd3040d80e4d",
+        "id": "CopyLegalFlex0fd3d110dd9a947",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "0dp",
-        "onTouchMove": AS_FlexContainer_3fdb3c69d82645f4acec633fedc7f5c0,
-        "onTouchStart": AS_FlexContainer_93f6a05cc0de41daaa7ac5223ea25245,
+        "onTouchMove": AS_FlexContainer_258953e6a1604973803206e010c14bc8,
+        "onTouchStart": AS_FlexContainer_2e42607dce0c415cad538cfff8a8c523,
         "skin": "slFbox",
         "top": "40%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
-    CopyLegalFlex004dd3040d80e4d.setDefaultUnit(kony.flex.DP);
-    var CopyLegalLbl005a3546cf9374c = new kony.ui.Label({
+    CopyLegalFlex0fd3d110dd9a947.setDefaultUnit(kony.flex.DP);
+    var CopyLegalLbl0328e1d8997464f = new kony.ui.Label({
         "centerX": "50%",
-        "id": "CopyLegalLbl005a3546cf9374c",
+        "id": "CopyLegalLbl0328e1d8997464f",
         "isVisible": true,
-        "skin": "jumpStartLabelOrange140",
+        "skin": "ngnyOrangeLabelText",
         "text": "Policy Requirements ",
         "textStyle": {
             "letterSpacing": 0,
@@ -491,15 +491,14 @@ function addWidgetsscheduleNewForm() {
     }, {
         "textCopyable": false
     });
-    var RichText09080837e1f084e = new kony.ui.RichText({
+    var CopyRichText05ae4cf7d0a8c45 = new kony.ui.RichText({
         "centerX": "50%",
-        "id": "RichText09080837e1f084e",
+        "id": "CopyRichText05ae4cf7d0a8c45",
         "isVisible": true,
         "left": "101dp",
-        "onClick": AS_RichText_6101c7fd29864c16b986f136358074eb,
-        "onTouchStart": AS_FlexContainer_258953e6a1604973803206e010c14bc8,
+        "onClick": AS_RichText_1a485b46074042bbab4157e2ca51218c,
         "skin": "CopyslRichText08d925a35bfe342",
-        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined",
+        "text": "I have read my company’s policies and regulations regarding volunteer work and agree to comply with all the rules and provisions outlined.",
         "top": "30dp",
         "width": "90%",
         "zIndex": 1
@@ -508,8 +507,8 @@ function addWidgetsscheduleNewForm() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    CopyLegalFlex004dd3040d80e4d.add(CopyLegalLbl005a3546cf9374c, RichText09080837e1f084e);
-    CopyeligibiltyCriteriFlxScroll0d5fab6ec683540.add(CopymangersApprovalFlex02c9e067a552740, CopyLegalFlex004dd3040d80e4d);
+    CopyLegalFlex0fd3d110dd9a947.add(CopyLegalLbl0328e1d8997464f, CopyRichText05ae4cf7d0a8c45);
+    offManagerApprovalContainer.add(CopymangersApprovalFlex03ae7b8f29fcb45, CopyLegalFlex0fd3d110dd9a947);
     var outsideScheduletime = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -598,7 +597,7 @@ function addWidgetsscheduleNewForm() {
         "isVisible": true,
         "left": "0dp",
         "skin": "jumpStartRT140",
-        "text": "You have entered a schedule outside regular working hours.You have selected available volunteering hours that are outside regular working hours. Please confirm this information is correct to continue.",
+        "text": "You have entered a schedule that is outside of regular working hours. This will be reflected in your volunteering hours log.",
         "top": "65dp",
         "width": "90%"
     }, {
@@ -623,13 +622,13 @@ function addWidgetsscheduleNewForm() {
     CopyupdateScheduleOutsideHoursFooter0fa3a4f94d3914b.setDefaultUnit(kony.flex.DP);
     var CopyupdateOutsideHoursYes0441ff65cf2744c = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "50dp",
         "id": "CopyupdateOutsideHoursYes0441ff65cf2744c",
         "isVisible": true,
         "left": "0dp",
         "onClick": AS_Button_7cc9e7db933542dfa9d930e523285359,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Agree and continue",
         "top": 0,
         "width": "75%",
@@ -694,13 +693,13 @@ function addWidgetsscheduleNewForm() {
     }, {});
     var ContinueBtn = new kony.ui.Button({
         "centerY": "50%",
-        "focusSkin": "CopyslButtonGlossRed0f469101882324d",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "45dp",
         "id": "ContinueBtn",
         "isVisible": true,
         "left": "52%",
         "onClick": AS_Button_0758697c36314de6be86afd5f5e75602,
-        "skin": "CopyslButtonGlossBlue075cd7c581e6e4f",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Continue",
         "top": "0dp",
         "width": "45%",
@@ -712,7 +711,7 @@ function addWidgetsscheduleNewForm() {
         "paddingInPixel": false
     }, {});
     regScheduleFooter.add(backBtn, ContinueBtn);
-    scheduleNewForm.add(regScheduleHdrContainer, regScheduleDatesContainer, regScheduleScrollContainer, CopyeligibiltyCriteriFlxScroll0d5fab6ec683540, outsideScheduletime, regScheduleFooter);
+    scheduleNewForm.add(regScheduleHdrContainer, regScheduleDatesContainer, regScheduleScrollContainer, offManagerApprovalContainer, outsideScheduletime, regScheduleFooter);
 };
 
 function scheduleNewFormGlobals() {

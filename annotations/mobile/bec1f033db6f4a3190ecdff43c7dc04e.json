@@ -32,9 +32,9 @@
             }
         }
     },
-    "projectGuid": "3f6add2d-1c64-4b91-9092-d7a2a2edf69d",
+    "projectGuid": "87f05623-1e2b-46cc-8ff3-2632d3182b55",
     "accountGuid": "5ff66218-cae6-4eee-96e3-4d569611feb9",
-    "prototypeGuid": "UCB54",
+    "prototypeGuid": "JJAZ3",
     "id": "bec1f033db6f4a3190ecdff43c7dc04e",
     "channel": "mobile",
     "createdOn": 1477902249182,
@@ -57,5 +57,5 @@
             }
         }
     },
-    "synced_on": "2017-05-01T05:13:59.925Z"
+    "synced_on": "2017-05-01T03:35:51.067Z"
 }

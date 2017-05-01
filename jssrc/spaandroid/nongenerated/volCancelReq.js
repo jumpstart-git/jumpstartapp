@@ -3,8 +3,8 @@ mobileFabricConfigurationForVolCancelRequest = {
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
     integrationServices: [{
-        service: "AcceptReqVol",
-        operations: ["AcceptReqVolunteer"]
+        service: "CancelReqVolunteer",
+        operations: ["CancelRequestVolunteer"]
     }],
     /*identityServices: 
                                 [
@@ -22,6 +22,10 @@ mobileFabricConfigurationForVolCancelRequest = {
 };
 // Function to invoke getFoxNews Service call
 function VolCancelRequest() {
+    kony.application.showLoadingScreen(null, "Loading..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+        shouldShowLabelInBottom: "false",
+        separatorHeight: 20
+    });
     //gblReqCancelVol=val9.widgetInfo.data[0].lblRequestIdSent;
     //alert("the selected"+JSON.stringify(gblReqCancelVol));
     // Let's get the news type the user selected
@@ -105,19 +109,38 @@ function loginMFFailure(error) {
 }
 
 function setVolCancelRequest() {
-    // alert("inside CancelRequest");
+    //alert("inside CancelRequest");
     //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
         mobileFabricConfigurationForVolCancelRequest.integrationObj = mobileFabricConfigurationForVolCancelRequest.konysdkObject.getIntegrationService(mobileFabricConfigurationForVolCancelRequest.integrationServices[0].service);
         var operationName = mobileFabricConfigurationForVolCancelRequest.integrationServices[0].operations[0];
         var headers = {};
-        //  alert("operation name"+operationName);
+        //alert("operation name"+operationName);
         var dataCancelVolRequest = {};
+        //alert("requestid:"+JSON.stringify(gblReqCancelVol));
         dataCancelVolRequest["requestId"] = gblReqCancelVol; //1;//kony.store.getItem("requestId");
         //dataCancelVolRequest["message"]="MerinnnnReal";
         //dataCancelVolRequest["message"]=mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;//"trial";//mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;//"salma again actual";//mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text;
-        dataCancelVolRequest["message"] = mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
+        var rawReqdata99 = mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
+        if ((rawReqdata99 === null) || (rawReqdata99 === "null") || (rawReqdata99 === "") || (rawReqdata99 === " ")) {
+            kony.ui.Alert({
+                "alertType": constants.ALERT_TYPE_INFO,
+                "alertTitle": "Action Required",
+                "yesLabel": "OK",
+                "noLabel": "No",
+                "message": "Please enter the details",
+                "alertHandler": null
+            }, {
+                "iconPosition": constants.ALERT_ICON_POSITION_LEFT
+            });
+            kony.application.dismissLoadingScreen();
+            return false;
+        } else {
+            var modifiedReqdata99 = rawReqdata99.replace(/(\r\n|\n|\r)/gm, " ");
+            dataCancelVolRequest["message"] = modifiedReqdata99; //mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
+        }
+        // dataCancelVolRequest["message"]=mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text;
         // alert("dataCancelVolRequest"+JSON.stringify(dataCancelVolRequest));
         //  alert("actual string=="+mainPage.acceptRequestModalContainer.acceptRequestModalBody.acceptRequestMessageFromBusiness.text);
         mobileFabricConfigurationForVolCancelRequest.integrationObj.invokeOperation(operationName, headers, dataCancelVolRequest, getVolCancelRequestSuccessCallback, getVolacceptlRequestErrorCallback);
@@ -135,12 +158,26 @@ function getVolacceptlRequestErrorCallback(error) {
     kony.print(" ********** Entering into getNotificationSuccessCallback ********** ");
     kony.print(" ********** Failure in getNotificationSuccessCallback: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
+    mainPage.cancelRequestModalContainer.isVisible = false;
+    mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.removeAll();
+    mainPage.mainPageBody.mainPageContentParent.myActivity.mySentRequests.sentRequestsSegment.removeAll();
+    mainPage.destroy();
+    mainPage.show();
+    mainPage.cancelRequestModalContainer.requestModalBody.cancelRequestTextArea.text = "Good day!I have received your request but unfortunately I have to decline due to other commitments that may impact my availability..";
     //     alert (" Failed to fetch the news. Please try again. "+JSON.stringify(error));
     kony.print(" ********** Exiting out of getNotificationSuccessCallback ********** ");
 }
 
-function saveCancelVolReqId(val9) {
-    if (kony.store.getItem("isBusOrVol") == "volunteer") {
-        gblReqCancelVol = val9.widgetInfo.data[0].lblRequestId;
+function saveCancelVolReqId() {
+    try {
+        if (kony.store.getItem("isBusOrVol") == "volunteer") {
+            var taskVal = mainPage.mainPageBody.mainPageContentParent.myActivity.myAcceptedRequests.acceptedRequestsSegment.selectedRowItems;
+            gblReqCancelVol = taskVal[0].lblRequestId;
+            // alert("taskval:"+JSON.stringify(taskVal));
+            //gblReqCancelVol=val9.widgetInfo.data[0].lblRequestId;
+            //gblReqCancelVol=val9.widgetInfo.data[0].lblRequestId;
+        }
+    } catch (error) {
+        alert("error is:" + e);
     }
 }

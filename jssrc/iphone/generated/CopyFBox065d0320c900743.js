@@ -307,12 +307,13 @@ function initializeCopyFBox065d0320c900743() {
     var closeRichText = new kony.ui.RichText({
         "id": "closeRichText",
         "isVisible": true,
-        "left": "70dp",
+        "left": 50,
         "onClick": AS_RichText_d6ff08f069db47e1b086860d0827fe7b,
+        "right": 0,
         "skin": "CopyslRichText007d9b9825fd548",
         "text": "RichText",
         "top": "6dp",
-        "width": "35dp",
+        "width": "50dp",
         "zIndex": 1
     }, {
         "containerWeight": 100,
