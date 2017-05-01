@@ -195,7 +195,7 @@ function getCreateEndorsementsErrorCallback (error)
       "yesLabel": "OK",
    "noLabel":"No",
       "message": "Volunteer was successfully endorsed",
-      "alertHandler":"null"
+      "alertHandler": null
     }, {
       "iconPosition": constants.ALERT_ICON_POSITION_LEFT
     });

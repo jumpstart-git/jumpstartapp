@@ -27,7 +27,7 @@
         }, {
             "id": "ADD_SNIPPET__92c828d394e3429491cbee86e52f3b8e",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "gblFirstTime=true;\ngblIsOpp=false;\nsearchPage.searchTxtbox.text=\"\";\nsearchPage.volunteerdataSegment.removeAll();\nsearchPage.show();",
+            "codeSnippet": "gblFirstTime=true;\ngblIsOpp=false;\nsearchPage.searchTxtbox.text=\"Search\";\nsearchPage.volunteerdataSegment.removeAll();\nsearchPage.show();",
             "parentId": null,
             "callbackType": null
         }]
