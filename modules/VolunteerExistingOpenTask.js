@@ -66,7 +66,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
 //            }
 //}
 
-function initializeMobileFabricForVolunteerExistingOpenTask()
+function initializeMobileFabricForVolunteerExistingTaskTask()
 {
 //alert (" ********** Entering into initializeMobileFabric ********** ");
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))

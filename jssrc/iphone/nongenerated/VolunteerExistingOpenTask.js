@@ -52,7 +52,7 @@ function VolunteerExistingOpenTaskService() {
 //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
 //            }
 //}
-function initializeMobileFabricForVolunteerExistingOpenTask() {
+function initializeMobileFabricForVolunteerExistingTaskTask() {
     //alert (" ********** Entering into initializeMobileFabric ********** ");
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});

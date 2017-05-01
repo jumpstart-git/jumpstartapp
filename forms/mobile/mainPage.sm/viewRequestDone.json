@@ -43,7 +43,7 @@
     "id": "viewRequestDone",
     "ide_onTouchStart": "AS_RichText_dc25bf7ae3f94d669fbd46ba637c72b6",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "cadbacad19004544b69c790f58a73148",
     "name": "kony.ui.RichText",
     "parent": "viewRequestModalFooter",
