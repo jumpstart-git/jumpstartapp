@@ -1,23 +1,23 @@
 var gblExistingTaskId;//Type your code here
 
-mobileFabricConfigurationForVolunteerExistingOpenTask= 
+mobileFabricConfigurationForVolunteerExistingOpenTask=
                 {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba", 
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d", 
+                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
                                 serviceURL:"https://100014964.auth.konycloud.com/appconfig",
-                                
-                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-                                //appSecret:"c600a59925b36419de1546056cd21557", 
+
+                                //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+                                //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
-                                
-                                integrationServices: 
+
+                                integrationServices:
                                 [
                                                 {
                                                                 service:"GetMyActivityOpenTasks",
                                                                 operations:["getOpenTaskByVolunteerId"]
                                                 }
                                 ],
-                                /*identityServices: 
+                                /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -35,8 +35,8 @@ mobileFabricConfigurationForVolunteerExistingOpenTask=
 
 // Function to invoke getFoxNews Service call
 function VolunteerExistingOpenTaskService (){
-kony.application.showLoadingScreen(null, "Loading..", 
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {  
+kony.application.showLoadingScreen(null, "Loading..",
+constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
 shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
                 // Let's get the news type the user selected
@@ -52,14 +52,13 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       // appmiddlewareinvokerasync(inputParams, processServiceResults);
       if (!mobileFabricConfigurationForVolunteerExistingOpenTask.isKonySDKObjectInitialized)
       {
-                                                initializeMobileFabricForVolunteerExistingTaskTask();
-            
+        initializeMobileFabricForVolunteerExistingTaskTask();
       }
       else if (mobileFabricConfigurationForVolunteerExistingOpenTask.isKonySDKObjectInitialized)
       {
-          getVolunteerExistingOpenTask();
+        getVolunteerExistingOpenTask();
       }
-                }
+  }
 //            else{
 //                                            // The user didn't pick a value so we'll show the alert
 //                                kony.ui.Alert({ message: "Please select a valid news type",alertType:constants. ALERT_TYPE_INFO, alertTitle:"Fox News",yesLabel:"OK"}, {});
@@ -73,7 +72,7 @@ function initializeMobileFabricForVolunteerExistingTaskTask()
                 {
                                 //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
                                 mobileFabricConfigurationForVolunteerExistingOpenTask.konysdkObject = new kony.sdk();
-                                mobileFabricConfigurationForVolunteerExistingOpenTask.konysdkObject.init(mobileFabricConfigurationForVolunteerExistingOpenTask.appKey,mobileFabricConfigurationForVolunteerExistingOpenTask.appSecret,mobileFabricConfigurationForVolunteerExistingOpenTask.serviceURL,initializeMobileFabricForVolunteerExistingTaskTaskSuccess,initializeMobileFabricForVolunteerExistingTaskTaskFailure);  
+                                mobileFabricConfigurationForVolunteerExistingOpenTask.konysdkObject.init(mobileFabricConfigurationForVolunteerExistingOpenTask.appKey,mobileFabricConfigurationForVolunteerExistingOpenTask.appSecret,mobileFabricConfigurationForVolunteerExistingOpenTask.serviceURL,initializeMobileFabricForVolunteerExistingTaskTaskSuccess,initializeMobileFabricForVolunteerExistingTaskTaskFailure);
       // alert(getVolunteerExistingOpenTask());
     }
                 else
@@ -109,7 +108,7 @@ function authenticateMFUsingUserStore(){
     mobileFabricConfiguration.authClient.login(authParams, loginMFSuccess, loginMFFailure);
 
     kony.print (" ********** Exiting out of authenticateMFUsingUserStore ********** ");
-  
+
 }
 
 function loginMFSuccess(response){
@@ -132,7 +131,7 @@ function loginMFFailure(error)
 
 function getVolunteerExistingOpenTask()
 {
-  
+
               //  alert("inside getVolunteerExistingOpenTask");
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
@@ -142,24 +141,24 @@ function getVolunteerExistingOpenTask()
                 var operationName = mobileFabricConfigurationForVolunteerExistingOpenTask.integrationServices[0].operations[0];
                                 var headers= {};
 
-      
-      
+
+
       var dataBusId={} ;
-       dataBusId["id"]=kony.store.getItem("VolunteerId"); 
+       dataBusId["id"]=kony.store.getItem("VolunteerId");
     //  alert("operation name"+dataBusId["id"]);
                 mobileFabricConfigurationForVolunteerExistingOpenTask.integrationObj.invokeOperation(operationName, headers, dataBusId, getVolunteerExistingOpenTaskSuccessCallback, getVolunteerExistingOpenTaskErrorCallback);
                 }
                 else
-                                alert ("Network unavailable. Please check your network settings. ");  
+                                alert ("Network unavailable. Please check your network settings. ");
 }
 
 function getVolunteerExistingOpenTaskSuccessCallback (gblVolunteerExistingOpenTaskList)
 {
-  
+
  // alert("inside getVolunteerExistingOpenTaskSuccessCallback"+JSON.stringify(gblVolunteerExistingOpenTaskList));
   // Check the opstatus for 0 meaning it worked
   if (gblVolunteerExistingOpenTaskList !== null && gblVolunteerExistingOpenTaskList.opstatus === 0){//first if
-    
+
   if (gblVolunteerExistingOpenTaskList.taskList!=null && gblVolunteerExistingOpenTaskList.taskList!=undefined)
   {//second if
     if (gblVolunteerExistingOpenTaskList.taskList[0].TasksDTO !== null && gblVolunteerExistingOpenTaskList.taskList[0].TasksDTO!=undefined)
@@ -173,13 +172,13 @@ function getVolunteerExistingOpenTaskSuccessCallback (gblVolunteerExistingOpenTa
         gblExistingOpenTaskResponseForVol=gblVolunteerExistingOpenTaskList;
         setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol);
         // var gblExistingOpenTaskResponseForVol=JSON.stringify(VolunteerExistingTaskTaskList);
-          //Setting the segment widgetdataMap 
-//          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"}; 
+          //Setting the segment widgetdataMap
+//          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"};
 //      //      Setting the data to the segment
 //      frmFoxNews.segNewsTitle.setVisibility(true);
 //          frmFoxNews.segNewsTitle.setData(VolunteerExistingTaskTaskList.MessageDTO.news_item.title);
 //          kony.application.dismissLoadingScreen();
-        
+
       }//end of 4th if
     }//end of 3rd if
   }//end of 2nd if
@@ -206,10 +205,10 @@ function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol)
 {
   try
   {
-  if(gblExistingOpenTaskResponseForVol!="undefined"&& gblExistingOpenTaskResponseForVol!=undefined)
+  if(gblExistingOpenTaskResponseForVol!=="undefined"&& gblExistingOpenTaskResponseForVol!==undefined)
     {
     // alert("InSide setExistingOpenTaskDataForVol"+JSON.stringify(gblExistingOpenTaskResponseForVol));
-      
+
  //need to map data for both open and closed tasks
  // alert("m1");
   if (gblExistingOpenTaskResponseForVol["taskList"].length > 0) {
@@ -218,19 +217,18 @@ function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol)
                 var len = gblExistingOpenTaskResponseForVol["taskList"].length;
    //alert(len);
    // if(){} need to map data for both open and closed tasks
-            //  alert("Response  -----"+JSON.stringify(gblExistingOpenTaskResponseForVol["taskList"]));  
+            //  alert("Response  -----"+JSON.stringify(gblExistingOpenTaskResponseForVol["taskList"]));
     var tempArray=[];
           tempArray.push("");
           tempArray.push("Select");
     tempExistingOpenTaskDataForVol.push(tempArray);
                 for (var i =0; i < len; i++)
                 {
-                  
-              
+
         if((gblExistingOpenTaskResponseForVol["taskList"][i]["TasksDTO"][0]["request"][0]["Request"]["requestType"]==9)&&(gblExistingOpenTaskResponseForVol["taskList"][i]["TasksDTO"][0]["status"]==100))
         {
-                
-         
+
+
                   var title=gblExistingOpenTaskResponseForVol["taskList"][i]["TasksDTO"][0].title ;
                   var taskId=gblExistingOpenTaskResponseForVol["taskList"][i]["TasksDTO"][0].taskId ;
               //    var startDate=gblTaskResponse["taskList"][i]["TasksDTO"][0].start_date;
@@ -238,27 +236,25 @@ function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol)
           var tempArr=[];
           tempArr.push(taskId);
           tempArr.push(title);
-          
+
                  tempExistingOpenTaskDataForVol.push(tempArr);
-                 
+
                 //alert(JSON.stringify(tempExistingOpenTaskDataForVol));
           kony.application.dismissLoadingScreen();
-               
-        }              
-   
+
+        }
+
   }
     searchResultProfile.volunteerRequestContainer.requestToVolunteerModal.AssignToExistingTaskContainer.assignToExistingTaskListBox.masterData=tempExistingOpenTaskDataForVol;
     // mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.masterData=tempExistingOpenTaskDataForVol;
-    
-    
+
+
     }
 
   kony.application.dismissLoadingScreen();
-  //VolunteerCloseTaskService ();  
-  }}catch(e) 
+  //VolunteerCloseTaskService ();
+  }}catch(e)
   {
     //just to avoid undefined type error
   }
 }
-
-

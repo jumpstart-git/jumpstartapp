@@ -166,9 +166,9 @@ function getVolunteerOpenCloseTaskSuccessCallback (gblVolunteerOpenCloseTaskList
   // Check the opstatus for 0 meaning it worked
   if (gblVolunteerOpenCloseTaskList !== null && gblVolunteerOpenCloseTaskList.opstatus === 0){
     
-    if (gblVolunteerOpenCloseTaskList.taskList!=null && gblVolunteerOpenCloseTaskList.taskList!=undefined)
+    if (gblVolunteerOpenCloseTaskList.taskList!==null && gblVolunteerOpenCloseTaskList.taskList!==undefined)
    {
-    if (gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO !== null && gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO!=undefined){
+    if (gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO !== null && gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO!==undefined){
        // alert("2");
      // Making sure we have at least 1 article returned
       if (gblVolunteerOpenCloseTaskList.taskList.length > 0){
@@ -210,7 +210,7 @@ function getVolunteerOpenCloseTaskErrorCallback (error)
 function setVolTaskSegData(gblVolTaskResponse)
 {
  try{
-  if(gblVolTaskResponse!="undefined"&& gblVolTaskResponse!=undefined)
+  if(gblVolTaskResponse!=="undefined"&& gblVolTaskResponse!==undefined)
     {
      // alert("InSide"+JSON.stringify(gblVolTaskResponse));
       
@@ -226,16 +226,16 @@ mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenT
             "taskDetails":"taskDetails",
             "startDate":"startDate",
             "endDate":"endDate",
-  "contactNumber":"contactNumber",
-  "segType":"segType",
-  "volunteerId":"volunteerId",
-  "businessId":"businessId",
-   "hoursRequired":"hoursRequired",
-  "hoursArray":"hoursArray"	,
-  "totHours":"totHours",
-  "outHours":"outHours",
-  "busHours":"busHours",
-  "taskSkills":"taskSkills"
+            "contactNumber":"contactNumber",
+            "segType":"segType",
+            "volunteerId":"volunteerId",
+            "businessId":"businessId",
+             "hoursRequired":"hoursRequired",
+            "hoursArray":"hoursArray"	,
+            "totHours":"totHours",
+            "outHours":"outHours",
+            "busHours":"busHours",
+            "taskSkills":"taskSkills"
   
   
         };
@@ -245,86 +245,91 @@ mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenT
 // };    
   
  //need to map data for both open and closed tasks
-  
+
   if (gblVolTaskResponse["taskList"].length > 0) {
-                var tempVolTaskDta = [];
-                var len = gblVolTaskResponse["taskList"].length;
+   var tempVolTaskDta = [];
+   var len = gblVolTaskResponse["taskList"].length;
    // if(){} need to map data for both open and closed tasks
                 
-                for (var i = 0; i < len; i++) {
+   for (var i = 0; i < len; i++) {
                   
-   if(gblVolTaskResponse["taskList"][i]["TasksDTO"][0].status==1) {
+     if(gblVolTaskResponse["taskList"][i]["TasksDTO"][0].status==1) {
 
-                 // alert("f1");
-                  var title=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].title ;
-     var totHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].totalHours ;
-     var outBusHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].outBusHours ;
-      var busHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].busHours ;
-                  var details1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].details;
-                  var startDate1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].start_date;
-                  var endDate1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].end_date;
-                  var hours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].hoursRequired;
-      var skills=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskSkills;
-      
-      if(title==null||title=="null"||title=="")
-        {
-          title="";
-        }
-       if(details1==null||details1=="null"||details1=="")
-        {
-          details1="";
-        }
-       if(startDate1==null||startDate1=="null"||startDate1=="")
-        {
-          startDate1="";
-        }
-       if(endDate1==null||endDate1=="null"||endDate1=="")
-        {
-          endDate1="";
-        }
-                 var request_id=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskId ;
-                 // var name=gblVolTaskResponse["taskList"][i]["TasksDTO"]["request"]["Request"].businessName;
-                    //  alert("f44");
-                  var name=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].businessName;
-                var volunteerImagePathOpen1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessImagePath;
-                var volOpenTaskBusinessContact=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessContact; 
-       var volId=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].volunteerId; 
-       var busId=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessId; 
+                   // alert("f1");
+        var title=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].title ;
+        var totHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].totalHours ;
+        var outBusHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].outBusHours ;
+        var busHours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].busHours ;
+        var details1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].details;
+        var startDate1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].start_date;
+        var endDate1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].end_date;
+        var hours=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].hoursRequired;
+        var skills=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskSkills;
+
+        if(title===null||title==="null"||title==="")
+          {
+            title="";
+          }
+         if(details1===null||details1==="null"||details1==="")
+          {
+            details1="";
+          }
+         if(startDate1===null||startDate1==="null"||startDate1==="")
+          {
+            startDate1="";
+          }
+         if(endDate1===null||endDate1==="null"||endDate1==="")
+          {
+            endDate1="";
+          }
+         
+       	 var request_id=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskId ;
+                   // var name=gblVolTaskResponse["taskList"][i]["TasksDTO"]["request"]["Request"].businessName;
+         var name=gblVolTaskResponse["taskList"][i]["TasksDTO"][0].businessName;
+         var volunteerImagePathOpen1=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessImagePath;
+         var volOpenTaskBusinessContact=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessContact; 
+         var volId=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].volunteerId; 
+         var busId=gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessId; 
          var hoursArrayVal=  gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskHoursList;         
-     var imagepathOpen1 = "imgseglogo.png";
-                   if(volunteerImagePathOpen1 !=null && volunteerImagePathOpen1!="null"){
-                     imagepathOpen1 = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/"+volunteerImagePathOpen1;
-                   }
-                  
-                          var textVolTaskData = {
-                        openTaskPersonProfilePic:imagepathOpen1,// "imgseglogo.png",
-                        openTaskName: title,
-                        openTaskBusiness: name,
-                         lblRequestId:request_id,
-                        markAsCompleteRichText:"",
-                         taskDetails:details1,
-                          startDate:startDate1,
-                          endDate:endDate1,
-                            contactNumber:volOpenTaskBusinessContact,
-                            segType:"open",
-                            volunteerId:volId,
-                            businessId:busId,
-                            hoursRequired:hours,
-                             hoursArray:hoursArrayVal,
-                             totHours:totHours,
-                            outHours:outBusHours,
-                            busHours:busHours,
-                            taskSkills:skills
-                    };
-                 tempVolTaskDta.push(textVolTaskData);
-                 
-                }
-    
-    mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.setData(tempVolTaskDta);
-    mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.isVisible=true;
-                  kony.application.dismissLoadingScreen();
-   
-  }
+         var imagepathOpen1 = "imgseglogo.png";
+       
+         if(volunteerImagePathOpen1 !==null && volunteerImagePathOpen1!=="null"){
+         	imagepathOpen1 = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/"+volunteerImagePathOpen1;
+         }
+
+         var textVolTaskData = {
+                          openTaskPersonProfilePic:imagepathOpen1,// "imgseglogo.png",
+                          openTaskName: title,
+                          openTaskBusiness: name,
+                           lblRequestId:request_id,
+                          markAsCompleteRichText:"",
+                           taskDetails:details1,
+                            startDate:startDate1,
+                            endDate:endDate1,
+                              contactNumber:volOpenTaskBusinessContact,
+                              segType:"open",
+                              volunteerId:volId,
+                              businessId:busId,
+                              hoursRequired:hours,
+                               hoursArray:hoursArrayVal,
+                               totHours:totHours,
+                              outHours:outBusHours,
+                              busHours:busHours,
+                              taskSkills:skills
+           };
+           tempVolTaskDta.push(textVolTaskData);
+
+        }
+		
+     // Urgent Fix: A blank item is appearing in Open Tasks ONLY when there is an unaccepted task request
+        if (tempVolTaskDta.length>0) {
+          mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.setData(tempVolTaskDta);
+          mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.isVisible=true;
+          kony.application.dismissLoadingScreen();
+        }
+     //End of Urgent fix
+
+      }
   
     }
 
