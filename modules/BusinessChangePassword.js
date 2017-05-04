@@ -137,9 +137,13 @@ function setBusinessChangePassword()
      // alert("operation name"+operationName);
                   var credentials={};
                   credentials["userName"]=kony.store.getItem("BusinessEmailId");
-                  credentials["oldPassword"]=BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;
-                  credentials["newPassword"]=BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
+                  // credentials["oldPassword"]=BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;
+                  // credentials["newPassword"]=BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
 
+                  //Password hashing
+                  credentials["oldPassword"]=kony.crypto.createHash("md5",BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text);
+                  credentials["newPassword"]=kony.crypto.createHash("md5",BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text);
+                  //End password hashing
 
 
                 //alert("From AcceptedTask"+JSON.stringify(credentials));

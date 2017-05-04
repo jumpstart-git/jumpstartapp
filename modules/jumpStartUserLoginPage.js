@@ -203,14 +203,12 @@ function getLogin() {
 
     var dataLogin={};
     dataLogin["userName"]=login.usernameField.text;
-    dataLogin["password"]=login.passwordField.text;
-
-    mobileFabricConfigurationForLogin.integrationObj.invokeOperation(
-      operationName,
-      headers, dataLogin,
-      getLoginSuccessCallback,
-      getLoginErrorCallback
-    );
+    //dataLogin["password"]=login.passwordField.text;
+    //For password hashing
+    dataLogin["password"]=kony.crypto.createHash("md5",login.passwordField.text);
+    //End of password hasing
+    mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName,headers, dataLogin,getLoginSuccessCallback,getLoginErrorCallback);
+    
   } else {
     validationAlert ("Warning","Network unavailable. Please check your network settings. ");
   }
@@ -515,9 +513,6 @@ function getLoginSuccessCallback(gblLoginData1) {
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.text= address;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text= contactNumber;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text= emailAddress;//" ";//emailAddress;
-
-
-
 
             var skillSegmentData=[];
             for (var i = 0; i < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet.length; i++) {

@@ -693,13 +693,16 @@ function saveVolunteerProfilew()
                   //alert("in7");
                   dataforVolProfile["VolunteerScheduleDTO"]=gblscheduleArr;// schedule;
 
-            		dataforVolProfile["SkillsDTO"]=skills;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
+            		  dataforVolProfile["SkillsDTO"]=skills;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
                 //  alert("skill");
                   dataforVolProfile["userName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text;
-                  dataforVolProfile["password"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text;
+                  //dataforVolProfile["password"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text;
+                  //For password hashing
+                  dataforVolProfile["password"]= kony.crypto.createHash("md5",volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text);
+                  //End of password hashing
                   dataforVolProfile["state"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.selectedKey;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.text;
                        // alert("in8");
-					dataforVolProfile["volunteerId"]=kony.store.getItem("volunteerId");
+					        dataforVolProfile["volunteerId"]=kony.store.getItem("volunteerId");
                       //alert("in9");
                   dataforVolProfile["userId"]=kony.store.getItem("userId");
                     //  alert("in10");
