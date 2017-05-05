@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4d614fde6b54a25acbfa69d0eaaf3ac",
+    "_text_": "Save",
+    "_width_": {
+        "type": "string",
+        "value": "46%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "74%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "48.82%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf36864fa0be42bda9947c7d8510d0eb",
+    "id": "Save",
+    "ide_onClick": "AS_Button_630c4bfcae614ef69500def5999a951d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1aff3e3de980439cb351378919e4c4a9",
+    "name": "kony.ui.Button",
+    "parent": "volunteerMyProfileChangePasswordFooter2Buttons",
+    "pf": "volunteerMyProfilePageChangePassword",
+    "wType": "Button"
+}

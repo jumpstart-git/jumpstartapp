@@ -1,0 +1,18 @@
+{
+    "AS_Button_fbdaaee40d054ef7beee3a61ec94718a": {
+        "id": "AS_Button_fbdaaee40d054ef7beee3a61ec94718a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__183acae347274b51be55aa09f7265c0f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "volunteerMyProfilePageChangePassword.show()",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

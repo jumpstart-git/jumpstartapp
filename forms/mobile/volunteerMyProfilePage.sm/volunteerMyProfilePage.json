@@ -30,8 +30,8 @@
     "children": [
         "volunteerMyProfileHeader",
         "volunteerMyProfileBody",
-        "outsidemodal",
-        "volunteerMyProfileFooter2Buttons"
+        "volunteerMyProfileFooter2Buttons",
+        "outsidemodal"
     ],
     "containerweight": 100,
     "currentLocale": "default",

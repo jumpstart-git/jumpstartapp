@@ -6,36 +6,35 @@ function populateUpdatePage()
     {
      // mainPage.destroy();
      //alert("1"+JSON.stringify(gblForRetreive));
-var valVolunteerId=gblForRetreive.volunteerId;
-      kony.store.setItem("volunteerId", valVolunteerId);
-      var skillList=" ";
-//console.log(JSON.stringify(res.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet));
-for(var i=0;i<gblForRetreive.skillSet.length;i++)
-{
+    var valVolunteerId=gblForRetreive.volunteerId;
+    kony.store.setItem("volunteerId", valVolunteerId);
+    var skillList=" ";
+    //console.log(JSON.stringify(res.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet));
+    for(var i=0;i<gblForRetreive.skillSet.length;i++)
+    {
 
 
-//skillList+=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillName;
-skillList=skillList+gblForRetreive.skillSet[i].SkillsDTO.skillName+",";
+      //skillList+=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet[i].SkillsDTO.skillName;
+      skillList=skillList+gblForRetreive.skillSet[i].SkillsDTO.skillName+",";
 
-}//end for
+    }//end for
 
- skillList=skillList.slice(0,-1);
+    skillList=skillList.slice(0,-1);
 
       ///skills end
       //var isBusOrVol=gblForRetreive["businessOrVolunteer"];
                    //kony.store.setItem("isBusOrVol",isBusOrVol);
-var firstName=gblForRetreive.firstName;
-kony.store.setItem("volLoginName", firstName);
-       //alert("2");
-var lastName=gblForRetreive.lastName;
-var companyName=gblForRetreive.companyName;
-var role=gblForRetreive.role;
-//var skillSet=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet;
-var aboutMe=gblForRetreive.aboutMe;
-var workDetails=gblForRetreive.workDetails;
-     // var businessUnit=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].businessUnit;
-var state=gblForRetreive.state;
-var emailAddress=gblForRetreive.emailAddress;
+      var firstName=gblForRetreive.firstName;
+      kony.store.setItem("volLoginName", firstName);
+      var lastName=gblForRetreive.lastName;
+      var companyName=gblForRetreive.companyName;
+      var role=gblForRetreive.role;
+      //var skillSet=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet;
+      var aboutMe=gblForRetreive.aboutMe;
+      var workDetails=gblForRetreive.workDetails;
+           // var businessUnit=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].businessUnit;
+      var state=gblForRetreive.state;
+      var emailAddress=gblForRetreive.emailAddress;
       var scheduleComplete=gblForRetreive.schedule;
      // alert(JSON.stringify(scheduleComplete));
       //start
@@ -67,15 +66,14 @@ var emailAddress=gblForRetreive.emailAddress;
 
 
      // volunteerUpdateObject.scheduleArray=localArr;
-      for(var i=0;i<localArr.length;i++)
-        {
-
-        volunteerUpdateObject.scheduleArray.push(localArr[i]);
-        }
+     for(var i=0;i<localArr.length;i++)
+     {
+     	volunteerUpdateObject.scheduleArray.push(localArr[i]);
+     }
     //  alert("arrayyyyy"+JSON.stringify(volunteerUpdateObject.scheduleArray));
       //start convert to form
-      var scheduleArr=[];
-  for(var i=0;i<volunteerUpdateObject.scheduleArray.length;i++)
+     var scheduleArr=[];
+  	for(var i=0;i<volunteerUpdateObject.scheduleArray.length;i++)
     {
       //start
       var str=volunteerUpdateObject.scheduleArray[i].lblSchedule;
@@ -106,7 +104,7 @@ var emailAddress=gblForRetreive.emailAddress;
 
       //end convert to form
       //end
-var schedule=gblForRetreive.schedule[0].VolunteerScheduleDTO.days;
+	var schedule=gblForRetreive.schedule[0].VolunteerScheduleDTO.days;
       var availId=gblForRetreive.schedule[0].VolunteerScheduleDTO.availabilityId;
        kony.store.setItem("availId", availId);
       // alert("3");
@@ -231,20 +229,25 @@ var userName=gblForRetreive.users[0].userName;
 var password=gblForRetreive.users[0].password;
 var userId=gblForRetreive.users[0].userId;
 //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
-      kony.store.setItem("userId", userId);
-      // alert("10");
-      var usersUserTypeId=gblForRetreive.users[0].usersUserTypeId;
+kony.store.setItem("userId", userId);
+var usersUserTypeId=gblForRetreive.users[0].usersUserTypeId;
 
-    if(businessUnit===null||businessUnit==="null")
-                     {
-                        businessUnit=" ";
-                     }
+if(businessUnit===null||businessUnit==="null")
+{
+	businessUnit=" ";
+}
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text= firstName;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text= lastName;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text= userName;
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.setEnabled(false);
-volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
-volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+
+//Will be stored in a hidden field where users will never see it.
+volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text = password;
+//Bad for password hashing
+//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
+//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+//End
+      
 //Begin of Defect D037
 /* Peter's Code
 if((workDetails!=null)&&(workDetails!="null"))
@@ -265,11 +268,11 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.tex
 */
 
 //Carl Cheng's code
-if(workDetails === null) {
+if(workDetails === null || workDetails === "null") {
   workDetails = "";
 }
 
-if (aboutMe === null) {
+if (aboutMe === null || aboutMe === "null") {
   aboutMe = "";
 }
 
@@ -299,40 +302,37 @@ volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInpu
 volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillTags.volunteerMyProfileSkillSegment.setData(skillSegmentData);
 
 
-      volunteerUpdateObject = {
-  firstName : firstName,
-  lastName : lastName,
-  username : userName,
-  password: password,
-  reenteredPassword : password,
-  workDetails : workDetails,
-  aboutMe : aboutMe,
-  companyName : companyName,
-  role : role,
-  businessUnit : businessUnit,
-  state : state,
-  address : address,
-  contactNumber : contactNumber,
-  emailAddress : emailAddress,
-  skillsArray : gblForRetreive.skillSet,
-   scheduleArray:volunteerUpdateObject.scheduleArray,
-  availability : {
-    mon : volunteerUpdateObject.availability.mon,
-    tue : volunteerUpdateObject.availability.tue,
-    wed : volunteerUpdateObject.availability.wed,
-    thu : volunteerUpdateObject.availability.thu,
-    fri : volunteerUpdateObject.availability.fri,
-    sat : volunteerUpdateObject.availability.sat,
-    sun : volunteerUpdateObject.availability.sun,
-    startTime : fromTime,
-    startMeridiem : fromTimeMeridian,
-    endTime : toTime,
-    endMeridiem : toTimeMeridian
-  }
-};
-
-
-
+	volunteerUpdateObject = {
+      firstName : firstName,
+      lastName : lastName,
+      username : userName,
+      password: password,
+      reenteredPassword : password,
+      workDetails : workDetails,
+      aboutMe : aboutMe,
+      companyName : companyName,
+      role : role,
+      businessUnit : businessUnit,
+      state : state,
+      address : address,
+      contactNumber : contactNumber,
+      emailAddress : emailAddress,
+      skillsArray : gblForRetreive.skillSet,
+      scheduleArray:volunteerUpdateObject.scheduleArray,
+      availability : {
+        mon : volunteerUpdateObject.availability.mon,
+        tue : volunteerUpdateObject.availability.tue,
+        wed : volunteerUpdateObject.availability.wed,
+        thu : volunteerUpdateObject.availability.thu,
+        fri : volunteerUpdateObject.availability.fri,
+        sat : volunteerUpdateObject.availability.sat,
+        sun : volunteerUpdateObject.availability.sun,
+        startTime : fromTime,
+        startMeridiem : fromTimeMeridian,
+        endTime : toTime,
+        endMeridiem : toTimeMeridian
+      }
+	};
 
   }catch(e)
     {
@@ -455,9 +455,9 @@ function getLoginUpdate()
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
                                 //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
-                                mobileFabricConfigurationForLogin.integrationObj = mobileFabricConfigurationForLogin.konysdkObject.getIntegrationService(mobileFabricConfigurationForLogin.integrationServices[0].service);
-                var operationName = mobileFabricConfigurationForLogin.integrationServices[0].operations[0];
-                                var headers= {};
+                	mobileFabricConfigurationForLogin.integrationObj = mobileFabricConfigurationForLogin.konysdkObject.getIntegrationService(mobileFabricConfigurationForLogin.integrationServices[0].service);
+                	var operationName = mobileFabricConfigurationForLogin.integrationServices[0].operations[0];
+                    var headers= {};
 
 
      // alert("operation name"+operationName);

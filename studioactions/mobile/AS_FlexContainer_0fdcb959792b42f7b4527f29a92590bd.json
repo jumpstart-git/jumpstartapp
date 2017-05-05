@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_0fdcb959792b42f7b4527f29a92590bd": {
+        "id": "AS_FlexContainer_0fdcb959792b42f7b4527f29a92590bd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePageChangePassword",
+            "type": "forms",
+            "platform": null,
+            "KUID": "273e24579f2244d2840d42b711aa204d"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

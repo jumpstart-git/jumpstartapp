@@ -1,3 +1,6 @@
+var StorePassword = "";
+var ChangedPassword = false;
+
 var volunteerUpdateObject = {
   firstName : "",
   lastName : "",
@@ -29,13 +32,12 @@ var volunteerUpdateObject = {
     endMeridiem : "AM"
   }
 };
+
 volunteerUpdateObject.scheduleArray=[];
+
 function validateAvailabilityUpdate() {
 
   //start
-
-
-
 
   /*
 
@@ -132,6 +134,7 @@ function validateAvailabilityUpdate() {
 
   return true;
 }
+
 function validateEmailUpdate() {
   var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if (!emailFormat.test(volunteerUpdateObject.emailAddress)) {
@@ -140,36 +143,7 @@ function validateEmailUpdate() {
 
   return true;
 }
-function validatePasswordEqualityUpdate() {
-  if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
-    return false;
-  }
 
-  return true;
-}
-function validatePasswordUpdate() {
-  var specialChars = /[^A-Za-z0-9]/;          // Regexp for special characters
-  var digits = /[0-9]+/;                                                      // Regexp for digits
-  var capitalLetters = /[A-Z]+/;                    // Regexp for capital letters
-
-  if (volunteerUpdateObject.password.length >= userValidation.passwordLength) {
-    if (specialChars.test(volunteerUpdateObject.password)) {
-      if (digits.test(volunteerUpdateObject.password)) {
-        if (capitalLetters.test(volunteerUpdateObject.password)) {
-          return 5;
-        } else {
-          return 4;
-        }
-      } else {
-        return 3;
-      }
-    } else {
-      return 2;
-    }
-  } else {
-    return 1;
-  }
-}
  function startLessThanEndUpdate() {
   var start = convertToMilTime(volunteerUpdateObject.availability.startTime, volunteerUpdateObject.availability.startMeridiem);
   var end = convertToMilTime(volunteerUpdateObject.availability.endTime, volunteerUpdateObject.availability.endMeridiem);
@@ -206,7 +180,79 @@ function validateVolunteerHoursUpdate() {
     return false;
   }
 }
-   function submitUpdateInfo() {
+
+function SaveNewPassword() {
+  
+  ChangedPassword = false;
+  var storePassword = volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileChangePasswordInput.text;
+  var storeClonePassword = volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileRetypePasswordInput.text;
+  
+  var isEqualPassword = validatePasswordEqualityUpdate();
+  if (!isEqualPassword) {
+    validationAlert("Action Required", "Passwords entered are not equal");
+  }
+  
+  var isValidPassword = validatePasswordUpdate();
+  if (isValidPassword == 1) {
+    validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
+  } else if (isValidPassword == 2) {
+    validationAlert("Action Required", "Passwords must have at least 1 special character");
+  } else if (isValidPassword == 3) {
+    validationAlert("Action Required", "Passwords must have at least 1 digit");
+  } else if (isValidPassword == 4) {
+    validationAlert("Action Required", "Passwords must have at least 1 capital letter");
+  }
+  
+  if (isEqualPassword && isValidPassword === 5){
+    ChangedPassword = true;
+    StorePassword = storePassword;
+  	volunteerMyProfilePage.show();
+    volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileChangePasswordInput.text = "";
+    volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileRetypePasswordInput.text = "";
+  }
+  
+}
+
+function CancelButtonAction() {
+    ChangedPassword = false;
+}
+
+function validatePasswordEqualityUpdate() {
+  //if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
+  if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
+    return false;
+  }
+  return true;
+}
+
+function validatePasswordUpdate() {
+  var specialChars = /[^A-Za-z0-9]/;          // Regexp for special characters
+  var digits = /[0-9]+/;                                                      // Regexp for digits
+  var capitalLetters = /[A-Z]+/;                    // Regexp for capital letters
+
+  if (volunteerUpdateObject.password.length >= userValidation.passwordLength) {
+    if (specialChars.test(volunteerUpdateObject.password)) {
+      if (digits.test(volunteerUpdateObject.password)) {
+        if (capitalLetters.test(volunteerUpdateObject.password)) {
+          return 5;
+        } else {
+          return 4;
+        }
+      } else {
+        return 3;
+      }
+    } else {
+      return 2;
+    }
+  } 
+  else {
+    return 1;
+  }
+  
+}
+
+
+function submitUpdateInfo() {
   var isUpdateInfoComplete = validateUpdateInfo();
   if (!isUpdateInfoComplete) {
     if (!volunteerUpdateObject.firstName) {
@@ -266,8 +312,6 @@ function validateVolunteerHoursUpdate() {
     return false;
   }
 
-
-
   var hasSkillUpdate =volunteerMyProfilePage.volunteerMyProfileSkillSegment.data; //volunteerUpdateObject.skillsArray.length;
   if (!hasSkillUpdate) {
     validationAlert("Action Required", "Please add at least 1 skill");
@@ -278,12 +322,15 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Action Required", "Email address entered is not valid format");
    return false;
   }
-      var isEqualPassword = validatePasswordEqualityUpdate();
+  
+  /*Bad for Password Hash
+  var isEqualPassword = validatePasswordEqualityUpdate();
   if (!isEqualPassword) {
     validationAlert("Action Required", "Passwords entered are not equal");
     return false;
   }
-     var isValidPassword = validatePasswordUpdate();
+  
+  var isValidPassword = validatePasswordUpdate();
   if (isValidPassword == 1) {
     validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
     return false;
@@ -297,19 +344,22 @@ function validateVolunteerHoursUpdate() {
     validationAlert("Action Required", "Passwords must have at least 1 capital letter");
     return false;
   }
+  */
+  
     //alert(gblscheduleArr.length);
-     if(gblscheduleArr.length=="0.0")
-       {
-         alert("enter atleast 1 schedule");
-         return false;
-       }
-  if (isUpdateInfoComplete && hasSkillUpdate && isValidEmail && isEqualPassword && isValidPassword ) {
-   VollMyProfile();
-
-    }
+  if(gblscheduleArr.length=="0.0")
+  {
+  	alert("enter atleast 1 schedule");
+    return false;
+  }
+  
+  if (isUpdateInfoComplete && hasSkillUpdate && isValidEmail) {
+  	VollMyProfile();
+  }
 
 }
- function validateUpdateInfo()
+
+function validateUpdateInfo()
 {
 
   if (!volunteerUpdateObject.firstName) {
@@ -355,31 +405,27 @@ function validateVolunteerHoursUpdate() {
   }
 
   return true;
-
-
-
-
 }
 
 
 mobileFabricConfigurationForMyProfileVol =
-                {
-                                appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
-                                appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
-                                serviceURL:"https://100014964.auth.konycloud.com/appconfig",
+{
+	appKey:"b2af2c81b9433dab6ce8f1cf7ec558ba",
+    appSecret:"da2e2dc029af1c2eedabd208d8469e7d",
+    serviceURL:"https://100014964.auth.konycloud.com/appconfig",
 
 
                                 //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
                                 //appSecret:"c600a59925b36419de1546056cd21557",
                                 //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
 
-                                integrationServices:
-                                [
-                                                {
-                                                                service:"updateVolService",
-                                                                operations:["updateVolProfile"]
-                                                }
-                                ],
+    integrationServices:
+    [
+    	{
+        	service:"updateVolService",
+            operations:["updateVolProfile"]
+        }
+    ],
                                 /*identityServices:
                                 [
                                                 {
@@ -388,20 +434,21 @@ mobileFabricConfigurationForMyProfileVol =
                 password: "Kony@123"
                                                 }
                                 ],*/
-                                konysdkObject: null,
-                                authClient: null,
-                                integrationObj: null,
-                                isKonySDKObjectInitialized:false,
-                                isMFAuthenticated: false
-                };
+    konysdkObject: null,
+    authClient: null,
+    integrationObj: null,
+    isKonySDKObjectInitialized:false,
+    isMFAuthenticated: false
+  
+};
 
 
 // Function to invoke getFoxNews Service call
 function VollMyProfile(){
  // alert("in");
-  kony.application.showLoadingScreen(null, "Loading..",
-constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
-shouldShowLabelInBottom: "false", separatorHeight: 20} );
+	kony.application.showLoadingScreen(null, "Loading..",
+	constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {
+	shouldShowLabelInBottom: "false", separatorHeight: 20} );
 
       if (!mobileFabricConfigurationForMyProfileVol.isKonySDKObjectInitialized)
       {
@@ -412,7 +459,7 @@ shouldShowLabelInBottom: "false", separatorHeight: 20} );
       {
           saveVolunteerProfilew();
       }
-                }
+}
 
 
 function initializeMobileFabricForMyProfileVol ()
@@ -487,22 +534,22 @@ function saveVolunteerProfilew()
 // alert("in33");
                // alert("inside saveVolunteerProfile"+kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY));
                 //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
-                if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
-                {
+	if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
+    {
                  // alert("1");
                                 //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
-                                mobileFabricConfigurationForMyProfileVol.integrationObj = mobileFabricConfigurationForMyProfileVol.konysdkObject.getIntegrationService(mobileFabricConfigurationForMyProfileVol.integrationServices[0].service);
+    	mobileFabricConfigurationForMyProfileVol.integrationObj = mobileFabricConfigurationForMyProfileVol.konysdkObject.getIntegrationService(mobileFabricConfigurationForMyProfileVol.integrationServices[0].service);
                  // alert("2");
-                var operationName = mobileFabricConfigurationForMyProfileVol.integrationServices[0].operations[0];
+        var operationName = mobileFabricConfigurationForMyProfileVol.integrationServices[0].operations[0];
                              //  var headers= {"Content-Type":"application/json"};
 
-                   var headers= {};
+        var headers= {};
 
                //  alert("operationName"+operationName);
 
                   //start
 
-                var dataforVolProfile={};
+        var dataforVolProfile={};
               //  var schedule={};
                   //schedule[0]
 
@@ -519,34 +566,23 @@ function saveVolunteerProfilew()
 
 //submitUpdateInfo();
 
-
-
-
-
-
-
-
-
-
-
-
                   //end validation for update
 
 
                   // alert("Skills="+JSON.stringify(volunteerMyProfilePage.volunteerMyProfileSkillSegment.data));
-                  var arrData=[];
-                  var skillDatas=volunteerMyProfilePage.volunteerMyProfileSkillSegment.data;
-                  for(var i=0;i<skillDatas.length;i++)
-                    {
-                      var testObj={
-                        "skillId":skillDatas[i].skillIdHidden,
-                        "skillName":skillDatas[i].volunteerMyProfileSkillItem,
-                        "imgClose":"cross.png"
+		var arrData=[];
+        var skillDatas=volunteerMyProfilePage.volunteerMyProfileSkillSegment.data;
+        for(var i=0;i<skillDatas.length;i++)
+        {
+        	var testObj={
+            "skillId":skillDatas[i].skillIdHidden,
+            "skillName":skillDatas[i].volunteerMyProfileSkillItem,
+            "imgClose":"cross.png"
+			}
+            
+         	arrData.push(testObj);
 
-                    }
-                      arrData.push(testObj);
-
-                    }
+         }
 
 
 
@@ -624,37 +660,29 @@ function saveVolunteerProfilew()
                volunteerUpdateObject.availability.sun=true;
             }
                */
-                  var availabilityString = "";
-  if (volunteerRegObjectVol.availability.mon) {
-    availabilityString += "MON ";
-  }
-  if (volunteerRegObjectVol.availability.tue) {
-    availabilityString += "TUE ";
-  }
-  if (volunteerRegObjectVol.availability.wed) {
-    availabilityString += "WED ";
-  }
-  if (volunteerRegObjectVol.availability.thu) {
-    availabilityString += "THU ";
-  }
-  if (volunteerRegObjectVol.availability.fri) {
-    availabilityString += "FRI ";
-  }
-  if (volunteerRegObjectVol.availability.sat) {
-    availabilityString += "SAT ";
-  }
-  if (volunteerRegObjectVol.availability.sun) {
-    availabilityString += "SUN ";
-  }
-  gblDays=availabilityString;
-
-
-
-
-
-
-
-
+          var availabilityString = "";
+          if (volunteerRegObjectVol.availability.mon) {
+            availabilityString += "MON ";
+          }
+          if (volunteerRegObjectVol.availability.tue) {
+            availabilityString += "TUE ";
+          }
+          if (volunteerRegObjectVol.availability.wed) {
+            availabilityString += "WED ";
+          }
+          if (volunteerRegObjectVol.availability.thu) {
+            availabilityString += "THU ";
+          }
+          if (volunteerRegObjectVol.availability.fri) {
+            availabilityString += "FRI ";
+          }
+          if (volunteerRegObjectVol.availability.sat) {
+            availabilityString += "SAT ";
+          }
+          if (volunteerRegObjectVol.availability.sun) {
+            availabilityString += "SUN ";
+          }
+          gblDays=availabilityString;
 
                   //days end
                   ///start schedule
@@ -680,7 +708,6 @@ function saveVolunteerProfilew()
 
 
                   //end skill
-                  // alert("in6666");
 
                   dataforVolProfile["emailAddress"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text;
                   dataforVolProfile["firstName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text;
@@ -690,32 +717,39 @@ function saveVolunteerProfilew()
                   dataforVolProfile["companyName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey;
                   dataforVolProfile["role"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text;
                   dataforVolProfile["createdDate"]="2016-10-26" ;
-                  //alert("in7");
                   dataforVolProfile["VolunteerScheduleDTO"]=gblscheduleArr;// schedule;
-
-            		  dataforVolProfile["SkillsDTO"]=skills;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
-                //  alert("skill");
+                  dataforVolProfile["SkillsDTO"]=skills;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
                   dataforVolProfile["userName"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text;
                   //dataforVolProfile["password"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text;
                   //For password hashing
-                  dataforVolProfile["password"]= kony.crypto.createHash("md5",volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text);
+					
+      			  if (ChangedPassword === true) {
+                  	dataforVolProfile["password"] = kony.crypto.createHash("md5",StorePassword);
+                    ChangedPassword = false;
+                  }
+      			  else {
+                    dataforVolProfile["password"] = volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text;
+                  }
+      			
                   //End of password hashing
                   dataforVolProfile["state"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.selectedKey;//volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.text;
                        // alert("in8");
-					        dataforVolProfile["volunteerId"]=kony.store.getItem("volunteerId");
+				  dataforVolProfile["volunteerId"]=kony.store.getItem("volunteerId");
                       //alert("in9");
                   dataforVolProfile["userId"]=kony.store.getItem("userId");
                     //  alert("in10");
-                   dataforVolProfile["businessUnit"]=volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
+                  dataforVolProfile["businessUnit"]=volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text;
                   //start feb 16
 					//Start of defect D037
-                    var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
+                  var abotme=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text;
                   if(abotme==null||abotme=="null"||abotme=="")
-                    {
+                  {
                       //abotme=" ";
                       abotme = ""
-                    }
+                  }
+      
                   dataforVolProfile["aboutMe"]=abotme;
+      
                   var work=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text;
                    if(work==null||work=="null"||work=="")
                     {
@@ -729,14 +763,11 @@ function saveVolunteerProfilew()
                 dataforVolProfile["file"]=kony.store.getItem("imageValUpdateVolunteer");
   				dataforVolProfile["fileName"]=kony.store.getItem("imageFileNameValUpdateVolunteer");
 
-    				kony.print("dataprintwhole from textbox:"+JSON.stringify(dataforVolProfile));
- 					kony.print("dataprintFile from textbox:"+dataforVolProfile["file"]);
-                  kony.print("dataprintFilename from textbox:"+dataforVolProfile["fileName"]);
+    			kony.print("dataprintwhole from textbox:"+JSON.stringify(dataforVolProfile));
+ 				kony.print("dataprintFile from textbox:"+dataforVolProfile["file"]);
+                kony.print("dataprintFilename from textbox:"+dataforVolProfile["fileName"]);
 
                  // alert("data from textbox:"+JSON.stringify(dataforVolProfile));
-
-
-          //  mainPage.show();
 
                   mobileFabricConfigurationForMyProfileVol.integrationObj.invokeOperation(operationName,headers ,dataforVolProfile , saveVolunteerProfileSuccessCallbackk, saveVolunteerProfileErrorCallbackk);
                 }
@@ -781,7 +812,7 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16)
      var scheduleValNew=availabilitydays+" "+availableFrom+" TO "+availableTo;
     //alert("scheduleValNew:"+scheduleValNew);
           for(var z=0;z<dataforVolProfile16.volunteerDto[0].VolunteersDTO[0].schedule.length;z++)
-            {
+          {
                 if(z===0){
                 scheduleValNew=scheduleValNew+"\n";//+""+daySelected+" "+fromTime+" TO "+toTime;
                   //alert("sal1"+scheduleValNew);
@@ -792,16 +823,11 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16)
                 kony.store.setItem("scheduleValNew", scheduleValNew);
                 //alert("sal2"+scheduleValNew);
               }
-                     }
+          }
 
-
-    //salma
-
-     mainPage.show();
+    mainPage.show();
     kony.store.removeItem("imageValUpdateVolunteer");
     kony.store.removeItem("imageFileNameValUpdateVolunteer");
-
-    //en mer
     //kony.store.getItem("imgUrlVal");
  //mainPage.destroy();
 
@@ -844,20 +870,30 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
     case "volunteerMyProfileUsernameInput":
       volunteerUpdateObject.username = fieldContent;
       break;
+      
+    //Bad practice
+    /*
     case "volunteerMyProfilePasswordInput":
       volunteerUpdateObject.password = fieldContent;
       break;
     case "volunteerMyProfileReenterPasswordInput":
       volunteerUpdateObject.reenteredPassword = fieldContent;
       break;
-
+     */
+    //volunteerMyProfilePagePassword form
+    case "volunteerMyProfileChangePasswordInput":
+      volunteerUpdateObject.password = fieldContent;
+      break;
+    case "volunteerMyProfileRetypePasswordInput":
+      volunteerUpdateObject.reenteredPassword = fieldContent;
+      break;
+    //volunteerMyProfilePagePassword form
+      
     case "volunteerMyProfileCompanyInput":
-     // volunteerUpdateObject.companyName = fieldContent;
-
       volunteerUpdateObject.companyName = fieldEdited.selectedKey;
       //Begin of D012
       //Added additional conditons if volunteerUpdateObject.companyName contains a null value or a blank string
-      if(volunteerUpdateObject.companyName=="Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName=="")
+      if(volunteerUpdateObject.companyName=="Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName==="")
         {
           volunteerUpdateObject.companyName="";
 
@@ -875,14 +911,14 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
       volunteerUpdateObject.state = fieldEdited.selectedKey;
       //Begin of D012
       //Added additional conditons if volunteerUpdateObject.state contains a null value or a blank string
-      if(volunteerUpdateObject.state=="Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state=="")
+      if(volunteerUpdateObject.state=="Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state==="")
         {
           volunteerUpdateObject.state="";
 
         }
       //End of D012
       break;
-    case "volunteerMyProfileAddressInput":
+      case "volunteerMyProfileAddressInput":
       volunteerUpdateObject.address = fieldContent;
       break;
       //start merin dec20

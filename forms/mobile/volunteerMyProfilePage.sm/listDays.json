@@ -41,7 +41,6 @@
     "context": {
         "channel": "mobile",
         "formID": "volunteerMyProfilePage",
-        "ispercent": "",
         "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null

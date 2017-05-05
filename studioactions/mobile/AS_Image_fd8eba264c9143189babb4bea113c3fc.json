@@ -2,6 +2,7 @@
     "AS_Image_fd8eba264c9143189babb4bea113c3fc": {
         "id": "AS_Image_fd8eba264c9143189babb4bea113c3fc",
         "type": "ACTION_SEQUENCE",
+        "name": "AS_Image_fd8eba264c9143189babb4bea113c3fc",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
