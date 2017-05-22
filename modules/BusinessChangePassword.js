@@ -141,8 +141,8 @@ function setBusinessChangePassword()
                   // credentials["newPassword"]=BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
 
                   //Password hashing
-                  credentials["oldPassword"]=kony.crypto.createHash("md5",BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text);
-                  credentials["newPassword"]=kony.crypto.createHash("md5",BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text);
+                  credentials["oldPassword"]=kony.crypto.createHash("sha256",BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text);
+                  credentials["newPassword"]=kony.crypto.createHash("sha256",BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text);
                   //End password hashing
 
 

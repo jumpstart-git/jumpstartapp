@@ -209,7 +209,7 @@ function getLogin() {
     dataLogin["userName"]=login.usernameField.text;
     //dataLogin["password"]=login.passwordField.text;
     //For password hashing
-    dataLogin["password"]=kony.crypto.createHash("md5",login.passwordField.text);
+    dataLogin["password"]=kony.crypto.createHash("sha256",login.passwordField.text);
     //End of password hasing
     mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName,headers, dataLogin,getLoginSuccessCallback,getLoginErrorCallback);
     
@@ -234,7 +234,7 @@ function getLoginSuccessCallback(gblLoginData1) {
                 var credentials={};
                   credentials["userName"]=login.usernameField.text;
                   credentials["oldPassword"]=login.passwordField.text;
-                  credentials["newPassword"]=kony.crypto.createHash("md5", login.passwordField.text);
+                  credentials["newPassword"]=kony.crypto.createHash("sha256", login.passwordField.text);
                 mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName, headers, credentials, null, null);
             }
         //End Auto Hasher

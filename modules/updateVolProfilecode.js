@@ -724,7 +724,7 @@ function saveVolunteerProfilew()
                   //For password hashing
 					
       			  if (ChangedPassword === true) {
-                  	dataforVolProfile["password"] = kony.crypto.createHash("md5",StorePassword);
+                  	dataforVolProfile["password"] = kony.crypto.createHash("sha256",StorePassword);
                     ChangedPassword = false;
                   }
       			  else {

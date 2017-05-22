@@ -764,7 +764,7 @@ skills.push(testObj);
     gblRegistrationDetails["userName"]=volunteerRegObject.emailAddress;
     //gblRegistrationDetails["password"]=volunteerRegObject.password;
     //For password hashing
-    gblRegistrationDetails["password"]=kony.crypto.createHash("md5",volunteerRegObject.password);
+    gblRegistrationDetails["password"]=kony.crypto.createHash("sha256",volunteerRegObject.password);
     //End of password hashing
     gblRegistrationDetails["companyName"]=volunteerRegObject.companyName;
     gblRegistrationDetails["role"]=volunteerRegObject.role;
