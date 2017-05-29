@@ -48,10 +48,6 @@
         "volunteerMyProfileLastNameInput",
         "volunteerMyProfileUsernameTitle",
         "volunteerMyProfileUsernameInput",
-        "volunteerMyProfilePasswordTitle",
-        "volunteerMyProfilePasswordInput",
-        "volunteerMyProfileReenterPasswordTitle",
-        "volunteerMyProfileReenterPasswordInput",
         "volunteerMyProfileWorkDetailsTitle",
         "volunteerMyProfileWorkDetailsInput",
         "volunteerMyProfileAboutMeTitle",
@@ -76,7 +72,9 @@
         "volunteerMyProfileScheduleLabel",
         "volunteerMyProfileScheduleInfoContainer",
         "volunteerMyProfileAddScheduleContainer",
-        "DeleteVolunteerButtonContainer"
+        "ChangePasswordButtonContainer",
+        "DeleteVolunteerButtonContainer",
+        "StoreOriginalPassword"
     ],
     "clipbounds": true,
     "containerweight": 100,

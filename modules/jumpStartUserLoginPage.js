@@ -6,7 +6,7 @@ var loggedInUserObject = {
 var gblForRetreive;
 var gblLoginData;
 var gblemailVal;
-
+var checkedHash;
 
 function doSignIn() {
 
@@ -109,6 +109,10 @@ mobileFabricConfigurationForLogin = {
     {
       service:"CBALogin",
       operations:["getLoginDetails"]
+    },
+    {
+      service:"BusinessChangePassword",
+      operations:["changePasswordForBusiness"]
     }
   ],
   konysdkObject: null,
@@ -128,7 +132,7 @@ function loginService (){
                                      {shouldShowLabelInBottom: "false", separatorHeight: 20}
                                     );
 
-
+  checkedHash = false;
   if (!mobileFabricConfigurationForLogin.isKonySDKObjectInitialized) {
     initializeMobileFabricForLogin();
   } else if (mobileFabricConfigurationForLogin.isKonySDKObjectInitialized) {
@@ -203,14 +207,12 @@ function getLogin() {
 
     var dataLogin={};
     dataLogin["userName"]=login.usernameField.text;
-    dataLogin["password"]=login.passwordField.text;
-
-    mobileFabricConfigurationForLogin.integrationObj.invokeOperation(
-      operationName,
-      headers, dataLogin,
-      getLoginSuccessCallback,
-      getLoginErrorCallback
-    );
+    //dataLogin["password"]=login.passwordField.text;
+    //For password hashing
+    dataLogin["password"]=kony.crypto.createHash("sha256",login.passwordField.text);
+    //End of password hasing
+    mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName,headers, dataLogin,getLoginSuccessCallback,getLoginErrorCallback);
+    
   } else {
     validationAlert ("Warning","Network unavailable. Please check your network settings. ");
   }
@@ -222,6 +224,20 @@ function getLoginSuccessCallback(gblLoginData1) {
 
     if(gblLoginData!="undefined"&& gblLoginData!=undefined) {
       if((gblLoginData.LoginBusinessVolunteer[0]["result"]=="true")) {
+		  //Password Auto Hasher
+        if(checkedHash)
+            {
+               mobileFabricConfigurationForLogin.integrationObj = mobileFabricConfigurationForLogin.konysdkObject.getIntegrationService(mobileFabricConfigurationForLogin.integrationServices[1].service);
+                var operationName = mobileFabricConfigurationForLogin.integrationServices[1].operations[0];
+                var headers= {};
+
+                var credentials={};
+                  credentials["userName"]=login.usernameField.text;
+                  credentials["oldPassword"]=login.passwordField.text;
+                  credentials["newPassword"]=kony.crypto.createHash("sha256", login.passwordField.text);
+                mobileFabricConfigurationForLogin.integrationObj.invokeOperation(operationName, headers, credentials, null, null);
+            }
+        //End Auto Hasher
         if((gblLoginData.LoginBusinessVolunteer[0]["result"]=="true") && (gblLoginData.LoginBusinessVolunteer[0]["businessOrVolunteer"]=="business")) {
 
           var businessIdVal = gblLoginData.LoginBusinessVolunteer[0].business[0].BusinessDTO[0].businessId;
@@ -504,10 +520,15 @@ function getLoginSuccessCallback(gblLoginData1) {
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text= firstName;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text= lastName;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text= userName;
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= " ";//workDetails;
-            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= " ";//aboutMe;
+            //Will be stored in a hidden field.
+            volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text = password;
+            
+            //Bad practice for password hashing
+            //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
+            //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+            //Bad practice for password hashing
+            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text= "";//workDetails;
+            volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text= "";//aboutMe;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text= companyName;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text= role;
             volunteerMyProfilePage.volunteerMyProfileBody.regBusinessUnitInput.text=businessUnit;
@@ -515,9 +536,6 @@ function getLoginSuccessCallback(gblLoginData1) {
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAddressInput.text= address;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileContactNumberInput.text= contactNumber;
             volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text= emailAddress;//" ";//emailAddress;
-
-
-
 
             var skillSegmentData=[];
             for (var i = 0; i < gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].skillSet.length; i++) {
@@ -541,8 +559,29 @@ function getLoginSuccessCallback(gblLoginData1) {
           }
         }
       } else {
-        validationAlert("Warning","Invalid credentials");
-        kony.application.dismissLoadingScreen();
+        if(checkedHash)
+        {
+                        validationAlert("Warning","Invalid credentials");
+                        kony.application.dismissLoadingScreen();  
+        }
+        else
+        {
+            checkedHash = true;
+            mobileFabricConfigurationForLogin.integrationObj = mobileFabricConfigurationForLogin.konysdkObject.getIntegrationService(mobileFabricConfigurationForLogin.integrationServices[0].service);
+            var operationName = mobileFabricConfigurationForLogin.integrationServices[0].operations[0];
+            var headers= {};
+
+            var dataLogin={};
+            dataLogin["userName"]=login.usernameField.text;
+            dataLogin["password"]=login.passwordField.text;
+
+            mobileFabricConfigurationForLogin.integrationObj.invokeOperation(
+              operationName,
+              headers, dataLogin,
+              getLoginSuccessCallback,
+              getLoginErrorCallback
+            );
+        }
       }
     }
   } catch(e) {

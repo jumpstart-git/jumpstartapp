@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "10%"
     },
     "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "type": "number",
+        "value": "0"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "sac9ec443fed4bc694b897a79e02136d",
-    "_text_": "Password*",
+    "_skin_": "s2c1f289fe304598bfc07f0137efb2f1",
+    "_text_": "Change my password",
     "_top_": {
         "type": "string",
-        "value": "15dp"
+        "value": "5%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,9 +40,13 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "volunteerMyProfilePasswordTitle",
+    "contentalignment": 5,
+    "id": "forgotPswdHdrLbl",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,10 +59,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "76b1cc4fc839466eaf7c635c2767ddef",
+    "kuid": "fba4247011ff42c7aff0d9421e5d6f32",
     "name": "kony.ui.Label",
-    "parent": "volunteerMyProfileBody",
-    "pf": "volunteerMyProfilePage",
+    "parent": "volunteerMyProfilePageChangePassword",
+    "pf": "volunteerMyProfilePageChangePassword",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 1
 }

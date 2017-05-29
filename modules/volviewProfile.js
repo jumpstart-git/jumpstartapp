@@ -158,10 +158,9 @@ function getVolunteerViewProfilePage()
                 if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))
                 {
                                 //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
-                     //mamata
-                  mobileFabricConfigurationForVolunteerViewProfile.integrationObj = mobileFabricConfigurationForVolunteerViewProfile.konysdkObject.getIntegrationService(mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].service);
-                var operationName = mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].operations[0];
-                                var headers= {};
+                	mobileFabricConfigurationForVolunteerViewProfile.integrationObj = mobileFabricConfigurationForVolunteerViewProfile.konysdkObject.getIntegrationService(mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].service);
+                	var operationName = mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].operations[0];
+                    var headers= {};
 //                            if (!kony.string.equalsIgnoreCase(selectedKey, "none")){
 //                                            data= {"newsType": selectedKey};
 //         }else{
@@ -170,10 +169,8 @@ function getVolunteerViewProfilePage()
 //         }
 
   // alert("operation name"+operationName);
-       var profiledata={};
-
-
-                  profiledata["id"]=gblBusIdforVolViewProfile;
+       				var profiledata={};
+                  	profiledata["id"]=gblBusIdforVolViewProfile;
                  // alert("the id=="+JSON.stringify(profiledata));
                 mobileFabricConfigurationForVolunteerViewProfile.integrationObj.invokeOperation(operationName, headers, profiledata, getVolunteerViewSuccessCallback1, getVolunteerViewErrorCallback1);
                 }
@@ -229,7 +226,7 @@ function getVolunteerViewErrorCallback1(error)
 function setSegViewVolunteerProfileData(gblVolunteerViewProfileResponse)
 {
   try{
-  if(gblVolunteerViewProfileResponse!="undefined"&& gblVolunteerViewProfileResponse!=undefined)
+  if(gblVolunteerViewProfileResponse!=="undefined"&& gblVolunteerViewProfileResponse!==undefined)
     {
       //alert("InSide"+JSON.stringify(gblVolunteerViewProfileResponse));
 

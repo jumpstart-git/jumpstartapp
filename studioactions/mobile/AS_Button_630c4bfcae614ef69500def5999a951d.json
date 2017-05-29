@@ -1,0 +1,17 @@
+{
+    "AS_Button_630c4bfcae614ef69500def5999a951d": {
+        "id": "AS_Button_630c4bfcae614ef69500def5999a951d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e014f91fa2d54e1f90e00ef9a100b48e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "SaveNewPassword();",
+            "callbackType": null
+        }]
+    }
+}

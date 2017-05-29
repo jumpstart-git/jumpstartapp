@@ -1,0 +1,33 @@
+{
+    "AS_Image_7a2e5833b09d4fdba08c882796d67cc3": {
+        "id": "AS_Image_7a2e5833b09d4fdba08c882796d67cc3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "volunteerMyProfilePage",
+            "type": "forms",
+            "platform": "",
+            "KUID": "978359e3903240dfb78c032239f21d2b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___178b63eeefe14a19a668cd534787fb41",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "changeProfPicVolunteer",
+            "display": "changeProfPicVolunteer",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}
