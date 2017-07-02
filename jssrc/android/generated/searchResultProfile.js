@@ -1104,7 +1104,7 @@ function addWidgetssearchResultProfile() {
     var CompanyNameAndAddressContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
-        "height": "80dp",
+        "height": "100dp",
         "id": "CompanyNameAndAddressContainer",
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
@@ -1118,14 +1118,17 @@ function addWidgetssearchResultProfile() {
         "id": "BusinessProfileCompanyNameAndAddressContaine",
         "isVisible": true,
         "left": "0dp",
+        "maxNumberOfLines": 2,
+        "maxWidth": "90%",
         "skin": "jumpStartLabel140Bold",
         "text": "The Supplies  Company",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "25%",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "textTruncatePosition": constants.TEXT_TRUNCATE_END,
+        "top": "15%",
+        "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -1376,7 +1379,7 @@ function addWidgetssearchResultProfile() {
         "id": "businessProfileAboutMore",
         "isVisible": false,
         "left": "10dp",
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "more",
         "textStyle": {
             "letterSpacing": 0,
@@ -1598,7 +1601,7 @@ function addWidgetssearchResultProfile() {
         "width": kony.flex.USE_PREFFERED_SIZE
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
+        "padding": [0, 0, 0, 3],
         "paddingInPixel": false
     }, {
         "textCopyable": false
@@ -1614,7 +1617,7 @@ function addWidgetssearchResultProfile() {
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [3, 3, 3, 3],
+        "padding": [3, 0, 3, 3],
         "paddingInPixel": false
     }, {});
     businessProfileBusinessActivityContainer.add(businessProfileBusinessActivityTitle, businessProfileBusinessActivityText);
@@ -1909,7 +1912,7 @@ function addWidgetssearchResultProfile() {
         "centerX": "50%",
         "id": "requestAvailableDays",
         "isVisible": true,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -1928,7 +1931,7 @@ function addWidgetssearchResultProfile() {
         "centerX": "50%",
         "id": "requestAvailableTime",
         "isVisible": true,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -1980,7 +1983,7 @@ function addWidgetssearchResultProfile() {
         "centerX": "50%",
         "id": "cancelVolunteerRequestButton",
         "isVisible": true,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "Cancel",
         "textStyle": {
             "letterSpacing": 0,
@@ -2209,7 +2212,7 @@ function addWidgetssearchResultProfile() {
         "centerX": "50%",
         "id": "requestAVolunteerCancel",
         "isVisible": true,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "Cancel",
         "textStyle": {
             "letterSpacing": 0,
@@ -2246,6 +2249,7 @@ function addWidgetssearchResultProfile() {
     opprtunitiesReadOnlyContainer.setDefaultUnit(kony.flex.DP);
     var oppurtunityDetailsHdrModal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
         "clipBounds": true,
         "height": "15%",
         "id": "oppurtunityDetailsHdrModal",
@@ -3765,7 +3769,6 @@ function addWidgetssearchResultProfile() {
     var EndDateCalendarInput = new kony.ui.Calendar({
         "bottom": "15dp",
         "calendarIcon": "calendaricon.png",
-        "centerX": "50%",
         "dateComponents": [28, 10, 2016, 0, 0, 0],
         "dateFormat": "dd/MM/yyyy",
         "day": 28,
@@ -3780,7 +3783,6 @@ function addWidgetssearchResultProfile() {
         "month": 10,
         "seconds": 0,
         "skin": "jumpStartCalendarSkin",
-        "top": "5dp",
         "viewType": constants.CALENDAR_VIEW_TYPE_DEFAULT,
         "width": "90%",
         "year": 2016,
@@ -3801,17 +3803,17 @@ function addWidgetssearchResultProfile() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "100%",
+        "width": "99%",
         "zIndex": 1
     }, {}, {});
     startEngagementFooterContainer.setDefaultUnit(kony.flex.DP);
     var CancelButton = new kony.ui.Button({
+        "centerX": "25%",
         "centerY": "50%",
         "focusSkin": "jumpStartGrayButton110",
         "height": "40dp",
         "id": "CancelButton",
         "isVisible": true,
-        "left": 1,
         "onClick": AS_Button_5a822dd9fa4343f19cd554abbbb01fb3,
         "skin": "jumpStartGrayButton110",
         "text": "Cancel",
@@ -3825,14 +3827,13 @@ function addWidgetssearchResultProfile() {
         "paddingInPixel": false
     }, {});
     var StartEngagementButton = new kony.ui.Button({
+        "centerX": "25%",
         "centerY": "50%",
         "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "StartEngagementButton",
         "isVisible": true,
-        "left": "3dp",
         "onClick": AS_Button_99e8fcfe74224ca997ce775e4cafcdc1,
-        "right": "10dp",
         "skin": "ngnyPrimaryGreenButton",
         "text": "Start",
         "top": "15dp",
@@ -3872,8 +3873,4 @@ function searchResultProfileGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    searchResultProfile.info = {
-        "notesId": "38e026ceda214cf88e999137a5268792",
-        "kuid": "38e026ceda214cf88e999137a5268792"
-    };
 };

@@ -7,7 +7,9 @@ function initializeFBox018a2be4f3acd48() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox018a2be4f3acd48.setDefaultUnit(kony.flex.DP);
     var recommendationContactImage = new kony.ui.Image2({
         "height": "50dp",
@@ -39,7 +41,9 @@ function initializeFBox018a2be4f3acd48() {
         "top": "0dp",
         "width": "75%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     recommendationDetailContainer.setDefaultUnit(kony.flex.DP);
     var recommendationContactName = new kony.ui.Label({
         "id": "recommendationContactName",
@@ -78,7 +82,9 @@ function initializeFBox018a2be4f3acd48() {
         "top": "3dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     recommendationContactDetails.setDefaultUnit(kony.flex.DP);
     var recommendationContactDesignation = new kony.ui.Label({
         "id": "recommendationContactDesignation",

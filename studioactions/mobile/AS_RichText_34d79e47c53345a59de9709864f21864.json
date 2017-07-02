@@ -20,7 +20,8 @@
             "display": "callContactfromStartEngagementSentRequestSeg",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_9d1092e8935a40e498087aba37260bd9",
             "type": "ADD_SNIPPET",

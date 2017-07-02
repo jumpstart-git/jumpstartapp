@@ -32,7 +32,8 @@
                 "value": " \"unAssignedTask\""
             }],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

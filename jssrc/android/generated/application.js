@@ -171,10 +171,10 @@ function mfintegrationsecureinvokersync(inputParam, serviceID, operationID) {
     }
     return resulttable;
 };
-_invokeServiceAsyncForMF_ = function(url, inputParam, callBack) {
+_invokeServiceAsyncForMF_ = function(url, inputParam, callBack, info) {
     var operationID = inputParam["serviceID"];
     if (!operationID) {
-        resulttable = kony.net.invokeServiceAsync(url, inputParam, callBack);
+        resulttable = kony.net.invokeServiceAsync(url, inputParam, callBack, info);
     } else {
         var _mfServicesMap_ = {};
         kony.print("Getting serviceID for : " + operationID);
@@ -184,16 +184,16 @@ _invokeServiceAsyncForMF_ = function(url, inputParam, callBack) {
         if (serviceID && operationID) {
             var url = appConfig.secureurl;
             if (kony.mbaas) {
-                kony.mbaas.invokeMbaasServiceFromKonyStudio(url, inputParam, serviceID, operationID, callBack);
+                kony.mbaas.invokeMbaasServiceFromKonyStudio(url, inputParam, serviceID, operationID, callBack, info);
             } else {
                 alert("Unable to find the mobileFabric SDK for KonyStudio. Please download the SDK from the Kony Cloud Console and add as module to the Kony Project.");
             }
         } else {
-            resulttable = kony.net.invokeServiceAsync(url, inputParam, callBack);
+            resulttable = kony.net.invokeServiceAsync(url, inputParam, callBack, info);
         }
     }
 };
-_invokeServiceSyncForMF_ = function(url, inputParam, isBlocking) {
+_invokeServiceSyncForMF_ = function(url, inputParam, isBlocking, info) {
     var resulttable;
     var operationID = inputParam["serviceID"];
     if (!operationID) {
@@ -207,7 +207,7 @@ _invokeServiceSyncForMF_ = function(url, inputParam, isBlocking) {
         if (serviceID && operationID) {
             var url = appConfig.secureurl;
             if (kony.mbaas) {
-                resulttable = kony.mbaas.invokeMbaasServiceFromKonyStudioSync(url, inputParam, serviceID, operationID);
+                resulttable = kony.mbaas.invokeMbaasServiceFromKonyStudioSync(url, inputParam, serviceID, operationID, info);
                 kony.print("Result table for service id : " + serviceID + " operationid : " + operationID + " : " + JSON.stringify(resulttable));
             } else {
                 alert("Unable to find the mobileFabric SDK for KonyStudio. Please download the SDK from the Kony Cloud Console and add as module to the Kony Project.");

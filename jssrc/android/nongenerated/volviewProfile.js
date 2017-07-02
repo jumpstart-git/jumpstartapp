@@ -119,7 +119,6 @@ function getVolunteerViewProfilePage() {
     //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
-        //mamata
         mobileFabricConfigurationForVolunteerViewProfile.integrationObj = mobileFabricConfigurationForVolunteerViewProfile.konysdkObject.getIntegrationService(mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].service);
         var operationName = mobileFabricConfigurationForVolunteerViewProfile.integrationServices[0].operations[0];
         var headers = {};
@@ -177,7 +176,7 @@ function getVolunteerViewErrorCallback1(error) {
 
 function setSegViewVolunteerProfileData(gblVolunteerViewProfileResponse) {
     try {
-        if (gblVolunteerViewProfileResponse != "undefined" && gblVolunteerViewProfileResponse != undefined) {
+        if (gblVolunteerViewProfileResponse !== "undefined" && gblVolunteerViewProfileResponse !== undefined) {
             //alert("InSide"+JSON.stringify(gblVolunteerViewProfileResponse));
             if (gblVolunteerViewProfileResponse["volunteersList"].length > 0) {
                 // alert("InSide isss"+JSON.stringify(gblVolunteerViewProfileResponse["volunteersList"][0]["VolunteersDTO"][0].volunteerId));

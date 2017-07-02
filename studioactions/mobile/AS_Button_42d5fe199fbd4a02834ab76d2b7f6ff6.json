@@ -20,7 +20,8 @@
             "display": "BusinessProfileUpdate",
             "inputparams": [],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "NAVIGATE_TO_FORM__ide_onClick_0b9836568ea24521bc5643f06034a5ff",
             "type": "NAVIGATE_TO_FORM",

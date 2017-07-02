@@ -3,14 +3,14 @@ mobileFabricConfigurationForVolunteerResetPassword = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
-    //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-    //appSecret:"c600a59925b36419de1546056cd21557", 
+    //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+    //appSecret:"c600a59925b36419de1546056cd21557",
     //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
     integrationServices: [{
         service: "forgotPassword1",
         operations: ["forgotPasswordService"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -120,7 +120,7 @@ function getResetPasswordforVolunteer() {
         //                                            data= {"newsType": selectedKey};
         //         }else{
         //                                            // The user didn't pick a value so we'll show the alert
-        //                                
+        //
         //         }
         // alert("operation name"+operationName);
         var resetData = {};

@@ -28,7 +28,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___08c2c8bd5c164b04a847763c70ee3c0e",
             "type": "INVOKE_FUNCTION",
@@ -37,7 +38,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET__03f244e4e52f4acebb590471b454624e",
             "type": "ADD_SNIPPET",

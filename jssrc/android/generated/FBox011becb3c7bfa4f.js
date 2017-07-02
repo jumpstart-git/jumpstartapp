@@ -7,7 +7,9 @@ function initializeFBox011becb3c7bfa4f() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox011becb3c7bfa4f.setDefaultUnit(kony.flex.DP);
     var notificationContactImage = new kony.ui.Image2({
         "height": "50dp",
@@ -39,7 +41,9 @@ function initializeFBox011becb3c7bfa4f() {
         "top": "0dp",
         "width": "75%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     notificationDetailContainer.setDefaultUnit(kony.flex.DP);
     var notificationContactName = new kony.ui.Label({
         "id": "notificationContactName",

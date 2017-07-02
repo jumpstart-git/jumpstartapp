@@ -989,7 +989,7 @@ function addWidgetsLogHoursForms() {
         "id": "footerCancelLabel",
         "isVisible": true,
         "onTouchStart": AS_Label_0c5ef614031e4ddc9f782eca0f073195,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "Cancel",
         "textStyle": {
             "letterSpacing": 0,
@@ -1035,7 +1035,4 @@ function LogHoursFormsGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    LogHoursForms.info = {
-        "kuid": "7bd9555694264a13a362dc9042246919"
-    };
 };

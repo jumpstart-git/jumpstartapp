@@ -7,7 +7,9 @@ function initializeCopyFBox09e1c06f6a9bb44() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox09e1c06f6a9bb44.setDefaultUnit(kony.flex.DP);
     var sentRequestsTop = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -18,7 +20,9 @@ function initializeCopyFBox09e1c06f6a9bb44() {
         "skin": "slFbox",
         "top": "10dp",
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     sentRequestsTop.setDefaultUnit(kony.flex.DP);
     var sentRequestImageParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -31,7 +35,9 @@ function initializeCopyFBox09e1c06f6a9bb44() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "25%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     sentRequestImageParent.setDefaultUnit(kony.flex.DP);
     var sentRequestImage = new kony.ui.Image2({
         "centerX": "50%",
@@ -66,7 +72,9 @@ function initializeCopyFBox09e1c06f6a9bb44() {
         "top": "2dp",
         "width": "68.96%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     sentRequestInfoParent.setDefaultUnit(kony.flex.DP);
     var sentRequestBusinessName = new kony.ui.Label({
         "id": "sentRequestBusinessName",
@@ -185,7 +193,9 @@ function initializeCopyFBox09e1c06f6a9bb44() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     sentRequestsBottom.setDefaultUnit(kony.flex.DP);
     var viewRequest = new kony.ui.RichText({
         "centerY": "50%",

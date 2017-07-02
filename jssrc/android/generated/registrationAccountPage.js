@@ -261,8 +261,4 @@ function registrationAccountPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationAccountPage.info = {
-        "notesId": "536f7e9fe153427d92b5be23fc9c32de",
-        "kuid": "536f7e9fe153427d92b5be23fc9c32de"
-    };
 };

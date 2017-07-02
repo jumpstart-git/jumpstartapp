@@ -106,8 +106,12 @@ function setBusinessChangePassword() {
         // alert("operation name"+operationName);
         var credentials = {};
         credentials["userName"] = kony.store.getItem("BusinessEmailId");
-        credentials["oldPassword"] = BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;
-        credentials["newPassword"] = BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
+        // credentials["oldPassword"]=BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text;
+        // credentials["newPassword"]=BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text;
+        //Password hashing
+        credentials["oldPassword"] = kony.crypto.createHash("sha256", BusinessProfile.ChangePasswordBOdyContainer.CurrentPasswordInputField.text);
+        credentials["newPassword"] = kony.crypto.createHash("sha256", BusinessProfile.ChangePasswordBOdyContainer.ReEnterNewpasswordInputField.text);
+        //End password hashing
         //alert("From AcceptedTask"+JSON.stringify(credentials));
         mobileFabricConfigurationForBusinessChangePassword.integrationObj.invokeOperation(operationName, headers, credentials, getBusinessChangePasswordSuccessCallback, getBusinessChangePasswordErrorCallback);
     } else alert("Network unavailable. Please check your network settings. ");

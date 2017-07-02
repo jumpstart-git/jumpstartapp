@@ -52,7 +52,4 @@ function pop2Globals() {
     }, {
         "windowSoftInputMode": constants.POPUP_ADJUST_PAN
     });
-    pop2.info = {
-        "kuid": "077a05d021bd45d29b6ba96e959a70d9"
-    };
 };

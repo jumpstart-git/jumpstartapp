@@ -33,7 +33,8 @@
             }],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET__e8e418629e10445eb93cfe1480b76cb7",
             "type": "ADD_SNIPPET",
@@ -48,7 +49,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___f53cf65288ac4ed9a375bbe46c8651c2",
             "type": "INVOKE_FUNCTION",
@@ -57,7 +59,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___34ed6f78f97c48b9a3799e7687ea2efb",
             "type": "INVOKE_FUNCTION",
@@ -66,7 +69,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET__529c22949ca343f79e90b4a7a172323f",
             "type": "ADD_SNIPPET",

@@ -17,7 +17,6 @@ function populateUpdatePage() {
         //kony.store.setItem("isBusOrVol",isBusOrVol);
         var firstName = gblForRetreive.firstName;
         kony.store.setItem("volLoginName", firstName);
-        //alert("2");
         var lastName = gblForRetreive.lastName;
         var companyName = gblForRetreive.companyName;
         var role = gblForRetreive.role;
@@ -186,7 +185,6 @@ function populateUpdatePage() {
         var userId = gblForRetreive.users[0].userId;
         //var usersUserTypeId=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].users[0].usersUserTypeId;
         kony.store.setItem("userId", userId);
-        // alert("10");
         var usersUserTypeId = gblForRetreive.users[0].usersUserTypeId;
         if (businessUnit === null || businessUnit === "null") {
             businessUnit = " ";
@@ -195,8 +193,12 @@ function populateUpdatePage() {
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text = lastName;
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text = userName;
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.setEnabled(false);
-        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
-        volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
+        //Will be stored in a hidden field where users will never see it.
+        volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text = password;
+        //Bad for password hashing
+        //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
+        //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+        //End
         //Begin of Defect D037
         /* Peter's Code
         if((workDetails!=null)&&(workDetails!="null"))
@@ -216,10 +218,10 @@ function populateUpdatePage() {
         }
         */
         //Carl Cheng's code
-        if (workDetails === null) {
+        if (workDetails === null || workDetails === "null") {
             workDetails = "";
         }
-        if (aboutMe === null) {
+        if (aboutMe === null || aboutMe === "null") {
             aboutMe = "";
         }
         volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = workDetails;

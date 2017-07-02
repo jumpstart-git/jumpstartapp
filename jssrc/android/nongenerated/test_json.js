@@ -20,8 +20,11 @@ var START_ENGAGEMENT = "<a href='#' style='color: #37b3b1'>Start<br>Engagement</
 var MARK_AS_COMPLETE = "<a href='#' style='color: #37b3b1'>Mark as complete</a>";
 var SEND_RECOMMENDATION = "<a href='#' style='color: #37b3b1'>Send_Recommendation</a>";
 var Refresh_results = "<a href='#' style='color: #37b3b1'>Refresh results</a>";
+//Start of defect D029
+//Capitalized the words 'edit' and 'close'.
 var EDIT = "<a href='#' style='color: #37b3b1'><u>Edit</u></a>";
-var CLOSE = "<a href='#' style='color: #37b3b1'><u>Close</u></a>";
+var CLOSE = "<a href='#' style='color: #37b3b1; word-break: keep-all!important; hyphens: none;'><u>Close</u></a>";
+//End of defect D029
 var ENDORESE_VOLUNTEER = "<a href='#' style='color: #37b3b1'><u>Endorse_volunteer</u></a>";
 // TEST DATA:
 var loggedInUserInfo = {

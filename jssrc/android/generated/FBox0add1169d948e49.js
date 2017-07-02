@@ -7,7 +7,9 @@ function initializeFBox0add1169d948e49() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0add1169d948e49.setDefaultUnit(kony.flex.DP);
     var lblCompanyLogo = new kony.ui.Image2({
         "height": "100%",

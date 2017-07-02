@@ -1,3 +1,5 @@
+var StorePassword = "";
+var ChangedPassword = false;
 var volunteerUpdateObject = {
     firstName: "",
     lastName: "",
@@ -131,36 +133,6 @@ function validateEmailUpdate() {
     return true;
 }
 
-function validatePasswordEqualityUpdate() {
-    if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
-        return false;
-    }
-    return true;
-}
-
-function validatePasswordUpdate() {
-    var specialChars = /[^A-Za-z0-9]/; // Regexp for special characters
-    var digits = /[0-9]+/; // Regexp for digits
-    var capitalLetters = /[A-Z]+/; // Regexp for capital letters
-    if (volunteerUpdateObject.password.length >= userValidation.passwordLength) {
-        if (specialChars.test(volunteerUpdateObject.password)) {
-            if (digits.test(volunteerUpdateObject.password)) {
-                if (capitalLetters.test(volunteerUpdateObject.password)) {
-                    return 5;
-                } else {
-                    return 4;
-                }
-            } else {
-                return 3;
-            }
-        } else {
-            return 2;
-        }
-    } else {
-        return 1;
-    }
-}
-
 function startLessThanEndUpdate() {
     var start = convertToMilTime(volunteerUpdateObject.availability.startTime, volunteerUpdateObject.availability.startMeridiem);
     var end = convertToMilTime(volunteerUpdateObject.availability.endTime, volunteerUpdateObject.availability.endMeridiem);
@@ -191,6 +163,68 @@ function validateVolunteerHoursUpdate() {
         volunteerMyProfilePage.outsidemodal.isVisible = true;
         // alert("outside");
         return false;
+    }
+}
+
+function SaveNewPassword() {
+    ChangedPassword = false;
+    var storePassword = volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileChangePasswordInput.text;
+    var storeClonePassword = volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileRetypePasswordInput.text;
+    var isEqualPassword = validatePasswordEqualityUpdate();
+    if (!isEqualPassword) {
+        validationAlert("Action Required", "Passwords entered are not equal");
+    }
+    var isValidPassword = validatePasswordUpdate();
+    if (isValidPassword == 1) {
+        validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
+    } else if (isValidPassword == 2) {
+        validationAlert("Action Required", "Passwords must have at least 1 special character");
+    } else if (isValidPassword == 3) {
+        validationAlert("Action Required", "Passwords must have at least 1 digit");
+    } else if (isValidPassword == 4) {
+        validationAlert("Action Required", "Passwords must have at least 1 capital letter");
+    }
+    if (isEqualPassword && isValidPassword === 5) {
+        ChangedPassword = true;
+        StorePassword = storePassword;
+        volunteerMyProfilePage.show();
+        volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileChangePasswordInput.text = "";
+        volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileRetypePasswordInput.text = "";
+    }
+}
+
+function CancelButtonAction() {
+    ChangedPassword = false;
+}
+
+function validatePasswordEqualityUpdate() {
+    //if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
+    if (volunteerUpdateObject.password != volunteerUpdateObject.reenteredPassword) {
+        return false;
+    }
+    return true;
+}
+
+function validatePasswordUpdate() {
+    var specialChars = /[^A-Za-z0-9]/; // Regexp for special characters
+    var digits = /[0-9]+/; // Regexp for digits
+    var capitalLetters = /[A-Z]+/; // Regexp for capital letters
+    if (volunteerUpdateObject.password.length >= userValidation.passwordLength) {
+        if (specialChars.test(volunteerUpdateObject.password)) {
+            if (digits.test(volunteerUpdateObject.password)) {
+                if (capitalLetters.test(volunteerUpdateObject.password)) {
+                    return 5;
+                } else {
+                    return 4;
+                }
+            } else {
+                return 3;
+            }
+        } else {
+            return 2;
+        }
+    } else {
+        return 1;
     }
 }
 
@@ -252,31 +286,34 @@ function submitUpdateInfo() {
         validationAlert("Action Required", "Email address entered is not valid format");
         return false;
     }
+    /*Bad for Password Hash
     var isEqualPassword = validatePasswordEqualityUpdate();
     if (!isEqualPassword) {
-        validationAlert("Action Required", "Passwords entered are not equal");
-        return false;
+      validationAlert("Action Required", "Passwords entered are not equal");
+      return false;
     }
+  
     var isValidPassword = validatePasswordUpdate();
     if (isValidPassword == 1) {
-        validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
-        return false;
+      validationAlert("Action Required", "Passwords must have at least " + userValidation.passwordLength + " characters");
+      return false;
     } else if (isValidPassword == 2) {
-        validationAlert("Action Required", "Passwords must have at least 1 special character");
-        return false;
+      validationAlert("Action Required", "Passwords must have at least 1 special character");
+      return false;
     } else if (isValidPassword == 3) {
-        validationAlert("Action Required", "Passwords must have at least 1 digit");
-        return false;
+      validationAlert("Action Required", "Passwords must have at least 1 digit");
+      return false;
     } else if (isValidPassword == 4) {
-        validationAlert("Action Required", "Passwords must have at least 1 capital letter");
-        return false;
+      validationAlert("Action Required", "Passwords must have at least 1 capital letter");
+      return false;
     }
+    */
     //alert(gblscheduleArr.length);
     if (gblscheduleArr.length == "0.0") {
         alert("enter atleast 1 schedule");
         return false;
     }
-    if (isUpdateInfoComplete && hasSkillUpdate && isValidEmail && isEqualPassword && isValidPassword) {
+    if (isUpdateInfoComplete && hasSkillUpdate && isValidEmail) {
         VollMyProfile();
     }
 }
@@ -572,7 +609,6 @@ function saveVolunteerProfilew() {
         var skills = arrData; // [{ "skillId":"210", "skillName":"Salma_java"}];//[{"SkillsDTO":{"skillName":"Salma_javaMerin"}}];
         //start skilll
         //end skill
-        // alert("in6666");
         dataforVolProfile["emailAddress"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileEmailAddressInput.text;
         dataforVolProfile["firstName"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text;
         dataforVolProfile["lastName"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text;
@@ -581,12 +617,18 @@ function saveVolunteerProfilew() {
         dataforVolProfile["companyName"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.selectedKey;
         dataforVolProfile["role"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileRoleInput.text;
         dataforVolProfile["createdDate"] = "2016-10-26";
-        //alert("in7");
         dataforVolProfile["VolunteerScheduleDTO"] = gblscheduleArr; // schedule;
         dataforVolProfile["SkillsDTO"] = skills; //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileSkillListContainer.volunteerMyProfileSkillsList.volunteerMyProfileSkillInputField.text;
-        //  alert("skill");
         dataforVolProfile["userName"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text;
-        dataforVolProfile["password"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text;
+        //dataforVolProfile["password"]=volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text;
+        //For password hashing
+        if (ChangedPassword === true) {
+            dataforVolProfile["password"] = kony.crypto.createHash("sha256", StorePassword);
+            ChangedPassword = false;
+        } else {
+            dataforVolProfile["password"] = volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text;
+        }
+        //End of password hashing
         dataforVolProfile["state"] = volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.selectedKey; //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileStateInput.text;
         // alert("in8");
         dataforVolProfile["volunteerId"] = kony.store.getItem("volunteerId");
@@ -615,7 +657,6 @@ function saveVolunteerProfilew() {
         kony.print("dataprintFile from textbox:" + dataforVolProfile["file"]);
         kony.print("dataprintFilename from textbox:" + dataforVolProfile["fileName"]);
         // alert("data from textbox:"+JSON.stringify(dataforVolProfile));
-        //  mainPage.show();
         mobileFabricConfigurationForMyProfileVol.integrationObj.invokeOperation(operationName, headers, dataforVolProfile, saveVolunteerProfileSuccessCallbackk, saveVolunteerProfileErrorCallbackk);
     } else alert("Network unavailable. Please check your network settings. ");
 }
@@ -660,11 +701,9 @@ function saveVolunteerProfileSuccessCallbackk(dataforVolProfile16) {
                 //alert("sal2"+scheduleValNew);
             }
         }
-        //salma
         mainPage.show();
         kony.store.removeItem("imageValUpdateVolunteer");
         kony.store.removeItem("imageFileNameValUpdateVolunteer");
-        //en mer
         //kony.store.getItem("imgUrlVal");
         //mainPage.destroy();
         kony.application.dismissLoadingScreen();
@@ -697,18 +736,28 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
         case "volunteerMyProfileUsernameInput":
             volunteerUpdateObject.username = fieldContent;
             break;
-        case "volunteerMyProfilePasswordInput":
+            //Bad practice
+            /*
+            case "volunteerMyProfilePasswordInput":
+              volunteerUpdateObject.password = fieldContent;
+              break;
+            case "volunteerMyProfileReenterPasswordInput":
+              volunteerUpdateObject.reenteredPassword = fieldContent;
+              break;
+             */
+            //volunteerMyProfilePagePassword form
+        case "volunteerMyProfileChangePasswordInput":
             volunteerUpdateObject.password = fieldContent;
             break;
-        case "volunteerMyProfileReenterPasswordInput":
+        case "volunteerMyProfileRetypePasswordInput":
             volunteerUpdateObject.reenteredPassword = fieldContent;
             break;
+            //volunteerMyProfilePagePassword form
         case "volunteerMyProfileCompanyInput":
-            // volunteerUpdateObject.companyName = fieldContent;
             volunteerUpdateObject.companyName = fieldEdited.selectedKey;
             //Begin of D012
             //Added additional conditons if volunteerUpdateObject.companyName contains a null value or a blank string
-            if (volunteerUpdateObject.companyName == "Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName == "") {
+            if (volunteerUpdateObject.companyName == "Select" || !volunteerUpdateObject.companyName || volunteerUpdateObject.companyName === "") {
                 volunteerUpdateObject.companyName = "";
             }
             //End of D012
@@ -723,7 +772,7 @@ function onRegFieldUpdateForUpdation(fieldEdited) {
             volunteerUpdateObject.state = fieldEdited.selectedKey;
             //Begin of D012
             //Added additional conditons if volunteerUpdateObject.state contains a null value or a blank string
-            if (volunteerUpdateObject.state == "Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state == "") {
+            if (volunteerUpdateObject.state == "Select" || !volunteerUpdateObject.state || volunteerUpdateObject.state === "") {
                 volunteerUpdateObject.state = "";
             }
             //End of D012

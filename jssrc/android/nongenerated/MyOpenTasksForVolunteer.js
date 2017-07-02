@@ -136,8 +136,8 @@ function getVolunteerOpenCloseTaskSuccessCallback(gblVolunteerOpenCloseTaskList)
     // alert("inside success"+JSON.stringify(gblVolunteerOpenCloseTaskList));
     // Check the opstatus for 0 meaning it worked
     if (gblVolunteerOpenCloseTaskList !== null && gblVolunteerOpenCloseTaskList.opstatus === 0) {
-        if (gblVolunteerOpenCloseTaskList.taskList != null && gblVolunteerOpenCloseTaskList.taskList != undefined) {
-            if (gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO !== null && gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO != undefined) {
+        if (gblVolunteerOpenCloseTaskList.taskList !== null && gblVolunteerOpenCloseTaskList.taskList !== undefined) {
+            if (gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO !== null && gblVolunteerOpenCloseTaskList.taskList[0].TasksDTO !== undefined) {
                 // alert("2");
                 // Making sure we have at least 1 article returned
                 if (gblVolunteerOpenCloseTaskList.taskList.length > 0) {
@@ -178,7 +178,7 @@ function getVolunteerOpenCloseTaskErrorCallback(error) {
 
 function setVolTaskSegData(gblVolTaskResponse) {
     try {
-        if (gblVolTaskResponse != "undefined" && gblVolTaskResponse != undefined) {
+        if (gblVolTaskResponse !== "undefined" && gblVolTaskResponse !== undefined) {
             // alert("InSide"+JSON.stringify(gblVolTaskResponse));
             // alert("InSide"+JSON.stringify(gblVolTaskResponse));
             mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.widgetDataMap = {
@@ -223,21 +223,20 @@ function setVolTaskSegData(gblVolTaskResponse) {
                         var endDate1 = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].end_date;
                         var hours = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].hoursRequired;
                         var skills = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskSkills;
-                        if (title == null || title == "null" || title == "") {
+                        if (title === null || title === "null" || title === "") {
                             title = "";
                         }
-                        if (details1 == null || details1 == "null" || details1 == "") {
+                        if (details1 === null || details1 === "null" || details1 === "") {
                             details1 = "";
                         }
-                        if (startDate1 == null || startDate1 == "null" || startDate1 == "") {
+                        if (startDate1 === null || startDate1 === "null" || startDate1 === "") {
                             startDate1 = "";
                         }
-                        if (endDate1 == null || endDate1 == "null" || endDate1 == "") {
+                        if (endDate1 === null || endDate1 === "null" || endDate1 === "") {
                             endDate1 = "";
                         }
                         var request_id = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskId;
                         // var name=gblVolTaskResponse["taskList"][i]["TasksDTO"]["request"]["Request"].businessName;
-                        //  alert("f44");
                         var name = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].businessName;
                         var volunteerImagePathOpen1 = gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessImagePath;
                         var volOpenTaskBusinessContact = gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessContact;
@@ -245,7 +244,7 @@ function setVolTaskSegData(gblVolTaskResponse) {
                         var busId = gblVolTaskResponse["taskList"][i]["TasksDTO"][0]["request"][0]["Request"].businessId;
                         var hoursArrayVal = gblVolTaskResponse["taskList"][i]["TasksDTO"][0].taskHoursList;
                         var imagepathOpen1 = "imgseglogo.png";
-                        if (volunteerImagePathOpen1 != null && volunteerImagePathOpen1 != "null") {
+                        if (volunteerImagePathOpen1 !== null && volunteerImagePathOpen1 !== "null") {
                             imagepathOpen1 = "http://jumpstart:PwdJump5tartApp@ec2-54-206-61-225.ap-southeast-2.compute.amazonaws.com/file/download/" + volunteerImagePathOpen1;
                         }
                         var textVolTaskData = {
@@ -270,9 +269,13 @@ function setVolTaskSegData(gblVolTaskResponse) {
                         };
                         tempVolTaskDta.push(textVolTaskData);
                     }
-                    mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.setData(tempVolTaskDta);
-                    mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.isVisible = true;
-                    kony.application.dismissLoadingScreen();
+                    // Urgent Fix: A blank item is appearing in Open Tasks ONLY when there is an unaccepted task request
+                    if (tempVolTaskDta.length > 0) {
+                        mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.setData(tempVolTaskDta);
+                        mainPage.mainPageBody.mainPageContentParent.myActivity.myOpenTasksParent.myOpenTasksListContainer.myOpenTasksList.isVisible = true;
+                        kony.application.dismissLoadingScreen();
+                    }
+                    //End of Urgent fix
                 }
             }
             VolCloseTaskService();

@@ -14,7 +14,8 @@
             "display": "closeModal",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_dc412b96bbac43e58f719651ec7f7b87",
             "type": "ADD_SNIPPET",

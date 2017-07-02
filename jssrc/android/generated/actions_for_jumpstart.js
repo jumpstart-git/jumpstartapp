@@ -28,6 +28,13 @@ function AS_Button_084a6e37b3e34b0c848a45390f3b841a(eventobject) {
     //     }
 }
 
+function AS_Button_0c04dbd657cb4d28b40da6a1a8087bb6(eventobject) {
+    volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileChangePasswordInput.text = "";
+    volunteerMyProfilePageChangePassword.volunteerMyProfilePageChangePasswordBody.volunteerMyProfileRetypePasswordInput.text = "";
+    CancelButtonAction();
+    volunteerMyProfilePage.show();
+}
+
 function AS_Button_0d87a87ab5bd4552a60cca8b24ed2876(eventobject) {
     var msg = searchResultProfile.volunteerRequestContainer.requestToVolunteerModal.requestToVolunteerBody.requestRoleInput.text;
     //alert(msg);
@@ -245,7 +252,7 @@ function AS_Button_395cc1c2c1cb40af83e6c4308d1dd377(eventobject) {
 function AS_Button_3d555c25db1f4257a45b1f9c9ba15f18(eventobject) {
     gblFirstTime = true;
     gblIsOpp = false;
-    searchPage.searchTxtbox.text = "";
+    searchPage.searchTxtbox.text = "Search";
     searchPage.volunteerdataSegment.removeAll();
     searchPage.show();
 }
@@ -258,6 +265,35 @@ function AS_Button_3e30492701d44a20825d461fc49acdf8(eventobject) {
 
 function AS_Button_3e63010ecab440f8bc6dedecca979d47(eventobject) {
     addHours();
+}
+
+function AS_Button_3f3ea29874a042e4b234c314c3385d65(eventobject) {
+    function SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_True() {
+        DeleteVolunteerAccountService.call(this);
+    }
+
+    function SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_False() {
+        volunteerMyProfilePage.show();
+    }
+
+    function SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_Callback(response) {
+        if (response == true) {
+            SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_True()
+        } else {
+            SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_False()
+        };
+    }
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_CONFIRMATION,
+        "alertTitle": "Confirmation",
+        "yesLabel": "Yes",
+        "noLabel": "No",
+        "alertIcon": "lohourindicator.PNG",
+        "message": "Do you really want to delete your account?",
+        "alertHandler": SHOW_ALERT_ide_onClick_b7812ce708cc43daa3b1f8296aadf672_Callback
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_RIGHT
+    })
 }
 
 function AS_Button_42d5fe199fbd4a02834ab76d2b7f6ff6(eventobject) {
@@ -379,6 +415,10 @@ function AS_Button_60cce89b31454d2f8f34f4ffe82d9aa8(eventobject) {
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.CommentsTextArea.text = "";
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.SkillsInput.text = "";
     searchResultProfile.startEngagementModalContainer.startEngagementBodyContainer.DuratationOfEngagementInput.text = "";
+}
+
+function AS_Button_630c4bfcae614ef69500def5999a951d(eventobject) {
+    SaveNewPassword();
 }
 
 function AS_Button_6769340a248d48eabbad10e602c77e6b(eventobject) {
@@ -1025,6 +1065,10 @@ function AS_Button_a95ff095cd2d4c0faf96630c73f24b5d(eventobject) {
     //mainPage.show();
 }
 
+function AS_Button_aa285d8fe8d04e2d820658c111389d6b(eventobject) {
+    return getScheduleFormat.call(this);
+}
+
 function AS_Button_aa3e3d85d1ad4363aa2228b03b71875f(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         //alert("he is business");
@@ -1248,6 +1292,35 @@ function AS_Button_c744708682c64883bbf34dca04f06842(eventobject) {
     }
 }
 
+function AS_Button_c8c845e7a2c347cea5d422f4843ef41a(eventobject) {
+    function SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_True() {
+        DeleteVolunteerAccountService.call(this);
+    }
+
+    function SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_False() {
+        volunteerMyProfilePage.show();
+    }
+
+    function SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_Callback(response) {
+        if (response == true) {
+            SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_True()
+        } else {
+            SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_False()
+        };
+    }
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_CONFIRMATION,
+        "alertTitle": "Confirmation",
+        "yesLabel": "Yes",
+        "noLabel": "No",
+        "alertIcon": "lohourindicator.PNG",
+        "message": "Do you really want to delete your account?",
+        "alertHandler": SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781_Callback
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_RIGHT
+    })
+}
+
 function AS_Button_c8e58c278dc843529e6299794c8f659c(eventobject) {
     if (searchPage.searchTxtbox.text.length == "0.0") {
         alert("Please enter some text ");
@@ -1341,6 +1414,10 @@ function AS_Button_db0bf370a0c3499f8dda80469463a8c7(eventobject) {
     //mainPage.show(); 
 }
 
+function AS_Button_dc6cf53afef74ce497dd0a2c3c81d777(eventobject) {
+    return hoursAgreeAndContinue.call(this);
+}
+
 function AS_Button_dc8aa82b60d146248de333630a31e677(eventobject) {
     mainPage.acceptTaskDetailsModalContainer.isVisible = false;
     //mainPage.show(); 
@@ -1400,6 +1477,10 @@ function AS_Button_df13c25023874207a65c88b802d79b02(eventobject) {
     searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.availabilityContainer.availabiltyTxt.text = availabilty;
 }
 
+function AS_Button_df291e0c7eb746038635f1ad35f928df(eventobject) {
+    registrationProfessionalPage.show();
+}
+
 function AS_Button_e0ba749e1fcb4fc1bdc6a2783b501647(eventobject) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         BusinessAcceptRequestTasks();
@@ -1457,6 +1538,10 @@ function AS_Button_eb96d11911454d8e91cb3994fb686bf4(eventobject) {
 
 function AS_Button_ec9397f10e6e482bb595acb81c6014bf(eventobject, x, y) {
     return addNewSkill.call(this);
+}
+
+function AS_Button_edf83feaa9fe47a7855ed1f1a459a40f(eventobject) {
+    return addSchedule.call(this);
 }
 
 function AS_Button_ef9d782efbb843a2af32d76859191241(eventobject) {
@@ -1626,6 +1711,10 @@ function AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901(eventobject) {
     submitUpdateInfo();
 }
 
+function AS_Button_fbdaaee40d054ef7beee3a61ec94718a(eventobject) {
+    volunteerMyProfilePageChangePassword.show()
+}
+
 function AS_Button_fbfed737da454414aae15fab452e5c5c(eventobject) {
     if (gblIsOpp == true) {
         var title9 = searchResultProfile.opprtunitiesReadOnlyContainer.oppurtunity1DetailsBodyModalContainer.TaskDetailsHdrFlex.taskTitleTxtLbl.text;
@@ -1749,6 +1838,16 @@ function AS_Button_fff21f566b984c2e92a93b839a3014aa(eventobject) {
     //     }
 }
 
+function AS_CheckBoxGroup_2dc7471871904355a8c132f5cb7d1bff(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
+    }
+}
+
 function AS_CheckBoxGroup_357e1e29304942c6a2b764966ce5188c(eventobject) {
     var checkBoxVal = mainPage.checkList.selectedKeys;
     //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
@@ -1776,6 +1875,16 @@ function AS_CheckBoxGroup_5e729be7102843cfa93c156269a715dd(eventobject) {
         mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = true;
     } else {
         mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = false;
+    }
+}
+
+function AS_CheckBoxGroup_7adc15c2250c45df839525a862e0bc1f(eventobject) {
+    var checkBoxVal = mainPage.checkList.selectedKeys;
+    //alert("checkBoxVal:"+JSON.stringify(checkBoxVal));
+    if (checkBoxVal != null) {
+        CheckBoxFunction7();
+    } else {
+        UnCheckBoxFunction7();
     }
 }
 
@@ -1808,6 +1917,8 @@ function AS_FlexContainer_0039c2f5581b4110aa4794159d292036(eventobject, x, y) {}
 function AS_FlexContainer_0407b52146f0413f9b0212904f89215f(eventobject, x, y) {}
 
 function AS_FlexContainer_0e6293c240514d6a9a0aab5dff06be18(eventobject, x, y) {}
+
+function AS_FlexContainer_0fdcb959792b42f7b4527f29a92590bd(eventobject, x, y) {}
 
 function AS_FlexContainer_10b3ba0c5c0649979ea5122b6008bf27(eventobject, x, y) {
     mainPage.show();
@@ -2025,6 +2136,12 @@ function AS_FlexContainer_3fdb3c69d82645f4acec633fedc7f5c0(eventobject, x, y) {
 
 function AS_FlexContainer_419555f6d1944647bc52c183eef72c57(eventobject, x, y) {}
 
+function AS_FlexContainer_41d5a34b95944163a1650bf4b58c495b(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
+}
+
+function AS_FlexContainer_483c1cbbcb2f4ca5b45f075d2688f53f(eventobject, x, y) {}
+
 function AS_FlexContainer_485f51a4822a4e759c93ec4b98fe60bc(eventobject, x, y) {}
 
 function AS_FlexContainer_494ae416d6d04db69d1d2ec5f3d65c93(eventobject) {
@@ -2238,6 +2355,10 @@ function AS_FlexContainer_b3a212d52bac4901b784c4c9714714ed(eventobject) {
     mainPage.mainPageBody.navBarScroller.activityNavContainer.activityIndicator.isVisible = false;
     mainPage.mainPageBody.navBarScroller.notificationNavContainer.notificationIndicator.isVisible = false;
     mainPage.mainPageBody.navBarScroller.recommendationNavContainer.recommendationIndicator.isVisible = true;
+}
+
+function AS_FlexContainer_b3e975edbb0c4c0fbf129176c165b158(eventobject, x, y) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_FlexContainer_b650b086d238460b8818950d23cdc2ae(eventobject, x, y) {
@@ -2478,6 +2599,8 @@ function AS_Form_2283f3e743da4be7acf45a52a6bb3be2(eventobject) {
     return loadHours.call(this);
 }
 
+function AS_Form_2eb1de805ef7462a84d899dac0d917c7(eventobject) {}
+
 function AS_Form_42a11d3c371641b28b461909f0aad3b7(eventobject) {
     gblFirstTime = false;
     if (gblIsVol == true) {
@@ -2540,22 +2663,22 @@ function AS_Form_683e8141b8fd42a0898dcaa41d91db36(eventobject) {
     //mainPage.cancelRequestModalContainer.isVisible = false;
     if (kony.store.getItem("isBusOrVol") == "business") {
         // alert("a");
-        mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text = kony.store.getItem("loginBusinessName");
+        mainPage.lblBusorVolName.text = kony.store.getItem("loginBusinessName");
         var imageurlPath = kony.store.getItem("imgUrlBusiness");
         if (imageurlPath != null) {
             //alert("jst before setting"+imageurlPath);
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = "";
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = imageurlPath;
+            mainPage.appPageProfilePic.src = "";
+            mainPage.appPageProfilePic.src = imageurlPath;
         }
         //BusinessExistingOpenTaskService();
         getBusinessRequestsService();
         //BusinessRecommendationService();
     } else {
         // alert("it is volunteer");
-        mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.lblBusorVolName.text = kony.store.getItem("volLoginName");
+        mainPage.lblBusorVolName.text = kony.store.getItem("volLoginName");
         var VolimageurlPath = kony.store.getItem("imgUrlVal");
         if (VolimageurlPath != null) {
-            mainPage.mainPageBody.searchBarContainer.appHeaderTitleContainer.appPageProfilePic.src = VolimageurlPath;
+            mainPage.appPageProfilePic.src = VolimageurlPath;
         }
         getVolunteerRequestsService1();
     }
@@ -2694,6 +2817,8 @@ function AS_Image_03b6c3d236894551a5decbc650f84125(eventobject, x, y) {
     return openDialog.call(this);
 }
 
+function AS_Image_1756fa2a81574791943136eba7c5bcf8(eventobject, imagesrc, issuccess) {}
+
 function AS_Image_1934850e80344832bd5ee347f826ac37(eventobject, x, y) {
     if (kony.store.getItem("isBusOrVol") == "business") {
         var segTypeCheckforVolCall = kony.store.getItem("segmentType");
@@ -2737,6 +2862,10 @@ function AS_Image_1934850e80344832bd5ee347f826ac37(eventobject, x, y) {
 
 function AS_Image_497bdba1dfe04dfe86fb41ab04942a7b(eventobject, x, y) {}
 
+function AS_Image_7a2e5833b09d4fdba08c882796d67cc3(eventobject, x, y) {
+    return changeProfPicVolunteer.call(this);
+}
+
 function AS_Image_a8312f42b1c04e30833b7eec8aef2fdf(eventobject, x, y) {}
 
 function AS_Image_ab8b095542f24f0b8c5c734f42118072(eventobject, x, y) {}
@@ -2745,6 +2874,12 @@ function AS_Image_d114a1de352e4d47a3263593f343e3f3(eventobject, imagesrc, issucc
 
 function AS_Image_d97a71e9637c4514a8b1c7bdf35f416c(eventobject, x, y) {
     return openDialogForBusiness.call(this);
+}
+
+function AS_Image_e8e4bd72c460496080f219c3e47f1bc9(eventobject, x, y) {}
+
+function AS_Image_fd8eba264c9143189babb4bea113c3fc(eventobject, x, y) {
+    return AS_Image_fd8eba264c9143189babb4bea113c3fc(eventobject, x, y);
 }
 
 function AS_Image_fd8eba264c9143189babb4bea113c3fc(eventobject, x, y) {
@@ -2980,6 +3115,10 @@ function AS_ListBox_9ce4e80690f64aadaede38f2779e9975(eventobject) {
     //alert(tsetGetID);
 }
 
+function AS_ListBox_aa0cee9cf07a479cbfbebdb7fc2c52ef(eventobject) {
+    return onRegFieldUpdate.call(this, eventobject);
+}
+
 function AS_ListBox_b96d06ad93cc4b95b9ddb1e14225ddbf(eventobject) {
     // gblExistingTaskId=mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.selectedKeyValue;
     // var id=gblExistingTaskId[0];
@@ -3109,6 +3248,27 @@ function AS_RichText_0d0180c427964d89b1e55cf0d91967ab(eventobject, linktext, att
     }
 }
 
+function AS_RichText_0d038155c1474567aaca15e97228611d(eventobject, x, y) {
+    //alert("show profile");
+    //volunteerMyProfilePage.show();
+    //mainPage.sideBarMenuContainer.isVisible=false;
+    if (kony.store.getItem("isBusOrVol") === "business") {
+        //      businessMyProfile.businessMyProfileFooter.isVisible=false;
+        //      businessMyProfile.BusinessProfilefooterWith2Buttons.isVisible=true;
+        //businessMyProfile.show();
+        BusinessProfile.show();
+        searchResultProfile.volunteerProfileContainer.isVisible = false;
+        searchResultProfile.businessProfileContainer.isVisible = true;
+        // alert("BusinessProfile");
+    } else {
+        volunteerMyProfilePage.show();
+        //volunteerMyProfilePage.volunteerMyProfileFooter.isVisible=false;
+        volunteerMyProfilePage.volunteerMyProfileFooter2Buttons.isVisible = true;
+        mainPage.destroy();
+        //alert("volunteerprofile");
+    }
+}
+
 function AS_RichText_0e85ebcdf7a748258ca19a76e6f299bb(eventobject, x, y) {
     mainPage.eligibiltyCriteriaModalContainer.Footer.agreeBtn.isVisible = false;
     mainPage.eligibiltyCriteriaModalContainer.acceptTermsChekBoxFlex.chckBoxFlex.chckBoxx.masterData = [
@@ -3131,6 +3291,10 @@ function AS_RichText_14f32e89539e418c9d4f462b73533382(eventobject, linktext, att
         //alert("inside snippet");
         volunteerViewProfilePageService();
     }
+}
+
+function AS_RichText_157903ef62f840a68bb802b935e4b093(eventobject, linktext, attributes) {
+    kony.application.openURL(' http://commnet2.cba/Main/Corporate-Responsibility/community-support/volunteering/lightbox/Documents/2013.11 Volunteering Policy and FAQs FINAL.pdf')
 }
 
 function AS_RichText_16c11585f0de42caa968969bd4e21bde(eventobject, x, y) {
@@ -3275,6 +3439,10 @@ function AS_RichText_407b0568036d4033a12445989aaf483c(eventobject, linktext, att
     mainPage.cancelRequestModalContainer.isVisible = true;
     saveCancelVolReqId.call(this);
     saveReqForCancel.call(this);
+}
+
+function AS_RichText_4135e9845b634c85a398fc866db01008(eventobject, linktext, attributes) {
+    scheduleNewForm.outsideScheduletime.isVisible = false;
 }
 
 function AS_RichText_44420397b0474621a6cc3106c0203916(eventobject, x, y) {
@@ -3529,6 +3697,8 @@ function AS_RichText_62d2e670d3a146f58141e05208398840(eventobject, linktext, att
     }
 }
 
+function AS_RichText_63e05d4792ee49ff84a4025d858f4100(eventobject, linktext, attributes) {}
+
 function AS_RichText_64f60642307f4d68891aea6f3323788a(eventobject, linktext, attributes) {
     if (kony.store.getItem("isBusOrVol") == "volunteer") {
         IndigenousBusinessViewProfileService();
@@ -3689,6 +3859,25 @@ function AS_RichText_8be722f5bb4349d2bad731306f67b5e2(eventobject, linktext, att
 function AS_RichText_8d10f40eabc1477a8115c5167105b377(eventobject, linktext, attributes) {
     ReportingPage.show();
     alert("inside onrowclick");
+}
+
+function AS_RichText_8e341278b19c42ad86e9eb9da9e17f9d(eventobject, linktext, attributes, context) {
+    kony.ui.Alert({
+        "alertType": constants.ALERT_TYPE_CONFIRMATION,
+        "alertTitle": "Confirmation",
+        "yesLabel": "Yes",
+        "noLabel": "No",
+        "message": "Do you really want to remove the brief?",
+        "alertHandler": appUpgradeCloseOpp
+    }, {
+        "iconPosition": constants.ALERT_ICON_POSITION_RIGHT
+    });
+
+    function appUpgradeCloseOpp(response) {
+        if (response == true) {
+            unAssignedTaskSegData1();
+        } else {}
+    }
 }
 
 function AS_RichText_8ef5e3b3c4eb49679f4a1707c01ad4dd(eventobject, linktext, attributes) {
@@ -3940,23 +4129,6 @@ function AS_RichText_c7798ee8cd504f8e9878f8da0dcdfcb2(eventobject, linktext, att
         mainPage.mainPageBody.mainPageContentParent.myNotifications.isVisible = true;
         BusinessRecommendationService();
     }
-}
-
-function AS_RichText_c97243dc6e13409ebf46ec8ef34c1357(eventobject, linktext, attributes) {
-    function SHOW_ALERT_ide_onClick_23e268eef2df407795877d3fa945a80a_True() {}
-
-    function SHOW_ALERT_ide_onClick_23e268eef2df407795877d3fa945a80a_Callback() {
-        SHOW_ALERT_ide_onClick_23e268eef2df407795877d3fa945a80a_True()
-    }
-    kony.ui.Alert({
-        "alertType": constants.ALERT_TYPE_INFO,
-        "alertTitle": "Corporate info!",
-        "yesLabel": "Corporate info!",
-        "message": "Corporate info!",
-        "alertHandler": SHOW_ALERT_ide_onClick_23e268eef2df407795877d3fa945a80a_Callback
-    }, {
-        "iconPosition": constants.ALERT_ICON_POSITION_LEFT
-    })
 }
 
 function AS_RichText_c99dcca99d354e5e994e5517463e6d6f(eventobject, linktext, attributes) {
@@ -4372,6 +4544,10 @@ function AS_Segment_1a35f0773f8f485484cb32855b01b64f(eventobject, sectionNumber,
     return removeSkillForVolUpdate.call(this, eventobject);
 }
 
+function AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5(eventobject, sectionNumber, rowNumber) {
+    return removeSchedule.call(this, eventobject);
+}
+
 function AS_Segment_40a3c921256e40bd85f3e68049e6ad36(eventobject, sectionNumber, rowNumber) {
     if (gblIsVol == true) {
         var selReqId = searchPage.volunteerdataSegment.selectedRowItems[0].volunteerId;
@@ -4562,6 +4738,10 @@ function AS_TextField_3d1a1661e3ae41369e8d869dba99f78e(eventobject, changedtext)
     return onRegFieldUpdate.call(this, eventobject);
 }
 
+function AS_TextField_429541053c19437aa1b1a69382e43af3(eventobject, changedtext) {
+    return onRegFieldUpdateForUpdation.call(this, eventobject);
+}
+
 function AS_TextField_547d8f0aabe647b4b0c0ba62b03a093c(eventobject, changedtext) {
     if (gblIsOpp == true) {
         changeOppSearch();
@@ -4586,7 +4766,15 @@ function AS_TextField_6e61c630845840748ff7f9ba9ac7033f(eventobject, changedtext)
     return onRegFieldUpdateForUpdation.call(this, eventobject);
 }
 
+function AS_TextField_917b4c42b41347eb9522667119b2d9e6(eventobject, changedtext) {
+    return onRegFieldUpdateForUpdation.call(this, eventobject);
+}
+
 function AS_TextField_93e59fd514bc461fb9433771e452ac55(eventobject, changedtext) {
+    return onRegFieldUpdateForUpdation.call(this, eventobject);
+}
+
+function AS_TextField_96bd16a6e9b8416aa2b1b88a320dac72(eventobject, changedtext) {
     return onRegFieldUpdateForUpdation.call(this, eventobject);
 }
 
@@ -4596,10 +4784,6 @@ function AS_TextField_aa024ef3cb084fa9a2b41693f0bf3cdc(eventobject, changedtext)
 
 function AS_TextField_ae290058a08a4ad0a0459f12d784ff52(eventobject, changedtext) {
     return onRegFieldUpdateForUpdation.call(this, eventobject);
-}
-
-function AS_TextField_b0e239699a344fa4af76f618d418760f(eventobject, changedtext) {
-    return onRegFieldUpdate.call(this, eventobject);
 }
 
 function AS_TextField_bac558627a05452b99bdf393eae66bc8(eventobject, changedtext) {

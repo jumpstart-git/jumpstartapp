@@ -26,7 +26,8 @@
                 "value": " \"myOpenTasks\""
             }],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

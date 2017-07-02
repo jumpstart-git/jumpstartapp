@@ -168,7 +168,4 @@ function pop1Globals() {
         },
         "windowSoftInputMode": constants.POPUP_ADJUST_PAN
     });
-    pop1.info = {
-        "kuid": "852031d92ce24fa7b437c860523b4d7d"
-    };
 };

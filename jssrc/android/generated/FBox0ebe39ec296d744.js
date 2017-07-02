@@ -6,7 +6,9 @@ function initializeFBox0ebe39ec296d744() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0ebe39ec296d744.setDefaultUnit(kony.flex.DP);
     var segmentOuterContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -20,7 +22,9 @@ function initializeFBox0ebe39ec296d744() {
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     segmentOuterContainer.setDefaultUnit(kony.flex.DP);
     var dateContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -34,7 +38,9 @@ function initializeFBox0ebe39ec296d744() {
         "top": "0%",
         "width": "31%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     dateContainer.setDefaultUnit(kony.flex.DP);
     var lblDate = new kony.ui.Label({
         "centerX": "50%",
@@ -77,7 +83,9 @@ function initializeFBox0ebe39ec296d744() {
         "top": "0%",
         "width": "33%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     segWorkingHoursContainer.setDefaultUnit(kony.flex.DP);
     var lblWorkingHours = new kony.ui.Label({
         "centerX": "50%",
@@ -119,7 +127,9 @@ function initializeFBox0ebe39ec296d744() {
         "top": "0%",
         "width": "33%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     segNonWorkingContainer.setDefaultUnit(kony.flex.DP);
     var lblNonWorkingHours = new kony.ui.Label({
         "centerX": "50%",

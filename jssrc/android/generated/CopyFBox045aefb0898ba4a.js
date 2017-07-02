@@ -6,7 +6,9 @@ function initializeCopyFBox045aefb0898ba4a() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox045aefb0898ba4a.setDefaultUnit(kony.flex.DP);
     var lblSchedule = new kony.ui.Label({
         "id": "lblSchedule",

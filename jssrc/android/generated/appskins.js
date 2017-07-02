@@ -1,5 +1,7 @@
 function skinsInit() {
+    BlackText = "BlackText";
     ButtonGlossRed081a9b116361948 = "ButtonGlossRed081a9b116361948";
+    CopyVolunteerProfilePageChangePassword05c4ae13b158c40 = "CopyVolunteerProfilePageChangePassword05c4ae13b158c40";
     CopybtnInternational032d1ca1c8c0c4c = "CopybtnInternational032d1ca1c8c0c4c";
     CopybtnSmallandMediumEnterprises01b41c0d7ea364e = "CopybtnSmallandMediumEnterprises01b41c0d7ea364e";
     CopybtnSmallandMediumEnterprises0ecb61d539fa440 = "CopybtnSmallandMediumEnterprises0ecb61d539fa440";
@@ -33,6 +35,7 @@ function skinsInit() {
     CopyrtRequestsActionSkin0ecbb8de0099340 = "CopyrtRequestsActionSkin0ecbb8de0099340";
     Copyseg006d4a73e011048 = "Copyseg006d4a73e011048";
     Copyseg00fedecd89d6d4d = "Copyseg00fedecd89d6d4d";
+    Copyseg0182dee1cd0234e = "Copyseg0182dee1cd0234e";
     Copyseg07ddee451e42741 = "Copyseg07ddee451e42741";
     Copyseg096abd1bbab4549 = "Copyseg096abd1bbab4549";
     Copyseg0e44cedc5151547 = "Copyseg0e44cedc5151547";
@@ -47,6 +50,7 @@ function skinsInit() {
     CopyslButtonGlossBlue01bd452be675547 = "CopyslButtonGlossBlue01bd452be675547";
     CopyslButtonGlossBlue02c7c6d4109894f = "CopyslButtonGlossBlue02c7c6d4109894f";
     CopyslButtonGlossBlue0353f0e1a33e147 = "CopyslButtonGlossBlue0353f0e1a33e147";
+    CopyslButtonGlossBlue035ff560f53dc4e = "CopyslButtonGlossBlue035ff560f53dc4e";
     CopyslButtonGlossBlue037f517642dbb49 = "CopyslButtonGlossBlue037f517642dbb49";
     CopyslButtonGlossBlue03803f6ea3ee745 = "CopyslButtonGlossBlue03803f6ea3ee745";
     CopyslButtonGlossBlue04695bbc9f36a40 = "CopyslButtonGlossBlue04695bbc9f36a40";
@@ -102,6 +106,7 @@ function skinsInit() {
     CopyslButtonGlossRed06db549818c7f4a = "CopyslButtonGlossRed06db549818c7f4a";
     CopyslButtonGlossRed08abba14bc86e4c = "CopyslButtonGlossRed08abba14bc86e4c";
     CopyslButtonGlossRed08c10eb8b472641 = "CopyslButtonGlossRed08c10eb8b472641";
+    CopyslButtonGlossRed08c85b07b0e7949 = "CopyslButtonGlossRed08c85b07b0e7949";
     CopyslButtonGlossRed08df36053b2d74b = "CopyslButtonGlossRed08df36053b2d74b";
     CopyslButtonGlossRed09189a4d54cfe42 = "CopyslButtonGlossRed09189a4d54cfe42";
     CopyslButtonGlossRed095dcdba6f57e4c = "CopyslButtonGlossRed095dcdba6f57e4c";
@@ -138,6 +143,7 @@ function skinsInit() {
     CopyslFbox025bfb307840c4d = "CopyslFbox025bfb307840c4d";
     CopyslFbox026726f85603440 = "CopyslFbox026726f85603440";
     CopyslFbox027bfefdb3d9f4e = "CopyslFbox027bfefdb3d9f4e";
+    CopyslFbox028b40df564a245 = "CopyslFbox028b40df564a245";
     CopyslFbox0298ee6f8ba5249 = "CopyslFbox0298ee6f8ba5249";
     CopyslFbox02c344f41a6b645 = "CopyslFbox02c344f41a6b645";
     CopyslFbox02df153eb178940 = "CopyslFbox02df153eb178940";
@@ -147,6 +153,7 @@ function skinsInit() {
     CopyslFbox03397d5d0805b4c = "CopyslFbox03397d5d0805b4c";
     CopyslFbox0382bdbd8cfc442 = "CopyslFbox0382bdbd8cfc442";
     CopyslFbox038cb36c9175e46 = "CopyslFbox038cb36c9175e46";
+    CopyslFbox03a53d6e2165d4c = "CopyslFbox03a53d6e2165d4c";
     CopyslFbox03f278f680a1e4d = "CopyslFbox03f278f680a1e4d";
     CopyslFbox048f5d0e9995346 = "CopyslFbox048f5d0e9995346";
     CopyslFbox04c06531f056a4c = "CopyslFbox04c06531f056a4c";
@@ -154,6 +161,7 @@ function skinsInit() {
     CopyslFbox0557f0306dfed40 = "CopyslFbox0557f0306dfed40";
     CopyslFbox05cacec4e49a24b = "CopyslFbox05cacec4e49a24b";
     CopyslFbox05dab22d03c964d = "CopyslFbox05dab22d03c964d";
+    CopyslFbox05eed8a2bc7754f = "CopyslFbox05eed8a2bc7754f";
     CopyslFbox064b8864c652a4f = "CopyslFbox064b8864c652a4f";
     CopyslFbox068b5deec6ee545 = "CopyslFbox068b5deec6ee545";
     CopyslFbox06ae822e76f8143 = "CopyslFbox06ae822e76f8143";
@@ -168,6 +176,7 @@ function skinsInit() {
     CopyslFbox0802925ab966641 = "CopyslFbox0802925ab966641";
     CopyslFbox0859f08e6a7e34f = "CopyslFbox0859f08e6a7e34f";
     CopyslFbox087609f16e0a84e = "CopyslFbox087609f16e0a84e";
+    CopyslFbox088f0e0b504f945 = "CopyslFbox088f0e0b504f945";
     CopyslFbox08b63a7913ffa45 = "CopyslFbox08b63a7913ffa45";
     CopyslFbox09233905a640b4f = "CopyslFbox09233905a640b4f";
     CopyslFbox09342fce4a86745 = "CopyslFbox09342fce4a86745";
@@ -187,6 +196,7 @@ function skinsInit() {
     CopyslFbox0b3f4edbd6e4d46 = "CopyslFbox0b3f4edbd6e4d46";
     CopyslFbox0b6214df6cd2e41 = "CopyslFbox0b6214df6cd2e41";
     CopyslFbox0bdacea7888a540 = "CopyslFbox0bdacea7888a540";
+    CopyslFbox0be7db7bb469743 = "CopyslFbox0be7db7bb469743";
     CopyslFbox0bf0ed6dca93f4e = "CopyslFbox0bf0ed6dca93f4e";
     CopyslFbox0c2f875fb900c47 = "CopyslFbox0c2f875fb900c47";
     CopyslFbox0c48ec40e8c5d49 = "CopyslFbox0c48ec40e8c5d49";
@@ -194,6 +204,7 @@ function skinsInit() {
     CopyslFbox0c9719fd7725f4f = "CopyslFbox0c9719fd7725f4f";
     CopyslFbox0cb4907050e1541 = "CopyslFbox0cb4907050e1541";
     CopyslFbox0cd4cb9d5590d42 = "CopyslFbox0cd4cb9d5590d42";
+    CopyslFbox0cda75639c70746 = "CopyslFbox0cda75639c70746";
     CopyslFbox0d21c5797519b4e = "CopyslFbox0d21c5797519b4e";
     CopyslFbox0d97fcb4ae3bd4b = "CopyslFbox0d97fcb4ae3bd4b";
     CopyslFbox0da4cef90937f49 = "CopyslFbox0da4cef90937f49";
@@ -480,6 +491,8 @@ function skinsInit() {
     CopytabCanvas0369de13dc59641 = "CopytabCanvas0369de13dc59641";
     CopytabCanvas080472ae4451941 = "CopytabCanvas080472ae4451941";
     CopytabCanvasInactive039b435cc6d1546 = "CopytabCanvasInactive039b435cc6d1546";
+    JumpStartVolChangePassword = "JumpStartVolChangePassword";
+    VolunteerProfilePageChangePassword = "VolunteerProfilePageChangePassword";
     acceptedRequestParentSkin = "acceptedRequestParentSkin";
     acceptedRequestStatusSkin = "acceptedRequestStatusSkin";
     bgColor242 = "bgColor242";
@@ -535,7 +548,6 @@ function skinsInit() {
     jumpStartLabel80 = "jumpStartLabel80";
     jumpStartLabel90 = "jumpStartLabel90";
     jumpStartLabelGreen100 = "jumpStartLabelGreen100";
-    jumpStartLabelGreen120 = "jumpStartLabelGreen120";
     jumpStartLabelGreen90 = "jumpStartLabelGreen90";
     jumpStartLabelOrange130 = "jumpStartLabelOrange130";
     jumpStartLabelOrange140 = "jumpStartLabelOrange140";
@@ -572,16 +584,21 @@ function skinsInit() {
     ngnyBackButton = "ngnyBackButton";
     ngnyDisabledGreenButton = "ngnyDisabledGreenButton";
     ngnyGrayLinkText = "ngnyGrayLinkText";
+    ngnyGreenBackButton = "ngnyGreenBackButton";
     ngnyGreenFlexBG = "ngnyGreenFlexBG";
+    ngnyGreenLabel = "ngnyGreenLabel";
     ngnyGreenRegistrationButton = "ngnyGreenRegistrationButton";
     ngnyGreyFlexBG = "ngnyGreyFlexBG";
     ngnyLargeOrangeLabelText = "ngnyLargeOrangeLabelText";
     ngnyOrangeHeaderText = "ngnyOrangeHeaderText";
     ngnyOrangeLabelText = "ngnyOrangeLabelText";
+    ngnyPressedBackButton = "ngnyPressedBackButton";
     ngnyPressedGreenButton = "ngnyPressedGreenButton";
     ngnyPressedRegistrationButton = "ngnyPressedRegistrationButton";
+    ngnyPressedSearchButton = "ngnyPressedSearchButton";
     ngnyPrimaryGreenButton = "ngnyPrimaryGreenButton";
     ngnyScheduleButton = "ngnyScheduleButton";
+    ngnySearchButton = "ngnySearchButton";
     ngnyWhiteFlexBG = "ngnyWhiteFlexBG";
     ngnyWhiteLabelText = "ngnyWhiteLabelText";
     ngnyWhiteLinkText = "ngnyWhiteLinkText";

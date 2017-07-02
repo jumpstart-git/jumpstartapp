@@ -26,7 +26,8 @@
                 "value": "\"acceptedRequests\""
             }],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

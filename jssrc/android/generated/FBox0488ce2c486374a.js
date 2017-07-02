@@ -6,7 +6,9 @@ function initializeFBox0488ce2c486374a() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_HORIZONTAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0488ce2c486374a.setDefaultUnit(kony.flex.DP);
     var FlexContainer09f0e64b33f8642 = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -19,7 +21,9 @@ function initializeFBox0488ce2c486374a() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "80%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FlexContainer09f0e64b33f8642.setDefaultUnit(kony.flex.DP);
     var Label06e57014debcc4e = new kony.ui.Label({
         "centerY": "50%",
@@ -59,7 +63,9 @@ function initializeFBox0488ce2c486374a() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "20%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FlexContainer0b1f37063d1c744.setDefaultUnit(kony.flex.DP);
     var Image0fa57b85abcab49 = new kony.ui.Image2({
         "centerY": "50%",

@@ -404,7 +404,7 @@ function getLoginSuccessCallback(gblLoginData1) {
             //Start of defect D058
             var companyName=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].companyName;
             var emailAddress=gblLoginData.LoginBusinessVolunteer[0].volunteer[0].VolunteersDTO[0].emailAddress;
-            var domainsList = ["@hpe.com","@dxc.com","@supplynation.org.au","@cba.com.au"];
+            var domainsList = ["@hpe.com","@supplynation.org.au","@cba.com.au","@microsoft.com"];
             var companyNameList = ["HPE", "SupplyNation", "CBA", "DXC"];
             var countEmail = 0;
             var countCompany = 0;

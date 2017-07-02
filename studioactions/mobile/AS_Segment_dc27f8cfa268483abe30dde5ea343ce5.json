@@ -26,7 +26,8 @@
             "display": "showBusinessOpenTaskDetails",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onRowClick_60771238d6584a59a7d2e626c7ee48e4",
             "type": "ADD_SNIPPET",

@@ -29,7 +29,8 @@
             "display": "VolAcceptTaskBtn",
             "inputparams": [],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "NAVIGATE_TO_FORM__ide_onClick_04dbf4c97aa348938b9cd181ac2a10e2",
             "type": "NAVIGATE_TO_FORM",

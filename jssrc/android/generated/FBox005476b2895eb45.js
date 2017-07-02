@@ -6,7 +6,9 @@ function initializeFBox005476b2895eb45() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox005476b2895eb45.setDefaultUnit(kony.flex.DP);
     var lblSuggestions = new kony.ui.Label({
         "id": "lblSuggestions",

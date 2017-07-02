@@ -608,8 +608,4 @@ function registrationSummaryPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationSummaryPage.info = {
-        "notesId": "288297cd3faf43c5aa0f4c1cb5cd4ef1",
-        "kuid": "288297cd3faf43c5aa0f4c1cb5cd4ef1"
-    };
 };

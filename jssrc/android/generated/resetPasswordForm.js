@@ -79,7 +79,7 @@ function addWidgetsresetPasswordForm() {
         "isVisible": true,
         "left": "0%",
         "skin": "CopyslLabel040102c3d3b924d",
-        "text": "Back to login",
+        "text": "Back to Login",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -292,7 +292,4 @@ function resetPasswordFormGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    resetPasswordForm.info = {
-        "kuid": "8d1a8a5e3c8c4962afd0af44622433f3"
-    };
 };

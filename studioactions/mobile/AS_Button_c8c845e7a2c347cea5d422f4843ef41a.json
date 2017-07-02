@@ -36,7 +36,8 @@
             "inputparams": [],
             "parentId": "SHOW_ALERT_ide_onClick_c59ef14647f44f55a09b2e79dabc0781",
             "callbackType": "True",
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

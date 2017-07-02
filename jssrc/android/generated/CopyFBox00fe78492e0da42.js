@@ -7,7 +7,9 @@ function initializeCopyFBox00fe78492e0da42() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox00fe78492e0da42.setDefaultUnit(kony.flex.DP);
     var myClosedTaskTop = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -21,7 +23,9 @@ function initializeCopyFBox00fe78492e0da42() {
         "skin": "slFbox",
         "top": "10dp",
         "width": "95%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myClosedTaskTop.setDefaultUnit(kony.flex.DP);
     var myClosedTaskProfileImageParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -34,7 +38,9 @@ function initializeCopyFBox00fe78492e0da42() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "25%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myClosedTaskProfileImageParent.setDefaultUnit(kony.flex.DP);
     var closedTaskPersonProfilePic = new kony.ui.Image2({
         "centerX": "50%",
@@ -69,7 +75,9 @@ function initializeCopyFBox00fe78492e0da42() {
         "top": "0dp",
         "width": "78%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myClosedTaskDetailParent.setDefaultUnit(kony.flex.DP);
     var closedTaskName = new kony.ui.Label({
         "id": "closedTaskName",

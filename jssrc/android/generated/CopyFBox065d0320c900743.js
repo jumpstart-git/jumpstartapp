@@ -7,7 +7,9 @@ function initializeCopyFBox065d0320c900743() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox065d0320c900743.setDefaultUnit(kony.flex.DP);
     var taskContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -20,7 +22,9 @@ function initializeCopyFBox065d0320c900743() {
         "skin": "slFbox",
         "top": "10dp",
         "width": "95%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     taskContainer.setDefaultUnit(kony.flex.DP);
     var taskProfileImageContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -33,7 +37,9 @@ function initializeCopyFBox065d0320c900743() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "25%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     taskProfileImageContainer.setDefaultUnit(kony.flex.DP);
     var profilePic = new kony.ui.Image2({
         "centerX": "50%",
@@ -68,7 +74,9 @@ function initializeCopyFBox065d0320c900743() {
         "top": "0dp",
         "width": "78%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     unassignedTaskParentContainer.setDefaultUnit(kony.flex.DP);
     var taskName = new kony.ui.Label({
         "id": "taskName",
@@ -232,7 +240,9 @@ function initializeCopyFBox065d0320c900743() {
         "top": "1dp",
         "width": "97.01%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CreatedDateContainer.setDefaultUnit(kony.flex.DP);
     var createdDate = new kony.ui.Label({
         "id": "createdDate",
@@ -298,7 +308,9 @@ function initializeCopyFBox065d0320c900743() {
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     EditAndCloseContainer.setDefaultUnit(kony.flex.DP);
     var editRichText = new kony.ui.RichText({
         "id": "editRichText",
@@ -324,12 +336,13 @@ function initializeCopyFBox065d0320c900743() {
     var closeRichText = new kony.ui.RichText({
         "id": "closeRichText",
         "isVisible": true,
-        "left": "70dp",
+        "left": 50,
         "onClick": AS_RichText_d6ff08f069db47e1b086860d0827fe7b,
+        "right": 0,
         "skin": "CopyslRichText007d9b9825fd548",
         "text": "RichText",
         "top": "6dp",
-        "width": "35dp",
+        "width": "50dp",
         "zIndex": 1
     }, {
         "containerWeight": 100,

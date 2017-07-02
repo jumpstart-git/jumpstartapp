@@ -14,7 +14,8 @@
             "display": "saveClosedTaskDetails",
             "inputparams": [],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

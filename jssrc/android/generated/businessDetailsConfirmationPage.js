@@ -990,7 +990,4 @@ function businessDetailsConfirmationPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    businessDetailsConfirmationPage.info = {
-        "kuid": "731354b5d5504d5daac5e9457a384ba0"
-    };
 };

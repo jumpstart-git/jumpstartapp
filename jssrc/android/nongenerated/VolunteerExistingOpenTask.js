@@ -3,14 +3,14 @@ mobileFabricConfigurationForVolunteerExistingOpenTask = {
     appKey: "b2af2c81b9433dab6ce8f1cf7ec558ba",
     appSecret: "da2e2dc029af1c2eedabd208d8469e7d",
     serviceURL: "https://100014964.auth.konycloud.com/appconfig",
-    //appKey:"5fd11c44af43e233f2a9bb09e0100f47", 
-    //appSecret:"c600a59925b36419de1546056cd21557", 
+    //appKey:"5fd11c44af43e233f2a9bb09e0100f47",
+    //appSecret:"c600a59925b36419de1546056cd21557",
     //serviceURL:"https://100000507.auth.konycloud.com/appconfig",
     integrationServices: [{
         service: "GetMyActivityOpenTasks",
         operations: ["getOpenTaskByVolunteerId"]
     }],
-    /*identityServices: 
+    /*identityServices:
                                 [
                                                 {
                                                                 service:"userstore",
@@ -139,8 +139,8 @@ function getVolunteerExistingOpenTaskSuccessCallback(gblVolunteerExistingOpenTas
                     gblExistingOpenTaskResponseForVol = gblVolunteerExistingOpenTaskList;
                     setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol);
                     // var gblExistingOpenTaskResponseForVol=JSON.stringify(VolunteerExistingTaskTaskList);
-                    //Setting the segment widgetdataMap 
-                    //          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"}; 
+                    //Setting the segment widgetdataMap
+                    //          frmFoxNews.segNewsTitle.widgetDataMap={lblTitle:"title",hiddenDesc:"desc",hiddenPubDate:"pubDate"};
                     //      //      Setting the data to the segment
                     //      frmFoxNews.segNewsTitle.setVisibility(true);
                     //          frmFoxNews.segNewsTitle.setData(VolunteerExistingTaskTaskList.MessageDTO.news_item.title);
@@ -165,7 +165,7 @@ function getVolunteerExistingOpenTaskErrorCallback(error) {
 
 function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol) {
     try {
-        if (gblExistingOpenTaskResponseForVol != "undefined" && gblExistingOpenTaskResponseForVol != undefined) {
+        if (gblExistingOpenTaskResponseForVol !== "undefined" && gblExistingOpenTaskResponseForVol !== undefined) {
             // alert("InSide setExistingOpenTaskDataForVol"+JSON.stringify(gblExistingOpenTaskResponseForVol));
             //need to map data for both open and closed tasks
             // alert("m1");
@@ -175,7 +175,7 @@ function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol) {
                 var len = gblExistingOpenTaskResponseForVol["taskList"].length;
                 //alert(len);
                 // if(){} need to map data for both open and closed tasks
-                //  alert("Response  -----"+JSON.stringify(gblExistingOpenTaskResponseForVol["taskList"]));  
+                //  alert("Response  -----"+JSON.stringify(gblExistingOpenTaskResponseForVol["taskList"]));
                 var tempArray = [];
                 tempArray.push("");
                 tempArray.push("Select");
@@ -198,7 +198,7 @@ function setExistingOpenTaskDataForVol(gblExistingOpenTaskResponseForVol) {
                 // mainPage.startEngagementModalContainer.startEngagementModalHeader.startEngagmentHeaderAssignToTask.assignToExistingTaskListBoxContainer.existingTaskListBox.masterData=tempExistingOpenTaskDataForVol;
             }
             kony.application.dismissLoadingScreen();
-            //VolunteerCloseTaskService ();  
+            //VolunteerCloseTaskService ();
         }
     } catch (e) {
         //just to avoid undefined type error

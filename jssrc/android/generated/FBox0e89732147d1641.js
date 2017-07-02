@@ -7,7 +7,9 @@ function initializeFBox0e89732147d1641() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0e89732147d1641.setDefaultUnit(kony.flex.DP);
     var volunteerMyProfileSkillItem = new kony.ui.Label({
         "height": "30dp",

@@ -545,7 +545,7 @@ function addWidgetsBusinessProfile() {
         "id": "lblMore",
         "isVisible": false,
         "left": "10dp",
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "more",
         "textStyle": {
             "letterSpacing": 0,
@@ -1408,7 +1408,4 @@ function BusinessProfileGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    BusinessProfile.info = {
-        "kuid": "e77f50fcef0d46fe9acf13a5e11ac7ea"
-    };
 };

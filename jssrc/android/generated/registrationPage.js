@@ -66,7 +66,7 @@ function addWidgetsregistrationPage() {
         "centerX": "50%",
         "id": "regHeaderPicLabel",
         "isVisible": true,
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "Click the above icon to upload a profile image",
         "textStyle": {
             "letterSpacing": 0,
@@ -287,8 +287,4 @@ function registrationPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationPage.info = {
-        "notesId": "45590dbf8d50498f8dac0f82dd6523c7",
-        "kuid": "45590dbf8d50498f8dac0f82dd6523c7"
-    };
 };

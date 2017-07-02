@@ -194,11 +194,22 @@ function validatePassword() {
 }
 //Start of D058
 function validateEmailDomain() {
+    var domains = ["@hpe.com", "@dxc.com", "@supplynation.org.au", "@cba.com.au"];
     var emailAddress = volunteerRegObject.emailAddress;
-    if (emailAddress.indexOf("@hpe.com") < 0 && emailAddress.indexOf("@dxc.com") < 0 && emailAddress.indexOf("@supplynation.org.au") < 0 && emailAddress.indexOf("@cba.com.au") < 0) {
-        return false;
+    var count = 0;
+    for (var i = 0; i < domains.length; i++) {
+        if (emailAddress.indexOf(domains[i]) >= 0) {
+            count++;
+        }
     }
-    return true;
+    // if (emailAddress.indexOf("@hpe.com")<0 && emailAddress.indexOf("@dxc.com")<0 && emailAddress.indexOf("@supplynation.org.au")<0 && emailAddress.indexOf("@cba.com.au")<0)
+    // {
+    //   return false;
+    // }
+    if (count > 0) {
+        return true;
+    }
+    return false;
 }
 //End of D058
 function submitAccountInfo() {
@@ -234,7 +245,10 @@ function submitAccountInfo() {
     //Start of D058
     var isValidateEmailDomain = validateEmailDomain();
     if (!isValidateEmailDomain) {
-        validationAlert("Warning", "Please make sure your email address is associated with either '@dxc.com', '@supplynation.org.au', or '@cba.com.au'.");
+        //Start of D051
+        var domain = volunteerRegObject.emailAddress.substr(volunteerRegObject.emailAddress.indexOf("@"), volunteerRegObject.emailAddress.length);
+        validationAlert("Warning", "The domain of the email ,'" + domain + "', you have entered is not registered.");
+        //End of D051
         return false;
     }
     if (isAccountInfoComplete && isValidEmail && isEqualPassword && isValidPassword == 5 && isValidateEmailDomain) {
@@ -636,7 +650,10 @@ function submitRegistration() {
     gblRegistrationDetails["emailAddress"] = volunteerRegObject.emailAddress;
     gblRegistrationDetails["state"] = volunteerRegObject.state;
     gblRegistrationDetails["userName"] = volunteerRegObject.emailAddress;
-    gblRegistrationDetails["password"] = volunteerRegObject.password;
+    //gblRegistrationDetails["password"]=volunteerRegObject.password;
+    //For password hashing
+    gblRegistrationDetails["password"] = kony.crypto.createHash("sha256", volunteerRegObject.password);
+    //End of password hashing
     gblRegistrationDetails["companyName"] = volunteerRegObject.companyName;
     gblRegistrationDetails["role"] = volunteerRegObject.role;
     gblRegistrationDetails["businessUnit"] = volunteerRegObject.businessUnit;

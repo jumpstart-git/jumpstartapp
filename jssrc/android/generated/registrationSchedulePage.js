@@ -645,7 +645,4 @@ function registrationSchedulePageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationSchedulePage.info = {
-        "kuid": "a246a313e1db4789b86d057ba020f115"
-    };
 };

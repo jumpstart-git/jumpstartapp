@@ -7,7 +7,9 @@ function initializeFBox0788b6c38d49d4b() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0788b6c38d49d4b.setDefaultUnit(kony.flex.DP);
     var myOpenTaskTop = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -20,7 +22,9 @@ function initializeFBox0788b6c38d49d4b() {
         "skin": "slFbox",
         "top": "10dp",
         "width": "95%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myOpenTaskTop.setDefaultUnit(kony.flex.DP);
     var myOpenTaskProfileImageParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -33,7 +37,9 @@ function initializeFBox0788b6c38d49d4b() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "25%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myOpenTaskProfileImageParent.setDefaultUnit(kony.flex.DP);
     var openTaskPersonProfilePic = new kony.ui.Image2({
         "centerX": "50%",
@@ -66,9 +72,11 @@ function initializeFBox0788b6c38d49d4b() {
         "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": "78%",
+        "width": "75%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     myOpenTaskDetailParent.setDefaultUnit(kony.flex.DP);
     var openTaskName = new kony.ui.Label({
         "id": "openTaskName",
@@ -99,14 +107,16 @@ function initializeFBox0788b6c38d49d4b() {
         "id": "openTaskBusiness",
         "isVisible": true,
         "left": "3%",
+        "maxNumberOfLines": 2,
         "skin": "CopyslLabel0236bd2e010ec4a",
         "text": "Label",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
         },
+        "textTruncatePosition": constants.TEXT_TRUNCATE_END,
         "top": "12px",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "100%",
         "zIndex": 1
     }, {
         "containerWeight": 100,

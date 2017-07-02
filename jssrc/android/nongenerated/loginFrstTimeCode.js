@@ -147,8 +147,12 @@ function setLoginData() {
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileFirstNameInput.text = firstName;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileLastNameInput.text = lastName;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileUsernameInput.text = userName;
-    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text = password;
-    volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text = password;
+    //Will be stored in a hidden field.
+    volunteerMyProfilePage.volunteerMyProfileBody.StoreOriginalPassword.text = password;
+    //Bad practice for password hashing
+    //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfilePasswordInput.text= password;
+    //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileReenterPasswordInput.text= password;
+    //Bad practice for password hashing
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileWorkDetailsInput.text = ""; //workDetails;
     volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileAboutMeInput.text = ""; //aboutMe;
     //volunteerMyProfilePage.volunteerMyProfileBody.volunteerMyProfileCompanyInput.text= companyName;

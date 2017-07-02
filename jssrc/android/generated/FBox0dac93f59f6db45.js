@@ -6,7 +6,9 @@ function initializeFBox0dac93f59f6db45() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0dac93f59f6db45.setDefaultUnit(kony.flex.DP);
     var Label084c31a2a8bb84a = new kony.ui.Label({
         "centerY": "50%",

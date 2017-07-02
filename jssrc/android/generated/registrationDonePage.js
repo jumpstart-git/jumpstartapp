@@ -172,7 +172,4 @@ function registrationDonePageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationDonePage.info = {
-        "kuid": "5f8dd29658ec45b489d5e0dfa91b4580"
-    };
 };

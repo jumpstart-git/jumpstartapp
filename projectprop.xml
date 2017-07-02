@@ -1,9 +1,7 @@
 <properties>
     <attributes name="apmformExit" value="false"/>
-    <attributes name="cloud_web_xml_custom_filters" value=""/>
     <attributes name="wp81spublisherdisplaynamekey" value="KonyLabs"/>
     <attributes name="SET_WALLPAPER_HINTS" value="false"/>
-    <attributes name="cloud_web_xml_custom_listeners" value=""/>
     <attributes name="BIND_REMOTEVIEWS" value="false"/>
     <attributes name="mapkey" value=""/>
     <attributes name="wp10lockscreennotificationskey" value="Not set"/>
@@ -14,7 +12,6 @@
     <attributes name="wp8fliplargekey" value=""/>
     <attributes name="READ_SMS" value="false"/>
     <attributes name="DEVICE_POWER" value="false"/>
-    <attributes name="cloud_selected_ipaddress_list" value=""/>
     <attributes name="tcphoneformatindicator" value="false"/>
     <attributes name="antialiaseddrawing" value="false"/>
     <attributes name="enterpriseAuthentication" value="false"/>
@@ -53,7 +50,7 @@
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value="false"/>
     <attributes name="appnamekey" value="JumpStart"/>
-    <attributes name="currentgaversion" value="7.2.1.GA_v201612132236"/>
+    <attributes name="currentgaversion" value="7.3.0.GA_v201705311941_r5"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
     <attributes name="SET_TIME" value="false"/>
@@ -84,7 +81,6 @@
     <attributes name="fgcolorkey" value="255,255,255"/>
     <attributes name="iosrespectimagesizecorrection" value="true"/>
     <attributes name="winmangotiletitlekey" value="JumpStartAbort1"/>
-    <attributes name="svcdocfromenvironment" value="true"/>
     <attributes name="Removable_Storage" value="true"/>
     <attributes name="win10pfxkey" value=""/>
     <attributes name="access_shared" value="false"/>
@@ -95,10 +91,11 @@
     <attributes name="apmtouchorclick" value="false"/>
     <attributes name="enablecharts2d3diphone" value="false"/>
     <attributes name="internetClientServer" value="false"/>
+    <attributes name="activityattrs" value=""/>
     <attributes name="tcbb440basefontsize" value="12"/>
+    <attributes name="wintaburlscheme" value=""/>
     <attributes name="extendTop" value="false"/>
     <attributes name="wp8tilestemplatekey" value="FLIP_TILE"/>
-    <attributes name="certs_trust_store_type" value="JKS"/>
     <attributes name="SET_ALARM" value="false"/>
     <attributes name="PROCESS_OUTGOING_CALLS" value="false"/>
     <attributes name="ID_RESOLUTION_WXGA" value="true"/>
@@ -120,6 +117,8 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
+    <attributes name="lastmodifiedtime" value="1497321120430"/>
+    <attributes name="hybridhttpsportkey" value=""/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -149,6 +148,7 @@
     <attributes name="secondarytilefunctionkey" value="None"/>
     <attributes name="Internet(Client_AND_Server)" value="true"/>
     <attributes name="CAMERA" value="false"/>
+    <attributes name="winphoneurlscheme" value=""/>
     <attributes name="ID_CAP_CONTACTS" value="true"/>
     <attributes name="ID_CAP_PHONEDIALER" value="true"/>
     <attributes name="wp10shortnamekey" value="JumpStartAbort1"/>
@@ -156,7 +156,7 @@
     <attributes name="WP8_ID_CAP_REMOVABLE_STORAGE" value="true"/>
     <attributes name="WP8_ID_CAP_LOCATION" value="true"/>
     <attributes name="wp10widelogokey" value=""/>
-    <attributes name="protectedmodeenabled_android" value="true"/>
+    <attributes name="protectedmodeenabled_android" value="false"/>
     <attributes name="Documents_Library_Access" value="true"/>
     <attributes name="CHANGE_COMPONENT_ENABLED_STATE" value="false"/>
     <attributes name="FLASHLIGHT" value="false"/>
@@ -170,7 +170,9 @@
     <attributes name="iphoneipadglossyeffectkey" value="false"/>
     <attributes name="tcnoscriptmessage" value="To use this site, first enable your browser&#039;s JavaScript support and then refresh this page."/>
     <attributes name="xhtmlfavicokey" value=""/>
+    <attributes name="build_gradle_attrs_prefix" value=""/>
     <attributes name="usevizactions" value="false"/>
+    <attributes name="settings_gradle_attrs" value=""/>
     <attributes name="wp8cycle9key" value=""/>
     <attributes name="wintileforegroundnamekey" value="Light"/>
     <attributes name="BIND_DEVICE_ADMIN" value="false"/>
@@ -180,7 +182,6 @@
     <attributes name="wp81slockscreennotificationskey" value="Not set"/>
     <attributes name="winphn10bgagentnamespace" value=""/>
     <attributes name="DISABLE_KEYGUARD" value="false"/>
-    <attributes name="certs_ssl_algorithm" value="TLS"/>
     <attributes name="apmorientationchange" value="false"/>
     <attributes name="tcbb360basefontsize" value="12"/>
     <attributes name="winsmoothscrollkey" value="true"/>
@@ -227,6 +228,7 @@
     <attributes name="SUBSCRIBED_FEEDS_WRITE" value="false"/>
     <attributes name="MANAGE_ACCOUNTS" value="false"/>
     <attributes name="wp10location" value="false"/>
+    <attributes name="win8bgagenttaskname" value=""/>
     <attributes name="ID_CAP_GAMERSERVICES" value="true"/>
     <attributes name="MANAGE_APP_TOKENS" value="false"/>
     <attributes name="mwhttpsportkey" value="443"/>
@@ -243,10 +245,12 @@
     <attributes name="wp8displaynamekey" value="JumpStartAbort1"/>
     <attributes name="wintab_allowselfsignedcertificate" value="None"/>
     <attributes name="WP8_ID_CAP_PROXIMITY" value="true"/>
+    <attributes name="gradle_properties_attrs" value=""/>
     <attributes name="extendBottom" value="false"/>
     <attributes name="win8versionbuildkey" value="0"/>
     <attributes name="DUMP" value="false"/>
     <attributes name="WRITE_SYNC_SETTINGS" value="false"/>
+    <attributes name="hybridportkey" value=""/>
     <attributes name="WRITE_GSERVICES" value="false"/>
     <attributes name="iphoneurlscheme" value=""/>
     <attributes name="CLEAR_APP_CACHE" value="false"/>
@@ -254,7 +258,6 @@
     <attributes name="READ_FRAME_BUFFER" value="false"/>
     <attributes name="STATUS_BAR" value="false"/>
     <attributes name="spaandroidtab1024basefontsize" value="12"/>
-    <attributes name="cloud_web_xml_custom_mappings" value=""/>
     <attributes name="win8publisherdisplaynamekey" value="KonyLabs"/>
     <attributes name="RECEIVE_BOOT_COMPLETED" value="false"/>
     <attributes name="access_pimdomain_contacts" value="false"/>
@@ -283,11 +286,11 @@
     <attributes name="wp8packagepublisherkey" value="Kony"/>
     <attributes name="WP8_ID_CAP_PHONEDIALER" value="true"/>
     <attributes name="bb10urlscheme" value=""/>
-    <attributes name="apppackagekey" value="com.orgname.JumpStartAbort1"/>
+    <attributes name="apppackagekey" value="com.orgname.JumpStart"/>
     <attributes name="andtargetsdkkey" value="7.0"/>
     <attributes name="win8bgagentclassname" value=""/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>
-    <attributes name="appversionkey" value="1.1"/>
+    <attributes name="appversionkey" value="1.5"/>
     <attributes name="WRITE_EXTERNAL_STORAGE" value="false"/>
     <attributes name="wp8tilestitlekey" value=""/>
     <attributes name="wp10versionbuildkey" value="0"/>
@@ -304,17 +307,16 @@
     <attributes name="win8packagenamekey" value="JumpStartAbort1"/>
     <attributes name="mwcontextkey" value=""/>
     <attributes name="desktopwebwidthval" value="100"/>
-    <attributes name="certs_trust_store_pwd" value="kds/0eUc+i3BqFqSkpCk4g=="/>
     <attributes name="bb10description" value=""/>
     <attributes name="MODIFY_PHONE_STATE" value="false"/>
     <attributes name="DELETE_CACHE_FILES" value="false"/>
     <attributes name="wp8cycle1key" value=""/>
     <attributes name="Shared_User_Certificates" value="true"/>
     <attributes name="passwordkey" value="kds/0eUc+i3BqFqSkpCk4g=="/>
-    <attributes name="cloud_http_redirect" value="false"/>
     <attributes name="wp10removableStorage" value="false"/>
     <attributes name="phoneCall" value="false"/>
     <attributes name="wp8descriptionkey" value="Sample Test Application"/>
+    <attributes name="activity_child_tags" value=""/>
     <attributes name="win8shownamekey" value="Not set"/>
     <attributes name="inputaccessoryviewtype" value="nextprevtoolbar"/>
     <attributes name="wp10packagenamekey" value="JumpStartAbort1"/>
@@ -326,8 +328,8 @@
     <attributes name="Proximity" value="true"/>
     <attributes name="androidscreenresizeable" value="false"/>
     <attributes name="GET_ACCOUNTS" value="false"/>
+    <attributes name="winphn10bgagenttaskname" value=""/>
     <attributes name="ID_REQ_GYROSCOPE" value="false"/>
-    <attributes name="cloud_web_xml_custom_others" value=""/>
     <attributes name="SET_ORIENTATION" value="false"/>
     <attributes name="_sys_use_consumer_push" value="false"/>
     <attributes name="apptitle" value=""/>
@@ -353,7 +355,6 @@
     <attributes name="androidenablejsbindings" value="false"/>
     <attributes name="tcandroid240basefontsize" value="12"/>
     <attributes name="post_notification" value="false"/>
-    <attributes name="certs_key_store_pwd" value="kds/0eUc+i3BqFqSkpCk4g=="/>
     <attributes name="spawindows320basefontsize" value="12"/>
     <attributes name="initialRotationPreferenceKey" value="landscape"/>
     <attributes name="wp8textnotificationkey" value="false"/>
@@ -370,7 +371,6 @@
     <attributes name="spaandroidtabbasefontsize" value="12"/>
     <attributes name="wp10versionminorkey" value="0"/>
     <attributes name="Shared_User_Certificate" value="true"/>
-    <attributes name="log_level" value="ERROR"/>
     <attributes name="vendornamekey" value="SupplyNation"/>
     <attributes name="ID_CAP_WEBBROWSERCOMPONENT" value="true"/>
     <attributes name="wp8iconicsmallkey" value=""/>
@@ -389,7 +389,6 @@
     <attributes name="enablesearchbar" value="false"/>
     <attributes name="tcandroid480basefontsize" value="12"/>
     <attributes name="WRITE_SETTINGS" value="false"/>
-    <attributes name="cloud_account_guid" value="5ff66218-cae6-4eee-96e3-4d569611feb9"/>
     <attributes name="statusBarHidden" value="false"/>
     <attributes name="andmaxsdkkey" value="None"/>
     <attributes name="wp10chat" value="false"/>
@@ -417,7 +416,6 @@
     <attributes name="wp8packagepublisheridkey" value=""/>
     <attributes name="location" value="false"/>
     <attributes name="winphn10bgagentclassname" value=""/>
-    <attributes name="cloud_url" value="https://cba-jumpstart.konycloud.com"/>
     <attributes name="disablehttpskey" value="false"/>
     <attributes name="Music_Library" value="true"/>
     <attributes name="Location" value="true"/>
@@ -441,12 +439,14 @@
     <attributes name="applogokey" value="0=icon.png,1=,8=,50=,42=,16=,18=,48=,43=,1000=,1001=,1002=,9999=,9998=,9997="/>
     <attributes name="camerasettings" value=""/>
     <attributes name="WP8_ID_CAP_NETWORKING" value="true"/>
-    <attributes name="appversioncode" value="2"/>
+    <attributes name="appversioncode" value="5"/>
     <attributes name="SET_ANIMATION_SCALE" value="false"/>
     <attributes name="webcam" value="false"/>
     <attributes name="wp81spackagenamekey" value="JumpStartAbort1"/>
     <attributes name="enablepushnotifications" value="false"/>
     <attributes name="BROADCAST_WAP_PUSH" value="false"/>
+    <attributes name="build_gradle_attrs_suffix" value=""/>
+    <attributes name="hybridaddrkey" value=""/>
     <attributes name="wp8lockscreenbackgroundkey" value="false"/>
     <attributes name="wp10packagelogokey" value=""/>
     <attributes name="wp10descriptionkey" value="Sample Test Application"/>
@@ -454,11 +454,9 @@
     <attributes name="win8bgagentpath" value=""/>
     <attributes name="ID_CAP_IDENTITY_USER" value="true"/>
     <attributes name="wp10voipCall" value="false"/>
-    <attributes name="cloud_env_GUID" value="48b5e854-62be-44fb-a807-597e211db9a7"/>
     <attributes name="androidInstallLocnPref" value="false"/>
     <attributes name="android_allowselfsignedcertificates" value="None"/>
     <attributes name="userAccountInformation" value="false"/>
-    <attributes name="cloud_env_name" value="HPE - Commonwealth Bank of Australia-CBA JumpStart PROD"/>
     <attributes name="tcbb480basefontsize" value="12"/>
     <attributes name="SET_PREFERRED_APPLICATIONS" value="false"/>
     <attributes name="WP8_ID_CAP_MICROPHONE" value="true"/>
@@ -473,6 +471,7 @@
     <attributes name="ACCESS_COARSE_LOCATION" value="false"/>
     <attributes name="bb10orientationmode" value="Default"/>
     <attributes name="referenceWidth" value="375"/>
+    <attributes name="win10bgagenttaskname" value=""/>
     <attributes name="androidorientation" value="Device Default"/>
     <attributes name="applepushfunc" value="None"/>
     <attributes name="FORCE_BACK" value="false"/>
@@ -493,6 +492,7 @@
     <attributes name="wp10tilebackcolornamekey" value="128,128,128"/>
     <attributes name="tcbb320basefontsize" value="12"/>
     <attributes name="WP8_ID_CAP_WALLET" value="false"/>
+    <attributes name="hybdridcontextkey" value=""/>
     <attributes name="wp8iconicmediumkey" value=""/>
     <attributes name="wp8packageversionkey" value=""/>
     <attributes name="windows10guid" value=""/>
@@ -513,7 +513,6 @@
     <attributes name="spamanifestjson" value=""/>
     <attributes name="win8toastcapablekey" value="Not set"/>
     <attributes name="SET_PROCESS_LIMIT" value="false"/>
-    <attributes name="svcdocrefreshtime" value="-1"/>
     <attributes name="WP8_ID_CAP_CONTACTS" value="true"/>
     <attributes name="musicLibrary" value="false"/>
     <attributes name="READ_LOGS" value="false"/>
@@ -525,12 +524,10 @@
     <attributes name="wp81spackagedisplaynamekey" value="JumpStartAbort1"/>
     <attributes name="windowsmapkey" value=""/>
     <attributes name="bb10keystorepassword" value=""/>
-    <attributes name="cloud_account_id" value="100014964"/>
     <attributes name="Enterprise_Authentication" value="true"/>
     <attributes name="BATTERY_STATS" value="false"/>
     <attributes name="internetClient" value="false"/>
     <attributes name="deeplinkkey" value="None"/>
-    <attributes name="svcdocrefreshdynamic" value="FALSE"/>
     <attributes name="wp10userAccountInformation" value="false"/>
     <attributes name="WRITE_CONTACTS" value="false"/>
     <attributes name="androidscreenanydensity" value="true"/>
@@ -544,7 +541,6 @@
     <attributes name="BRICK" value="false"/>
     <attributes name="WP8_ID_CAP_PUSH_NOTIFICATION" value="true"/>
     <attributes name="win10bgagentnamespace" value=""/>
-    <attributes name="cloud_config_ipaddress_list" value=""/>
     <attributes name="enablelocalnotifications" value="false"/>
     <attributes name="tcandroid320basefontsize" value="12"/>
     <attributes name="iostextboxpaddingcorrection" value="true"/>
@@ -552,8 +548,7 @@
     <attributes name="Videos_Library_Access" value="true"/>
     <attributes name="wp8enforceMaxMemory" value="false"/>
     <attributes name="wp10codeGeneration" value="false"/>
-    <attributes name="build" value="debug"/>
-    <attributes name="certs_key_store_type" value="JKS"/>
+    <attributes name="build" value="release"/>
     <attributes name="spaandroidtab800basefontsize" value="12"/>
     <attributes name="defaultlocalekey" value=""/>
 </properties>

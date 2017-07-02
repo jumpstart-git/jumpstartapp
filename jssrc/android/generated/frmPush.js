@@ -43,7 +43,4 @@ function frmPushGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    frmPush.info = {
-        "kuid": "c7ac8165f0844e5e808e716e191e0478"
-    };
 };

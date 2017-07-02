@@ -7,7 +7,9 @@ function initializeCopyFBox01025bd15839e46() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox01025bd15839e46.setDefaultUnit(kony.flex.DP);
     var regSkillItem = new kony.ui.Label({
         "height": "25dp",

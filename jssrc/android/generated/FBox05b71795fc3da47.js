@@ -7,7 +7,9 @@ function initializeFBox05b71795fc3da47() {
         "isVisible": true,
         "layoutType": kony.flex.FLOW_VERTICAL,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox05b71795fc3da47.setDefaultUnit(kony.flex.DP);
     var acceptedRequestsTop = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -18,7 +20,9 @@ function initializeFBox05b71795fc3da47() {
         "skin": "slFbox",
         "top": "10dp",
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     acceptedRequestsTop.setDefaultUnit(kony.flex.DP);
     var acceptedRequestImageParent = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -31,7 +35,9 @@ function initializeFBox05b71795fc3da47() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "25%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     acceptedRequestImageParent.setDefaultUnit(kony.flex.DP);
     var acceptedRequestImage = new kony.ui.Image2({
         "centerX": "50%",
@@ -66,7 +72,9 @@ function initializeFBox05b71795fc3da47() {
         "top": "0dp",
         "width": "70%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     acceptedRequestInfoParent.setDefaultUnit(kony.flex.DP);
     var acceptedRequestBusinessName = new kony.ui.Label({
         "id": "acceptedRequestBusinessName",
@@ -186,7 +194,9 @@ function initializeFBox05b71795fc3da47() {
         "skin": "slFbox",
         "top": "0dp",
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     acceptedRequestsBottom.setDefaultUnit(kony.flex.DP);
     var contactRequest = new kony.ui.RichText({
         "centerY": "50%",

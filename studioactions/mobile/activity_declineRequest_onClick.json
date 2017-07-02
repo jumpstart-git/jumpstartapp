@@ -24,7 +24,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": false
+            "disabled": false,
+            "source": "module"
         }]
     }
 }

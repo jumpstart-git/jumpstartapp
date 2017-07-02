@@ -20,7 +20,8 @@
             "display": "indeginousCancelRequest",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_f2a750ed88ef4941b695f9b220c4c5ca",
             "type": "ADD_SNIPPET",

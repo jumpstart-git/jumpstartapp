@@ -50,7 +50,7 @@ function addWidgetssearchPage() {
         "isVisible": true,
         "left": "1.7199999999999998%",
         "onClick": AS_Button_8fa8e6b553644a8aa8f131bdc76b36c0,
-        "skin": "CopyslButtonGlossBlue04695bbc9f36a40",
+        "skin": "ngnyGreenBackButton",
         "width": "25dp",
         "zIndex": 1
     }, {
@@ -85,14 +85,15 @@ function addWidgetssearchPage() {
         "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
     });
     var searchBtn = new kony.ui.Button({
-        "height": "38%",
+        "centerY": "50%",
+        "height": "25dp",
         "id": "searchBtn",
         "isVisible": true,
         "left": "87.50%",
         "onClick": AS_Button_c8e58c278dc843529e6299794c8f659c,
         "skin": "CopyslButtonGlossBlue007555eb8ad9240",
         "top": "24.33%",
-        "width": "7.10%",
+        "width": "25dp",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -317,15 +318,16 @@ function addWidgetssearchPage() {
         "id": "BusinessContainer",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "15dp",
+        "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "45%",
         "zIndex": 1
     }, {}, {});
     BusinessContainer.setDefaultUnit(kony.flex.DP);
     var businessIndicator = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "45%",
         "clipBounds": true,
         "height": "5%",
         "id": "businessIndicator",
@@ -334,12 +336,13 @@ function addWidgetssearchPage() {
         "left": "0dp",
         "skin": "CopyslFbox030edd0b138f94a",
         "top": "95%",
-        "width": "33%",
+        "width": "90%",
         "zIndex": 1
     }, {}, {});
     businessIndicator.setDefaultUnit(kony.flex.DP);
     businessIndicator.add();
     var businessBtn1 = new kony.ui.Button({
+        "centerX": "50%",
         "focusSkin": "CopyslButtonGlossRed006bc270703f140",
         "height": "95%",
         "id": "businessBtn1",
@@ -352,7 +355,7 @@ function addWidgetssearchPage() {
         "width": "100%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
@@ -366,10 +369,10 @@ function addWidgetssearchPage() {
         "id": "opportunitiesFlex",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "5dp",
+        "left": "0dp",
         "skin": "slFbox",
         "top": "0dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "45%",
         "zIndex": 1
     }, {}, {});
     opportunitiesFlex.setDefaultUnit(kony.flex.DP);
@@ -384,7 +387,7 @@ function addWidgetssearchPage() {
         "left": "0dp",
         "skin": "CopyslFbox030edd0b138f94a",
         "top": "95%",
-        "width": "30%",
+        "width": "90%",
         "zIndex": 1
     }, {}, {});
     opportunitiesIndicator.setDefaultUnit(kony.flex.DP);
@@ -400,10 +403,10 @@ function addWidgetssearchPage() {
         "skin": "salmaSkin",
         "text": "Brief",
         "top": "0dp",
-        "width": "10%",
+        "width": "100%",
         "zIndex": 1
     }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
@@ -596,8 +599,4 @@ function searchPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    searchPage.info = {
-        "notesId": "f388a97e38204f59abf2ecfb0e7f5d27",
-        "kuid": "f388a97e38204f59abf2ecfb0e7f5d27"
-    };
 };

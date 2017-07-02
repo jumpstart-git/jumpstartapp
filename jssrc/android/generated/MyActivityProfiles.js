@@ -1144,14 +1144,17 @@ function addWidgetsMyActivityProfiles() {
         "id": "BusinessProfileCompanyNameAndAddressContainerr",
         "isVisible": true,
         "left": "0dp",
+        "maxNumberOfLines": 2,
+        "maxWidth": "90%",
         "skin": "jumpStartLabel140Bold",
         "text": "The Supplies  Company",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "25%",
-        "width": kony.flex.USE_PREFFERED_SIZE
+        "textTruncatePosition": constants.TEXT_TRUNCATE_END,
+        "top": "15%",
+        "width": "90%"
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
         "padding": [0, 0, 0, 0],
@@ -1356,13 +1359,13 @@ function addWidgetsMyActivityProfiles() {
     businessProfileContactActionss.add(businessProfileBookmarkk, businessProfileCalll, businessProfileEmaill);
     var requestToVolunteerButtonn = new kony.ui.Button({
         "centerX": "50%",
-        "focusSkin": "jump",
+        "focusSkin": "ngnyPressedGreenButton",
         "height": "40dp",
         "id": "requestToVolunteerButtonn",
         "isVisible": false,
         "left": "0dp",
         "onClick": AS_Button_df13c25023874207a65c88b802d79b02,
-        "skin": "jump",
+        "skin": "ngnyPrimaryGreenButton",
         "text": "Request To Volunteer",
         "top": "10dp",
         "width": "90%",
@@ -1425,7 +1428,7 @@ function addWidgetsMyActivityProfiles() {
         "id": "businessProfileAboutMoree",
         "isVisible": false,
         "left": "10dp",
-        "skin": "jumpStartLabelGreen120",
+        "skin": "ngnyGreenLabel",
         "text": "more",
         "textStyle": {
             "letterSpacing": 0,
@@ -1793,7 +1796,4 @@ function MyActivityProfilesGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    MyActivityProfiles.info = {
-        "kuid": "29570dac279248599fde5b3de34f5ca5"
-    };
 };

@@ -22,7 +22,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET__3155f6576906488796c33011db57b7a6",
             "type": "ADD_SNIPPET",

@@ -7,7 +7,9 @@ function initializeFBox0943a0d8ad0544d() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox0943a0d8ad0544d.setDefaultUnit(kony.flex.DP);
     var contactImage = new kony.ui.Image2({
         "height": "100%",

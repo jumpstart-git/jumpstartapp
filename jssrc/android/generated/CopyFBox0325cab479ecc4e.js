@@ -7,7 +7,9 @@ function initializeCopyFBox0325cab479ecc4e() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     CopyFBox0325cab479ecc4e.setDefaultUnit(kony.flex.DP);
     var endorsentContactImage = new kony.ui.Image2({
         "height": "60dp",
@@ -39,7 +41,9 @@ function initializeCopyFBox0325cab479ecc4e() {
         "top": "0dp",
         "width": "75%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     endorsementDetailContainer.setDefaultUnit(kony.flex.DP);
     var endorsementContactName = new kony.ui.Label({
         "id": "endorsementContactName",
@@ -78,7 +82,9 @@ function initializeCopyFBox0325cab479ecc4e() {
         "top": "3dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     endorsementContactDetails.setDefaultUnit(kony.flex.DP);
     var endorsementTaskName = new kony.ui.Label({
         "id": "endorsementTaskName",

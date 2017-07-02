@@ -20,7 +20,8 @@
             "display": "closeModal",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_f58a9d023136406ca12bf7b96fe416fe",
             "type": "ADD_SNIPPET",

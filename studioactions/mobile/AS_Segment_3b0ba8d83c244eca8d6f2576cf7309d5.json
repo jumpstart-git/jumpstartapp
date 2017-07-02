@@ -23,7 +23,8 @@
                 "value": " eventobject"
             }],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

@@ -22,7 +22,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___34c421cf1e614166ada11fb83db4da01",
             "type": "INVOKE_FUNCTION",
@@ -31,7 +32,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___63ec8f5731034bcbacec096094cbe673",
             "type": "INVOKE_FUNCTION",
@@ -42,7 +44,8 @@
             }],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

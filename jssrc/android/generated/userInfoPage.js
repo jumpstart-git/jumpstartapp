@@ -146,7 +146,4 @@ function userInfoPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    userInfoPage.info = {
-        "kuid": "53d976c79dea4ed4b99b930ec54016aa"
-    };
 };

@@ -227,7 +227,7 @@ function validatePassword() {
 
 //Start of D058
 function validateEmailDomain() {
-  var domains = ["@hpe.com","@dxc.com","@supplynation.org.au","@cba.com.au"];
+  var domains = ["@hpe.com","@supplynation.org.au","@cba.com.au","@microsoft.com"];
   var emailAddress = volunteerRegObject.emailAddress;
   var count = 0;
 

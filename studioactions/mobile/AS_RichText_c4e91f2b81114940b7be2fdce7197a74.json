@@ -37,7 +37,8 @@
             "display": "saveClosedTaskDetails",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_9c862f802348487dbb022fb091c79b92",
             "type": "ADD_SNIPPET",

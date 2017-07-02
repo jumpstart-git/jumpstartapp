@@ -14,7 +14,8 @@
             "display": "hoursAgreeAndContinueUpdate",
             "inputparams": [],
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }]
     }
 }

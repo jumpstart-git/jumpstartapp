@@ -2,295 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f240c856-6e9e-4535-bf74-4ec3383f4a85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jumpstart" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/common/icon120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/common/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/common/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/common/icon@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/common/splash-667h@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/common/splash-736h@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/native/iphone/icon120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/native/iphone/icon@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/mobile/native/iphone/icon@3x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_jumpstart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/BusinessProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox0325cab479ecc4e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox045aefb0898ba4a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox065d0320c900743.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox0c6a7a9e8b6494b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox005476b2895eb45.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0495998e57f7e42.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0ebe39ec296d744.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/LogHoursForms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/LogHoursSegmentHeader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/MyActivityProfiles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/ReportingPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/actions_for_jumpstart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/frmPush.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/pop1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/pop2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/resetPasswordForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/scheduleNewForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/AddKsid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusExistingOpenTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessAcceptRequestTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessAndVolunteerNotificationDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessChangePassword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessCloseTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessCreateOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessDeleteOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessEditOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessExistingTaskList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessGetVolSkillsEndorsement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessImageUpload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessLoadExistingTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMyActivityRequests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessOpenOpportunityDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessProfileUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessRequestVolunteerTaskList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessRequestVolunteerTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessShowReqTaskDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinesssRecommendationSort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/ContactsForBusinessAndVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/DeleteVolunteerAccount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/File030ba05b3f41b47.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/GenerateReportVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/GetBusinessRecommendation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/NotificationSortCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/OpenTaskAllDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/PushNotificationCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/ViewRequestAll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolPhoneNumForCall.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerExistingOpenTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/busPass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/businessPhoneNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/businessViewProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/checkList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/dateValidationcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/dbRetreivecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/dupRemovalCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/emailcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/existingBusTaskDetailsAccept.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/existingTaskBusDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/hoursRetreiveCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/hoursServiceCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/hoursmodule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/loading.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/loginFrstTimeCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/opportunityPredSearchCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/opportunitySearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/predSearchcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/regValidationModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/reportCodeForIndBusiness.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/reportSupplyNationCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/resendCodeModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/resetPassword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/scheduleCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/scheduleCodeforUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/searchOppDetailsAccept.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/searchOppDetailsLoad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/searchOpportunityCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/searchcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/sendRecommendationcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/showtaskDetailsForVolNew.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/sortcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/timecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/unCheckList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/updateVolProfilecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/updateVolunteerImageCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/updatecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/uploadImage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volCloseTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volContactNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volEndorsements.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volNotificationSortCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volReport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volviewProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/BusinessProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox01025bd15839e46.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox0325cab479ecc4e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox045aefb0898ba4a.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox065d0320c900743.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox0c6a7a9e8b6494b.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox002ffa33914ea45.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox005476b2895eb45.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0495998e57f7e42.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0dac93f59f6db45.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0e89732147d1641.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0ebe39ec296d744.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/LogHoursForms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/LogHoursSegmentHeader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/MyActivityProfiles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/ReportingPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/businessDetailsConfirmationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/businessMyProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/frmPush.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/pop1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/pop2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationAccountPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationDonePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationPersonalPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationProfessionalPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationSchedulePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/registrationSummaryPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/resetPasswordForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/scheduleNewForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/searchResultProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/volunteerMyProfilePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/AddKsid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusExistingOpenTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessAcceptRequestTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessAndVolunteerNotificationDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessChangePassword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessCloseTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessCreateOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessDeclineRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessDeleteOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessEditOpportunity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessExistingTaskList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessGetVolSkillsEndorsement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessImageUpload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessLoadExistingTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessMarkAsComplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessMyActivityRequests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessNotificationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessOpenOpportunityDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessOpenTaskCloseTaskDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessProfileUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessRequestVolunteerTaskList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessRequestVolunteerTasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessSearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessShowReqTaskDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinessVolunteerProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/BusinesssRecommendationSort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/ContactsForBusinessAndVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/DeleteVolunteerAccount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/File030ba05b3f41b47.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/File0fc0c544af6f340.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/GenerateReportVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/GetBusinessRecommendation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/IndigenousBusinessRequestVolunteerPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/IndigenousBusinessStartEngagement.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/IndigenousCancelRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/IndigenousCompanyProfilePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/MyOpenTasksForVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/NotificationSortCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/OpenTaskAllDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/PushNotificationCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/RequestToVolunteer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/ViewRequestAll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VlunteerEligibilityCriteria.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolNotification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolPhoneNumForCall.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolProfileAfterSearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteeerCancelRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteeerRequestTo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteerAcceptTaskBtn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteerDeclineRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteerExistingOpenTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteerMyActivityy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/VolunteerSkillstoAcceptTaskolin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/acceptReqVol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/busPass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/businessPhoneNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/businessViewProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/checkList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/dateValidationcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/dbRetreivecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/dupRemovalCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/emailcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/existingBusTaskDetailsAccept.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/existingTaskBusDetails.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/hoursRetreiveCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/hoursServiceCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/hoursmodule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartActivityPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartBusinessDetailsConfirmationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartNotificationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartProfilePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartRecommendationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartRegistrationPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartSearchPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartSearchProfilePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartUserLoginPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/loading.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/loginFrstTimeCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/messageNavigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/mySalma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/opportunityPredSearchCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/opportunitySearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/predSearchcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/regValidationModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/reportCodeForIndBusiness.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/reportSupplyNationCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/resendCodeModule.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/resetPassword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/scheduleCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/scheduleCodeforUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchOppDetailsAccept.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchOppDetailsLoad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchOpportunityCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/sendRecommendationcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/showtaskDetailsForVolNew.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/sortcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/statData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/taskDetailsForVolunteers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/timecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/unCheckList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/updateVolProfilecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/updateVolunteerImageCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/updatecode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/uploadImage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volCancelReq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volCloseTask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volContactNum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volEndorsements.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volNotificationSortCode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volReport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/volviewProfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_1756fa2a81574791943136eba7c5bcf8.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_1756fa2a81574791943136eba7c5bcf8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_e8e4bd72c460496080f219c3e47f1bc9.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_e8e4bd72c460496080f219c3e47f1bc9.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Sample/resources/tablet/native/ipad/splash@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/Temp0763afb691ec34c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/actions_for_JumpStartAbort1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0a68c9c601d7046.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0a770daf321f044.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0e63b85f9514944.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/Temp0763afb691ec34c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/actions_for_JumpStartAbort1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/flxContainerHome.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/flxFormRegistrationOption.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/formMessages.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/formMessagesMainPage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/frmDashBoard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/myProfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/register.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/mainPageFunctions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/searchPageFunctions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/userLogin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/common/splash@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/native/iphone/splash@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/tablet/native/ipad/splash@2x.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Sample/resources/mobile/native/iphone/splash@2x.png" afterPath="$PROJECT_DIR$/resources/mobile/common/splash-568h@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/android/generated/JumpStartAbort1globalsequences.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/jumpstartglobalsequences.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_JumpStartAbort1.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/actions_for_jumpstart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/actions_for_jumpstart2.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/actions_for_jumpstart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/jumpstart2globalsequences.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/jumpstartglobalsequences.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/JumpStartAbort1globalsequences.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/jumpstartglobalsequences.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMyActivityRequestts.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/myActivityBusiness.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0f9037d0e9d804e.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox011becb3c7bfa4f.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/JumpStartAbort1globalsequences.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/jumpstartglobalsequences.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/mainPageNavigation.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/jumpStartPageNavigation.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/icon@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/splash-568h@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/splash-667h@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/mobile/common/splash-736h@3x.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeadlessBuild.properties" afterPath="$PROJECT_DIR$/HeadlessBuild.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" afterPath="$PROJECT_DIR$/annotations/mobile/288297cd3faf43c5aa0f4c1cb5cd4ef1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" afterPath="$PROJECT_DIR$/annotations/mobile/38e026ceda214cf88e999137a5268792.json" />
@@ -301,22 +20,43 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" afterPath="$PROJECT_DIR$/annotations/mobile/ba74c893fd5a445eb219fe3bef70986f.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" afterPath="$PROJECT_DIR$/annotations/mobile/bec1f033db6f4a3190ecdff43c7dc04e.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" afterPath="$PROJECT_DIR$/annotations/mobile/f388a97e38204f59abf2ecfb0e7f5d27.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/login.sm/passwordField.json" afterPath="$PROJECT_DIR$/forms/mobile/login.sm/passwordField.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/appPageProfilePic.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/appPageProfilePic.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/myAcceptedRequestsExpandImage.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/myAcceptedRequestsExpandImage.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms/mobile/mainPage.sm/searchButton.json" afterPath="$PROJECT_DIR$/forms/mobile/mainPage.sm/searchButton.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/context.properties" afterPath="$PROJECT_DIR$/context.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/defaults/defaults.properties" afterPath="$PROJECT_DIR$/defaults/defaults.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/BusinessProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/BusinessProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox00fe78492e0da42.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox00fe78492e0da42.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox01025bd15839e46.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0325cab479ecc4e.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0325cab479ecc4e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox045aefb0898ba4a.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox045aefb0898ba4a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox065d0320c900743.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox065d0320c900743.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox09e1c06f6a9bb44.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox09e1c06f6a9bb44.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0c6a7a9e8b6494b.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/CopyFBox0c6a7a9e8b6494b.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox002ffa33914ea45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox005476b2895eb45.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox005476b2895eb45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox011becb3c7bfa4f.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox011becb3c7bfa4f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox018a2be4f3acd48.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox018a2be4f3acd48.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0488ce2c486374a.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0488ce2c486374a.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0495998e57f7e42.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0495998e57f7e42.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox05b71795fc3da47.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox05b71795fc3da47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0788b6c38d49d4b.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0943a0d8ad0544d.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0943a0d8ad0544d.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0add1169d948e49.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0add1169d948e49.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0dac93f59f6db45.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0dac93f59f6db45.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0e89732147d1641.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0e89732147d1641.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0ebe39ec296d744.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0ebe39ec296d744.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/FBox0f790959ec8fb46.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/FBox0f790959ec8fb46.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/LogHoursForms.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/LogHoursForms.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/MyActivityProfiles.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/MyActivityProfiles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/ReportingPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/ReportingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/actions_for_jumpstart.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/actions_for_jumpstart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/application.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/appskins.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/businessDetailsConfirmationPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/businessMyProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/frmPush.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/frmPush.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/mainPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/pop1.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/pop1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/pop2.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/pop2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationAccountPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationDonePage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/registrationPage.js" />
@@ -330,159 +70,231 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/searchResultProfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/userInfoPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/android/generated/volunteerMyProfilePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/AddKsid.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/AddKsid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessAcceptRequestTasks.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessChangePassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessCreateOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessDeleteOpportunity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessImageUpload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMarkAsComplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMyActivityRequests.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessMyActivityRequests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessRequestVolunteerTasks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessVolunteerProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessVolunteerProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/DeleteVolunteerAccount.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/GenerateReportVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessOpenTaskCloseTaskDetails.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/BusinessOpenTaskCloseTaskDetails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/KonySyncLib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/PushNotificationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/PushNotificationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/VolProfileAfterSearch.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/VolProfileAfterSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/checkList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/MyOpenTasksForVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/MyOpenTasksForVolunteer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/VolNotification.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/VolNotification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/VolunteerExistingOpenTask.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/VolunteerExistingOpenTask.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/dbRetreivecode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/dbRetreivecode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/emailcode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/emailcode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/existingBusTaskDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartActivityPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/hoursmodule.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/hoursmodule.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartRegistrationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartSearchPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartSearchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/jumpStartUserLoginPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/kony_sdk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/loading.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/loginFrstTimeCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/loginFrstTimeCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportCodeForIndBusiness.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/reportSupplyNationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/searchOppDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/sendRecommendationcode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/sendRecommendationcode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/unCheckList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/regValidationModule.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/regValidationModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/resetPassword.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/resetPassword.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/test_json.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/updateVolProfilecode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volCancelReq.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volCancelReq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volReport.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/nongenerated/volviewProfile.js" afterPath="$PROJECT_DIR$/jssrc/android/nongenerated/volviewProfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/android/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/android/startup/startup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox065d0320c900743.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/CopyFBox065d0320c900743.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/FBox0788b6c38d49d4b.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/ReportingPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/appskins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/mainPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/scheduleNewForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/iphone/generated/searchResultProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessCreateEndorsements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessImageUpload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessOpenTaskCloseTaskDetails.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/BusinessOpenTaskCloseTaskDetails.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/hoursmodule.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/hoursmodule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartRegistrationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/jumpStartUserLoginPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/newAcceptTaskBtnForVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/regValidationModule.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/regValidationModule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/reportSupplyNationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/searchOppDetailsAccept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/iphone/nongenerated/test_json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/iphone/startup/startup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox00fe78492e0da42.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox00fe78492e0da42.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox01025bd15839e46.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox01025bd15839e46.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox09e1c06f6a9bb44.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/CopyFBox09e1c06f6a9bb44.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox002ffa33914ea45.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox002ffa33914ea45.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox011becb3c7bfa4f.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox011becb3c7bfa4f.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox018a2be4f3acd48.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox018a2be4f3acd48.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox05b71795fc3da47.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox05b71795fc3da47.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0788b6c38d49d4b.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0dac93f59f6db45.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0dac93f59f6db45.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0e89732147d1641.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/FBox0e89732147d1641.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/appskins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessDetailsConfirmationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessDetailsConfirmationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessMyProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/businessMyProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/mainPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationAccountPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationAccountPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationDonePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationDonePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPersonalPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationPersonalPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationProfessionalPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationProfessionalPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSchedulePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSchedulePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSummaryPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/registrationSummaryPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchResultProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/searchResultProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/userInfoPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/generated/volunteerMyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/generated/volunteerMyProfilePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessDeclineRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessDeclineRequest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMarkAsComplete.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessMarkAsComplete.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessNotificationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessNotificationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessOpenTaskCloseTaskDetails.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessOpenTaskCloseTaskDetails.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessSearch.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessVolunteerProfile.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/BusinessVolunteerProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessRequestVolunteerPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessRequestVolunteerPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessStartEngagement.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousBusinessStartEngagement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCancelRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCancelRequest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCompanyProfilePage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/IndigenousCompanyProfilePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/KonySyncLib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/MyOpenTasksForVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/MyOpenTasksForVolunteer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/RequestToVolunteer.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/RequestToVolunteer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolNotification.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolNotification.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolProfileAfterSearch.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolProfileAfterSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerCancelRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerCancelRequest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerRequestTo.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteeerRequestTo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerAcceptTaskBtn.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerAcceptTaskBtn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerDeclineRequest.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerDeclineRequest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerMyActivityy.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/VolunteerMyActivityy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/acceptReqVol.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/acceptReqVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/appLogout.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/appLogout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartActivityPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartActivityPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartPageNavigation.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartPageNavigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRecommendationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRecommendationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartRegistrationPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartSearchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartSearchPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/jumpStartUserLoginPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/kony_sdk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/taskDetailsForVolunteers.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/taskDetailsForVolunteers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/test_json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volCancelReq.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/nongenerated/volCancelReq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaandroid/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/spaandroid/startup/startup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox00fe78492e0da42.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox00fe78492e0da42.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox09e1c06f6a9bb44.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/CopyFBox09e1c06f6a9bb44.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox018a2be4f3acd48.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox018a2be4f3acd48.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox05b71795fc3da47.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox05b71795fc3da47.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0788b6c38d49d4b.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0788b6c38d49d4b.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0943a0d8ad0544d.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0943a0d8ad0544d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0add1169d948e49.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/FBox0add1169d948e49.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/application.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/appskins.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/appskins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/login.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/mainPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/mainPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/searchPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/searchPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/generated/userInfoPage.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/generated/userInfoPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/KonySyncLib.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/KonySyncLib.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/appLogout.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/appLogout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/kony_sdk.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/kony_sdk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/myActivity.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/myActivity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/require.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/test_json.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/nongenerated/test_json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jssrc/spaiphone/startup/startup.js" afterPath="$PROJECT_DIR$/jssrc/spaiphone/startup/startup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/konyplugins.xml" afterPath="$PROJECT_DIR$/konyplugins.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lua_widget_m4_info.properties" afterPath="$PROJECT_DIR$/lua_widget_m4_info.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mBaas.properties" afterPath="$PROJECT_DIR$/mBaas.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/middleware.properties" afterPath="$PROJECT_DIR$/middleware.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessCreateEndorsements.js" afterPath="$PROJECT_DIR$/modules/BusinessCreateEndorsements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/BusinessImageUpload.js" afterPath="$PROJECT_DIR$/modules/BusinessImageUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/KonySyncLib.js" afterPath="$PROJECT_DIR$/modules/KonySyncLib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" afterPath="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/newAcceptTaskBtnForVol.js" afterPath="$PROJECT_DIR$/modules/newAcceptTaskBtnForVol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/reportSupplyNationCode.js" afterPath="$PROJECT_DIR$/modules/reportSupplyNationCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/searchOppDetailsAccept.js" afterPath="$PROJECT_DIR$/modules/searchOppDetailsAccept.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/kony_sdk.js" afterPath="$PROJECT_DIR$/modules/kony_sdk.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectProperties.json" afterPath="$PROJECT_DIR$/projectProperties.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectprop.xml" afterPath="$PROJECT_DIR$/projectprop.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" afterPath="$PROJECT_DIR$/resources/customlibs/sdkplugin.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3d555c25db1f4257a45b1f9c9ba15f18.js" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3d555c25db1f4257a45b1f9c9ba15f18.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3d555c25db1f4257a45b1f9c9ba15f18.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3d555c25db1f4257a45b1f9c9ba15f18.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/widgetinfo.properties" afterPath="$PROJECT_DIR$/widgetinfo.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_0758697c36314de6be86afd5f5e75602.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_0758697c36314de6be86afd5f5e75602.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_084a6e37b3e34b0c848a45390f3b841a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_084a6e37b3e34b0c848a45390f3b841a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_0d87a87ab5bd4552a60cca8b24ed2876.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_0d87a87ab5bd4552a60cca8b24ed2876.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_102b6bf5ed1848b1ab72a98c4080fef5.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_102b6bf5ed1848b1ab72a98c4080fef5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_102be19028bf4b8e8c5f3de8263022bb.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_102be19028bf4b8e8c5f3de8263022bb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_14fdc6cb313143f196223ab1015052fe.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_14fdc6cb313143f196223ab1015052fe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_1e558d2401b1484cb57b63d2de564a20.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_1e558d2401b1484cb57b63d2de564a20.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_21f4bcf587e04140b67e181fc9636919.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_21f4bcf587e04140b67e181fc9636919.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_299155e915f7426b899f826f4d634775.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_299155e915f7426b899f826f4d634775.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_2bc0163614904410970d9ac5d1450d1e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_2bc0163614904410970d9ac5d1450d1e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_2dd078c72d6d4317a70a98ff6984381a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_2dd078c72d6d4317a70a98ff6984381a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_343ad16654424590a92a9098bc3d7153.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_343ad16654424590a92a9098bc3d7153.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3f3ea29874a042e4b234c314c3385d65.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_3f3ea29874a042e4b234c314c3385d65.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_42d5fe199fbd4a02834ab76d2b7f6ff6.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_42d5fe199fbd4a02834ab76d2b7f6ff6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_47f078e3a22f4674b7e9178a14c00f23.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_47f078e3a22f4674b7e9178a14c00f23.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_536fe1aa4afb4d978882a153d6c0111d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_536fe1aa4afb4d978882a153d6c0111d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_55ef0b7a5c10487e975a0f00b95d7dfb.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_55ef0b7a5c10487e975a0f00b95d7dfb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_56849e05360f4daba001e01291f6323e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_56849e05360f4daba001e01291f6323e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_604e48d7e44849b9a5c5ffc6cb8b147a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_604e48d7e44849b9a5c5ffc6cb8b147a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6769340a248d48eabbad10e602c77e6b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6769340a248d48eabbad10e602c77e6b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6a2359e6e4604ba3b91a11c148068c8f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6a2359e6e4604ba3b91a11c148068c8f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6a726122f1104df9b4d53ee762d4a566.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6a726122f1104df9b4d53ee762d4a566.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6eb3b55f20db4cc4a788148e796483ba.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6eb3b55f20db4cc4a788148e796483ba.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6fbd103ad33d43c18846c2b244cce06d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_6fbd103ad33d43c18846c2b244cce06d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7088679c6e074024bd605d42044a4435.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7088679c6e074024bd605d42044a4435.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_734be65b4dac4bc9b78aae300f969ab6.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_734be65b4dac4bc9b78aae300f969ab6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7860b7ff010d4912ad72fa8209697e9b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7860b7ff010d4912ad72fa8209697e9b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_787530031fef4f11bc1b769f1f91b1dd.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_787530031fef4f11bc1b769f1f91b1dd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7cc9e7db933542dfa9d930e523285359.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7cc9e7db933542dfa9d930e523285359.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7fd9c2662e634e54b06436e93997e627.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_7fd9c2662e634e54b06436e93997e627.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_80dfa1bc68ad4325be817ed653bc9943.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_80dfa1bc68ad4325be817ed653bc9943.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_8679ef5475084e8496bae19a15ca4630.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9292a5869b07452d9409477608e9427f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9362f9f5ced040ce87d2c51725413107.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9362f9f5ced040ce87d2c51725413107.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_957df1d174b6435aa5f1073cfa71de90.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_957df1d174b6435aa5f1073cfa71de90.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_99e8fcfe74224ca997ce775e4cafcdc1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9b9923f9fbc14a98b02dfaa577e7c3c0.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_9b9923f9fbc14a98b02dfaa577e7c3c0.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_a1bf8d8a33774646b253d4bc668d6b1f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_a1bf8d8a33774646b253d4bc668d6b1f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_a7b0aead332447b8bef76dcfcc1fdabe.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_a7b0aead332447b8bef76dcfcc1fdabe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_aa285d8fe8d04e2d820658c111389d6b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_aa285d8fe8d04e2d820658c111389d6b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_aa3e3d85d1ad4363aa2228b03b71875f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_aa3e3d85d1ad4363aa2228b03b71875f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ac67f947cd2d4582b92181772cd6a40a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ac67f947cd2d4582b92181772cd6a40a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ae18dbb7220b4a80a20985154d13a7d4.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ae18dbb7220b4a80a20985154d13a7d4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ae82e0cd50844115b61bb74a4dfdaf5b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ae82e0cd50844115b61bb74a4dfdaf5b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_af46e1839f6e43c5a3361243e5d819f1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_af46e1839f6e43c5a3361243e5d819f1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_bd249e35d7f5428ea07f21adbae991c8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_bd249e35d7f5428ea07f21adbae991c8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_c744708682c64883bbf34dca04f06842.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_c744708682c64883bbf34dca04f06842.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_c8c845e7a2c347cea5d422f4843ef41a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_c8c845e7a2c347cea5d422f4843ef41a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_d481b806b36a447bbe557989bb1baadc.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_d481b806b36a447bbe557989bb1baadc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_d9548a946ba24ef5a52b3107c5a81fe9.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_d9548a946ba24ef5a52b3107c5a81fe9.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_dc6cf53afef74ce497dd0a2c3c81d777.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_dc6cf53afef74ce497dd0a2c3c81d777.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_dc8aa82b60d146248de333630a31e677.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_dc8aa82b60d146248de333630a31e677.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_df13c25023874207a65c88b802d79b02.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_df13c25023874207a65c88b802d79b02.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e21ac211a8a8413da63f77c6eac41fda.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e21ac211a8a8413da63f77c6eac41fda.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e4554ff8383f4054ade62d64a912754e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e4554ff8383f4054ade62d64a912754e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e48ea3d0216f4aa9ba7a123e8a3ba25d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e53dc5e292c44b34a1ffdfbdf33fd8d8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e53dc5e292c44b34a1ffdfbdf33fd8d8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e61308b7b7c34b918d972c688cd7d59d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e61308b7b7c34b918d972c688cd7d59d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e9344e555e7d470bb58175552f25dd36.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e9344e555e7d470bb58175552f25dd36.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e98b91463476471786423474c781fe50.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_e98b91463476471786423474c781fe50.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ec9397f10e6e482bb595acb81c6014bf.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_ec9397f10e6e482bb595acb81c6014bf.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_edf83feaa9fe47a7855ed1f1a459a40f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_edf83feaa9fe47a7855ed1f1a459a40f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f3075a508e024615b2e365abb06ea12b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f3075a508e024615b2e365abb06ea12b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f43836994bb94ce2bebfdf4b6cb90080.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f43836994bb94ce2bebfdf4b6cb90080.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_f57470ae9f314ef4b9536d11b77f7ead.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fa2abf49a3a141279bfa919c7d225271.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fa2abf49a3a141279bfa919c7d225271.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fff21f566b984c2e92a93b839a3014aa.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Button_fff21f566b984c2e92a93b839a3014aa.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_00116715facc4593b10937138e2d90aa.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_00116715facc4593b10937138e2d90aa.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_11414f9274b047adb43d5ef7d9c25725.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_11414f9274b047adb43d5ef7d9c25725.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_30736cdefc9f4a7fad59b12ff27cc077.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_30736cdefc9f4a7fad59b12ff27cc077.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_53cb4940b42e48d2ac56285b59581ab1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_53cb4940b42e48d2ac56285b59581ab1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_5dc50c25822441908725817f568d0d08.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_5dc50c25822441908725817f568d0d08.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_601f7677d0e84dd79d22d8e1e1759e80.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_663b9e1a50524ad4a465c143f89d5609.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_663b9e1a50524ad4a465c143f89d5609.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_707f746bdd524a70aaff639693feca51.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_707f746bdd524a70aaff639693feca51.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_70e9c0d9d6c5476186dd8e45a2709369.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_70e9c0d9d6c5476186dd8e45a2709369.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_7805026078094123bb83216522f207e2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_7805026078094123bb83216522f207e2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_92fa437a891d45e2ad91ed89ad0a0540.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_92fa437a891d45e2ad91ed89ad0a0540.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_98d3aa24541b4a29995d52d254def029.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_98d3aa24541b4a29995d52d254def029.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_98f74fb48fe1473cbdd90ffdd1e6534d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_98f74fb48fe1473cbdd90ffdd1e6534d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_a6cbc2130b064370b0fd4ddc2b2267d1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_a6cbc2130b064370b0fd4ddc2b2267d1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_cfd527e91ca24efb98abe8143d3d09f8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_cfd527e91ca24efb98abe8143d3d09f8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_dd5e6f1aa54942bf9bd5df995121d3fe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_dfe2d02d41954550ba9a40c142ef5fca.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e69e8a3c678543e089873840524029ee.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e69e8a3c678543e089873840524029ee.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e942b364329c4bfdb7027d857cb5692b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e942b364329c4bfdb7027d857cb5692b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e9e15be97ae745ad8c755ed5a07ede3e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_FlexContainer_e9e15be97ae745ad8c755ed5a07ede3e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_2283f3e743da4be7acf45a52a6bb3be2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_2283f3e743da4be7acf45a52a6bb3be2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_833c2ef1247647218d4860e015dfecbe.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_833c2ef1247647218d4860e015dfecbe.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_856f4203a0514bdd9ad9964c7526a80a.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_856f4203a0514bdd9ad9964c7526a80a.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Form_c522c027907b412a8af9a1a75e7bb6e2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Form_c522c027907b412a8af9a1a75e7bb6e2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Image_03b6c3d236894551a5decbc650f84125.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_03b6c3d236894551a5decbc650f84125.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Image_7a2e5833b09d4fdba08c882796d67cc3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_7a2e5833b09d4fdba08c882796d67cc3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Image_d97a71e9637c4514a8b1c7bdf35f416c.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_d97a71e9637c4514a8b1c7bdf35f416c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Image_fd8eba264c9143189babb4bea113c3fc.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Image_fd8eba264c9143189babb4bea113c3fc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Label_016ee17f3d7848ff84abe81557b8e9ad.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Label_016ee17f3d7848ff84abe81557b8e9ad.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Label_66b927334c324dd6a7ca90f1ab686138.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Label_66b927334c324dd6a7ca90f1ab686138.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Label_98407b61245b427f89b9495b7effe858.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Label_98407b61245b427f89b9495b7effe858.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Label_b4172a3037a7474c862e44f90dacb3f2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Label_b4172a3037a7474c862e44f90dacb3f2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_0ba9774640bc4556b85cbc7da04582fb.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_0ba9774640bc4556b85cbc7da04582fb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2cad7402a3da4b4287375e6d870cc2b3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_2cad7402a3da4b4287375e6d870cc2b3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_469dfb8eb7a74714b3e9b7d558b2dcae.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_643746b8217f4e4fb64f64e946613848.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_643746b8217f4e4fb64f64e946613848.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_8a3b81e21f92454abbdb7ee1f20c0255.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_8a3b81e21f92454abbdb7ee1f20c0255.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_94e2428d02de4f88943f8ba16108872e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_94e2428d02de4f88943f8ba16108872e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_aa0cee9cf07a479cbfbebdb7fc2c52ef.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_aa0cee9cf07a479cbfbebdb7fc2c52ef.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_d48683f3ba65402a858a54db05c47f93.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_d48683f3ba65402a858a54db05c47f93.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_e3a8f019144d4141b0a47965c3fa1097.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_ListBox_e3a8f019144d4141b0a47965c3fa1097.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_0283195679b341f1a643b1f4ebfd38b7.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_0283195679b341f1a643b1f4ebfd38b7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_0d038155c1474567aaca15e97228611d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_0d038155c1474567aaca15e97228611d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_2789ef5f0cc540749ee37969fb746bdb.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_2789ef5f0cc540749ee37969fb746bdb.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_34d79e47c53345a59de9709864f21864.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_34d79e47c53345a59de9709864f21864.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_39b50ab4a8304fbabfd147601b1115a7.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_39b50ab4a8304fbabfd147601b1115a7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_407b0568036d4033a12445989aaf483c.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_407b0568036d4033a12445989aaf483c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_4aa2825b6d21400bb786f06eee737ea2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_4aa2825b6d21400bb786f06eee737ea2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_4d3bec3407c74a89933aa244f3b9e7a7.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_4d3bec3407c74a89933aa244f3b9e7a7.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_55b2af90803e4a41b41f97f284e70dda.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_55b2af90803e4a41b41f97f284e70dda.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_657672998ca44e6ebfa2d4fd1ed09d74.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_657672998ca44e6ebfa2d4fd1ed09d74.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_6a82d8aa4fcc448fb084c717b0967987.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_6a82d8aa4fcc448fb084c717b0967987.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_8be722f5bb4349d2bad731306f67b5e2.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_8be722f5bb4349d2bad731306f67b5e2.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_95a6e28e049a4bda931f0b230a4a7128.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_95a6e28e049a4bda931f0b230a4a7128.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_97e5661ca5e14986af20d1088bdd4fc3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_97e5661ca5e14986af20d1088bdd4fc3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_ba3a520a0bd6464caf7feb4297050d6d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_ba3a520a0bd6464caf7feb4297050d6d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_c4e91f2b81114940b7be2fdce7197a74.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_c4e91f2b81114940b7be2fdce7197a74.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_e49a8fe8f615487b9dbee78c42b134a8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_e49a8fe8f615487b9dbee78c42b134a8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_f489ec06928743ef8d3bb1e9a931c066.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_f489ec06928743ef8d3bb1e9a931c066.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_f4afce1bcee84abaad223a921a040045.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_f4afce1bcee84abaad223a921a040045.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_fa45a6f0ef24436dbc6b83d021c77e25.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_RichText_fa45a6f0ef24436dbc6b83d021c77e25.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_129e92e809394c59bd592175b01d09f1.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_1a35f0773f8f485484cb32855b01b64f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_1a35f0773f8f485484cb32855b01b64f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_3b0ba8d83c244eca8d6f2576cf7309d5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_44ab36382c5144c0a002fbe8531a8626.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_44ab36382c5144c0a002fbe8531a8626.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_6752aaa5445c4daa8598b7a13aea12f5.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_6752aaa5445c4daa8598b7a13aea12f5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_7626a4bad6be43478e9092f27f5f37bf.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_7626a4bad6be43478e9092f27f5f37bf.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_95b5c42be7254c9abc10553956bdbc57.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_95b5c42be7254c9abc10553956bdbc57.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_9bdb3704db05419d913b9e86104e6dea.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_9bdb3704db05419d913b9e86104e6dea.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_a0963566e11f4604b8326f68a2e24ec8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_a0963566e11f4604b8326f68a2e24ec8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_da1fa30bda0a42c19cbacbaf60a2545d.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_da1fa30bda0a42c19cbacbaf60a2545d.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_dc27f8cfa268483abe30dde5ea343ce5.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_dc27f8cfa268483abe30dde5ea343ce5.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_edded707bff6488c98e88c1487d9d4e3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_Segment_edded707bff6488c98e88c1487d9d4e3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextArea_ac195e0dc95744119ba6b9195b097add.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextArea_ac195e0dc95744119ba6b9195b097add.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextArea_fe2bb2b434114b0c9b9a8bb4acd31f9f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextArea_fe2bb2b434114b0c9b9a8bb4acd31f9f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_1abf52a14b8b41d7b457e170b2cb77c9.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_1abf52a14b8b41d7b457e170b2cb77c9.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_372743a3e4dc484f96d2a21d5dd6667c.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_372743a3e4dc484f96d2a21d5dd6667c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_3d1a1661e3ae41369e8d869dba99f78e.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_3d1a1661e3ae41369e8d869dba99f78e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_429541053c19437aa1b1a69382e43af3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_429541053c19437aa1b1a69382e43af3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_5659650338ed492494b9f858ceb83373.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_5659650338ed492494b9f858ceb83373.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_5947e4a2027142988150f46fb2d660a3.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_5947e4a2027142988150f46fb2d660a3.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_6e61c630845840748ff7f9ba9ac7033f.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_6e61c630845840748ff7f9ba9ac7033f.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_917b4c42b41347eb9522667119b2d9e6.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_917b4c42b41347eb9522667119b2d9e6.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_93e59fd514bc461fb9433771e452ac55.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_93e59fd514bc461fb9433771e452ac55.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_96bd16a6e9b8416aa2b1b88a320dac72.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_96bd16a6e9b8416aa2b1b88a320dac72.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_aa024ef3cb084fa9a2b41693f0bf3cdc.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_aa024ef3cb084fa9a2b41693f0bf3cdc.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_ae290058a08a4ad0a0459f12d784ff52.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_ae290058a08a4ad0a0459f12d784ff52.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_bac558627a05452b99bdf393eae66bc8.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_bac558627a05452b99bdf393eae66bc8.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_bb09ca2e585e49d796d3ca25856e37ff.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_bb09ca2e585e49d796d3ca25856e37ff.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_d05d6d132c4b4747a7cbf6dc381fad1b.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_d05d6d132c4b4747a7cbf6dc381fad1b.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_dc1e9ff886644e3197f422537d69455c.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_dc1e9ff886644e3197f422537d69455c.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_e6e55cea7bae4981b3b6cc6b5427ae22.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_e6e55cea7bae4981b3b6cc6b5427ae22.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_f859a507a1984459a9b0527f17b10f32.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_f859a507a1984459a9b0527f17b10f32.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_f8b9fc0a64c04fb59a35d1236d543dde.json" afterPath="$PROJECT_DIR$/studioactions/mobile/AS_TextField_f8b9fc0a64c04fb59a35d1236d543dde.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_acceptRequestCancel_onTouchStart.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_acceptRequestCancel_onTouchStart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskButton_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskButton_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskDetailsPreviousParent_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskDetailsPreviousParent_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskSkillsPreviousParent_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_acceptTaskSkillsPreviousParent_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_agreeToTaskButton_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_agreeToTaskButton_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_cancelRequest_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_cancelRequest_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_declineRequestNo_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_declineRequestNo_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_declineRequest_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_declineRequest_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_requestTask_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_requestTask_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_startEngagementPreviousParent_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_startEngagementPreviousParent_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/activity_startEngagement_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/activity_startEngagement_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_buttons_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_buttons_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_onConfirm_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_onConfirm_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_textFieldUpdate_onTextChange.json" afterPath="$PROJECT_DIR$/studioactions/mobile/businessDetailsConfirmation_textFieldUpdate_onTextChange.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.json" afterPath="$PROJECT_DIR$/studioactions/mobile/login_signInButton_action_onTouchStart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_acceptTaskEngagment_action_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_acceptTaskEngagment_action_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_action_init.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_action_init.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_action_postShow.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_action_postShow.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_contactRequest_action_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_contactRequest_action_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_navBarScroller_action_onTouchEnd.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_navBarScroller_action_onTouchEnd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_requestModal_action_onTouchStart.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_requestModal_action_onTouchStart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/mainPage_searchButtonContainer_action_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/mainPage_searchButtonContainer_action_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registrationAccountPage_continue_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registrationAccountPage_continue_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registrationPersonalPage_continue_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registrationPersonalPage_continue_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registrationProfessionalPage_continue_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registrationProfessionalPage_continue_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registrationScheduleInfoPage_continue_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registrationScheduleInfoPage_continue_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_addNewSkill_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_addNewSkill_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_outsideHoursAgreeContinue_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_outsideHoursAgreeContinue_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_regDaysButton_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_regDaysButton_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_registerComplete_onClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_registerComplete_onClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_removeSkill_onRowClick.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_removeSkill_onRowClick.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_textFieldUpdate_onTextChange.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_textFieldUpdate_onTextChange.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/registration_timeWheelSelection_onSelection.json" afterPath="$PROJECT_DIR$/studioactions/mobile/registration_timeWheelSelection_onSelection.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/slideMenu_myProfile_onTouchStart.json" afterPath="$PROJECT_DIR$/studioactions/mobile/slideMenu_myProfile_onTouchStart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studioactions/mobile/userInfoPage_action_init.json" afterPath="$PROJECT_DIR$/studioactions/mobile/userInfoPage_action_init.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -499,42 +311,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VolunteerExistingOpenTask.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/VolunteerExistingOpenTask.js">
+    <leaf>
+      <file leaf-file-name="jumpStartUserLoginPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/jumpStartUserLoginPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
-              <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="406" column="105" lean-forward="false" selection-start-line="406" selection-start-column="105" selection-end-line="406" selection-end-column="105" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchcode.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jssrc/iphone/nongenerated/searchcode.js">
+      <file leaf-file-name="jumpStartRegistrationPage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/jumpStartRegistrationPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BusinessLoadExistingTask.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/BusinessLoadExistingTask.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="93" lean-forward="false" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acceptReqVol.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/acceptReqVol.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="229" column="76" lean-forward="false" selection-start-line="229" selection-start-column="76" selection-end-line="229" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -601,6 +393,8 @@
         <option value="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.json" />
         <option value="$PROJECT_DIR$/studioactions/mobile/AS_Form_683e8141b8fd42a0898dcaa41d91db36.js" />
         <option value="$PROJECT_DIR$/jssrc/android/nongenerated/VolunteerExistingOpenTask.js" />
+        <option value="$PROJECT_DIR$/modules/jumpStartUserLoginPage.js" />
+        <option value="$PROJECT_DIR$/modules/jumpStartRegistrationPage.js" />
       </list>
     </option>
   </component>
@@ -611,10 +405,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -631,8 +423,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -661,6 +451,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,6 +460,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -686,13 +479,6 @@
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -780,32 +566,37 @@
       <workItem from="1493612665993" duration="1850000" />
       <workItem from="1493615387803" duration="2192000" />
       <workItem from="1493619087656" duration="31000" />
+      <workItem from="1497321691114" duration="274000" />
+      <workItem from="1497340136785" duration="7000" />
+      <workItem from="1497340162264" duration="110000" />
+      <workItem from="1497396037002" duration="102000" />
+      <workItem from="1499038846419" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30445000" />
+    <option name="totallyTimeSpent" value="31014000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1500732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14955239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25052854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,8 +610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/index.html" />
-    <entry file="file://$PROJECT_DIR$/modules/BusinessAndVolunteerNotificationDetails.js" />
     <entry file="file://$PROJECT_DIR$/modules/VolNotification.js" />
     <entry file="file://$PROJECT_DIR$/forms/mobile/mainPage.sm/NotificationBodyDetailsLabel.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -986,34 +775,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/BusinessLoadExistingTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="93" lean-forward="false" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/acceptReqVol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/VolunteerExistingOpenTask.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
+        <state relative-caret-position="3810">
           <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jssrc/iphone/nongenerated/searchcode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="60">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/BusinessLoadExistingTask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="938">
+          <caret line="73" column="93" lean-forward="false" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/acceptReqVol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="83" lean-forward="true" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/jumpStartUserLoginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="406" column="105" lean-forward="false" selection-start-line="406" selection-start-column="105" selection-end-line="406" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/jumpStartRegistrationPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="229" column="76" lean-forward="false" selection-start-line="229" selection-start-column="76" selection-end-line="229" selection-end-column="76" />
           <folding />
         </state>
       </provider>

@@ -1359,7 +1359,4 @@ function businessMyProfileGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    businessMyProfile.info = {
-        "kuid": "1236261b36ec4ae9bccbba8c33912563"
-    };
 };

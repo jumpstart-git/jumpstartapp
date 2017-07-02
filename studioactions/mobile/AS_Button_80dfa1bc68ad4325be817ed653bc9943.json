@@ -28,7 +28,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "NAVIGATE_TO_FORM___029a7e7bcc2e46b780237206b78e2b1a",
             "type": "NAVIGATE_TO_FORM",

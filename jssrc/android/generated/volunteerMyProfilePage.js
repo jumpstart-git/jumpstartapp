@@ -19,7 +19,7 @@ function addWidgetsvolunteerMyProfilePage() {
         "height": "60dp",
         "id": "volunteerMyProfilePic",
         "isVisible": true,
-        "onTouchStart": AS_Image_fd8eba264c9143189babb4bea113c3fc,
+        "onTouchStart": AS_Image_7a2e5833b09d4fdba08c882796d67cc3,
         "skin": "slImage",
         "src": "imgseglogo.png",
         "width": "60dp",
@@ -166,92 +166,6 @@ function addWidgetsvolunteerMyProfilePage() {
         "left": "0dp",
         "onTextChange": AS_TextField_5659650338ed492494b9f858ceb83373,
         "secureTextEntry": false,
-        "skin": "jumpStartStandardInputField",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "5dp",
-        "width": "100%",
-        "zIndex": 1
-    }, {
-        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [3, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "autoFilter": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
-        "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
-    });
-    var volunteerMyProfilePasswordTitle = new kony.ui.Label({
-        "id": "volunteerMyProfilePasswordTitle",
-        "isVisible": true,
-        "left": "0dp",
-        "skin": "jumpStartLabel10099",
-        "text": "Password*",
-        "textStyle": {
-            "letterSpacing": 0,
-            "strikeThrough": false
-        },
-        "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "textCopyable": false
-    });
-    var volunteerMyProfilePasswordInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "height": "40dp",
-        "id": "volunteerMyProfilePasswordInput",
-        "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-        "left": "0dp",
-        "onTextChange": AS_TextField_aa024ef3cb084fa9a2b41693f0bf3cdc,
-        "secureTextEntry": true,
-        "skin": "jumpStartStandardInputField",
-        "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
-        "top": "5dp",
-        "width": "100%",
-        "zIndex": 1
-    }, {
-        "containerHeightMode": constants.TEXTBOX_FONT_METRICS_DRIVEN_HEIGHT,
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [3, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "autoFilter": false,
-        "keyboardActionLabel": constants.TEXTBOX_KEYBOARD_LABEL_DEFAULT,
-        "viewType": constants.TEXTBOX_VIEW_TYPE_DEFAULT
-    });
-    var volunteerMyProfileReenterPasswordTitle = new kony.ui.Label({
-        "id": "volunteerMyProfileReenterPasswordTitle",
-        "isVisible": true,
-        "left": "1dp",
-        "skin": "jumpStartLabel10099",
-        "text": "Re-enter password*",
-        "textStyle": {
-            "letterSpacing": 0,
-            "strikeThrough": false
-        },
-        "top": "15dp",
-        "width": kony.flex.USE_PREFFERED_SIZE
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {
-        "textCopyable": false
-    });
-    var volunteerMyProfileReenterPasswordInput = new kony.ui.TextBox2({
-        "autoCapitalize": constants.TEXTBOX_AUTO_CAPITALIZE_NONE,
-        "height": "40dp",
-        "id": "volunteerMyProfileReenterPasswordInput",
-        "isVisible": true,
-        "keyBoardStyle": constants.TEXTBOX_KEY_BOARD_STYLE_DEFAULT,
-        "left": "0dp",
-        "onTextChange": AS_TextField_ae290058a08a4ad0a0459f12d784ff52,
-        "secureTextEntry": true,
         "skin": "jumpStartStandardInputField",
         "textInputMode": constants.TEXTBOX_INPUT_MODE_ANY,
         "top": "5dp",
@@ -1170,6 +1084,42 @@ function addWidgetsvolunteerMyProfilePage() {
         "paddingInPixel": false
     }, {});
     volunteerMyProfileAddScheduleContainer.add(segUpdateSchedule);
+    var ChangePasswordButtonContainer = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "ChangePasswordButtonContainer",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "78dp",
+        "skin": "slFbox",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    ChangePasswordButtonContainer.setDefaultUnit(kony.flex.DP);
+    var ChangePasswordButton = new kony.ui.Button({
+        "centerX": "50%",
+        "centerY": "50%",
+        "focusSkin": "ngnyPressedRegistrationButton",
+        "height": "40dp",
+        "id": "ChangePasswordButton",
+        "isVisible": true,
+        "left": "13dp",
+        "onClick": AS_Button_fbdaaee40d054ef7beee3a61ec94718a,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Change password",
+        "top": "12dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ChangePasswordButtonContainer.add(ChangePasswordButton);
     var DeleteVolunteerButtonContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
@@ -1206,7 +1156,75 @@ function addWidgetsvolunteerMyProfilePage() {
         "paddingInPixel": false
     }, {});
     DeleteVolunteerButtonContainer.add(DeleteVolunteerButton);
-    volunteerMyProfileBody.add(volunteerMyProfileFirstNameTitle, volunteerMyProfileFirstNameInput, volunteerMyProfileLastNameTitle, volunteerMyProfileLastNameInput, volunteerMyProfileUsernameTitle, volunteerMyProfileUsernameInput, volunteerMyProfilePasswordTitle, volunteerMyProfilePasswordInput, volunteerMyProfileReenterPasswordTitle, volunteerMyProfileReenterPasswordInput, volunteerMyProfileWorkDetailsTitle, volunteerMyProfileWorkDetailsInput, volunteerMyProfileAboutMeTitle, volunteerMyProfileAboutMeInput, volunteerMyProfileCompanyTitle, volunteerMyProfileCompanyInput, volunteerMyProfileRoleTitle, volunteerMyProfileRoleInput, volunteerMyProfileBusinessUnitTitle, regBusinessUnitInput, volunteerMyProfileStateTitle, volunteerMyProfileStateInput, volunteerMyProfileAddressTitle, volunteerMyProfileAddressInput, volunteerMyProfileContactNumberTitle, volunteerMyProfileContactNumberInput, volunteerMyProfileEmailAddressTitle, volunteerMyProfileEmailAddressInput, volunteerMyProfileSkillsTitle, volunteerMyProfileSkillListContainer, volunteerMyProfileSkillTags, volunteerMyProfileScheduleLabel, volunteerMyProfileScheduleInfoContainer, volunteerMyProfileAddScheduleContainer, DeleteVolunteerButtonContainer);
+    var StoreOriginalPassword = new kony.ui.Label({
+        "id": "StoreOriginalPassword",
+        "isVisible": false,
+        "left": "0dp",
+        "skin": "jumpStartLabel10099",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "15dp",
+        "width": kony.flex.USE_PREFFERED_SIZE
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    volunteerMyProfileBody.add(volunteerMyProfileFirstNameTitle, volunteerMyProfileFirstNameInput, volunteerMyProfileLastNameTitle, volunteerMyProfileLastNameInput, volunteerMyProfileUsernameTitle, volunteerMyProfileUsernameInput, volunteerMyProfileWorkDetailsTitle, volunteerMyProfileWorkDetailsInput, volunteerMyProfileAboutMeTitle, volunteerMyProfileAboutMeInput, volunteerMyProfileCompanyTitle, volunteerMyProfileCompanyInput, volunteerMyProfileRoleTitle, volunteerMyProfileRoleInput, volunteerMyProfileBusinessUnitTitle, regBusinessUnitInput, volunteerMyProfileStateTitle, volunteerMyProfileStateInput, volunteerMyProfileAddressTitle, volunteerMyProfileAddressInput, volunteerMyProfileContactNumberTitle, volunteerMyProfileContactNumberInput, volunteerMyProfileEmailAddressTitle, volunteerMyProfileEmailAddressInput, volunteerMyProfileSkillsTitle, volunteerMyProfileSkillListContainer, volunteerMyProfileSkillTags, volunteerMyProfileScheduleLabel, volunteerMyProfileScheduleInfoContainer, volunteerMyProfileAddScheduleContainer, ChangePasswordButtonContainer, DeleteVolunteerButtonContainer, StoreOriginalPassword);
+    var volunteerMyProfileFooter2Buttons = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "49.99%",
+        "clipBounds": true,
+        "height": "45dp",
+        "id": "volunteerMyProfileFooter2Buttons",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0dp",
+        "skin": "jumpStartBGFFFBorder214",
+        "top": "8dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    volunteerMyProfileFooter2Buttons.setDefaultUnit(kony.flex.DP);
+    var continue1 = new kony.ui.Button({
+        "centerX": "26.129999999999995%",
+        "centerY": "47.64%",
+        "focusSkin": "jumpStartGrayButton110",
+        "height": "45dp",
+        "id": "continue1",
+        "isVisible": true,
+        "onClick": AS_Button_4ff3c85804b5438b9b0253f363f21b6f,
+        "skin": "jumpStartGrayButton110",
+        "text": "Cancel",
+        "width": "46%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var Save = new kony.ui.Button({
+        "centerX": "74%",
+        "centerY": "48.82%",
+        "focusSkin": "ngnyPressedGreenButton",
+        "height": "45dp",
+        "id": "Save",
+        "isVisible": true,
+        "onClick": AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901,
+        "skin": "ngnyPrimaryGreenButton",
+        "text": "Save",
+        "width": "46%"
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    volunteerMyProfileFooter2Buttons.add(continue1, Save);
     var outsidemodal = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
@@ -1352,57 +1370,7 @@ function addWidgetsvolunteerMyProfilePage() {
     updateScheduleOutsideHoursFooter.add(updateOutsideHoursYes, updateOutsideHoursNo);
     outsidecontainer.add(updateScheduleOutsideHoursHeader, updateScheduleOutsideHoursBody, updateScheduleOutsideHoursFooter);
     outsidemodal.add(outsidecontainer);
-    var volunteerMyProfileFooter2Buttons = new kony.ui.FlexContainer({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
-        "clipBounds": true,
-        "height": "45dp",
-        "id": "volunteerMyProfileFooter2Buttons",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "left": "0dp",
-        "skin": "jumpStartBGFFFBorder214",
-        "top": "8dp",
-        "width": "100%",
-        "zIndex": 1
-    }, {}, {});
-    volunteerMyProfileFooter2Buttons.setDefaultUnit(kony.flex.DP);
-    var continue1 = new kony.ui.Button({
-        "centerX": "26.129999999999995%",
-        "centerY": "47.64%",
-        "focusSkin": "jumpStartGrayButton110",
-        "height": "45dp",
-        "id": "continue1",
-        "isVisible": true,
-        "onClick": AS_Button_4ff3c85804b5438b9b0253f363f21b6f,
-        "skin": "jumpStartGrayButton110",
-        "text": "Cancel",
-        "width": "46%"
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "displayText": true,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
-    var Save = new kony.ui.Button({
-        "centerX": "74%",
-        "centerY": "48.82%",
-        "focusSkin": "ngnyPressedGreenButton",
-        "height": "45dp",
-        "id": "Save",
-        "isVisible": true,
-        "onClick": AS_Button_fb3c6d49ec334ea0b2cf004b5b14f901,
-        "skin": "ngnyPrimaryGreenButton",
-        "text": "Save",
-        "width": "46%"
-    }, {
-        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
-        "displayText": true,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
-    volunteerMyProfileFooter2Buttons.add(continue1, Save);
-    volunteerMyProfilePage.add(volunteerMyProfileHeader, volunteerMyProfileBody, outsidemodal, volunteerMyProfileFooter2Buttons);
+    volunteerMyProfilePage.add(volunteerMyProfileHeader, volunteerMyProfileBody, volunteerMyProfileFooter2Buttons, outsidemodal);
 };
 
 function volunteerMyProfilePageGlobals() {
@@ -1429,8 +1397,4 @@ function volunteerMyProfilePageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    volunteerMyProfilePage.info = {
-        "notesId": "978359e3903240dfb78c032239f21d2b",
-        "kuid": "978359e3903240dfb78c032239f21d2b"
-    };
 };

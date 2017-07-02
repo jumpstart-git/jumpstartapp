@@ -14,7 +14,8 @@
             "display": "openSendVolunteerRequestModal11",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION__ide_onClick_a26644090bc349df80262ac94d4dcbed",
             "type": "INVOKE_FUNCTION",
@@ -22,7 +23,8 @@
             "display": "requestVolunteerByBusiness1",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_287e629a4de94281a2049b7e402223fc",
             "type": "ADD_SNIPPET",

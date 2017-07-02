@@ -30,7 +30,8 @@
             }],
             "parentId": null,
             "callbackType": null,
-            "disabled": null
+            "disabled": null,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET__3e43d0d9c6cc49baa93b83521b8ed6ed",
             "type": "ADD_SNIPPET",

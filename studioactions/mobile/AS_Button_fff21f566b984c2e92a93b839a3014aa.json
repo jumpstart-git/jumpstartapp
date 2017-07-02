@@ -14,7 +14,8 @@
             "display": "requestVolunteer",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "ADD_SNIPPET_ide_onClick_8922760de3774a10876c763f843bdf95",
             "type": "ADD_SNIPPET",

@@ -148,7 +148,7 @@ function addWidgetsregistrationPersonalPage() {
         "isVisible": true,
         "left": "0dp",
         "masterData": [
-            ["Select", "Select"],
+            ["Select", "Select from drop down list"],
             ["NSW", "New South Wales"],
             ["ACT", "Australian Capital Territory"],
             ["QLD", "Queensland"],
@@ -376,7 +376,4 @@ function registrationPersonalPageGlobals() {
         "titleBarSkin": "slTitleBar",
         "windowSoftInputMode": constants.FORM_ADJUST_PAN
     });
-    registrationPersonalPage.info = {
-        "kuid": "bb11f14c1a7d462a940d51df0600113e"
-    };
 };

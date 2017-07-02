@@ -7,7 +7,9 @@ function initializeFBox002ffa33914ea45() {
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "width": "100%"
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     FBox002ffa33914ea45.setDefaultUnit(kony.flex.DP);
     var SegmentMainFlex = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_HEIGHT,
@@ -19,7 +21,9 @@ function initializeFBox002ffa33914ea45() {
         "skin": "slFbox",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     SegmentMainFlex.setDefaultUnit(kony.flex.DP);
     var SegVolunteerUpFlex = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -33,7 +37,9 @@ function initializeFBox002ffa33914ea45() {
         "top": "15dp",
         "width": "25%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     SegVolunteerUpFlex.setDefaultUnit(kony.flex.DP);
     var volunteerImg = new kony.ui.Image2({
         "centerX": "50%",
@@ -68,7 +74,9 @@ function initializeFBox002ffa33914ea45() {
         "skin": "slFbox",
         "width": "70%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     SegVolunteerDetails.setDefaultUnit(kony.flex.DP);
     var volunteerName = new kony.ui.Label({
         "id": "volunteerName",
@@ -80,7 +88,7 @@ function initializeFBox002ffa33914ea45() {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "10dp",
+        "top": "0dp",
         "width": "100%",
         "zIndex": 1
     }, {
@@ -107,7 +115,9 @@ function initializeFBox002ffa33914ea45() {
         "top": "0%",
         "width": "85%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     searchRoleCompanyContainer.setDefaultUnit(kony.flex.DP);
     var volunteerPosition = new kony.ui.Label({
         "id": "volunteerPosition",
@@ -139,6 +149,7 @@ function initializeFBox002ffa33914ea45() {
         "id": "CompanyNameLbl",
         "isVisible": true,
         "left": "0%",
+        "maxWidth": "100%",
         "skin": "jumpStartLabel90",
         "text": "Label",
         "textStyle": {
@@ -146,7 +157,7 @@ function initializeFBox002ffa33914ea45() {
             "strikeThrough": false
         },
         "top": "0dp",
-        "width": kony.flex.USE_PREFFERED_SIZE,
+        "width": "100%",
         "zIndex": 1
     }, {
         "containerWeight": 100,
@@ -173,7 +184,9 @@ function initializeFBox002ffa33914ea45() {
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     SegActionsDownFlex.setDefaultUnit(kony.flex.DP);
     var searchDistanceContainer = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -188,7 +201,9 @@ function initializeFBox002ffa33914ea45() {
         "top": "0dp",
         "width": "100%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     searchDistanceContainer.setDefaultUnit(kony.flex.DP);
     var searchDistanceImage = new kony.ui.Image2({
         "centerY": "50%",
@@ -250,7 +265,9 @@ function initializeFBox002ffa33914ea45() {
         "top": "0dp",
         "width": "50%",
         "zIndex": 1
-    }, {}, {});
+    }, {
+        "containerWeight": 100
+    }, {});
     searchBookmarkContainer.setDefaultUnit(kony.flex.DP);
     var searchBookmarkImage = new kony.ui.Image2({
         "centerY": "50%",

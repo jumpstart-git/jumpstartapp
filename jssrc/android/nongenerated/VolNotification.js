@@ -53,22 +53,24 @@ function notificationServiceforVolunteer() {
 }
 
 function initializeMobileFabricForNotificationForVolunteer() {
-    //alert (" ********** Entering into initializeMobileFabric ********** ");
+    // alert (" ********** Entering into initializeMobileFabric ********** ");
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         //kony.application.showLoadingScreen("loadskin","Initializing the app !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , true,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
         mobileFabricConfigurationForVolunteerNotification.konysdkObject = new kony.sdk();
         mobileFabricConfigurationForVolunteerNotification.konysdkObject.init(mobileFabricConfigurationForVolunteerNotification.appKey, mobileFabricConfigurationForVolunteerNotification.appSecret, mobileFabricConfigurationForVolunteerNotification.serviceURL, initializeMobileFabricForNotificationForVolunteerSuccess, initializeMobileFabricForNotificationForVolunteerFailure);
         // alert(getNotification());
-    } else alert("Network unavailable. Please check your network settings. ");
-    kony.application.dismissLoadingScreen();
+    } else {
+        alert("Network unavailable. Please check your network settings. ");
+        kony.application.dismissLoadingScreen();
+    }
     kony.print(" ********** Exiting out of initializeMobileFabric ********** ");
 }
 
 function initializeMobileFabricForNotificationForVolunteerSuccess(response) {
     kony.print(" ********** Entering into initializeMobileFabricSuccess ********** ");
-    //alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
+    //                 alert (" ********** Success initializeMobileFabricSuccess response : " + JSON.stringify(response) + " ********** ");
     mobileFabricConfigurationForVolunteerNotification.isKonySDKObjectInitialized = true;
-    kony.application.dismissLoadingScreen();
+    //                 kony.application.dismissLoadingScreen();
     //authenticateMFUsingUserStore();
     getNotificationforVolunteer();
     kony.print(" ********** Exiting out of initializeMobileFabricSuccess ********** ");
@@ -76,7 +78,7 @@ function initializeMobileFabricForNotificationForVolunteerSuccess(response) {
 
 function initializeMobileFabricForNotificationForVolunteerFailure(error) {
     kony.print(" ********** Entering into initializeMobileFabricFailure ********** ");
-    //     alert (" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
+    //                alert (" ********** Failure in initializeMobileFabric: " + JSON.stringify(error) + " ********** ");
     kony.application.dismissLoadingScreen();
     //  alert (" Unable to initialize the application. Please try again. ");
     kony.print(" ********** Exiting out of initializeMobileFabricFailure ********** ");
@@ -111,7 +113,7 @@ function loginMFFailure(error) {
 }
 
 function getNotificationforVolunteer() {
-    // alert("insidegetNotificationforVolunteer");
+    //              alert("insidegetNotificationforVolunteer");
     //var selectedKey = frmFoxNews.lstNewsType.selectedKey;
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         //kony.application.showLoadingScreen("loadskin","Fetching news !!!",constants.LOADING_SCREEN_POSITION_FULL_SCREEN , false,true,{enableMenuKey:true,enableBackKey:true, progressIndicatorColor : "ffffff77"});
@@ -129,16 +131,19 @@ function getNotificationforVolunteer() {
         noteVolId["id"] = kony.store.getItem("volunteerId");
         //alert("vol id:"+JSON.stringify(noteVolId["id"]));
         mobileFabricConfigurationForVolunteerNotification.integrationObj.invokeOperation(operationName, headers, noteVolId, getNotificationforVolunteerSuccessCallback, getNotificationforVolunteerErrorCallback);
-    } else alert("Network unavailable. Please check your network settings. ");
+    } else {
+        alert("Network unavailable. Please check your network settings. ");
+        kony.application.dismissLoadingScreen();
+    }
 }
 
 function getNotificationforVolunteerSuccessCallback(gblVolNotificationList) {
-    //alert("inside success"+JSON.stringify(gblVolNotificationList));
+    //   alert("inside success"+JSON.stringify(gblVolNotificationList));
     // Check the opstatus for 0 meaning it worked
     if (gblVolNotificationList !== null && gblVolNotificationList.opstatus === 0) {
         if (gblVolNotificationList.notificationList !== null && gblVolNotificationList.notificationList !== undefined) {
             if (gblVolNotificationList.notificationList[0].NotificationDTO !== null && gblVolNotificationList.notificationList[0].NotificationDTO != undefined) {
-                // alert("2");
+                //        alert("2");
                 // Making sure we have at least 1 article returned
                 if (gblVolNotificationList.notificationList.length > 0) {
                     // Now we know we have results so we'll print them out to check
@@ -155,7 +160,7 @@ function getNotificationforVolunteerSuccessCallback(gblVolNotificationList) {
                     //          kony.application.dismissLoadingScreen();
                 }
             }
-        }
+        } else kony.application.dismissLoadingScreen(); //if there are no notifs for the user
     } else {
         kony.application.dismissLoadingScreen();
         // The call failed because opstatus was not 0 so we'll alert the user and show that opststus
@@ -251,6 +256,8 @@ function setVolNotSegData(gblVolNoteResponse) {
             mainPage.mainPageBody.mainPageContentParent.myNotifications.segMessageNotification.setData(tempVolNotData);
             kony.application.dismissLoadingScreen();
             mainPage.mainPageContentParent.myNotifications.isVisible = true;
+        } else {
+            kony.application.dismissLoadingScreen();
         }
     }
 }

@@ -35,7 +35,8 @@
             "display": "closeModal",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION__ide_onClick_e42ef750392149dfb558fe66da4a5ead",
             "type": "INVOKE_FUNCTION",
@@ -43,7 +44,8 @@
             "display": "indeginousTaskDetails",
             "inputparams": [],
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "NAVIGATE_TO_FORM__ide_onClick_638299859d9e4337b20c29bdc8f0b664",
             "type": "NAVIGATE_TO_FORM",

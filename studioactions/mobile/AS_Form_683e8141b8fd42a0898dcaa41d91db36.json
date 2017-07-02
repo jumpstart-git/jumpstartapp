@@ -39,7 +39,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___57cff57b7c5b4cedbd5402969dc301cd",
             "type": "INVOKE_FUNCTION",
@@ -48,7 +49,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___74221c1b21874680a8168930aab318ef",
             "type": "INVOKE_FUNCTION",
@@ -57,7 +59,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___0ec6031ee86949d3a26dc9946dbcb3de",
             "type": "INVOKE_FUNCTION",
@@ -66,7 +69,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }, {
             "id": "INVOKE_FUNCTION___ab0078bb32904de08d46fd74e36d0ba1",
             "type": "INVOKE_FUNCTION",
@@ -75,7 +79,8 @@
             "inputparams": [],
             "parentId": null,
             "callbackType": null,
-            "disabled": true
+            "disabled": true,
+            "source": "module"
         }]
     }
 }
